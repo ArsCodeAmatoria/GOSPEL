@@ -16,7 +16,8 @@ export default function HirePage() {
         <h1 className="display giant">HIRE A CREW</h1>
         <p className="lede mt">
           Tell us the work. We will tell you who is coming — and whether we can
-          do it. If we cannot, you will hear that first.
+          do it. If we cannot, you will hear that first. WHOOP is a union-friendly
+          shop. If the site has an agreement, tell us. We work with it.
         </p>
       </header>
       <div className="contact-rail">

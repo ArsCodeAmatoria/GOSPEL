@@ -17,7 +17,7 @@ export default function CrewPage() {
         <p className="lede mt">
           We don&apos;t publish a labour catalogue. These are the kinds of
           people we put on a lift — ticketed, experienced, and checked for the
-          work you actually have.
+          work you actually have. WHOOP is a union-friendly shop.
         </p>
       </header>
       <div>

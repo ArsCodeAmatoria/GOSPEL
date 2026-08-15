@@ -134,12 +134,20 @@ html[data-theme="dark"] .grain {
 }
 
 .brand {
+  display: inline-block;
   font-family: var(--font-display), Oswald, Impact, sans-serif;
   font-size: clamp(1.7rem, 2.4vw, 2.1rem);
   font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 1;
   text-transform: uppercase;
+  transform-origin: 50% 60%;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.header a:hover .brand,
+.header a:focus-visible .brand {
+  transform: rotate(-8deg);
 }
 
 .header-actions {
@@ -338,6 +346,15 @@ html[data-theme="dark"] .switch-paddle {
   line-height: 1.4;
 }
 
+.lede a {
+  box-shadow: inset 0 -1px 0 var(--ink);
+}
+
+.lede a:hover {
+  color: var(--crown);
+  box-shadow: inset 0 -1px 0 var(--crown);
+}
+
 .lede-lg {
   max-width: 42rem;
   font-size: clamp(1.25rem, 2.4vw, 1.7rem);
@@ -349,79 +366,43 @@ html[data-theme="dark"] .switch-paddle {
   min-height: calc(100svh - var(--header));
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 1.25rem 0 2rem;
-  position: relative;
+  justify-content: space-between;
+  gap: clamp(1.25rem, 4vh, 2.5rem);
+  padding: clamp(1.5rem, 4vh, 2.75rem) 0 1.5rem;
 }
 
-.hero-lines {
+.hero .kicker {
+  margin-bottom: 0;
+}
+
+.hero-title {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-.hero-lines h1 {
-  font-size: clamp(3.2rem, 12.8vw, 9.8rem);
-  font-weight: 700;
-  letter-spacing: -0.045em;
-  line-height: 0.82;
+.hero h1 {
+  font-size: clamp(3.6rem, 12.5vw, 10.5rem);
 }
 
-.hero-lines h1 span {
-  display: block;
-  animation: rise 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-.hero-lines h1:nth-child(1) span {
-  animation-delay: 0.05s;
-}
-
-.hero-lines h1:nth-child(2) span {
-  animation-delay: 0.16s;
-}
-
-.hero-lines h1:nth-child(3) span {
-  animation-delay: 0.28s;
-}
-
-@keyframes rise {
-  from {
-    transform: translateY(0.18em);
-    opacity: 0.001;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-
-.hero-bottom {
+.hero-foot {
   display: grid;
-  gap: 1.5rem;
-  margin-top: clamp(1.5rem, 4vw, 3rem);
-  padding-top: 1.5rem;
+  gap: 1.25rem;
+  padding-top: 1.4rem;
   border-top: 1px solid var(--line);
 }
 
+.hero-foot .inline-cta {
+  margin-top: 0;
+}
+
 @media (min-width: 860px) {
-  .hero-bottom {
-    grid-template-columns: 1.2fr 1fr;
-    align-items: flex-end;
+  .hero-foot {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 3rem;
   }
-}
-
-.hero-ctas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-}
-
-.hero-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  color: var(--steel);
 }
 
 .maple-dot {
@@ -974,6 +955,464 @@ html[data-theme="dark"] .switch-paddle {
   margin-bottom: 1rem;
 }
 
+/* ——— COR credential ——— */
+.cor-grid {
+  display: grid;
+  gap: 3rem;
+  margin-top: 3.25rem;
+  align-items: start;
+}
+
+@media (min-width: 960px) {
+  .cor-grid {
+    grid-template-columns: 1.35fr 0.75fr;
+    gap: 4.5rem;
+  }
+}
+
+.cred {
+  border-top: 1px solid var(--line-strong);
+  padding-top: 1.4rem;
+}
+
+.cor-mark {
+  width: min(100%, 16.5rem);
+  height: auto;
+  margin-bottom: 1.5rem;
+  background: var(--paper);
+  transition: background 0.2s ease;
+}
+
+.footer .cor-mark {
+  background: var(--ink);
+}
+
+.cred-title {
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  margin: 0.3rem 0 1.5rem;
+}
+
+.cred-list {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.cred-list dt {
+  color: var(--steel);
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.12em;
+}
+
+.cred-list dd {
+  max-width: 22rem;
+  line-height: 1.35;
+}
+
+.cred-list a:hover {
+  color: var(--crown);
+}
+
+.cor-close {
+  margin-top: 3.5rem;
+}
+
+.footer-cred {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 2.4rem 0 0;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--on-ink-line);
+}
+
+.cor-mark-foot {
+  width: 8.4rem;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.footer-cred p {
+  color: var(--on-ink-muted);
+  max-width: 24rem;
+  line-height: 1.45;
+}
+
+/* ——— WHOOPWIRE ——— */
+.wire-tools {
+  padding: 0 0 2rem;
+}
+
+.wire-search {
+  display: grid;
+  gap: 0.35rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.wire-search input {
+  width: 100%;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  padding: 0.45rem 0;
+  outline: none;
+}
+
+.wire-search input:focus {
+  box-shadow: inset 0 -2px 0 var(--crown);
+}
+
+.wire-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  margin-top: 1.1rem;
+}
+
+.wire-filters button {
+  font-family: var(--font-mono), "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--steel);
+  padding: 0.25rem 0;
+}
+
+.wire-filters button.is-on {
+  color: var(--ink);
+  box-shadow: inset 0 -2px 0 var(--ink);
+}
+
+.wire-feature {
+  padding: clamp(2rem, 6vw, 3.5rem) 0 clamp(4rem, 9vw, 6.5rem);
+  border-top: 1px solid var(--line);
+}
+
+.wire-feature-link {
+  display: block;
+  max-width: 72rem;
+}
+
+.wire-feature-link:hover h2 {
+  color: var(--crown);
+}
+
+.wire-read {
+  display: inline-block;
+  margin-top: 1.8rem;
+}
+
+.wire-stack {
+  display: grid;
+}
+
+.wire-row,
+.wire-home-story {
+  border-top: 1px solid var(--line);
+}
+
+.wire-row:last-child,
+.wire-home-story:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.wire-row a,
+.wire-home-story a {
+  display: grid;
+  gap: 0.65rem;
+  padding: 1.6rem 0;
+}
+
+.wire-row h3,
+.wire-home-story h3 {
+  font-size: clamp(2rem, 6.4vw, 4.4rem);
+  max-width: 16ch;
+}
+
+.wire-row a:hover h3,
+.wire-home-story a:hover h3 {
+  color: var(--crown);
+}
+
+.wire-row p,
+.wire-home-story p {
+  max-width: 36rem;
+  font-size: 1.08rem;
+  line-height: 1.4;
+}
+
+.wire-row-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--steel);
+}
+
+.wire-article {
+  padding-bottom: 4rem;
+}
+
+.wire-article-head {
+  padding: clamp(3rem, 8vw, 6rem) 0 2rem;
+}
+
+.wire-article-head .kicker a:hover {
+  color: var(--crown);
+}
+
+.wire-prose {
+  max-width: 38rem;
+}
+
+.wire-prose p,
+.wire-prose li {
+  font-size: 1.18rem;
+  line-height: 1.5;
+}
+
+.wire-prose p + p {
+  margin-top: 1.15rem;
+}
+
+.wire-cta-line {
+  margin: 1.5rem 0 0;
+}
+
+.wire-cta-line a {
+  font-family: var(--font-mono), "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  box-shadow: inset 0 -1px 0 var(--ink);
+}
+
+.wire-cta-line a:hover {
+  color: var(--crown);
+  box-shadow: inset 0 -1px 0 var(--crown);
+}
+
+.wire-figure {
+  margin: 2rem 0;
+}
+
+.wire-figure img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+.wire-figure figcaption {
+  margin-top: 0.55rem;
+  color: var(--steel);
+}
+
+.wire-figure-lead {
+  margin: 0 0 2.4rem;
+}
+
+.wire-formula {
+  margin: 1.8rem 0;
+  padding: 1.1rem 0 1.2rem;
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.wire-formula .display {
+  font-size: clamp(1.8rem, 5.5vw, 3.3rem);
+  letter-spacing: -0.04em;
+}
+
+.wire-formula figcaption {
+  margin-top: 0.7rem;
+  color: var(--steel);
+}
+
+.wire-table-wrap {
+  margin: 1.8rem 0 2.2rem;
+  overflow-x: auto;
+}
+
+.wire-table-wrap > .mono {
+  color: var(--steel);
+  margin-bottom: 0.8rem;
+}
+
+.wire-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 28rem;
+}
+
+.wire-table th {
+  text-align: left;
+  color: var(--steel);
+  font-weight: 500;
+  padding: 0.55rem 0.7rem 0.55rem 0;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.wire-table td {
+  padding: 0.7rem 0.7rem 0.7rem 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: baseline;
+}
+
+.wire-table td.display {
+  font-size: clamp(1.35rem, 3vw, 1.9rem);
+}
+
+.wire-diagram {
+  margin: 2rem 0 2.4rem;
+}
+
+.wire-diagram svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wire-diagram line,
+.wire-diagram path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+.wire-diagram circle,
+.wire-diagram rect {
+  fill: var(--ink);
+}
+
+.wire-diagram .ghost {
+  stroke: var(--steel);
+  stroke-dasharray: 5 5;
+  stroke-width: 1.5;
+}
+
+.wire-diagram .arc {
+  stroke: var(--crown);
+  fill: none;
+  stroke-width: 2.5;
+}
+
+.wire-diagram text {
+  fill: var(--ink);
+  font-family: var(--font-mono), "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.wire-diagram .theta {
+  fill: var(--crown);
+  font-family: var(--font-display), Oswald, sans-serif;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+.wire-diagram .muted {
+  fill: var(--steel);
+  font-size: 9px;
+}
+
+.wire-diagram figcaption {
+  margin-top: 0.7rem;
+  color: var(--steel);
+}
+
+.wire-calc {
+  margin: 2rem 0 2.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line-strong);
+}
+
+.wire-calc-fields {
+  display: grid;
+}
+
+@media (min-width: 640px) {
+  .wire-calc-fields {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wire-calc-fields .field:last-child {
+    padding-left: 1rem;
+    border-left: 1px solid var(--line);
+  }
+}
+
+.wire-calc-out {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+
+@media (min-width: 640px) {
+  .wire-calc-out {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.wire-calc-out dt {
+  color: var(--steel);
+  margin-bottom: 0.25rem;
+}
+
+.wire-calc-out dd {
+  font-size: clamp(2rem, 6vw, 3.4rem);
+}
+
+.wire-calc-warn {
+  margin-top: 1rem;
+  color: var(--crown);
+}
+
+.wire-calc-note {
+  margin-top: 1rem;
+}
+
+.wire-safety {
+  display: grid;
+  gap: 1rem;
+  max-width: 38rem;
+  margin-top: 3.4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line-strong);
+}
+
+.wire-safety-links a {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 0.8rem;
+  align-items: baseline;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.wire-safety-links a:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.wire-safety-links strong {
+  font-size: clamp(1.3rem, 2.4vw, 1.85rem);
+}
+
+.wire-related {
+  margin-top: 4rem;
+}
+
+.wire-sub {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.wire-sub-form {
+  max-width: 28rem;
+  margin-top: 0.5rem;
+}
+
 /* ——— Footer ——— */
 .footer {
   background: var(--ink);
@@ -1075,7 +1514,6 @@ html[data-theme="dark"] .switch-paddle {
   .grain,
   .overlay,
   .doc-nav,
-  .hero-ctas,
   .btn {
     display: none !important;
   }

@@ -30,7 +30,8 @@ export default function PhilosophyPage() {
         <p className="lede">
           Competent people matter. Safety information should be accessible.
           Documentation should be useful. Management should keep its promises.
-          If WHOOP says it will show up, WHOOP shows up.
+          We are a union-friendly shop. If WHOOP says it will show up, WHOOP
+          shows up.
         </p>
       </div>
       <section className="section wrap">

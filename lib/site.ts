@@ -3,19 +3,34 @@ export const SITE = {
   descriptor: "CRANE + RIGGING",
   phone: "1 604 431 2000",
   phoneHref: "tel:+16044312000",
-  email: "hire@whoop.ca",
-  emailHref: "mailto:hire@whoop.ca",
+  email: "hire@whoopp.ca",
+  emailHref: "mailto:hire@whoopp.ca",
   location: "Vancouver, Canada",
   tagline: "WE MOVE HEAVY THINGS.",
   sub: "AND WE SHOW YOU HOW WE DO IT.",
+  union: "UNION FRIENDLY SHOP",
+} as const;
+
+export const COR = {
+  mark: "COR® Certified",
+  title: "Certificate of Recognition",
+  partner: "BC Construction Safety Alliance",
+  partnerUrl: "https://www.bccsa.ca/cor_program.php",
+  program: "WorkSafeBC Certificate of Recognition",
+  /** Licensed BCCSA COR® mark. Drop the official file at this path. */
+  asset: "/cor/bccsa-cor-certified.png",
+  certificateNumber: "",
+  certifiedDate: "",
+  classification: "",
 } as const;
 
 export const NAV = [
   { href: "/", label: "WORK", num: "01" },
   { href: "/crew", label: "THE CREW", num: "02" },
   { href: "/safety", label: "SAFETY PROGRAM", num: "03" },
-  { href: "/philosophy", label: "PHILOSOPHY", num: "04" },
-  { href: "/hire", label: "HIRE A CREW", num: "05" },
+  { href: "/whoopwire", label: "WHOOPWIRE", num: "04" },
+  { href: "/philosophy", label: "PHILOSOPHY", num: "05" },
+  { href: "/hire", label: "HIRE A CREW", num: "06" },
 ] as const;
 
 export const SERVICES = [
@@ -68,6 +83,10 @@ export const BELIEFS = [
   {
     title: "Workers should be treated with respect.",
     body: "We supply people, not units. Competent tradespeople get briefed, paid correctly and backed when they refuse unsafe work.",
+  },
+  {
+    title: "We are a union-friendly shop.",
+    body: "We work with union members and respect the agreements on the site. That is how this work gets done. It is not a problem we manage around.",
   },
   {
     title: "Customers should know exactly what they are getting.",

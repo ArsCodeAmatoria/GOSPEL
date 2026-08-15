@@ -37,9 +37,15 @@ export default function SafetyIndexPage() {
           </Link>
         ))}
       </nav>
-      <p className="lede mt-2" style={{ paddingBottom: "5rem" }}>
+      <p className="lede mt-2">
         Read it on a phone at the gate. Print a section if you need it on paper.
         If you cannot work this way, do not hire us.
+      </p>
+      <p className="lede mt" style={{ paddingBottom: "5rem" }}>
+        WHOOP is COR® Certified through the BC Construction Safety Alliance.
+        That certification is of our occupational health and safety management
+        system — not a claim that incidents will never occur.{" "}
+        <Link href="/#cor">COR CERTIFIED →</Link>
       </p>
     </div>
   );

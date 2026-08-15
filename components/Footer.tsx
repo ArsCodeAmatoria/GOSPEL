@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { SITE } from "@/lib/site";
+import { CorMark } from "@/components/CorMark";
+import { COR, SITE } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -11,6 +12,8 @@ export function Footer() {
         <nav className="footer-links mono">
           <Link href="/hire">HIRE A CREW</Link>
           <Link href="/safety">SAFETY PROGRAM</Link>
+          <Link href="/whoopwire">WHOOPWIRE</Link>
+          <Link href="/#cor">COR CERTIFIED</Link>
           <Link href="/crew">THE CREW</Link>
           <Link href="/philosophy">PHILOSOPHY</Link>
           <a href={SITE.phoneHref}>{SITE.phone}</a>
@@ -22,9 +25,22 @@ export function Footer() {
         <br />
         {SITE.sub}
       </p>
+      <div className="footer-cred">
+        <CorMark className="cor-mark cor-mark-foot" />
+        <p className="mono">
+          {COR.mark}
+          <br />
+          Certifying partner:{" "}
+          <a href={COR.partnerUrl} rel="noreferrer" target="_blank">
+            {COR.partner}
+          </a>
+          <br />
+          {SITE.union}
+        </p>
+      </div>
       <div className="footer-bot mono">
         <span>© {new Date().getFullYear()} WHOOP</span>
-        <span>PEOPLE. COMPETENCY. RELIABILITY. LIFTING.</span>
+        <span>PEOPLE. COMPETENCY. RELIABILITY. {SITE.union}.</span>
       </div>
     </footer>
   );

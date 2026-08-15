@@ -61,6 +61,7 @@ export function Header() {
           ))}
         </nav>
         <div className="overlay-foot mono">
+          <span>{SITE.union}</span>
           <span>{SITE.location}</span>
           <a href={SITE.phoneHref}>{SITE.phone}</a>
           <a href={SITE.emailHref}>{SITE.email}</a>

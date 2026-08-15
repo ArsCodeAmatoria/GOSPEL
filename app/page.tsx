@@ -1,38 +1,35 @@
 import Link from "next/link";
+import { CorSection } from "@/components/CorSection";
 import { MapleDot } from "@/components/MapleLeaf";
 import { ProcedureSteps } from "@/components/ProcedureSteps";
+import { WireStoryLink } from "@/components/WireStoryLink";
 import { CREW } from "@/lib/crew";
 import { RIGGING_A_LOAD, SAFETY } from "@/lib/safety";
 import { BELIEFS, PLACEMENT, PRINCIPLES, SERVICES, SITE } from "@/lib/site";
+import { WIRE, getLatest, summarize } from "@/lib/whoopwire";
 
 export default function HomePage() {
   return (
     <>
       <section className="hero wrap">
-        <div className="hero-meta mono">
-          <span>VANCOUVER</span>
-          <span>CANADA</span>
-        </div>
-        <div className="hero-lines">
+        <p className="mono kicker">CANADA — {SITE.descriptor}</p>
+        <div className="hero-title">
           <h1 className="display">
-            <span>CRANE.</span>
-          </h1>
-          <h1 className="display">
-            <span>RIGGING.</span>
-          </h1>
-          <h1 className="display">
-            <span>
-              PEOPLE
-              <MapleDot />
-            </span>
+            WE SUPPLY
+            <br />
+            THE PEOPLE
+            <br />
+            WHO LIFT.
+            <MapleDot />
           </h1>
         </div>
-        <div className="hero-bottom">
+        <div className="hero-foot">
           <p className="lede">
-            Reliable crane operators, riggers and lifting crews for construction
-            and industrial work.
+            Crane operators, riggers and lifting crews for construction and
+            industrial work. Not a school. Not a rental yard. A union-friendly
+            shop.
           </p>
-          <div className="hero-ctas">
+          <div className="inline-cta">
             <Link className="btn btn-solid" href="/hire">
               HIRE A CREW
             </Link>
@@ -81,10 +78,50 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="section" id="safety">
+        <div className="wrap">
+          <p className="mono kicker">02 — OPEN BOOK</p>
+          <h2 className="display giant">
+            OUR SAFETY
+            <br />
+            PROGRAM
+            <br />
+            IS OPEN.
+          </h2>
+          <p className="lede-lg mt-2">Open to everyone.</p>
+          <p className="lede mt">
+            Safety isn&apos;t proprietary. Clients, workers and contractors
+            should be able to see how we expect work to be performed before they
+            hire us.
+          </p>
+          <div className="inline-cta">
+            <Link className="btn btn-solid" href="/safety">
+              READ THE PROGRAM
+            </Link>
+            <Link className="btn btn-ghost" href="/hire">
+              HIRE A CREW
+            </Link>
+          </div>
+        </div>
+        <nav className="wrap safety-index mt-2" aria-label="Safety program">
+          {SAFETY.map((s) => (
+            <Link href={`/safety/${s.slug}`} key={s.slug}>
+              <span className="mono steel">{s.num}</span>
+              <span>
+                <strong>{s.title}</strong>
+                <em>{s.kicker}</em>
+              </span>
+            </Link>
+          ))}
+        </nav>
+      </section>
+
+      <CorSection />
+
       <section className="section wrap">
         <div className="split top">
           <div>
-            <p className="mono kicker">02 — COMPETENCY</p>
+            <p className="mono kicker">04 — COMPETENCY</p>
             <h2 className="display giant">
               A TICKET
               <br />
@@ -120,45 +157,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="wrap">
-          <p className="mono kicker">03 — OPEN BOOK</p>
-          <h2 className="display giant">
-            OUR SAFETY
-            <br />
-            PROGRAM
-            <br />
-            IS OPEN.
-          </h2>
-          <p className="lede mt-2">
-            Safety isn&apos;t proprietary. Clients, workers and contractors
-            should be able to see how we expect work to be performed before they
-            hire us.
-          </p>
-          <div className="inline-cta">
-            <Link className="btn btn-solid" href="/safety">
-              READ THE PROGRAM
-            </Link>
-            <Link className="btn btn-ghost" href="/hire">
-              HIRE A CREW
-            </Link>
-          </div>
-        </div>
-        <nav className="wrap safety-index mt-2" aria-label="Safety program">
-          {SAFETY.map((s) => (
-            <Link href={`/safety/${s.slug}`} key={s.slug}>
-              <span className="mono steel">{s.num}</span>
-              <span>
-                <strong>{s.title}</strong>
-                <em>{s.kicker}</em>
-              </span>
-            </Link>
-          ))}
-        </nav>
-      </section>
-
       <section className="section wrap">
-        <p className="mono kicker">04 — USABLE PROCEDURES</p>
+        <p className="mono kicker">05 — USABLE PROCEDURES</p>
         <h2 className="display giant">
           RIGGING
           <br />
@@ -180,12 +180,12 @@ export default function HomePage() {
       <section className="section wrap">
         <div className="split">
           <div>
-            <p className="mono kicker">05 — THE PEOPLE</p>
+            <p className="mono kicker">06 — THE PEOPLE</p>
             <h2 className="display giant">THE CREW</h2>
           </div>
           <p className="lede">
-            Crane operators. Riggers. Signalpersons. Supervisors. Matched to the
-            work. Verified before they arrive.
+            {SITE.union}. Crane operators. Riggers. Signalpersons. Supervisors.
+            Matched to the work. Verified before they arrive.
           </p>
         </div>
         <div className="mt-2">
@@ -204,7 +204,7 @@ export default function HomePage() {
       </section>
 
       <section className="section wrap">
-        <p className="mono kicker">06 — HOW WE THINK</p>
+        <p className="mono kicker">07 — HOW WE THINK</p>
         <h2 className="display giant">
           NO BULLSHIT.
           <br />
@@ -227,8 +227,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="section wrap" id="whoopwire">
+        <p className="mono kicker">08 — WHOOPWIRE</p>
+        <h2 className="display giant">WHOOPWIRE</h2>
+        <p className="mono mt">{WIRE.descriptor}</p>
+        <div className="wire-stack mt-2">
+          {getLatest(3).map((story) => (
+            <WireStoryLink key={story.slug} story={summarize(story)} size="home" />
+          ))}
+        </div>
+        <div className="inline-cta">
+          <Link className="btn btn-solid" href="/whoopwire">
+            READ WHOOPWIRE →
+          </Link>
+        </div>
+      </section>
+
       <section className="section wrap">
-        <p className="mono kicker">07 — START</p>
+        <p className="mono kicker">09 — START</p>
         <h2 className="display giant">HIRE A CREW</h2>
         <div className="contact-rail mt">
           <a className="contact-hit" href={SITE.phoneHref}>
