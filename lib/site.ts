@@ -9,7 +9,39 @@ export const SITE = {
   tagline: "WE MOVE HEAVY THINGS.",
   sub: "AND WE SHOW YOU HOW WE DO IT.",
   union: "UNION FRIENDLY SHOP",
+  position: "A safety company that supplies a workforce.",
 } as const;
+
+export const STANDARDS = [
+  {
+    name: "CSA Z150 / Z248",
+    body: "Safety code on mobile cranes. Code for tower cranes.",
+  },
+  {
+    name: "WorkSafeBC",
+    body: "Occupational Health and Safety Regulation, including Part 14 — Cranes and Hoists.",
+  },
+  {
+    name: "BC Crane Safety",
+    body: "Crane operator certification and competency requirements in British Columbia.",
+  },
+  {
+    name: "Technical Safety BC",
+    body: "Applicable technical safety requirements for regulated equipment.",
+  },
+  {
+    name: "ASME B30",
+    body: "Cranes, derricks, hoists, slings and related lifting equipment.",
+  },
+  {
+    name: "Manufacturer requirements",
+    body: "Load charts, manuals and configuration limits for the machine on site.",
+  },
+  {
+    name: "Site policies",
+    body: "The client's site rules, orientations and lift plans. Where they are stricter, they win.",
+  },
+] as const;
 
 export const COR = {
   mark: "COR® Certified",

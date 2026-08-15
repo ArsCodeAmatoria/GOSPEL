@@ -10,7 +10,7 @@ function readTheme(): "light" | "dark" {
 }
 
 export function ThemeSwitch() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark" | null>(null);
 
   useEffect(() => {
     setTheme(readTheme());
@@ -27,18 +27,42 @@ export function ThemeSwitch() {
     }
   }
 
+  if (!theme) {
+    return <div className="switch-shell switch-pending" aria-hidden />;
+  }
+
   const lightsOn = theme === "light";
 
   return (
     <button
       type="button"
-      className="switch"
+      className={`switch-shell${lightsOn ? " is-on" : ""}`}
       role="switch"
       aria-checked={lightsOn}
-      aria-label={lightsOn ? "Lights on. Switch to dark mode." : "Lights off. Switch to light mode."}
+      aria-label={
+        lightsOn
+          ? "Lights on. Switch to dark mode."
+          : "Lights off. Switch to light mode."
+      }
       onClick={toggle}
     >
-      <span className="switch-paddle" aria-hidden />
+      <span className="switch-housing">
+        <span className="switch-track">
+          <span className="switch-mark switch-mark-on">ON</span>
+          <span className="switch-mark switch-mark-off">OFF</span>
+        </span>
+        <span className="switch-knob" aria-hidden>
+          <span className="switch-knob-face">
+            <span className="switch-knob-dot" />
+            <span className="switch-grips">
+              <span />
+              <span />
+              <span />
+            </span>
+          </span>
+        </span>
+        <span className="switch-led" aria-hidden />
+      </span>
     </button>
   );
 }

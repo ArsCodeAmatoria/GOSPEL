@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CorSection } from "@/components/CorSection";
 import { MapleDot } from "@/components/MapleLeaf";
 import { ProcedureSteps } from "@/components/ProcedureSteps";
+import { StandardsList } from "@/components/StandardsList";
 import { WireStoryLink } from "@/components/WireStoryLink";
 import { CREW } from "@/lib/crew";
 import { RIGGING_A_LOAD, SAFETY } from "@/lib/safety";
@@ -15,19 +16,24 @@ export default function HomePage() {
         <p className="mono kicker">CANADA — {SITE.descriptor}</p>
         <div className="hero-title">
           <h1 className="display">
-            WE SUPPLY
+            WE
             <br />
-            THE PEOPLE
+            SUPPLY
             <br />
-            WHO LIFT.
+            THE
+            <br />
+            PEOPLE
+            <br />
+            WHO
+            <br />
+            LIFT.
             <MapleDot />
           </h1>
         </div>
         <div className="hero-foot">
           <p className="lede">
-            Crane operators, riggers and lifting crews for construction and
-            industrial work. Not a school. Not a rental yard. A union-friendly
-            shop.
+            {SITE.position} Crane operators, riggers and lifting crews. Not a
+            school. Not a rental yard. A union-friendly shop.
           </p>
           <div className="inline-cta">
             <Link className="btn btn-solid" href="/hire">
@@ -88,12 +94,20 @@ export default function HomePage() {
             <br />
             IS OPEN.
           </h2>
-          <p className="lede-lg mt-2">Open to everyone.</p>
+          <p className="lede-lg mt-2">{SITE.position}</p>
           <p className="lede mt">
-            Safety isn&apos;t proprietary. Clients, workers and contractors
-            should be able to see how we expect work to be performed before they
-            hire us.
+            Open to everyone. Safety isn&apos;t proprietary. Clients, workers
+            and contractors should be able to see how we expect work to be
+            performed before they hire us.
           </p>
+          <div id="standards">
+            <p className="mono steel mt-2">WHAT THE WORK IS DONE TO</p>
+            <p className="lede mt">
+              Where these conflict, the stricter applicable requirement wins.
+              Law always wins.
+            </p>
+            <StandardsList />
+          </div>
           <div className="inline-cta">
             <Link className="btn btn-solid" href="/safety">
               READ THE PROGRAM

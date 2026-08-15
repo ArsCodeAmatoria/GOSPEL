@@ -38,6 +38,11 @@ export function Footer() {
           {SITE.union}
         </p>
       </div>
+      <p className="mono footer-std">
+        <Link href="/#standards">Work done to</Link> CSA Z150 / Z248, WorkSafeBC,
+        BC Crane Safety, Technical Safety BC, ASME B30, manufacturer
+        requirements and site policies.
+      </p>
       <div className="footer-bot mono">
         <span>© {new Date().getFullYear()} WHOOP</span>
         <span>PEOPLE. COMPETENCY. RELIABILITY. {SITE.union}.</span>

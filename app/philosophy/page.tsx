@@ -23,9 +23,9 @@ export default function PhilosophyPage() {
       </header>
       <div className="split wrap top" style={{ paddingBottom: "4rem" }}>
         <p className="lede-lg">
-          WHOOP is a Canadian crane and rigging workforce company. We supply
-          operators, riggers, signalpersons and crews. We are not a school, not
-          a rental yard, and not a consultancy.
+          WHOOP is a safety company that supplies a crane and rigging workforce.
+          We supply operators, riggers, signalpersons and crews. We are not a
+          school, not a rental yard, and not a consultancy.
         </p>
         <p className="lede">
           Competent people matter. Safety information should be accessible.

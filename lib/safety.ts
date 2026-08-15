@@ -57,7 +57,7 @@ export const SAFETY: SafetySection[] = [
     title: "COMPANY SAFETY POLICY",
     kicker: "The standard is not a poster.",
     intro:
-      "WHOOP supplies crane operators, riggers, signalpersons and lifting crews. We do not rent cranes. We do not train the public. We place competent people on lifting work — and we expect that work to be done to a published standard.",
+      "WHOOP is a safety company that supplies a workforce. We supply crane operators, riggers, signalpersons and lifting crews. We do not rent cranes. We do not train the public. We place competent people on lifting work — and we expect that work to be done to a published standard.",
     blocks: [
       {
         type: "quote",
@@ -123,8 +123,29 @@ export const SAFETY: SafetySection[] = [
         ],
       },
       {
+        type: "h",
+        text: "WHAT THE WORK IS DONE TO",
+      },
+      {
         type: "p",
-        text: "WHOOP operates in Canada. Provincial occupational health and safety statutes, regulations and codes of practice apply on the site where the work is performed. This program is written to sit on top of that law, not beside it.",
+        text: "WHOOP is a safety company that supplies a workforce. Lifting work is performed in accordance with the following. Where they conflict, the stricter applicable requirement wins. Law always wins. This program is written to sit on top of that stack, not beside it.",
+      },
+      {
+        type: "list",
+        items: [
+          "CSA Z150 — Safety Code on Mobile Cranes.",
+          "CSA Z248 — Code for Tower Cranes.",
+          "WorkSafeBC Occupational Health and Safety Regulation, including Part 14 — Cranes and Hoists.",
+          "BC Crane Safety — crane operator certification and competency requirements in British Columbia.",
+          "Technical Safety BC — applicable technical safety requirements for regulated equipment.",
+          "ASME B30 — cranes, derricks, hoists, slings and related lifting equipment.",
+          "Manufacturer requirements — load charts, manuals and configuration limits for the machine on site.",
+          "Site policies — the client’s site rules, orientations and lift plans. Where they are stricter, they win.",
+        ],
+      },
+      {
+        type: "p",
+        text: "WHOOP operates in Canada. Provincial occupational health and safety statutes, regulations and codes of practice apply on the site where the work is performed.",
       },
     ],
   },
@@ -427,7 +448,7 @@ export const SAFETY: SafetySection[] = [
     title: "RIGGING",
     kicker: "The gear is the truth. The guess is the hazard.",
     intro:
-      "WHOOP riggers rig to rated capacity, known weights and inspected hardware. We do not “make it work” with a choker and optimism.",
+      "WHOOP riggers rig to rated capacity, known weights and inspected hardware. We do not “make it work” with a choker and optimism. Rigging is done to ASME B30, manufacturer instructions for the hardware, and the site.",
     blocks: [
       {
         type: "h",
@@ -496,7 +517,7 @@ export const SAFETY: SafetySection[] = [
     title: "CRANE OPERATIONS",
     kicker: "The chart is the law of the machine.",
     intro:
-      "WHOOP operators run cranes they are competent on, to the load chart, on ground that can hold them, with a crew they can hear. If those conditions are not present, the crane does not come on load.",
+      "WHOOP operators run cranes they are competent on, to the load chart, on ground that can hold them, with a crew they can hear. The operator works to CSA Z150 or Z248 as the machine requires, ASME B30, the manufacturer, WorkSafeBC, and the site. If those conditions are not present, the crane does not come on load.",
     blocks: [
       {
         type: "h",
@@ -787,7 +808,7 @@ export const SAFETY: SafetySection[] = [
         items: [
           {
             title: "Qualifications",
-            body: "Trade tickets, operator certifications, signalperson and rigger credentials, and any site-required training. Originals or verifiable records. Expired means not dispatched.",
+            body: "Trade tickets, operator certifications through the BC Crane Safety system where the work requires it, signalperson and rigger credentials, and any site-required training. Originals or verifiable records. Expired means not dispatched.",
           },
           {
             title: "Experience",

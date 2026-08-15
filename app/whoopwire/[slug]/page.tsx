@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { WireBlocks } from "@/components/WireBlocks";
+import { WireFeed } from "@/components/WireFeed";
 import { WireStoryLink } from "@/components/WireStoryLink";
 import { WireSubscribe } from "@/components/WireSubscribe";
 import { getSafety } from "@/lib/safety";
@@ -139,6 +140,8 @@ export default async function WireArticlePage({ params }: Props) {
           </Link>
         </div>
       )}
+
+      <WireFeed slug={article.slug} />
 
       {related.length ? (
         <section className="wire-related">

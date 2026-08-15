@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { StandardsList } from "@/components/StandardsList";
 import { SAFETY } from "@/lib/safety";
+import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Safety Program",
   description:
-    "WHOOP's safety program is open. Read how we expect crane and rigging work to be performed before you hire us.",
+    "WHOOP is a safety company that supplies a workforce. Read how we expect crane and rigging work to be performed — CSA Z150 / Z248, WorkSafeBC, BC Crane Safety, Technical Safety BC, ASME B30, manufacturer requirements and site policies.",
 };
 
 export default function SafetyIndexPage() {
@@ -21,9 +23,10 @@ export default function SafetyIndexPage() {
           IS OPEN.
         </h1>
         <p className="lede mt-2">
-          Safety isn&apos;t proprietary. Clients, workers and contractors should
-          be able to see how we expect work to be performed before they hire us.
-          No request form. No expiring link. No PDF as the primary experience.
+          {SITE.position} Safety isn&apos;t proprietary. Clients, workers and
+          contractors should be able to see how we expect work to be performed
+          before they hire us. No request form. No expiring link. No PDF as the
+          primary experience.
         </p>
       </header>
       <nav className="safety-index" aria-label="Safety program sections">
@@ -41,6 +44,14 @@ export default function SafetyIndexPage() {
         Read it on a phone at the gate. Print a section if you need it on paper.
         If you cannot work this way, do not hire us.
       </p>
+      <div id="standards" className="mt-2">
+        <p className="mono steel">WHAT THE WORK IS DONE TO</p>
+        <p className="lede mt">
+          Where these conflict, the stricter applicable requirement wins. Law
+          always wins.
+        </p>
+        <StandardsList />
+      </div>
       <p className="lede mt" style={{ paddingBottom: "5rem" }}>
         WHOOP is COR® Certified through the BC Construction Safety Alliance.
         That certification is of our occupational health and safety management
