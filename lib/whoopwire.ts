@@ -27,8 +27,8 @@ export type WireBlock =
   | { type: "image"; src: string; alt: string; caption?: string }
   | { type: "formula"; expr: string; note?: string }
   | { type: "table"; caption?: string; columns: string[]; rows: string[][] }
-  | { type: "diagram"; name: "sling-sin" }
-  | { type: "calc"; name: "sling-sin" }
+  | { type: "diagram"; name: "sling-sin" | "boom-trig" }
+  | { type: "calc"; name: "sling-sin" | "boom-trig" }
   | { type: "cta"; href: string; label: string };
 
 export type WireArticle = {

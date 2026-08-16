@@ -1,3 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32">
-  <text x="32" y="24" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="22" font-weight="800" fill="#101010" letter-spacing="-1">WHOOP</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <rect width="24" height="24" fill="#101010"/>
+  <g fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 14a2 2 0 0 0 2-2V8h-2"/>
+    <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/>
+    <path d="M8 14a2 2 0 0 0 2-2V8H8"/>
+  </g>
 </svg>

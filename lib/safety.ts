@@ -6,7 +6,17 @@ export type Block =
   | { type: "quote"; text: string }
   | { type: "list"; items: string[] }
   | { type: "steps"; items: Step[] }
-  | { type: "rules"; items: { title: string; body: string }[] };
+  | { type: "rules"; items: { title: string; body: string }[] }
+  | { type: "cta"; href: string; label: string }
+  | { type: "table"; caption?: string; columns: string[]; rows: string[][] };
+
+export type SafetyLibraryKind =
+  | "swp"
+  | "jha"
+  | "policy"
+  | "form"
+  | "sds"
+  | "report";
 
 export type SafetySection = {
   num: string;
@@ -14,6 +24,7 @@ export type SafetySection = {
   title: string;
   kicker: string;
   intro: string;
+  library?: SafetyLibraryKind;
   blocks: Block[];
 };
 
@@ -92,6 +103,11 @@ export const SAFETY: SafetySection[] = [
           "A training course. Competency is verified before placement; this document does not make someone competent.",
           "A COR consultancy, a formwork manual, or a crane rental policy.",
         ],
+      },
+      {
+        type: "cta",
+        href: "/safety/ohs-policies",
+        label: "13 — OH&S POLICIES →",
       },
       {
         type: "h",
@@ -294,11 +310,16 @@ export const SAFETY: SafetySection[] = [
     title: "SAFE WORK PROCEDURES",
     kicker: "A procedure you cannot use is not a procedure.",
     intro:
-      "Safe Work Procedures (SWPs) cover types of work WHOOP personnel perform repeatedly. They are written as sequences because lifting is a sequence. Read them in order. Do them in order.",
+      "Safe Work Procedures (SWPs) cover types of work WHOOP personnel perform repeatedly. They are written as sequences because lifting is a sequence. Read them in order. Do them in order. Hazards for that work are in the JHA — not buried in the procedure.",
     blocks: [
       {
         type: "p",
         text: "SWPs live in this program so they can be read on a phone at the gate. They are the default method. A site may impose a stricter method. A site may not impose a looser one on WHOOP personnel.",
+      },
+      {
+        type: "cta",
+        href: "/safety/swp-library",
+        label: "14 — SWP LIBRARY — 25 PROCEDURES →",
       },
       {
         type: "h",
@@ -385,7 +406,12 @@ export const SAFETY: SafetySection[] = [
     blocks: [
       {
         type: "p",
-        text: "An SJP is not a longer SWP. It is the SWP plus the facts of this job: weights, radii, drawings, engineered requirements, weather limits, names, radios, and the abort criteria.",
+        text: "An SJP is not a longer SWP. It is the SWP plus the facts of this job: weights, radii, drawings, engineered requirements, weather limits, names, radios, and the abort criteria. The JHA library is the hazard analysis for the same work — not another set of steps.",
+      },
+      {
+        type: "cta",
+        href: "/safety/jha-library",
+        label: "15 — JHA LIBRARY →",
       },
       {
         type: "h",
@@ -669,6 +695,7 @@ export const SAFETY: SafetySection[] = [
           "Near misses: someone in the zone, a lost signal that almost mattered, a sling that started to cut.",
           "Property and equipment damage.",
           "A stop-work event that revealed a broken plan.",
+          "Bullying or harassment toward a WHOOP worker — including on a client site.",
         ],
       },
       {
@@ -717,6 +744,40 @@ export const SAFETY: SafetySection[] = [
       {
         type: "p",
         text: "Workers will not be punished for reporting in good faith or for refusing unsafe work. They will be held accountable for lying, tampering with a scene, or continuing a lift after a stop criterion was met.",
+      },
+      {
+        type: "h",
+        text: "REPORT NOW",
+      },
+      {
+        type: "cta",
+        href: "/safety/report/incident",
+        label: "REPORT AN INCIDENT →",
+      },
+      {
+        type: "cta",
+        href: "/safety/report/near-miss",
+        label: "REPORT A NEAR MISS →",
+      },
+      {
+        type: "cta",
+        href: "/safety/report/hazard",
+        label: "REPORT A HAZARD →",
+      },
+      {
+        type: "cta",
+        href: "/safety/report/damaged-rigging",
+        label: "REPORT DAMAGED RIGGING →",
+      },
+      {
+        type: "cta",
+        href: "/safety/report/equipment-defect",
+        label: "REPORT AN EQUIPMENT DEFECT →",
+      },
+      {
+        type: "cta",
+        href: "/safety/report/bullying-harassment",
+        label: "REPORT BULLYING OR HARASSMENT →",
       },
     ],
   },
@@ -785,6 +846,59 @@ export const SAFETY: SafetySection[] = [
         type: "p",
         text: "Stay on the crane unless it is on fire or you are being shocked. Do not let anyone approach. Call the utility. If you must get off, jump clear with feet together and shuffle away. This is briefed on any site with overhead lines — not discovered during the contact.",
       },
+      {
+        type: "h",
+        text: "CRANE AND RIGGING EMERGENCIES",
+      },
+      {
+        type: "rules",
+        items: [
+          {
+            title: "Crane incident",
+            body: "Stop. People first. Land or hold only if it does not create a second event. Notify the site and WHOOP. Hold the scene. WHOOP-SWP-024.",
+          },
+          {
+            title: "Crane overturn",
+            body: "Do not jump toward the fall. Get people back. First aid. Utility and emergency services if lines or fuel are involved. Do not right the crane as a hero move.",
+          },
+          {
+            title: "Dropped load",
+            body: "Stop. Clear the zone. First aid. Do not rush in to look. Secure if it can be done without entering an unstable pile. Report as an incident.",
+          },
+          {
+            title: "Rigging failure",
+            body: "Stop. Isolate the failed gear — tag it, get it off the pile. Check people. Re-rig only with serviceable gear and a reset brief.",
+          },
+          {
+            title: "Serious injury",
+            body: "Make it safe. First aid. Emergency services. Do not move the person unless they are in immediate danger. Notify WHOOP immediately.",
+          },
+          {
+            title: "Electrical / powerline contact",
+            body: "Stay on the crane unless fire or shock. Nobody approaches. Call the utility. Jump clear, feet together, shuffle away only if you must get off. Brief this before the lift.",
+          },
+          {
+            title: "Fire",
+            body: "Small and trained: extinguisher in the cab. Otherwise get off, keep people back, call the site emergency number. Fuel and hydraulics are not a trash-fire.",
+          },
+          {
+            title: "Severe weather",
+            body: "Land the load. Manufacturer shutdown. People off the machine. Lightning: boom down. Resume only when the plan says so.",
+          },
+          {
+            title: "Equipment failure",
+            body: "Stop. Crane down if it affects lifting. Report the defect. Do not restart to see if it does it again.",
+          },
+          {
+            title: "Emergency shutdown",
+            body: "Load landed if possible. Controls isolated. Access secured. Follow the manufacturer for this machine.",
+          },
+          {
+            title: "Worker rescue",
+            body: "Fall arrest rescue is part of the plan before anyone ties off. Suspension trauma is on the clock. Do not improvise a crane-as-rescue unless that operation is permitted and planned.",
+          },
+        ],
+      },
     ],
   },
   {
@@ -847,6 +961,69 @@ export const SAFETY: SafetySection[] = [
       {
         type: "p",
         text: "Junior personnel, when placed, are placed under named supervision with a defined scope. They are not “figured out on site.” Competency is not contagious.",
+      },
+      {
+        type: "h",
+        text: "CRANE OPERATORS",
+      },
+      {
+        type: "list",
+        items: [
+          "Qualification — BC Crane Safety certificate for the class, current.",
+          "Equipment-specific competency — this boom type, this tonnage, this configuration.",
+          "Load charts — deductions, radius, outrigger position, jib. If they cannot read this chart, they do not run this crane.",
+          "Inspections — pre-use as the manufacturer and Part 14 require.",
+          "Operating procedures — this program, the site, the plan.",
+        ],
+      },
+      {
+        type: "h",
+        text: "RIGGERS",
+      },
+      {
+        type: "list",
+        items: [
+          "Sling selection, hardware, hitch configurations.",
+          "Sling angles — sin from the horizontal, WLL after the hitch.",
+          "Load weight and centre of gravity — confirmed, not remembered.",
+          "Load control and tag lines.",
+          "Rigging inspection and rejection.",
+          "Communication and lift planning as assigned.",
+        ],
+      },
+      {
+        type: "h",
+        text: "SIGNALPERSONS",
+      },
+      {
+        type: "list",
+        items: [
+          "Standard hand signals.",
+          "Radio communication and the stop word.",
+          "Blind lifts — one voice, tested comms.",
+          "Stop signals that the operator will not interpret.",
+          "Crane coordination — zone, other cranes, people.",
+        ],
+      },
+      {
+        type: "h",
+        text: "COMPETENCY MATRIX",
+      },
+      {
+        type: "p",
+        text: "This matrix is the check before dispatch. It is how WHOOP matches people to the work.",
+      },
+      {
+        type: "table",
+        caption: "WHOOP crane and rigging competency — dispatch check. Not a training course.",
+        columns: ["ROLE", "QUALIFICATION", "MACHINE / TASK", "VERIFY"],
+        rows: [
+          ["Crane operator", "BC Crane Safety class, current", "This configuration and chart", "Ticket + experience + practical"],
+          ["Tower operator", "Tower class, current", "This tower / self-erecting machine", "Ticket + experience on tower work"],
+          ["Rigger", "Rigger credential as required", "Hitch, angle, hardware, inspection", "Practical: inspect, hitch, refuse"],
+          ["Signalperson", "Signalperson competency", "Hands and radio, including blind", "Demonstrate signals and STOP"],
+          ["Lift supervisor", "Experience on this class of lift", "Brief, zone, abort, critical plan", "Named on the plan"],
+        ],
       },
     ],
   },
@@ -916,8 +1093,209 @@ export const SAFETY: SafetySection[] = [
         text: "Workers are not units. Harassment, violence, racism, and “that’s just the trade” behaviour are not tolerated on a WHOOP dispatch. Report it. We act.",
       },
       {
+        type: "cta",
+        href: "/safety/policy/bullying-and-harassment",
+        label: "BULLYING AND HARASSMENT POLICY →",
+      },
+      {
         type: "p",
         text: "This section is a company commitment. It does not replace the occupational health and safety law of the province you are standing in. If you need the regulator, you can call them. We would rather you called us first — but you do not owe us that if you are in danger.",
+      },
+    ],
+  },
+  {
+    num: "13",
+    slug: "ohs-policies",
+    title: "OH&S POLICIES",
+    kicker: "The rules for crane and rigging work. Short enough to use.",
+    intro:
+      "These policies apply to crane operators, riggers, signalpersons and lifting supervisors WHOOP deploys. They are not a general construction manual.",
+    library: "policy",
+    blocks: [
+      {
+        type: "p",
+        text: "Each policy is a controlled document: number, revision 01, effective 2026-09-01, owner WHOOP Safety. The current version is the one on this site.",
+      },
+      {
+        type: "cta",
+        href: "/safety/policy/bullying-and-harassment",
+        label: "WHOOP-POL-017 — BULLYING AND HARASSMENT →",
+      },
+    ],
+  },
+  {
+    num: "14",
+    slug: "swp-library",
+    title: "SWP LIBRARY",
+    kicker: "Search the procedure. Do it in order.",
+    intro:
+      "Safe Work Procedures for mobile crane setup, operation, communication, rigging, powerlines, critical lifts and taking damaged gear out of service. They are the method — numbered steps. Hazards and residual risk live in the JHA library.",
+    library: "swp",
+    blocks: [
+      {
+        type: "p",
+        text: "WorkSafeBC requires written procedures for specified high-risk work (OHS Regulation B.C. Reg. 296/97). CCOHS describes an SWP as the step-by-step method. WHOOP SWPs are purpose, scope, procedure, competency, equipment, PPE, prohibited practices, emergency, documentation and the editions the Regulation names — CSA Z150-1998, CSA Z248-2004, ASME B30.5-2004, B30.22-2005. The matching JHA is the hazard analysis, not a second procedure.",
+      },
+      {
+        type: "cta",
+        href: "/safety/jha-library",
+        label: "15 — JHA LIBRARY →",
+      },
+    ],
+  },
+  {
+    num: "15",
+    slug: "jha-library",
+    title: "JHA LIBRARY",
+    kicker: "What can hurt you. What holds the risk.",
+    intro:
+      "Job Hazard Analyses name the hazards, the consequence, and the control. They are not procedures. Do the work to the SWP. WorkSafeBC does not mandate a JHA form — the Act requires workers to know the hazards. This is that document for crane and rigging work.",
+    library: "jha",
+    blocks: [
+      {
+        type: "p",
+        text: "CCOHS treats JHA and JSA as the same method: break the job into tasks, identify hazards at each task, select controls in hierarchy order — eliminate, substitute, engineer, administer, PPE last. Residual risk is named. If a stop condition exists, the job does not proceed. Workers Compensation Act s. 21(2)(b) and (e). OHS Regulation Parts 3, 4, 8, 11, 14 and 15.",
+      },
+      {
+        type: "cta",
+        href: "/safety/swp-library",
+        label: "14 — SWP LIBRARY →",
+      },
+    ],
+  },
+  {
+    num: "16",
+    slug: "safety-forms",
+    title: "SAFETY FORMS",
+    kicker: "The record of the lift.",
+    intro:
+      "Daily, lifting, incident, worker and inspection forms for crane and rigging work. Complete them in the field. They are the required record.",
+    library: "form",
+    blocks: [
+      {
+        type: "p",
+        text: "WHOOP does not ask you to invent a form on the tailgate. Use these. Site forms that are stricter or required by the client are used as well — not instead of the facts these forms capture.",
+      },
+      {
+        type: "cta",
+        href: "/safety/builder",
+        label: "FORM BUILDER — ASSEMBLE, FILL, PDF →",
+      },
+    ],
+  },
+  {
+    num: "17",
+    slug: "whmis-sds",
+    title: "WHMIS + SDS",
+    kicker: "Only what WHOOP crews actually meet.",
+    intro:
+      "WHOOP supplies people, not a warehouse. The SDS library is diesel, hydraulic oil, grease, penetrating oil, wire rope dressing, battery electrolyte and hand cleaner — products operators and riggers actually touch on a dispatch.",
+    library: "sds",
+    blocks: [
+      {
+        type: "h",
+        text: "WHMIS PROGRAM",
+      },
+      {
+        type: "list",
+        items: [
+          "Workers have the right to know about products they use on the lift and on the carrier.",
+          "Labels stay on. If a product is decanted, it is identified.",
+          "SDS for the products below are in this library — no login, no expiring link.",
+          "A product the site introduces is the site’s SDS. Ask before you use it.",
+          "Spill, fire and first aid follow the SDS and the site emergency plan.",
+        ],
+      },
+      {
+        type: "p",
+        text: "This is not a catalogue of construction chemicals. If WHOOP does not send you to use it, it is not in this library.",
+      },
+    ],
+  },
+  {
+    num: "18",
+    slug: "inspections",
+    title: "INSPECTIONS + CORRECTIVE ACTIONS",
+    kicker: "Finding → action → person → date → done → verified.",
+    intro:
+      "Inspections and actions for cranes, rigging, ground, zone and lifting PPE. Not a civil-site audit dressed up as a lift program.",
+    blocks: [
+      {
+        type: "h",
+        text: "WHAT WE INSPECT",
+      },
+      {
+        type: "list",
+        items: [
+          "Crane pre-use and defects that affect lifting",
+          "Rigging and below-the-hook gear",
+          "Outriggers, mats and supporting surface",
+          "Exclusion zone and access",
+          "Communication equipment",
+          "PPE used on the lift",
+          "Corrective actions from incidents and near misses on lifting work",
+        ],
+      },
+      {
+        type: "h",
+        text: "THE LOOP",
+      },
+      {
+        type: "steps",
+        items: [
+          { n: "01", title: "FINDING", body: "Name the defect, the missing control, or the broken plan." },
+          { n: "02", title: "ACTION", body: "Repair, replace, isolate, rewrite the plan, add a spotter, stop the lift." },
+          { n: "03", title: "RESPONSIBLE PERSON", body: "A named person. Not “the site.”" },
+          { n: "04", title: "DUE DATE", body: "Out-of-service gear is immediate, not next Tuesday." },
+          { n: "05", title: "COMPLETION", body: "Done, with evidence. Not a promise." },
+          { n: "06", title: "VERIFICATION", body: "A second set of eyes. Closed only when it is proven." },
+        ],
+      },
+      {
+        type: "cta",
+        href: "/safety/safety-forms",
+        label: "INSPECTION FORMS →",
+      },
+      {
+        type: "p",
+        text: "An orphan recommendation is not a control. Close the loop.",
+      },
+    ],
+  },
+  {
+    num: "19",
+    slug: "document-control",
+    title: "DOCUMENT CONTROL",
+    kicker: "The current version is the one on this site.",
+    intro:
+      "Controlled safety documents show number, revision, effective date, owner, approver and review date. This program is not behind an expiring link.",
+    blocks: [
+      {
+        type: "h",
+        text: "NUMBERING",
+      },
+      {
+        type: "list",
+        items: [
+          "WHOOP-POL — policies",
+          "WHOOP-SWP — safe work procedures",
+          "WHOOP-JHA — job hazard analyses",
+          "WHOOP-FRM — forms",
+          "WHOOP-SDS — safety data sheets in this library",
+          "WHOOP-RPT — field reports",
+        ],
+      },
+      {
+        type: "h",
+        text: "CURRENT VERSION",
+      },
+      {
+        type: "p",
+        text: "Revision 01. Effective 2026-09-01. Owner: WHOOP Safety. Approved by: WHOOP. Review by: 2027-09-01. Documents on this website are the current version. Printed copies are uncontrolled the moment they leave the screen — check the number and revision before you use a photocopy.",
+      },
+      {
+        type: "quote",
+        text: "If you cannot name the revision, you are not following the revision. You are following a printout.",
       },
     ],
   },

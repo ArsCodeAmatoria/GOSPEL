@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Oswald } from "next/font/google";
-import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { SiteFooter } from "@/components/SiteFooter";
 import "./globals.css";
 
 const display = Oswald({
@@ -21,6 +21,12 @@ const mono = IBM_Plex_Mono({
   variable: "--font-mono",
   weight: ["400", "500"],
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   title: {
@@ -56,7 +62,7 @@ export default function RootLayout({
         <main id="content" className="main">
           {children}
         </main>
-        <Footer />
+        <SiteFooter />
       </body>
     </html>
   );

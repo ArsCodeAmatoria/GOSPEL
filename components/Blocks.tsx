@@ -1,5 +1,6 @@
 import { ProcedureSteps } from "./ProcedureSteps";
 import type { Block } from "@/lib/safety";
+import Link from "next/link";
 
 export function Blocks({ blocks }: { blocks: Block[] }) {
   return (
@@ -23,6 +24,42 @@ export function Blocks({ blocks }: { blocks: Block[] }) {
           );
         if (block.type === "steps")
           return <ProcedureSteps key={i} items={block.items} />;
+        if (block.type === "cta") {
+          return (
+            <p className="doc-cta" key={i}>
+              <Link href={block.href}>{block.label}</Link>
+            </p>
+          );
+        }
+        if (block.type === "table") {
+          return (
+            <div className="wire-table-wrap" key={i}>
+              {block.caption ? (
+                <p className="mono">{block.caption}</p>
+              ) : null}
+              <table className="wire-table">
+                <thead>
+                  <tr>
+                    {block.columns.map((col) => (
+                      <th key={col} className="mono">
+                        {col}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {block.rows.map((row, r) => (
+                    <tr key={r}>
+                      {row.map((cell, c) => (
+                        <td key={c}>{cell}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
         return (
           <div className="rules" key={i}>
             {block.items.map((rule) => (

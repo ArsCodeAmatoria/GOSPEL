@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 
 export default function SafetyIndexPage() {
   return (
-    <div className="wrap">
-      <header className="page-hero">
-        <p className="mono kicker">PUBLIC DOCUMENT</p>
-        <h1 className="display giant">
+    <article className="doc-body">
+      <header className="doc-title">
+        <p className="mono steel">PUBLIC DOCUMENT</p>
+        <h1 className="display">
           OUR SAFETY
           <br />
           PROGRAM
@@ -30,7 +30,24 @@ export default function SafetyIndexPage() {
         </p>
       </header>
       <nav className="safety-index" aria-label="Safety program sections">
-        {SAFETY.map((s) => (
+        {SAFETY.filter((s) => Number(s.num) <= 12).map((s) => (
+          <Link href={`/safety/${s.slug}`} key={s.slug}>
+            <span className="mono steel">{s.num}</span>
+            <span>
+              <strong>{s.title}</strong>
+              <em>{s.kicker}</em>
+            </span>
+          </Link>
+        ))}
+      </nav>
+      <p className="mono kicker mt-2">OH&S LIBRARY</p>
+      <p className="lede mt">
+        Policies, SWPs, JHAs, forms, SDS, inspections and document
+        control — crane operators, riggers, signalpersons, lifting. Not a
+        general construction manual.
+      </p>
+      <nav className="safety-index" aria-label="OH&S library">
+        {SAFETY.filter((s) => Number(s.num) > 12).map((s) => (
           <Link href={`/safety/${s.slug}`} key={s.slug}>
             <span className="mono steel">{s.num}</span>
             <span>
@@ -52,12 +69,15 @@ export default function SafetyIndexPage() {
         </p>
         <StandardsList />
       </div>
-      <p className="lede mt" style={{ paddingBottom: "5rem" }}>
+      <p className="lede mt">
         WHOOP is COR® Certified through the BC Construction Safety Alliance.
         That certification is of our occupational health and safety management
         system — not a claim that incidents will never occur.{" "}
         <Link href="/#cor">COR CERTIFIED →</Link>
       </p>
-    </div>
+      <p className="mono steel doc-colophon">
+        WHOOP Safety Program. Current version on this site.
+      </p>
+    </article>
   );
 }

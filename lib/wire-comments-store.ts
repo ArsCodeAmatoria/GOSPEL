@@ -7,6 +7,26 @@ const FILE = path.join(process.cwd(), "data", "wire-comments.json");
 
 const SEED: WirePost[] = [
   {
+    id: "seed-part14-1",
+    slug: "what-part-14-actually-names",
+    parentId: null,
+    name: "N. Reid",
+    handle: "loadchart",
+    body: "If the section names 1998, the PDF from 2020 is not the section. Manufacturer can be stricter. The Regulation does not move because CSA reprinted.",
+    created: "2026-08-15T21:05:00.000Z",
+    likes: 11,
+  },
+  {
+    id: "seed-boom-1",
+    slug: "sin-the-height-cos-the-radius",
+    parentId: null,
+    name: "N. Reid",
+    handle: "loadchart",
+    body: "Booming down is not making it easier. Sin falls, cos rises, the chart gets skinny. Do the triangle before you argue with the LMI.",
+    created: "2026-08-15T20:10:00.000Z",
+    likes: 8,
+  },
+  {
     id: "seed-sin-1",
     slug: "sling-tension-is-sin",
     parentId: null,

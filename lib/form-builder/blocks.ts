@@ -1,0 +1,490 @@
+import {
+  nid,
+  type BlockType,
+  type FormField,
+  type SafetyBlock,
+} from "./types";
+
+const RISK = ["Low", "Medium", "High"];
+const HITCH = ["Vertical", "Choker", "Basket", "Other"];
+const SLING = ["Wire rope", "Synthetic", "Chain", "Other"];
+const POSITION = [
+  "Crane operator",
+  "Rigger",
+  "Signalperson",
+  "Supervisor",
+  "Other",
+];
+
+function fields(
+  blockId: string,
+  defs: Omit<FormField, "id">[]
+): FormField[] {
+  return defs.map((d) => ({ ...d, id: `${blockId}_${d.key}` }));
+}
+
+export const BLOCK_CATALOG: { type: BlockType; title: string; blurb: string }[] =
+  [
+    { type: "worker", title: "Worker", blurb: "Name, ID, position, supervisor" },
+    { type: "project", title: "Project", blurb: "Client, site, date, time" },
+    { type: "task", title: "Task", blurb: "What the lift is" },
+    { type: "crane", title: "Crane", blurb: "Machine, chart, radius" },
+    { type: "load", title: "Load", blurb: "Weight, COG, pick points" },
+    { type: "rigging", title: "Rigging", blurb: "Slings, hitch, WLL" },
+    { type: "hazard", title: "Hazard", blurb: "Hazard, consequence, risk" },
+    { type: "control", title: "Control", blurb: "Control, owner, residual" },
+    { type: "inspection", title: "Inspection", blurb: "Pass / fail / N/A table" },
+    { type: "ppe", title: "PPE", blurb: "Hard hat through fall protection" },
+    { type: "communication", title: "Communication", blurb: "Hands, radio, spotter" },
+    { type: "weather", title: "Weather", blurb: "Wind, visibility, limits" },
+    { type: "powerlines", title: "Powerlines", blurb: "Voltage, MAD, utility" },
+    { type: "emergency", title: "Emergency", blurb: "First aid, muster, rescue" },
+    { type: "corrective", title: "Corrective Action", blurb: "Finding, owner, date" },
+    { type: "log", title: "Shift Log", blurb: "Hours, lifts, work, defects" },
+    { type: "incident", title: "Incident", blurb: "What happened, who was told" },
+    { type: "comments", title: "Comments", blurb: "Free text" },
+    { type: "signature", title: "Signature", blurb: "Typed or drawn" },
+    { type: "photo", title: "Photo", blurb: "Attach to the record" },
+  ];
+
+export const CRANE_INSPECT_ITEMS = [
+  "Structure, welds, pins",
+  "Wire rope / hoist line",
+  "Hook and latch",
+  "Sheaves",
+  "Outriggers / crawlers",
+  "LMI / RCI",
+  "Anti-two-block",
+  "Brakes",
+  "Tires / tracks",
+  "Cab glass and wipers",
+  "Horn / audible warning",
+  "Fire extinguisher",
+  "Load chart in cab",
+  "Configuration matches chart",
+];
+
+export const RIGGING_INSPECT_ITEMS = [
+  "Identification / WLL tag",
+  "Wire rope slings",
+  "Synthetic slings",
+  "Chain slings",
+  "Shackles and pins",
+  "Hooks and latches",
+  "Master links / rings",
+  "Softeners / edge protection",
+  "Below-the-hook devices",
+  "Rejected gear isolated",
+];
+
+/** Lift area only. Part 3 workplace inspection, scoped to the crane. */
+export const SITE_INSPECT_ITEMS = [
+  "Supporting surface / bearing known",
+  "Mats and outrigger pads",
+  "Slope, washout or excavation nearby",
+  "Overhead hazards (structures, lines)",
+  "Exclusion zone established and held",
+  "Access and egress to the crane",
+  "Travel and swing path clear",
+  "Other trades or public in the zone",
+  "Signage and barriers",
+  "Housekeeping in the lift area",
+  "First aid and muster known",
+  "Communication tested",
+];
+
+/** Frequent inspection. BC Crane Safety weekly; items that change with use. 14.13. */
+export const WEEKLY_MAINT_ITEMS = [
+  "Wire rope / hoist line (wires, kinks, birdcage, corrosion)",
+  "Hook, latch, swivel",
+  "Sheaves and guards",
+  "Hydraulic leaks and hoses",
+  "Pins, keepers, cotters",
+  "Visible bolts and fasteners",
+  "Outriggers / crawlers / tires",
+  "Brakes — function",
+  "Limit switches / anti-two-block",
+  "LMI / RCI function",
+  "Horn, lights, wipers",
+  "Load chart and manuals in cab",
+  "Fire extinguisher",
+  "Fluid levels",
+  "Grease / lubrication this interval",
+  "Control response",
+];
+
+/** Periodic inspection. BC Crane Safety monthly; more thorough than weekly. 14.13. */
+export const MONTHLY_MAINT_ITEMS = [
+  "All running wire rope (full visible length)",
+  "Boom / jib structure, welds, lattice",
+  "Boom pins and wear pads",
+  "Load block, sheaves, bearings",
+  "Swing / slew mechanism",
+  "Outrigger beams, jacks, holding valves",
+  "Carrier frame, axles, tracks",
+  "Brake test recorded",
+  "LMI / RCI check per OEM procedure",
+  "Safety device tests (ATB, boom up, overload)",
+  "Hydraulic cylinders and holding valves",
+  "Electrical, battery, grounding",
+  "Counterweight locks / pins",
+  "Cab, seat, windows, wipers",
+  "Engine / power unit (leaks, belts, exhaust)",
+  "Annual inspection / certificate current",
+  "OEM service items due this month",
+];
+
+export function createBlock(
+  type: BlockType,
+  inspectionItems?: string[]
+): SafetyBlock {
+  const id = nid(type);
+  const spec = SPECS[type];
+  return {
+    id,
+    type,
+    title: spec.title,
+    required: spec.required,
+    fields: fields(id, spec.fields),
+    inspectionItems:
+      type === "inspection"
+        ? [...(inspectionItems ?? spec.inspectionItems ?? ["Item"])]
+        : undefined,
+  };
+}
+
+export function cloneBlock(block: SafetyBlock): SafetyBlock {
+  const id = nid(block.type);
+  return {
+    ...block,
+    id,
+    fields: block.fields.map((f) => ({ ...f, id: `${id}_${f.key}` })),
+    inspectionItems: block.inspectionItems
+      ? [...block.inspectionItems]
+      : undefined,
+  };
+}
+
+type Spec = {
+  title: string;
+  required?: boolean;
+  fields: Omit<FormField, "id">[];
+  inspectionItems?: string[];
+};
+
+const SPECS: Record<BlockType, Spec> = {
+  worker: {
+    title: "Worker Information",
+    required: true,
+    fields: [
+      { key: "name", label: "Worker name", type: "text", required: true },
+      { key: "employeeId", label: "Employee ID", type: "text" },
+      {
+        key: "position",
+        label: "Position",
+        type: "select",
+        required: true,
+        options: POSITION,
+      },
+      { key: "supervisor", label: "Supervisor", type: "text", required: true },
+    ],
+  },
+  project: {
+    title: "Project Information",
+    required: true,
+    fields: [
+      { key: "project", label: "Project", type: "text", required: true },
+      { key: "client", label: "Client", type: "text" },
+      { key: "site", label: "Site", type: "text", required: true },
+      {
+        key: "address",
+        label: "Address",
+        type: "address",
+        placeholder: "Start typing the site address",
+      },
+      { key: "date", label: "Date", type: "date", required: true },
+      { key: "time", label: "Time", type: "time" },
+    ],
+  },
+  task: {
+    title: "Task",
+    fields: [
+      {
+        key: "description",
+        label: "Task description",
+        type: "textarea",
+        required: true,
+      },
+      { key: "activity", label: "Work activity", type: "text" },
+    ],
+  },
+  hazard: {
+    title: "Hazard",
+    fields: [
+      { key: "hazard", label: "Hazard", type: "textarea", required: true },
+      {
+        key: "consequence",
+        label: "Potential consequence",
+        type: "textarea",
+        required: true,
+      },
+      {
+        key: "risk",
+        label: "Risk level",
+        type: "select",
+        required: true,
+        options: RISK,
+      },
+    ],
+  },
+  control: {
+    title: "Control",
+    fields: [
+      {
+        key: "measure",
+        label: "Control measure",
+        type: "textarea",
+        required: true,
+      },
+      {
+        key: "responsible",
+        label: "Responsible person",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "residual",
+        label: "Residual risk",
+        type: "select",
+        options: RISK,
+      },
+    ],
+  },
+  crane: {
+    title: "Crane",
+    fields: [
+      { key: "manufacturer", label: "Crane manufacturer", type: "text" },
+      { key: "model", label: "Model", type: "text" },
+      { key: "unit", label: "Unit number", type: "text", required: true },
+      { key: "capacity", label: "Capacity", type: "text" },
+      { key: "configuration", label: "Configuration", type: "text" },
+      { key: "boom", label: "Boom length", type: "text" },
+      { key: "radius", label: "Radius", type: "text" },
+      { key: "chart", label: "Load chart reference", type: "text" },
+    ],
+  },
+  load: {
+    title: "Load",
+    fields: [
+      {
+        key: "description",
+        label: "Load description",
+        type: "text",
+        required: true,
+      },
+      { key: "weight", label: "Load weight", type: "text", required: true },
+      { key: "dimensions", label: "Dimensions", type: "text" },
+      { key: "cog", label: "Centre of gravity", type: "text" },
+      { key: "points", label: "Pick points", type: "text" },
+    ],
+  },
+  rigging: {
+    title: "Rigging",
+    fields: [
+      { key: "slingType", label: "Sling type", type: "select", options: SLING },
+      { key: "slingSize", label: "Sling size", type: "text" },
+      { key: "wll", label: "WLL", type: "text" },
+      { key: "quantity", label: "Quantity", type: "number" },
+      { key: "hitch", label: "Hitch", type: "select", options: HITCH },
+      { key: "angle", label: "Sling angle", type: "text" },
+      { key: "shackles", label: "Shackles", type: "text" },
+      { key: "hooks", label: "Hooks", type: "text" },
+      { key: "hardware", label: "Hardware", type: "text" },
+      {
+        key: "status",
+        label: "Inspection status",
+        type: "select",
+        options: ["Pass", "Fail — isolated", "Not inspected"],
+      },
+    ],
+  },
+  inspection: {
+    title: "Inspection",
+    inspectionItems: ["Item"],
+    fields: [
+      { key: "inspectedBy", label: "Inspected by", type: "text", required: true },
+      { key: "inspectedAt", label: "Time", type: "time" },
+    ],
+  },
+  ppe: {
+    title: "PPE",
+    fields: [
+      {
+        key: "ppe",
+        label: "PPE in use",
+        type: "checkboxes",
+        options: [
+          "Hard hat",
+          "Safety footwear",
+          "High visibility",
+          "Gloves",
+          "Eye protection",
+          "Hearing protection",
+          "Fall protection",
+          "Other",
+        ],
+      },
+      { key: "other", label: "Other PPE", type: "text" },
+    ],
+  },
+  communication: {
+    title: "Communication",
+    fields: [
+      {
+        key: "method",
+        label: "Method",
+        type: "checkboxes",
+        options: ["Hand signals", "Radio", "Spotter", "Signalperson"],
+      },
+      {
+        key: "tested",
+        label: "Communication test",
+        type: "yesno",
+        required: true,
+      },
+      { key: "channel", label: "Channel / stop word", type: "text" },
+    ],
+  },
+  weather: {
+    title: "Weather",
+    fields: [
+      { key: "wind", label: "Wind", type: "text" },
+      { key: "rain", label: "Rain", type: "text" },
+      { key: "snow", label: "Snow", type: "text" },
+      { key: "visibility", label: "Visibility", type: "text" },
+      { key: "temperature", label: "Temperature", type: "text" },
+      {
+        key: "restrictions",
+        label: "Weather restrictions",
+        type: "textarea",
+      },
+    ],
+  },
+  powerlines: {
+    title: "Powerlines",
+    fields: [
+      { key: "present", label: "Powerline present", type: "yesno", required: true },
+      { key: "voltage", label: "Voltage", type: "text" },
+      { key: "clearance", label: "Required clearance", type: "text" },
+      { key: "controls", label: "Controls", type: "textarea" },
+      { key: "utility", label: "Utility contact", type: "text" },
+    ],
+  },
+  emergency: {
+    title: "Emergency",
+    fields: [
+      {
+        key: "contact",
+        label: "Emergency contact",
+        type: "text",
+        required: true,
+      },
+      { key: "firstAid", label: "First aid", type: "text" },
+      { key: "access", label: "Emergency access", type: "text" },
+      { key: "muster", label: "Muster point", type: "text" },
+      { key: "rescue", label: "Rescue procedure", type: "textarea" },
+    ],
+  },
+  corrective: {
+    title: "Corrective Action",
+    fields: [
+      { key: "finding", label: "Finding", type: "textarea", required: true },
+      {
+        key: "action",
+        label: "Corrective action",
+        type: "textarea",
+        required: true,
+      },
+      {
+        key: "responsible",
+        label: "Responsible person",
+        type: "text",
+        required: true,
+      },
+      { key: "due", label: "Due date", type: "date", required: true },
+      { key: "completion", label: "Completion", type: "text" },
+    ],
+  },
+  comments: {
+    title: "Comments",
+    fields: [{ key: "body", label: "Comments", type: "textarea" }],
+  },
+  log: {
+    title: "Shift Log",
+    fields: [
+      {
+        key: "shift",
+        label: "Shift",
+        type: "select",
+        options: ["Day", "Night", "Split", "Other"],
+      },
+      { key: "hourStart", label: "Hour meter — start", type: "text" },
+      { key: "hourEnd", label: "Hour meter — end", type: "text" },
+      { key: "hoursService", label: "Hours in hoisting service", type: "text" },
+      { key: "lifts", label: "Number of lifts", type: "number" },
+      { key: "maxLoad", label: "Heaviest load this shift", type: "text" },
+      {
+        key: "work",
+        label: "Work performed",
+        type: "textarea",
+        required: true,
+      },
+      { key: "fluids", label: "Fluids / fuel checked", type: "yesno" },
+      {
+        key: "defects",
+        label: "Defects this shift",
+        type: "textarea",
+        placeholder: "None, or name it and who was told.",
+      },
+    ],
+  },
+  incident: {
+    title: "Incident",
+    required: true,
+    fields: [
+      {
+        key: "event",
+        label: "What happened",
+        type: "textarea",
+        required: true,
+      },
+      { key: "witnesses", label: "Witnesses", type: "text" },
+      { key: "injury", label: "Injury", type: "yesno", required: true },
+      {
+        key: "immediate",
+        label: "Immediate actions",
+        type: "textarea",
+        required: true,
+      },
+      {
+        key: "notifications",
+        label: "Who was told",
+        type: "textarea",
+        required: true,
+      },
+    ],
+  },
+  signature: {
+    title: "Signature",
+    required: true,
+    fields: [
+      { key: "printed", label: "Printed name", type: "text", required: true },
+      { key: "role", label: "Role", type: "text" },
+      { key: "date", label: "Date", type: "date", required: true },
+    ],
+  },
+  photo: {
+    title: "Photo",
+    fields: [{ key: "caption", label: "Caption", type: "text" }],
+  },
+};

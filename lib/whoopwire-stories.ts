@@ -9,6 +9,381 @@ import type { WireArticle } from "@/lib/whoopwire";
  */
 export const ARTICLES: WireArticle[] = [
   {
+    slug: "what-part-14-actually-names",
+    title: "WHAT PART 14 ACTUALLY NAMES.",
+    titleLines: ["WHAT PART 14", "ACTUALLY NAMES."],
+    category: "SAFETY",
+    excerpt:
+      "In B.C., WorkSafeBC enforces the Regulation — not a vibe called CSA, and not ASME B30 as one book. Mobile is Z150. Tower is Z248. B30 is a series, and only the volumes written into the Regulation are law.",
+    author: "WHOOP",
+    published: "2026-08-15",
+    seoTitle: "What WorkSafeBC Part 14 Actually Names — Z150, Z248, ASME B30",
+    seoDescription:
+      "What WorkSafeBC actually enforces for cranes in B.C.: OHS Regulation Part 14, CSA Z150-1998 for mobile cranes, CSA Z248-2004 for tower cranes, and which ASME B30 volumes are named in the Regulation.",
+    related: [
+      "sin-the-height-cos-the-radius",
+      "sling-tension-is-sin",
+      "why-we-made-our-safety-program-public",
+    ],
+    safety: ["crane-operations", "rigging", "company-safety-policy"],
+    blocks: [
+      {
+        type: "p",
+        text: "People say they follow CSA. They say they follow ASME. They say it as if those were one book, and as if saying the letters were the same thing as the law. In British Columbia they are not.",
+      },
+      {
+        type: "p",
+        text: "WorkSafeBC enforces the Workers Compensation Act and the Occupational Health and Safety Regulation. For cranes and hoists that is Part 14. For rigging that is Part 15. The Regulation names standards by title and by edition. WorkSafeBC's own note on access to standards is blunt: when a specific edition is referenced, that edition must be followed unless an OHS Guideline accepts another edition as a standard acceptable to the Board.",
+      },
+      {
+        type: "quote",
+        text: "The Regulation names the book. The edition in the Regulation is the one you can be held to.",
+      },
+      {
+        type: "h",
+        text: "WHAT WORKSAFEBC ENFORCES",
+      },
+      {
+        type: "p",
+        text: "WorkSafeBC is the Board. It does not sell cranes and it does not write CSA or ASME. It writes and enforces the Regulation. Officers inspect, issue orders, and can stop work. The duties sit on the employer, the supervisor, the owner, the prime contractor where there is one, and the worker. A workforce company does not get a free pass because the crane belongs to someone else.",
+      },
+      {
+        type: "p",
+        text: "Section 14.2(1) is the hinge. A crane or hoist must be designed, constructed, assembled, erected, climbed, repositioned, adjusted, disassembled, dismantled, inspected, maintained and operated as specified by the manufacturer or a professional engineer — and it must meet the applicable standard listed in 14.2(2) through (15). Manufacturer or engineer. Named standard as well. If the Regulation is stricter, the Regulation wins.",
+      },
+      {
+        type: "p",
+        text: "Part 14 also has its own rules that do not live inside CSA or ASME: rated capacity indication, boom angle and radius indicators, inspection and maintenance records, modifications, certification after a misadventure, operator qualifications, operator certification, pre-use inspection, determining load weight, signals, loads over work areas, tandem and critical lifts, annual inspection of mobile cranes, and the tower-crane sections. Those are WorkSafeBC whether or not you own the CSA PDF.",
+      },
+      {
+        type: "list",
+        items: [
+          "14.34 — only a qualified person who has been instructed, and who can demonstrate competency, operates the crane.",
+          "14.34.1 — a mobile crane, tower crane or boom truck is operated only by a person with a valid operator's certificate issued by a person acceptable to the Board. In B.C. that is BC Crane Safety.",
+          "14.35 — pre-use inspection and testing each shift, in the manner specified by the manufacturer, the named 14.2 standard, and the Regulation.",
+          "14.73.2 and 14.73.3 — since 1 October 2024, tower-crane erection, climbing, repositioning and dismantling under a qualified supervisor, with a Notice of Project to WorkSafeBC at least two weeks before the work.",
+        ],
+      },
+      {
+        type: "h",
+        text: "CSA Z150 — MOBILE",
+      },
+      {
+        type: "p",
+        text: "Section 14.2(5) says a mobile crane, telescoping or articulating boom truck or sign truck must meet the requirements of CSA Standard Z150-1998, Safety Code for Mobile Cranes — or one of the two ASME alternatives named in the same subsection.",
+      },
+      {
+        type: "p",
+        text: "CSA Z150 is the Canadian safety code on mobile cranes. It is written for lattice and telescopic boom machines on a crawler or wheel-mounted base whose job is hoisting: crawler cranes, truck-mounted cranes, boom trucks, rough-terrain and all-terrain carriers, railway and locomotive cranes. It is about design, construction, load rating, inspection, maintenance, repair, modification, test and operation. It is not a tower-crane code. CSA itself points tower machines to Z248.",
+      },
+      {
+        type: "p",
+        text: "CSA has published later editions. Z150-11, Z150-16, Z150:20. The Regulation still names Z150-1998. A newer book on the truck is not automatically the legal edition in B.C. unless WorkSafeBC has accepted it in a guideline. WorkSafeBC does use that power — G14.2(3)(c) accepts CMAA No. 74 (2015) in place of the 2004 overhead-crane specification named in 14.2(3). As of August 2026 there is no equivalent guideline substituting Z150:20 for Z150-1998. Follow the named edition. If the manufacturer or a professional engineer requires a later edition on top of that, that is 14.2(1) talking. It does not erase the Regulation.",
+      },
+      {
+        type: "h",
+        text: "CSA Z248 — TOWER",
+      },
+      {
+        type: "p",
+        text: "Section 14.2(6) says a tower, hammerhead crane or self-erecting tower crane must meet CSA Standard Z248-2004, Code for Tower Cranes. There is no 'or ASME' in that subsection. For construction tower cranes in B.C., Z248 is the named code.",
+      },
+      {
+        type: "p",
+        text: "CSA Z248 covers design, construction, installation, dismantling, operation, inspection, testing and maintenance of tower cranes — including self-erecting machines, fixed or travelling bases, and climbing or increasing-height arrangements. WorkSafeBC guideline G14.2-1 is the sentence most crews skip: the scope of Z248-2004 makes it applicable to all tower cranes, irrespective of use or industry service.",
+      },
+      {
+        type: "p",
+        text: "That same guideline is why people get ASME B30.4 wrong. Section 14.2(7) names ASME B30.4-2003 for a portal, tower or pillar crane. G14.2-1 says the scope of B30.4, as it applies to tower cranes, is limited to a tower crane not used in construction. Construction tower, hammerhead, self-erecting: 14.2(6) and Z248-2004. Do not run a high-rise erection on a B30.4 loophole.",
+      },
+      {
+        type: "p",
+        text: "CSA has later tower editions too — Z248-17, and a 2026 edition exists. The Regulation still names Z248-2004. Same rule as mobile: the edition in Part 14 is the one WorkSafeBC can hold you to unless a guideline says otherwise. Using a newer CSA as extra discipline is not the same thing as the Regulation having moved.",
+      },
+      {
+        type: "h",
+        text: "WHAT ASME B30 ACTUALLY IS",
+      },
+      {
+        type: "p",
+        text: "ASME B30 is not one standard. It is a series written by the ASME B30 committee on cranes and related equipment: construction, installation, operation, inspection, testing and maintenance. Each volume is a different machine or a different piece of gear. B30.5 is mobile and locomotive cranes. B30.3 is construction tower cranes in the ASME system. B30.4 is portal, tower and pedestal cranes. B30.9 is slings. B30.22 is articulating boom cranes. There are more.",
+      },
+      {
+        type: "p",
+        text: "In B.C., ASME B30 is law only where the Regulation names a volume and an edition. It is not imported wholesale because a superintendent likes American charts. The Standards Council of Canada has mapped which B30 volumes show up in provincial regulations. None of them are federal OHS law. In B.C. the named volumes in Part 14 and Part 15 are the ones that count.",
+      },
+      {
+        type: "h",
+        text: "WHICH B30 VOLUMES PART 14 NAMES",
+      },
+      {
+        type: "p",
+        text: "For the machines WHOOP actually supplies people onto, this is the map in section 14.2 as it stood in August 2026.",
+      },
+      {
+        type: "table",
+        caption:
+          "OHS Regulation Part 14, section 14.2. Named editions. Not the latest CSA or ASME reprint on a vendor site.",
+        columns: ["MACHINE", "NAMED STANDARD", "SECTION"],
+        rows: [
+          ["Mobile crane, boom truck, sign truck", "CSA Z150-1998 or ASME B30.5-2004", "14.2(5)"],
+          ["Articulating boom crane", "ASME B30.22-2005 (or Z150-1998 / B30.5-2004)", "14.2(5)"],
+          ["Tower, hammerhead, self-erecting", "CSA Z248-2004", "14.2(6)"],
+          ["Portal / tower / pillar — not construction", "ASME B30.4-2003", "14.2(7)"],
+          ["Overhead, gantry, monorail, underhung", "CSA B167-96 or ASME B30.2 / B30.11 / B30.16 / B30.17 (2003–2005)", "14.2(4)"],
+          ["Derricks", "ASME B30.6-2003", "14.2(11)"],
+          ["Base-mounted drum hoist", "ASME B30.7-2001", "14.2(10)"],
+          ["Side boom tractor", "ASME B30.14-2004", "14.2(12)"],
+          ["Lever-operated hoist", "ASME B30.21-2005", "14.2(13)"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Read 14.2(5) as written. It is or, not and. A mobile crane must meet Z150-1998, or B30.5-2004, or — if it is an articulating boom — B30.22-2005. Meeting B30.5 does not mean you can ignore the rest of Part 14. It means that is one of the design-and-safety codes the subsection accepts for that machine type.",
+      },
+      {
+        type: "p",
+        text: "ASME B30.3, the ASME construction-tower volume, is not named in 14.2(6). Construction tower cranes in B.C. are Z248-2004. If someone tells you the site is 'on B30.3' for a hammerhead in Vancouver, ask them to show you the section. G14.2-1 is the WorkSafeBC answer.",
+      },
+      {
+        type: "h",
+        text: "B30.9 — SLINGS, IN PART 15",
+      },
+      {
+        type: "p",
+        text: "Rigging is a different part. Section 15.30 says that unless otherwise required by the Regulation, wire rope, alloy steel chain, metal mesh, synthetic fibre rope, synthetic roundslings and synthetic fibre web slings must meet ASME B30.9-2006, Slings. That is the B30 volume most riggers actually live in. Part 15 still adds its own rules on top: qualified riggers, design factors in Table 15-1, inspection before use, sling angles, identification, rejection criteria. B30.9 does not cancel 15.2.",
+      },
+      {
+        type: "h",
+        text: "WHAT THIS DOES NOT MEAN",
+      },
+      {
+        type: "list",
+        items: [
+          "It does not mean a later CSA or ASME edition is illegal to use. It means the edition named in the Regulation is the compliance edition unless a guideline accepts another.",
+          "It does not mean manufacturer instructions are optional. 14.2(1) puts them in the same sentence as the standard.",
+          "It does not mean ASME B30 as a series is 'enforced in B.C.' Only named volumes and named years are.",
+          "It does not mean Technical Safety BC replaced WorkSafeBC on a construction tower. Part 14 is a WorkSafeBC file.",
+          "It does not replace the load chart, the LMI, or the site. Those still win the lift.",
+          "It is not legal advice. Read the current Part 14 and Part 15. They move.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "If you cannot name the section, you are not following the section. You are following a rumour.",
+      },
+      {
+        type: "p",
+        text: "WHOOP is a safety company that supplies a workforce. The work is done to the Regulation, to the standards the Regulation names, to the manufacturer, and to the site. Where they conflict, the stricter applicable requirement wins. Law always wins. That is already on the homepage. This is what those letters actually point at.",
+      },
+      {
+        type: "cta",
+        href: "https://www.worksafebc.com/en/law-policy/occupational-health-safety/searchable-ohs-regulation/ohs-regulation/part-14-cranes-and-hoists",
+        label: "WORKSAFEBC — PART 14 CRANES AND HOISTS →",
+      },
+      {
+        type: "cta",
+        href: "https://www.worksafebc.com/en/law-policy/occupational-health-safety/searchable-ohs-regulation/ohs-regulation/part-15-rigging",
+        label: "WORKSAFEBC — PART 15 RIGGING →",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane-operations",
+        label: "07 — CRANE OPERATIONS →",
+      },
+      {
+        type: "cta",
+        href: "/safety",
+        label: "READ THE WHOOP SAFETY PROGRAM →",
+      },
+    ],
+  },
+  {
+    slug: "sin-the-height-cos-the-radius",
+    title: "SIN THE HEIGHT. COS THE RADIUS.",
+    titleLines: ["SIN THE HEIGHT.", "COS THE RADIUS."],
+    category: "CRANES",
+    excerpt:
+      "A mobile crane boom is a right triangle. Height is L × sin θ. Radius from the pin is L × cos θ. That is boom geometry — not a load chart.",
+    author: "WHOOP",
+    published: "2026-08-15",
+    seoTitle: "Sin the Height. Cos the Radius. — Boom Geometry",
+    seoDescription:
+      "How to use sine and cosine for mobile crane boom height and radius. H = L × sin θ, R = L × cos θ, worked numbers, and why this is not a substitute for the load chart.",
+    related: [
+      "sling-tension-is-sin",
+      "six-things-to-check-before-you-take-the-load",
+      "what-your-crane-crew-should-know-before-they-arrive",
+    ],
+    safety: ["crane-operations", "rigging"],
+    blocks: [
+      {
+        type: "p",
+        text: "The boom is a right triangle whether anyone on the crew admits it. The hypotenuse is the boom length you have out. The angle at the pin, from the horizontal, is on the indicator. Opposite that angle is height. Adjacent is radius. Sin and cos. That is the whole trick.",
+      },
+      {
+        type: "p",
+        text: "This is a straight main boom on a mobile crane. No luffing jib. No lattice fly until you treat that as a different triangle. If the boom is not a straight stick from pin to sheave, stop using this and get the range diagram for the configuration you actually have.",
+      },
+      {
+        type: "diagram",
+        name: "boom-trig",
+      },
+      {
+        type: "h",
+        text: "WHAT θ IS",
+      },
+      {
+        type: "p",
+        text: "θ is boom angle from the horizontal. That is how CSA Z150 and ASME B30.5 charts talk, and it is what most angle indicators read. Straight up is 90°. Laid over is toward 0°. Do not invent a second convention on the radio.",
+      },
+      {
+        type: "p",
+        text: "If someone gives you the angle from vertical, it is the same triangle with the names swapped: height becomes L × cos of that angle, radius becomes L × sin of that angle. Do not use both and average them.",
+      },
+      {
+        type: "quote",
+        text: "The boom is doing sin() and cos() whether you are or not.",
+      },
+      {
+        type: "h",
+        text: "THE FORMULAS",
+      },
+      {
+        type: "p",
+        text: "L is the boom length in use — the telescoped length, not the stowed length. H is tip height above the boom foot pin. R is horizontal from the pin to the sheave, along the ground.",
+      },
+      {
+        type: "formula",
+        expr: "H = L × SIN θ",
+        note: "Tip height above the boom pin. θ from the horizontal.",
+      },
+      {
+        type: "formula",
+        expr: "R = L × COS θ",
+        note: "Horizontal from the boom pin. Not yet the chart radius.",
+      },
+      {
+        type: "p",
+        text: "Load-chart radius is measured from the centre of rotation, not from the pin. The pin sits a distance D in front of the slew centre. That D is on the range diagram for that crane — not in your head.",
+      },
+      {
+        type: "formula",
+        expr: "R CHART ≈ D + L × COS θ",
+        note: "D from the range diagram. Still a check — not a substitute for the LMI.",
+      },
+      {
+        type: "p",
+        text: "Hook height above ground is another correction: pin height above the pads, minus the block hanging under the sheave, minus whatever parts of line you have reeved. Do not tell a rigger 'the boom is 28 metres' when the hook is 25. They are rigging to the hook.",
+      },
+      {
+        type: "h",
+        text: "WORKED BOOM — 30 m",
+      },
+      {
+        type: "p",
+        text: "Keep L, H and R in the same unit. Metres in, metres out. The sine does not care about tonnes. Capacity lives on the chart, at the radius you actually have.",
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            n: "01",
+            title: "70°    SIN 70° = 0.940    COS 70° = 0.342",
+            body: "H = 30 × 0.940 = 28.2 m above the pin. R = 30 × 0.342 = 10.3 m from the pin. Steep. Short radius. This is where most charts still have muscle.",
+          },
+          {
+            n: "02",
+            title: "60°    SIN 60° = 0.866    COS 60° = 0.500",
+            body: "H = 26.0 m. R = 15.0 m. You gave away 2.2 m of height and bought 4.7 m of radius. The load did not get heavier. The moment did.",
+          },
+          {
+            n: "03",
+            title: "45°    SIN 45° = 0.707    COS 45° = 0.707",
+            body: "H = 21.2 m. R = 21.2 m. Height and radius from the pin are the same number. If you needed 26 m of height, you no longer have it.",
+          },
+          {
+            n: "04",
+            title: "30°    SIN 30° = 0.500    COS 30° = 0.866",
+            body: "H = 15.0 m. R = 26.0 m. You are long, low, and usually out of the fat part of the chart. Booming down is not 'making it easier.'",
+          },
+        ],
+      },
+      {
+        type: "p",
+        text: "Add D and those radii grow. A 1.5 m pin offset at 60° turns 15.0 m from the pin into about 16.5 m from the slew. Charts are picky about that metre. Guessing D is how you pick a radius you do not have.",
+      },
+      {
+        type: "h",
+        text: "THE TABLE YOU SHOULD KNOW COLD",
+      },
+      {
+        type: "table",
+        caption: "Straight 30 m main boom. H and R from the pin. Add D for chart radius.",
+        columns: ["θ FROM HORIZONTAL", "SIN θ", "COS θ", "H", "R FROM PIN"],
+        rows: [
+          ["70°", "0.940", "0.342", "28.2", "10.3"],
+          ["60°", "0.866", "0.500", "26.0", "15.0"],
+          ["45°", "0.707", "0.707", "21.2", "21.2"],
+          ["30°", "0.500", "0.866", "15.0", "26.0"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Boom down: sin falls, cos rises. Height comes off, radius goes on. The LMI is watching radius. If you boom down to clear a pick and you have not re-checked the chart at the new radius, you are hoping. Hope is not a control.",
+      },
+      {
+        type: "h",
+        text: "USE IT",
+      },
+      {
+        type: "p",
+        text: "Phone calculator. Degree mode. sin() for height. cos() for radius. Check: sin(30) is 0.5. cos(60) is 0.5. If those are not true, you are in radians and every number you read out will sound official and be wrong.",
+      },
+      {
+        type: "calc",
+        name: "boom-trig",
+      },
+      {
+        type: "h",
+        text: "WHAT THIS TRIANGLE DOES NOT DO",
+      },
+      {
+        type: "list",
+        items: [
+          "It does not replace the load chart, the range diagram, or the LMI. Those already did this math for this machine.",
+          "It does not include a jib, an offset, a stowed-jib deduction, or a sheave that does not sit on the boom centreline.",
+          "It does not give hook height. Subtract the block. Subtract the reeving. Measure if you do not know.",
+          "It does not make a long-radius pick legal because the height still 'looks like enough.'",
+          "It does not fix an unknown boom length. If you do not know L, you do not have a triangle. You have a guess.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "If you cannot explain the radius, you cannot use the radius.",
+      },
+      {
+        type: "p",
+        text: "Use this to see the shape of the lift before you argue with the chart. Then open the chart at the radius you actually have. The operator works to the chart, CSA Z150, ASME B30, the manufacturer, and the site. The triangle is so you are not surprised when booming down eats the capacity.",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane-operations",
+        label: "07 — CRANE OPERATIONS →",
+      },
+      {
+        type: "cta",
+        href: "/whoopwire/sling-tension-is-sin",
+        label: "SIN() FOR SLING TENSION →",
+      },
+      {
+        type: "cta",
+        href: "/safety",
+        label: "READ THE WHOOP SAFETY PROGRAM →",
+      },
+    ],
+  },
+  {
     slug: "sling-tension-is-sin",
     title: "IF YOU CAN'T USE SIN(), DON'T RIG THE ANGLE.",
     titleLines: ["IF YOU CAN'T", "USE SIN(),", "DON'T RIG", "THE ANGLE."],
@@ -21,6 +396,7 @@ export const ARTICLES: WireArticle[] = [
     seoDescription:
       "How to use sine for two-leg sling tension. T = W / (2 × sin θ), worked numbers, and why 30° from horizontal doubles the load in each leg.",
     related: [
+      "sin-the-height-cos-the-radius",
       "six-things-to-check-before-you-take-the-load",
       "what-a-good-rigger-actually-looks-like",
       "a-ticket-isnt-competency",

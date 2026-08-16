@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { BoomTrigCalc } from "@/components/BoomTrigCalc";
+import { BoomTrigDiagram } from "@/components/BoomTrigDiagram";
 import { ProcedureSteps } from "@/components/ProcedureSteps";
 import { SlingAngleDiagram } from "@/components/SlingAngleDiagram";
 import { SlingSinCalc } from "@/components/SlingSinCalc";
@@ -76,9 +78,11 @@ export function WireBlocks({ blocks }: { blocks: WireBlock[] }) {
           );
         }
         if (block.type === "diagram") {
+          if (block.name === "boom-trig") return <BoomTrigDiagram key={i} />;
           return <SlingAngleDiagram key={i} />;
         }
         if (block.type === "calc") {
+          if (block.name === "boom-trig") return <BoomTrigCalc key={i} />;
           return <SlingSinCalc key={i} />;
         }
         return (

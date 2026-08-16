@@ -1,0 +1,91 @@
+import type { Sds } from "./types";
+
+/** Products WHOOP crews actually meet on crane and rigging dispatches — not a warehouse catalogue. */
+export const SDS: Sds[] = [
+  {
+    slug: "diesel-fuel",
+    title: "DIESEL FUEL",
+    number: "WHOOP-SDS-001",
+    use: "Fuel for mobile cranes, boom trucks and support vehicles on site. WHOOP does not store bulk fuel. Workers may refuel client or carrier equipment as assigned.",
+    hazards: [
+      "Flammable liquid and vapour",
+      "Skin irritation and dermatitis with repeated contact",
+      "Harmful if swallowed or aspirated",
+      "Exhaust in poorly ventilated areas",
+    ],
+    ppe: ["Gloves rated for petroleum", "Eye protection", "No ignition sources while fuelling"],
+    spill: "Stop the source if safe. Keep people and ignition away. Absorb with site spill kit. Do not wash into drains. Report to the site and to WHOOP.",
+    firstAid: "Skin: wash with soap and water. Eyes: rinse. If swallowed: do not induce vomiting — get medical care. Inhalation: fresh air.",
+    storage: "On the carrier or in approved site containers. Caps on. No smoking at the tank.",
+  },
+  {
+    slug: "hydraulic-oil",
+    title: "HYDRAULIC OIL",
+    number: "WHOOP-SDS-002",
+    use: "Crane hydraulic systems. Leaks are a slip hazard and a fire hazard on hot surfaces. Operators report leaks; they do not ignore a wet boom pin.",
+    hazards: ["Slippery surfaces", "Skin irritation", "High-pressure injection from pinhole leaks", "Smoke if it hits exhaust or brakes"],
+    ppe: ["Gloves", "Eye protection", "Do not check leaks with your hand"],
+    spill: "Contain. Absorb. Keep out of soil and drains. Tag the machine if the leak affects control.",
+    firstAid: "Skin: wash. High-pressure injection is a medical emergency even if the hole looks small.",
+    storage: "Manufacturer reservoirs and approved drums. Caps on. Spill kit within reach of fuelling and service areas.",
+  },
+  {
+    slug: "grease-and-lubricants",
+    title: "GREASE AND LUBRICANTS",
+    number: "WHOOP-SDS-003",
+    use: "Pins, slew rings, wire rope dressing as the manufacturer specifies. Not a substitute for inspection.",
+    hazards: ["Skin irritation", "Slippery decks and ladders", "Contaminated rags as fire load"],
+    ppe: ["Gloves", "Eye protection when spraying or brushing overhead"],
+    spill: "Wipe up. Rags in a metal can, not a pile on the carrier.",
+    firstAid: "Wash skin. Eyes: rinse.",
+    storage: "Closed containers on the machine or in the site lube store.",
+  },
+  {
+    slug: "penetrating-oil",
+    title: "PENETRATING OIL",
+    number: "WHOOP-SDS-004",
+    use: "Freeing seized pins and hardware on rigging and crane attachments. Not a cleaner for synthetic slings.",
+    hazards: ["Flammable aerosol if that is the product", "Inhalation in closed cabs or shops", "Skin defatting"],
+    ppe: ["Gloves", "Eye protection", "Ventilation"],
+    spill: "Ventilate. Wipe. No sparks.",
+    firstAid: "Fresh air. Wash skin. Eyes: rinse.",
+    storage: "Away from heat on the carrier. Caps on. Keep off sling fabric.",
+  },
+  {
+    slug: "wire-rope-dressing",
+    title: "WIRE ROPE DRESSING",
+    number: "WHOOP-SDS-005",
+    use: "Manufacturer-approved dressing for hoist and boom rope. Dressing does not hide broken wires.",
+    hazards: ["Skin and eye irritation", "Slippery rope and decks", "Solvent vapour depending on product"],
+    ppe: ["Gloves", "Eye protection"],
+    spill: "Wipe. Keep off synthetic slings and walkways.",
+    firstAid: "Wash skin. Eyes: rinse.",
+    storage: "As labelled. Do not use a product the manufacturer of the rope did not allow.",
+  },
+  {
+    slug: "battery-electrolyte",
+    title: "BATTERY ELECTROLYTE",
+    number: "WHOOP-SDS-006",
+    use: "Crane and carrier batteries. Jumping, charging and acid contact are electrical and chemical hazards.",
+    hazards: ["Corrosive acid", "Explosive hydrogen while charging", "Electrical short and arc"],
+    ppe: ["Acid-resistant gloves", "Eye protection", "No jewellery across terminals"],
+    spill: "Do not touch with bare hands. Neutralize only with the site method. Eyes and skin get water immediately.",
+    firstAid: "Flush eyes and skin with water for 15 minutes. Medical care. Remove contaminated clothing.",
+    storage: "Upright, ventilated, away from metal tools piled on the lid.",
+  },
+  {
+    slug: "hand-cleaner",
+    title: "INDUSTRIAL HAND CLEANER",
+    number: "WHOOP-SDS-007",
+    use: "Removing grease after rigging and inspections. Not for washing eyes. Not a substitute for gloves.",
+    hazards: ["Skin irritation with overuse", "Solvent vapour depending on product"],
+    ppe: ["Use as directed. Moisturize. Do not use on cuts as a cleaner of first resort."],
+    spill: "Wipe. Keep out of waterways.",
+    firstAid: "Rinse skin. Eyes: water, medical care if the product is solvent-based.",
+    storage: "Pump bottles in the crew kit. Caps on.",
+  },
+];
+
+export function getSds(slug: string) {
+  return SDS.find((item) => item.slug === slug);
+}

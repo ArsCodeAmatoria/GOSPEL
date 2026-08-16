@@ -3,11 +3,16 @@ import { CorMark } from "@/components/CorMark";
 import { COR } from "@/lib/site";
 
 export function CorPanel() {
-  const extras = [
-    COR.certificateNumber && { label: "Certificate no.", value: COR.certificateNumber },
-    COR.certifiedDate && { label: "Certified", value: COR.certifiedDate },
-    COR.classification && { label: "Classification", value: COR.classification },
-  ].filter(Boolean) as { label: string; value: string }[];
+  const extras: { label: string; value: string }[] = [];
+  if (COR.certificateNumber) {
+    extras.push({ label: "Certificate no.", value: COR.certificateNumber });
+  }
+  if (COR.certifiedDate) {
+    extras.push({ label: "Certified", value: COR.certifiedDate });
+  }
+  if (COR.classification) {
+    extras.push({ label: "Classification", value: COR.classification });
+  }
 
   return (
     <aside className="cred">

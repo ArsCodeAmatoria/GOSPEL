@@ -1,99 +1,26 @@
 import Link from "next/link";
 import { CorSection } from "@/components/CorSection";
-import { MapleDot } from "@/components/MapleLeaf";
 import { ProcedureSteps } from "@/components/ProcedureSteps";
 import { StandardsList } from "@/components/StandardsList";
 import { WireStoryLink } from "@/components/WireStoryLink";
 import { CREW } from "@/lib/crew";
 import { RIGGING_A_LOAD, SAFETY } from "@/lib/safety";
-import { BELIEFS, PLACEMENT, PRINCIPLES, SERVICES, SITE } from "@/lib/site";
+import { BELIEFS, PLACEMENT, SERVICES, SITE } from "@/lib/site";
 import { WIRE, getLatest, summarize } from "@/lib/whoopwire";
 
 export default function HomePage() {
   return (
     <>
-      <section className="hero wrap">
-        <p className="mono kicker">CANADA — {SITE.descriptor}</p>
-        <div className="hero-title">
-          <h1 className="display">
-            WE
-            <br />
-            SUPPLY
-            <br />
-            THE
-            <br />
-            PEOPLE
-            <br />
-            WHO
-            <br />
-            LIFT.
-            <MapleDot />
-          </h1>
-        </div>
-        <div className="hero-foot">
-          <p className="lede">
-            {SITE.position} Crane operators, riggers and lifting crews. Not a
-            school. Not a rental yard. A union-friendly shop.
-          </p>
-          <div className="inline-cta">
-            <Link className="btn btn-solid" href="/hire">
-              HIRE A CREW
-            </Link>
-            <Link className="btn btn-ghost" href="/safety">
-              VIEW OUR SAFETY PROGRAM
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <div className="ticker" aria-hidden>
-        <div className="ticker-track">
-          {[0, 1].map((copy) => (
-            <div key={copy}>
-              {PRINCIPLES.map((p) => (
-                <span key={`${copy}-${p}`}>
-                  {p} <i>/</i>
-                </span>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <section className="say-do wrap">
-        <p className="mono kicker">THE STANDARD</p>
-        <h2 className="display">SAY IT.</h2>
-        <h2 className="display">DO IT.</h2>
-        <p className="lede mt-2">
-          Reliability is not a claim. It is a sequence: show up, be competent,
-          work safe, do what you said you would do.
-        </p>
-      </section>
-
-      <section className="section wrap">
-        <p className="mono kicker">01 — WHAT WE SUPPLY</p>
-        <h2 className="display giant">THE WORK.</h2>
-        <div className="mt-2">
-          {SERVICES.map((s) => (
-            <article className="service" key={s.num}>
-              <span className="mono steel">{s.num}</span>
-              <h3 className="display">{s.title}</h3>
-              <p>{s.body}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section" id="safety">
+      <section className="section section-lead" id="safety">
         <div className="wrap">
-          <p className="mono kicker">02 — OPEN BOOK</p>
-          <h2 className="display giant">
+          <p className="mono kicker">01 — OPEN BOOK</p>
+          <h1 className="display giant">
             OUR SAFETY
             <br />
             PROGRAM
             <br />
             IS OPEN.
-          </h2>
+          </h1>
           <p className="lede-lg mt-2">{SITE.position}</p>
           <p className="lede mt">
             Open to everyone. Safety isn&apos;t proprietary. Clients, workers
@@ -128,6 +55,20 @@ export default function HomePage() {
             </Link>
           ))}
         </nav>
+      </section>
+
+      <section className="section wrap">
+        <p className="mono kicker">02 — WHAT WE SUPPLY</p>
+        <h2 className="display giant">THE WORK.</h2>
+        <div className="mt-2">
+          {SERVICES.map((s) => (
+            <article className="service" key={s.num}>
+              <span className="mono steel">{s.num}</span>
+              <h3 className="display">{s.title}</h3>
+              <p>{s.body}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <CorSection />

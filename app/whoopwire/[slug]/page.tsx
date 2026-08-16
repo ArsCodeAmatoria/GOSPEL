@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { WireBlocks } from "@/components/WireBlocks";
 import { WireFeed } from "@/components/WireFeed";
+import { WireShare } from "@/components/WireShare";
 import { WireStoryLink } from "@/components/WireStoryLink";
 import { WireSubscribe } from "@/components/WireSubscribe";
 import { getSafety } from "@/lib/safety";
@@ -44,6 +45,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: article.image
         ? [{ url: article.image, alt: article.imageAlt ?? article.title }]
         : undefined,
+    },
+    twitter: {
+      card: article.image ? "summary_large_image" : "summary",
+      title: article.seoTitle,
+      description: article.seoDescription,
     },
   };
 }
@@ -107,6 +113,7 @@ export default async function WireArticlePage({ params }: Props) {
           ) : null}
           <span> · {minutes} MIN</span>
         </p>
+        <WireShare title={article.title} url={url} />
       </header>
 
       {article.image ? (
