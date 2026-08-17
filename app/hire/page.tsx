@@ -17,7 +17,7 @@ export default function HirePage() {
         <p className="lede mt">
           Tell us the work. We will tell you who is coming — and whether we can
           do it. If we cannot, you will hear that first. WHOOP is a safety
-          company that supplies a workforce, and a union-friendly shop. If the
+          company. The crew is how you get us. Union-friendly shop. If the
           site has an agreement, tell us. We work with it.
         </p>
       </header>

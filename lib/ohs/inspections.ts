@@ -9,7 +9,7 @@ export const INSPECTION_LOOP = [
 
 export const INSPECTION_SCOPE = [
   "Crane pre-use and defects that affect lifting",
-  "Potain tower, luffing jib and self-erecting machines",
+  "Potain, WOLFFKRAN, Liebherr, Zoomlion, Raimondi, Terex, JASO and Pecco tower, hammerhead, luffing jib and self-erecting machines",
   "Rigging and below-the-hook gear",
   "Outriggers, mats, mast ties and supporting surface",
   "Exclusion zone and access",

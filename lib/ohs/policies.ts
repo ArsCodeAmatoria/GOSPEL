@@ -9,12 +9,28 @@ export const POLICIES: Policy[] = [
       "This is WHOOP’s occupational health and safety policy. The work is done to this program, to the law, and to the machine.",
     statements: [
       {
+        title: "Aims",
+        body: "Prevent injury and occupational disease on crane and rigging work WHOOP accepts. Put competent people on the machine. Back stop-work. Keep this program public so workers and clients can read it before the dispatch. OHS Regulation 3.3(a).",
+      },
+      {
+        title: "Commitment",
+        body: "WHOOP provides the people, instruction, supervision and backing this program names. Production does not outrank the chart, the hitch, or the three rights.",
+      },
+      {
+        title: "Objectives",
+        body: "Every dispatch has a named competent person and a plan. Defects that affect lifting take the crane down the same hour. Incidents and near misses are reported the same shift. This program is reviewed at least annually. COR maintenance is submitted as BCCSA requires.",
+      },
+      {
         title: "Scope",
         body: "Applies to every crane operator, rigger, signalperson and lifting supervisor WHOOP deploys, and to every lift we accept.",
       },
       {
         title: "Standard",
         body: "Work is performed to this Safety Program, applicable OHS law, CSA Z150 / Z248 as named, ASME B30 as named, the manufacturer, and the site. The stricter applicable requirement wins. Law always wins.",
+      },
+      {
+        title: "Review",
+        body: "This policy and this program are reviewed at least annually, and after a serious incident or a change in the named law. Next scheduled review 2027-09-01. The current version is the one on this site.",
       },
       {
         title: "Open book",
@@ -53,6 +69,22 @@ export const POLICIES: Policy[] = [
       {
         title: "Before the gate",
         body: "Workers are briefed on this program and the known scope. Site orientations required by the client are completed before the hook is loaded.",
+      },
+      {
+        title: "Young or new worker",
+        body: "A young worker is under 25. A new worker is new to that workplace, returning to changed hazards, or relocated to different hazards. 3.22. Before they begin, they get the orientation topics in 3.23 — supervisor name, rights including refusal, rules, hazards, working alone, violence, PPE, first aid, emergency, the task, this program, WHMIS as it applies, committee or worker-rep contact. Extra orientation if they cannot do the work safely or they ask. 3.24. Record it. 3.25. WHOOP-FRM-015.",
+      },
+      {
+        title: "Site orientation",
+        body: "The host’s site orientation is the host’s. WHOOP arranges it. The worker does not start the lift without it when the site requires it.",
+      },
+      {
+        title: "Supervisor instruction",
+        body: "People WHOOP sends to supervise a lift are instructed in this program, in stop-work, and in the supervisor duties under the Workers Compensation Act s. 23. A ticket is not that instruction.",
+      },
+      {
+        title: "Refresher",
+        body: "Competency is re-checked when the machine class changes, after a serious incident involving that person, or when observation says the work is not being done to this program. Expired tickets are not dispatched.",
       },
       {
         title: "Records",
@@ -202,12 +234,20 @@ export const POLICIES: Policy[] = [
         body: "Hard hat, CSA footwear, high-visibility clothing, eye protection. Gloves, hearing protection and fall protection as the task requires.",
       },
       {
+        title: "Selection",
+        body: "PPE follows the hazard on this dispatch — not a one-box kit for every site. Fall protection where the work exposes a fall. Hearing protection where noise requires it. Site rules that are stricter win.",
+      },
+      {
         title: "Inspect",
         body: "PPE is inspected before use. Cracked hats, dead lanyards and homemade alterations are out of service.",
       },
       {
-        title: "Issue",
-        body: "WHOOP issues or confirms required PPE for the dispatch. Workers do not start the lift waiting on a hat.",
+        title: "Issue and replace",
+        body: "WHOOP issues or confirms required PPE for the dispatch. Failed PPE is replaced or the worker does not start. Record issue and replacement on WHOOP-FRM-018. Workers do not start the lift waiting on a hat.",
+      },
+      {
+        title: "Instruction",
+        body: "Workers are shown how to use, inspect and store the PPE this dispatch requires — including fall-arrest connection if they will tie off. A issued harness is not instruction.",
       },
     ],
   },
@@ -262,11 +302,23 @@ export const POLICIES: Policy[] = [
     statements: [
       {
         title: "Crane",
-        body: "Operator inspection each shift as the manufacturer, the named 14.2 standard, and Part 14 require. Defects that affect lifting keep the crane down. Tower, luffing jib and self-erecting machines: see Inspections — Potain charts and WHOOP-FRM-027 through 031.",
+        body: "Operator inspection each shift as the manufacturer, the named 14.2 standard, and Part 14 require. Defects that affect lifting keep the crane down. Tower, hammerhead, luffing jib and self-erecting machines: see Inspections — OEM charts and WHOOP-FRM-027 through 031.",
       },
       {
         title: "Rigging",
         body: "Inspect before use. Missing tags, cuts, birdcaging, opened hooks, wrong pins — out of service.",
+      },
+      {
+        title: "Who owns the PM",
+        body: "Preventive maintenance of a crane belongs to the owner of that crane — OEM interval, logbook, annual certification. WHOOP is a workforce. If WHOOP does not own the machine, the operator still completes pre-use and reports defects. The crane does not lift with a known defect that affects lifting.",
+      },
+      {
+        title: "WHOOP-controlled gear",
+        body: "Rigging, PPE, tools and vehicles WHOOP controls are inspected, maintained and taken out of service when they fail. Weekly and monthly maintenance forms apply to machines WHOOP is assigned to maintain. Return to service only after the repair is verified.",
+      },
+      {
+        title: "Deficiency class",
+        body: "Immediate / out of service — anything that affects lifting, access, or a safety device. Before next shift — does not affect this lift, will affect the next. Scheduled — with a named person and a date. Immediate findings are not parked on a list.",
       },
       {
         title: "Records",
@@ -304,6 +356,10 @@ export const POLICIES: Policy[] = [
         body: "Cabs cook. Steel radiates. Signalpersons and riggers work in the open. Heat and UV are named on the FLHA. Water, shade, rest and stop criteria are set before the hook is loaded. If a worker is going down from heat, the lift is already over. BCCSA wrote the exposure-control guides — do not rewrite them.",
       },
       {
+        title: "Cold",
+        body: "Cold reduces grip, feeling and judgment. Ice on the crane, the load and the pads is a lifting control. Warm-up, extra layers that still fit the harness, and a stop when the work cannot be done with feeling in the hands. Named on the FLHA.",
+      },
+      {
         title: "Wildfire smoke",
         body: "Smoke is an exposure, not weather small-talk. If air quality makes the work unsafe — cab or open — stop. The site and WHOOP are told. Resume only when the plan says so.",
       },
@@ -318,13 +374,13 @@ export const POLICIES: Policy[] = [
     download: {
       href: "https://www.bccsa.ca/resources.php?id_catalogue=98",
       label: "BCCSA LONE HOIST OPERATOR RESCUE →",
-      note: "BCCSA templates for a construction hoist operator down in the car — ERP, lockout, access options, drill. Sign in on bccsa.ca to download. Fall-arrest rescue is a different pack: BCCSA Working at Heights. Neither replaces this policy or the site plan.",
+      note: "BCCSA templates for a construction hoist operator down in the car — ERP, lockout, access options, drill. Sign in on bccsa.ca to download. Fall-arrest rescue is a different pack: BCCSA Working at Heights. Tower-crane high-angle rescue is THARRP — fire departments, not this pack. None of them replace this policy or the site plan.",
       external: true,
     },
     statements: [
       {
         title: "Before work",
-        body: "Emergency number, muster, first aid, crane shutdown, fall-rescue if anyone is tied off, WHOOP after-hours contact.",
+        body: "Emergency number, muster, first aid, crane shutdown, fall-rescue if anyone is tied off, high-angle rope rescue for a tower operator, WHOOP after-hours contact.",
       },
       {
         title: "People first",
@@ -340,7 +396,15 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Fall arrest",
-        body: "Nobody ties off without a rescue plan that can get them down. BCCSA’s fall-protection rescue guide is the construction template. The crane is not the rescue plan unless that operation is permitted and planned.",
+        body: "Nobody ties off without a rescue plan that can get them down. BCCSA’s fall-protection rescue guide is the construction template. The crane is not the rescue plan unless that operation is permitted and planned. THARRP does not approve fall-protection plans. Part 11 stays the employer’s.",
+      },
+      {
+        title: "THARRP — tower high-angle rescue",
+        body: "WorkSafeBC G4.13(3)(a): risk assessment where rescue or evacuation may arise, and written procedures for high-angle work. BCCSA’s Technical High Angle Rope Rescue Program connects construction employers with funded municipal fire departments to write a rope-rescue plan for a tower-crane operator in distress. WHOOP does not run that rescue. The fire department does. A WHOOP tower operator is not sent up until the host or prime can name the plan, the fire department, and how to summon them. If the local department is not THARR-funded, mutual aid or another acceptable means is required — the lift does not invent it. Portal requests: bccsa.ca/tharrp_program.php.",
+      },
+      {
+        title: "Who requests the survey",
+        body: "The employer at that workplace requests the crane or site survey in the THARRP Portal — WorkSafeBC account number and legal name. On a host site that is usually the prime or the crane owner. WHOOP is construction labour supply; ADM 2 lists that classification among the funding units. WHOOP confirms the survey and the written agreement exist before the dispatch. A tower on a high-rise expected past 60 days needs the formal Site Survey & Site Rescue Procedure Review on site. ADM 2.",
       },
     ],
   },
@@ -349,11 +413,23 @@ export const POLICIES: Policy[] = [
     title: "CONTINUOUS IMPROVEMENT",
     number: "WHOOP-POL-016",
     summary:
-      "Findings become actions. Actions get owners and dates. This program is revised when the lesson is real.",
+      "Findings become actions. Actions get owners and dates. Management reviews the system. This program is revised when the lesson is real.",
     statements: [
       {
         title: "Close the loop",
         body: "Finding → action → responsible person → due date → completion → verification. No orphan recommendations.",
+      },
+      {
+        title: "Management review",
+        body: "WHOOP holds a periodic management OHS meeting to review safety activities and incident trends and to decide what changes. 3.3(d). At least quarterly, and after a serious incident. Agenda: incidents, inspections, outstanding corrective actions, training, worker concerns and refusals, COR / audit results, objectives. WHOOP-FRM-032.",
+      },
+      {
+        title: "Records and statistics",
+        body: "Inspection, incident, investigation, training, meeting and first-aid records are kept at least three years, or longer if a claim or order requires it. First aid: 3.19. The information is available to the joint committee or worker health and safety representative, as applicable, and on request to an officer, the union representing the workers, or the workers. 3.3(f).",
+      },
+      {
+        title: "COR",
+        body: "WHOOP is COR® certified through BCCSA. Certification is of this occupational health and safety management system. Maintenance and recertification follow BCCSA’s current process. An audit finding becomes a corrective action with an owner and a date.",
       },
       {
         title: "This program",
@@ -440,6 +516,14 @@ export const POLICIES: Policy[] = [
       {
         title: "The work",
         body: "No fighting. No theft. No vandalism. A phone does not run a crane. Photographs of a client’s plant or people are not posted unless the site has said so.",
+      },
+      {
+        title: "Report it",
+        body: "Hazards, near misses, incidents, damaged gear and unfit-for-work are reported the same shift. Silence is not a rule.",
+      },
+      {
+        title: "PPE",
+        body: "Minimum PPE in POL-010 is a company rule on every dispatch. Site PPE that is stricter wins.",
       },
       {
         title: "Who you answer to",
@@ -607,6 +691,126 @@ export const POLICIES: Policy[] = [
       {
         title: "Report",
         body: "Report to WHOOP at 1 604 431 2000 and ask for Safety, or email hire@whoopp.ca. If the alleged person is WHOOP, use that route anyway and name it. A complaint may also be filed with the BC Human Rights Tribunal. Bullying and harassment under WorkSafeBC is a separate file — WHOOP-POL-017 — and both can apply.",
+      },
+    ],
+  },
+  {
+    slug: "first-aid",
+    title: "FIRST AID",
+    number: "WHOOP-POL-025",
+    summary:
+      "First aid follows the workplace. On a client site that is usually the host. On a workplace WHOOP controls, WHOOP does the assessment.",
+    statements: [
+      {
+        title: "Which workplace",
+        body: "OHS Regulation Part 3 Division 4 and Schedule 3-A set first aid by workplace — hazard rating, number of workers, surface travel time. They are not the same at every dispatch.",
+      },
+      {
+        title: "Client / host site",
+        body: "On a construction or industrial site WHOOP does not control, first aid is the host’s or the prime contractor’s. Before work, the crew knows where it is, who the attendant is, and how to summon it. That goes on the FLHA. WHOOP-FRM-012 is still completed for a WHOOP worker.",
+      },
+      {
+        title: "Workplace WHOOP controls",
+        body: "If WHOOP is the employer at a workplace it controls — office, yard, shop — WHOOP conducts the first-aid assessment, posts it, and provides the equipment, attendants and procedures that assessment requires. Review when the workforce or the work changes.",
+      },
+      {
+        title: "Records",
+        body: "First aid records are kept at least three years. 3.19. They are available as that section requires — not as a lunch-room story.",
+      },
+    ],
+  },
+  {
+    slug: "joint-committee",
+    title: "JOINT COMMITTEE / WORKER REPRESENTATIVE",
+    number: "WHOOP-POL-026",
+    summary:
+      "Committee or worker representative follows the Act for that workplace. It is not a poster WHOOP invents for every site.",
+    statements: [
+      {
+        title: "The threshold",
+        body: "Workers Compensation Act Part 2 Division 5. A joint health and safety committee is required at a workplace where 20 or more workers are regularly employed. A worker health and safety representative is required where 9 to 19 workers are regularly employed. Other orders can apply. This is per workplace — not a headcount of everyone WHOOP has ever dispatched.",
+      },
+      {
+        title: "Workplace WHOOP controls",
+        body: "At a workplace WHOOP regularly employs people and controls, WHOOP establishes the committee or representative the Act requires. New members get the training in OHS Regulation 3.27. A joint committee is evaluated annually where 3.26 applies.",
+      },
+      {
+        title: "Client / host site",
+        body: "WHOOP workers on a host site participate in that workplace’s committee or representative system as the host and the Act require. WHOOP remains the employer of its people. A multiple-employer workplace does not erase that.",
+      },
+      {
+        title: "Below the threshold",
+        body: "If a WHOOP-controlled workplace is below the committee and representative thresholds, 3.2 still requires regular monthly meetings with workers on health and safety, and a record of what was discussed. WHOOP-FRM-033.",
+      },
+      {
+        title: "Recommendations",
+        body: "Written recommendations from a committee or representative get a written response as the Act requires. They enter the corrective-action log. They are not ignored.",
+      },
+    ],
+  },
+  {
+    slug: "contractors",
+    title: "CONTRACTORS AND MULTI-EMPLOYER SITES",
+    number: "WHOOP-POL-027",
+    summary:
+      "WHOOP is usually the contractor. The host owns the site. The prime contractor owns coordination where the Act requires one. Subcontractors WHOOP hires are selected and watched.",
+    statements: [
+      {
+        title: "WHOOP",
+        body: "Sends competent people, this program, and stop-work. Does not own the client’s site. Does not become the prime contractor by showing up with a crew.",
+      },
+      {
+        title: "WHOOP workers",
+        body: "Work to this program and to site rules — whichever is stricter. Report to WHOOP and to site supervision. Refuse unsafe work.",
+      },
+      {
+        title: "Host employer / client",
+        body: "Controls the workplace: access, other trades, ground, overhead hazards, site rules, first aid and the site emergency plan. Gives accurate load and machine information. Names the prime contractor when the workplace requires one.",
+      },
+      {
+        title: "Site supervisor",
+        body: "When WHOOP supplies lift supervision, that person owns whether the hook moves. They do not own the entire site.",
+      },
+      {
+        title: "Prime contractor",
+        body: "On a multiple-employer workplace the Act requires a prime contractor to coordinate. WHOOP asks who that is before people are sent. If nobody can name them, that is a hazard. It is named. The lift waits until coordination is real.",
+      },
+      {
+        title: "Subcontractors WHOOP hires",
+        body: "If WHOOP hires another company — a rigger shop, a signal crew, a carrier — selection includes their ability to identify, communicate and control hazards that affect their people, ours, and anyone else. They get this program and the host’s rules. WHOOP monitors the work we hired them for. A COR card is evidence, not a substitute for watching the hitch.",
+      },
+      {
+        title: "Orientation and communication",
+        body: "Host orientation is completed as the site requires. WHOOP shares what the host needs: FLHA, inspections, incidents involving our people. The host shares what we need: known hazards, other cranes, lines, first aid, muster.",
+      },
+    ],
+  },
+  {
+    slug: "occupational-health",
+    title: "OCCUPATIONAL HEALTH",
+    number: "WHOOP-POL-028",
+    summary:
+      "Noise, MSI, heat, cold, WHMIS and smoke as they actually hit crane and rigging work. Not a silica program we do not run.",
+    statements: [
+      {
+        title: "What this covers",
+        body: "Hazards that show up on WHOOP dispatches: noise at the machine and in the cab, musculoskeletal injury from sitting a crane or handling gear, heat and cold, hazardous products we actually use, wildfire smoke. Silica, asbestos and confined-space programs are not added because they are not the work. If a dispatch actually includes that exposure, it is named on the FLHA and the host’s procedure is followed — or the dispatch is refused.",
+      },
+      {
+        title: "Noise",
+        body: "Hearing protection where the work requires it. Cab doors and windows used as they were designed. If a worker cannot hear a radio or a shouted STOP, the control failed — change the method, not the volume of the brief.",
+      },
+      {
+        title: "MSI / ergonomics",
+        body: "Part 4 musculoskeletal injury. Operators: seat, mirrors, access, not twisting for a whole shift to see a blind pick. Riggers: block the piece before the hitch, do not become the tag line, do not muscle a load that needs a different hitch. Report pain the same shift. It is an occupational health report, not toughness.",
+      },
+      {
+        title: "Hazardous products",
+        body: "WHMIS for products WHOOP people use — diesel, hydraulic oil, grease, rope dressing. SDS library 17. The host’s products stay on the host’s SDS.",
+      },
+      {
+        title: "Heat, cold, smoke",
+        body: "POL-014. Named on the FLHA. Stop criteria are numbers and symptoms, not atmosphere.",
       },
     ],
   },

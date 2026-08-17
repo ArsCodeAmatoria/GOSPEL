@@ -35,9 +35,56 @@ export default async function CranePage({ params }: Props) {
         <SafetyControlStamp number={doc.number} title={doc.title} />
         <p>
           Lift to the serial chart in the cab — this jib, this reeving, this
-          mast, this ballast. The files below are Manitowoc published range
-          sheets. Operator, maintenance and lubrication manuals for this serial
-          live in the cab and on Manitowoc Crane Care.
+          mast, this ballast.{" "}
+          {doc.maker === "WOLFFKRAN" ? (
+            <>
+              The files below are WOLFFKRAN published data sheets from the
+              Canada site. Technical information PDFs are the full load tables.
+              Operator and maintenance manuals for this serial live in the cab.
+              WOLFF Assist and Calgary service support the interval.
+            </>
+          ) : doc.maker === "Liebherr" ? (
+            <>
+              The files below are Liebherr published data sheets from the
+              Canada tower-crane site. LN sheets are the load tables. Operator
+              and maintenance manuals for this serial live in the cab, on the
+              Tower Crane Portal and on MyLiebherr.
+            </>
+          ) : doc.maker === "Zoomlion" ? (
+            <>
+              The files below are Zoomlion published product pages and Manual
+              Download PDFs from the English product site. Serial operator and
+              maintenance manuals live in the cab.
+            </>
+          ) : doc.maker === "Raimondi" || doc.maker === "Terex" ? (
+            <>
+              The files below are published on raimondi.com. Terex Tower Cranes
+              and Self-Erecting Cranes now sit under Raimondi. Data sheets are
+              the Downloads on each product page. Serial manuals live in the
+              cab. T-Link, T-Torque and Terex Power Plus where fitted.
+            </>
+          ) : doc.maker === "Jaso" ? (
+            <>
+              The files below are JASO published technical sheets from the
+              English tower site. EN 14439 C25 and FEM 1001. Serial operator
+              and maintenance manuals live in the cab. Smartlink and Eco Mode
+              where fitted.
+            </>
+          ) : doc.maker === "Pecco" ? (
+            <>
+              The files below are Morrow published Pecco / Peiner range
+              sheets. Peiner built them. Pecco was the North American name.
+              Terex took Peiner in 1998. Current Terex SK hammerheads sit
+              under Raimondi. Serial operator and maintenance manuals live
+              in the cab.
+            </>
+          ) : (
+            <>
+              The files below are Manitowoc published range sheets. Operator,
+              maintenance and lubrication manuals for this serial live in the
+              cab and on Manitowoc Crane Care.
+            </>
+          )}
         </p>
         <p className="doc-cta">
           <a href={doc.productUrl} target="_blank" rel="noreferrer">

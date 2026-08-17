@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Blocks } from "@/components/Blocks";
 import { SafetyLibraryPanel } from "@/components/SafetyLibraryPanel";
 import { SAFETY, getSafety } from "@/lib/safety";
+import { SITE } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -65,7 +66,7 @@ export default async function SafetySectionPage({ params }: Props) {
         )}
       </nav>
       <p className="mono steel doc-colophon">
-        WHOOP Safety Program. Current version on this site.
+        WHOOP Safety Program. {SITE.legalName}. Current version on this site.
       </p>
     </article>
   );

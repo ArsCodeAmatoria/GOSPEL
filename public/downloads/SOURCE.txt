@@ -49,3 +49,150 @@ Manitowoc Crane Care (manitowoc.com/manuals, brand Potain).
   Igo T 85 A ASME    /media/13108/download
   Igo T 130 ASME     /media/13119/download
   Igo 50 metric      /media/13044/download
+
+WOLFFKRAN data sheets are linked from /safety/inspections (WHOOP-CRN-005–008).
+They download from wolffkran.com/resources/ecics_{id}.pdf — not copied here.
+Canada product pages: https://www.wolffkran.com/website/en/ca
+Downloads: https://www.wolffkran.com/website/en/ca/downloads
+Serial operator and maintenance manuals stay in the cab. Calgary is the
+Canada inquiry location. Current WOLFF range is top-slewing saddle jib
+and luffing jib — no self-erecting models on the Canada site.
+
+  6523.8 Clear            ecics_1139.pdf
+  6523.12 Clear           ecics_1141.pdf
+  6031.12 Clear US        ecics_247.pdf
+  7534.16 Clear US        ecics_251.pdf
+  8038 Clear US           ecics_1420.pdf
+  8095.25 Compact         ecics_1294.pdf
+  8095.40 Compact         ecics_1295.pdf
+  8033.20 Cross US        ecics_252.pdf
+  166 B US                ecics_245.pdf
+  166 B technical         ecics_144.pdf
+  235 B US                ecics_918.pdf
+  275 B US                ecics_246.pdf
+  355 B US                ecics_248.pdf
+  700 B US                ecics_250.pdf
+  700 B technical         ecics_120.pdf
+  1250 B US               ecics_249.pdf
+  1250 B technical        ecics_140.pdf
+  WOLFF Boost             ecics_289.pdf
+
+Liebherr data sheets are linked from /safety/inspections (WHOOP-CRN-009–011).
+They download from assets-cdn.liebherr.com/versions/{id}/original/ — not copied here.
+Canada tower hub: https://www.liebherr.com/en-ca/tower-cranes/tower-cranes-4020475
+Serial operator and maintenance manuals stay in the cab, on the Tower Crane
+Portal and on MyLiebherr. Tower / luffing jib / K-series fast-erect only —
+no mobile, crawler, derrick or MK.
+
+  150 EC-B 8 Litronic LN   0558bdb2-5632-4454-83ff-bb08a1e36d76
+  125 EC-B 6 LN            9a89d7bc-c5ad-489e-a165-e5f7452d7a10
+  195 HC-LH 6/12           c30861f0-4f77-4232-8947-bb63a740345b
+  230 HC-L 8/16 LN         3aff7c98-17b2-49ac-b12e-8c75f4368588
+  280 HC-L 12/24           97aa8d36-1338-45cb-aeee-b4d761976962
+  280 HC-L 16/28 LN        8a48a261-ac1b-4a10-9c72-e78a76f2d773
+  91 K US                  1632409c-cc91-4953-922f-bd2e7805b378
+  125 K imperial           7b7e122e-4cb7-4240-af0e-fab6c01112f7
+  61 K                     aad02ec0-5713-4f75-9a91-2a8a0fc23f3d
+  43 K                     864eafaa-ccca-43ef-9d4b-0b1680bd99ed
+  HC-L series brochure     www-assets …/luffing-hc-l/liebherr-towercranes-hc-l-series-2025-en.pdf
+  K-series brochure        www-assets …/k-cranes/k-series_2025-en.pdf
+
+Zoomlion files are linked from /safety/inspections (WHOOP-CRN-012–014).
+Product pages: en-product.zoomlion.com/product/pro-detail-{id}.htm
+Manual Download PDFs: /upload/file/2025/06/27/{id}.pdf — not copied here.
+English listing: https://en-product.zoomlion.com/product/pro_list.htm?sCat=56
+Flat-top fCat=82. Luffing fCat=81. Topless hydraulic RL fCat=229.
+Construction hoist and mobile cranes stay out. No self-erecting models on
+this English listing. Serial operator and maintenance manuals stay in the cab.
+
+  R165-8/10    52fe86b11a3e4aa6a11630c42e814e52.pdf  pro-detail-1057
+  R220-10      446c73b029cb4b399f8e9e1a35c7cb6a.pdf  pro-detail-1058
+  R275-10/12   5548f2380a4b4001bc57e456a211a206.pdf  pro-detail-1060
+  R135-8       237e5481a1494da2911880ac6cf7b6db.pdf  pro-detail-1056
+  RL250-12/16  pro-detail-855
+  RL205-10/12  pro-detail-854
+  RL165-10     pro-detail-833
+  L125-8RA     pro-detail-155
+  L200-12RB    pro-detail-158
+  L400-25U     pro-detail-162
+
+Raimondi / Terex files are linked from /safety/inspections (WHOOP-CRN-015–019).
+Product pages: https://raimondi.com/en/product/{slug}/
+Data sheets sit in Downloads on each page (Azure blob — open from the
+product page). Serial manuals stay in the cab. Tower / luffing jib /
+self-erect only — no rough-terrain, telecrawler or hammerhead SK.
+
+Terex Tower Cranes and Self-Erecting Cranes now sit under Raimondi.
+
+  T187           raimondi-t187-topless-tower-crane
+  T207           raimondi-t207-topless-tower-crane-2
+  MRT159         raimondi-mrt159-topless-tower-crane-10
+  MRT294         raimondi-mrt294-topless-tower-crane-8
+  LRH174         raimondi-lrh174-luffing-jib-crane
+  LR273          raimondi-lr273-luffing-jib-crane
+  CTT 172-8      terex-ctt-172-8-flat-top-tower-crane
+  CTT 472-20     terex-ctt-472-20-flat-top-tower-crane
+  CTLH 192-12    terex-ctlh-192-12-hydraulic-luffing-jib-crane
+  CTL 180-16     terex-ctl-180-16-luffing-jib-crane
+  CTL 712-45     terex-ctl-712-45-luffing-jib-crane
+  CSE 40         terex-cse-40-self-erecting-crane
+  CBR 32 PLUS    terex-cbr-32-plus-self-erecting-crane
+  CBR 40H        terex-cbr-40h-self-erecting-crane
+
+JASO technical sheets are linked from /safety/inspections (WHOOP-CRN-020–022).
+They download from jaso.com/tower/wp-content/uploads/ — not copied here.
+English hub: https://jaso.com/tower/en/
+EN 14439 C25 and FEM 1001. Serial manuals stay in the cab.
+Flat-top, PA luffing and HPA hydraulic only — no recovery, derrick,
+driver lift, high-top or low-top cards. No self-erecting models on
+the English tower site.
+
+  J165.8 EN C25 imperial   2024/10/J165.8_EN-14439-C25_LB-FT_HT17301101-1.pdf
+  J165.8 EN C25 metric     2024/10/J165.8_EN-14439-C25_ES-GB_HT17300101-1.pdf
+  J235.10 EN C25 metric    2025/10/J235.10_EN-14439-C25_ES-GB_HT17100105-3.pdf
+  J235.12 EN C25 imperial  2023/02/J235.12_EN-14439-C25_LB-FT_HT17101104-2.pdf
+  J118HPA EN C25           2023/02/J118HPA_EN-14439-C25_ES-GB_HT21300101.pdf
+  J168HPA EN C25           2023/02/J168HPA_EN-14439-C25_ES-GB_HT20800101.pdf
+  J198HPA EN C25           2023/02/J198HPA_EN-14439-C25_ES-GB_HT21500101.pdf
+  J138PA.A EN C25 imperial 2022/11/J138PA.A_EN-14439-C25_LB-FT_HT20101101.pdf
+  J208PA EN C25 imperial   2022/11/J208PA_EN-14439-C25_LB-FT_HT20001105-2.pdf
+  J265PA EN C25 imperial   2022/11/J265PA_EN-14439-C25_LB-FT_HT21101101.pdf
+
+Pecco / Peiner files are linked from /safety/inspections (WHOOP-CRN-023–024).
+Morrow published the North American range sheets at
+public.morrow.com/wp-content/uploads/2021/04/ — not copied here.
+Hubs: https://www.morrow.com/equipment/hammerhead/
+      https://www.morrow.com/equipment/luffing-boom/
+      https://www.morrow.com/equipment/datasheets/
+Peiner built them in Germany. Pecco was the NA name. Terex took Peiner
+in 1998. Current Terex SK hammerheads sit under Raimondi. Serial
+manuals stay in the cab. Hammerhead SK and SN luffing / SKK articulated
+only. No SMK self-erect sheet on public.morrow.com — serial chart in
+the cab; current Terex self-erects are WHOOP-CRN-019. Italian
+peinersystem.com is a different company.
+
+  SK 180     SK-180.pdf
+  SK 200     SK-200.pdf
+  SK 225     SK-225.pdf
+  SK 280-16  SK-280-16.pdf
+  SK 355-20  SK-355-20.pdf
+  SK 500-10  SK-500-10.pdf
+  SN 160-16  SN-160-16.pdf
+  SN 355     SN-355.pdf
+  SKK 140    SKK-140.pdf
+
+Crane site binders follow BC Crane Safety templates. Official PDFs
+are linked, not hosted:
+
+  Tower / self-erect binders
+    https://bccranesafety.ca/resources/tower-crane-site-binder/
+  Tower checklist PDF
+    https://bccranesafety.ca/download/92/download/9405/tower-crane-site-binder-document-checklist-2.pdf
+  Form 30M33 (coded — order from WorkSafeBC)
+    https://www.worksafebc.com/en/resources/health-safety/forms/assurance-of-compliance-with-occupational-health-and-safety-regulation-part-19-form-30m33
+  Radio 52E73C
+    https://www.worksafebc.com/en/resources/health-safety/forms/radio-frequency-coordination-crane-operations-52e73c
+  NOP-TC
+    https://www.worksafebc.com/en/for-employers/just-for-you/submit-notice-project
+  Tower crane report
+    https://www.worksafebc.com/en/resources/health-safety/checklist/tower-crane-report

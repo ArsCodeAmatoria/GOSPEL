@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { SITE } from "@/lib/site";
 
 export function SafetyDocFrame({
   kicker,
@@ -38,7 +39,7 @@ export function SafetyDocFrame({
         </Link>
       </nav>
       <p className="mono steel doc-colophon">
-        WHOOP Safety Program. Current version on this site.
+        WHOOP Safety Program. {SITE.legalName}. Current version on this site.
       </p>
     </article>
   );

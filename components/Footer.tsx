@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CorMark } from "@/components/CorMark";
+import { StandardMarks } from "@/components/StandardsList";
 import { COR, SITE } from "@/lib/site";
 
 export function Footer() {
@@ -38,13 +39,17 @@ export function Footer() {
           {SITE.union}
         </p>
       </div>
+      <div className="footer-marks">
+        <StandardMarks compact />
+      </div>
       <p className="mono footer-std">
         <Link href="/#standards">Work done to</Link> CSA Z150 / Z248, WorkSafeBC,
         BC Crane Safety, Technical Safety BC, ASME B30, manufacturer
-        requirements and site policies.
+        requirements and site policies. Those marks identify the bodies — they
+        are not a claim those organizations endorse WHOOP.
       </p>
       <div className="footer-bot mono">
-        <span>© {new Date().getFullYear()} WHOOP</span>
+        <span>© {new Date().getFullYear()} {SITE.legalName}</span>
         <span>PEOPLE. COMPETENCY. RELIABILITY. {SITE.union}.</span>
       </div>
     </footer>

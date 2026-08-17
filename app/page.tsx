@@ -27,7 +27,7 @@ export default function HomePage() {
           </p>
           <div>
             <p className="mono steel mt-2">WHO WE ARE</p>
-            <p className="lede mt">The work, the city, the shop.</p>
+            <p className="lede mt">The work, the province, the shop.</p>
             <FactsList items={ABOUT} />
           </div>
           <div className="inline-cta">
@@ -61,7 +61,8 @@ export default function HomePage() {
             <p className="mono steel mt-2">WHAT THE WORK IS DONE TO</p>
             <p className="lede mt">
               Where these conflict, the stricter applicable requirement wins.
-              Law always wins.
+              Law always wins. The marks name the bodies. They are not an
+              endorsement of WHOOP.
             </p>
             <StandardsList />
           </div>

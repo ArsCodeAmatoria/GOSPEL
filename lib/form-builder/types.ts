@@ -61,7 +61,8 @@ export type FormGroup =
   | "Lifting"
   | "Incident"
   | "Inspection"
-  | "Worker";
+  | "Worker"
+  | "Binder";
 
 export const FORM_GROUPS: FormGroup[] = [
   "Daily",
@@ -70,6 +71,7 @@ export const FORM_GROUPS: FormGroup[] = [
   "Inspection",
   "Incident",
   "Worker",
+  "Binder",
 ];
 
 export type WhoopFormDef = {

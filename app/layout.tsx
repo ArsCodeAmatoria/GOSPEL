@@ -34,12 +34,12 @@ export const metadata: Metadata = {
     template: "%s — WHOOP",
   },
   description:
-    "A safety company that supplies a workforce. Crane operators, riggers and lifting crews for construction and industrial work.",
+    "We are a safety company. The crew is how you get us. Crane operators, riggers and lifting crews for construction and industrial work.",
   metadataBase: new URL("https://whoop.ca"),
   openGraph: {
     title: "WHOOP — Crane + Rigging",
     description:
-      "A safety company that supplies a workforce. Crane operators, riggers and lifting crews for construction and industrial work.",
+      "We are a safety company. The crew is how you get us. Crane operators, riggers and lifting crews for construction and industrial work.",
     type: "website",
   },
 };

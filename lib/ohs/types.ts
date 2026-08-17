@@ -12,19 +12,21 @@ export type DocControl = {
 
 export type RoleLine = { title: string; body: string };
 
+export type DocLink = {
+  href: string;
+  label: string;
+  note?: string;
+  /** Off-site. Open in a new tab. Do not force a file download. */
+  external?: boolean;
+};
+
 export type Policy = {
   slug: string;
   title: string;
   number: string;
   summary: string;
   statements: RoleLine[];
-  download?: {
-    href: string;
-    label: string;
-    note?: string;
-    /** Off-site (BCCSA). Open in a new tab. Do not force a file download. */
-    external?: boolean;
-  };
+  download?: DocLink;
 };
 
 export type Swp = {
@@ -74,17 +76,14 @@ export type SafetyForm = {
   slug: string;
   title: string;
   number: string;
-  group: "Daily" | "Lifting" | "Incident" | "Worker" | "Inspection";
+  group: "Daily" | "Lifting" | "Incident" | "Worker" | "Inspection" | "Binder";
   summary: string;
   when: string;
   fields: string[];
   routing: string;
-  download?: {
-    href: string;
-    label: string;
-    note?: string;
-    external?: boolean;
-  };
+  download?: DocLink;
+  /** Extra official or companion downloads shown on the form page. */
+  links?: DocLink[];
 };
 
 export type Sds = {
@@ -116,8 +115,8 @@ export type Crane = {
   slug: string;
   title: string;
   number: string;
-  family: "TOPLESS" | "LUFFING JIB" | "SELF-ERECTING";
-  maker: "Potain";
+  family: "TOPLESS" | "HAMMERHEAD" | "LUFFING JIB" | "SELF-ERECTING";
+  maker: "Potain" | "WOLFFKRAN" | "Liebherr" | "Zoomlion" | "Raimondi" | "Terex" | "Jaso" | "Pecco";
   summary: string;
   productUrl: string;
   specs: RoleLine[];

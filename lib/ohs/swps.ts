@@ -460,6 +460,42 @@ export const SWPS: Swp[] = [
     prohibited: ["Leaving a cut sling “so nobody trips on it” on the pile", "Cutting the tag off because the sling is “still good in the middle”"],
     documentation: ["WHOOP-FRM-003", "WHOOP-RPT-004"],
   }),
+  swp("WHOOP-SWP-026", "lockout", "LOCKOUT / ISOLATION", "If you are not operating it, the energy is isolated. Part 10.", {
+    purpose: "Keep a person off stored energy — hoist, slew, luff, travel, hydraulics, electrical — when the work is service, inspection beyond pre-use, rescue, or anything that puts a body in the machine.",
+    scope: "WHOOP personnel on a crane they are not operating: maintenance they are assigned, climbing past the cab for inspection, rescue, or working on WHOOP-controlled tools and vehicles. Not a substitute for the owner’s lockout procedure on that crane. Not tower jumping — see WHOOP-SWP-027.",
+    competency: ["Understands this machine’s isolation. Follows the owner’s lockout where it exists. Does not invent a padlock on a live hoist."],
+    hazards: ["Unexpected hoist or slew", "Hydraulic dump", "Electrical contact", "Someone starting the crane", "Stored energy in a luffing ram"],
+    controls: ["Identify energy", "Isolate", "Lock and tag", "Verify zero energy", "One lock per person"],
+    equipment: ["Personal lock", "Tag", "The owner’s lockout devices for this crane"],
+    procedure: [
+      { n: "01", title: "NAME THE WORK", body: "What is being done, on which machine, which energy. If you cannot name it, you are not isolating it." },
+      { n: "02", title: "OWNER’S PROCEDURE", body: "Use the lockout written for this crane when it exists. WHOOP does not override a stricter owner procedure." },
+      { n: "03", title: "ISOLATE AND LOCK", body: "Controls off. Energy isolated. Personal lock and tag. One person, one lock. Do not lend a key." },
+      { n: "04", title: "VERIFY", body: "Try to start. Confirm the hoist, slew and luff will not move. Residual hydraulic or raised jib — released or blocked as the manufacturer says." },
+      { n: "05", title: "WORK, THEN REMOVE YOUR LOCK", body: "Do the work. Remove only your lock. If the job runs past a shift, the handover of locks is a procedure — not a text message." },
+    ],
+    prohibited: ["Reaching into a machine that can still hoist", "Sharing a lock because ‘we’re both on it’", "Bypassing a limit to ‘just inch it’ during service"],
+    documentation: ["Owner lockout for this serial", "WHOOP-FRM-002 / 027 if the machine was down for a defect"],
+    emergency: "If energy appears during the work: get clear. Re-isolate. Do not finish the job on a live machine.",
+  }),
+  swp("WHOOP-SWP-027", "tower-erection-climbing", "TOWER ERECTION, CLIMBING AND DISMANTLING", "Not a routine operator dispatch. Qualified supervisor. Notice of Project. 14.73.2.", {
+    purpose: "Stop WHOOP from treating jumping a tower like running a shift. If this is the work, it is planned as this work.",
+    scope: "Tower-crane erection, climbing (increasing height), repositioning and dismantling. Not climbing the ladder to the cab to operate. Not a how-to for jumping a crane.",
+    competency: ["Work under a qualified supervisor as 14.73.2 and 14.73.3 require. WHOOP does not send an operator to jump a crane because they have a tower ticket."],
+    hazards: ["Unplanned jump", "Missing NOP", "No qualified supervisor", "People under a climbing frame", "Wind during a climb", "Lockout not done"],
+    controls: ["This is a planned operation or it is not WHOOP work", "Notice of Project at least two weeks before, as 14.73.3 requires", "Qualified supervisor", "Manufacturer sequence", "Exclusion zone", "Lockout"],
+    equipment: ["This crane’s erection / climbing manual", "The climbing frame for this serial", "WHOOP-SWP-026"],
+    procedure: [
+      { n: "01", title: "CONFIRM THE DISPATCH", body: "The work is erection, climbing or dismantling — said in writing. A tower operator call is not this call." },
+      { n: "02", title: "SUPERVISOR AND NOP", body: "Qualified supervisor named. Notice of Project to WorkSafeBC on the timeline 14.73.3 names. If either is missing, the work does not start." },
+      { n: "03", title: "MANUAL AND CONFIGURATION", body: "This serial, this tower system, this climbing frame, this tie-in. The manufacturer’s sequence is the sequence." },
+      { n: "04", title: "ZONE AND WEATHER", body: "Exclusion under the work. Wind and weather as the manufacturer and the plan. People off the ground under the frame." },
+      { n: "05", title: "ISOLATE WHEN REQUIRED", body: "Lockout / isolation when anyone is in the machine for this work. WHOOP-SWP-026." },
+      { n: "06", title: "STOP", body: "Any step that is not in the manual, any missing pin, any unplanned person in the zone — stop. Rewrite. Do not improvise a jump." },
+    ],
+    prohibited: ["An operator jumping a crane as a favour", "Skipping the NOP because the pour is tomorrow", "Using a different manufacturer’s climbing notes"],
+    documentation: ["NOP-TC", "Site binder checklist", "Qualified supervisor named", "Manufacturer erection / climbing procedure for this serial"],
+  }),
 ];
 
 export function getSwp(slug: string) {

@@ -1,0 +1,24 @@
+Regulator and standards marks used on this site to identify the bodies
+the work is done to. They are not WHOOP marks and they are not a claim
+that those organizations endorse WHOOP.
+
+All marks are PNG with transparent backgrounds. Where a lockup uses
+white-on-black or black-on-white type, a second file (`*-on-ink.png`)
+is shown on dark paper and on the light-theme footer.
+
+  CSA Group              /marks/csa-group.png
+  WorkSafeBC             /marks/worksafebc.png
+                         /marks/worksafebc-on-ink.png
+  BC Crane Safety        /marks/bc-crane-safety.png
+                         /marks/bc-crane-safety-on-ink.png
+  Technical Safety BC    /marks/technical-safety-bc.png
+                         /marks/technical-safety-bc-on-ink.png
+  ASME                   /marks/asme.png
+                         /marks/asme-on-ink.png
+
+Official sites:
+  https://www.csagroup.org/
+  https://www.worksafebc.com/
+  https://bccranesafety.ca/
+  https://www.technicalsafetybc.ca/
+  https://www.asme.org/

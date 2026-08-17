@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Safety Program",
   description:
-    "WHOOP is a safety company that supplies a workforce. Read how we expect crane and rigging work to be performed — CSA Z150 / Z248, WorkSafeBC, BC Crane Safety, Technical Safety BC, ASME B30, manufacturer requirements and site policies.",
+    "WHOOP is a safety company. The crew is how you get us. Read how we expect crane and rigging work to be performed — CSA Z150 / Z248, WorkSafeBC, BC Crane Safety, Technical Safety BC, ASME B30, manufacturer requirements and site policies.",
 };
 
 export default function SafetyIndexPage() {
@@ -72,7 +72,8 @@ export default function SafetyIndexPage() {
         <p className="mono steel">WHAT THE WORK IS DONE TO</p>
         <p className="lede mt">
           Where these conflict, the stricter applicable requirement wins. Law
-          always wins.
+          always wins. The marks name the bodies. They are not an endorsement
+          of WHOOP.
         </p>
         <StandardsList />
       </div>
@@ -83,7 +84,7 @@ export default function SafetyIndexPage() {
         <Link href="/#cor">COR CERTIFIED →</Link>
       </p>
       <p className="mono steel doc-colophon">
-        WHOOP Safety Program. Current version on this site.
+        WHOOP Safety Program. {SITE.legalName}. Current version on this site.
       </p>
     </article>
   );

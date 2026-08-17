@@ -143,7 +143,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "ASME B30.3, the ASME construction-tower volume, is not named in 14.2(6). Construction tower cranes in B.C. are Z248-2004. If someone tells you the site is 'on B30.3' for a hammerhead in Vancouver, ask them to show you the section. G14.2-1 is the WorkSafeBC answer.",
+        text: "ASME B30.3, the ASME construction-tower volume, is not named in 14.2(6). Construction tower cranes in B.C. are Z248-2004. If someone tells you the site is 'on B30.3' for a hammerhead in British Columbia, ask them to show you the section. G14.2-1 is the WorkSafeBC answer.",
       },
       {
         type: "h",
@@ -174,7 +174,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "WHOOP is a safety company that supplies a workforce. The work is done to the Regulation, to the standards the Regulation names, to the manufacturer, and to the site. Where they conflict, the stricter applicable requirement wins. Law always wins. That is already on the homepage. This is what those letters actually point at.",
+        text: "WHOOP is a safety company. The crew is how you get us. The work is done to the Regulation, to the standards the Regulation names, to the manufacturer, and to the site. Where they conflict, the stricter applicable requirement wins. Law always wins. That is already on the homepage. This is what those letters actually point at.",
       },
       {
         type: "cta",

@@ -1,8 +1,25 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SafetyControlStamp } from "@/components/SafetyControl";
 import { SafetyDocFrame } from "@/components/SafetyDocFrame";
 import { FORMS, getForm } from "@/lib/ohs";
+import type { DocLink } from "@/lib/ohs/types";
+import { getTemplate } from "@/lib/form-builder/templates";
+
+const TEMPLATE_ALIAS: Record<string, string> = {
+  "rigging-inspection-form": "rigging-inspection",
+  "near-miss-report": "near-miss",
+  "first-aid-report": "first-aid",
+  "crane-operator-log": "crane-op-log",
+  "critical-lift-plan": "critical-lift",
+  "workplace-inspection": "site-inspection",
+  "rigging-equipment-inspection": "rigging-inspection",
+};
+
+function templateFor(slug: string) {
+  return getTemplate(slug) ?? getTemplate(TEMPLATE_ALIAS[slug] ?? "");
+}
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -17,10 +34,53 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: `${doc.number} ${doc.title}`, description: doc.summary };
 }
 
+function FormCta({ link }: { link: DocLink }) {
+  if (link.external || /^https?:\/\//i.test(link.href)) {
+    return (
+      <p className="doc-cta">
+        <a href={link.href} target="_blank" rel="noreferrer">
+          {link.label}
+        </a>
+      </p>
+    );
+  }
+  if (link.href.startsWith("/")) {
+    return (
+      <p className="doc-cta">
+        <Link href={link.href}>{link.label}</Link>
+      </p>
+    );
+  }
+  return (
+    <p className="doc-cta">
+      <a href={link.href} download>
+        {link.label}
+      </a>
+    </p>
+  );
+}
+
 export default async function FormPage({ params }: Props) {
   const { slug } = await params;
   const doc = getForm(slug);
   if (!doc) notFound();
+  const template = templateFor(slug);
+  const ctas: DocLink[] = [];
+  if (doc.download) ctas.push(doc.download);
+  else if (template) {
+    ctas.push({
+      href: `/safety/builder/${template.id}`,
+      label: "FILL THIS FORM — DOWNLOAD PDF →",
+    });
+  }
+  if (template && doc.download && !doc.download.href.includes("/safety/builder/")) {
+    ctas.push({
+      href: `/safety/builder/${template.id}`,
+      label: "FILL THIS FORM — DOWNLOAD PDF →",
+    });
+  }
+  for (const link of doc.links ?? []) ctas.push(link);
+
   return (
     <SafetyDocFrame
       kicker={`${doc.group.toUpperCase()} FORM`}
@@ -32,22 +92,15 @@ export default async function FormPage({ params }: Props) {
     >
       <div className="prose">
         <SafetyControlStamp number={doc.number} title={doc.title} />
-        {doc.download ? (
-          <p className="doc-cta">
-            {doc.download.external ? (
-              <a href={doc.download.href} target="_blank" rel="noreferrer">
-                {doc.download.label}
-              </a>
-            ) : doc.download.href.startsWith("/") ? (
-              <a href={doc.download.href}>{doc.download.label}</a>
-            ) : (
-              <a href={doc.download.href} download>
-                {doc.download.label}
-              </a>
-            )}
-          </p>
-        ) : null}
+        {ctas.map((link) => (
+          <FormCta key={link.href + link.label} link={link} />
+        ))}
         {doc.download?.note ? <p>{doc.download.note}</p> : null}
+        {(doc.links ?? [])
+          .filter((link) => link.note)
+          .map((link) => (
+            <p key={link.href}>{link.note}</p>
+          ))}
         <h2>WHEN</h2>
         <p>{doc.when}</p>
         <h2>CAPTURE</h2>

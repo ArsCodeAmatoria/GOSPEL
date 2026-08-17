@@ -17,6 +17,7 @@ function sectionFromPath(path: string): string | undefined {
     sds: "whmis-sds",
     report: "incident-reporting",
     crane: "inspections",
+    binder: "crane-binders",
   };
   return nested[part] ?? part;
 }

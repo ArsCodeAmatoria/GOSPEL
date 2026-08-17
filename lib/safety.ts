@@ -1,3 +1,5 @@
+import { COR_ELEMENTS, PROGRAM_HIERARCHY, WSBC_33 } from "@/lib/ohs/system";
+
 export type Step = { n: string; title: string; body: string };
 
 export type Block =
@@ -17,7 +19,8 @@ export type SafetyLibraryKind =
   | "form"
   | "sds"
   | "report"
-  | "crane";
+  | "crane"
+  | "binder";
 
 export type SafetySection = {
   num: string;
@@ -69,7 +72,7 @@ export const SAFETY: SafetySection[] = [
     title: "COMPANY SAFETY POLICY",
     kicker: "The standard is not a poster.",
     intro:
-      "WHOOP is a safety company that supplies a workforce. We supply crane operators, riggers, signalpersons and lifting crews. We place competent people on lifting work — and we expect that work to be done to a published standard.",
+      "WHOOP is a safety company. The crew is how you get us. Crane operators, riggers, signalpersons and lifting crews — competent people on lifting work, to a published standard.",
     blocks: [
       {
         type: "quote",
@@ -134,7 +137,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "WHOOP is a safety company that supplies a workforce. Lifting work is performed in accordance with the following. Where they conflict, the stricter applicable requirement wins. Law always wins. This program is written to sit on top of that stack, not beside it.",
+        text: "WHOOP is a safety company. The crew is how you get us. Lifting work is performed in accordance with the following. Where they conflict, the stricter applicable requirement wins. Law always wins. This program is written to sit on top of that stack, not beside it.",
       },
       {
         type: "list",
@@ -209,7 +212,20 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "h",
-        text: "LIFT SUPERVISION",
+        text: "THE SUPERVISOR",
+      },
+      {
+        type: "p",
+        text: "Workers Compensation Act s. 23. A supervisor WHOOP sends — or a site supervisor directing our people — ensures the workers under their direct supervision are made aware of known or reasonably foreseeable health and safety hazards, and comply with the Act, the Regulation, and this program as it applies. They consult and cooperate with the joint committee or worker representative where there is one. They cooperate with WorkSafeBC. They do not own the entire site. They do own whether the people they supervise work to the plan.",
+      },
+      {
+        type: "list",
+        items: [
+          "Confirm the plan, the crew, the zone and the stop criteria.",
+          "Ensure young or new workers have been oriented before they begin. 3.23.",
+          "Stop the lift when the plan is broken. Do not send a replacement to do the same unsafe work.",
+          "See that inspections, FLHAs and incident reports for this crew are done.",
+        ],
       },
       {
         type: "p",
@@ -309,7 +325,15 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/swp-library",
-        label: "14 — SWP LIBRARY — 25 PROCEDURES →",
+        label: "14 — SWP LIBRARY — 27 PROCEDURES →",
+      },
+      {
+        type: "h",
+        text: "PRACTICES AND PROCEDURES",
+      },
+      {
+        type: "p",
+        text: "COR treats safe work practices and safe job procedures as two elements. Practices are the standing rules — no lift without a plan, no damaged gear, no work under a load, one signalperson, STOP means stop. They live in 01, 06, 07 and 12. Procedures are the numbered SWPs in the library. An SJP is this lift, this site, this day, when the SWP is not enough. Do not file a practice as a second procedure.",
       },
       {
         type: "h",
@@ -599,6 +623,29 @@ export const SAFETY: SafetySection[] = [
         type: "p",
         text: "Wind limits come from the manufacturer and the lift plan — the lower number wins. Lightning: boom down, people off. Power lines: assume they are live. If the lift cannot maintain the required clearance, it is not a crane job until the utility says it is.",
       },
+      {
+        type: "h",
+        text: "LOCKOUT, ACCESS, ERECTION",
+      },
+      {
+        type: "p",
+        text: "Operating the crane is not servicing it. Isolation before a body is in the machine: WHOOP-SWP-026. Climbing the ladder to the cab to operate is not jumping the tower. Erection, climbing (increasing height) and dismantling are a separate dispatch under a qualified supervisor, with a Notice of Project as 14.73.3 requires. WHOOP-SWP-027. Emergency shutdown: people first. WHOOP-SWP-024.",
+      },
+      {
+        type: "cta",
+        href: "/safety/swp/lockout",
+        label: "LOCKOUT / ISOLATION — WHOOP-SWP-026 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/swp/tower-erection-climbing",
+        label: "TOWER ERECTION, CLIMBING AND DISMANTLING — WHOOP-SWP-027 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane-binders",
+        label: "21 — CRANE BINDERS / NOP-TC →",
+      },
     ],
   },
   {
@@ -658,6 +705,15 @@ export const SAFETY: SafetySection[] = [
             body: "Who gets you down, with what, in how long. Suspension trauma is on the clock. “We’ll figure it out” is not a rescue plan.",
           },
         ],
+      },
+      {
+        type: "p",
+        text: "A tower-crane operator who needs to come out of the cab or off the tower is high-angle rope rescue. In B.C. that plan is written with the municipal fire department through BCCSA THARRP. It is not the same document as a Part 11 fall-protection plan, and THARRP will not approve one. See Emergency Response.",
+      },
+      {
+        type: "cta",
+        href: "/safety/emergency-response",
+        label: "10 — EMERGENCY RESPONSE / THARRP →",
       },
       {
         type: "p",
@@ -723,9 +779,19 @@ export const SAFETY: SafetySection[] = [
           {
             n: "06",
             title: "LEARN AND CHANGE",
-            body: "WHOOP investigates events involving our people. Controls change. The program is updated when the lesson is real.",
+            body: "WHOOP investigates events involving our people. Collect facts, photographs, gear, witness names. Name causes and contributing factors — not a defence brief. Corrective actions get owners and dates. Close them. The program is updated when the lesson is real. WHOOP-FRM-013.",
           },
         ],
+      },
+      {
+        type: "cta",
+        href: "/safety/form/investigation",
+        label: "INVESTIGATION — WHOOP-FRM-013 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/refuse-unsafe-work",
+        label: "REFUSAL OF UNSAFE WORK — WHOOP-FRM-035 →",
       },
       {
         type: "quote",
@@ -791,8 +857,23 @@ export const SAFETY: SafetySection[] = [
           "First aid location and attendant.",
           "How to shut down or land the crane in an emergency.",
           "Rescue for fall arrest if anyone is tied off.",
+          "Tower high-angle rescue: which fire department, how to summon them, where the written plan lives.",
           "Contact for WHOOP after hours.",
         ],
+      },
+      {
+        type: "p",
+        text: "First aid on a host site is the host’s. First aid on a workplace WHOOP controls is WHOOP’s assessment under Part 3 Division 4. WHOOP-POL-025. Drills are recorded where WHOOP is the employer at that workplace. WHOOP-FRM-034.",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/emergency-drill",
+        label: "EMERGENCY DRILL — WHOOP-FRM-034 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/policy/first-aid",
+        label: "WHOOP-POL-025 — FIRST AID →",
       },
       {
         type: "h",
@@ -885,9 +966,42 @@ export const SAFETY: SafetySection[] = [
           },
           {
             title: "Worker rescue",
-            body: "Fall arrest rescue is part of the plan before anyone ties off. Suspension trauma is on the clock. Do not improvise a crane-as-rescue unless that operation is permitted and planned.",
+            body: "Fall arrest rescue is part of the plan before anyone ties off. Suspension trauma is on the clock. Do not improvise a crane-as-rescue unless that operation is permitted and planned. A tower operator in the cab or on the tower is THARRP — fire-department rope rescue, not a WHOOP rappel.",
           },
         ],
+      },
+      {
+        type: "h",
+        text: "THARRP — TOWER HIGH-ANGLE RESCUE",
+      },
+      {
+        type: "p",
+        text: "The Technical High Angle Rope Rescue Program is BCCSA’s. It trains municipal fire departments to get a worker down from a tower crane. It is not a WHOOP rope team. It is not a fall-protection plan. G4.13(3)(a) still requires a risk assessment and written rescue procedures for high-angle work.",
+      },
+      {
+        type: "list",
+        items: [
+          "Before a WHOOP tower operator goes up: name the fire department, the summoning method, and where the written plan sits. If nobody can name them, the operator stays on the ground.",
+          "The host or prime requests the crane or site survey in the THARRP Portal. WHOOP confirms it exists. A tower expected past 60 days on a changing high-rise needs the formal Site Survey & Site Rescue Procedure Review on site — ADM 2.",
+          "If the local department is not THARR-funded, they may have mutual aid with one that is. If the workplace is outside a municipal high-angle service area, or the employer is not in a funding classification unit, high-angle rescue must be provided by other acceptable means. The dispatch does not invent a rescue on the day.",
+          "A fire department can refuse service they cannot provide. Funding does not obligate them to work unsafely. Then the employer finds another acceptable means — or the work at height does not start.",
+          "THARRP does not approve Part 11 fall-protection plans. Harness rescue stays a different plan. Lone hoist-operator rescue stays a different pack.",
+        ],
+      },
+      {
+        type: "cta",
+        href: "https://www.bccsa.ca/tharrp_program.php",
+        label: "BCCSA THARR PROGRAM →",
+      },
+      {
+        type: "cta",
+        href: "https://www.bccsa.ca/tharrp_faqs.php",
+        label: "THARRP FAQ →",
+      },
+      {
+        type: "cta",
+        href: "https://bccsa.ca/pdfs/ADM2Responsibility.pdf",
+        label: "ADM 2 — FUNDED DEPARTMENTS AND CLASSIFICATION UNITS →",
       },
       {
         type: "cta",
@@ -953,6 +1067,19 @@ export const SAFETY: SafetySection[] = [
       {
         type: "p",
         text: "Workers arrive already qualified for the role. Where a site requires a specific orientation, we arrange it. Where a worker needs a new qualification, that gap is named before dispatch.",
+      },
+      {
+        type: "h",
+        text: "YOUNG OR NEW WORKER",
+      },
+      {
+        type: "p",
+        text: "A young worker is under 25. A new worker is new to that workplace, returning to changed hazards, or relocated to different hazards. 3.22. Before they begin, they get the orientation in 3.23 — recorded on WHOOP-FRM-015. Extra orientation if they cannot do the work safely or they ask. 3.24. Keep the record. 3.25.",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/orientation",
+        label: "ORIENTATION — WHOOP-FRM-015 →",
       },
       {
         type: "h",
@@ -1053,6 +1180,19 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "h",
+        text: "JOINT COMMITTEE / WORKER REPRESENTATIVE",
+      },
+      {
+        type: "p",
+        text: "The Act sets this by workplace, not by a company’s total headcount. Twenty or more workers regularly employed at a workplace: joint committee. Nine to nineteen: worker health and safety representative. WHOOP-POL-026. On a host site, WHOOP people participate in that workplace’s system. Worker recommendations get a response and enter the corrective-action log.",
+      },
+      {
+        type: "cta",
+        href: "/safety/policy/joint-committee",
+        label: "WHOOP-POL-026 — JOINT COMMITTEE / WORKER REPRESENTATIVE →",
+      },
+      {
+        type: "h",
         text: "RIGHT TO REFUSE",
       },
       {
@@ -1083,6 +1223,11 @@ export const SAFETY: SafetySection[] = [
       {
         type: "quote",
         text: "WHOOP will not punish a worker for refusing unsafe work. We will not send a replacement to do the same unsafe work. That would not be a dispatch. That would be a decision to hurt someone.",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/refuse-unsafe-work",
+        label: "REFUSAL OF UNSAFE WORK — WHOOP-FRM-035 →",
       },
       {
         type: "h",
@@ -1118,7 +1263,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "The set includes the OH&S policy, violence, workplace conduct, fitness for work, PPE, impairment, working alone, incident reporting, injury management, return to work, bullying and harassment, and discrimination — plus competency, training, crane operations, rigging and the rest of the lifting rules.",
+        text: "The set includes the OH&S policy, violence, workplace conduct, fitness for work, PPE, impairment, working alone, incident reporting, injury management, return to work, bullying and harassment, and discrimination — plus competency, training, crane operations, rigging, first aid, joint committee, contractors, occupational health, and the rest of the lifting rules.",
       },
       {
         type: "cta",
@@ -1187,6 +1332,11 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "cta",
+        href: "/safety/binder",
+        label: "CRANE BINDER WIZARD →",
+      },
+      {
+        type: "cta",
         href: "https://www.bccsa.ca/resources.php?id_catalogue=1",
         label: "BCCSA TOOLBOX TALKS →",
       },
@@ -1227,7 +1377,7 @@ export const SAFETY: SafetySection[] = [
     title: "INSPECTIONS + CORRECTIVE ACTIONS",
     kicker: "Finding → action → person → date → done → verified.",
     intro:
-      "Inspections and actions for cranes, rigging, ground, zone and lifting PPE. Potain tower charts and maintenance forms live here.",
+      "Inspections and actions for cranes, rigging, ground, zone and lifting PPE. Potain, WOLFFKRAN, Liebherr, Zoomlion, Raimondi, Terex, JASO and Pecco tower charts and maintenance forms live here.",
     library: "crane",
     blocks: [
       {
@@ -1238,7 +1388,7 @@ export const SAFETY: SafetySection[] = [
         type: "list",
         items: [
           "Crane pre-use and defects that affect lifting",
-          "Tower, luffing jib and self-erecting machines — Potain fleet below",
+          "Tower, hammerhead, luffing jib and self-erecting machines — OEM charts below",
           "Rigging and below-the-hook gear",
           "Outriggers, mats, mast ties and supporting surface",
           "Exclusion zone and access",
@@ -1249,11 +1399,165 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "h",
+        text: "FREQUENCY",
+      },
+      {
+        type: "list",
+        items: [
+          "Crane pre-use — each shift before the hook is loaded. 14.35.",
+          "Rigging — before it takes load.",
+          "Lift area — at setup. At least weekly on a standing tower. After a change to the pad, the zone or the access.",
+          "WHOOP-controlled gear, tools and vehicles — recorded interval. Out of service when they fail.",
+          "Workplace WHOOP controls — monthly, with worker participation where a committee or representative exists. 3.5.",
+        ],
+      },
+      {
+        type: "h",
+        text: "DEFICIENCY CLASS",
+      },
+      {
+        type: "list",
+        items: [
+          "Immediate / out of service — affects lifting, access, or a safety device. The crane or the gear stays down.",
+          "Before next shift — does not affect this lift. Will affect the next.",
+          "Scheduled — named person, named date. Not a parking lot.",
+        ],
+      },
+      {
+        type: "h",
         text: "POTAIN TOWER CRANES",
       },
       {
         type: "p",
         text: "MDT 219 topless. MRH 125 hydraulic luffer. MR rope luffers. Hup, Igo and Igo T self-erects. Published load charts download from Manitowoc. Serial manuals stay in the cab and on Crane Care. Complete the WHOOP form for this class.",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/mdt-219",
+        label: "POTAIN MDT 219 — WHOOP-CRN-001 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/mrh-125",
+        label: "POTAIN MRH 125 — WHOOP-CRN-002 →",
+      },
+      {
+        type: "h",
+        text: "WOLFFKRAN TOWER CRANES",
+      },
+      {
+        type: "p",
+        text: "Clear flat-top. Compact and Cross saddle jib. 166 B hydraulic luffer. B-series rope luffers. Published data sheets download from wolffkran.com Canada. Serial manuals stay in the cab. Calgary service and WOLFF Assist support the interval. Complete the WHOOP form for this class.",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/wolff-clear",
+        label: "WOLFF CLEAR — WHOOP-CRN-005 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/wolff-166-b",
+        label: "WOLFF 166 B — WHOOP-CRN-007 →",
+      },
+      {
+        type: "h",
+        text: "LIEBHERR TOWER CRANES",
+      },
+      {
+        type: "p",
+        text: "EC-B flat-top. HC-L rope luffers and 195 HC-LH hydraulic. K-series fast-erect. Published data sheets download from liebherr.com Canada. Serial manuals stay in the cab, on the Tower Crane Portal and on MyLiebherr. Complete the WHOOP form for this class.",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/liebherr-ec-b",
+        label: "LIEBHERR EC-B — WHOOP-CRN-009 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/liebherr-hc-l",
+        label: "LIEBHERR HC-L — WHOOP-CRN-010 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/liebherr-k-series",
+        label: "LIEBHERR K-SERIES — WHOOP-CRN-011 →",
+      },
+      {
+        type: "h",
+        text: "ZOOMLION TOWER CRANES",
+      },
+      {
+        type: "p",
+        text: "R-generation and WA flat-top. RL hydraulic luffers. L / LW / LH rope luffers. Published product pages and Manual Download PDFs from en-product.zoomlion.com. Serial manuals stay in the cab. Complete the WHOOP form for this class.",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/zoomlion-flat-top",
+        label: "ZOOMLION FLAT-TOP — WHOOP-CRN-012 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/zoomlion-rl",
+        label: "ZOOMLION RL — WHOOP-CRN-013 →",
+      },
+      {
+        type: "h",
+        text: "RAIMONDI + TEREX TOWER CRANES",
+      },
+      {
+        type: "p",
+        text: "Raimondi MRT and T-series flat-top. LR rope luffers and LRH174 hydraulic. Terex CTT flat-top, CTL / CTLH luffers, CBR and CSE self-erects. Terex tower and self-erect now sit under Raimondi. Data sheets download from each product page on raimondi.com. Serial manuals stay in the cab. Complete the WHOOP form for this class.",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/raimondi-flat-top",
+        label: "RAIMONDI FLAT-TOP — WHOOP-CRN-015 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/terex-ctt",
+        label: "TEREX CTT — WHOOP-CRN-017 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/terex-self-erect",
+        label: "TEREX SELF-ERECTING — WHOOP-CRN-019 →",
+      },
+      {
+        type: "h",
+        text: "JASO TOWER CRANES",
+      },
+      {
+        type: "p",
+        text: "Flat-top J165 / J235. HPA hydraulic luffers. PA rope luffers. Published EN 14439 C25 and FEM 1001 sheets download from jaso.com/tower. Serial manuals stay in the cab. Smartlink and Eco Mode where fitted. Complete the WHOOP form for this class.",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/jaso-flat-top",
+        label: "JASO FLAT TOP — WHOOP-CRN-020 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/jaso-hpa",
+        label: "JASO HPA — WHOOP-CRN-021 →",
+      },
+      {
+        type: "h",
+        text: "PECCO / PEINER TOWER CRANES",
+      },
+      {
+        type: "p",
+        text: "SK hammerhead. SN rope luffers. SKK 140 articulated jib. Morrow published the North American range sheets. Peiner built them. Terex took Peiner in 1998. Current Terex SK sits under Raimondi. Serial manuals stay in the cab. Complete the WHOOP form for this class.",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/pecco-sk",
+        label: "PECCO SK — WHOOP-CRN-023 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/crane/pecco-sn",
+        label: "PECCO SN — WHOOP-CRN-024 →",
       },
       {
         type: "cta",
@@ -1325,6 +1629,7 @@ export const SAFETY: SafetySection[] = [
           "WHOOP-SWP — safe work procedures",
           "WHOOP-JHA — job hazard analyses",
           "WHOOP-FRM — forms",
+          "WHOOP-BND — crane site binders",
           "WHOOP-SDS — safety data sheets in this library",
           "WHOOP-CRN — crane charts and inspection packs",
           "WHOOP-RPT — field reports",
@@ -1339,14 +1644,225 @@ export const SAFETY: SafetySection[] = [
         text: "Revision 01. Effective 2026-09-01. Owner: WHOOP Safety. Approved by: WHOOP. Review by: 2027-09-01. Documents on this website are the current version. Printed copies are uncontrolled the moment they leave the screen — check the number and revision before you use a photocopy.",
       },
       {
+        type: "h",
+        text: "RECORDS",
+      },
+      {
+        type: "p",
+        text: "Inspection, incident, investigation, training, meeting and first-aid records are kept at least three years, or longer if a claim or order requires it. First aid: 3.19. They are available to the joint committee or worker health and safety representative, as applicable, and on request to an officer, the union representing the workers, or the workers. 3.3(f).",
+      },
+      {
         type: "quote",
         text: "If you cannot name the revision, you are not following the revision. You are following a printout.",
+      },
+    ],
+  },
+  {
+    num: "20",
+    slug: "ohs-management-system",
+    title: "OHS MANAGEMENT SYSTEM",
+    kicker: "Documentation is not implementation.",
+    intro:
+      "This Safety Program is WHOOP’s occupational health and safety management system for crane and rigging work. WorkSafeBC s. 3.3 names what a formal program must contain. BCCSA COR® measures the CFCSA 14 elements. The tables below map those requirements to the documents, forms, records, owners and frequencies that already live in this program.",
+    blocks: [
+      {
+        type: "quote",
+        text: "A policy on a website is documentation. A completed form with an owner and a date is evidence.",
+      },
+      {
+        type: "h",
+        text: "HOW THE PROGRAM IS BUILT",
+      },
+      {
+        type: "rules",
+        items: PROGRAM_HIERARCHY.map((item) => ({
+          title: item.title,
+          body: item.body,
+        })),
+      },
+      {
+        type: "h",
+        text: "WHEN A FORMAL PROGRAM IS REQUIRED",
+      },
+      {
+        type: "p",
+        text: "OHS Regulation 3.1: a 3.3 program is required if the employer has 20 or more workers and at least one workplace with a moderate or high hazard rating under Schedule 3-A, or 50 or more workers. An officer can also require one. Crane and rigging work is high-hazard work. WHOOP maintains this written program because the work requires it and because COR® certification is of this system. If a WHOOP-controlled workplace is below the 3.1 threshold, 3.2 still requires monthly meetings with workers and a record of what was discussed — WHOOP-FRM-033. This program is not an excuse to skip that.",
+      },
+      {
+        type: "h",
+        text: "WORKSAFEBC 3.3",
+      },
+      {
+        type: "p",
+        text: "Each row is a 3.3 element. Documentation is the rule. The form collects evidence. The record is what an auditor or an officer can be shown.",
+      },
+      {
+        type: "table",
+        caption: "WorkSafeBC OHS Regulation s. 3.3 — mapped to this program.",
+        columns: ["ELEMENT", "DOCUMENTATION", "FORM", "RECORD", "OWNER", "FREQUENCY"],
+        rows: WSBC_33.map((row) => [
+          `${row.id} ${row.title}`,
+          row.documentation,
+          row.form,
+          row.record,
+          row.owner,
+          row.frequency,
+        ]),
+      },
+      {
+        type: "h",
+        text: "BCCSA COR® — 14 ELEMENTS",
+      },
+      {
+        type: "p",
+        text: "BCCSA uses the COR® OHS National Audit Document. The CFCSA Accreditation Standard names 14 elements. Passing scores (80% overall, 50% per element) are for the audit, not for this page. This table is the document map. Implementation is the completed record.",
+      },
+      {
+        type: "table",
+        caption: "CFCSA / BCCSA COR® elements — mapped to this program.",
+        columns: ["ELEMENT", "DOCUMENTATION", "FORM", "RECORD", "OWNER", "FREQUENCY"],
+        rows: COR_ELEMENTS.map((row) => [
+          `${row.id} ${row.title}`,
+          row.documentation,
+          row.form,
+          row.record,
+          row.owner,
+          row.frequency,
+        ]),
+      },
+      {
+        type: "h",
+        text: "SIZE AND HOST SITE",
+      },
+      {
+        type: "list",
+        items: [
+          "Joint committee or worker representative — Act Part 2 Division 5, per workplace. WHOOP-POL-026.",
+          "First aid — Part 3 Division 4 and Schedule 3-A, per workplace. Host site: host’s first aid. WHOOP-controlled workplace: WHOOP’s assessment. WHOOP-POL-025.",
+          "Prime contractor — multiple-employer workplaces as the Act requires. WHOOP is usually the contractor. WHOOP-POL-027.",
+          "Young or new worker orientation — 3.23 before they begin, every workplace. WHOOP-FRM-015.",
+        ],
+      },
+      {
+        type: "cta",
+        href: "/safety/form/management-review",
+        label: "MANAGEMENT OHS REVIEW — WHOOP-FRM-032 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/policy/continuous-improvement",
+        label: "WHOOP-POL-016 — CONTINUOUS IMPROVEMENT →",
+      },
+      {
+        type: "cta",
+        href: "/safety/policy/contractors",
+        label: "WHOOP-POL-027 — CONTRACTORS AND MULTI-EMPLOYER SITES →",
+      },
+    ],
+  },
+  {
+    num: "21",
+    slug: "crane-binders",
+    title: "CRANE BINDERS",
+    kicker: "The file that goes with the NOP-TC.",
+    intro:
+      "A tower or self-erect on a B.C. construction site needs a site binder. BC Crane Safety wrote the checklists. WorkSafeBC requires the Notice of Project — Tower Crane. The wizard builds the WHOOP copy: numbered items, who holds them, and the downloadable forms.",
+    library: "binder",
+    blocks: [
+      {
+        type: "quote",
+        text: "The checklist is a mandatory component when you submit the NOP-TC. An empty binder is not due diligence.",
+      },
+      {
+        type: "h",
+        text: "TWO BINDERS",
+      },
+      {
+        type: "p",
+        text: "Tower Crane Site Binder — hammerhead, topless, luffing jib. Self-Erect Tower Crane Site Binder — Hup, Igo, K-series, CBR, CSE and the rest of that class. Pick the one that matches the machine. Do not run a top-slewing tower on the self-erect list.",
+      },
+      {
+        type: "cta",
+        href: "/safety/binder",
+        label: "BINDER WIZARD — TOWER OR SELF-ERECT →",
+      },
+      {
+        type: "h",
+        text: "WHAT THE WIZARD DOES",
+      },
+      {
+        type: "list",
+        items: [
+          "Walks the numbered BC Crane Safety items for that class.",
+          "Marks each item in binder, missing, or N/A — and who holds it.",
+          "Opens the WHOOP form and the official download (30M33, 52E73C, NOP-TC, tower crane report, NAV CANADA).",
+          "Downloads a WHOOP checklist PDF for this site. Saved on this device.",
+        ],
+      },
+      {
+        type: "h",
+        text: "NOTICE OF PROJECT",
+      },
+      {
+        type: "p",
+        text: "14.73.3. Employer responsible for erecting, climbing, repositioning or dismantling — and the owner or prime — submit a written NOP-TC at least two weeks before the activity. Project type: Tower Crane. Post the notice on site for the duration. Self-erecting tower cranes are still tower cranes.",
+      },
+      {
+        type: "cta",
+        href: "https://www.worksafebc.com/en/for-employers/just-for-you/submit-notice-project",
+        label: "SUBMIT NOP-TC →",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/nop-tc-notice",
+        label: "NOP-TC POSTING NOTICE — WHOOP-FRM-039 →",
+      },
+      {
+        type: "h",
+        text: "FORMS ON THE CHECKLIST",
+      },
+      {
+        type: "p",
+        text: "Official paper stays official. WHOOP sheets are the working copy and the cover. Form 30M33 is coded by WorkSafeBC — order it; the WHOOP record is the schematic and the discussion. Radio coordination is 52E73C. The tower crane report is WorkSafeBC’s checklist after erect, climb or reposition.",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/powerline-30m33",
+        label: "30M33 / POWERLINE RECORD — WHOOP-FRM-037 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/radio-frequency",
+        label: "RADIO FREQUENCY — WHOOP-FRM-038 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/tower-crane-report",
+        label: "TOWER CRANE REPORT — WHOOP-FRM-041 →",
+      },
+      {
+        type: "h",
+        text: "OFFICIAL TEMPLATES",
+      },
+      {
+        type: "p",
+        text: "Table of contents, notes, and OHSR / CSA info files live on BC Crane Safety. Use them. This program does not host their PDFs as if they were WHOOP documents.",
+      },
+      {
+        type: "cta",
+        href: "https://bccranesafety.ca/resources/tower-crane-site-binder/",
+        label: "BC CRANE SAFETY — TOWER CRANE SITE BINDERS →",
       },
     ],
   },
 ];
 
 export const SAFETY_GROUPS = [
+  {
+    id: "system",
+    label: "THE SYSTEM",
+    slugs: ["ohs-management-system"],
+  },
   {
     id: "work",
     label: "HOW WE WORK",
@@ -1363,6 +1879,7 @@ export const SAFETY_GROUPS = [
     slugs: [
       "hazard-assessment",
       "crane-operations",
+      "crane-binders",
       "rigging",
       "fall-protection",
       "safe-work-procedures",
@@ -1393,13 +1910,14 @@ export const SAFETY_GROUPS = [
 export const FIND_NOW = [
   { href: "/safety/form/flha", label: "FLHA", hint: "This shift" },
   { href: "/safety/form/crane-pre-use", label: "CRANE PRE-USE", hint: "This machine" },
-  { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE", hint: "Potain / Z248" },
+  { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE", hint: "Tower / luffer / Z248" },
   { href: "/safety/form/lift-plan", label: "LIFT PLAN", hint: "This lift" },
   { href: "/safety/form/toolbox-meeting", label: "TOOLBOX", hint: "The brief" },
   { href: "/safety/policy/right-to-refuse", label: "STOP WORK", hint: "Refuse unsafe" },
   { href: "/safety/report/incident", label: "INCIDENT", hint: "Report it" },
   { href: "/safety/policy/environmental-conditions", label: "HEAT + WIND", hint: "Stop criteria" },
   { href: "/safety/emergency-response", label: "EMERGENCY", hint: "The plan" },
+  { href: "/safety/binder", label: "CRANE BINDER", hint: "Tower / self-erect" },
   { href: "/safety/builder", label: "FORM BUILDER", hint: "Fill + PDF" },
 ] as const;
 

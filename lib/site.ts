@@ -1,15 +1,16 @@
 export const SITE = {
   name: "WHOOP",
+  legalName: "Whoop Crane Inc.",
   descriptor: "CRANE + RIGGING",
   phone: "1 604 431 2000",
   phoneHref: "tel:+16044312000",
   email: "hire@whoopp.ca",
   emailHref: "mailto:hire@whoopp.ca",
-  location: "Vancouver, Canada",
+  location: "British Columbia, Canada",
   tagline: "WE MOVE HEAVY THINGS.",
   sub: "AND WE SHOW YOU HOW WE DO IT.",
   union: "UNION FRIENDLY SHOP",
-  position: "A safety company that supplies a workforce.",
+  position: "We are a safety company. The crew is how you get us.",
 } as const;
 
 export const ABOUT = [
@@ -22,8 +23,8 @@ export const ABOUT = [
     body: "Named operators, riggers and signalpersons. Tickets, experience and practical competency checked before anyone is sent.",
   },
   {
-    name: "Vancouver",
-    body: "Based here. Deployed where the lift is. Lower Mainland and wherever the dispatch holds.",
+    name: "British Columbia",
+    body: "Based here. Deployed where the lift is.",
   },
   {
     name: "Union-friendly",
@@ -43,22 +44,36 @@ export const STANDARDS = [
   {
     name: "CSA Z150 / Z248",
     body: "Safety code on mobile cranes. Code for tower cranes.",
+    logo: "/marks/csa-group.png",
+    href: "https://www.csagroup.org/",
   },
   {
     name: "WorkSafeBC",
     body: "Occupational Health and Safety Regulation, including Part 14 — Cranes and Hoists.",
+    logo: "/marks/worksafebc.png",
+    logoOnInk: "/marks/worksafebc-on-ink.png",
+    href: "https://www.worksafebc.com/",
   },
   {
     name: "BC Crane Safety",
     body: "Crane operator certification and competency requirements in British Columbia.",
+    logo: "/marks/bc-crane-safety.png",
+    logoOnInk: "/marks/bc-crane-safety-on-ink.png",
+    href: "https://bccranesafety.ca/",
   },
   {
     name: "Technical Safety BC",
     body: "Applicable technical safety requirements for regulated equipment.",
+    logo: "/marks/technical-safety-bc.png",
+    logoOnInk: "/marks/technical-safety-bc-on-ink.png",
+    href: "https://www.technicalsafetybc.ca/",
   },
   {
     name: "ASME B30",
     body: "Cranes, derricks, hoists, slings and related lifting equipment.",
+    logo: "/marks/asme.png",
+    logoOnInk: "/marks/asme-on-ink.png",
+    href: "https://www.asme.org/",
   },
   {
     name: "Manufacturer requirements",

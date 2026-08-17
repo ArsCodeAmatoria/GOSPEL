@@ -23,8 +23,8 @@ export default function PhilosophyPage() {
       </header>
       <div className="split wrap top" style={{ paddingBottom: "4rem" }}>
         <p className="lede-lg">
-          WHOOP is a safety company that supplies a crane and rigging workforce.
-          We supply operators, riggers, signalpersons and crews.
+          WHOOP is a safety company. The crew is how you get us. Operators,
+          riggers, signalpersons — people who already work to the standard.
         </p>
         <p className="lede">
           Competent people matter. Safety information should be accessible.

@@ -10,6 +10,7 @@ import {
   JHAS,
   SWPS,
 } from "@/lib/ohs";
+import { BINDERS } from "@/lib/ohs/binders";
 import {
   JHA_GROUP_ORDER,
   POLICY_GROUP_ORDER,
@@ -69,7 +70,7 @@ export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
   if (kind === "form") {
     return (
       <SafetyLibrary
-        placeholder="FLHA, lift plan, inspection…"
+        placeholder="FLHA, lift plan, inspection, OHS meeting…"
         groupOrder={["Builder", ...FORM_GROUPS]}
         items={[
           {
@@ -107,7 +108,7 @@ export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
   if (kind === "crane") {
     return (
       <SafetyLibrary
-        placeholder="MDT 219, MRH 125, luffer, Hup, Igo…"
+        placeholder="MDT 219, CTT 172, J165.8, SK 225, SN 160…"
         groupOrder={CRANE_GROUP_ORDER}
         items={CRANES.map((item) => ({
           href: `/safety/crane/${item.slug}`,
@@ -116,6 +117,38 @@ export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
           summary: item.summary,
           meta: item.family,
         }))}
+      />
+    );
+  }
+  if (kind === "binder") {
+    return (
+      <SafetyLibrary
+        placeholder="30M33, radio, NOP-TC, tower report…"
+        groupOrder={["Wizard", "Tower", "Self-erect", "Binder forms"]}
+        items={[
+          {
+            href: "/safety/binder",
+            number: "WHOOP-BND",
+            title: "BINDER WIZARD",
+            summary:
+              "Tower or self-erect. Walk the checklist. Download the WHOOP PDF.",
+            meta: "Wizard",
+          },
+          ...BINDERS.map((item) => ({
+            href: `/safety/binder/${item.kind}`,
+            number: item.number,
+            title: item.title,
+            summary: item.summary,
+            meta: item.kind === "tower" ? "Tower" : "Self-erect",
+          })),
+          ...FORMS.filter((item) => item.group === "Binder").map((item) => ({
+            href: `/safety/form/${item.slug}`,
+            number: item.number,
+            title: item.title,
+            summary: item.summary,
+            meta: "Binder forms",
+          })),
+        ]}
       />
     );
   }

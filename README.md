@@ -4,7 +4,7 @@
 
 We supply the people who lift.
 
-WHOOP is a safety company that supplies a workforce. Crane operators. Riggers. Signalpersons. Lifting crews. Vancouver, Canada. Union-friendly shop.
+WHOOP is a safety company. The crew is how you get us. Crane operators. Riggers. Signalpersons. Lifting crews. British Columbia, Canada. Union-friendly shop.
 
 If you need the people who can run it, brief it, and stop it when it should stop — call us.
 
@@ -44,7 +44,8 @@ Working documents, not a poster:
 - **OH&S policies** — OH&S, violence, workplace conduct, fitness for work, PPE, impairment, working alone, incident reporting, injury management, return to work, [bullying and harassment](https://whoop.ca/safety/policy/bullying-and-harassment), and discrimination. Plus competency, crane operations and rigging.
 - **SWP library** — numbered steps for the lift. Grouped: crane, signals, rigging, the plan.
 - **JHA library** — hazards, consequence, residual risk. The steps live in the SWP.
-- **Safety forms** — FLHA, inspections, lift plans, incident reports, operator and rigger logs, weekly and monthly maintenance.
+- **Safety forms** — FLHA, inspections, lift plans, incident reports, operator and rigger logs, weekly and monthly maintenance. Binder forms (30M33 record, radio 52E73C, NOP-TC posting, tower crane report) fill and download as PDF.
+- **[Crane binders](https://whoop.ca/safety/crane-binders)** — Tower and Self-Erect site binders numbered to the BC Crane Safety checklists. Wizard at `/safety/binder`. Official templates stay on bccranesafety.ca and WorkSafeBC.
 - **[Form Builder](https://whoop.ca/safety/builder)** — assemble WHOOP forms from reusable Safety Blocks. Fill them on the device. Download a PDF. Email it. Nothing is stored on a server unless you send it.
 
 Where BCCSA already wrote the construction template, we use it. Injury-management and COR packs download from this site. Heat and sun, lone hoist-operator rescue, fall-protection rescue and crane-relevant toolbox talks are linked to the BCCSA catalogues — sign in on bccsa.ca to get the PDFs. We do not rewrite those guides.
@@ -73,7 +74,7 @@ Tell us the work, the site, the machines and the dates. We will tell you who is 
 
 **Phone** [1 604 431 2000](tel:+16044312000)  
 **Email** [hire@whoopp.ca](mailto:hire@whoopp.ca)  
-**Vancouver, Canada**
+**British Columbia, Canada**
 
 No bullshit. Just good people doing heavy work.
 

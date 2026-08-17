@@ -1,4 +1,5 @@
 import { SAFETY } from "@/lib/safety";
+import { BINDERS } from "./binders";
 import { CRANES } from "./cranes";
 import { FORMS } from "./forms";
 import { JHAS } from "./jhas";
@@ -27,6 +28,8 @@ const POLICY_GROUP: Record<string, (typeof POLICY_GROUP_ORDER)[number]> = {
   competency: "THE COMPANY",
   training: "THE COMPANY",
   "continuous-improvement": "THE COMPANY",
+  "joint-committee": "THE COMPANY",
+  contractors: "THE COMPANY",
   "hazard-identification": "THE LIFT",
   "risk-assessment": "THE LIFT",
   ppe: "THE LIFT",
@@ -34,6 +37,8 @@ const POLICY_GROUP: Record<string, (typeof POLICY_GROUP_ORDER)[number]> = {
   rigging: "THE LIFT",
   "equipment-inspection": "THE LIFT",
   "environmental-conditions": "THE LIFT",
+  "first-aid": "THE CREW",
+  "occupational-health": "THE CREW",
   "right-to-refuse": "THE CREW",
   "workplace-conduct": "THE CREW",
   "fitness-for-work": "THE CREW",
@@ -82,6 +87,8 @@ const SWP_GROUP: Record<string, (typeof SWP_GROUP_ORDER)[number]> = {
   "working-near-powerlines": "THE PLAN",
   "critical-lifts": "THE PLAN",
   "lift-planning": "THE PLAN",
+  lockout: "CRANE",
+  "tower-erection-climbing": "CRANE",
 };
 
 export const JHA_GROUP_ORDER = ["CRANE", "SIGNALS", "RIGGING", "THE PLAN"] as const;
@@ -148,6 +155,20 @@ export function safetyCatalog(): CatalogHit[] {
       summary: "Assemble, fill, PDF.",
       kind: "FORM",
     },
+    {
+      href: "/safety/binder",
+      number: "WHOOP-BND",
+      title: "CRANE BINDER WIZARD",
+      summary: "Tower or self-erect site binder.",
+      kind: "BINDER",
+    },
+    ...BINDERS.map((item) => ({
+      href: `/safety/binder/${item.kind}`,
+      number: item.number,
+      title: item.title,
+      summary: item.summary,
+      kind: "BINDER",
+    })),
     ...CRANES.map((item) => ({
       href: `/safety/crane/${item.slug}`,
       number: item.number,

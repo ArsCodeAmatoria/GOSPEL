@@ -889,6 +889,104 @@ html[data-theme="dark"] .switch-shell.is-on .switch-mark-on {
   max-width: 32rem;
 }
 
+.std-mark-wrap {
+  display: inline-grid;
+  align-items: center;
+  justify-items: start;
+  min-height: 3.1rem;
+  margin: 0 0 0.55rem;
+  padding: 0.2rem 0;
+  max-width: 100%;
+}
+
+.std-mark-wrap:hover {
+  outline: 1px solid var(--crown);
+}
+
+.std-mark {
+  display: block;
+  grid-area: 1 / 1;
+  height: 2.15rem;
+  width: auto;
+  max-width: 11.5rem;
+  object-fit: contain;
+}
+
+.std-mark-on-ink {
+  display: none;
+}
+
+html[data-theme="dark"] .std-mark-on-paper {
+  display: none;
+}
+
+html[data-theme="dark"] .std-mark-on-ink {
+  display: block;
+}
+
+.std-marks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 0.85rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.std-marks li {
+  margin: 0;
+}
+
+.std-marks .std-mark-wrap {
+  margin: 0;
+}
+
+.std-marks-compact {
+  margin: 0;
+}
+
+.std-marks-compact .std-mark {
+  height: 1.7rem;
+  max-width: 8.5rem;
+}
+
+.std-marks-compact .std-mark-wrap {
+  min-height: 2.4rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.footer-marks {
+  margin: 2rem 0 0;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--on-ink-line);
+}
+
+.footer-marks .std-mark-wrap {
+  padding: 0;
+  min-height: 0;
+}
+
+.footer .std-mark-on-paper {
+  display: none;
+}
+
+.footer .std-mark-on-ink {
+  display: block;
+}
+
+html[data-theme="dark"] .footer .std-mark-on-paper {
+  display: block;
+}
+
+html[data-theme="dark"] .footer .std-mark-on-ink {
+  display: none;
+}
+
+.footer-marks .std-mark {
+  height: 1.85rem;
+  max-width: 9rem;
+}
+
 /* ——— Safety document chrome ——— */
 .doc {
   display: grid;
@@ -1396,6 +1494,119 @@ html[data-theme="dark"] .switch-shell.is-on .switch-mark-on {
   flex-wrap: wrap;
   gap: 0.7rem;
   padding: 1.4rem 0 0;
+}
+
+.field > span {
+  color: var(--steel);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ——— Crane binder wizard ——— */
+.binder-progress {
+  margin: 1.4rem 0 0;
+  color: var(--crown);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.binder-fields {
+  display: grid;
+  gap: 0;
+}
+
+@media (min-width: 720px) {
+  .binder-fields {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .binder-fields .field {
+    padding-right: 1rem;
+  }
+
+  .binder-fields .field:nth-child(even) {
+    padding-left: 1rem;
+    padding-right: 0;
+    border-left: 1px solid var(--line);
+  }
+}
+
+.binder-group {
+  margin-top: 2.4rem;
+}
+
+.binder-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.binder-item {
+  padding: 1.4rem 0 1.6rem;
+  border-top: 1px solid var(--line);
+}
+
+.binder-item header {
+  display: grid;
+  gap: 0.2rem;
+  margin-bottom: 0.55rem;
+}
+
+.binder-item h2 {
+  font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+}
+
+.binder-item header em {
+  font-style: normal;
+  color: var(--steel);
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+}
+
+.binder-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.9rem 0 0.4rem;
+}
+
+.binder-status button {
+  appearance: none;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+  padding: 0.35rem 0.7rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.binder-status button.is-on {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.binder-item-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.1rem;
+  margin: 0.9rem 0 0;
+}
+
+.binder-item-links a {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.binder-item-links a:hover {
+  color: var(--crown);
 }
 
 /* ——— Form Builder ——— */

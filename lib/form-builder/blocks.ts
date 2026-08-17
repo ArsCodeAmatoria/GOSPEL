@@ -219,6 +219,189 @@ export const TOWER_MONTHLY_ITEMS = [
   "Logbook complete",
 ];
 
+export const MANAGEMENT_REVIEW_ITEMS = [
+  "Incidents and investigations this period",
+  "Inspection findings still open",
+  "Corrective actions overdue",
+  "Training and competency gaps",
+  "Young / new worker orientations complete",
+  "Worker concerns and refusals",
+  "COR / audit actions",
+  "First aid and emergency drills",
+  "Objectives this period — met or not",
+  "Program revisions required",
+];
+
+export const OHS_MEETING_ITEMS = [
+  "Unsafe conditions named",
+  "Unsafe practices named",
+  "Incidents and near misses",
+  "Inspection findings",
+  "Worker concerns",
+  "Actions from last meeting closed",
+];
+
+export const EMERGENCY_DRILL_ITEMS = [
+  "First aid summoned",
+  "Muster accounted for the crew",
+  "Crane put in a safe condition",
+  "Powerline contact procedure (if in the scenario)",
+  "Fall rescue (if anyone is tied off on this workplace)",
+  "Communications worked",
+];
+
+export const YOUNG_NEW_WORKER_ITEMS = [
+  "Supervisor name and contact",
+  "Rights and responsibilities, including refusal",
+  "Company and workplace rules",
+  "Hazards of this workplace",
+  "Working alone",
+  "Violence / bullying",
+  "PPE for this dispatch",
+  "First aid location and how to summon it",
+  "Emergency procedures",
+  "Task shown, not just told",
+  "This Safety Program shown",
+  "WHMIS as it applies here",
+  "Committee or worker-rep contact (if applicable)",
+];
+
+export const PRE_ASSEMBLY_ITEMS = [
+  "Activity supervisor named and present",
+  "Sequence and hold points agreed",
+  "Exclusion zone and public interface",
+  "Assist crane / mobile documentation if used",
+  "Radios tested",
+  "Weather abort named",
+  "THARRP / high-angle rescue named",
+  "NOP-TC submitted and posting location known",
+];
+
+export const POWERLINE_30M33_ITEMS = [
+  "Work radius marked on the sketch",
+  "Overhead lines in the radius identified",
+  "Transformers identified",
+  "Cable / buried hazards identified",
+  "Table 19-1A distance for this voltage",
+  "Utility representative present for the discussion",
+  "Coded 30M33 signed if limits of approach cannot be held",
+  "Sheet posted on the site board",
+];
+
+export const RADIO_FREQ_ITEMS = [
+  "52E73C submitted to WorkSafeBC",
+  "Assigned channel posted in the cab",
+  "Dedicated UHF — not a multi-channel construction radio for directing the hook",
+  "Tested with the rigger before first load",
+  "Spare batteries on site",
+];
+
+export const NOP_TC_ITEMS = [
+  "Submitted at least two weeks before the activity",
+  "Project type: Tower Crane",
+  "Binder checklist attached as required",
+  "Supervisor qualifications attached or registered",
+  "Notice posted at the workplace",
+  "Significant changes resubmitted",
+];
+
+export const OPERATOR_ORIENT_ITEMS = [
+  "Chart in the cab matches this configuration",
+  "Access and emergency descent known",
+  "Radios and stop word",
+  "30M33 / powerlines shown",
+  "THARRP / how to summon rescue",
+  "Wind and shutdown",
+  "Who takes the crane out of service",
+];
+
+export const TOWER_REPORT_ITEMS = [
+  "Standing configuration matches the chart",
+  "Foundation / pads / ties as designed",
+  "Limits and overload tested",
+  "Anemometer and weathervane tested",
+  "Aviation marking / lighting if required",
+  "Deficiencies named",
+  "Released to operate",
+];
+
+export const SUPERVISOR_QUAL_ITEMS = [
+  "Qualified for this particular crane",
+  "Directing this activity — not remote",
+  "Qualifications on the NOP-TC",
+  "Lead hand named if used",
+];
+
+export const CSA_COMPLIANCE_ITEMS = [
+  "Z248-2004 named for this class",
+  "Document covers this serial and configuration",
+  "Original locatable",
+];
+
+export const THARRP_COVER_ITEMS = [
+  "Portal request made by host / prime / owner",
+  "Fire department named",
+  "Operator knows how to summon them",
+  "Formal survey on site if high-rise past 60 days",
+  "WHOOP confirmed before dispatch",
+];
+
+export const NAVCAN_ITEMS = [
+  "Tip height and dates submitted",
+  "NAV CANADA file number",
+  "Transport Canada AAF if required",
+  "Marking / lighting as directed",
+  "NOTAM contact known",
+];
+
+export const POWER_SOURCE_ITEMS = [
+  "Isolation point identified",
+  "Lockout applied before bodies in the machine",
+  "Earthing complete",
+  "Who may make it live — named",
+];
+
+export const SITE_LAYOUT_ITEMS = [
+  "Drawings match the standing crane",
+  "Radius and height correct",
+  "Adjacent cranes / anti-collision",
+  "Public interface controlled",
+];
+
+export const TRAFFIC_PERMIT_ITEMS = [
+  "Permit current for these dates",
+  "Hours match the work",
+  "Traffic control in place as the permit requires",
+];
+
+export const NDT_ITEMS = [
+  "Report covers the components going up",
+  "Still in date",
+  "Failed items isolated",
+];
+
+export const HOIST_ROPE_ITEMS = [
+  "Mill cert attached",
+  "Identification matches the drum",
+  "Condition this inspection recorded",
+];
+
+export const OPERATOR_CERT_ITEMS = [
+  "BC Crane Safety certificate current",
+  "Class matches this crane",
+  "Provisional supervision plan attached if required",
+];
+
+export const REFUSAL_ITEMS = [
+  "Work stopped",
+  "Reason stated — specific",
+  "Site told",
+  "WHOOP told",
+  "Danger investigated",
+  "Work still stopped until controlled",
+  "No replacement sent to do the same unsafe work",
+];
+
 export function createBlock(
   type: BlockType,
   inspectionItems?: string[]
