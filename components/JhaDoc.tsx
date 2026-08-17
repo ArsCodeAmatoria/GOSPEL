@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { RiskBadge } from "@/components/RiskBadge";
 import { SafetyControlStamp } from "@/components/SafetyControl";
 import type { Jha } from "@/lib/ohs";
 
@@ -26,7 +27,16 @@ export function JhaDoc({ doc }: { doc: Jha }) {
         <p className="mono">
           Task is the work being analysed — not a procedure to follow. Controls
           follow the hierarchy: eliminate, substitute, engineer, administer,
-          PPE last.
+          PPE last. The badge is how bad this task going wrong is in this job.
+          Extreme is the killer with no recovery. High is serious injury or a
+          dropped load you still have a chance to stop. Moderate is lost time
+          or a plan that failed. Low is first aid.
+        </p>
+        <p className="risk-legend" aria-label="Risk levels">
+          <RiskBadge level="low" />
+          <RiskBadge level="moderate" />
+          <RiskBadge level="high" />
+          <RiskBadge level="extreme" />
         </p>
         <table className="wire-table">
           <thead>
@@ -42,7 +52,10 @@ export function JhaDoc({ doc }: { doc: Jha }) {
               <tr key={`${row.task}-${row.hazard}`}>
                 <td>{row.task}</td>
                 <td>{row.hazard}</td>
-                <td>{row.risk}</td>
+                <td>
+                  <RiskBadge level={row.level} />
+                  {row.risk}
+                </td>
                 <td>{row.control}</td>
               </tr>
             ))}

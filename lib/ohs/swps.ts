@@ -1,6 +1,16 @@
 import type { Step } from "@/lib/safety";
-import type { Swp } from "./types";
-import { CREW_ROLES, LIFT_PPE, LIFT_REFS } from "./meta";
+import type { DocLink, DocTable, RoleLine, Swp } from "./types";
+import {
+  CREW_ROLES,
+  FLYTABLE_LINKS,
+  FLYTABLE_REFS,
+  FLYTABLE_ROLES,
+  LIFT_PPE,
+  LIFT_REFS,
+  MAD_LINKS,
+  MAD_REFS,
+  MAD_TABLES,
+} from "./meta";
 
 function swp(
   number: string,
@@ -18,6 +28,10 @@ function swp(
     prohibited: string[];
     emergency?: string;
     documentation?: string[];
+    references?: string[];
+    links?: DocLink[];
+    responsibilities?: RoleLine[];
+    tables?: DocTable[];
   }
 ): Swp {
   return {
@@ -27,7 +41,7 @@ function swp(
     summary,
     purpose: fields.purpose,
     scope: fields.scope,
-    responsibilities: CREW_ROLES,
+    responsibilities: fields.responsibilities ?? CREW_ROLES,
     competency: fields.competency,
     hazards: fields.hazards,
     controls: fields.controls,
@@ -43,7 +57,9 @@ function swp(
       "Pre-use / inspection record",
       "This SWP number and revision",
     ],
-    references: LIFT_REFS,
+    references: fields.references ? [...LIFT_REFS, ...fields.references] : LIFT_REFS,
+    links: fields.links,
+    tables: fields.tables,
   };
 }
 
@@ -325,22 +341,37 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Standing under a suspended load", "Leaving a load hanging over a walkway", "Riding the load"],
   }),
-  swp("WHOOP-SWP-018", "working-near-powerlines", "WORKING NEAR POWERLINES", "Assume they are live. Distance is a wall.", {
-    purpose: "Keep boom, load, tag lines and people outside the minimum approach distance.",
-    scope: "Any WHOOP lift where overhead or buried electrical lines exist, or might exist.",
-    competency: ["Operator and supervisor who know the MAD for this voltage", "Spotter when required"],
-    hazards: ["Contact", "Arc", "Step potential", "Unknown voltage", "Lines that “look dead”"],
-    controls: ["Identify", "MAD as a hard wall", "Spotter", "Utility when the lift cannot keep clearance", "Brief the jump procedure"],
-    equipment: ["Spotter", "Range limiting if fitted and used", "Utility documentation if the line is to be covered or de-energized"],
+  swp("WHOOP-SWP-018", "working-near-powerlines", "WORKING NEAR POWERLINES", "Assume they are live. MAD is a wall. Table 19-1A.", {
+    purpose: "Keep boom, load, tag lines and people outside the minimum approach distance BC Hydro and WorkSafeBC Table 19-1A name for this voltage.",
+    scope: "Any WHOOP lift where overhead or buried electrical lines exist, or might exist. BC Hydro system or any other utility — the same table. Buried: look down, locate, do not assume the pad is empty.",
+    competency: ["Operator and supervisor who can name the MAD for this voltage", "Spotter when the boom or load can encroach"],
+    hazards: ["Contact", "Arc across a gap", "Step potential", "Unknown voltage", "Lines that look dead", "Tag line as a conductor"],
+    controls: ["Identify", "Voltage from the utility — not a guess", "MAD as a hard wall", "Spotter", "Zone-limiting device if practicable (19.24.1(2))", "30M33 if the lift cannot keep clearance"],
+    equipment: ["Spotter", "Range / zone limiting if fitted and used", "WHOOP-FRM-037", "Coded 30M33 if MAD cannot be held"],
     procedure: [
-      { n: "01", title: "FIND THE LINES", body: "Look up. Ask the site. Do not trust a single drawing." },
-      { n: "02", title: "VOLTAGE AND MAD", body: "Treat unknown as the worst case the site will allow you to plan to. If you cannot keep MAD, it is not a crane job until the utility says it is." },
-      { n: "03", title: "SPOTTER", body: "When the boom or load can encroach, a dedicated spotter whose only job is the line." },
-      { n: "04", title: "LIMIT THE CRANE", body: "Use the plan, the chart and any limiting device. Do not “be careful” as the control." },
-      { n: "05", title: "CONTACT", body: "Stay on the crane unless fire or shock forces you off. Nobody approaches. Call the utility. If you must get off: jump clear, feet together, shuffle away. This is briefed before the lift, not during the contact." },
+      { n: "01", title: "FIND THE LINES", body: "Look up. Look down. Ask the site. Do not trust a single drawing. Service drops, distribution, transmission — all of them." },
+      { n: "02", title: "VOLTAGE AND MAD", body: "Voltage from BC Hydro or the owner — Express Connect 1 877 520 1355. Table 19-1A is the wall: 1 m under 750 V, 3 m to 75 kV, 4.5 m to 250 kV, 6 m to 550 kV. Unknown: 3 m off distribution, 6 m off transmission, until they verify. If you cannot keep MAD, it is not a crane job until 30M33 is signed." },
+      { n: "03", title: "SPOTTER", body: "When the boom, load or tag line can encroach, a dedicated spotter whose only job is the line. STOP means stop." },
+      { n: "04", title: "LIMIT THE CRANE", body: "Plan, chart, and any zone-limiting device. Tower crane: 19.24.1(2) — fit and use a limiter if practicable. Do not “be careful” as the control." },
+      { n: "05", title: "CONTACT", body: "Stay on the crane unless fire or shock forces you off. Nobody approaches — 10 m, 911. Downed transmission or manhole: 33 m. If you must get off: jump clear, feet together, shuffle away. Briefed before the lift, not during the contact." },
     ],
-    prohibited: ["Guessing voltage", "Using a two-by-four to “hold the line”", "Tag lines that can blow into a line"],
-    emergency: "Do not touch the crane or the load. Keep people back. Call the utility and emergency services. Operator stays on unless fire or shock. WHOOP notified immediately.",
+    prohibited: [
+      "Guessing voltage",
+      "Treating unknown as 3 m when it might be transmission",
+      "Using a two-by-four to hold the line",
+      "Tag lines that can blow into a line",
+      "Entering MAD without a signed 30M33",
+    ],
+    emergency:
+      "Do not touch the crane or the load. People back 10 m — 33 m if it is transmission or a manhole. Call 911 and BC Hydro. Operator stays on unless fire or shock. WHOOP notified immediately.",
+    documentation: ["FLHA", "WHOOP-FRM-037", "Coded 30M33 if issued", "This SWP number and revision"],
+    references: MAD_REFS,
+    links: [
+      { href: "/safety/jha/working-near-powerlines", label: "JHA — WORKING NEAR POWERLINES — WHOOP-JHA-013 →" },
+      { href: "/safety/form/powerline-30m33", label: "POWERLINE RECORD — WHOOP-FRM-037 →" },
+      ...MAD_LINKS,
+    ],
+    tables: MAD_TABLES,
   }),
   swp("WHOOP-SWP-019", "critical-lifts", "CRITICAL LIFTS", "Slower brief. Named supervision. Written plan. Ego is not a control.", {
     purpose: "Run lifts that can hurt a lot of people, or a lot of plant, as critical — not as a louder version of a routine pick.",
@@ -358,7 +389,12 @@ export const SWPS: Swp[] = [
       { n: "06", title: "ABORT", body: "Any unmet condition: stop. Rewrite. Do not “adapt on the fly.”" },
     ],
     prohibited: ["Calling it critical and then running it like a grocery pick", "Tandem lifts without a plan and a single lead"],
-    documentation: ["WHOOP-FRM-007", "WHOOP-FRM-009", "SJP if required"],
+    documentation: [
+      "WHOOP-FRM-007",
+      "WHOOP-FRM-009",
+      "SJP if required",
+      "Flytables: WHOOP-SWP-028 and WHOOP-SJP-001",
+    ],
   }),
   swp("WHOOP-SWP-020", "lift-planning", "LIFT PLANNING", "Weight, COG, chart, path, people, abort — before the hook.", {
     purpose: "Build a plan that a crew can actually follow.",
@@ -495,6 +531,163 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["An operator jumping a crane as a favour", "Skipping the NOP because the pour is tomorrow", "Using a different manufacturer’s climbing notes"],
     documentation: ["NOP-TC", "Site binder checklist", "Qualified supervisor named", "Manufacturer erection / climbing procedure for this serial"],
+  }),
+  swp("WHOOP-SWP-028", "flytable-cycling", "FLYTABLE CYCLING", "Drop, roll, fly, land. Critical lift. The drawing and the OEM cycle win.", {
+    purpose: "Give the WHOOP crew one method for flying a table-form from floor to floor: designated pick points, no pulling the table out, confirmation-loop radios, holds. Formwork carpentry stays with the host.",
+    scope: "WHOOP operator, rigger and signalperson on a flytable / flyform cycle. Not a how-to for dropping jacks, rolling dollies or landing props. Those belong to the manufacturer cycle and the site-specific engineered drawing. Corner and nontypical tables: WHOOP-SWP-029 on top of this procedure.",
+    responsibilities: FLYTABLE_ROLES,
+    competency: [
+      "BC Crane Safety certificate for this crane class",
+      "Critical-lift brief — everyone can repeat the abort",
+      "Knows the pick points on this drawing, not last floor’s memory",
+    ],
+    hazards: [
+      "Unknown or shifting COG",
+      "Crane dragging the table out of the slab",
+      "Missing pins at designated pick points",
+      "People or loose gear on the table",
+      "Runaway roll at the edge",
+      "Fall from the unguarded slab",
+      "Wind on a panel",
+      "Lost radio between floors",
+      "Disconnect before the table is landed",
+    ],
+    controls: [
+      "Site-specific engineered drawing and manufacturer cycle at the lift",
+      "Critical lift plan and this-cycle SJP",
+      "Four designated pick points before the table leaves the building",
+      "Curb stops, kicker blocks, brake lines as the drawing",
+      "Confirmation-loop radios, both floors",
+      "Exclusion below and on the landing floor",
+      "Stop and discuss on any change",
+    ],
+    equipment: [
+      "This crane, this chart",
+      "Rigging named on the drawing — slings, shackles, OEM lifting adapters / truss picks / Safety Pin-Bolts",
+      "Radios on the named channel",
+      "Tag lines",
+      "WHOOP-FRM-007, WHOOP-FRM-009, WHOOP-FRM-052",
+    ],
+    procedure: [
+      {
+        n: "01",
+        title: "GATE",
+        body: "Engineered drawing for this table ID and this floor. Manufacturer cycle at the lift. Weight and COG known (14.36). Pick points and sling lengths as the drawing. Wind — the lower of crane, manufacturer, this SJP. WHOOP-SJP-001 / FRM-052 filled. Critical lift plan. Radios tested, confirmation loop, both floors. Pre-lift meeting immediately before this cycle. Corner or nontypical: WHOOP-SWP-029 and that plan. If any of that is missing, the hook does not take the table.",
+      },
+      {
+        n: "02",
+        title: "DROP",
+        body: "Formwork drops the table per the manufacturer and the drawing — jacks, lowering devices, reshores. WHOOP hook is not a substitute for lowering jacks. Confirm the table is free of the slab, pins and spindles as the OEM, nothing snagged. Crane on standby. Do not take load to strip.",
+      },
+      {
+        n: "03",
+        title: "ROLL AND ATTACH",
+        body: "Dollies, glides, casters as the manufacturer. Curb stops and kicker blocks at the edge. Brake lines if the drawing requires them. Fall protection at the unguarded edge (Part 11). Exclusion below. The crane does not pull the table out of the building. Attach to every designated pick point — pins, cotters or Safety Pin-Bolts as the OEM — before the table leaves the slab. People off the table. Loose material off the table.",
+      },
+      {
+        n: "04",
+        title: "FLY",
+        body: "Test lift. Confirm the hang as the drawing — some systems use a longer rear pair, only if that drawing says so. Wind. Path. Tag lines. Confirmation-loop radio, both floors. Hoist clear, then up. A table is a sail. Stop on any change.",
+      },
+      {
+        n: "05",
+        title: "LAND",
+        body: "Guide onto the landing floor. Set on jacks or landing dollies as the manufacturer. Do not disconnect until the table is stable, tiebacks and curbs as the drawing, and the formwork supervisor says it is landed. Then release.",
+      },
+      {
+        n: "06",
+        title: "AFTER",
+        body: "Inspect table and rigging. Record the cycle. The next cycle starts from the drawing, not from memory.",
+      },
+    ],
+    prohibited: [
+      "Using the crane to strip or drag the table out of the slab",
+      "People or loose gear on the table while it moves or flies",
+      "Improvised pick points, missing pins, or a two-point fly on a four-point table",
+      "Flying a corner or nontypical table on the typical SJP",
+      "Changing the sequence without the engineer",
+      "Skipping a curb, tieback or brake line the drawing names",
+      "Last floor’s SJP for this table",
+    ],
+    emergency:
+      "Table hung up, rolling toward the edge, dropped object, person in the zone, wind pickup, lost radio — stop. Land if it can be done without a second incident. Do not pull. First aid. Notify the site and WHOOP. Hold the scene.",
+    documentation: [
+      "WHOOP-SJP-001 / FRM-052 for this cycle",
+      "WHOOP-FRM-007 critical lift plan",
+      "WHOOP-FRM-009 pre-lift meeting",
+      "Engineered drawing revision for this table",
+      "Manufacturer cycle at the lift",
+      "FLHA",
+    ],
+    references: FLYTABLE_REFS,
+    links: [
+      { href: "/safety/sjp/flytable-cycle", label: "SJP — THIS CYCLE — WHOOP-SJP-001 →" },
+      { href: "/safety/jha/flytable-cycling", label: "JHA — FLYTABLE CYCLING — WHOOP-JHA-011 →" },
+      ...FLYTABLE_LINKS,
+    ],
+  }),
+  swp("WHOOP-SWP-029", "corner-nontypical-flytables", "CORNER AND NONTIPICAL FLYTABLES", "Awkward shape. Reduced stability. Not the typical SJP.", {
+    purpose: "Stop a corner or nontypical table from being flown on the typical cycle. WorkSafeBC and BC Crane Safety call these out as a separate plan.",
+    scope: "WHOOP crew when the table is a corner, infill, reduced-width, or any table the drawing or the engineer marks nontypical. Do WHOOP-SWP-028 as well. This SWP does not replace it.",
+    responsibilities: FLYTABLE_ROLES,
+    competency: [
+      "Same as WHOOP-SWP-028",
+      "Can say why this table is not typical, and what the special plan changes",
+    ],
+    hazards: [
+      "Asymmetric COG",
+      "Spin or tip when it leaves the slab",
+      "Treating it as last floor’s typical table",
+      "Missing special handling plan",
+    ],
+    controls: [
+      "Said on the SJP: this is nontypical",
+      "Engineered handling plan for this table at the lift",
+      "Sling geometry only as that plan",
+      "Extra tag line and extra spotter if the plan names them",
+      "Slower. More holds. Stop and discuss.",
+    ],
+    equipment: ["WHOOP-SWP-028 equipment", "The special handling plan for this table", "WHOOP-SJP-002 / FRM-052 marked nontypical"],
+    procedure: [
+      {
+        n: "01",
+        title: "NAME IT",
+        body: "This table is nontypical — said on the SJP, said in the brief. If nobody can say why, it is not ready.",
+      },
+      {
+        n: "02",
+        title: "THE SPECIAL PLAN",
+        body: "Engineered handling plan for this table at the lift. Not a note in the margin of the typical drawing. Pick points, sling lengths, COG, extra tag lines, extra holds — as that plan.",
+      },
+      {
+        n: "03",
+        title: "THEN THE CYCLE",
+        body: "Do WHOOP-SWP-028 on top of that plan. Gate, drop, roll, attach, fly, land. The crane still does not pull the table out.",
+      },
+      {
+        n: "04",
+        title: "STOP",
+        body: "Anyone treating it as a typical table, any missing pin, any change from the special plan — stop. Rewrite. Do not improvise a corner fly.",
+      },
+    ],
+    prohibited: [
+      "Flying a corner table on the typical SJP",
+      "Guessing sling lengths because the typical table used them",
+      "Skipping the extra tag line or spotter the special plan names",
+    ],
+    emergency:
+      "Same as WHOOP-SWP-028. A nontypical table that starts to spin is a stop, not a recovery with more hoist.",
+    documentation: [
+      "WHOOP-SJP-002 / FRM-052 marked nontypical",
+      "Special handling plan attached",
+      "WHOOP-SWP-028 documentation",
+    ],
+    references: FLYTABLE_REFS,
+    links: [
+      { href: "/safety/sjp/corner-nontypical-flytable", label: "SJP — CORNER / NONTIPICAL — WHOOP-SJP-002 →" },
+      { href: "/safety/jha/corner-nontypical-flytables", label: "JHA — CORNER AND NONTIPICAL — WHOOP-JHA-012 →" },
+      ...FLYTABLE_LINKS,
+    ],
   }),
 ];
 

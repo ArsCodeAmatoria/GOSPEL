@@ -47,13 +47,25 @@ export type Swp = {
   emergency: string;
   documentation: string[];
   references: string[];
+  links?: DocLink[];
+  tables?: DocTable[];
 };
+
+export type DocTable = {
+  caption?: string;
+  columns: string[];
+  rows: string[][];
+};
+
+/** Severity of the named risk — before the control holds it. */
+export type RiskLevel = "low" | "moderate" | "high" | "extreme";
 
 export type JhaRow = {
   task: string;
   hazard: string;
   risk: string;
   control: string;
+  level: RiskLevel;
 };
 
 export type Jha = {
@@ -70,6 +82,25 @@ export type Jha = {
   swpHref?: string;
   swpLabel?: string;
   references: string[];
+};
+
+/** This lift, this site, this day. Built on an SWP. Not a second procedure library of how-tos. */
+export type Sjp = {
+  slug: string;
+  title: string;
+  number: string;
+  summary: string;
+  when: string;
+  purpose: string;
+  basedOn: { href: string; label: string }[];
+  facts: string[];
+  holds: Step[];
+  abort: string[];
+  named: string[];
+  documentation: string[];
+  references: string[];
+  download?: DocLink;
+  links?: DocLink[];
 };
 
 export type SafetyForm = {
@@ -133,4 +164,5 @@ export type LibraryCard = {
   title: string;
   summary: string;
   meta?: string;
+  risk?: RiskLevel;
 };

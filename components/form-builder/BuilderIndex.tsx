@@ -43,7 +43,7 @@ export function BuilderIndex() {
           device. Download a PDF. Nothing is kept on a server.
         </p>
         <p className="doc-cta">
-          <Link href="/safety/safety-forms">16 — SAFETY FORMS →</Link>
+          <Link href="/safety/safety-forms">17 — SAFETY FORMS →</Link>
         </p>
       </header>
       <div className="form-actions">

@@ -1,4 +1,5 @@
 import { COR_ELEMENTS, PROGRAM_HIERARCHY, WSBC_33 } from "@/lib/ohs/system";
+import { MAD_APPROACH, MAD_DOWN, MAD_UNKNOWN } from "@/lib/ohs/meta";
 
 export type Step = { n: string; title: string; body: string };
 
@@ -15,6 +16,7 @@ export type Block =
 export type SafetyLibraryKind =
   | "swp"
   | "jha"
+  | "sjp"
   | "policy"
   | "form"
   | "sds"
@@ -298,7 +300,7 @@ export const SAFETY: SafetySection[] = [
           "Load weight or centre of gravity not confirmed.",
           "Ground cannot support the crane or outriggers as configured.",
           "Wind, lightning or visibility outside the plan.",
-          "Power lines inside the minimum approach distance.",
+          "Power lines inside Table 19-1A MAD — 1 m / 3 m / 4.5 m / 6 m by voltage, or unknown 3 m distribution / 6 m transmission.",
           "Exclusion zone cannot be held.",
           "Communication lost or ambiguous.",
           "Anyone on the crew is not competent for the role they are about to perform.",
@@ -325,7 +327,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/swp-library",
-        label: "14 — SWP LIBRARY — 27 PROCEDURES →",
+        label: "14 — SWP LIBRARY — 29 PROCEDURES →",
       },
       {
         type: "h",
@@ -416,11 +418,21 @@ export const SAFETY: SafetySection[] = [
     title: "SAFE JOB PROCEDURES",
     kicker: "This lift. This site. This day.",
     intro:
-      "Safe Job Procedures (SJPs) are built for a specific task when the SWP is not enough. Unusual loads, tight sites, tandem lifts, critical lifts, and anything the hazard assessment flags as non-routine.",
+      "Safe Job Procedures (SJPs) are built for a specific task when the SWP is not enough. Unusual loads, tight sites, tandem lifts, critical lifts, flytable cycles, and anything the hazard assessment flags as non-routine.",
     blocks: [
       {
         type: "p",
-        text: "An SJP is not a longer SWP. It is the SWP plus the facts of this job: weights, radii, drawings, engineered requirements, weather limits, names, radios, and the abort criteria. The JHA library is the hazard analysis for the same work — not another set of steps.",
+        text: "An SJP is not a longer SWP. It is the SWP plus the facts of this job: weights, radii, drawings, engineered requirements, weather limits, names, radios, and the abort criteria. The JHA library is the hazard analysis for the same work — not another set of steps. The filled sheet lives in the SJP library.",
+      },
+      {
+        type: "cta",
+        href: "/safety/sjp-library",
+        label: "16 — SJP LIBRARY →",
+      },
+      {
+        type: "cta",
+        href: "/safety/builder/flytable-cycle-sjp",
+        label: "FILL THIS CYCLE — WHOOP-FRM-052 →",
       },
       {
         type: "cta",
@@ -435,6 +447,7 @@ export const SAFETY: SafetySection[] = [
         type: "list",
         items: [
           "Critical lifts as defined by the site or by this program (see Crane Operations).",
+          "Flytable / flyform cycles — every table, every floor. WHOOP-SJP-001. Corner and nontypical tables: WHOOP-SJP-002.",
           "Tandem or multiple-crane lifts.",
           "Loads of unknown or shifting centre of gravity.",
           "Lifts over occupied buildings, public space, or process equipment.",
@@ -613,7 +626,12 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Treat as critical unless the site defines a stricter threshold: loads approaching chart capacity, tandem lifts, lifts over operating plant or public space, non-routine paths, or loads with shifting COG. Critical lifts get an SJP, named supervision, and a slower brief. Ego is not a control.",
+        text: "Treat as critical unless the site defines a stricter threshold: loads approaching chart capacity, tandem lifts, lifts over operating plant or public space, non-routine paths, loads with shifting COG, or a flytable / flyform cycle. Critical lifts get an SJP, named supervision, and a slower brief. Ego is not a control. Flytables: WHOOP-SWP-028, WHOOP-JHA-011, WHOOP-SJP-001.",
+      },
+      {
+        type: "cta",
+        href: "/safety/swp/flytable-cycling",
+        label: "FLYTABLE CYCLING — WHOOP-SWP-028 →",
       },
       {
         type: "h",
@@ -621,7 +639,28 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Wind limits come from the manufacturer and the lift plan — the lower number wins. Lightning: boom down, people off. Power lines: assume they are live. If the lift cannot maintain the required clearance, it is not a crane job until the utility says it is.",
+        text: "Wind limits come from the manufacturer and the lift plan — the lower number wins. Lightning: boom down, people off. Power lines: assume they are live. MAD is Table 19-1A — the same numbers BC Hydro publishes. If the lift cannot hold that clearance, it is not a crane job until 30M33 is signed.",
+      },
+      {
+        type: "table",
+        caption: MAD_APPROACH.caption,
+        columns: MAD_APPROACH.columns,
+        rows: MAD_APPROACH.rows,
+      },
+      {
+        type: "table",
+        caption: MAD_UNKNOWN.caption,
+        columns: MAD_UNKNOWN.columns,
+        rows: MAD_UNKNOWN.rows,
+      },
+      {
+        type: "p",
+        text: "Voltage from the utility — BC Hydro Express Connect 1 877 520 1355. Boom, load, tag line and people all stay outside the number. Tower crane: zone-limiting device if practicable (19.24.1(2)).",
+      },
+      {
+        type: "cta",
+        href: "/safety/swp/working-near-powerlines",
+        label: "WORKING NEAR POWERLINES — WHOOP-SWP-018 →",
       },
       {
         type: "h",
@@ -644,7 +683,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/crane-binders",
-        label: "21 — CRANE BINDERS / NOP-TC →",
+        label: "22 — CRANE BINDERS / NOP-TC →",
       },
     ],
   },
@@ -915,7 +954,13 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Stay on the crane unless it is on fire or you are being shocked. Do not let anyone approach. Call the utility. If you must get off, jump clear with feet together and shuffle away. This is briefed on any site with overhead lines — not discovered during the contact.",
+        text: "Stay on the crane unless it is on fire or you are being shocked. Do not let anyone approach — 10 m, call 911. Downed transmission or manhole: 33 m. Call BC Hydro. If you must get off, jump clear with feet together and shuffle away. This is briefed on any site with overhead lines — not discovered during the contact.",
+      },
+      {
+        type: "table",
+        caption: MAD_DOWN.caption,
+        columns: MAD_DOWN.columns,
+        rows: MAD_DOWN.rows,
       },
       {
         type: "h",
@@ -1290,6 +1335,11 @@ export const SAFETY: SafetySection[] = [
         href: "/safety/jha-library",
         label: "15 — JHA LIBRARY →",
       },
+      {
+        type: "cta",
+        href: "/safety/sjp-library",
+        label: "16 — SJP LIBRARY →",
+      },
     ],
   },
   {
@@ -1303,17 +1353,57 @@ export const SAFETY: SafetySection[] = [
     blocks: [
       {
         type: "p",
-        text: "CCOHS treats JHA and JSA as the same method: break the job into tasks, identify hazards at each task, select controls in hierarchy order — eliminate, substitute, engineer, administer, PPE last. Residual risk is named. If a stop condition exists, the job does not proceed. Workers Compensation Act s. 21(2)(b) and (e). OHS Regulation Parts 3, 4, 8, 11, 14 and 15.",
+        text: "CCOHS treats JHA and JSA as the same method: break the job into tasks, identify hazards at each task, select controls in hierarchy order — eliminate, substitute, engineer, administer, PPE last. Residual risk is named. If a stop condition exists, the job does not proceed. Each row carries a severity badge. Extreme is reserved for the no-recovery killers — people under the load, MAD, overturn, a table over the edge. High is serious injury or a dropped load. Moderate is lost time or a failed plan. A tag line wrap is high. A boom in the MAD is extreme. They are not the same badge. Workers Compensation Act s. 21(2)(b) and (e). OHS Regulation Parts 3, 4, 8, 11, 14 and 15.",
       },
       {
         type: "cta",
         href: "/safety/swp-library",
         label: "14 — SWP LIBRARY →",
       },
+      {
+        type: "cta",
+        href: "/safety/sjp-library",
+        label: "16 — SJP LIBRARY →",
+      },
     ],
   },
   {
     num: "16",
+    slug: "sjp-library",
+    title: "SJP LIBRARY",
+    kicker: "This lift. This site. This day. Search it.",
+    intro:
+      "Safe Job Procedures for work the SWP cannot finish until this morning’s facts are named. Flytable cycles first. The SWP is the method. The SJP is the instance. Fill the sheet for this table, this floor, this drawing revision.",
+    library: "sjp",
+    blocks: [
+      {
+        type: "p",
+        text: "An SJP is not a longer SWP and it is not a JHA. Do the work to the SWP. Name the hazards in the JHA. Fill this SJP with weights, pick points, sling lengths, wind number, named crew, holds and abort. If the instance contradicts the method, stop and fix one of them before the hook moves.",
+      },
+      {
+        type: "cta",
+        href: "/safety/builder/flytable-cycle-sjp",
+        label: "FILL THIS CYCLE — WHOOP-FRM-052 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/safe-job-procedures",
+        label: "05 — HOW WHOOP BUILDS AN SJP →",
+      },
+      {
+        type: "cta",
+        href: "/safety/swp-library",
+        label: "14 — SWP LIBRARY →",
+      },
+      {
+        type: "cta",
+        href: "/safety/jha-library",
+        label: "15 — JHA LIBRARY →",
+      },
+    ],
+  },
+  {
+    num: "17",
     slug: "safety-forms",
     title: "SAFETY FORMS",
     kicker: "The record of the lift.",
@@ -1343,7 +1433,7 @@ export const SAFETY: SafetySection[] = [
     ],
   },
   {
-    num: "17",
+    num: "18",
     slug: "whmis-sds",
     title: "WHMIS + SDS",
     kicker: "Only what WHOOP crews actually meet.",
@@ -1372,7 +1462,7 @@ export const SAFETY: SafetySection[] = [
     ],
   },
   {
-    num: "18",
+    num: "19",
     slug: "inspections",
     title: "INSPECTIONS + CORRECTIVE ACTIONS",
     kicker: "Finding → action → person → date → done → verified.",
@@ -1611,7 +1701,7 @@ export const SAFETY: SafetySection[] = [
     ],
   },
   {
-    num: "19",
+    num: "20",
     slug: "document-control",
     title: "DOCUMENT CONTROL",
     kicker: "The current version is the one on this site.",
@@ -1628,6 +1718,7 @@ export const SAFETY: SafetySection[] = [
           "WHOOP-POL — policies",
           "WHOOP-SWP — safe work procedures",
           "WHOOP-JHA — job hazard analyses",
+          "WHOOP-SJP — this lift, this site, this day",
           "WHOOP-FRM — forms",
           "WHOOP-BND — crane site binders",
           "WHOOP-SDS — safety data sheets in this library",
@@ -1658,7 +1749,7 @@ export const SAFETY: SafetySection[] = [
     ],
   },
   {
-    num: "20",
+    num: "21",
     slug: "ohs-management-system",
     title: "OHS MANAGEMENT SYSTEM",
     kicker: "Documentation is not implementation.",
@@ -1761,7 +1852,7 @@ export const SAFETY: SafetySection[] = [
     ],
   },
   {
-    num: "21",
+    num: "22",
     slug: "crane-binders",
     title: "CRANE BINDERS",
     kicker: "The file that goes with the NOP-TC.",
@@ -1898,6 +1989,7 @@ export const SAFETY_GROUPS = [
       "ohs-policies",
       "swp-library",
       "jha-library",
+      "sjp-library",
       "safety-forms",
       "whmis-sds",
       "inspections",
@@ -1912,10 +2004,12 @@ export const FIND_NOW = [
   { href: "/safety/form/crane-pre-use", label: "CRANE PRE-USE", hint: "This machine" },
   { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE", hint: "Tower / luffer / Z248" },
   { href: "/safety/form/lift-plan", label: "LIFT PLAN", hint: "This lift" },
+  { href: "/safety/sjp/flytable-cycle", label: "FLYTABLE SJP", hint: "This cycle" },
+  { href: "/safety/sjp-library", label: "SJP LIBRARY", hint: "This lift" },
   { href: "/safety/form/toolbox-meeting", label: "TOOLBOX", hint: "The brief" },
   { href: "/safety/policy/right-to-refuse", label: "STOP WORK", hint: "Refuse unsafe" },
   { href: "/safety/report/incident", label: "INCIDENT", hint: "Report it" },
-  { href: "/safety/policy/environmental-conditions", label: "HEAT + WIND", hint: "Stop criteria" },
+  { href: "/safety/swp/working-near-powerlines", label: "MAD / POWERLINES", hint: "Table 19-1A" },
   { href: "/safety/emergency-response", label: "EMERGENCY", hint: "The plan" },
   { href: "/safety/binder", label: "CRANE BINDER", hint: "Tower / self-erect" },
   { href: "/safety/builder", label: "FORM BUILDER", hint: "Fill + PDF" },

@@ -20,7 +20,7 @@ export default function BinderIndexPage() {
           copy. Official templates stay on BC Crane Safety and WorkSafeBC.
         </p>
         <p className="doc-cta">
-          <Link href="/safety/crane-binders">21 — CRANE BINDERS →</Link>
+          <Link href="/safety/crane-binders">22 — CRANE BINDERS →</Link>
         </p>
         <p className="doc-cta">
           <a href={BINDER_OFFICIAL.bccsBinder} target="_blank" rel="noreferrer">

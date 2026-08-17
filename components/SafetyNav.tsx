@@ -11,6 +11,7 @@ function sectionFromPath(path: string): string | undefined {
   const nested: Record<string, string> = {
     swp: "swp-library",
     jha: "jha-library",
+    sjp: "sjp-library",
     policy: "ohs-policies",
     form: "safety-forms",
     builder: "safety-forms",

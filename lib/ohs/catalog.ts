@@ -6,6 +6,7 @@ import { JHAS } from "./jhas";
 import { POLICIES } from "./policies";
 import { REPORTS } from "./reports";
 import { SDS } from "./sds";
+import { SJPS } from "./sjps";
 import { SWPS } from "./swps";
 
 export type CatalogHit = {
@@ -89,6 +90,8 @@ const SWP_GROUP: Record<string, (typeof SWP_GROUP_ORDER)[number]> = {
   "lift-planning": "THE PLAN",
   lockout: "CRANE",
   "tower-erection-climbing": "CRANE",
+  "flytable-cycling": "THE PLAN",
+  "corner-nontypical-flytables": "THE PLAN",
 };
 
 export const JHA_GROUP_ORDER = ["CRANE", "SIGNALS", "RIGGING", "THE PLAN"] as const;
@@ -104,6 +107,9 @@ const JHA_GROUP: Record<string, (typeof JHA_GROUP_ORDER)[number]> = {
   "tag-line": "RIGGING",
   "rigging-inspection": "RIGGING",
   "critical-lift": "THE PLAN",
+  "working-near-powerlines": "THE PLAN",
+  "flytable-cycling": "THE PLAN",
+  "corner-nontypical-flytables": "THE PLAN",
 };
 
 export function policyGroup(slug: string) {
@@ -116,6 +122,17 @@ export function swpGroup(slug: string) {
 
 export function jhaGroup(slug: string) {
   return JHA_GROUP[slug] ?? "RIGGING";
+}
+
+export const SJP_GROUP_ORDER = ["FLYTABLE"] as const;
+
+const SJP_GROUP: Record<string, (typeof SJP_GROUP_ORDER)[number]> = {
+  "flytable-cycle": "FLYTABLE",
+  "corner-nontypical-flytable": "FLYTABLE",
+};
+
+export function sjpGroup(slug: string) {
+  return SJP_GROUP[slug] ?? "FLYTABLE";
 }
 
 export function safetyCatalog(): CatalogHit[] {
@@ -147,6 +164,13 @@ export function safetyCatalog(): CatalogHit[] {
       title: item.title,
       summary: item.summary,
       kind: "JHA",
+    })),
+    ...SJPS.map((item) => ({
+      href: `/safety/sjp/${item.slug}`,
+      number: item.number,
+      title: item.title,
+      summary: item.summary,
+      kind: "SJP",
     })),
     {
       href: "/safety/builder",

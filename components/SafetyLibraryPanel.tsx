@@ -1,3 +1,4 @@
+import { peakRisk } from "@/components/RiskBadge";
 import { SafetyLibrary } from "@/components/SafetyLibrary";
 import {
   CRANE_GROUP_ORDER,
@@ -8,15 +9,18 @@ import {
   REPORTS,
   SDS,
   JHAS,
+  SJPS,
   SWPS,
 } from "@/lib/ohs";
 import { BINDERS } from "@/lib/ohs/binders";
 import {
   JHA_GROUP_ORDER,
   POLICY_GROUP_ORDER,
+  SJP_GROUP_ORDER,
   SWP_GROUP_ORDER,
   jhaGroup,
   policyGroup,
+  sjpGroup,
   swpGroup,
 } from "@/lib/ohs/catalog";
 import type { SafetyLibraryKind } from "@/lib/safety";
@@ -48,6 +52,22 @@ export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
           title: item.title,
           summary: item.summary,
           meta: jhaGroup(item.slug),
+          risk: peakRisk(item.rows.map((row) => row.level)),
+        }))}
+      />
+    );
+  }
+  if (kind === "sjp") {
+    return (
+      <SafetyLibrary
+        placeholder="Flytable cycle, this lift, this floor…"
+        groupOrder={SJP_GROUP_ORDER}
+        items={SJPS.map((item) => ({
+          href: `/safety/sjp/${item.slug}`,
+          number: item.number,
+          title: item.title,
+          summary: item.summary,
+          meta: sjpGroup(item.slug),
         }))}
       />
     );

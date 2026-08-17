@@ -1,12 +1,28 @@
 export { POLICIES, getPolicy } from "./policies";
 export { SWPS, getSwp } from "./swps";
 export { JHAS, getJha } from "./jhas";
+export { SJPS, getSjp } from "./sjps";
 export { FORMS, FORM_GROUPS, getForm } from "./forms";
 export { SDS, getSds } from "./sds";
 export { REPORTS, getReport } from "./reports";
 export { CRANES, CRANE_GROUP_ORDER, getCrane } from "./cranes";
 export { INSPECTION_LOOP, INSPECTION_SCOPE } from "./inspections";
-export { OHS_META, control, CREW_ROLES, LIFT_PPE, LIFT_REFS } from "./meta";
+export {
+  OHS_META,
+  control,
+  CREW_ROLES,
+  LIFT_PPE,
+  LIFT_REFS,
+  FLYTABLE_REFS,
+  FLYTABLE_LINKS,
+  FLYTABLE_ROLES,
+  MAD_APPROACH,
+  MAD_DOWN,
+  MAD_LINKS,
+  MAD_REFS,
+  MAD_TABLES,
+  MAD_UNKNOWN,
+} from "./meta";
 export { BINDERS, getBinder, BINDER_OFFICIAL } from "./binders";
 export type { BinderDef, BinderItem, BinderKind } from "./binders";
 export { WSBC_33, COR_ELEMENTS, PROGRAM_HIERARCHY } from "./system";
@@ -16,9 +32,11 @@ export {
   policyGroup,
   swpGroup,
   jhaGroup,
+  sjpGroup,
   POLICY_GROUP_ORDER,
   SWP_GROUP_ORDER,
   JHA_GROUP_ORDER,
+  SJP_GROUP_ORDER,
 } from "./catalog";
 export type {
   DocControl,
@@ -26,6 +44,9 @@ export type {
   Swp,
   Jha,
   JhaRow,
+  RiskLevel,
+  Sjp,
+  DocTable,
   SafetyForm,
   Sds,
   ReportKind,

@@ -126,7 +126,7 @@ export function BinderWizard({ binder }: { binder: BinderDef }) {
           </a>
         </p>
         <p className="doc-cta">
-          <Link href="/safety/crane-binders">21 — CRANE BINDERS →</Link>
+          <Link href="/safety/crane-binders">22 — CRANE BINDERS →</Link>
         </p>
       </header>
 

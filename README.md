@@ -1,6 +1,14 @@
-# WHOOP
+```
+██╗    ██╗██╗  ██╗ ██████╗  ██████╗ ██████╗
+██║    ██║██║  ██║██╔═══██╗██╔═══██╗██╔══██╗
+██║ █╗ ██║███████║██║   ██║██║   ██║██████╔╝
+██║███╗██║██╔══██║██║   ██║██║   ██║██╔═══╝
+╚███╔███╔╝██║  ██║╚██████╔╝╚██████╔╝██║
+ ╚══╝╚══╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝
+              CRANE + RIGGING
+```
 
-**CRANE + RIGGING**
+# WHOOP
 
 We supply the people who lift.
 
@@ -37,16 +45,19 @@ The [Safety Program](https://whoop.ca/safety) is open. Clients, workers and cont
 
 If a procedure cannot be followed on a jobsite, it is not a procedure. It is theatre.
 
-The program is grouped the way the work runs — how we work, the lift, when it goes wrong, the library. Search finds a policy, SWP, JHA, form or SDS. The documents used at the gate sit at the top: FLHA, crane pre-use, lift plan, toolbox, stop work, incident, heat and wind, emergency.
+The program is grouped the way the work runs — how we work, the lift, when it goes wrong, the library. Search finds a policy, SWP, JHA, SJP, form or SDS. The documents used at the gate sit at the top: FLHA, crane pre-use, lift plan, flytable SJP, toolbox, stop work, incident, MAD / powerlines, heat and wind, emergency.
 
 Working documents, not a poster:
 
 - **OH&S policies** — OH&S, violence, workplace conduct, fitness for work, PPE, impairment, working alone, incident reporting, injury management, return to work, [bullying and harassment](https://whoop.ca/safety/policy/bullying-and-harassment), and discrimination. Plus competency, crane operations and rigging.
-- **SWP library** — numbered steps for the lift. Grouped: crane, signals, rigging, the plan.
-- **JHA library** — hazards, consequence, residual risk. The steps live in the SWP.
+- **SWP library** — numbered steps for the lift. Grouped: crane, signals, rigging, the plan. Includes flytable cycling and working near powerlines.
+- **JHA library** — hazards, consequence, residual risk. Rows carry a severity badge: extreme is the no-recovery killer (people under the load, MAD, overturn, a table over the edge). High is serious injury. Moderate is lost time or a failed plan. The steps live in the SWP.
+- **SJP library** — this lift, this site, this day. The SWP is the method. The SJP is the instance. Flytable cycles first — fill [WHOOP-FRM-052](https://whoop.ca/safety/builder/flytable-cycle-sjp) before drop.
 - **Safety forms** — FLHA, inspections, lift plans, incident reports, operator and rigger logs, weekly and monthly maintenance. Binder forms (30M33 record, radio 52E73C, NOP-TC posting, tower crane report) fill and download as PDF.
 - **[Crane binders](https://whoop.ca/safety/crane-binders)** — Tower and Self-Erect site binders numbered to the BC Crane Safety checklists. Wizard at `/safety/binder`. Official templates stay on bccranesafety.ca and WorkSafeBC.
 - **[Form Builder](https://whoop.ca/safety/builder)** — assemble WHOOP forms from reusable Safety Blocks. Fill them on the device. Download a PDF. Email it. Nothing is stored on a server unless you send it.
+
+Minimum approach distances are WorkSafeBC Table 19-1A — the same numbers [BC Hydro](https://www.bchydro.com/safety-outages/electrical-safety/worker-training.html) publishes. 1 m / 3 m / 4.5 m / 6 m by voltage. Unknown: 3 m off distribution, 6 m off transmission, until they verify. If the lift cannot hold MAD, coded 30M33. [WHOOP-SWP-018](https://whoop.ca/safety/swp/working-near-powerlines).
 
 Where BCCSA already wrote the construction template, we use it. Injury-management and COR packs download from this site. Heat and sun, lone hoist-operator rescue, fall-protection rescue and crane-relevant toolbox talks are linked to the BCCSA catalogues — sign in on bccsa.ca to get the PDFs. We do not rewrite those guides.
 
@@ -55,7 +66,7 @@ WHOOP is COR® Certified through the BC Construction Safety Alliance. That certi
 The work is done to:
 
 - CSA Z150-1998 / Z248-2004 as named in the Regulation
-- WorkSafeBC Occupational Health and Safety Regulation, including Part 14 and Part 15
+- WorkSafeBC Occupational Health and Safety Regulation, including Part 14, Part 15 and Part 19 Table 19-1A
 - BC Crane Safety
 - Technical Safety BC
 - ASME B30 as named (B30.5-2004, B30.22-2005)

@@ -32,6 +32,7 @@ import {
   NDT_ITEMS,
   HOIST_ROPE_ITEMS,
   OPERATOR_CERT_ITEMS,
+  FLYTABLE_SJP_ITEMS,
 } from "../blocks";
 import type { WhoopFormDef } from "../types";
 
@@ -782,6 +783,31 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
       { type: "crane" },
       { type: "inspection", inspectionItems: OPERATOR_CERT_ITEMS },
       { type: "comments" },
+      { type: "signature" },
+    ],
+  }),
+  assembleForm({
+    id: "flytable-cycle-sjp",
+    title: "FLYTABLE CYCLE SJP",
+    number: "WHOOP-FRM-052",
+    group: "Lifting",
+    description:
+      "This table. This floor. This drawing. Critical lift. Mark nontypical if it is.",
+    blocks: [
+      { type: "worker" },
+      { type: "project" },
+      { type: "task" },
+      { type: "crane" },
+      { type: "load" },
+      { type: "rigging" },
+      { type: "communication" },
+      { type: "weather" },
+      { type: "inspection", inspectionItems: FLYTABLE_SJP_ITEMS },
+      { type: "hazard" },
+      { type: "control" },
+      { type: "emergency" },
+      { type: "comments" },
+      { type: "signature" },
       { type: "signature" },
     ],
   }),

@@ -1391,6 +1391,68 @@ html[data-theme="dark"] .footer .std-mark-on-ink {
   color: var(--crown);
 }
 
+.ohs-lib-head {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.risk-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.85rem 0 1.1rem;
+}
+
+.risk-badge {
+  display: inline-block;
+  margin: 0 0.55rem 0.45rem 0;
+  padding: 0.18rem 0.48rem 0.14rem;
+  font-family: var(--font-mono), "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  vertical-align: 0.12em;
+  border: 1px solid;
+}
+
+.risk-badge[data-level="low"] {
+  color: var(--steel);
+  border-color: var(--steel);
+  background: transparent;
+}
+
+.risk-badge[data-level="moderate"] {
+  color: var(--ink);
+  border-color: var(--ink);
+  background: transparent;
+}
+
+.risk-badge[data-level="high"] {
+  color: var(--paper);
+  border-color: var(--ink);
+  background: var(--ink);
+}
+
+.risk-badge[data-level="extreme"] {
+  color: #fff;
+  border-color: var(--crown);
+  background: var(--crown);
+}
+
+.ohs-lib-list .risk-badge {
+  margin: 0;
+}
+
+.wire-table .risk-badge {
+  display: block;
+  width: fit-content;
+  margin: 0 0 0.45rem;
+}
+
 .pager {
   display: flex;
   justify-content: space-between;

@@ -282,7 +282,9 @@ export const POWERLINE_30M33_ITEMS = [
   "Overhead lines in the radius identified",
   "Transformers identified",
   "Cable / buried hazards identified",
-  "Table 19-1A distance for this voltage",
+  "Voltage verified by the utility — not guessed",
+  "Table 19-1A MAD for this voltage named in metres",
+  "Unknown voltage treated as 3 m distribution / 6 m transmission",
   "Utility representative present for the discussion",
   "Coded 30M33 signed if limits of approach cannot be held",
   "Sheet posted on the site board",
@@ -390,6 +392,24 @@ export const OPERATOR_CERT_ITEMS = [
   "BC Crane Safety certificate current",
   "Class matches this crane",
   "Provisional supervision plan attached if required",
+];
+
+export const FLYTABLE_SJP_ITEMS = [
+  "Engineered drawing revision matches this table ID",
+  "Manufacturer cycle for this system is at the lift",
+  "Table is typical — or corner / nontypical plan attached",
+  "Weight and COG known (14.36)",
+  "Four designated pick points — pins / cotters in as the OEM",
+  "Sling lengths as the drawing — not last floor’s memory",
+  "Crane will not pull the table out of the slab",
+  "Curb stops / kicker blocks at the edge",
+  "Brake lines if the drawing requires them",
+  "Fall protection at the slab edge (Part 11)",
+  "Exclusion below and on the landing floor (14.44)",
+  "Wind at or below the lower of crane, manufacturer, this SJP",
+  "Radios tested — confirmation loop, both floors",
+  "No people or loose material on the table while flying",
+  "Pre-lift meeting immediately before this cycle",
 ];
 
 export const REFUSAL_ITEMS = [
@@ -642,10 +662,32 @@ const SPECS: Record<BlockType, Spec> = {
     title: "Powerlines",
     fields: [
       { key: "present", label: "Powerline present", type: "yesno", required: true },
-      { key: "voltage", label: "Voltage", type: "text" },
-      { key: "clearance", label: "Required clearance", type: "text" },
+      {
+        key: "voltage",
+        label: "Voltage (phase to phase)",
+        type: "select",
+        options: [
+          "Under 750 V — MAD 1 m / 4 ft",
+          "Over 750 V to 75 kV — MAD 3 m / 10 ft",
+          "Over 75 kV to 250 kV — MAD 4.5 m / 15 ft",
+          "Over 250 kV to 550 kV — MAD 6 m / 20 ft",
+          "Unknown distribution — 3 m until verified",
+          "Unknown transmission — 6 m until verified",
+        ],
+      },
+      {
+        key: "clearance",
+        label: "MAD this lift (m)",
+        type: "text",
+        placeholder: "Table 19-1A. Boom, load and tag line.",
+      },
       { key: "controls", label: "Controls", type: "textarea" },
-      { key: "utility", label: "Utility contact", type: "text" },
+      {
+        key: "utility",
+        label: "Utility contact",
+        type: "text",
+        placeholder: "BC Hydro Express Connect 1 877 520 1355",
+      },
     ],
   },
   emergency: {

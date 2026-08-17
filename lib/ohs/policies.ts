@@ -806,7 +806,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Hazardous products",
-        body: "WHMIS for products WHOOP people use — diesel, hydraulic oil, grease, rope dressing. SDS library 17. The host’s products stay on the host’s SDS.",
+        body: "WHMIS for products WHOOP people use — diesel, hydraulic oil, grease, rope dressing. SDS library 18. The host’s products stay on the host’s SDS.",
       },
       {
         title: "Heat, cold, smoke",

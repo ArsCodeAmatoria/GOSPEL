@@ -38,7 +38,7 @@ export const WSBC_33: SystemRow[] = [
   {
     id: "3.3(c)",
     title: "Written instructions",
-    documentation: "04 SWP · 05 SJP · SWP and JHA libraries",
+    documentation: "04 SWP · 05 SJP · 14 SWP · 15 JHA · 16 SJP libraries",
     form: "FRM-001 FLHA · FRM-006 lift plan",
     record: "Completed FLHA / plan at the lift",
     owner: "Crew on this dispatch",

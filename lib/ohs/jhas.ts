@@ -1,5 +1,5 @@
 import type { Jha, JhaRow } from "./types";
-import { LIFT_PPE, LIFT_REFS } from "./meta";
+import { FLYTABLE_REFS, LIFT_PPE, LIFT_REFS, MAD_REFS } from "./meta";
 
 const JHA_REFS = [
   "Workers Compensation Act s. 21(2)(b) — workers made aware of known or reasonably foreseeable hazards",
@@ -22,16 +22,18 @@ function jha(
     stop: string[];
     swpHref?: string;
     swpLabel?: string;
+    references?: string[];
   }
 ): Jha {
+  const { references: extraRefs, ...rest } = fields;
   return {
     slug,
     title,
     number,
     summary,
     ppe: LIFT_PPE,
-    references: JHA_REFS,
-    ...fields,
+    references: extraRefs ? [...JHA_REFS, ...extraRefs] : JHA_REFS,
+    ...rest,
   };
 }
 
@@ -57,30 +59,35 @@ export const JHAS: Jha[] = [
       rows: [
         {
           task: "Plan the hitch",
+          level: "high",
           hazard: "Unknown weight or COG",
           risk: "Overload, tip, or the piece rolling onto the rigger. High severity.",
           control: "Eliminate the guess. Shipping data, scale, or engineer. 14.36 — load weight determined. No plan, no hook.",
         },
         {
           task: "Inspect the gear",
+          level: "high",
           hazard: "Cut, birdcaged, opened, or unidentified sling or hardware",
           risk: "Hitch fails under load. Dropped load. Fatal if anyone is under it.",
           control: "Inspect before use (Part 15). Failed gear tagged and isolated — WHOOP-SWP-025. No one-more-lift.",
         },
         {
           task: "Connect the hitch",
+          level: "high",
           hazard: "Sharp edge, twisted sling, hardware not seated, piece not blocked",
           risk: "Sling cut, load shifts onto the rigger, fingers in the pinch.",
           control: "Block the piece first. Softeners. Pins fully in. Hands off before weight. Engineer if there are no lifting points.",
         },
         {
           task: "Clear the zone",
+          level: "extreme",
           hazard: "People under or in the fall line",
           risk: "Struck-by or crush. 14.44 — loads over work areas.",
           control: "Exclusion zone held before the load leaves the ground. Signalperson owns the zone, not traffic.",
         },
         {
           task: "Test, then lift",
+          level: "high",
           hazard: "Unbalanced hitch, shock load, lost signal",
           risk: "Load dumps, crane shock, second hitch failure.",
           control: "Inch off the ground. Re-rig if it tilts. Smooth hoist. Stop on any lost signal (14.47).",
@@ -109,24 +116,28 @@ export const JHAS: Jha[] = [
       rows: [
         {
           task: "Name one signalperson",
+          level: "high",
           hazard: "Two people signalling",
           risk: "Operator picks the convenient instruction. Load into a person or a structure.",
           control: "One voice. Transfer spoken and acknowledged. 14.47.",
         },
         {
           task: "Agree the system",
+          level: "moderate",
           hazard: "Non-standard hands, wrong channel, private dialect",
           risk: "Operator translates. Translation is a guess. Guess is a collision.",
           control: "Standard signals. Channel and STOP in the brief. Dedicated radio where 14.49 requires it.",
         },
         {
           task: "See the load, path and operator",
+          level: "high",
           hazard: "Blind corner, glare, signalperson also rigging",
           risk: "Boom or load into steel, lines or people the operator cannot see.",
           control: "If you cannot see, you are not signalling. Dedicated spotter or stop. Blind lifts: WHOOP-JHA-005.",
         },
         {
           task: "Hold the zone",
+          level: "extreme",
           hazard: "Trades walking the fall line while the signalperson is busy",
           risk: "Struck-by. 14.44.",
           control: "Hands are for the crane. Zone is a control, not a courtesy. Anyone may STOP.",
@@ -155,30 +166,35 @@ export const JHAS: Jha[] = [
       rows: [
         {
           task: "Block the piece",
+          level: "high",
           hazard: "Unstable load, roll, stack shift",
           risk: "Crush of the rigger against the piece or the ground.",
           control: "Shore or block so the piece cannot roll onto a person. Do not crawl a live stack.",
         },
         {
           task: "Choose the points",
+          level: "high",
           hazard: "Choking a mystery flange, shop-welded eye",
           risk: "Point tears out. Dropped load.",
           control: "Designed lifting points. Homemade gear is out unless a professional engineer owns it (14.2, 14.15).",
         },
         {
           task: "Seat hardware",
+          level: "high",
           hazard: "Pin not engaged, side-loaded shackle, sling on the hook tip",
           risk: "Hardware opens under load. Dropped load.",
           control: "Match pin to body. Load bow and pin as designed. Sling in the saddle. Part 15.",
         },
         {
           task: "Protect the sling",
+          level: "high",
           hazard: "Sharp edge, heat, chemical",
           risk: "Sling cut or burned through. Dropped load delayed, not prevented.",
           control: "Softeners, pads, or a different hitch. Change the method — do not wrap tape as WLL.",
         },
         {
           task: "Clear hands",
+          level: "high",
           hazard: "Fingers, gloves, clothing in the hitch as the crane takes weight",
           risk: "Amputation, pull-in.",
           control: "Hands and feet out. Operator does not take weight until the rigger is clear and the signal is given.",
@@ -207,24 +223,28 @@ export const JHAS: Jha[] = [
       rows: [
         {
           task: "Prepare the set",
+          level: "moderate",
           hazard: "No blocking, bolts, dunnage or clearance",
           risk: "Load set on nothing. Collapse, roll, second lift in a panic.",
           control: "Set ready before the load arrives. If the set is not ready, the load does not come in.",
         },
         {
           task: "Control rotation",
+          level: "high",
           hazard: "Spin into people or plant; tag line on the body",
           risk: "Struck-by, pull-in, person used as an anchor.",
           control: "Tag lines, not shoulders. Hold so you can let go. WHOOP-JHA-008.",
         },
         {
           task: "Keep the pinch clear",
+          level: "extreme",
           hazard: "Person between load and wall, column, truck or another piece",
           risk: "Crush. Often fatal. Often ‘just guiding it’.",
           control: "Nobody in the pinch. Push with a tag line or a pike pole — not a hip.",
         },
         {
           task: "Land, then disconnect",
+          level: "high",
           hazard: "Unhooking a load that is still live",
           risk: "Load shifts onto the rigger. 14.50.",
           control: "Fully landed and stable. Slack confirmed. Then hardware off. Then inspect the gear.",
@@ -253,24 +273,28 @@ export const JHAS: Jha[] = [
       rows: [
         {
           task: "Declare it blind",
+          level: "moderate",
           hazard: "Discovering the operator cannot see once the load is at radius",
           risk: "Improvised signalling. Collision.",
           control: "Say it in the brief. If it is blind, it is planned as blind. 14.47.",
         },
         {
           task: "Name the eyes",
+          level: "high",
           hazard: "Relay chain, two voices, operator guessing",
           risk: "Delayed or inverted instruction. Load into a person.",
           control: "One voice the operator listens to. Relays only with a protocol. Dedicated radio system where 14.49 applies.",
         },
         {
           task: "Walk the path",
+          level: "high",
           hazard: "Lines, steel, people, other cranes out of sight",
           risk: "Contact. 14.40 swing hazards. 14.52.1 high voltage.",
           control: "Walk it before the hook is loaded. Spotter on lines. MAD is a wall.",
         },
         {
           task: "Lost communications",
+          level: "high",
           hazard: "Dead radio, stepped-on channel, silence",
           risk: "Operator completes a swing into a floor.",
           control: "Stop. Hold or land as the brief said. Do not finish the last instruction you think you heard.",
@@ -299,30 +323,35 @@ export const JHAS: Jha[] = [
       rows: [
         {
           task: "Confirm the machine",
+          level: "high",
           hazard: "Counterweight, boom, software or tyres not as dispatched",
           risk: "Chart does not apply. Overload without an alarm that matches reality. 14.2, 14.12.",
           control: "Serial, configuration and chart are the same machine. Manufacturer instructions in the cab.",
         },
         {
           task: "Walk the pad",
+          level: "extreme",
           hazard: "Backfill, vaults, slope, buried services, other cranes",
           risk: "Punch-through, overturn, contact with a main. High severity.",
           control: "Look and ask. Locates. Engineer when the surface is a guess. Mats spread load — they do not invent bearing.",
         },
         {
           task: "Outriggers and mats",
+          level: "extreme",
           hazard: "Short-rig without that chart; undersized cribbing; people in the jack line",
           risk: "Overturn. Crush beside a jack. 14.2 to the manufacturer.",
           control: "Fully extended unless the short-rig chart is in the cab and in use. People clear while jacking. Level within manufacturer limit.",
         },
         {
           task: "Swing and lines",
+          level: "extreme",
           hazard: "Tail swing, boom into plant, overhead electrical",
           risk: "Struck-by, arc, step potential. 14.40, 14.52.1.",
           control: "Swing check before the hook. MAD as a wall. Spotter when the boom can encroach.",
         },
         {
           task: "Inspect, then lift",
+          level: "moderate",
           hazard: "Defect that affects lifting, skipped pre-use",
           risk: "Function failure on the first pick. 14.35.",
           control: "Pre-use this shift, this configuration. Lifting defects: crane down.",
@@ -351,24 +380,28 @@ export const JHAS: Jha[] = [
       rows: [
         {
           task: "Hoist",
+          level: "extreme",
           hazard: "People still in the fall zone",
           risk: "Struck-by. 14.44 loads over work areas.",
           control: "Zone cleared and held before the load leaves the ground. Not after.",
         },
         {
           task: "Hold in the air",
+          level: "high",
           hazard: "Drift, wind sail, pendulum",
           risk: "Contact with plant or people. Side load on the crane.",
           control: "Tag lines. Smooth motions. Manufacturer and plan wind limits — the lower number wins.",
         },
         {
           task: "Leave the seat",
+          level: "high",
           hazard: "Load left hanging, crane unattended",
           risk: "Drift into a walkway. Unauthorized operation. 14.45.",
           control: "Land it, or a named operator stays with the crane under a written hold. Convenience is not a reason.",
         },
         {
           task: "Ride or walk under",
+          level: "extreme",
           hazard: "Person on the hook or in the shadow",
           risk: "Fall from the load, or crush. 14.51 riding hook or load — prohibited.",
           control: "Eliminate. Nobody rides. Nobody uses the shadow as a path.",
@@ -397,24 +430,28 @@ export const JHAS: Jha[] = [
       rows: [
         {
           task: "Select and attach",
+          level: "moderate",
           hazard: "Frayed line, snag, attach point that slips",
           risk: "Sudden release. Load spins. Person stumbles under it.",
           control: "Serviceable length for this load. Attach where it will not slip off or cut.",
         },
         {
           task: "Hold the line",
+          level: "high",
           hazard: "Turn around the body; gloves that will not release",
           risk: "Pull-in, amputation, person dragged under the load.",
           control: "Hold so you can let go. Never a wrap on flesh or belt. You are not an anchor.",
         },
         {
           task: "Stand",
+          level: "high",
           hazard: "Fall zone, pinch, bight, under the boom",
           risk: "Struck-by or crush when the load or the line takes you.",
           control: "Out of the fall zone, out of the pinch, out of the bight. Guide — do not fight.",
         },
         {
           task: "Near lines",
+          level: "high",
           hazard: "Tag line as a conductor into MAD",
           risk: "Arc, shock. 14.52.1.",
           control: "If the line can blow into a conductor, this is not a tag-line job until the utility or the plan says it is.",
@@ -443,18 +480,21 @@ export const JHAS: Jha[] = [
       rows: [
         {
           task: "Identify",
+          level: "moderate",
           hazard: "Unmarked sling, mystery fitting, homemade eye",
           risk: "WLL is a rumour. Overload. Dropped load. Part 15.",
           control: "No ID — out of service. Engineer for modifications (14.15). Shop specials are out.",
         },
         {
           task: "Inspect body and hardware",
+          level: "high",
           hazard: "Broken wires, cuts, stretch, opened throat, missing latch",
           risk: "Hitch fails at load. People in the zone take the consequence.",
           control: "Rejection criteria in the SWP. Fail = tag, isolate, report the same shift. WHOOP-SWP-025.",
         },
         {
           task: "Leave it for the next person",
+          level: "moderate",
           hazard: "Failed gear on the working pile",
           risk: "The next hitch is the incident. Delayed, not avoided.",
           control: "Physical isolation. Not beside the good slings. Not ‘we’ll deal with it later.’",
@@ -483,27 +523,224 @@ export const JHAS: Jha[] = [
       rows: [
         {
           task: "Declare why it is critical",
+          level: "high",
           hazard: "Calling it routine when it is capacity, tandem, public or shifting COG",
           risk: "Controls that belong to a grocery pick. Multiple fatalities or plant loss.",
           control: "Say it out loud. Write it. 14.42.1. If it meets the definition, it is critical.",
         },
         {
           task: "Plan and people",
+          level: "high",
           hazard: "Implied roles, missing engineer, plan left in the office",
           risk: "Nobody owns the abort. Tandem mismatch. 14.42.",
           control: "Plan at the lift. Named operator, rigger, signal, supervisor. Engineer when required.",
         },
         {
           task: "Brief",
+          level: "moderate",
           hazard: "Signatures without understanding",
           risk: "Crew cannot stop what they cannot name.",
           control: "Everyone repeats the plan, the signals, who stops it. If they cannot, the brief failed. Act s. 21(2)(e).",
         },
         {
           task: "Hold points",
+          level: "high",
           hazard: "Skipping a hold to keep the crane moving",
           risk: "The condition you were going to check is the one that fails.",
           control: "Holds are the control. Abort is a success. Rewrite — do not improvise.",
+        },
+      ],
+    }
+  ),
+  jha(
+    "WHOOP-JHA-011",
+    "flytable-cycling",
+    "FLYTABLE CYCLING",
+    "Critical lift. Changing COG. Edge. Wind. Four floors of radio.",
+    {
+      job: "Cycling a flytable / flyform floor to floor. Method: WHOOP-SWP-028. Fill WHOOP-SJP-001 / FRM-052 for this cycle. This page is what can go wrong in drop, roll, fly and land. Formwork carpentry is the host’s hazard analysis, not this one.",
+      people: [
+        "Operator",
+        "Rigger and signalperson",
+        "Formwork crew at the drop and the landing",
+        "Spotters on both floors",
+        "Anyone below the path",
+        "Prime — not a spectator",
+      ],
+      swpHref: "/safety/swp/flytable-cycling",
+      swpLabel: "SWP — FLYTABLE CYCLING →",
+      residual:
+        "A table still moves when a pin is missed, a radio is lost, or the COG is not the drawing. Residual is held by the gate, by confirmation loops, and by stop-work — not by having flown this building yesterday. 14.42.1.",
+      stop: [
+        "No engineered drawing or manufacturer cycle at the lift",
+        "Weight or COG unknown (14.36)",
+        "This is a corner or nontypical table without WHOOP-SWP-029",
+        "Crane being asked to pull the table out",
+        "People or loose gear on the table",
+        "Radios not confirmed on both floors",
+        "Wind above the lower limit",
+      ],
+      references: FLYTABLE_REFS,
+      rows: [
+        {
+          task: "Gate / plan",
+          level: "high",
+          hazard: "Last floor’s SJP, missing drawing, no pre-lift meeting",
+          risk: "Critical lift run as a grocery pick. The incidents WorkSafeBC filmed.",
+          control: "This-cycle SJP. Drawing revision. Meeting close to the lift. WHOOP-SWP-019 and 028.",
+        },
+        {
+          task: "Drop",
+          level: "high",
+          hazard: "Table still snagged. Crane used to strip. People under the table.",
+          risk: "Sudden load, structural damage, crush. Host duty under Part 20 — WHOOP does not take load to drop jacks.",
+          control: "Formwork drops per OEM. Crane on standby. Zone clear. Confirm free of the slab before any hoist.",
+        },
+        {
+          task: "Roll to the edge",
+          level: "extreme",
+          hazard: "Runaway table. Fall from the unguarded slab. Crane pulling the table out.",
+          risk: "Table over the edge. Person over the edge. Side-load on the crane. Fatal.",
+          control: "Curb stops, kicker blocks, brake lines as the drawing. Part 11 at the edge. Crane does not pull. Aluma / Doka: guide out, do not drag.",
+        },
+        {
+          task: "Attach",
+          level: "extreme",
+          hazard: "Wrong pick, missing pin or cotter, two points on a four-point table, people still on it",
+          risk: "Table dumps when it leaves the slab. Dropped load. 14.44.",
+          control: "Every designated point, pins in as the OEM, before the table leaves the building. Doka: four designed points before travel outside. People and loose material off.",
+        },
+        {
+          task: "Fly",
+          level: "high",
+          hazard: "Wind on a panel. Lost radio. Shifting COG. Falling objects.",
+          risk: "Uncontrolled swing, contact, struck-by on the floors below.",
+          control: "Lower wind number wins. Confirmation-loop radios. Tag lines. Tethered tools, exclusion, catch nets as the site plan. Stop on change.",
+        },
+        {
+          task: "Land",
+          level: "high",
+          hazard: "Disconnect before the table is stable. Crush at the set.",
+          risk: "Table walks, tips, or drops a bay. Hands in the pinch.",
+          control: "Jacks or landing dollies as the OEM. Tiebacks and curbs as the drawing. Formwork supervisor says landed. Then release.",
+        },
+        {
+          task: "Change",
+          level: "high",
+          hazard: "Sequence drift, different table, weather pickup, new person on the radio",
+          risk: "The unbriefed change is the incident.",
+          control: "Stop and discuss. Engineer if the drawing no longer matches. Rewrite the SJP. Do not adapt on the fly.",
+        },
+      ],
+    }
+  ),
+  jha(
+    "WHOOP-JHA-012",
+    "corner-nontypical-flytables",
+    "CORNER AND NONTIPICAL FLYTABLES",
+    "Asymmetric COG. Reduced stability. Typical plan will not hold it.",
+    {
+      job: "Flying a corner, infill or nontypical table. Method: WHOOP-SWP-029 plus 028. BC Crane Safety: special handling plan.",
+      people: [
+        "Same as a typical cycle",
+        "Whoever the special plan names as extra tag line or spotter",
+        "The engineer if the plan is missing or the table changed",
+      ],
+      swpHref: "/safety/swp/corner-nontypical-flytables",
+      swpLabel: "SWP — CORNER AND NONTIPICAL FLYTABLES →",
+      residual:
+        "Even with a special plan, a nontypical table can spin when it leaves the slab. Residual is held by slower holds and by refusing the typical SJP — not by ‘we’ve flown corners on this job.’",
+      stop: [
+        "No special engineered handling plan at the lift",
+        "Crew cannot say why this table is not typical",
+        "Sling geometry copied from a typical table",
+        "Anyone calling it close enough to typical",
+      ],
+      references: FLYTABLE_REFS,
+      rows: [
+        {
+          task: "Declare nontypical",
+          level: "high",
+          hazard: "Corner table on the typical SJP",
+          risk: "Wrong COG, wrong hang, dump at the edge.",
+          control: "Said on WHOOP-SJP-002. Brief repeats it. If they cannot, the brief failed.",
+        },
+        {
+          task: "Special plan",
+          level: "high",
+          hazard: "Margin note, memory, or a photocopy of last tower’s corner",
+          risk: "This building’s table is not that one. Structural failure or spin.",
+          control: "Engineered handling plan for this table, this floor, this drawing revision — at the lift.",
+        },
+        {
+          task: "Leave the slab",
+          level: "extreme",
+          hazard: "Asymmetric COG, reduced bearing, missing extra tag line",
+          risk: "Table rotates into the structure or over the street. High severity.",
+          control: "Sling geometry only as the special plan. Extra tag line and spotter if named. Slower. WHOOP-SWP-028 still applies — crane does not pull.",
+        },
+      ],
+    }
+  ),
+  jha(
+    "WHOOP-JHA-013",
+    "working-near-powerlines",
+    "WORKING NEAR POWERLINES",
+    "Arc, contact, step potential. MAD is a wall. Guessing voltage is the incident.",
+    {
+      job: "Any lift where overhead or buried electrical lines exist or might. Method: WHOOP-SWP-018. Distances: WorkSafeBC Table 19-1A, the same numbers BC Hydro publishes.",
+      people: [
+        "Operator",
+        "Rigger and tag-line hands",
+        "Spotter on the line",
+        "Anyone who can walk up to a crane in contact",
+      ],
+      swpHref: "/safety/swp/working-near-powerlines",
+      swpLabel: "SWP — WORKING NEAR POWERLINES →",
+      residual:
+        "A verified voltage still arcs across a gap. Residual is a boom that drifts, a tag line that sails, or a person who approaches a crane in contact. Held by MAD as a wall, a dedicated spotter, and 10 m / 911 on contact — not by the line looking dead.",
+      stop: [
+        "Voltage not verified by the utility",
+        "MAD for this voltage cannot be held and there is no signed 30M33",
+        "No dedicated spotter when the boom or load can encroach",
+        "Tag line that can blow into the line",
+      ],
+      references: MAD_REFS,
+      rows: [
+        {
+          task: "Find the lines",
+          level: "high",
+          hazard: "Service drop, distribution or transmission missed on the drawing",
+          risk: "Contact or arc. Fatal. 14.52.1.",
+          control: "Look up. Look down. Ask the site. Do not trust a single drawing.",
+        },
+        {
+          task: "Name the voltage",
+          level: "high",
+          hazard: "Guessing kV. Treating transmission as distribution.",
+          risk: "MAD too short. Arc across the gap you thought was enough.",
+          control: "BC Hydro Express Connect 1 877 520 1355. Unknown: 3 m distribution, 6 m transmission, until they verify.",
+        },
+        {
+          task: "Hold MAD",
+          level: "extreme",
+          hazard: "Boom, load or tag line inside Table 19-1A",
+          risk: "Arc or contact. Operator and ground crew both exposed.",
+          control: "1 m under 750 V. 3 m to 75 kV. 4.5 m to 250 kV. 6 m to 550 kV. All of boom, load, people, tools. 19.24.1.",
+        },
+        {
+          task: "Work inside MAD",
+          level: "extreme",
+          hazard: "Entering the limits without assurance in writing",
+          risk: "Unplanned contact. No utility control of the line.",
+          control: "Stop. Coded 30M33 signed by the power-system owner. WHOOP-FRM-037 is the schematic, not the assurance.",
+        },
+        {
+          task: "Contact",
+          level: "extreme",
+          hazard: "People approaching a live crane. Operator jumping into step potential.",
+          risk: "Second electrocution. Fatal.",
+          control: "Stay on unless fire or shock. People back 10 m — 33 m if transmission or a manhole. 911. Jump clear, feet together, shuffle. Briefed before the lift.",
         },
       ],
     }

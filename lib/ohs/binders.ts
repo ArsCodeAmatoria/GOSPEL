@@ -124,7 +124,7 @@ const SHARED = {
     title: "30M33 / RECORD OF DISCUSSION / ASSURANCE IN WRITING",
     group: PRE,
     need: "required",
-    note: "Part 19. If the crane can enter the limits of approach, Form 30M33 is completed with the power-system owner. It is their coded form — order it from WorkSafeBC. The WHOOP sheet is the site schematic and the record of the discussion. Post it on the site board.",
+    note: "Part 19 Table 19-1A. MAD is 1 m under 750 V, 3 m to 75 kV, 4.5 m to 250 kV, 6 m to 550 kV. Unknown: 3 m distribution, 6 m transmission, until BC Hydro verifies. If the crane can enter those limits, Form 30M33 is completed with the power-system owner. Coded form — order it from WorkSafeBC. The WHOOP sheet is the schematic and the discussion. Post it on the site board.",
     formSlug: "powerline-30m33",
     official: [off(BINDER_OFFICIAL.form30m33, "WORKSAFEBC FORM 30M33 →")],
     whoop: [whoop("/safety/swp/working-near-powerlines", "SWP — POWERLINES →")],
@@ -230,7 +230,7 @@ const SHARED = {
     group: PRE,
     need: "required",
     note: "Serial operator and maintenance manuals. In the cab and a copy in the binder. OEM PDFs are linked from the crane library — not hosted.",
-    whoop: [whoop("/safety/inspections", "18 — CRANE LIBRARY →")],
+    whoop: [whoop("/safety/inspections", "19 — CRANE LIBRARY →")],
   }),
   chart: (n: string): BinderItem => ({
     id: "load-chart",
@@ -239,7 +239,7 @@ const SHARED = {
     group: PRE,
     need: "required",
     note: "The chart for this jib, this counterweight, this reeving. Serial plate wins if the download disagrees.",
-    whoop: [whoop("/safety/inspections", "18 — CRANE LIBRARY →")],
+    whoop: [whoop("/safety/inspections", "19 — CRANE LIBRARY →")],
   }),
   csa: (n: string): BinderItem => ({
     id: "csa",
