@@ -412,6 +412,24 @@ export const FLYTABLE_SJP_ITEMS = [
   "Pre-lift meeting immediately before this cycle",
 ];
 
+export const PLATFORM_SJP_ITEMS = [
+  "OEM user information for this serial is at the lift",
+  "Type plate / WLL read — service load is not the fly weight",
+  "Dead weight empty plus rigging known (14.36)",
+  "Fixed or retractable — said. Retractable daily extend is host",
+  "Four designated pick points — no improvised picks",
+  "4-leg chain as the OEM — Doka 3.20 m, β ≤ 30° if that is this serial",
+  "Deck empty — no people, no material",
+  "Host will release props / clamps before hoist",
+  "Tag lines named",
+  "Fall protection at the slab edge (Part 11)",
+  "Exclusion below (14.44)",
+  "Wind at or below the lower of crane, manufacturer, this SJP",
+  "Radios tested",
+  "Do not disconnect until the host says landed",
+  "Pre-lift meeting immediately before this lift",
+];
+
 export const REFUSAL_ITEMS = [
   "Work stopped",
   "Reason stated — specific",

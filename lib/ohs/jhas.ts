@@ -1,5 +1,5 @@
 import type { Jha, JhaRow } from "./types";
-import { FLYTABLE_REFS, LIFT_PPE, LIFT_REFS, MAD_REFS } from "./meta";
+import { FLYTABLE_REFS, LIFT_PPE, LIFT_REFS, MAD_REFS, PLATFORM_REFS } from "./meta";
 
 const JHA_REFS = [
   "Workers Compensation Act s. 21(2)(b) — workers made aware of known or reasonably foreseeable hazards",
@@ -741,6 +741,95 @@ export const JHAS: Jha[] = [
           hazard: "People approaching a live crane. Operator jumping into step potential.",
           risk: "Second electrocution. Fatal.",
           control: "Stay on unless fire or shock. People back 10 m — 33 m if transmission or a manhole. 911. Jump clear, feet together, shuffle. Briefed before the lift.",
+        },
+      ],
+    }
+  ),
+  jha(
+    "WHOOP-JHA-014",
+    "loading-platform-reposition",
+    "LOADING PLATFORM INSTALL AND REPOSITION",
+    "Empty deck. Four points. Props out. Edge. The service WLL is not the fly weight.",
+    {
+      job: "Installing, repositioning or striking a cantilever loading platform by crane. Method: WHOOP-SWP-030. Fill WHOOP-SJP-003 / FRM-053 for this deck. Rails, props, clamps and daily SuperDeck extend / retract are the host’s hazard analysis, not this one.",
+      people: [
+        "Operator",
+        "Rigger and signalperson",
+        "Tag-line hands",
+        "Platform supervisor (host)",
+        "Anyone below the path",
+        "Prime — not a spectator",
+      ],
+      swpHref: "/safety/swp/loading-platform-reposition",
+      swpLabel: "SWP — LOADING PLATFORM INSTALL AND REPOSITION →",
+      residual:
+        "A deck still dumps when a prop is left in, a pick is improvised, or someone is still on it. Residual is held by the empty-only gate and by stop-work — not by having moved this brand yesterday.",
+      stop: [
+        "No OEM user information or type plate at the lift",
+        "Dead weight unknown — or anyone treating service WLL as the fly weight (14.36)",
+        "People or material on the deck",
+        "Props or clamps still in",
+        "Fewer than the designated lifting points",
+        "Wind above the lower limit",
+        "Host asking the crane to retract or extend a SuperDeck",
+      ],
+      references: PLATFORM_REFS,
+      rows: [
+        {
+          task: "Gate / plan",
+          level: "high",
+          hazard: "Last floor’s SJP. Missing user information. Service WLL written as the pick.",
+          risk: "Critical lift run as a grocery pick. Overload or a surprise hang.",
+          control: "This-deck SJP. Type plate. Empty dead weight plus rigging. Meeting close to the lift. WHOOP-SWP-019 and 030.",
+        },
+        {
+          task: "Hitch",
+          level: "high",
+          hazard: "Improvised picks. Two legs on a four-point deck. Wrong chain length or sling angle.",
+          risk: "Deck dumps when it leaves the slab. Dropped load. 14.44.",
+          control: "Four designated points. 4-leg chain as the OEM. Doka: 3.20 m, β ≤ 30°. Inspect. Tag lines on.",
+        },
+        {
+          task: "Empty",
+          level: "extreme",
+          hazard: "People or material still on the deck. Loose gear.",
+          risk: "Dump at the edge. Person over. Fatal.",
+          control: "Empty only. Doka: no persons, no material. SuperDeck install empty. One platform at a time. Zone clear.",
+        },
+        {
+          task: "Release / hoist",
+          level: "extreme",
+          hazard: "Hoisting with props or clamps still in. Crane used to strip.",
+          risk: "Side-load. Structural damage. Deck over the edge. Fatal.",
+          control: "Host releases to the OEM. CantiDeck: do not lift until props are released. Confirm free. Then hoist. Part 11 at the edge.",
+        },
+        {
+          task: "Fly",
+          level: "high",
+          hazard: "Wind on a sail. Lost radio. Path over people.",
+          risk: "Uncontrolled swing. Struck-by below.",
+          control: "Lower wind number wins. Doka 72 km/h is a ceiling, not a target. Tag lines. Exclusion. Stop on change.",
+        },
+        {
+          task: "Land / disconnect",
+          level: "high",
+          hazard: "Disconnect before rails, props and clamps are in. Crush at the set.",
+          risk: "Deck walks or dumps. Hands in the pinch.",
+          control: "Host pins rails and props, clamps or anchors as the OEM. Supervisor says landed. Then release.",
+        },
+        {
+          task: "Using the deck",
+          level: "high",
+          hazard: "Landing more than remaining WLL. Unsupervised load. Treating deck WLL as a second chart.",
+          risk: "Deck collapse or a pick the crane cannot hold.",
+          control: "Separate lift. Chart and remaining platform WLL both take it. Unsupervised load prohibited.",
+        },
+        {
+          task: "Retractable daily",
+          level: "high",
+          hazard: "Crane still hooked while SuperDeck / Super Roller / DOC rolls. WHOOP asked to retract it.",
+          risk: "Side-load. Snag. Dump.",
+          control: "Daily extend and retract is host. Preston: no licence to roll it. WHOOP hooks only for install, reposition, strike — empty.",
         },
       ],
     }

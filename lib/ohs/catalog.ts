@@ -92,6 +92,7 @@ const SWP_GROUP: Record<string, (typeof SWP_GROUP_ORDER)[number]> = {
   "tower-erection-climbing": "CRANE",
   "flytable-cycling": "THE PLAN",
   "corner-nontypical-flytables": "THE PLAN",
+  "loading-platform-reposition": "THE PLAN",
 };
 
 export const JHA_GROUP_ORDER = ["CRANE", "SIGNALS", "RIGGING", "THE PLAN"] as const;
@@ -110,6 +111,7 @@ const JHA_GROUP: Record<string, (typeof JHA_GROUP_ORDER)[number]> = {
   "working-near-powerlines": "THE PLAN",
   "flytable-cycling": "THE PLAN",
   "corner-nontypical-flytables": "THE PLAN",
+  "loading-platform-reposition": "THE PLAN",
 };
 
 export function policyGroup(slug: string) {
@@ -124,11 +126,12 @@ export function jhaGroup(slug: string) {
   return JHA_GROUP[slug] ?? "RIGGING";
 }
 
-export const SJP_GROUP_ORDER = ["FLYTABLE"] as const;
+export const SJP_GROUP_ORDER = ["FLYTABLE", "LOADING PLATFORM"] as const;
 
 const SJP_GROUP: Record<string, (typeof SJP_GROUP_ORDER)[number]> = {
   "flytable-cycle": "FLYTABLE",
   "corner-nontypical-flytable": "FLYTABLE",
+  "loading-platform": "LOADING PLATFORM",
 };
 
 export function sjpGroup(slug: string) {

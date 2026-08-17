@@ -1122,6 +1122,47 @@ export const FORMS: SafetyForm[] = [
       },
     ],
   },
+  {
+    slug: "loading-platform-sjp",
+    title: "LOADING PLATFORM SJP",
+    number: "WHOOP-FRM-053",
+    group: "Lifting",
+    summary:
+      "This deck, this floor, this serial. Critical lift. Empty dead weight — not the service WLL.",
+    when: "Every loading-platform install, reposition or strike WHOOP hooks. Before the hitch takes the deck. Rewrite if the serial, the floor, or the OEM sheet changes.",
+    fields: [
+      "Manufacturer / system and serial",
+      "Fixed or retractable",
+      "Dead weight empty plus rigging",
+      "Service WLL — named, not flown",
+      "Pick points, chain, sling angle",
+      "Wind number",
+      "Named crew",
+      "Hold checklist",
+      "Abort",
+    ],
+    routing: "At the lift. Copy with the critical lift plan. Do not file last floor’s sheet as this one.",
+    download: {
+      href: "/safety/builder/loading-platform-sjp",
+      label: "FILL THIS FORM →",
+    },
+    links: [
+      {
+        href: "/safety/sjp/loading-platform",
+        label: "SJP TEMPLATE — WHOOP-SJP-003 →",
+      },
+      {
+        href: "https://www.doka.com/en/solutions/products/loading-platform/index",
+        label: "DOKA LOADING PLATFORM →",
+        external: true,
+      },
+      {
+        href: "https://www.prestonrentalsgroup.ca/product-category/superdeck/",
+        label: "PRESTON SUPERDECK →",
+        external: true,
+      },
+    ],
+  },
 ];
 
 export function getForm(slug: string) {

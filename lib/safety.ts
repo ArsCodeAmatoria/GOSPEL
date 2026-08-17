@@ -327,7 +327,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/swp-library",
-        label: "14 — SWP LIBRARY — 29 PROCEDURES →",
+        label: "14 — SWP LIBRARY — 30 PROCEDURES →",
       },
       {
         type: "h",
@@ -418,7 +418,7 @@ export const SAFETY: SafetySection[] = [
     title: "SAFE JOB PROCEDURES",
     kicker: "This lift. This site. This day.",
     intro:
-      "Safe Job Procedures (SJPs) are built for a specific task when the SWP is not enough. Unusual loads, tight sites, tandem lifts, critical lifts, flytable cycles, and anything the hazard assessment flags as non-routine.",
+      "Safe Job Procedures (SJPs) are built for a specific task when the SWP is not enough. Unusual loads, tight sites, tandem lifts, critical lifts, flytable cycles, loading-platform install and reposition, and anything the hazard assessment flags as non-routine.",
     blocks: [
       {
         type: "p",
@@ -436,6 +436,11 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "cta",
+        href: "/safety/builder/loading-platform-sjp",
+        label: "FILL THIS DECK — WHOOP-FRM-053 →",
+      },
+      {
+        type: "cta",
         href: "/safety/jha-library",
         label: "15 — JHA LIBRARY →",
       },
@@ -448,6 +453,7 @@ export const SAFETY: SafetySection[] = [
         items: [
           "Critical lifts as defined by the site or by this program (see Crane Operations).",
           "Flytable / flyform cycles — every table, every floor. WHOOP-SJP-001. Corner and nontypical tables: WHOOP-SJP-002.",
+          "Loading-platform install, reposition or strike — every deck, every floor. WHOOP-SJP-003. Daily SuperDeck extend / retract is host, not this SJP.",
           "Tandem or multiple-crane lifts.",
           "Loads of unknown or shifting centre of gravity.",
           "Lifts over occupied buildings, public space, or process equipment.",
@@ -626,12 +632,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Treat as critical unless the site defines a stricter threshold: loads approaching chart capacity, tandem lifts, lifts over operating plant or public space, non-routine paths, loads with shifting COG, or a flytable / flyform cycle. Critical lifts get an SJP, named supervision, and a slower brief. Ego is not a control. Flytables: WHOOP-SWP-028, WHOOP-JHA-011, WHOOP-SJP-001.",
+        text: "Treat as critical unless the site defines a stricter threshold: loads approaching chart capacity, tandem lifts, lifts over operating plant or public space, non-routine paths, loads with shifting COG, a flytable / flyform cycle, or a loading-platform install, reposition or strike. Critical lifts get an SJP, named supervision, and a slower brief. Ego is not a control. Flytables: WHOOP-SWP-028, WHOOP-JHA-011, WHOOP-SJP-001. Loading platforms: WHOOP-SWP-030, WHOOP-JHA-014, WHOOP-SJP-003.",
       },
       {
         type: "cta",
         href: "/safety/swp/flytable-cycling",
         label: "FLYTABLE CYCLING — WHOOP-SWP-028 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/swp/loading-platform-reposition",
+        label: "LOADING PLATFORM — WHOOP-SWP-030 →",
       },
       {
         type: "h",
@@ -1373,7 +1384,7 @@ export const SAFETY: SafetySection[] = [
     title: "SJP LIBRARY",
     kicker: "This lift. This site. This day. Search it.",
     intro:
-      "Safe Job Procedures for work the SWP cannot finish until this morning’s facts are named. Flytable cycles first. The SWP is the method. The SJP is the instance. Fill the sheet for this table, this floor, this drawing revision.",
+      "Safe Job Procedures for work the SWP cannot finish until this morning’s facts are named. Flytable cycles and loading-platform installs. The SWP is the method. The SJP is the instance. Fill the sheet for this table or this deck, this floor, this serial.",
     library: "sjp",
     blocks: [
       {
@@ -1384,6 +1395,11 @@ export const SAFETY: SafetySection[] = [
         type: "cta",
         href: "/safety/builder/flytable-cycle-sjp",
         label: "FILL THIS CYCLE — WHOOP-FRM-052 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/builder/loading-platform-sjp",
+        label: "FILL THIS DECK — WHOOP-FRM-053 →",
       },
       {
         type: "cta",
@@ -2005,6 +2021,7 @@ export const FIND_NOW = [
   { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE", hint: "Tower / luffer / Z248" },
   { href: "/safety/form/lift-plan", label: "LIFT PLAN", hint: "This lift" },
   { href: "/safety/sjp/flytable-cycle", label: "FLYTABLE SJP", hint: "This cycle" },
+  { href: "/safety/sjp/loading-platform", label: "LOADING PLATFORM SJP", hint: "This deck" },
   { href: "/safety/sjp-library", label: "SJP LIBRARY", hint: "This lift" },
   { href: "/safety/form/toolbox-meeting", label: "TOOLBOX", hint: "The brief" },
   { href: "/safety/policy/right-to-refuse", label: "STOP WORK", hint: "Refuse unsafe" },

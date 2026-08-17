@@ -10,6 +10,10 @@ import {
   MAD_LINKS,
   MAD_REFS,
   MAD_TABLES,
+  PLATFORM_LINKS,
+  PLATFORM_REFS,
+  PLATFORM_ROLES,
+  PLATFORM_TABLES,
 } from "./meta";
 
 function swp(
@@ -394,6 +398,7 @@ export const SWPS: Swp[] = [
       "WHOOP-FRM-009",
       "SJP if required",
       "Flytables: WHOOP-SWP-028 and WHOOP-SJP-001",
+      "Loading platforms: WHOOP-SWP-030 and WHOOP-SJP-003",
     ],
   }),
   swp("WHOOP-SWP-020", "lift-planning", "LIFT PLANNING", "Weight, COG, chart, path, people, abort — before the hook.", {
@@ -687,6 +692,111 @@ export const SWPS: Swp[] = [
       { href: "/safety/sjp/corner-nontypical-flytable", label: "SJP — CORNER / NONTIPICAL — WHOOP-SJP-002 →" },
       { href: "/safety/jha/corner-nontypical-flytables", label: "JHA — CORNER AND NONTIPICAL — WHOOP-JHA-012 →" },
       ...FLYTABLE_LINKS,
+    ],
+  }),
+  swp("WHOOP-SWP-030", "loading-platform-reposition", "LOADING PLATFORM INSTALL AND REPOSITION", "Empty. Four designated points. Props released. Then fly. Critical lift. The OEM user information wins.", {
+    purpose: "Give the WHOOP crew one method for installing, repositioning or striking a cantilever loading platform by crane. Rails, props, clamps and daily extend / retract stay with the host.",
+    scope: "WHOOP operator, rigger and signalperson on a Doka, SuperDeck, CantiDeck, PERI RCS MP, DOC or other OEM loading platform. Not a how-to for propping, clamping, through-slab anchors, or rolling a SuperDeck in. Those belong to the manufacturer and the host. Landing materials onto a deck already in service is a separate lift — this SWP still names the WLL rule.",
+    responsibilities: PLATFORM_ROLES,
+    competency: [
+      "BC Crane Safety certificate for this crane class",
+      "Critical-lift brief — everyone can repeat the abort",
+      "Knows the four designated lifting points on this serial, not last floor’s memory",
+      "Can say whether this deck is fixed or retractable, and who extends it",
+    ],
+    hazards: [
+      "Flying the service WLL instead of empty dead weight",
+      "People or material on the deck",
+      "Lifting with props or clamps still in",
+      "Improvised pick points",
+      "Disconnect before the host says landed",
+      "Wind on a sail",
+      "Using the deck over remaining WLL",
+      "Crane still hooked while the host retracts",
+    ],
+    controls: [
+      "This-serial user information and type plate at the lift",
+      "Critical lift plan and this-deck SJP",
+      "Four designated points. 4-leg chain as the OEM",
+      "Empty. Props released. Then hoist",
+      "Tag lines. Exclusion below",
+      "Host confirms landed before disconnect",
+      "Using the deck: chart and remaining platform WLL both have to take it",
+    ],
+    equipment: [
+      "This crane, this chart",
+      "4-leg chain and hardware as the OEM — Doka 4-part 3.20 m, β ≤ 30° if that is this serial",
+      "Tag lines",
+      "Radios on the named channel",
+      "WHOOP-FRM-007, WHOOP-FRM-009, WHOOP-FRM-053",
+    ],
+    procedure: [
+      {
+        n: "01",
+        title: "GATE",
+        body: "OEM user information for this serial at the lift. Type plate. Engineered drawing if the site has one. Dead weight known (14.36) — empty, plus rigging. Not the service WLL. Pick points only as the OEM names. Wind — the lower of crane, manufacturer, this SJP. Doka cites 72 km/h while repositioning; a lower number still wins. WHOOP-SJP-003 / FRM-053 filled. Critical lift plan. Radios tested. Pre-lift meeting immediately before this lift. Retractable or fixed — said. If any of that is missing, the hook does not take the deck.",
+      },
+      {
+        n: "02",
+        title: "HITCH",
+        body: "Four designated lifting points. Doka: welded points on the main beams. CantiDeck: the four points the user guide names. 4-leg chain as the OEM. Chain shorteners only if that guide uses them for hang. No two-point fly on a four-point deck. Inspect the hitch. Tag lines on — Doka one; CantiDeck front and rear, opposite corners.",
+      },
+      {
+        n: "03",
+        title: "EMPTY",
+        body: "No material. No persons. Doka: reposition empty only. SuperDeck install is empty. Loose gear off. One platform at a time. Fall protection at the slab edge (Part 11). Exclusion below.",
+      },
+      {
+        n: "04",
+        title: "RELEASE",
+        body: "Host releases props, clamps or through-slab anchors to the OEM. WHOOP does not invent that sequence. CantiDeck: do not lift until the props are released. Take a little load, confirm free, then hoist. Do not strip with the crane.",
+      },
+      {
+        n: "05",
+        title: "FLY",
+        body: "Test lift. Hang as the OEM. Path. Tag lines. Wind. Hoist clear, then travel. A deck is a sail. Stop on any change. Do not fly over people (14.44).",
+      },
+      {
+        n: "06",
+        title: "LAND",
+        body: "Guide onto the slab. Host swings rails and props, pins them, clamps between slabs or sets through-slab anchors as the OEM. Doka: low storey — props laid flat only if that user information allows it. CantiDeck: screw jacks tight, thread as the guide. Do not disconnect until the platform supervisor says it is landed. Then release.",
+      },
+      {
+        n: "07",
+        title: "IN SERVICE",
+        body: "Landing materials onto the deck is a different lift. Chart capacity and remaining platform WLL both have to take the load. Unsupervised load on the deck is prohibited. The deck WLL is not a second chart for a pick the crane cannot hold.",
+      },
+      {
+        n: "08",
+        title: "RETRACTABLE",
+        body: "SuperDeck, CantiDeck Super Roller, DOC: daily extend and retract is host. Preston: no crane licence to roll it. WHOOP is not hooked while it moves as a drawer. Install, reposition and strike stay this SWP — empty, four points, props released.",
+      },
+    ],
+    prohibited: [
+      "People or material on the deck while it flies",
+      "Flying the service WLL as the pick weight",
+      "Improvised pick points, missing legs, or a two-point fly on a four-point deck",
+      "Hoisting with props or clamps still in",
+      "Disconnect before the host says landed",
+      "Using the crane to retract or extend a SuperDeck",
+      "Last floor’s SJP for this serial",
+    ],
+    emergency:
+      "Deck hung up, dumped at the edge, dropped object, person in the zone, wind pickup, lost radio — stop. Land if it can be done without a second incident. Do not pull. First aid. Notify the site and WHOOP. Hold the scene.",
+    documentation: [
+      "WHOOP-SJP-003 / FRM-053 for this deck",
+      "WHOOP-FRM-007 critical lift plan",
+      "WHOOP-FRM-009 pre-lift meeting",
+      "OEM user information for this serial",
+      "Type plate / WLL",
+      "FLHA",
+    ],
+    references: PLATFORM_REFS,
+    tables: PLATFORM_TABLES,
+    links: [
+      { href: "/safety/sjp/loading-platform", label: "SJP — THIS DECK — WHOOP-SJP-003 →" },
+      { href: "/safety/jha/loading-platform-reposition", label: "JHA — LOADING PLATFORM — WHOOP-JHA-014 →" },
+      ...PLATFORM_LINKS,
     ],
   }),
 ];

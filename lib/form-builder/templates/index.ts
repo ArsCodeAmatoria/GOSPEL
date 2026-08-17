@@ -33,6 +33,7 @@ import {
   HOIST_ROPE_ITEMS,
   OPERATOR_CERT_ITEMS,
   FLYTABLE_SJP_ITEMS,
+  PLATFORM_SJP_ITEMS,
 } from "../blocks";
 import type { WhoopFormDef } from "../types";
 
@@ -803,6 +804,31 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
       { type: "communication" },
       { type: "weather" },
       { type: "inspection", inspectionItems: FLYTABLE_SJP_ITEMS },
+      { type: "hazard" },
+      { type: "control" },
+      { type: "emergency" },
+      { type: "comments" },
+      { type: "signature" },
+      { type: "signature" },
+    ],
+  }),
+  assembleForm({
+    id: "loading-platform-sjp",
+    title: "LOADING PLATFORM SJP",
+    number: "WHOOP-FRM-053",
+    group: "Lifting",
+    description:
+      "This deck. This floor. This serial. Empty. Critical lift.",
+    blocks: [
+      { type: "worker" },
+      { type: "project" },
+      { type: "task" },
+      { type: "crane" },
+      { type: "load" },
+      { type: "rigging" },
+      { type: "communication" },
+      { type: "weather" },
+      { type: "inspection", inspectionItems: PLATFORM_SJP_ITEMS },
       { type: "hazard" },
       { type: "control" },
       { type: "emergency" },

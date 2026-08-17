@@ -173,3 +173,114 @@ export const FLYTABLE_ROLES: RoleLine[] = [
     body: "Coordinates floors, drawings, inspections and exclusion. Not a spectator. WorkSafeBC names this duty on flytable work.",
   },
 ];
+
+export const PLATFORM_REFS = [
+  "Doka loading platform User Information — four welded lifting points, Doka 4-part chain 3.20 m, empty only, no persons, sling angle β ≤ 30°, reposition wind 72 km/h, one platform at a time.",
+  "Conquip CantiDeck User Guide — four lifting points, 4-leg chain, tag lines opposite corners, do not lift until props are released, disconnect after screw jacks tight, WLL on the type plate.",
+  "Preston SuperDeck — retractable drawer. Install is a licensed crane lift. Daily extend / retract is host operation. No crane licence to roll it. 604 817 DECK.",
+  "PERI RCS MP material platform — crane-set. Anchors or MULTIPROP between slabs. Host. User information for this serial.",
+  "DOC loading platform — powered retractable drawer. Install / relocate by crane. Daily extend / retract is host, including the 110 V supply.",
+  "14.36 load weight · 14.44 loads over work areas · 14.47–14.49 signals · Part 11 at the slab edge",
+  "Manufacturer user information for this serial at the lift. Pick points only as the OEM names. Fly weight is empty dead weight plus rigging — not the service WLL.",
+];
+
+export const PLATFORM_LINKS: DocLink[] = [
+  {
+    href: "https://www.doka.com/en/solutions/products/loading-platform/index",
+    label: "DOKA LOADING PLATFORM (OEM PAGE) →",
+    note: "3.0 t and 5.0 t. Cite. The user information for this serial wins.",
+    external: true,
+  },
+  {
+    href: "https://direct.doka.com/_ext/downloads/downloadcenter/999821902_2025_10_online.pdf",
+    label: "DOKA LOADING PLATFORM 5.0 t — USER INFORMATION →",
+    external: true,
+  },
+  {
+    href: "https://direct.doka.com/_ext/downloads/downloadcenter/999822702_2024_10_online.pdf",
+    label: "DOKA LOADING PLATFORM 3.0 t — USER INFORMATION →",
+    external: true,
+  },
+  {
+    href: "https://www.prestonrentalsgroup.ca/product-category/superdeck/",
+    label: "PRESTON SUPERDECK (CANADA) →",
+    note: "Retractable. Op Fam from Preston. Install is a licensed lift.",
+    external: true,
+  },
+  {
+    href: "https://www.prestonrentalsgroup.ca/frequently-asked-questions-faqs-about-the-superdeck/",
+    label: "SUPERDECK FAQS →",
+    external: true,
+  },
+  {
+    href: "https://cqegroup.com/us/cantideck/",
+    label: "CONQUIP CANTIDECK (OEM PAGE) →",
+    external: true,
+  },
+  {
+    href: "https://cqegroup.com/uk/wp-content/uploads/sites/5/2025/12/CantiDeck-Fixed-Flush-2025-User-Guide-Issue-7.pdf",
+    label: "CANTIDECK FIXED FLUSH — USER GUIDE →",
+    external: true,
+  },
+  {
+    href: "https://cqegroup.com/uk/wp-content/uploads/sites/5/2025/12/CantiDeck-SUP-User-Guide-Issue-5.pdf",
+    label: "CANTIDECK SUPER ROLLER — USER GUIDE →",
+    external: true,
+  },
+  {
+    href: "https://cn.peri.com/products/rcs-mp-material-platform.html",
+    label: "PERI RCS MP MATERIAL PLATFORM →",
+    note: "Crane-set. Anchors or MULTIPROP — host. User information for this serial.",
+    external: true,
+  },
+  {
+    href: "https://www.dochoist.com/loading-platforms/",
+    label: "DOC LOADING PLATFORMS →",
+    note: "Powered retractable. Install is a crane lift. Daily extend is host.",
+    external: true,
+  },
+];
+
+export const PLATFORM_CITE: DocTable = {
+  caption: "CITE — TYPICAL SYSTEMS. THIS SERIAL AND THE TYPE PLATE WIN.",
+  columns: ["SYSTEM", "KIND", "SERVICE / WLL", "WHAT THE CRANE FLIES"],
+  rows: [
+    ["Doka 3.0 t — 2.45 × 3.20 m", "Fixed cantilever", "3 000 kg", "Empty. Dead weight ~1 580 kg + rigging. Not the service load."],
+    ["Doka 5.0 t — 2.95 × 4.50 m", "Fixed cantilever", "5 000 kg", "Empty. Dead weight ~2 670 kg + rigging."],
+    ["Preston SuperDeck 2.2 / 2.6 / 3.2 / 4.2 m", "Retractable drawer", "5 000 kg typical", "Empty. Host extends and retracts. Install is the crane lift."],
+    ["Conquip CantiDeck Fixed Flush", "Fixed cantilever", "Type plate — often 5 000 kg", "Empty. Props released before any hoist."],
+    ["Conquip CantiDeck Super Roller", "Retractable", "Type plate", "Empty. Stacked floors. Flush when retracted."],
+    ["PERI RCS MP 375 / 550", "Material platform", "This serial", "Empty. Host anchors or MULTIPROP."],
+    ["DOC", "Powered retractable", "4 t", "Empty. Host 110 V. Install / relocate by crane."],
+  ],
+};
+
+export const PLATFORM_HITCH: DocTable = {
+  caption: "HITCH RULES THAT REPEAT. OEM USER INFORMATION STILL WINS.",
+  columns: ["RULE", "WHO SAYS IT"],
+  rows: [
+    ["Four designated lifting points. No improvised picks.", "Doka. CantiDeck."],
+    ["4-leg chain as the OEM. Doka: 3.20 m, β ≤ 30°.", "Doka. CantiDeck."],
+    ["Empty only. No material. No persons.", "Doka. CantiDeck. SuperDeck install."],
+    ["Do not lift until props / clamps are released.", "CantiDeck. Doka reposition."],
+    ["Tag lines. Doka: one. CantiDeck: front and rear, opposite corners.", "Doka. CantiDeck."],
+    ["One platform at a time.", "Doka."],
+    ["Reposition wind — Doka 72 km/h, or the lower of crane / this SJP.", "Doka. Chart."],
+    ["Disconnect only after the host says landed — jacks tight, rails pinned.", "CantiDeck. Doka."],
+    ["Daily SuperDeck / Super Roller / DOC extend and retract is host. WHOOP is not hooked.", "Preston FAQ. CantiDeck. DOC."],
+  ],
+};
+
+export const PLATFORM_TABLES: DocTable[] = [PLATFORM_CITE, PLATFORM_HITCH];
+
+export const PLATFORM_ROLES: RoleLine[] = [
+  ...CREW_ROLES,
+  {
+    title: "Platform supervisor (host)",
+    body: "Rails, props, clamps or through-slab anchors to the OEM and the engineered drawing. WHOOP does not invent a propping sequence. Says when the deck is landed and in service.",
+  },
+  {
+    title: "Prime contractor",
+    body: "Coordinates floors, exclusion, and who may land on the deck. Not a spectator.",
+  },
+];

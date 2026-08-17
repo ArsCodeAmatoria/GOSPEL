@@ -1,5 +1,5 @@
 import type { Sjp } from "./types";
-import { FLYTABLE_LINKS, FLYTABLE_REFS, LIFT_REFS } from "./meta";
+import { FLYTABLE_LINKS, FLYTABLE_REFS, LIFT_REFS, PLATFORM_LINKS, PLATFORM_REFS } from "./meta";
 
 export const SJPS: Sjp[] = [
   {
@@ -145,6 +145,90 @@ export const SJPS: Sjp[] = [
       label: "FILL WHOOP-FRM-052 — MARK NONTIPICAL →",
     },
     links: FLYTABLE_LINKS,
+  },
+  {
+    slug: "loading-platform",
+    title: "LOADING PLATFORM",
+    number: "WHOOP-SJP-003",
+    summary: "This deck. This floor. This serial. Empty. Not last floor’s sheet.",
+    when: "Every loading-platform install, reposition or strike WHOOP hooks. Critical lift. Fill WHOOP-FRM-053. Daily SuperDeck extend / retract is not this sheet.",
+    purpose:
+      "Name the facts the SWP cannot know until this morning: manufacturer, serial, dead weight, WLL, pick points, chain, wind number, named crew, holds. The method stays WHOOP-SWP-030. If this sheet contradicts the SWP, stop and fix one of them before the hook moves.",
+    basedOn: [
+      { href: "/safety/swp/loading-platform-reposition", label: "SWP — LOADING PLATFORM — WHOOP-SWP-030 →" },
+      { href: "/safety/jha/loading-platform-reposition", label: "JHA — LOADING PLATFORM — WHOOP-JHA-014 →" },
+      { href: "/safety/swp/critical-lifts", label: "SWP — CRITICAL LIFTS — WHOOP-SWP-019 →" },
+      { href: "/safety/form/loading-platform-sjp", label: "FILL THIS DECK — WHOOP-FRM-053 →" },
+    ],
+    facts: [
+      "Project, building, floor leaving, floor landing",
+      "Manufacturer / system — Doka, SuperDeck, CantiDeck, PERI RCS MP, DOC, other",
+      "Serial / ID. Type plate. Fixed or retractable — said",
+      "OEM user information at the lift — document number if it has one",
+      "Dead weight empty, plus rigging (14.36). Not the service WLL",
+      "Service WLL / remaining WLL — named so nobody flies it",
+      "Every designated pick point, named. Four unless this OEM names otherwise",
+      "Chain / sling type, WLL, length. Doka: 4-part 3.20 m, β ≤ 30° if that is this serial",
+      "Wind limit — the lower of crane, manufacturer, this SJP. A number. Doka cites 72 km/h",
+      "Tag lines — how many, who holds them",
+      "Radio channel. Confirmation loop",
+      "Exclusion below and at the slab edge (Part 11, 14.44)",
+      "Who releases props / clamps. Who says landed",
+    ],
+    holds: [
+      {
+        n: "01",
+        title: "GATE",
+        body: "User information and type plate at the lift. Empty dead weight known. FRM-053 filled. Brief done. If not, the hook does not take the deck.",
+      },
+      {
+        n: "02",
+        title: "HITCH AND EMPTY",
+        body: "Four designated points. Chain as the OEM. People off. Material off. Tag lines on.",
+      },
+      {
+        n: "03",
+        title: "RELEASE",
+        body: "Host has released props / clamps. Confirm free. Then hoist.",
+      },
+      {
+        n: "04",
+        title: "LAND",
+        body: "Host pins rails and props, clamps or anchors as the OEM. Supervisor says landed. Then disconnect.",
+      },
+    ],
+    abort: [
+      "User information or type plate not at the lift",
+      "Anyone treating service WLL as the fly weight",
+      "People or material on the deck",
+      "Props still in",
+      "Improvised picks",
+      "Wind above the number on this sheet",
+      "Asked to retract or extend a SuperDeck with the crane",
+      "The work is being asked to drift from WHOOP-SWP-030",
+    ],
+    named: [
+      "Operator",
+      "Rigger",
+      "Signalperson",
+      "Tag-line hands",
+      "Platform supervisor (host)",
+      "Prime contact",
+      "WHOOP supervisor if dispatched",
+    ],
+    documentation: [
+      "This SJP / WHOOP-FRM-053",
+      "WHOOP-FRM-007",
+      "WHOOP-FRM-009",
+      "FLHA",
+      "OEM user information cited",
+    ],
+    references: [...LIFT_REFS, ...PLATFORM_REFS],
+    download: {
+      href: "/safety/builder/loading-platform-sjp",
+      label: "FILL WHOOP-FRM-053 — THIS DECK →",
+    },
+    links: PLATFORM_LINKS,
   },
 ];
 
