@@ -17,7 +17,7 @@
 [![British Columbia](https://img.shields.io/badge/British_Columbia-Canada-111111)](https://whoop.ca)
 
 <p align="center">
-  <img src="docs/whoop-cover.png" alt="WHOOP — crane and rigging" width="720">
+  <img src="./docs/whoop-cover.jpg" alt="WHOOP — crane and rigging" width="720">
 </p>
 
 # WHOOP
