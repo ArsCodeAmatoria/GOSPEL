@@ -8,6 +8,18 @@
               CRANE + RIGGING
 ```
 
+[![Next.js](https://img.shields.io/badge/Next.js-15-111111?logo=nextdotjs&logoColor=white)](https://whoop.ca)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![COR®](https://img.shields.io/badge/COR®-Certified-c1121f)](https://www.bccsa.ca/)
+[![WorkSafeBC](https://img.shields.io/badge/WorkSafeBC-Part_14-111111)](https://www.worksafebc.com/)
+[![BC Crane Safety](https://img.shields.io/badge/BC_Crane_Safety-Ticket-6c6861)](https://bccranesafety.ca/)
+[![Union](https://img.shields.io/badge/Union-Friendly-6c6861)](https://whoop.ca)
+[![British Columbia](https://img.shields.io/badge/British_Columbia-Canada-111111)](https://whoop.ca)
+
+<p align="center">
+  <img src="docs/whoop-cover.png" alt="WHOOP — crane and rigging" width="720">
+</p>
+
 # WHOOP
 
 We supply the people who lift.
@@ -51,7 +63,14 @@ Working documents, not a poster:
 
 - **OH&S policies** — OH&S, violence, workplace conduct, fitness for work, PPE, impairment, working alone, incident reporting, injury management, return to work, [bullying and harassment](https://whoop.ca/safety/policy/bullying-and-harassment), and discrimination. Plus competency, crane operations and rigging.
 - **SWP library** — numbered steps for the lift. Grouped: crane, signals, rigging, the plan. Includes flytable cycling and working near powerlines.
-- **JHA library** — hazards, consequence, residual risk. Rows carry a severity badge: extreme is the no-recovery killer (people under the load, MAD, overturn, a table over the edge). High is serious injury. Moderate is lost time or a failed plan. The steps live in the SWP.
+- **JHA library** — hazards, consequence, residual risk. Rows carry a severity badge. The steps live in the SWP.
+
+  ![LOW](https://img.shields.io/badge/LOW-6c6861)
+  ![MODERATE](https://img.shields.io/badge/MODERATE-2c2a27)
+  ![HIGH](https://img.shields.io/badge/HIGH-111111)
+  ![EXTREME](https://img.shields.io/badge/EXTREME-c1121f)
+
+  Extreme is the no-recovery killer (people under the load, MAD, overturn, a table over the edge). High is serious injury. Moderate is lost time or a failed plan. Low is first aid.
 - **SJP library** — this lift, this site, this day. The SWP is the method. The SJP is the instance. Flytable cycles first — fill [WHOOP-FRM-052](https://whoop.ca/safety/builder/flytable-cycle-sjp) before drop.
 - **Safety forms** — FLHA, inspections, lift plans, incident reports, operator and rigger logs, weekly and monthly maintenance. Binder forms (30M33 record, radio 52E73C, NOP-TC posting, tower crane report) fill and download as PDF.
 - **[Crane binders](https://whoop.ca/safety/crane-binders)** — Tower and Self-Erect site binders numbered to the BC Crane Safety checklists. Wizard at `/safety/binder`. Official templates stay on bccranesafety.ca and WorkSafeBC.
