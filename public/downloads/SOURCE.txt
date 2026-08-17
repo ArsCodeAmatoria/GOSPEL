@@ -32,3 +32,20 @@ until a member download is dropped in):
     Chain and sling, crush/pinch, struck-by, electrical, heat, cold machines,
     loading/unloading, mounting/dismounting, communication, working alone,
     JHA, incident/near miss. Not silica, excavation, forklift, skid steer.
+
+Potain / Manitowoc data sheets are linked from /safety/inspections (WHOOP-CRN).
+They download from manitowoc.com/media/{id}/download — not copied here.
+Serial operator, maintenance and lubrication manuals stay in the cab and on
+Manitowoc Crane Care (manitowoc.com/manuals, brand Potain).
+
+  MDT 219 J10 ASCE   /media/13461/download
+  MDT 219 J8 ASCE    /media/13453/download
+  MRH 125 ASCE       /media/13899/download
+  MRH 175 ASCE       /media/14214/download
+  MR 229 ASCE        /media/16824/download
+  MR 225 A EN C25    sites/default/files/media/divers/file/2023-03/02D_EN14439C25D25_MR225A_2009_36-15.pdf
+  Hup 32-27 ASME     /media/12966/download
+  Hup 40-30 ASME     /media/12984/download
+  Igo T 85 A ASME    /media/13108/download
+  Igo T 130 ASME     /media/13119/download
+  Igo 50 metric      /media/13044/download

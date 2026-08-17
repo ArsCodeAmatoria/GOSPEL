@@ -435,6 +435,123 @@ export const FORMS: SafetyForm[] = [
     routing:
       "Competent person. Record in the logbook. Out of service is immediate. Annual certification is separate.",
   },
+  {
+    slug: "tower-pre-use",
+    title: "TOWER PRE-USE INSPECTION",
+    number: "WHOOP-FRM-027",
+    group: "Inspection",
+    summary:
+      "Topless and hammerhead tower — this shift, this configuration. CSA Z248, 14.35.",
+    when: "Before the crane comes on load, every shift. MDT 219 and other top-slewing towers.",
+    fields: [
+      "Machine serial, jib, reeving, mast, ballast",
+      "Chart in the cab matches this configuration",
+      "Mast, slew, jib, trolley, hoist rope, hook",
+      "Limits, CCS / overload, anemometer, weathervane",
+      "Access and Cab-IN if fitted",
+      "Defects and out-of-service decision",
+    ],
+    routing:
+      "Operator completes. Defects that affect lifting stop the crane. Copy in the logbook. Copy to WHOOP.",
+    download: {
+      href: "/safety/builder/tower-pre-use",
+      label: "FILL THIS FORM →",
+    },
+  },
+  {
+    slug: "luffing-jib-inspection",
+    title: "LUFFING JIB INSPECTION",
+    number: "WHOOP-FRM-028",
+    group: "Inspection",
+    summary:
+      "MRH hydraulic luffer and MR rope luffer. Jib angle, luffing system, weathervane.",
+    when: "Before the crane comes on load, every shift on a luffing-jib tower. After any luffing-system work.",
+    fields: [
+      "Machine serial and whether hydraulic (MRH) or rope (MR)",
+      "Jib length, angle, reeving, ballast — chart in the cab",
+      "Hydraulic rams, hoses, tank — or luffing rope, cathead, winch",
+      "Hoist, slew, limits, anemometer",
+      "Out-of-service jib position for this wind",
+      "Defects and out-of-service decision",
+    ],
+    routing:
+      "Operator completes. Luffing-system defects stop the crane. Copy in the logbook. Copy to WHOOP.",
+    download: {
+      href: "/safety/builder/luffing-jib-inspection",
+      label: "FILL THIS FORM →",
+    },
+  },
+  {
+    slug: "self-erect-inspection",
+    title: "SELF-ERECT INSPECTION",
+    number: "WHOOP-FRM-029",
+    group: "Inspection",
+    summary:
+      "Hup, Igo and Igo T. Unfold complete, ballast locked, chart for this jib position.",
+    when: "After unfold, and before the crane comes on load each shift while erected.",
+    fields: [
+      "Machine serial, jib position, ballast",
+      "Outriggers, pads, slope",
+      "Unfold complete — pins in, transport locks off",
+      "Remote / cab, limits, hoist, power",
+      "Weathervane / out-of-service",
+      "Defects and out-of-service decision",
+    ],
+    routing:
+      "Operator completes. Incomplete unfold or missing ballast stops the crane. Copy in the logbook. Copy to WHOOP.",
+    download: {
+      href: "/safety/builder/self-erect-inspection",
+      label: "FILL THIS FORM →",
+    },
+  },
+  {
+    slug: "tower-weekly-maintenance",
+    title: "TOWER WEEKLY MAINTENANCE",
+    number: "WHOOP-FRM-030",
+    group: "Inspection",
+    summary:
+      "Frequent inspection of a tower, luffer or self-erect. Rope, leaks, limits, lubrication.",
+    when: "Weekly while the crane is in service, or as the OEM lubrication chart requires if sooner.",
+    fields: [
+      "Machine identity and hours",
+      "Hoist and trolley / luffing rope",
+      "Hydraulics, pins, slew, weathervane",
+      "Limits, CCS / overload, anemometer",
+      "Lubrication this interval per the serial chart",
+      "Defects and out-of-service decision",
+    ],
+    routing:
+      "Operator or competent person. Entered in the crane logbook. OEM interval wins if it is sooner. Defects that affect lifting stop the crane.",
+    download: {
+      href: "/safety/builder/tower-weekly-maintenance",
+      label: "FILL THIS FORM →",
+    },
+  },
+  {
+    slug: "tower-monthly-maintenance",
+    title: "TOWER MONTHLY MAINTENANCE",
+    number: "WHOOP-FRM-031",
+    group: "Inspection",
+    summary:
+      "Periodic inspection. Structure, full rope, slew bolts, hydraulics, certificates.",
+    when: "Monthly while in service, and after any event that could have damaged the crane.",
+    fields: [
+      "Machine identity and hours",
+      "Jib, mast, ties, climbing frame",
+      "All running rope",
+      "Slew ring check per OEM",
+      "Winches, hydraulics, electrical",
+      "Brake and safety-device tests",
+      "Annual / comprehensive inspection current",
+      "OEM items due — inspector and supervisor",
+    ],
+    routing:
+      "Competent person. Record in the logbook. Out of service is immediate. Follow the serial maintenance manual for torque and oil specs.",
+    download: {
+      href: "/safety/builder/tower-monthly-maintenance",
+      label: "FILL THIS FORM →",
+    },
+  },
 ];
 
 export function getForm(slug: string) {

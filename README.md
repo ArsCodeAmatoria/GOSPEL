@@ -6,7 +6,7 @@ We supply the people who lift.
 
 WHOOP is a safety company that supplies a workforce. Crane operators. Riggers. Signalpersons. Lifting crews. Vancouver, Canada. Union-friendly shop.
 
-We are not a school. Not a rental yard. Not a consultancy. If you need a machine, call a crane company. If you need the people who can run it, brief it, and stop it when it should stop — call us.
+If you need the people who can run it, brief it, and stop it when it should stop — call us.
 
 We move heavy things. And we show you how we do it.
 

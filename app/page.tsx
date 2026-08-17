@@ -22,15 +22,12 @@ export default function HomePage() {
           <p className="lede-lg mt-2">{SITE.position}</p>
           <p className="lede mt">
             Crane operators, riggers and signalpersons. {SITE.location}.{" "}
-            {SITE.union}. We do not rent cranes. We do not sell tickets. We
-            send people who can do the lift — and we publish how we expect that
-            work to be done.
+            {SITE.union}. We send people who can do the lift — and we publish
+            how we expect that work to be done.
           </p>
           <div>
             <p className="mono steel mt-2">WHO WE ARE</p>
-            <p className="lede mt">
-              The work, the city, the shop. Not a rental yard. Not a school.
-            </p>
+            <p className="lede mt">The work, the city, the shop.</p>
             <FactsList items={ABOUT} />
           </div>
           <div className="inline-cta">

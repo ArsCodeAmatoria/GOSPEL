@@ -1,4 +1,5 @@
 import { SAFETY } from "@/lib/safety";
+import { CRANES } from "./cranes";
 import { FORMS } from "./forms";
 import { JHAS } from "./jhas";
 import { POLICIES } from "./policies";
@@ -147,6 +148,13 @@ export function safetyCatalog(): CatalogHit[] {
       summary: "Assemble, fill, PDF.",
       kind: "FORM",
     },
+    ...CRANES.map((item) => ({
+      href: `/safety/crane/${item.slug}`,
+      number: item.number,
+      title: item.title,
+      summary: item.summary,
+      kind: "CRANE",
+    })),
     ...FORMS.map((item) => ({
       href: `/safety/form/${item.slug}`,
       number: item.number,

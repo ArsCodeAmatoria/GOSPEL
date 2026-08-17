@@ -134,6 +134,91 @@ export const MONTHLY_MAINT_ITEMS = [
   "OEM service items due this month",
 ];
 
+/** Tower / topless pre-use. CSA Z248, 14.35. Serial chart in the cab. */
+export const TOWER_PREUSE_ITEMS = [
+  "Serial, jib, reeving, mast, ballast match the chart in the cab",
+  "Mast bolts, pins, ties, climbing frame if fitted",
+  "Slew ring / weathervaning",
+  "Jib, trolley, counter-jib",
+  "Hoist rope and hook block",
+  "Trolley rope / trolley",
+  "Limit switches — hoist, trolley, slew",
+  "Anti-two-block / overload / CCS alarms clear",
+  "Anemometer",
+  "Access, platforms, Cab-IN if fitted",
+  "Electrical / earthing / aviation lights",
+  "Out-of-service / weathervane set for this jib",
+  "Wind against the OEM in-service limit",
+  "Load chart and serial manuals in the cab",
+];
+
+/** Luffing jib (MRH hydraulic and MR rope). */
+export const LUFFER_INSPECT_ITEMS = [
+  "Serial, jib length, reeving, ballast match the chart in the cab",
+  "Jib angle against this chart",
+  "Hydraulic luffing — rams, hoses, tank, leaks, level (MRH)",
+  "Luffing rope, cathead, luffing winch (MR)",
+  "Jib pins, keepers, near-vertical clearance",
+  "Hoist rope, hook block, anti-two-block",
+  "Slew and weathervane radius for this jib",
+  "Mast bolts, pins, ties",
+  "Limits and overload — no bypass",
+  "Anemometer",
+  "Out-of-service jib position for this wind",
+  "Load chart and serial manuals in the cab",
+];
+
+/** Self-erecting Hup / Igo / Igo T. */
+export const SELF_ERECT_INSPECT_ITEMS = [
+  "Serial, jib position, ballast match the chart in the cab",
+  "Chassis, outriggers, jacks, pads — slope within OEM",
+  "Ballast complete and locked",
+  "Unfold complete — transport locks off, pins in",
+  "Hoist rope, hook, trolley or luff as fitted",
+  "Remote / cab — E-stop, function, alarms clear",
+  "Limits and overload",
+  "Power — voltage, phase, earthing",
+  "Weathervane / out-of-service for this wind",
+  "Access and exclusion at the base",
+  "Load chart and serial manuals with the crane",
+];
+
+/** Frequent tower maintenance. 14.13. OEM interval wins if sooner. */
+export const TOWER_WEEKLY_ITEMS = [
+  "Hoist rope — visible length, spooling, end connections",
+  "Trolley / luffing rope as fitted",
+  "Hook, latch, swivel, block",
+  "Sheaves and guards",
+  "Hydraulic leaks — luffing rams, outriggers, winches",
+  "Pins, keepers, visible bolts",
+  "Slew function and weathervane",
+  "Limits — hoist, trolley, slew, anti-two-block",
+  "CCS / overload — function, no bypass",
+  "Anemometer",
+  "Mast ties and access",
+  "Grease / lubrication this interval per OEM chart",
+  "Load chart and manuals in the cab",
+  "Defects and out-of-service decision",
+];
+
+/** Periodic tower maintenance. 14.13. */
+export const TOWER_MONTHLY_ITEMS = [
+  "All running rope — full visible length, including luffing line on MR",
+  "Jib / counter-jib / cathead or ram attachments",
+  "Mast structure, bolts, pins, ties, climbing frame",
+  "Slew ring bolts — OEM torque / check method",
+  "Winches — oil, brakes, spooling",
+  "Hydraulic system — oil, filters, hoses, rams",
+  "Electrical, earthing, aviation lights, Cab-IN",
+  "Brake test recorded",
+  "Safety device tests per OEM",
+  "Ballast inventory against the chart",
+  "Out-of-service / weathervane test",
+  "Annual / comprehensive inspection current",
+  "OEM lubrication and service items due this month",
+  "Logbook complete",
+];
+
 export function createBlock(
   type: BlockType,
   inspectionItems?: string[]

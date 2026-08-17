@@ -106,6 +106,28 @@ export type ReportKind = {
   summary: string;
 };
 
+export type CraneLink = {
+  href: string;
+  label: string;
+  note?: string;
+};
+
+export type Crane = {
+  slug: string;
+  title: string;
+  number: string;
+  family: "TOPLESS" | "LUFFING JIB" | "SELF-ERECTING";
+  maker: "Potain";
+  summary: string;
+  productUrl: string;
+  specs: RoleLine[];
+  charts: CraneLink[];
+  manuals: CraneLink[];
+  inspect: string[];
+  maint: string[];
+  forms: CraneLink[];
+};
+
 export type LibraryCard = {
   href: string;
   number: string;

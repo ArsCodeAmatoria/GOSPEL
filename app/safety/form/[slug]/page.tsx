@@ -38,6 +38,8 @@ export default async function FormPage({ params }: Props) {
               <a href={doc.download.href} target="_blank" rel="noreferrer">
                 {doc.download.label}
               </a>
+            ) : doc.download.href.startsWith("/") ? (
+              <a href={doc.download.href}>{doc.download.label}</a>
             ) : (
               <a href={doc.download.href} download>
                 {doc.download.label}

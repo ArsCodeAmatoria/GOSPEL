@@ -15,9 +15,9 @@ export default function CrewPage() {
         <p className="mono kicker">THE PEOPLE</p>
         <h1 className="display giant">THE CREW</h1>
         <p className="lede mt">
-          We don&apos;t publish a labour catalogue. These are the kinds of
-          people we put on a lift — ticketed, experienced, and checked for the
-          work you actually have. WHOOP is a union-friendly shop.
+          These are the kinds of people we put on a lift — ticketed, experienced,
+          and checked for the work you actually have. WHOOP is a union-friendly
+          shop.
         </p>
       </header>
       <div>
@@ -33,9 +33,9 @@ export default function CrewPage() {
       </div>
       <section className="section">
         <h2 className="display giant-sm">
-          WE DON&apos;T SUPPLY
+          WE SUPPLY
           <br />
-          RANDOM LABOUR.
+          NAMED PEOPLE.
         </h2>
         <p className="lede mt">
           Names on this page are representative of the bench — not a promise

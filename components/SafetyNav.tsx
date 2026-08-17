@@ -16,6 +16,7 @@ function sectionFromPath(path: string): string | undefined {
     builder: "safety-forms",
     sds: "whmis-sds",
     report: "incident-reporting",
+    crane: "inspections",
   };
   return nested[part] ?? part;
 }

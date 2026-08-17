@@ -38,8 +38,8 @@ export const POLICIES: Policy[] = [
         body: "A mobile operator is not a tower operator by default. A structural rigger is not a plant rigger by default. The closest body is not a match.",
       },
       {
-        title: "Not a school",
-        body: "WHOOP does not sell tickets or cover gaps with hope. Workers arrive already qualified for the role.",
+        title: "Already qualified",
+        body: "Workers arrive already qualified for the role. Site orientations are arranged. A missing qualification is named before dispatch.",
       },
     ],
   },
@@ -48,7 +48,7 @@ export const POLICIES: Policy[] = [
     title: "TRAINING",
     number: "WHOOP-POL-003",
     summary:
-      "Site orientations and briefings are arranged. Missing qualifications are a gap, not a WHOOP course.",
+      "Site orientations and briefings are arranged. Workers hold the qualification for the role before they are sent.",
     statements: [
       {
         title: "Before the gate",
@@ -262,7 +262,7 @@ export const POLICIES: Policy[] = [
     statements: [
       {
         title: "Crane",
-        body: "Operator inspection each shift as the manufacturer, the named 14.2 standard, and Part 14 require. Defects that affect lifting keep the crane down.",
+        body: "Operator inspection each shift as the manufacturer, the named 14.2 standard, and Part 14 require. Defects that affect lifting keep the crane down. Tower, luffing jib and self-erecting machines: see Inspections — Potain charts and WHOOP-FRM-027 through 031.",
       },
       {
         title: "Rigging",

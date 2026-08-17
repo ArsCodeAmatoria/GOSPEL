@@ -9,8 +9,9 @@ export const INSPECTION_LOOP = [
 
 export const INSPECTION_SCOPE = [
   "Crane pre-use and defects that affect lifting",
+  "Potain tower, luffing jib and self-erecting machines",
   "Rigging and below-the-hook gear",
-  "Outriggers, mats and supporting surface",
+  "Outriggers, mats, mast ties and supporting surface",
   "Exclusion zone and access",
   "Communication equipment",
   "PPE used on the lift",

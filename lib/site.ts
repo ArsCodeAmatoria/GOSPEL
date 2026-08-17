@@ -18,8 +18,8 @@ export const ABOUT = [
     body: "Crane operators, riggers, signalpersons and lifting crews. Matched to the machine, the lift and the site.",
   },
   {
-    name: "Not a rental yard",
-    body: "We supply people. We do not rent cranes. We do not sell tickets. We do not train the public.",
+    name: "The people",
+    body: "Named operators, riggers and signalpersons. Tickets, experience and practical competency checked before anyone is sent.",
   },
   {
     name: "Vancouver",

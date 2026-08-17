@@ -1,5 +1,7 @@
 import { SafetyLibrary } from "@/components/SafetyLibrary";
 import {
+  CRANE_GROUP_ORDER,
+  CRANES,
   FORM_GROUPS,
   FORMS,
   POLICIES,
@@ -98,6 +100,21 @@ export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
           number: item.number,
           title: item.title,
           summary: item.use,
+        }))}
+      />
+    );
+  }
+  if (kind === "crane") {
+    return (
+      <SafetyLibrary
+        placeholder="MDT 219, MRH 125, luffer, Hup, Igo…"
+        groupOrder={CRANE_GROUP_ORDER}
+        items={CRANES.map((item) => ({
+          href: `/safety/crane/${item.slug}`,
+          number: item.number,
+          title: item.title,
+          summary: item.summary,
+          meta: item.family,
         }))}
       />
     );

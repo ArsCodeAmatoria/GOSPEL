@@ -4,6 +4,7 @@ export { JHAS, getJha } from "./jhas";
 export { FORMS, FORM_GROUPS, getForm } from "./forms";
 export { SDS, getSds } from "./sds";
 export { REPORTS, getReport } from "./reports";
+export { CRANES, CRANE_GROUP_ORDER, getCrane } from "./cranes";
 export { INSPECTION_LOOP, INSPECTION_SCOPE } from "./inspections";
 export { OHS_META, control, CREW_ROLES, LIFT_PPE, LIFT_REFS } from "./meta";
 export {
@@ -24,5 +25,7 @@ export type {
   SafetyForm,
   Sds,
   ReportKind,
+  Crane,
+  CraneLink,
   LibraryCard,
 } from "./types";

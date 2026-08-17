@@ -16,7 +16,8 @@ export type SafetyLibraryKind =
   | "policy"
   | "form"
   | "sds"
-  | "report";
+  | "report"
+  | "crane";
 
 export type SafetySection = {
   num: string;
@@ -68,7 +69,7 @@ export const SAFETY: SafetySection[] = [
     title: "COMPANY SAFETY POLICY",
     kicker: "The standard is not a poster.",
     intro:
-      "WHOOP is a safety company that supplies a workforce. We supply crane operators, riggers, signalpersons and lifting crews. We do not rent cranes. We do not train the public. We place competent people on lifting work — and we expect that work to be done to a published standard.",
+      "WHOOP is a safety company that supplies a workforce. We supply crane operators, riggers, signalpersons and lifting crews. We place competent people on lifting work — and we expect that work to be done to a published standard.",
     blocks: [
       {
         type: "quote",
@@ -89,19 +90,8 @@ export const SAFETY: SafetySection[] = [
           "A public document. It is not proprietary. It does not expire. It is not behind a form.",
           "Subordinate to law. Where applicable occupational health and safety law is stricter, the law wins. Where this program is stricter, this program wins.",
           "Written to be used. Procedures are sequenced the way the work actually happens.",
-        ],
-      },
-      {
-        type: "h",
-        text: "WHAT THIS PROGRAM IS NOT",
-      },
-      {
-        type: "list",
-        items: [
-          "A substitute for the site-specific hazard assessment.",
-          "A substitute for the client’s site rules where those rules are stricter or required.",
-          "A training course. Competency is verified before placement; this document does not make someone competent.",
-          "A COR consultancy, a formwork manual, or a crane rental policy.",
+          "Used with the site-specific hazard assessment and the client’s site rules. Where those rules are stricter or required, they apply.",
+          "The standard competent people work to. Competency is verified before placement.",
         ],
       },
       {
@@ -917,11 +907,11 @@ export const SAFETY: SafetySection[] = [
     title: "TRAINING + COMPETENCY",
     kicker: "A ticket is not competency.",
     intro:
-      "WHOOP does not supply random labour. We supply crane and rigging personnel whose qualifications, experience and practical competency have been checked against the work.",
+      "WHOOP supplies crane and rigging personnel whose qualifications, experience and practical competency have been checked against the work.",
     blocks: [
       {
         type: "quote",
-        text: "We do not hire the card. We hire the person who can do the work the card implies.",
+        text: "We hire the person who can do the work the card implies.",
       },
       {
         type: "h",
@@ -958,11 +948,11 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "h",
-        text: "WHOOP IS NOT A SCHOOL",
+        text: "QUALIFIED FOR THE ROLE",
       },
       {
         type: "p",
-        text: "We are not a training provider. We do not sell tickets. Workers are expected to arrive already qualified for the role. Where a site requires a specific orientation, we arrange it. Where a worker needs a new qualification, that is not a WHOOP course — it is a gap, and we do not cover gaps with hope.",
+        text: "Workers arrive already qualified for the role. Where a site requires a specific orientation, we arrange it. Where a worker needs a new qualification, that gap is named before dispatch.",
       },
       {
         type: "h",
@@ -1237,7 +1227,8 @@ export const SAFETY: SafetySection[] = [
     title: "INSPECTIONS + CORRECTIVE ACTIONS",
     kicker: "Finding → action → person → date → done → verified.",
     intro:
-      "Inspections and actions for cranes, rigging, ground, zone and lifting PPE. Not a civil-site audit dressed up as a lift program.",
+      "Inspections and actions for cranes, rigging, ground, zone and lifting PPE. Potain tower charts and maintenance forms live here.",
+    library: "crane",
     blocks: [
       {
         type: "h",
@@ -1247,13 +1238,47 @@ export const SAFETY: SafetySection[] = [
         type: "list",
         items: [
           "Crane pre-use and defects that affect lifting",
+          "Tower, luffing jib and self-erecting machines — Potain fleet below",
           "Rigging and below-the-hook gear",
-          "Outriggers, mats and supporting surface",
+          "Outriggers, mats, mast ties and supporting surface",
           "Exclusion zone and access",
           "Communication equipment",
           "PPE used on the lift",
           "Corrective actions from incidents and near misses on lifting work",
         ],
+      },
+      {
+        type: "h",
+        text: "POTAIN TOWER CRANES",
+      },
+      {
+        type: "p",
+        text: "MDT 219 topless. MRH 125 hydraulic luffer. MR rope luffers. Hup, Igo and Igo T self-erects. Published load charts download from Manitowoc. Serial manuals stay in the cab and on Crane Care. Complete the WHOOP form for this class.",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/tower-pre-use",
+        label: "TOWER PRE-USE — WHOOP-FRM-027 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/luffing-jib-inspection",
+        label: "LUFFING JIB INSPECTION — WHOOP-FRM-028 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/self-erect-inspection",
+        label: "SELF-ERECT INSPECTION — WHOOP-FRM-029 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/tower-weekly-maintenance",
+        label: "TOWER WEEKLY MAINTENANCE — WHOOP-FRM-030 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/form/tower-monthly-maintenance",
+        label: "TOWER MONTHLY MAINTENANCE — WHOOP-FRM-031 →",
       },
       {
         type: "h",
@@ -1273,7 +1298,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/safety-forms",
-        label: "INSPECTION FORMS →",
+        label: "ALL INSPECTION FORMS →",
       },
       {
         type: "p",
@@ -1301,6 +1326,7 @@ export const SAFETY: SafetySection[] = [
           "WHOOP-JHA — job hazard analyses",
           "WHOOP-FRM — forms",
           "WHOOP-SDS — safety data sheets in this library",
+          "WHOOP-CRN — crane charts and inspection packs",
           "WHOOP-RPT — field reports",
         ],
       },
@@ -1367,6 +1393,7 @@ export const SAFETY_GROUPS = [
 export const FIND_NOW = [
   { href: "/safety/form/flha", label: "FLHA", hint: "This shift" },
   { href: "/safety/form/crane-pre-use", label: "CRANE PRE-USE", hint: "This machine" },
+  { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE", hint: "Potain / Z248" },
   { href: "/safety/form/lift-plan", label: "LIFT PLAN", hint: "This lift" },
   { href: "/safety/form/toolbox-meeting", label: "TOOLBOX", hint: "The brief" },
   { href: "/safety/policy/right-to-refuse", label: "STOP WORK", hint: "Refuse unsafe" },
