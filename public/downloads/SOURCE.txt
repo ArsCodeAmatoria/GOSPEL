@@ -1,0 +1,34 @@
+WHOOP downloadable packs.
+
+injury-management.zip
+  BCCSA Injury Management resources for WHOOP-POL-022.
+  Employer guide, employee PIM bulletin, sample forms, supplementary notes.
+  Source: BC Construction Safety Alliance. https://www.bccsa.ca/
+
+cor.zip
+  BCCSA COR® audit tool, forms, policies, auditor guide, student audit assignment.
+  Source: BC Construction Safety Alliance COR program.
+  https://www.bccsa.ca/cor_program.php
+
+BCCSA catalogues linked from the Safety Program (PDFs sit on BCCSA’s file server
+and require a signed-in bccsa.ca session to download — they are not copied here
+until a member download is dropped in):
+
+  Heat Stress and Sun Safety
+    https://www.bccsa.ca/resources.php?id_catalogue=84
+    Heat Stress ECP, Managing Heat Stress at Work, Sun Safety ECP.
+    Also useful: sun-safety poster; wildfire-smoke ECP under catalogue 57.
+
+  Lone Hoist Operator Rescue Procedures
+    https://www.bccsa.ca/resources.php?id_catalogue=98
+    Construction hoist-car rescue templates and drill.
+
+  Working at Heights
+    https://www.bccsa.ca/resources.php?id_catalogue=46
+    Fall protection rescue guide.
+
+  Toolbox Talks (crane / rigging subset)
+    https://www.bccsa.ca/resources.php?id_catalogue=1
+    Chain and sling, crush/pinch, struck-by, electrical, heat, cold machines,
+    loading/unloading, mounting/dismounting, communication, working alone,
+    JHA, incident/near miss. Not silica, excavation, forklift, skid steer.

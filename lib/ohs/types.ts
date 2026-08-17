@@ -18,6 +18,13 @@ export type Policy = {
   number: string;
   summary: string;
   statements: RoleLine[];
+  download?: {
+    href: string;
+    label: string;
+    note?: string;
+    /** Off-site (BCCSA). Open in a new tab. Do not force a file download. */
+    external?: boolean;
+  };
 };
 
 export type Swp = {
@@ -72,6 +79,12 @@ export type SafetyForm = {
   when: string;
   fields: string[];
   routing: string;
+  download?: {
+    href: string;
+    label: string;
+    note?: string;
+    external?: boolean;
+  };
 };
 
 export type Sds = {

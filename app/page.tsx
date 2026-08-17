@@ -1,26 +1,59 @@
 import Link from "next/link";
 import { CorSection } from "@/components/CorSection";
 import { ProcedureSteps } from "@/components/ProcedureSteps";
-import { StandardsList } from "@/components/StandardsList";
+import { FactsList, StandardsList } from "@/components/StandardsList";
 import { WireStoryLink } from "@/components/WireStoryLink";
 import { CREW } from "@/lib/crew";
-import { RIGGING_A_LOAD, SAFETY } from "@/lib/safety";
-import { BELIEFS, PLACEMENT, SERVICES, SITE } from "@/lib/site";
+import { RIGGING_A_LOAD, safetyByGroup } from "@/lib/safety";
+import { ABOUT, BELIEFS, PLACEMENT, SERVICES, SITE } from "@/lib/site";
 import { WIRE, getLatest, summarize } from "@/lib/whoopwire";
 
 export default function HomePage() {
   return (
     <>
-      <section className="section section-lead" id="safety">
+      <section className="section section-lead" id="whoop">
         <div className="wrap">
-          <p className="mono kicker">01 — OPEN BOOK</p>
+          <p className="mono kicker">01 — THE COMPANY</p>
           <h1 className="display giant">
+            WE MOVE
+            <br />
+            HEAVY THINGS.
+          </h1>
+          <p className="lede-lg mt-2">{SITE.position}</p>
+          <p className="lede mt">
+            Crane operators, riggers and signalpersons. {SITE.location}.{" "}
+            {SITE.union}. We do not rent cranes. We do not sell tickets. We
+            send people who can do the lift — and we publish how we expect that
+            work to be done.
+          </p>
+          <div>
+            <p className="mono steel mt-2">WHO WE ARE</p>
+            <p className="lede mt">
+              The work, the city, the shop. Not a rental yard. Not a school.
+            </p>
+            <FactsList items={ABOUT} />
+          </div>
+          <div className="inline-cta">
+            <Link className="btn btn-solid" href="/hire">
+              HIRE A CREW
+            </Link>
+            <Link className="btn btn-ghost" href="/safety">
+              READ THE PROGRAM
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="safety">
+        <div className="wrap">
+          <p className="mono kicker">02 — OPEN BOOK</p>
+          <h2 className="display giant">
             OUR SAFETY
             <br />
             PROGRAM
             <br />
             IS OPEN.
-          </h1>
+          </h2>
           <p className="lede-lg mt-2">{SITE.position}</p>
           <p className="lede mt">
             Open to everyone. Safety isn&apos;t proprietary. Clients, workers
@@ -44,21 +77,26 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <nav className="wrap safety-index mt-2" aria-label="Safety program">
-          {SAFETY.map((s) => (
-            <Link href={`/safety/${s.slug}`} key={s.slug}>
-              <span className="mono steel">{s.num}</span>
-              <span>
-                <strong>{s.title}</strong>
-                <em>{s.kicker}</em>
-              </span>
-            </Link>
-          ))}
-        </nav>
+        {safetyByGroup().map((group) => (
+          <section className="wrap safety-group" key={group.id}>
+            <p className="mono kicker">{group.label}</p>
+            <nav className="safety-index" aria-label={group.label}>
+              {group.sections.map((s) => (
+                <Link href={`/safety/${s.slug}`} key={s.slug}>
+                  <span className="mono steel">{s.num}</span>
+                  <span>
+                    <strong>{s.title}</strong>
+                    <em>{s.kicker}</em>
+                  </span>
+                </Link>
+              ))}
+            </nav>
+          </section>
+        ))}
       </section>
 
       <section className="section wrap">
-        <p className="mono kicker">02 — WHAT WE SUPPLY</p>
+        <p className="mono kicker">03 — WHAT WE SUPPLY</p>
         <h2 className="display giant">THE WORK.</h2>
         <div className="mt-2">
           {SERVICES.map((s) => (
@@ -76,7 +114,7 @@ export default function HomePage() {
       <section className="section wrap">
         <div className="split top">
           <div>
-            <p className="mono kicker">04 — COMPETENCY</p>
+            <p className="mono kicker">05 — COMPETENCY</p>
             <h2 className="display giant">
               A TICKET
               <br />
@@ -113,7 +151,7 @@ export default function HomePage() {
       </section>
 
       <section className="section wrap">
-        <p className="mono kicker">05 — USABLE PROCEDURES</p>
+        <p className="mono kicker">06 — USABLE PROCEDURES</p>
         <h2 className="display giant">
           RIGGING
           <br />
@@ -135,7 +173,7 @@ export default function HomePage() {
       <section className="section wrap">
         <div className="split">
           <div>
-            <p className="mono kicker">06 — THE PEOPLE</p>
+            <p className="mono kicker">07 — THE PEOPLE</p>
             <h2 className="display giant">THE CREW</h2>
           </div>
           <p className="lede">
@@ -159,7 +197,7 @@ export default function HomePage() {
       </section>
 
       <section className="section wrap">
-        <p className="mono kicker">07 — HOW WE THINK</p>
+        <p className="mono kicker">08 — HOW WE THINK</p>
         <h2 className="display giant">
           NO BULLSHIT.
           <br />
@@ -183,7 +221,7 @@ export default function HomePage() {
       </section>
 
       <section className="section wrap" id="whoopwire">
-        <p className="mono kicker">08 — WHOOPWIRE</p>
+        <p className="mono kicker">09 — WHOOPWIRE</p>
         <h2 className="display giant">WHOOPWIRE</h2>
         <p className="mono mt">{WIRE.descriptor}</p>
         <div className="wire-stack mt-2">
@@ -199,7 +237,7 @@ export default function HomePage() {
       </section>
 
       <section className="section wrap">
-        <p className="mono kicker">09 — START</p>
+        <p className="mono kicker">10 — START</p>
         <h2 className="display giant">HIRE A CREW</h2>
         <div className="contact-rail mt">
           <a className="contact-hit" href={SITE.phoneHref}>

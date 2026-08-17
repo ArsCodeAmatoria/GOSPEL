@@ -6,6 +6,15 @@ export { SDS, getSds } from "./sds";
 export { REPORTS, getReport } from "./reports";
 export { INSPECTION_LOOP, INSPECTION_SCOPE } from "./inspections";
 export { OHS_META, control, CREW_ROLES, LIFT_PPE, LIFT_REFS } from "./meta";
+export {
+  safetyCatalog,
+  policyGroup,
+  swpGroup,
+  jhaGroup,
+  POLICY_GROUP_ORDER,
+  SWP_GROUP_ORDER,
+  JHA_GROUP_ORDER,
+} from "./catalog";
 export type {
   DocControl,
   Policy,

@@ -25,9 +25,16 @@ export function Blocks({ blocks }: { blocks: Block[] }) {
         if (block.type === "steps")
           return <ProcedureSteps key={i} items={block.items} />;
         if (block.type === "cta") {
+          const offsite = /^https?:\/\//i.test(block.href);
           return (
             <p className="doc-cta" key={i}>
-              <Link href={block.href}>{block.label}</Link>
+              {offsite ? (
+                <a href={block.href} target="_blank" rel="noreferrer">
+                  {block.label}
+                </a>
+              ) : (
+                <Link href={block.href}>{block.label}</Link>
+              )}
             </p>
           );
         }

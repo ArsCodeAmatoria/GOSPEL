@@ -55,6 +55,12 @@ export const FORMS: SafetyForm[] = [
     number: "WHOOP-FRM-004",
     group: "Daily",
     summary: "The brief for this crew, this lift, this day — not a safety poster reading.",
+    download: {
+      href: "https://www.bccsa.ca/resources.php?id_catalogue=1",
+      label: "BCCSA TOOLBOX TALKS →",
+      note: "Use the crane and rigging ones: chain and sling, crush and pinch, struck-by, electrical, heat, cold machines, loading and unloading, mounting and dismounting, communication, working alone, JHA, incident and near miss. Skip silica, excavation, forklift and skid steer unless that is actually the work. Sign in on bccsa.ca to download.",
+      external: true,
+    },
     when: "Start of shift and before a change of plan.",
     fields: [
       "Date, site, attendees",

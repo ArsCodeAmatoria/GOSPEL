@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SafetyFind } from "@/components/SafetyFind";
 import { StandardsList } from "@/components/StandardsList";
-import { SAFETY } from "@/lib/safety";
+import { safetyCatalog } from "@/lib/ohs/catalog";
+import { FIND_NOW, safetyByGroup } from "@/lib/safety";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -11,6 +13,9 @@ export const metadata: Metadata = {
 };
 
 export default function SafetyIndexPage() {
+  const groups = safetyByGroup();
+  const catalog = safetyCatalog();
+
   return (
     <article className="doc-body">
       <header className="doc-title">
@@ -29,34 +34,36 @@ export default function SafetyIndexPage() {
           primary experience.
         </p>
       </header>
-      <nav className="safety-index" aria-label="Safety program sections">
-        {SAFETY.filter((s) => Number(s.num) <= 12).map((s) => (
-          <Link href={`/safety/${s.slug}`} key={s.slug}>
-            <span className="mono steel">{s.num}</span>
-            <span>
-              <strong>{s.title}</strong>
-              <em>{s.kicker}</em>
-            </span>
+
+      <p className="mono kicker">NEED IT NOW</p>
+      <nav className="safety-now" aria-label="Documents used on the job">
+        {FIND_NOW.map((item) => (
+          <Link href={item.href} key={item.href}>
+            <strong className="display">{item.label}</strong>
+            <em>{item.hint}</em>
           </Link>
         ))}
       </nav>
-      <p className="mono kicker mt-2">OH&S LIBRARY</p>
-      <p className="lede mt">
-        Policies, SWPs, JHAs, forms, SDS, inspections and document
-        control — crane operators, riggers, signalpersons, lifting. Not a
-        general construction manual.
-      </p>
-      <nav className="safety-index" aria-label="OH&S library">
-        {SAFETY.filter((s) => Number(s.num) > 12).map((s) => (
-          <Link href={`/safety/${s.slug}`} key={s.slug}>
-            <span className="mono steel">{s.num}</span>
-            <span>
-              <strong>{s.title}</strong>
-              <em>{s.kicker}</em>
-            </span>
-          </Link>
-        ))}
-      </nav>
+
+      <SafetyFind catalog={catalog} />
+
+      {groups.map((group) => (
+        <section key={group.id} className="safety-group">
+          <p className="mono kicker">{group.label}</p>
+          <nav className="safety-index" aria-label={group.label}>
+            {group.sections.map((s) => (
+              <Link href={`/safety/${s.slug}`} key={s.slug}>
+                <span className="mono steel">{s.num}</span>
+                <span>
+                  <strong>{s.title}</strong>
+                  <em>{s.kicker}</em>
+                </span>
+              </Link>
+            ))}
+          </nav>
+        </section>
+      ))}
+
       <p className="lede mt-2">
         Read it on a phone at the gate. Print a section if you need it on paper.
         If you cannot work this way, do not hire us.

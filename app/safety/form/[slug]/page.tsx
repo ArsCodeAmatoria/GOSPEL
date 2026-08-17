@@ -32,6 +32,20 @@ export default async function FormPage({ params }: Props) {
     >
       <div className="prose">
         <SafetyControlStamp number={doc.number} title={doc.title} />
+        {doc.download ? (
+          <p className="doc-cta">
+            {doc.download.external ? (
+              <a href={doc.download.href} target="_blank" rel="noreferrer">
+                {doc.download.label}
+              </a>
+            ) : (
+              <a href={doc.download.href} download>
+                {doc.download.label}
+              </a>
+            )}
+          </p>
+        ) : null}
+        {doc.download?.note ? <p>{doc.download.note}</p> : null}
         <h2>WHEN</h2>
         <p>{doc.when}</p>
         <h2>CAPTURE</h2>

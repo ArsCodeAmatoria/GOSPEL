@@ -1,9 +1,13 @@
 import { STANDARDS } from "@/lib/site";
 
-export function StandardsList() {
+export function FactsList({
+  items,
+}: {
+  items: readonly { name: string; body: string }[];
+}) {
   return (
     <ul className="std-list">
-      {STANDARDS.map((item) => (
+      {items.map((item) => (
         <li key={item.name}>
           <h3 className="display">{item.name}</h3>
           <p>{item.body}</p>
@@ -11,4 +15,8 @@ export function StandardsList() {
       ))}
     </ul>
   );
+}
+
+export function StandardsList() {
+  return <FactsList items={STANDARDS} />;
 }

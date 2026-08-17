@@ -679,6 +679,74 @@ html[data-theme="dark"] .switch-shell.is-on .switch-mark-on {
 }
 
 /* ——— Safety index ——— */
+.safety-now {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: 0;
+  margin: 0.4rem 0 2.2rem;
+  border-top: 1px solid var(--line);
+}
+
+.safety-now a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.95rem 0.85rem 0.95rem 0;
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+}
+
+.safety-now a:hover strong {
+  color: var(--crown);
+}
+
+.safety-now strong {
+  font-size: clamp(1.05rem, 2.2vw, 1.45rem);
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.safety-now em {
+  font-style: normal;
+  color: var(--steel);
+  font-size: 0.78rem;
+}
+
+.safety-find {
+  margin: 0 0 2.4rem;
+}
+
+.safety-find-hits {
+  border-top: 1px solid var(--line);
+}
+
+.safety-find-hits a {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.safety-find-hits a:hover strong {
+  color: var(--crown);
+}
+
+.safety-find-hits strong {
+  font-size: clamp(1.2rem, 2.6vw, 1.7rem);
+}
+
+.safety-group {
+  margin-top: 2.2rem;
+}
+
+.section-lead > .safety-group:first-of-type {
+  margin-top: 1.4rem;
+}
+
+.safety-group .kicker {
+  margin-bottom: 0.35rem;
+}
+
 .safety-index a {
   display: grid;
   grid-template-columns: 2.4rem 1fr;
@@ -873,6 +941,15 @@ html[data-theme="dark"] .switch-shell.is-on .switch-mark-on {
   padding: 1.25rem 1.2rem 2rem 0;
 }
 
+.doc-nav-group {
+  margin-top: 1.1rem;
+}
+
+.doc-nav-group > .mono {
+  margin: 0 0 0.35rem;
+  font-size: 0.62rem;
+}
+
 .doc-nav-inner a,
 .doc-nav-pick nav a {
   display: grid;
@@ -883,6 +960,10 @@ html[data-theme="dark"] .switch-shell.is-on .switch-mark-on {
   font-size: 0.78rem;
   line-height: 1.25;
   letter-spacing: 0.04em;
+}
+
+.doc-nav-inner > nav > a:first-child {
+  border-top: 0;
 }
 
 .doc-nav-inner a span,
@@ -1178,6 +1259,14 @@ html[data-theme="dark"] .switch-shell.is-on .switch-mark-on {
 
 .ohs-count {
   margin: 1rem 0;
+}
+
+.ohs-lib-group {
+  margin-top: 1.6rem;
+}
+
+.ohs-lib-group .kicker {
+  margin-bottom: 0.2rem;
 }
 
 .ohs-lib-list a {

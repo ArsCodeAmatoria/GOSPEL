@@ -899,6 +899,16 @@ export const SAFETY: SafetySection[] = [
           },
         ],
       },
+      {
+        type: "cta",
+        href: "https://www.bccsa.ca/resources.php?id_catalogue=98",
+        label: "BCCSA LONE HOIST OPERATOR RESCUE →",
+      },
+      {
+        type: "cta",
+        href: "https://www.bccsa.ca/resources.php?id_catalogue=46",
+        label: "BCCSA WORKING AT HEIGHTS / FALL RESCUE →",
+      },
     ],
   },
   {
@@ -1117,6 +1127,10 @@ export const SAFETY: SafetySection[] = [
         text: "Each policy is a controlled document: number, revision 01, effective 2026-09-01, owner WHOOP Safety. The current version is the one on this site.",
       },
       {
+        type: "p",
+        text: "The set includes the OH&S policy, violence, workplace conduct, fitness for work, PPE, impairment, working alone, incident reporting, injury management, return to work, bullying and harassment, and discrimination — plus competency, training, crane operations, rigging and the rest of the lifting rules.",
+      },
+      {
         type: "cta",
         href: "/safety/policy/bullying-and-harassment",
         label: "WHOOP-POL-017 — BULLYING AND HARASSMENT →",
@@ -1180,6 +1194,11 @@ export const SAFETY: SafetySection[] = [
         type: "cta",
         href: "/safety/builder",
         label: "FORM BUILDER — ASSEMBLE, FILL, PDF →",
+      },
+      {
+        type: "cta",
+        href: "https://www.bccsa.ca/resources.php?id_catalogue=1",
+        label: "BCCSA TOOLBOX TALKS →",
       },
     ],
   },
@@ -1300,6 +1319,72 @@ export const SAFETY: SafetySection[] = [
     ],
   },
 ];
+
+export const SAFETY_GROUPS = [
+  {
+    id: "work",
+    label: "HOW WE WORK",
+    slugs: [
+      "company-safety-policy",
+      "responsibilities",
+      "training-competency",
+      "worker-rights",
+    ],
+  },
+  {
+    id: "lift",
+    label: "THE LIFT",
+    slugs: [
+      "hazard-assessment",
+      "crane-operations",
+      "rigging",
+      "fall-protection",
+      "safe-work-procedures",
+      "safe-job-procedures",
+    ],
+  },
+  {
+    id: "wrong",
+    label: "WHEN IT GOES WRONG",
+    slugs: ["incident-reporting", "emergency-response"],
+  },
+  {
+    id: "library",
+    label: "THE LIBRARY",
+    slugs: [
+      "ohs-policies",
+      "swp-library",
+      "jha-library",
+      "safety-forms",
+      "whmis-sds",
+      "inspections",
+      "document-control",
+    ],
+  },
+] as const;
+
+/** Documents people actually open at the gate. */
+export const FIND_NOW = [
+  { href: "/safety/form/flha", label: "FLHA", hint: "This shift" },
+  { href: "/safety/form/crane-pre-use", label: "CRANE PRE-USE", hint: "This machine" },
+  { href: "/safety/form/lift-plan", label: "LIFT PLAN", hint: "This lift" },
+  { href: "/safety/form/toolbox-meeting", label: "TOOLBOX", hint: "The brief" },
+  { href: "/safety/policy/right-to-refuse", label: "STOP WORK", hint: "Refuse unsafe" },
+  { href: "/safety/report/incident", label: "INCIDENT", hint: "Report it" },
+  { href: "/safety/policy/environmental-conditions", label: "HEAT + WIND", hint: "Stop criteria" },
+  { href: "/safety/emergency-response", label: "EMERGENCY", hint: "The plan" },
+  { href: "/safety/builder", label: "FORM BUILDER", hint: "Fill + PDF" },
+] as const;
+
+export function safetyByGroup() {
+  return SAFETY_GROUPS.map((group) => ({
+    id: group.id,
+    label: group.label,
+    sections: group.slugs
+      .map((slug) => SAFETY.find((s) => s.slug === slug))
+      .filter((s): s is SafetySection => Boolean(s)),
+  }));
+}
 
 export function getSafety(slug: string) {
   return SAFETY.find((s) => s.slug === slug);

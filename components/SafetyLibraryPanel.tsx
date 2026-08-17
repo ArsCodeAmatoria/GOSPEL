@@ -1,5 +1,6 @@
 import { SafetyLibrary } from "@/components/SafetyLibrary";
 import {
+  FORM_GROUPS,
   FORMS,
   POLICIES,
   REPORTS,
@@ -7,6 +8,14 @@ import {
   JHAS,
   SWPS,
 } from "@/lib/ohs";
+import {
+  JHA_GROUP_ORDER,
+  POLICY_GROUP_ORDER,
+  SWP_GROUP_ORDER,
+  jhaGroup,
+  policyGroup,
+  swpGroup,
+} from "@/lib/ohs/catalog";
 import type { SafetyLibraryKind } from "@/lib/safety";
 
 export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
@@ -14,11 +23,13 @@ export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
     return (
       <SafetyLibrary
         placeholder="Setup, signals, slings, powerlines…"
+        groupOrder={SWP_GROUP_ORDER}
         items={SWPS.map((item) => ({
           href: `/safety/swp/${item.slug}`,
           number: item.number,
           title: item.title,
           summary: item.summary,
+          meta: swpGroup(item.slug),
         }))}
       />
     );
@@ -27,11 +38,13 @@ export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
     return (
       <SafetyLibrary
         placeholder="Overload, pinch, powerlines, suspended load…"
+        groupOrder={JHA_GROUP_ORDER}
         items={JHAS.map((item) => ({
           href: `/safety/jha/${item.slug}`,
           number: item.number,
           title: item.title,
           summary: item.summary,
+          meta: jhaGroup(item.slug),
         }))}
       />
     );
@@ -40,11 +53,13 @@ export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
     return (
       <SafetyLibrary
         placeholder="Competency, PPE, refuse unsafe work…"
+        groupOrder={POLICY_GROUP_ORDER}
         items={POLICIES.map((item) => ({
           href: `/safety/policy/${item.slug}`,
           number: item.number,
           title: item.title,
           summary: item.summary,
+          meta: policyGroup(item.slug),
         }))}
       />
     );
@@ -53,6 +68,7 @@ export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
     return (
       <SafetyLibrary
         placeholder="FLHA, lift plan, inspection…"
+        groupOrder={["Builder", ...FORM_GROUPS]}
         items={[
           {
             href: "/safety/builder",
@@ -60,7 +76,7 @@ export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
             title: "FORM BUILDER",
             summary:
               "Assemble approved Safety Blocks. Fill on this device. Download or email a PDF.",
-            meta: "builder",
+            meta: "Builder",
           },
           ...FORMS.map((item) => ({
             href: `/safety/form/${item.slug}`,

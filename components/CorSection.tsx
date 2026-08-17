@@ -46,7 +46,7 @@ export function CorPanel() {
 export function CorSection() {
   return (
     <section className="section wrap" id="cor">
-      <p className="mono kicker">03 — ACCOUNTABLE</p>
+      <p className="mono kicker">04 — ACCOUNTABLE</p>
       <h2 className="display giant">
         COR
         <br />
@@ -89,6 +89,9 @@ export function CorSection() {
             <Link className="btn btn-solid" href="/safety">
               VIEW OUR SAFETY PROGRAM →
             </Link>
+            <a className="btn btn-ghost" href={COR.packHref} download>
+              DOWNLOAD COR PACK →
+            </a>
             <Link className="btn btn-ghost" href="/hire">
               CONTACT WHOOP →
             </Link>

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { SAFETY } from "@/lib/safety";
+import { SAFETY, safetyByGroup } from "@/lib/safety";
 
 function sectionFromPath(path: string): string | undefined {
   if (path === "/safety" || path === "/safety/") return undefined;
@@ -18,6 +18,44 @@ function sectionFromPath(path: string): string | undefined {
     report: "incident-reporting",
   };
   return nested[part] ?? part;
+}
+
+function NavLinks({
+  current,
+  onPick,
+}: {
+  current: string | undefined;
+  onPick?: () => void;
+}) {
+  const groups = safetyByGroup();
+  return (
+    <>
+      <Link
+        href="/safety"
+        className={!current ? "active" : undefined}
+        onClick={onPick}
+      >
+        <span>00</span>
+        INDEX
+      </Link>
+      {groups.map((group) => (
+        <div className="doc-nav-group" key={group.id}>
+          <p className="mono steel">{group.label}</p>
+          {group.sections.map((s) => (
+            <Link
+              key={s.slug}
+              href={`/safety/${s.slug}`}
+              className={current === s.slug ? "active" : undefined}
+              onClick={onPick}
+            >
+              <span>{s.num}</span>
+              {s.title}
+            </Link>
+          ))}
+        </div>
+      ))}
+    </>
+  );
 }
 
 export function SafetyNav() {
@@ -42,10 +80,7 @@ export function SafetyNav() {
           className="doc-nav-scroll"
           aria-label="Safety sections"
         >
-          <Link
-            href="/safety"
-            className={!current ? "active" : undefined}
-          >
+          <Link href="/safety" className={!current ? "active" : undefined}>
             00
           </Link>
           {SAFETY.map((s) => (
@@ -70,23 +105,7 @@ export function SafetyNav() {
             <strong className="display">{label}</strong>
           </summary>
           <nav aria-label="Safety program">
-            <Link
-              href="/safety"
-              className={!current ? "active" : undefined}
-            >
-              <span>00</span>
-              SAFETY PROGRAM
-            </Link>
-            {SAFETY.map((s) => (
-              <Link
-                key={s.slug}
-                href={`/safety/${s.slug}`}
-                className={current === s.slug ? "active" : undefined}
-              >
-                <span>{s.num}</span>
-                {s.title}
-              </Link>
-            ))}
+            <NavLinks current={current} onPick={() => setTocOpen(false)} />
           </nav>
         </details>
       </div>
@@ -95,20 +114,7 @@ export function SafetyNav() {
           SAFETY PROGRAM
         </p>
         <nav>
-          <Link href="/safety" className={!current ? "active" : undefined}>
-            <span>00</span>
-            INDEX
-          </Link>
-          {SAFETY.map((s) => (
-            <Link
-              key={s.slug}
-              href={`/safety/${s.slug}`}
-              className={current === s.slug ? "active" : undefined}
-            >
-              <span>{s.num}</span>
-              {s.title}
-            </Link>
-          ))}
+          <NavLinks current={current} />
         </nav>
       </div>
     </aside>

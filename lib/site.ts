@@ -12,6 +12,33 @@ export const SITE = {
   position: "A safety company that supplies a workforce.",
 } as const;
 
+export const ABOUT = [
+  {
+    name: "The work",
+    body: "Crane operators, riggers, signalpersons and lifting crews. Matched to the machine, the lift and the site.",
+  },
+  {
+    name: "Not a rental yard",
+    body: "We supply people. We do not rent cranes. We do not sell tickets. We do not train the public.",
+  },
+  {
+    name: "Vancouver",
+    body: "Based here. Deployed where the lift is. Lower Mainland and wherever the dispatch holds.",
+  },
+  {
+    name: "Union-friendly",
+    body: "We work with union members and respect the agreements on the site. That is how this work gets done.",
+  },
+  {
+    name: "Open book",
+    body: "The Safety Program is public. Clients and workers can read how we expect the work to be done before the gate.",
+  },
+  {
+    name: "COR® Certified",
+    body: "Occupational health and safety management system certified through the BC Construction Safety Alliance.",
+  },
+] as const;
+
 export const STANDARDS = [
   {
     name: "CSA Z150 / Z248",
@@ -51,6 +78,7 @@ export const COR = {
   program: "WorkSafeBC Certificate of Recognition",
   /** Licensed BCCSA COR® mark. Drop the official file at this path. */
   asset: "/cor/bccsa-cor-certified.png",
+  packHref: "/downloads/cor.zip",
   certificateNumber: "",
   certifiedDate: "",
   classification: "",
