@@ -1,7 +1,7 @@
 import type { WireArticle } from "@/lib/whoopwire";
 
 /**
- * WHOOPWIRE stories.
+ * KERNWIRE stories.
  *
  * To publish a story: copy an object in this array, give it a unique slug,
  * and set featured: true on at most one story. Optional fields: updated,
@@ -9,13 +9,186 @@ import type { WireArticle } from "@/lib/whoopwire";
  */
 export const ARTICLES: WireArticle[] = [
   {
+    slug: "height-over-length-is-the-angle",
+    title: "HEIGHT OVER LENGTH IS THE ANGLE.",
+    titleLines: ["HEIGHT OVER", "LENGTH IS", "THE ANGLE."],
+    category: "RIGGING",
+    excerpt:
+      "You do not need a protractor on the hook. Measure sling length and vertical height. sin θ = H / L. Then you can use the tension formula.",
+    author: "KERN",
+    published: "2026-08-18",
+    image: "/whoopwire/rigging-triangle.jpg",
+    imageAlt:
+      "Rigging triangle: two-leg bridle on a concrete block. Sling length L is the hypotenuse. Vertical height H is opposite θ from the horizontal. sin θ = H / L.",
+    imageContain: true,
+    seoTitle: "Height Over Length Is the Angle — Finding Sling θ",
+    seoDescription:
+      "How to find sling angle from the horizontal using sine. Measure height H and sling length L. θ = sin⁻¹(H/L). Worked numbers, the 30° floor, and the tension formula that follows.",
+    related: [
+      "sling-tension-is-sin",
+      "sin-the-height-cos-the-radius",
+      "six-things-to-check-before-you-take-the-load",
+    ],
+    safety: ["rigging", "safe-work-procedures"],
+    blocks: [
+      {
+        type: "p",
+        text: "A rigger who cannot name the angle will still set one. The sling will still do the math. The way to get θ on the ground is not a guess and not a phone photo of a protractor. Measure two lengths. Divide. Take arcsine.",
+      },
+      {
+        type: "p",
+        text: "This is a two-leg bridle. Equal legs. Load hanging plumb. θ is the angle between the sling and the horizontal — the same θ KERN uses in the tension formula. It is not the angle between the two legs at the hook.",
+      },
+      {
+        type: "h",
+        text: "WHAT YOU MEASURE",
+      },
+      {
+        type: "p",
+        text: "L is sling length — along the sling, from the hook saddle to the load connection. Not the tag. Not a memory of last job’s 12-footers if you just choked shorter.",
+      },
+      {
+        type: "p",
+        text: "H is vertical height — from the hook centreline down to the load connection. A tape or a known stick. Not ‘it looks about a metre.’ The horizontal run under the sling is the adjacent side. You do not need it for this calculation.",
+      },
+      {
+        type: "quote",
+        text: "The sling is the hypotenuse. The drop is opposite θ. That is the whole trick.",
+      },
+      {
+        type: "h",
+        text: "THE FORMULA",
+      },
+      {
+        type: "p",
+        text: "Sine is opposite over hypotenuse. Opposite is H. Hypotenuse is L.",
+      },
+      {
+        type: "formula",
+        expr: "SIN θ = H / L",
+        note: "θ from the horizontal. H and L in the same unit.",
+      },
+      {
+        type: "formula",
+        expr: "θ = SIN⁻¹ (H / L)",
+        note: "Phone calculator. Degree mode. arcsin, asin, or sin⁻¹.",
+      },
+      {
+        type: "p",
+        text: "If H is half of L, sin θ is 0.5, and θ is 30°. That is the graphic’s worked lift — 12 ft sling, 6 ft drop, or 4 m and 2 m. Same ratio. Same angle.",
+      },
+      {
+        type: "h",
+        text: "WORKED BRIDLE",
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            n: "01",
+            title: "H / L = 0.500    θ = 30°",
+            body: "H is half of L. This is the floor KERN will still rig without an engineer. Tension in each leg equals the whole load. KERN-SWP-010.",
+          },
+          {
+            n: "02",
+            title: "H / L = 0.707    θ = 45°",
+            body: "A working bridle. Height is about seven-tenths of the sling. Tension factor 1.41 on each half-share.",
+          },
+          {
+            n: "03",
+            title: "H / L = 0.866    θ = 60°",
+            body: "Steeper. Safer on the hardware. About 15% more than a vertical share. This is where most bridles want to live.",
+          },
+          {
+            n: "04",
+            title: "H / L = 1.000    θ = 90°",
+            body: "Straight up. H equals L. That is a vertical hitch, not a spread. If you needed spread, you do not have it.",
+          },
+        ],
+      },
+      {
+        type: "h",
+        text: "THE TABLE YOU SHOULD KNOW COLD",
+      },
+      {
+        type: "table",
+        caption: "Find θ from H / L. Then take that θ into T = W / (2 × sin θ).",
+        columns: ["H / L", "θ FROM HORIZONTAL", "WHAT IT MEANS"],
+        rows: [
+          ["0.500", "30°", "KERN floor. Each leg sees W."],
+          ["0.707", "45°", "Working bridle."],
+          ["0.866", "60°", "Steep. Lower tension."],
+          ["0.966", "75°", "Almost vertical."],
+          ["1.000", "90°", "No spread. Vertical hitch."],
+        ],
+      },
+      {
+        type: "p",
+        text: "Keep the angle as large as the lift allows. Larger θ, smaller tension. Flattening the bridle to reach pick points is how a tagged sling gets overloaded without the load changing.",
+      },
+      {
+        type: "h",
+        text: "USE IT",
+      },
+      {
+        type: "p",
+        text: "Phone calculator. Degree mode. H divided by L. Then sin⁻¹. Check: sin⁻¹(0.5) is 30°. If that is not what you get, you are in radians, or you inverted the fraction.",
+      },
+      {
+        type: "calc",
+        name: "sling-angle",
+      },
+      {
+        type: "p",
+        text: "You now have θ. The next number is tension. Two equal legs: T = W / (2 × sin θ). That is the other KERNWIRE. Do not stop at a pretty angle.",
+      },
+      {
+        type: "h",
+        text: "WHAT THIS TRIANGLE DOES NOT DO",
+      },
+      {
+        type: "list",
+        items: [
+          "It does not replace a measured weight. Garbage W still wrecks T.",
+          "It does not split a 3-leg or 4-leg hitch into equal shares. If the load can tilt, design as if two legs are carrying.",
+          "It does not make a hitch under 30° acceptable because the tape said 29°.",
+          "It does not replace the sling WLL, the hitch factor, or Part 15.",
+          "It does not survive a guess at L. If you shortened the sling in a choke, measure the working length.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "If you cannot explain the angle, you cannot use the angle.",
+      },
+      {
+        type: "p",
+        text: "That line is already in Proven. This is how you get the angle without lying to yourself. Measure H. Measure L. sin⁻¹(H/L). Then run the tension. If it does not fit the tag, change the hitch.",
+      },
+      {
+        type: "cta",
+        href: "/whoopwire/sling-tension-is-sin",
+        label: "SIN() FOR SLING TENSION →",
+      },
+      {
+        type: "cta",
+        href: "/safety/swp/sling-selection",
+        label: "SLING SELECTION — KERN-SWP-010 →",
+      },
+      {
+        type: "cta",
+        href: "/safety/rigging",
+        label: "06 — RIGGING →",
+      },
+    ],
+  },
+  {
     slug: "what-part-14-actually-names",
     title: "WHAT PART 14 ACTUALLY NAMES.",
     titleLines: ["WHAT PART 14", "ACTUALLY NAMES."],
     category: "SAFETY",
     excerpt:
       "In B.C., WorkSafeBC enforces the Regulation — not a vibe called CSA, and not ASME B30 as one book. Mobile is Z150. Tower is Z248. B30 is a series, and only the volumes written into the Regulation are law.",
-    author: "WHOOP",
+    author: "KERN",
     published: "2026-08-15",
     seoTitle: "What WorkSafeBC Part 14 Actually Names — Z150, Z248, ASME B30",
     seoDescription:
@@ -118,7 +291,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "For the machines WHOOP actually supplies people onto, this is the map in section 14.2 as it stood in August 2026.",
+        text: "For the machines KERN actually supplies people onto, this is the map in section 14.2 as it stood in August 2026.",
       },
       {
         type: "table",
@@ -174,7 +347,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "WHOOP is a safety company. The crew is how you get us. The work is done to the Regulation, to the standards the Regulation names, to the manufacturer, and to the site. Where they conflict, the stricter applicable requirement wins. Law always wins. That is already on the homepage. This is what those letters actually point at.",
+        text: "KERN is a complete crane operations and rigging company. The people and the systems. The work is done to the Regulation, to the standards the Regulation names, to the manufacturer, and to the site. Where they conflict, the stricter applicable requirement wins. Law always wins. That is already on the homepage. This is what those letters actually point at.",
       },
       {
         type: "cta",
@@ -194,7 +367,7 @@ export const ARTICLES: WireArticle[] = [
       {
         type: "cta",
         href: "/safety",
-        label: "READ THE WHOOP SAFETY PROGRAM →",
+        label: "READ PROVEN →",
       },
     ],
   },
@@ -205,13 +378,14 @@ export const ARTICLES: WireArticle[] = [
     category: "CRANES",
     excerpt:
       "A mobile crane boom is a right triangle. Height is L × sin θ. Radius from the pin is L × cos θ. That is boom geometry — not a load chart.",
-    author: "WHOOP",
+    author: "KERN",
     published: "2026-08-15",
     seoTitle: "Sin the Height. Cos the Radius. — Boom Geometry",
     seoDescription:
       "How to use sine and cosine for mobile crane boom height and radius. H = L × sin θ, R = L × cos θ, worked numbers, and why this is not a substitute for the load chart.",
     related: [
       "sling-tension-is-sin",
+      "height-over-length-is-the-angle",
       "six-things-to-check-before-you-take-the-load",
       "what-your-crane-crew-should-know-before-they-arrive",
     ],
@@ -379,7 +553,7 @@ export const ARTICLES: WireArticle[] = [
       {
         type: "cta",
         href: "/safety",
-        label: "READ THE WHOOP SAFETY PROGRAM →",
+        label: "READ PROVEN →",
       },
     ],
   },
@@ -390,12 +564,13 @@ export const ARTICLES: WireArticle[] = [
     category: "RIGGING",
     excerpt:
       "Sling tension is not a feeling. For a two-leg bridle, T = W / (2 × sin θ). If you cannot do that, you cannot claim the angle is safe.",
-    author: "WHOOP",
+    author: "KERN",
     published: "2026-08-15",
     seoTitle: "Sling Tension Is Sin() — Rigging Math",
     seoDescription:
       "How to use sine for two-leg sling tension. T = W / (2 × sin θ), worked numbers, and why 30° from horizontal doubles the load in each leg.",
     related: [
+      "height-over-length-is-the-angle",
       "sin-the-height-cos-the-radius",
       "six-things-to-check-before-you-take-the-load",
       "what-a-good-rigger-actually-looks-like",
@@ -421,7 +596,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "θ is the sling angle: the angle between the sling and the horizontal. ASME talks about it that way. WHOOP talks about it that way. It is not the angle between the two legs at the hook. Mix those up and your number is for a different lift than the one in front of you.",
+        text: "θ is the sling angle: the angle between the sling and the horizontal. ASME talks about it that way. KERN talks about it that way. It is not the angle between the two legs at the hook. Mix those up and your number is for a different lift than the one in front of you.",
       },
       {
         type: "p",
@@ -476,7 +651,7 @@ export const ARTICLES: WireArticle[] = [
           {
             n: "03",
             title: "30°    SIN 30° = 0.500",
-            body: "T = 4000 / (2 × 0.500) = 4000 kg per leg. Each sling sees the whole load. That is what 'it doubled' means in the Safety Program.",
+            body: "T = 4000 / (2 × 0.500) = 4000 kg per leg. Each sling sees the whole load. That is what 'it doubled' means in Proven.",
           },
         ],
       },
@@ -534,7 +709,12 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "That line is already in the WHOOP Safety Program. This is what it means in numbers. Measure θ from the horizontal. Run sin(). Compare T to the WLL of the sling and the hardware. If it does not fit, change the hitch — do not hope the steel is in a generous mood.",
+        text: "That line is already in Proven. This is what it means in numbers. Measure θ from the horizontal. Run sin(). Compare T to the WLL of the sling and the hardware. If it does not fit, change the hitch — do not hope the steel is in a generous mood.",
+      },
+      {
+        type: "cta",
+        href: "/whoopwire/height-over-length-is-the-angle",
+        label: "FIND θ FROM HEIGHT AND SLING LENGTH →",
       },
       {
         type: "cta",
@@ -544,7 +724,7 @@ export const ARTICLES: WireArticle[] = [
       {
         type: "cta",
         href: "/safety",
-        label: "READ THE WHOOP SAFETY PROGRAM →",
+        label: "READ PROVEN →",
       },
     ],
   },
@@ -555,7 +735,7 @@ export const ARTICLES: WireArticle[] = [
     category: "RIGGING",
     excerpt:
       "A qualification tells you what someone has been trained to do. Competency tells you whether they can actually do it.",
-    author: "WHOOP",
+    author: "KERN",
     published: "2026-08-06",
     featured: true,
     seoTitle: "A Ticket Isn't Competency",
@@ -586,7 +766,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "Tickets keep people who have never been trained off the hook. They give a client, a prime contractor and a supervisor a first filter. WHOOP will not dispatch a rigger without the paper that the work requires. That is the floor.",
+        text: "Tickets keep people who have never been trained off the hook. They give a client, a prime contractor and a supervisor a first filter. KERN will not dispatch a rigger without the paper that the work requires. That is the floor.",
       },
       {
         type: "p",
@@ -616,7 +796,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "h",
-        text: "HOW WHOOP TREATS THIS",
+        text: "HOW KERN TREATS THIS",
       },
       {
         type: "p",
@@ -634,22 +814,22 @@ export const ARTICLES: WireArticle[] = [
       {
         type: "cta",
         href: "/safety",
-        label: "READ THE WHOOP SAFETY PROGRAM →",
+        label: "READ PROVEN →",
       },
     ],
   },
   {
     slug: "why-we-made-our-safety-program-public",
-    title: "WHY WE MADE OUR SAFETY PROGRAM PUBLIC.",
-    titleLines: ["WHY WE MADE", "OUR SAFETY", "PROGRAM PUBLIC."],
+    title: "WHY WE MADE PROVEN PUBLIC.",
+    titleLines: ["WHY WE MADE", "PROVEN", "PUBLIC."],
     category: "SAFETY",
     excerpt:
       "If people have to ask permission to see how you expect the work to be done, you do not have a safety program. You have a filing cabinet.",
-    author: "WHOOP",
+    author: "KERN",
     published: "2026-08-13",
-    seoTitle: "Why We Made Our Safety Program Public",
+    seoTitle: "Why We Made Proven Public",
     seoDescription:
-      "WHOOP's safety program is public. No portal, no request form, no expiring link. Here is why.",
+      "Proven is public. No portal, no request form, no expiring link. Here is why.",
     related: [
       "when-a-swp-isnt-really-a-swp",
       "why-documentation-should-be-easy-to-find",
@@ -662,7 +842,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "WHOOP put the program on the website. Not a summary. The program. If you cannot work that way, do not hire us.",
+        text: "KERN put Proven on the website. Not a summary. The system. If you cannot work that way, do not hire us.",
       },
       {
         type: "quote",
@@ -690,7 +870,7 @@ export const ARTICLES: WireArticle[] = [
           "Workers, before they accept a dispatch.",
           "Clients, before they hire us.",
           "Supervisors, on the day, on a phone, at the gate.",
-          "Contractors who want to know what WHOOP will and will not do.",
+          "Contractors who want to know what KERN will and will not do.",
         ],
       },
       {
@@ -704,7 +884,7 @@ export const ARTICLES: WireArticle[] = [
       {
         type: "cta",
         href: "/safety",
-        label: "READ THE WHOOP SAFETY PROGRAM →",
+        label: "READ PROVEN →",
       },
       {
         type: "cta",
@@ -720,7 +900,7 @@ export const ARTICLES: WireArticle[] = [
     category: "RIGGING",
     excerpt:
       "It is not the loudest person on the steel. It is the one who finds the centre of gravity before anyone finds the radio.",
-    author: "WHOOP",
+    author: "KERN",
     published: "2026-05-20",
     seoTitle: "What a Good Rigger Actually Looks Like",
     seoDescription:
@@ -784,7 +964,7 @@ export const ARTICLES: WireArticle[] = [
     category: "CRANES",
     excerpt:
       "The lifts that go badly are often the ones nobody bothered to treat as a lift. Small, familiar, 'we've done this.'",
-    author: "WHOOP",
+    author: "KERN",
     published: "2026-06-25",
     seoTitle: "The Lift Looked Simple. It Wasn't.",
     seoDescription:
@@ -845,7 +1025,7 @@ export const ARTICLES: WireArticle[] = [
     category: "SAFETY",
     excerpt:
       "Not a poster. Six things that, if they are wrong, the hook should not leave the ground.",
-    author: "WHOOP",
+    author: "KERN",
     published: "2026-07-08",
     seoTitle: "Six Things to Check Before You Take the Load",
     seoDescription:
@@ -902,7 +1082,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "Print this if you want it in a pocket. Better: read the full sequence in the Safety Program and use it the way the work actually happens.",
+        text: "Print this if you want it in a pocket. Better: read the full sequence in Proven and use it the way the work actually happens.",
       },
       {
         type: "cta",
@@ -912,7 +1092,7 @@ export const ARTICLES: WireArticle[] = [
       {
         type: "cta",
         href: "/safety",
-        label: "READ THE WHOOP SAFETY PROGRAM →",
+        label: "READ PROVEN →",
       },
     ],
   },
@@ -923,7 +1103,7 @@ export const ARTICLES: WireArticle[] = [
     category: "SAFETY",
     excerpt:
       "A safe work procedure that cannot be used on the day is theatre. It exists to be shown, not followed.",
-    author: "WHOOP",
+    author: "KERN",
     published: "2026-06-10",
     seoTitle: "When a SWP Isn't Really a SWP",
     seoDescription:
@@ -966,7 +1146,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "WHOOP procedures are public and short enough to use. A site-specific job procedure still has to be written for this lift, this day. The SWP is the method. The SJP is the instance. If the instance contradicts the method, stop and fix one of them before the hook moves.",
+        text: "KERN procedures are public and short enough to use. A site-specific job procedure still has to be written for this lift, this day. The SWP is the method. The SJP is the instance. If the instance contradicts the method, stop and fix one of them before the hook moves.",
       },
       {
         type: "p",
@@ -986,7 +1166,7 @@ export const ARTICLES: WireArticle[] = [
     category: "INDUSTRY",
     excerpt:
       "A procedure nobody can find at 6:40 a.m. does not exist. Access is part of the control.",
-    author: "WHOOP",
+    author: "KERN",
     published: "2026-04-08",
     seoTitle: "Why Documentation Should Be Easy to Find",
     seoDescription:
@@ -1023,12 +1203,12 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "WHOOP's answer is blunt. The Safety Program is public. COR is stated in public. If a document matters to the work, it should survive daylight.",
+        text: "KERN's answer is blunt. Proven is public. COR is stated in public. If a document matters to the work, it should survive daylight.",
       },
       {
         type: "cta",
         href: "/safety",
-        label: "READ THE WHOOP SAFETY PROGRAM →",
+        label: "READ PROVEN →",
       },
     ],
   },
@@ -1039,7 +1219,7 @@ export const ARTICLES: WireArticle[] = [
     category: "PEOPLE",
     excerpt:
       "A crew shares a brief, a standard and a way of stopping the work. A bunch of people share a start time.",
-    author: "WHOOP",
+    author: "KERN",
     published: "2026-04-29",
     seoTitle: "The Difference Between a Crew and a Bunch of People",
     seoDescription:
@@ -1077,7 +1257,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "WHOOP supplies people as a coordinated team when the work needs it. That costs more than sending whoever is free. It also means the operator is not meeting the rigger for the first time under a load that 'should only take a minute.'",
+        text: "KERN supplies people as a coordinated team when the work needs it. That costs more than sending whoever is free. It also means the operator is not meeting the rigger for the first time under a load that 'should only take a minute.'",
       },
       {
         type: "p",
@@ -1097,7 +1277,7 @@ export const ARTICLES: WireArticle[] = [
     category: "CRANES",
     excerpt:
       "If the first time they see the machine, the load and the site is when they park, you have already spent the briefing.",
-    author: "WHOOP",
+    author: "KERN",
     published: "2026-08-04",
     seoTitle: "What Your Crane Crew Should Know Before They Arrive",
     seoDescription:
@@ -1114,7 +1294,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "WHOOP will not guess what you need. Before anyone is named, we want the work, the site, the machines and the dates. Before they arrive, the worker gets the hazards and the procedure. You get the name, the tickets and the plan.",
+        text: "KERN will not guess what you need. Before anyone is named, we want the work, the site, the machines and the dates. Before they arrive, the worker gets the hazards and the procedure. You get the name, the tickets and the plan.",
       },
       {
         type: "h",

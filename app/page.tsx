@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CorSection } from "@/components/CorSection";
+import { ProvenName } from "@/components/ProvenMark";
 import { ProcedureSteps } from "@/components/ProcedureSteps";
 import { FactsList, StandardsList } from "@/components/StandardsList";
 import { WireStoryLink } from "@/components/WireStoryLink";
@@ -11,7 +12,7 @@ import { WIRE, getLatest, summarize } from "@/lib/whoopwire";
 export default function HomePage() {
   return (
     <>
-      <section className="section section-lead" id="whoop">
+      <section className="section section-lead" id="kern">
         <div className="wrap">
           <p className="mono kicker">01 — THE COMPANY</p>
           <h1 className="display giant">
@@ -19,15 +20,20 @@ export default function HomePage() {
             <br />
             HEAVY THINGS.
           </h1>
-          <p className="lede-lg mt-2">{SITE.position}</p>
-          <p className="lede mt">
-            Crane operators, riggers and signalpersons. {SITE.location}.{" "}
-            {SITE.union}. We send people who can do the lift — and we publish
-            how we expect that work to be done.
+          <p className="display pitch-line mt-2">
+            THE PEOPLE
+            <br />
+            AND THE SYSTEMS.
           </p>
+          <p className="lede-lg mt">{SITE.dek}</p>
+          <div className="company-copy">
+            <p>{SITE.roles}</p>
+            <p>{SITE.method}</p>
+            <p className="company-copy-close">{SITE.close}</p>
+          </div>
           <div>
             <p className="mono steel mt-2">WHO WE ARE</p>
-            <p className="lede mt">The work, the province, the shop.</p>
+            <p className="lede mt">The work, the people, the system.</p>
             <FactsList items={ABOUT} />
           </div>
           <div className="inline-cta">
@@ -35,7 +41,7 @@ export default function HomePage() {
               HIRE A CREW
             </Link>
             <Link className="btn btn-ghost" href="/safety">
-              READ THE PROGRAM
+              READ {SITE.system}
             </Link>
           </div>
         </div>
@@ -47,28 +53,32 @@ export default function HomePage() {
           <h2 className="display giant">
             OUR SAFETY
             <br />
-            PROGRAM
+            SYSTEM IS
             <br />
-            IS OPEN.
+            CALLED
+            <br />
+            <ProvenName />
           </h2>
-          <p className="lede-lg mt-2">{SITE.position}</p>
+          <p className="lede-lg mt-2">
+            The platform behind every crane operation.
+          </p>
           <p className="lede mt">
-            Open to everyone. Safety isn&apos;t proprietary. Clients, workers
-            and contractors should be able to see how we expect work to be
-            performed before they hire us.
+            People, process and documentation — organized, verified and
+            accountable. Clients, workers and contractors can read how we
+            expect the work to be performed before they hire us.
           </p>
           <div id="standards">
             <p className="mono steel mt-2">WHAT THE WORK IS DONE TO</p>
             <p className="lede mt">
               Where these conflict, the stricter applicable requirement wins.
               Law always wins. The marks name the bodies. They are not an
-              endorsement of WHOOP.
+              endorsement of KERN.
             </p>
             <StandardsList />
           </div>
           <div className="inline-cta">
             <Link className="btn btn-solid" href="/safety">
-              READ THE PROGRAM
+              READ {SITE.system}
             </Link>
             <Link className="btn btn-ghost" href="/hire">
               HIRE A CREW
@@ -127,8 +137,8 @@ export default function HomePage() {
               before placing workers on site.
             </p>
             <p className="mt lede">
-              We don&apos;t supply random labour. We supply competent crane and
-              rigging personnel.
+              We go beyond supplying labour. We provide the people and the
+              systems that support the safe and professional operation of cranes.
             </p>
             <div className="inline-cta">
               <Link className="btn btn-ghost" href="/safety/training-competency">
@@ -175,8 +185,8 @@ export default function HomePage() {
             <h2 className="display giant">THE CREW</h2>
           </div>
           <p className="lede">
-            {SITE.union}. Crane operators. Riggers. Signalpersons. Supervisors.
-            Matched to the work. Verified before they arrive.
+            Crane operators. Riggers. Signalpersons. Crane supervisors. Safety
+            support. Matched to the work. Verified before they arrive.
           </p>
         </div>
         <div className="mt-2">
@@ -219,8 +229,8 @@ export default function HomePage() {
       </section>
 
       <section className="section wrap" id="whoopwire">
-        <p className="mono kicker">09 — WHOOPWIRE</p>
-        <h2 className="display giant">WHOOPWIRE</h2>
+        <p className="mono kicker">09 — KERNWIRE</p>
+        <h2 className="display giant">KERNWIRE</h2>
         <p className="mono mt">{WIRE.descriptor}</p>
         <div className="wire-stack mt-2">
           {getLatest(3).map((story) => (
@@ -229,7 +239,7 @@ export default function HomePage() {
         </div>
         <div className="inline-cta">
           <Link className="btn btn-solid" href="/whoopwire">
-            READ WHOOPWIRE →
+            READ KERNWIRE →
           </Link>
         </div>
       </section>
@@ -248,15 +258,15 @@ export default function HomePage() {
           </a>
         </div>
         <p className="lede mt-2">
-          {SITE.location}. Crews deployed where the lift is. Tell us the work.
-          We will tell you who is coming.
+          {SITE.location}. People and systems. Tell us the work. We will tell
+          you who is coming.
         </p>
         <div className="inline-cta">
           <Link className="btn btn-solid" href="/hire">
             HIRE A CREW
           </Link>
           <Link className="btn btn-ghost" href="/safety">
-            VIEW OUR SAFETY PROGRAM
+            READ {SITE.system}
           </Link>
         </div>
       </section>

@@ -117,7 +117,7 @@ export function BinderWizard({ binder }: { binder: BinderDef }) {
     <article className="doc-body">
       <header className="doc-title">
         <p className="mono steel">CRANE BINDER WIZARD</p>
-        <div className="num">{binder.number.replace("WHOOP-", "")}</div>
+        <div className="num">{binder.number.replace("KERN-", "")}</div>
         <h1 className="display">{binder.title}</h1>
         <p className="lede mt">{binder.summary}</p>
         <p className="doc-cta">
@@ -236,7 +236,7 @@ export function BinderWizard({ binder }: { binder: BinderDef }) {
       {busy ? <p className="fb-warn">{busy}</p> : null}
       <p className="mono steel doc-colophon">
         Saved on this device. Not sent to a server. Official BC Crane Safety
-        checklist and WorkSafeBC forms are linked — they are not WHOOP forms.
+        checklist and WorkSafeBC forms are linked — they are not KERN forms.
       </p>
     </article>
   );

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Blocks } from "@/components/Blocks";
 import { SafetyLibraryPanel } from "@/components/SafetyLibraryPanel";
+import { ProvenName } from "@/components/ProvenMark";
 import { SAFETY, getSafety } from "@/lib/safety";
 import { SITE } from "@/lib/site";
 
@@ -15,7 +16,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const section = getSafety(slug);
-  if (!section) return { title: "Safety Program" };
+  if (!section) return { title: "Proven" };
   return {
     title: `${section.num} ${section.title}`,
     description: section.intro,
@@ -34,7 +35,9 @@ export default async function SafetySectionPage({ params }: Props) {
   return (
     <article className="doc-body">
       <header className="doc-title">
-        <p className="mono steel">SAFETY PROGRAM</p>
+        <p className="mono steel">
+          <ProvenName />
+        </p>
         <div className="num">{section.num}</div>
         <h1 className="display">{section.title}</h1>
         <p className="lede mt">{section.intro}</p>
@@ -50,7 +53,9 @@ export default async function SafetySectionPage({ params }: Props) {
         ) : (
           <Link href="/safety">
             <span className="mono steel">INDEX</span>
-            <strong className="display">SAFETY PROGRAM</strong>
+            <strong className="display">
+              <ProvenName />
+            </strong>
           </Link>
         )}
         {next ? (
@@ -66,7 +71,8 @@ export default async function SafetySectionPage({ params }: Props) {
         )}
       </nav>
       <p className="mono steel doc-colophon">
-        WHOOP Safety Program. {SITE.legalName}. Current version on this site.
+        <ProvenName />
+        <span>{SITE.legalName}. Current version on this site.</span>
       </p>
     </article>
   );

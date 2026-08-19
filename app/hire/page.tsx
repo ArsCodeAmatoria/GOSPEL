@@ -5,7 +5,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Hire a crew",
   description:
-    "Request crane operators, riggers, signalpersons or a lifting crew from WHOOP.",
+    "Request crane operators, riggers, signalpersons, crane supervisors or safety support from KERN.",
 };
 
 export default function HirePage() {
@@ -16,9 +16,8 @@ export default function HirePage() {
         <h1 className="display giant">HIRE A CREW</h1>
         <p className="lede mt">
           Tell us the work. We will tell you who is coming — and whether we can
-          do it. If we cannot, you will hear that first. WHOOP is a safety
-          company. The crew is how you get us. Union-friendly shop. If the
-          site has an agreement, tell us. We work with it.
+          do it. If we cannot, you will hear that first. {SITE.dek}{" "}
+          {SITE.position}
         </p>
       </header>
       <div className="contact-rail">

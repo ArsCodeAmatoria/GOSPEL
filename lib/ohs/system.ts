@@ -1,5 +1,5 @@
 /**
- * Maps this Safety Program to WorkSafeBC s. 3.3 and the CFCSA / BCCSA
+ * Maps Proven to WorkSafeBC s. 3.3 and the CFCSA / BCCSA
  * COR® OHS National Audit elements. Documentation is not implementation.
  * Size-dependent duties are named, not invented as universal.
  */
@@ -23,7 +23,7 @@ export const WSBC_33: SystemRow[] = [
     documentation: "01 Company Safety Policy · 02 Responsibilities · POL-001",
     form: "FRM-019 acknowledgement",
     record: "Signed acknowledgement in the worker file",
-    owner: "WHOOP",
+    owner: "KERN",
     frequency: "On hire. Review the policy at least annually.",
   },
   {
@@ -50,7 +50,7 @@ export const WSBC_33: SystemRow[] = [
     documentation: "POL-016 · 20 OHS Management System",
     form: "FRM-032 management review · FRM-033 OHS meeting",
     record: "Minutes, actions, owners and dates",
-    owner: "WHOOP Safety",
+    owner: "KERN Safety",
     frequency: "At least quarterly. After a serious incident.",
   },
   {
@@ -59,7 +59,7 @@ export const WSBC_33: SystemRow[] = [
     documentation: "09 Incident Reporting · POL-006 · POL-007",
     form: "FRM-010 / 011 / 012 / 013 / 014",
     record: "Report, investigation, closed corrective actions",
-    owner: "WHOOP Safety with the crew",
+    owner: "KERN Safety with the crew",
     frequency: "Prompt. Same shift to start. Close on a date that matches severity.",
   },
   {
@@ -68,7 +68,7 @@ export const WSBC_33: SystemRow[] = [
     documentation: "19 Document Control · POL-016",
     form: "The forms in this program",
     record: "Kept at least 3 years. Available to the committee or worker rep, and on request to an officer, the union, or the workers.",
-    owner: "WHOOP Safety",
+    owner: "KERN Safety",
     frequency: "Trends reviewed at each management review.",
     note: "3.3(f). First aid records: keep at least 3 years (3.19).",
   },
@@ -78,7 +78,7 @@ export const WSBC_33: SystemRow[] = [
     documentation: "11 Training + Competency · POL-002 · POL-003",
     form: "FRM-015 / 016 / 017",
     record: "Orientation, training and competency in the worker file",
-    owner: "WHOOP before dispatch. Supervisor on the lift.",
+    owner: "KERN before dispatch. Supervisor on the lift.",
     frequency: "Before first dispatch. Young or new worker before they begin (3.23). When the work class changes.",
   },
 ];
@@ -95,7 +95,7 @@ export const COR_ELEMENTS: SystemRow[] = [
     documentation: "01 · POL-001 · POL-016",
     form: "FRM-019",
     record: "Current policy on this site. Signed acknowledgements.",
-    owner: "WHOOP",
+    owner: "KERN",
     frequency: "Review at least annually.",
   },
   {
@@ -113,7 +113,7 @@ export const COR_ELEMENTS: SystemRow[] = [
     documentation: "01 policy statements · 06 Rigging · 07 Crane Operations · 12 Worker Rights",
     form: "FRM-004 toolbox",
     record: "Toolbox attendance. Worker acknowledgement.",
-    owner: "WHOOP",
+    owner: "KERN",
     frequency: "Practices live in this program. Briefed each shift.",
     note: "Practices are the standing rules. Procedures are the numbered SWPs.",
   },
@@ -132,7 +132,7 @@ export const COR_ELEMENTS: SystemRow[] = [
     documentation: "01 · POL-018 · POL-008 · POL-010 · POL-020",
     form: "FRM-019 · FRM-035 refusal",
     record: "Acknowledgements. Refusal records.",
-    owner: "WHOOP",
+    owner: "KERN",
     frequency: "On hire. Enforced every dispatch.",
   },
   {
@@ -141,7 +141,7 @@ export const COR_ELEMENTS: SystemRow[] = [
     documentation: "POL-010",
     form: "FRM-018",
     record: "Issue, inspection, replacement",
-    owner: "WHOOP and the worker",
+    owner: "KERN and the worker",
     frequency: "Inspect before use. Replace when it fails.",
   },
   {
@@ -150,9 +150,9 @@ export const COR_ELEMENTS: SystemRow[] = [
     documentation: "POL-013 · 18 Inspections",
     form: "FRM-025 / 026 / 030 / 031",
     record: "Maintenance log. Out-of-service tags.",
-    owner: "Owner of the machine for PM. WHOOP operator for pre-use and defect reports.",
-    frequency: "OEM interval for WHOOP-controlled gear. Client/owner PM for their crane.",
-    note: "WHOOP is a workforce. Most cranes are not ours. Pre-use and defect reporting still are.",
+    owner: "Owner of the machine for PM. KERN operator for pre-use and defect reports.",
+    frequency: "OEM interval for KERN-controlled gear. Client/owner PM for their crane.",
+    note: "KERN is a workforce. Most cranes are not ours. Pre-use and defect reporting still are.",
   },
   {
     id: "COR 8",
@@ -160,7 +160,7 @@ export const COR_ELEMENTS: SystemRow[] = [
     documentation: "11 · POL-002 · POL-003 · 12",
     form: "FRM-015 / 016 / 017 / 004 / 033",
     record: "Worker file. Toolbox and OHS meeting minutes.",
-    owner: "WHOOP",
+    owner: "KERN",
     frequency: "Before dispatch. Toolbox each shift. OHS meeting at least monthly if 3.2 applies; otherwise with management review.",
   },
   {
@@ -178,7 +178,7 @@ export const COR_ELEMENTS: SystemRow[] = [
     documentation: "09 · POL-006",
     form: "FRM-010–014",
     record: "Closed investigations",
-    owner: "WHOOP Safety",
+    owner: "KERN Safety",
     frequency: "Prompt.",
   },
   {
@@ -186,9 +186,9 @@ export const COR_ELEMENTS: SystemRow[] = [
     title: "Emergency preparedness",
     documentation: "10 · POL-015",
     form: "FRM-034 drill",
-    record: "Site brief on the FLHA. Drill record where WHOOP controls the workplace.",
+    record: "Site brief on the FLHA. Drill record where KERN controls the workplace.",
     owner: "Supervisor on the dispatch. Host employer for the site ERP.",
-    frequency: "Briefed before work. Drills where WHOOP is the employer at that workplace. Tower: THARRP plan confirmed before the operator goes up.",
+    frequency: "Briefed before work. Drills where KERN is the employer at that workplace. Tower: THARRP plan confirmed before the operator goes up.",
   },
   {
     id: "COR 12",
@@ -196,7 +196,7 @@ export const COR_ELEMENTS: SystemRow[] = [
     documentation: "19 · POL-016",
     form: "FRM-032",
     record: "The files named in 3.3(f)",
-    owner: "WHOOP Safety",
+    owner: "KERN Safety",
     frequency: "Trends at each management review. Documents: revision 01, review by 2027-09-01.",
   },
   {
@@ -205,7 +205,7 @@ export const COR_ELEMENTS: SystemRow[] = [
     documentation: "01 standards stack · this site /safety#standards",
     form: "FRM-015 (program and rights)",
     record: "Orientation that the Regulation and this program were shown",
-    owner: "WHOOP",
+    owner: "KERN",
     frequency: "On hire. When the named edition in the Regulation changes.",
     note: "Workers can read the Regulation on worksafebc.com. This program cites the editions Part 14 actually names.",
   },
@@ -214,19 +214,19 @@ export const COR_ELEMENTS: SystemRow[] = [
     title: "Procurement and contractor management",
     documentation: "POL-027 · 02 Responsibilities",
     form: "Dispatch file: host orientation, prime contractor named",
-    record: "Who is prime. What the host required. What WHOOP verified before sending people.",
-    owner: "WHOOP",
+    record: "Who is prime. What the host required. What KERN verified before sending people.",
+    owner: "KERN",
     frequency: "Each dispatch.",
-    note: "WHOOP is usually the contractor on a host site — not the prime. Subcontractors WHOOP hires are selected and monitored to this policy.",
+    note: "KERN is usually the contractor on a host site — not the prime. Subcontractors KERN hires are selected and monitored to this policy.",
   },
 ];
 
 export const PROGRAM_HIERARCHY = [
-  { title: "OH&S PROGRAM", body: "This Safety Program. How the system runs. Section 20 is the map." },
-  { title: "POLICIES", body: "WHOOP-POL. The rules. Library 13." },
+  { title: "PROVEN", body: "KERN’s safety system. How it runs. Section 21 is the map." },
+  { title: "POLICIES", body: "KERN-POL. The rules. Library 13." },
   { title: "PROCEDURES", body: "Numbered methods in the sections and the SWP library." },
   { title: "SWPs / PRACTICES", body: "SWPs are steps. Practices are the standing rules in 01, 06, 07 and 12. SJPs are this lift." },
-  { title: "FORMS", body: "WHOOP-FRM. How evidence is collected. Library 16 and the form builder." },
+  { title: "FORMS", body: "KERN-FRM. How evidence is collected. Library 16 and the form builder." },
   { title: "RECORDS", body: "Completed forms, reports, logs, minutes. Proof the system ran." },
   { title: "REVIEW / CORRECTIVE ACTION", body: "FRM-014. Finding → owner → date → done → verified." },
   { title: "CONTINUOUS IMPROVEMENT", body: "POL-016. Management review. COR audit. This program revised when the lesson is real." },

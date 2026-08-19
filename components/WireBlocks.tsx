@@ -2,8 +2,10 @@ import Link from "next/link";
 import { BoomTrigCalc } from "@/components/BoomTrigCalc";
 import { BoomTrigDiagram } from "@/components/BoomTrigDiagram";
 import { ProcedureSteps } from "@/components/ProcedureSteps";
+import { SlingAngleCalc } from "@/components/SlingAngleCalc";
 import { SlingAngleDiagram } from "@/components/SlingAngleDiagram";
 import { SlingSinCalc } from "@/components/SlingSinCalc";
+import { WireFigure } from "@/components/WireFigure";
 import type { WireBlock } from "@/lib/whoopwire";
 
 export function WireBlocks({ blocks }: { blocks: WireBlock[] }) {
@@ -33,11 +35,14 @@ export function WireBlocks({ blocks }: { blocks: WireBlock[] }) {
         }
         if (block.type === "image") {
           return (
-            <figure className="wire-figure" key={i}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={block.src} alt={block.alt} />
-              {block.caption ? <figcaption className="mono">{block.caption}</figcaption> : null}
-            </figure>
+            <WireFigure
+              key={i}
+              src={block.src}
+              alt={block.alt}
+              caption={block.caption}
+              contain={block.contain}
+              lightbox={block.contain}
+            />
           );
         }
         if (block.type === "formula") {
@@ -83,6 +88,7 @@ export function WireBlocks({ blocks }: { blocks: WireBlock[] }) {
         }
         if (block.type === "calc") {
           if (block.name === "boom-trig") return <BoomTrigCalc key={i} />;
+          if (block.name === "sling-angle") return <SlingAngleCalc key={i} />;
           return <SlingSinCalc key={i} />;
         }
         return (

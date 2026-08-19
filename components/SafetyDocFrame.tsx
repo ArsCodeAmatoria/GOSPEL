@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { ProvenName } from "@/components/ProvenMark";
 import { SITE } from "@/lib/site";
 
 export function SafetyDocFrame({
@@ -35,11 +36,14 @@ export function SafetyDocFrame({
         </Link>
         <Link href="/safety">
           <span className="mono steel">INDEX</span>
-          <strong className="display">SAFETY PROGRAM</strong>
+          <strong className="display">
+            <ProvenName />
+          </strong>
         </Link>
       </nav>
       <p className="mono steel doc-colophon">
-        WHOOP Safety Program. {SITE.legalName}. Current version on this site.
+        <ProvenName />
+        <span>{SITE.legalName}. Current version on this site.</span>
       </p>
     </article>
   );

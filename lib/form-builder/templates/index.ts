@@ -41,7 +41,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "flha",
     title: "FIELD LEVEL HAZARD ASSESSMENT",
-    number: "WHOOP-FRM-001",
+    number: "KERN-FRM-001",
     group: "Daily",
     description:
       "This shift, this lift, this ground. Not a signature collection.",
@@ -64,7 +64,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "crane-pre-use",
     title: "CRANE PRE-USE INSPECTION",
-    number: "WHOOP-FRM-002",
+    number: "KERN-FRM-002",
     group: "Daily",
     description: "This shift, this machine, this configuration. 14.35.",
     blocks: [
@@ -81,7 +81,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "rigging-inspection",
     title: "RIGGING INSPECTION",
-    number: "WHOOP-FRM-003",
+    number: "KERN-FRM-003",
     group: "Daily",
     description: "Before the hitch takes load. Part 15.",
     blocks: [
@@ -97,7 +97,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "crane-op-log",
     title: "CRANE OPERATOR LOG",
-    number: "WHOOP-FRM-023",
+    number: "KERN-FRM-023",
     group: "Logs",
     description:
       "Hours, lifts, defects — dated and signed. Stays with the machine. 14.14.",
@@ -115,7 +115,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "rigger-log",
     title: "RIGGER LOG",
-    number: "WHOOP-FRM-024",
+    number: "KERN-FRM-024",
     group: "Logs",
     description:
       "Gear used, lifts made, what was isolated. 15.31 before each shift.",
@@ -135,7 +135,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "jha",
     title: "JOB HAZARD ANALYSIS",
-    number: "WHOOP-FRM-JHA",
+    number: "KERN-FRM-JHA",
     group: "Lifting",
     description:
       "Hazards, consequence, residual risk. The steps live in the SWP.",
@@ -157,7 +157,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "lift-plan",
     title: "LIFT PLAN",
-    number: "WHOOP-FRM-006",
+    number: "KERN-FRM-006",
     group: "Lifting",
     description: "Weight, COG, chart, path, people, abort — before the hook.",
     blocks: [
@@ -178,7 +178,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "critical-lift",
     title: "CRITICAL LIFT PLAN",
-    number: "WHOOP-FRM-007",
+    number: "KERN-FRM-007",
     group: "Lifting",
     description: "Named supervision. Written plan. 14.42.1.",
     blocks: [
@@ -204,7 +204,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "pre-lift-meeting",
     title: "PRE-LIFT MEETING",
-    number: "WHOOP-FRM-009",
+    number: "KERN-FRM-009",
     group: "Lifting",
     description: "Everyone repeats the plan, the signals, who stops it.",
     blocks: [
@@ -223,7 +223,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "site-inspection",
     title: "SITE INSPECTION",
-    number: "WHOOP-FRM-020",
+    number: "KERN-FRM-020",
     group: "Inspection",
     description:
       "The lift area, the ground, the zone. Not the whole civil site. 3.5.",
@@ -246,7 +246,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "weekly-maintenance",
     title: "WEEKLY MAINTENANCE",
-    number: "WHOOP-FRM-025",
+    number: "KERN-FRM-025",
     group: "Inspection",
     description:
       "Frequent inspection. Wire rope, leaks, pins, safety devices. 14.13.",
@@ -264,7 +264,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "monthly-maintenance",
     title: "MONTHLY MAINTENANCE",
-    number: "WHOOP-FRM-026",
+    number: "KERN-FRM-026",
     group: "Inspection",
     description:
       "Periodic inspection. Structure, rope, brakes, LMI, certificates. 14.13.",
@@ -284,7 +284,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "tower-pre-use",
     title: "TOWER PRE-USE INSPECTION",
-    number: "WHOOP-FRM-027",
+    number: "KERN-FRM-027",
     group: "Inspection",
     description:
       "Topless / hammerhead. This shift, this configuration. Z248, 14.35.",
@@ -302,7 +302,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "luffing-jib-inspection",
     title: "LUFFING JIB INSPECTION",
-    number: "WHOOP-FRM-028",
+    number: "KERN-FRM-028",
     group: "Inspection",
     description: "MRH hydraulic or MR rope. Jib angle, luffing system, weathervane.",
     blocks: [
@@ -318,7 +318,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "self-erect-inspection",
     title: "SELF-ERECT INSPECTION",
-    number: "WHOOP-FRM-029",
+    number: "KERN-FRM-029",
     group: "Inspection",
     description: "Hup, Igo, Igo T. Unfold complete. Ballast locked. This jib position.",
     blocks: [
@@ -335,7 +335,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "tower-weekly-maintenance",
     title: "TOWER WEEKLY MAINTENANCE",
-    number: "WHOOP-FRM-030",
+    number: "KERN-FRM-030",
     group: "Inspection",
     description:
       "Frequent inspection. Rope, leaks, limits, lubrication. 14.13.",
@@ -353,7 +353,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "tower-monthly-maintenance",
     title: "TOWER MONTHLY MAINTENANCE",
-    number: "WHOOP-FRM-031",
+    number: "KERN-FRM-031",
     group: "Inspection",
     description:
       "Periodic inspection. Structure, full rope, slew, hydraulics. 14.13.",
@@ -373,7 +373,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "equipment-defect",
     title: "EQUIPMENT DEFECT REPORT",
-    number: "WHOOP-FRM-022",
+    number: "KERN-FRM-022",
     group: "Inspection",
     description: "Out of service is immediate. Not next Tuesday.",
     blocks: [
@@ -390,7 +390,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "incident-report",
     title: "INCIDENT REPORT",
-    number: "WHOOP-FRM-010",
+    number: "KERN-FRM-010",
     group: "Incident",
     description: "Facts. We do not hide the dent.",
     blocks: [
@@ -410,7 +410,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "near-miss",
     title: "NEAR-MISS REPORT",
-    number: "WHOOP-FRM-011",
+    number: "KERN-FRM-011",
     group: "Incident",
     description: "Someone in the zone. A sling that started to cut.",
     blocks: [
@@ -427,9 +427,9 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "first-aid",
     title: "FIRST AID REPORT",
-    number: "WHOOP-FRM-012",
+    number: "KERN-FRM-012",
     group: "Incident",
-    description: "Site first aid and WHOOP. Regulator as the law requires.",
+    description: "Site first aid and KERN. Regulator as the law requires.",
     blocks: [
       { type: "worker" },
       { type: "project" },
@@ -443,7 +443,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "return-to-work",
     title: "RETURN-TO-WORK PLAN",
-    number: "WHOOP-FRM-RTW",
+    number: "KERN-FRM-RTW",
     group: "Worker",
     description: "Restrictions named. Work matched. Not a paper promise.",
     blocks: [
@@ -459,7 +459,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "management-review",
     title: "MANAGEMENT OHS REVIEW",
-    number: "WHOOP-FRM-032",
+    number: "KERN-FRM-032",
     group: "Inspection",
     description: "3.3(d). Trends, actions, objectives. Not a lunch.",
     blocks: [
@@ -475,7 +475,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "ohs-meeting",
     title: "OHS MEETING",
-    number: "WHOOP-FRM-033",
+    number: "KERN-FRM-033",
     group: "Daily",
     description: "Worker OHS meeting. Toolbox is the lift brief.",
     blocks: [
@@ -490,7 +490,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "emergency-drill",
     title: "EMERGENCY DRILL",
-    number: "WHOOP-FRM-034",
+    number: "KERN-FRM-034",
     group: "Incident",
     description: "Test the plan. Record what failed.",
     blocks: [
@@ -506,7 +506,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "refuse-unsafe-work",
     title: "REFUSAL OF UNSAFE WORK",
-    number: "WHOOP-FRM-035",
+    number: "KERN-FRM-035",
     group: "Incident",
     description: "Work stays stopped until the danger is controlled.",
     blocks: [
@@ -523,7 +523,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "orientation",
     title: "ORIENTATION",
-    number: "WHOOP-FRM-015",
+    number: "KERN-FRM-015",
     group: "Worker",
     description: "Young or new worker topics in 3.23. Before they begin.",
     blocks: [
@@ -539,7 +539,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "pre-assembly-meeting",
     title: "PRE-ASSEMBLY MEETING",
-    number: "WHOOP-FRM-036",
+    number: "KERN-FRM-036",
     group: "Binder",
     description: "Before the tower or self-erect goes up. Named people. Sequence. Abort.",
     blocks: [
@@ -559,7 +559,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "powerline-30m33",
     title: "POWERLINE RECORD — 30M33",
-    number: "WHOOP-FRM-037",
+    number: "KERN-FRM-037",
     group: "Binder",
     description:
       "Site schematic and the discussion. Coded 30M33 is the utility’s form.",
@@ -578,7 +578,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "radio-frequency",
     title: "RADIO FREQUENCY COORDINATION",
-    number: "WHOOP-FRM-038",
+    number: "KERN-FRM-038",
     group: "Binder",
     description: "52E73C request plus the site radio log.",
     blocks: [
@@ -594,7 +594,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "nop-tc-notice",
     title: "NOP-TC POSTING NOTICE",
-    number: "WHOOP-FRM-039",
+    number: "KERN-FRM-039",
     group: "Binder",
     description: "What stays on the board. Submit the NOP online.",
     blocks: [
@@ -609,7 +609,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "operator-orientation",
     title: "OPERATOR CRANE ORIENTATION",
-    number: "WHOOP-FRM-040",
+    number: "KERN-FRM-040",
     group: "Binder",
     description: "This machine. This site. This chart.",
     blocks: [
@@ -628,7 +628,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "tower-crane-report",
     title: "TOWER CRANE REPORT",
-    number: "WHOOP-FRM-041",
+    number: "KERN-FRM-041",
     group: "Binder",
     description: "After erect, climb or reposition. Companion to WorkSafeBC’s checklist.",
     blocks: [
@@ -645,7 +645,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "supervisor-qualification",
     title: "ACTIVITY SUPERVISOR QUALIFICATION",
-    number: "WHOOP-FRM-042",
+    number: "KERN-FRM-042",
     group: "Binder",
     description: "14.73.2. This particular crane. This activity.",
     blocks: [
@@ -660,7 +660,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "csa-compliance",
     title: "CSA Z248 COMPLIANCE RECORD",
-    number: "WHOOP-FRM-043",
+    number: "KERN-FRM-043",
     group: "Binder",
     description: "14.2(6). How this serial meets Z248-2004.",
     blocks: [
@@ -674,7 +674,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "tharrp-cover",
     title: "THARRP / HIGH-ANGLE RESCUE COVER",
-    number: "WHOOP-FRM-044",
+    number: "KERN-FRM-044",
     group: "Binder",
     description: "Who requested the survey. Which fire department. How to summon them.",
     blocks: [
@@ -690,9 +690,9 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "navcan-land-use",
     title: "NAV CANADA / AERONAUTICAL FILE",
-    number: "WHOOP-FRM-045",
+    number: "KERN-FRM-045",
     group: "Binder",
-    description: "Land-use and obstacle file. Portal submissions, not a WHOOP permit.",
+    description: "Land-use and obstacle file. Portal submissions, not a KERN permit.",
     blocks: [
       { type: "project" },
       { type: "crane" },
@@ -704,7 +704,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "power-source",
     title: "POWER SOURCE RECORD",
-    number: "WHOOP-FRM-046",
+    number: "KERN-FRM-046",
     group: "Binder",
     description: "How the crane is fed. Who can isolate it.",
     blocks: [
@@ -719,7 +719,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "site-layout",
     title: "SITE LAYOUT COVER",
-    number: "WHOOP-FRM-047",
+    number: "KERN-FRM-047",
     group: "Binder",
     description: "Cover sheet for the drawing package.",
     blocks: [
@@ -733,7 +733,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "traffic-permits",
     title: "TRAFFIC AND STREET-USE PERMITS",
-    number: "WHOOP-FRM-048",
+    number: "KERN-FRM-048",
     group: "Binder",
     description: "Cover sheet for municipal permits.",
     blocks: [
@@ -746,7 +746,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "ndt-record",
     title: "NDT RECORD",
-    number: "WHOOP-FRM-049",
+    number: "KERN-FRM-049",
     group: "Binder",
     description: "Cover sheet for the current NDT report on this serial.",
     blocks: [
@@ -760,7 +760,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "hoist-rope-record",
     title: "HOIST ROPE RECORD",
-    number: "WHOOP-FRM-050",
+    number: "KERN-FRM-050",
     group: "Binder",
     description: "The rope on the drum. Mill cert. Date on. Condition.",
     blocks: [
@@ -775,7 +775,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "operator-certification",
     title: "OPERATOR CERTIFICATION FILE",
-    number: "WHOOP-FRM-051",
+    number: "KERN-FRM-051",
     group: "Binder",
     description: "BC Crane Safety ticket. Provisional plan if required.",
     blocks: [
@@ -790,7 +790,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "flytable-cycle-sjp",
     title: "FLYTABLE CYCLE SJP",
-    number: "WHOOP-FRM-052",
+    number: "KERN-FRM-052",
     group: "Lifting",
     description:
       "This table. This floor. This drawing. Critical lift. Mark nontypical if it is.",
@@ -815,7 +815,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
   assembleForm({
     id: "loading-platform-sjp",
     title: "LOADING PLATFORM SJP",
-    number: "WHOOP-FRM-053",
+    number: "KERN-FRM-053",
     group: "Lifting",
     description:
       "This deck. This floor. This serial. Empty. Critical lift.",

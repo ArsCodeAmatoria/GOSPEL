@@ -84,7 +84,7 @@ export default async function FormPage({ params }: Props) {
   return (
     <SafetyDocFrame
       kicker={`${doc.group.toUpperCase()} FORM`}
-      num={doc.number.replace("WHOOP-", "")}
+      num={doc.number.replace("KERN-", "")}
       title={doc.title}
       intro={doc.summary}
       backHref="/safety/safety-forms"

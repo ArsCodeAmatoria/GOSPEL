@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Wordmark } from "./Logo";
+import { ProvenName } from "./ProvenMark";
 import { ThemeSwitch } from "./ThemeSwitch";
 import { NAV, SITE } from "@/lib/site";
 
@@ -28,7 +29,7 @@ export function Header() {
         Skip to content
       </a>
       <header className="header">
-        <Link href="/" aria-label="WHOOP home">
+        <Link href="/" aria-label={`${SITE.name} home`}>
           <Wordmark />
         </Link>
         <div className="header-actions">
@@ -55,13 +56,16 @@ export function Header() {
         <nav className="overlay-list" aria-label="Primary">
           {NAV.map((item) => (
             <Link key={item.href} href={item.href} onClick={() => setOpen(false)}>
-              <span>{item.num}</span>
-              {item.label}
+              <span className="overlay-num">{item.num}</span>
+              {item.href === "/safety" ? (
+                <ProvenName className="overlay-label" />
+              ) : (
+                <span className="overlay-label">{item.label}</span>
+              )}
             </Link>
           ))}
         </nav>
         <div className="overlay-foot mono">
-          <span>{SITE.union}</span>
           <span>{SITE.location}</span>
           <a href={SITE.phoneHref}>{SITE.phone}</a>
           <a href={SITE.emailHref}>{SITE.email}</a>

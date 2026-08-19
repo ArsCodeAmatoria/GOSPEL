@@ -10,6 +10,9 @@ import {
   MAD_LINKS,
   MAD_REFS,
   MAD_TABLES,
+  LIGHTNING_LINKS,
+  LIGHTNING_REFS,
+  LIGHTNING_TABLES,
   PLATFORM_LINKS,
   PLATFORM_REFS,
   PLATFORM_ROLES,
@@ -55,7 +58,7 @@ function swp(
     prohibited: fields.prohibited,
     emergency:
       fields.emergency ??
-      "Stop the lift. Make people safe. Land or hold the load if it can be done without a second incident. First aid. Notify the site and WHOOP. Hold the scene.",
+      "Stop the lift. Make people safe. Land or hold the load if it can be done without a second incident. First aid. Notify the site and KERN. Hold the scene.",
     documentation: fields.documentation ?? [
       "FLHA",
       "Pre-use / inspection record",
@@ -68,9 +71,9 @@ function swp(
 }
 
 export const SWPS: Swp[] = [
-  swp("WHOOP-SWP-001", "mobile-crane-setup", "MOBILE CRANE SETUP", "Put the crane on the ground the chart requires.", {
+  swp("KERN-SWP-001", "mobile-crane-setup", "MOBILE CRANE SETUP", "Put the crane on the ground the chart requires.", {
     purpose: "Set up a mobile crane so it can lift to the chart, on ground that can hold it, with a swing that will not hit people or plant.",
-    scope: "Mobile cranes and boom trucks WHOOP operators are dispatched onto. Not tower erection. Not a substitute for the manufacturer’s setup.",
+    scope: "Mobile cranes and boom trucks KERN operators are dispatched onto. Not tower erection. Not a substitute for the manufacturer’s setup.",
     competency: ["BC Crane Safety certificate for the class", "Competency on this configuration", "Able to read this chart"],
     hazards: ["Soft or unknown ground", "Buried services", "Slope", "Overhead lines", "Tail swing", "Outrigger failure", "Wrong counterweight"],
     controls: ["Walk the pad", "Locate services", "Mats", "Full extension unless the chart allows otherwise", "Level within manufacturer limit", "Swing check"],
@@ -86,27 +89,27 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Lifting with outriggers short unless the chart for that configuration is in the cab and in use", "Setting on covers, tanks or unknown backfill", "Skipping the swing check"],
   }),
-  swp("WHOOP-SWP-002", "crane-pre-use-inspection", "CRANE PRE-USE INSPECTION", "Each shift, this machine, this configuration.", {
+  swp("KERN-SWP-002", "crane-pre-use-inspection", "CRANE PRE-USE INSPECTION", "Each shift, this machine, this configuration.", {
     purpose: "Find defects that affect lifting before the crane comes on load.",
-    scope: "Every WHOOP operator, every shift, on the crane they will run. Done as the manufacturer, the named 14.2 standard, and Part 14 require.",
+    scope: "Every KERN operator, every shift, on the crane they will run. Done as the manufacturer, the named 14.2 standard, and Part 14 require.",
     competency: ["Operator for this class", "Knows this machine’s inspection points"],
     hazards: ["Hidden damage", "Inoperative LMI / RCI", "Failed brakes", "Wire rope defects", "Leaks", "Missing pins"],
     controls: ["Walkaround", "Function tests", "Record defects", "Crane stays down until lifting defects are remedied"],
-    equipment: ["Manufacturer inspection list", "This SWP", "Inspection form WHOOP-FRM-002"],
+    equipment: ["Manufacturer inspection list", "This SWP", "Inspection form KERN-FRM-002"],
     procedure: [
       { n: "01", title: "IDENTITY", body: "This is the crane on the dispatch. Configuration matches the chart you will use." },
       { n: "02", title: "WALKAROUND", body: "Structure, welds, pins, tires or tracks, outriggers, leaks, rope, hook and latch, sheaves." },
       { n: "03", title: "CAB AND SAFETY DEVICES", body: "LMI / RCI, anti-two-block, horns, windows, fire extinguisher, load chart in the cab." },
       { n: "04", title: "FUNCTION", body: "Hoist, boom, swing, travel, brakes, outrigger controls — through the range you will use, without a load." },
-      { n: "05", title: "RECORD", body: "Complete the inspection record. Defects that affect lifting: crane down, supervisor and WHOOP told." },
+      { n: "05", title: "RECORD", body: "Complete the inspection record. Defects that affect lifting: crane down, supervisor and KERN told." },
       { n: "06", title: "DO NOT START", body: "If a safety device is bypassed or inoperative, the crane does not lift." },
     ],
     prohibited: ["Signing an inspection you did not do", "Bypassing LMI / RCI or anti-two-block to “get the day going”", "Lifting with a known lifting defect"],
-    documentation: ["WHOOP-FRM-002", "Machine log if the site requires it"],
+    documentation: ["KERN-FRM-002", "Machine log if the site requires it"],
   }),
-  swp("WHOOP-SWP-003", "crane-operation", "CRANE OPERATION", "The chart is the law of the machine.", {
+  swp("KERN-SWP-003", "crane-operation", "CRANE OPERATION", "The chart is the law of the machine.", {
     purpose: "Operate the crane to the chart, with a crew you can hear, on a lift you can account for.",
-    scope: "Mobile and tower operations WHOOP operators are dispatched to perform. Personnel lifts only where legally permitted and engineered.",
+    scope: "Mobile and tower operations KERN operators are dispatched to perform. Personnel lifts only where legally permitted and engineered.",
     competency: ["Certificate for the class", "Competency on this crane", "Can calculate deductions and radius"],
     hazards: ["Overload", "Side load", "Shock load", "Contact", "Lost signal", "People under the load", "Wind"],
     controls: ["Chart", "Known load", "Exclusion zone", "One signalperson", "Stop on ambiguity"],
@@ -121,7 +124,7 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Lifting over people", "Riding the hook or load", "Using the crane as an elevator unless permitted and engineered", "Interpreting a bad signal"],
   }),
-  swp("WHOOP-SWP-004", "crane-shutdown", "CRANE SHUTDOWN", "Leave the machine the way the manufacturer allows you to leave it.", {
+  swp("KERN-SWP-004", "crane-shutdown", "CRANE SHUTDOWN", "Leave the machine the way the manufacturer allows you to leave it.", {
     purpose: "Shut down so the crane cannot move, the boom is in a safe condition, and the next operator is not inheriting a trap.",
     scope: "End of shift, breaks where the operator leaves the seat, weather shutdown, and emergency shutdown as the conditions allow.",
     competency: ["Operator for this class"],
@@ -133,13 +136,13 @@ export const SWPS: Swp[] = [
       { n: "02", title: "POSITION", body: "Boom, jib, upperworks and outriggers as the manufacturer specifies for shutdown and for the weather that is coming." },
       { n: "03", title: "ISOLATE", body: "Controls off. Keys as the site requires. House lock if fitted." },
       { n: "04", title: "ACCESS", body: "Cab closed. Ladders and gates as the site requires. Do not leave a climbing invitation." },
-      { n: "05", title: "HAND OVER", body: "Defects, remaining fuel, weather, and the next lift — written or spoken to the next operator and to WHOOP if the dispatch ends." },
+      { n: "05", title: "HAND OVER", body: "Defects, remaining fuel, weather, and the next lift — written or spoken to the next operator and to KERN if the dispatch ends." },
     ],
     prohibited: ["Leaving a load hanging for convenience", "Walking away from a running crane", "Shutdown position that fouls a line or a road"],
   }),
-  swp("WHOOP-SWP-005", "crane-communication", "CRANE COMMUNICATION", "If the operator cannot hear or see the signal, the crane does not move.", {
+  swp("KERN-SWP-005", "crane-communication", "CRANE COMMUNICATION", "If the operator cannot hear or see the signal, the crane does not move.", {
     purpose: "Make communication a control, not a courtesy.",
-    scope: "All WHOOP lifts. Hands, radio, or both. Dedicated systems where Part 14 requires them.",
+    scope: "All KERN lifts. Hands, radio, or both. Dedicated systems where Part 14 requires them.",
     competency: ["Signalperson competency", "Operator who will not guess"],
     hazards: ["Two signalpersons", "Language mix-up", "Radio interference", "Blind corners", "Noise"],
     controls: ["One voice", "Agreed system in the brief", "Test before the hook", "Stop on loss"],
@@ -153,9 +156,9 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Two people signalling", "“He knows what I mean”", "Music or chatter on the lift channel"],
   }),
-  swp("WHOOP-SWP-006", "radio-communication", "RADIO COMMUNICATION", "The lift channel is for the lift.", {
+  swp("KERN-SWP-006", "radio-communication", "RADIO COMMUNICATION", "The lift channel is for the lift.", {
     purpose: "Use radios so the operator gets one clear instruction and a hard STOP.",
-    scope: "Any WHOOP lift using radios, including blind lifts and tower operations.",
+    scope: "Any KERN lift using radios, including blind lifts and tower operations.",
     competency: ["Can run the radio without looking at it", "Knows the stop word"],
     hazards: ["Wrong channel", "Interference", "Stepped-on transmissions", "Dead battery", "Informal language"],
     controls: ["Assigned channel", "Check before the hook", "Short commands", "Readback when it matters", "Spare battery"],
@@ -169,9 +172,9 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Jokes on the lift channel", "Talking over STOP", "Uncharged radios at the brief"],
   }),
-  swp("WHOOP-SWP-007", "standard-hand-signals", "STANDARD HAND SIGNALS", "Standard signals. Not a private dialect.", {
+  swp("KERN-SWP-007", "standard-hand-signals", "STANDARD HAND SIGNALS", "Standard signals. Not a private dialect.", {
     purpose: "Use the hand signals the crew agreed, the ones the Board authorizes, so the operator is not translating.",
-    scope: "WHOOP lifts using hand signals. Combined with radio on blind or noisy lifts as briefed.",
+    scope: "KERN lifts using hand signals. Combined with radio on blind or noisy lifts as briefed.",
     competency: ["Signalperson who can demonstrate the signals", "Operator who will not invent meanings"],
     hazards: ["Non-standard signals", "Gloves that hide the hand", "Distance and glare", "Two people waving"],
     controls: ["Brief the set", "High-visibility gloves", "Position where the operator can see", "Emergency stop is unmistakable"],
@@ -185,7 +188,7 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Invented signals", "Signalling from a pocket", "Signalling while also rigging the hitch"],
   }),
-  swp("WHOOP-SWP-008", "blind-lifts", "BLIND LIFTS", "Someone who can see owns the voice. The operator does not guess.", {
+  swp("KERN-SWP-008", "blind-lifts", "BLIND LIFTS", "Someone who can see owns the voice. The operator does not guess.", {
     purpose: "Move a load the operator cannot see without turning the crane into a rumour.",
     scope: "Any lift where the operator cannot see the load, the set, or a part of the path.",
     competency: ["Dedicated signalperson", "Tested radios", "Operator who will stop on silence"],
@@ -202,26 +205,26 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Operator moving on a delayed relay they did not brief", "Blind lift with no dedicated signalperson"],
   }),
-  swp("WHOOP-SWP-009", "rigging-inspection", "RIGGING INSPECTION", "The gear is the truth. The guess is the hazard.", {
+  swp("KERN-SWP-009", "rigging-inspection", "RIGGING INSPECTION", "The gear is the truth. The guess is the hazard.", {
     purpose: "Keep failed slings and hardware off the hook.",
-    scope: "Every sling, shackle, hook, ring, spreader and below-the-hook device WHOOP personnel will load. Part 15 and ASME B30.9 as named.",
+    scope: "Every sling, shackle, hook, ring, spreader and below-the-hook device KERN personnel will load. Part 15 and ASME B30.9 as named.",
     competency: ["Rigger who can apply rejection criteria", "Does not need a supervisor to recognize a cut"],
     hazards: ["Unidentified gear", "Cuts, birdcaging, stretch", "Opened hooks", "Wrong pins", "Heat and chemical damage"],
     controls: ["Inspect before use", "Tag and isolate failures", "Report", "No one-more-lift"],
-    equipment: ["The gear", "Rejection criteria", "Out-of-service tags", "WHOOP-FRM-003"],
+    equipment: ["The gear", "Rejection criteria", "Out-of-service tags", "KERN-FRM-003"],
     procedure: [
       { n: "01", title: "IDENTIFY", body: "Type, WLL, hitch and environment (heat, chemicals, sharp edges)." },
       { n: "02", title: "IDENTIFICATION", body: "Missing tags, illegible ratings, homemade modifications — out of service." },
       { n: "03", title: "BODY", body: "Wire rope: broken wires, kinks, birdcaging, crush, heat. Synthetic: cuts, UV, chemical, stretched stitches. Chain: nicks, stretch, gouge, seized links." },
       { n: "04", title: "HARDWARE", body: "Latch, pin engagement, wear at the saddle, opened throat, bent shackle." },
-      { n: "05", title: "REMOVE OR USE", body: "Fail: tag, isolate, report on WHOOP-RPT-004. Do not leave failed gear on the pile." },
+      { n: "05", title: "REMOVE OR USE", body: "Fail: tag, isolate, report on KERN-RPT-004. Do not leave failed gear on the pile." },
     ],
     prohibited: ["Using gear you have not inspected", "“It will be fine for this one”", "Replacing a shackle pin with a bolt from the truck"],
-    documentation: ["WHOOP-FRM-003", "Damaged rigging report if it fails"],
+    documentation: ["KERN-FRM-003", "Damaged rigging report if it fails"],
   }),
-  swp("WHOOP-SWP-010", "sling-selection", "SLING SELECTION", "The hitch chooses the sling. The leftover in the truck does not.", {
+  swp("KERN-SWP-010", "sling-selection", "SLING SELECTION", "The hitch chooses the sling. The leftover in the truck does not.", {
     purpose: "Pick a sling that can take the tension at this angle, in this hitch, on this edge, in this environment.",
-    scope: "Wire rope, chain and synthetic slings used by WHOOP riggers.",
+    scope: "Wire rope, chain and synthetic slings used by KERN riggers.",
     competency: ["Can calculate tension for the hitch", "Knows WLL, angle and environmental limits"],
     hazards: ["Wrong type for heat or chemicals", "Angle ignored", "Choker on a capacity meant for basket", "Sharp edges"],
     controls: ["Known load", "Known hitch", "Angle calculation", "Manufacturer table", "Edge protection"],
@@ -229,31 +232,31 @@ export const SWPS: Swp[] = [
     procedure: [
       { n: "01", title: "LOAD", body: "Weight and COG. If unknown, stop." },
       { n: "02", title: "HITCH", body: "Vertical, choker or basket. Capacity changes. Do not mix them in your head." },
-      { n: "03", title: "ANGLE", body: "θ from the horizontal. Tension = share / sin θ for a two-leg bridle. Below 30° is not a WHOOP hitch unless an engineer owns it." },
+      { n: "03", title: "ANGLE", body: "θ from the horizontal. Tension = share / sin θ for a two-leg bridle. Below 30° is not a KERN hitch unless an engineer owns it." },
       { n: "04", title: "ENVIRONMENT", body: "Heat, chemicals, sharp edges, basket in a choke — pick the material that survives that, or change the method." },
       { n: "05", title: "CHECK WLL", body: "After hitch and angle, the sling still has capacity. If it does not, change the sling or the hitch — do not hope." },
     ],
     prohibited: ["Selecting by colour or habit", "Knots in slings", "Synthetics on hot work they are not rated for"],
   }),
-  swp("WHOOP-SWP-011", "slinging-loads", "SLINGING LOADS", "Connect the hitch as planned. Test it an inch off the ground.", {
+  swp("KERN-SWP-011", "slinging-loads", "SLINGING LOADS", "Connect the hitch as planned. Test it an inch off the ground.", {
     purpose: "Put the sling on the load so the tension goes where you calculated.",
-    scope: "Making hitches on construction and industrial lifts WHOOP rigs.",
+    scope: "Making hitches on construction and industrial lifts KERN rigs.",
     competency: ["Rigger", "Can explain the hitch they are about to make"],
     hazards: ["Unstable piece", "Sharp edges", "Twisted slings", "Unbalanced COG", "People under"],
     controls: ["Block the load", "Protect edges", "Hardware straight", "Test lift", "Zone"],
     equipment: ["Selected slings and hardware", "Softeners", "Tag lines"],
     procedure: [
       { n: "01", title: "STABLE PIECE", body: "Block or shore so the load cannot roll onto the rigger." },
-      { n: "02", title: "POINTS", body: "Designed lifting points. If none, the method is engineered or it is not a WHOOP hitch." },
+      { n: "02", title: "POINTS", body: "Designed lifting points. If none, the method is engineered or it is not a KERN hitch." },
       { n: "03", title: "APPLY THE HITCH", body: "No twists, no knots, no choke off a guess. Softeners on edges." },
       { n: "04", title: "HARDWARE", body: "Pins in. Latches working. Shackles used as designed." },
       { n: "05", title: "CLEAR AND TEST", body: "Hands off. Zone held. Inch off the ground. Re-rig if it tilts, slips or shocks." },
     ],
     prohibited: ["Wrapping a sling around a hook as a makeshift eye", "Riding the load to “balance it”", "Hands on a live sling"],
   }),
-  swp("WHOOP-SWP-012", "shackles", "SHACKLES", "The right shackle, the right pin, the right way around.", {
+  swp("KERN-SWP-012", "shackles", "SHACKLES", "The right shackle, the right pin, the right way around.", {
     purpose: "Use shackles within WLL, with the pin that belongs to them, in the orientation they were made for.",
-    scope: "Anchor, chain and other shackles used in WHOOP rigging.",
+    scope: "Anchor, chain and other shackles used in KERN rigging.",
     competency: ["Can identify type and WLL", "Knows bow versus pin loading"],
     hazards: ["Bolt in place of a pin", "Side loading the pin", "Opened body", "Unmoused screw pin where required"],
     controls: ["Match pin to body", "Inspect", "Mouse screw pins where required", "Do not point-load a bow unless designed for it"],
@@ -267,9 +270,9 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Mixing pins between shackles", "Using a shackle as a hook by hanging it on an edge", "Welding on a shackle"],
   }),
-  swp("WHOOP-SWP-013", "hooks", "HOOKS", "Latch works. Throat not opened. Tip not loaded.", {
+  swp("KERN-SWP-013", "hooks", "HOOKS", "Latch works. Throat not opened. Tip not loaded.", {
     purpose: "Keep hooks in service only when they can hold the hitch they are asked to hold.",
-    scope: "Crane hooks and rigging hooks WHOOP personnel use.",
+    scope: "Crane hooks and rigging hooks KERN personnel use.",
     competency: ["Knows rejection for opening, wear and latch"],
     hazards: ["Missing latch", "Opened throat", "Tip loading", "Two slings fighting on one hook without a fitting"],
     controls: ["Inspect latch and throat", "Seat the sling in the saddle", "Out of service when the manufacturer says so"],
@@ -282,9 +285,9 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Wiring a latch shut", "Mousing as a substitute for a missing latch on a crane hook", "Shock loading a hook to “seat” it"],
   }),
-  swp("WHOOP-SWP-014", "rigging-hardware", "RIGGING HARDWARE", "Rated, matched, inspected. No mystery steel.", {
+  swp("KERN-SWP-014", "rigging-hardware", "RIGGING HARDWARE", "Rated, matched, inspected. No mystery steel.", {
     purpose: "Keep rings, links, turnbuckles, eyebolts, beam clamps and below-the-hook fittings inside their ratings.",
-    scope: "Hardware other than slings, shackles and hooks used in WHOOP hitches.",
+    scope: "Hardware other than slings, shackles and hooks used in KERN hitches.",
     competency: ["Can read the mark", "Knows when an eyebolt is for tension only"],
     hazards: ["Unmarked fittings", "Eyebolts loaded at an angle they were not made for", "Beam clamps on the wrong flange", "Welded shop specials"],
     controls: ["Identification", "Manufacturer orientation", "Inspect", "Engineer for homemade gear — which means homemade gear is out"],
@@ -297,9 +300,9 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Shop-welded lifting eyes without engineering", "Using construction rebar as a spreader", "C-clamps as lifting gear"],
   }),
-  swp("WHOOP-SWP-015", "load-control", "LOAD CONTROL", "The load goes where the plan said. Not where it drifted.", {
+  swp("KERN-SWP-015", "load-control", "LOAD CONTROL", "The load goes where the plan said. Not where it drifted.", {
     purpose: "Control rotation, swing and travel so people and plant are not in the path.",
-    scope: "All WHOOP lifts once the load is on the hook.",
+    scope: "All KERN lifts once the load is on the hook.",
     competency: ["Operator, rigger and signalperson who briefed the path"],
     hazards: ["Spin", "Pendulum", "Contact", "People in the path", "Wind"],
     controls: ["Tag lines", "Exclusion zone", "Smooth motions", "No side pull"],
@@ -313,9 +316,9 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Pushing a live load with a shoulder", "Side-pulling to drag a piece into place", "People using the load as a work platform"],
   }),
-  swp("WHOOP-SWP-016", "tag-lines", "TAG LINES", "Lines control rotation. Bodies do not.", {
+  swp("KERN-SWP-016", "tag-lines", "TAG LINES", "Lines control rotation. Bodies do not.", {
     purpose: "Use tag lines so the load does not spin into people, steel or the crane.",
-    scope: "WHOOP lifts that require rotational control.",
+    scope: "KERN lifts that require rotational control.",
     competency: ["Knows not to wrap a line on the body", "Can let go"],
     hazards: ["Wrap on wrist or waist", "Standing in the bight", "Pulled under the load", "Line snag"],
     controls: ["Correct length", "Hands that can release", "Position out of the fall zone and the bight"],
@@ -329,9 +332,9 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Wrapping the line on your body", "Tying a tag line to a structure and pulling the crane over it", "Nylon on a sharp edge with no protection"],
   }),
-  swp("WHOOP-SWP-017", "suspended-loads", "SUSPENDED LOADS", "If it is in the air, the zone is alive.", {
+  swp("KERN-SWP-017", "suspended-loads", "SUSPENDED LOADS", "If it is in the air, the zone is alive.", {
     purpose: "Keep people out from under a load and keep loads from hanging unattended.",
-    scope: "Any time a load is off the ground on a WHOOP lift.",
+    scope: "Any time a load is off the ground on a KERN lift.",
     competency: ["Entire crew briefed on the zone"],
     hazards: ["People under", "Unattended hook", "Wind on a hanging piece", "Drift"],
     controls: ["Exclusion zone", "Tag lines", "Do not leave a hanging load", "Land when the plan says land"],
@@ -345,13 +348,13 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Standing under a suspended load", "Leaving a load hanging over a walkway", "Riding the load"],
   }),
-  swp("WHOOP-SWP-018", "working-near-powerlines", "WORKING NEAR POWERLINES", "Assume they are live. MAD is a wall. Table 19-1A.", {
+  swp("KERN-SWP-018", "working-near-powerlines", "WORKING NEAR POWERLINES", "Assume they are live. MAD is a wall. Table 19-1A.", {
     purpose: "Keep boom, load, tag lines and people outside the minimum approach distance BC Hydro and WorkSafeBC Table 19-1A name for this voltage.",
-    scope: "Any WHOOP lift where overhead or buried electrical lines exist, or might exist. BC Hydro system or any other utility — the same table. Buried: look down, locate, do not assume the pad is empty.",
+    scope: "Any KERN lift where overhead or buried electrical lines exist, or might exist. BC Hydro system or any other utility — the same table. Buried: look down, locate, do not assume the pad is empty.",
     competency: ["Operator and supervisor who can name the MAD for this voltage", "Spotter when the boom or load can encroach"],
     hazards: ["Contact", "Arc across a gap", "Step potential", "Unknown voltage", "Lines that look dead", "Tag line as a conductor"],
     controls: ["Identify", "Voltage from the utility — not a guess", "MAD as a hard wall", "Spotter", "Zone-limiting device if practicable (19.24.1(2))", "30M33 if the lift cannot keep clearance"],
-    equipment: ["Spotter", "Range / zone limiting if fitted and used", "WHOOP-FRM-037", "Coded 30M33 if MAD cannot be held"],
+    equipment: ["Spotter", "Range / zone limiting if fitted and used", "KERN-FRM-037", "Coded 30M33 if MAD cannot be held"],
     procedure: [
       { n: "01", title: "FIND THE LINES", body: "Look up. Look down. Ask the site. Do not trust a single drawing. Service drops, distribution, transmission — all of them." },
       { n: "02", title: "VOLTAGE AND MAD", body: "Voltage from BC Hydro or the owner — Express Connect 1 877 520 1355. Table 19-1A is the wall: 1 m under 750 V, 3 m to 75 kV, 4.5 m to 250 kV, 6 m to 550 kV. Unknown: 3 m off distribution, 6 m off transmission, until they verify. If you cannot keep MAD, it is not a crane job until 30M33 is signed." },
@@ -367,23 +370,23 @@ export const SWPS: Swp[] = [
       "Entering MAD without a signed 30M33",
     ],
     emergency:
-      "Do not touch the crane or the load. People back 10 m — 33 m if it is transmission or a manhole. Call 911 and BC Hydro. Operator stays on unless fire or shock. WHOOP notified immediately.",
-    documentation: ["FLHA", "WHOOP-FRM-037", "Coded 30M33 if issued", "This SWP number and revision"],
+      "Do not touch the crane or the load. People back 10 m — 33 m if it is transmission or a manhole. Call 911 and BC Hydro. Operator stays on unless fire or shock. KERN notified immediately.",
+    documentation: ["FLHA", "KERN-FRM-037", "Coded 30M33 if issued", "This SWP number and revision"],
     references: MAD_REFS,
     links: [
-      { href: "/safety/jha/working-near-powerlines", label: "JHA — WORKING NEAR POWERLINES — WHOOP-JHA-013 →" },
-      { href: "/safety/form/powerline-30m33", label: "POWERLINE RECORD — WHOOP-FRM-037 →" },
+      { href: "/safety/jha/working-near-powerlines", label: "JHA — WORKING NEAR POWERLINES — KERN-JHA-013 →" },
+      { href: "/safety/form/powerline-30m33", label: "POWERLINE RECORD — KERN-FRM-037 →" },
       ...MAD_LINKS,
     ],
     tables: MAD_TABLES,
   }),
-  swp("WHOOP-SWP-019", "critical-lifts", "CRITICAL LIFTS", "Slower brief. Named supervision. Written plan. Ego is not a control.", {
+  swp("KERN-SWP-019", "critical-lifts", "CRITICAL LIFTS", "Slower brief. Named supervision. Written plan. Ego is not a control.", {
     purpose: "Run lifts that can hurt a lot of people, or a lot of plant, as critical — not as a louder version of a routine pick.",
     scope: "Loads approaching chart capacity, tandem / multiple crane, lifts over operating plant or public space, non-routine paths, shifting COG, and any lift the site or this program calls critical.",
     competency: ["Named supervisor", "Crew that can repeat the abort", "Engineer when required"],
     hazards: ["Overconfidence", "Skipped hold points", "Unclear roles", "Tandem mismatch"],
     controls: ["Written critical lift plan", "Pre-lift meeting", "Hold points", "Named people"],
-    equipment: ["WHOOP-FRM-007", "Radios", "The crane and rigging in the plan"],
+    equipment: ["KERN-FRM-007", "Radios", "The crane and rigging in the plan"],
     procedure: [
       { n: "01", title: "DECLARE IT", body: "Why it is critical — said in the brief, written on the plan." },
       { n: "02", title: "PLAN", body: "Sequence, weights, radii, rigging, holds, abort, rescue. At the lift." },
@@ -394,20 +397,20 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Calling it critical and then running it like a grocery pick", "Tandem lifts without a plan and a single lead"],
     documentation: [
-      "WHOOP-FRM-007",
-      "WHOOP-FRM-009",
+      "KERN-FRM-007",
+      "KERN-FRM-009",
       "SJP if required",
-      "Flytables: WHOOP-SWP-028 and WHOOP-SJP-001",
-      "Loading platforms: WHOOP-SWP-030 and WHOOP-SJP-003",
+      "Flytables: KERN-SWP-028 and KERN-SJP-001",
+      "Loading platforms: KERN-SWP-030 and KERN-SJP-003",
     ],
   }),
-  swp("WHOOP-SWP-020", "lift-planning", "LIFT PLANNING", "Weight, COG, chart, path, people, abort — before the hook.", {
+  swp("KERN-SWP-020", "lift-planning", "LIFT PLANNING", "Weight, COG, chart, path, people, abort — before the hook.", {
     purpose: "Build a plan that a crew can actually follow.",
     scope: "Non-routine lifts, tight sites, and any lift the supervisor or operator asks to be planned. Routine picks still need an FLHA.",
     competency: ["Supervisor or designated planner", "Operator who will refuse a plan they cannot run"],
     hazards: ["Unknown weight", "Chart fiction", "Path not walked", "Roles implied"],
     controls: ["Facts before ink", "Walk the path", "Named crew", "Hard limits"],
-    equipment: ["WHOOP-FRM-006", "Drawings and shipping data", "Chart"],
+    equipment: ["KERN-FRM-006", "Drawings and shipping data", "Chart"],
     procedure: [
       { n: "01", title: "COLLECT FACTS", body: "Load data, drawings, crane, ground, energy, other work." },
       { n: "02", title: "CHART IT", body: "Configuration, radius, deductions, rigging weight. If it does not fit, change the method — not the numbers." },
@@ -417,9 +420,9 @@ export const SWPS: Swp[] = [
       { n: "06", title: "BRIEF AND KEEP IT", body: "The plan stays at the lift. Drift = stop and rewrite." },
     ],
     prohibited: ["Planning in the cab after the load is hooked", "Using last week’s plan because the steel “looks the same”"],
-    documentation: ["WHOOP-FRM-006", "FLHA", "Rigging plan if used"],
+    documentation: ["KERN-FRM-006", "FLHA", "Rigging plan if used"],
   }),
-  swp("WHOOP-SWP-021", "outrigger-setup", "OUTRIGGER SETUP", "Fully extended unless the chart for short-rig is in the cab and in use.", {
+  swp("KERN-SWP-021", "outrigger-setup", "OUTRIGGER SETUP", "Fully extended unless the chart for short-rig is in the cab and in use.", {
     purpose: "Put the pads where the manufacturer said the reactions go.",
     scope: "Mobile cranes and boom trucks with outriggers or stabilizers.",
     competency: ["Operator for this crane", "Understands this chart’s outrigger positions"],
@@ -435,7 +438,7 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Partial beams “just for this pick” without that configuration on the chart", "Cribbing that is a pile of broken dunnage", "Standing beside a jack under pressure to “watch it”"],
   }),
-  swp("WHOOP-SWP-022", "ground-conditions", "GROUND CONDITIONS", "If the ground cannot hold the crane, it is not a crane job yet.", {
+  swp("KERN-SWP-022", "ground-conditions", "GROUND CONDITIONS", "If the ground cannot hold the crane, it is not a crane job yet.", {
     purpose: "Treat supporting surface as a lifting control, not as dirt.",
     scope: "Setup of mobile cranes and any blocking under outriggers, crawlers or loads being set.",
     competency: ["Operator and supervisor who will stop on bad ground", "Engineer when the site or the load requires it"],
@@ -451,95 +454,155 @@ export const SWPS: Swp[] = [
     ],
     prohibited: ["Setting on plywood over mud and calling it engineered", "Ignoring a locate because “we’ve always set here”"],
   }),
-  swp("WHOOP-SWP-023", "weather-and-wind", "WEATHER AND WIND", "The lower number wins. A breeze is not a number.", {
-    purpose: "Stop the lift when wind, lightning, ice or visibility take the plan away.",
-    scope: "All WHOOP crane and rigging operations outdoors, and indoors where wind through a bay matters.",
-    competency: ["Operator who will believe the anemometer over the superintendent"],
-    hazards: ["Side load from wind", "Load sail", "Lightning", "Ice on the crane and on the load", "Loss of visibility"],
-    controls: ["Manufacturer limit", "Lift plan limit", "Anemometer or site reading", "Lightning rule", "Land when told"],
-    equipment: ["A way to know the wind", "Manufacturer weather limits"],
-    procedure: [
-      { n: "01", title: "LIMITS IN THE BRIEF", body: "Manufacturer and plan. The lower number is the number." },
-      { n: "02", title: "MEASURE", body: "Use a real reading, not a vibe. Account for load sail — a panel is not a block." },
-      { n: "03", title: "LIGHTNING", body: "Boom down. People off the machine and off the load. Resume only when the plan says so." },
-      { n: "04", title: "ICE AND SNOW", body: "Clear the crane as the manufacturer requires. A load with a snow cap has a different weight and a different sail." },
-      { n: "05", title: "STOP", body: "When the number is hit, land or shut down. Argument is not a control." },
+  swp("KERN-SWP-023", "weather-and-wind", "WEATHER AND WIND", "Thunder is the stop. The lower wind number wins. Do not count to 30.", {
+    purpose: "Stop the lift when wind, lightning, ice or visibility take the plan away. Lightning: Environment Canada — if you hear thunder you are in range. The 30/30 first number is not a reason to keep lifting.",
+    scope: "All KERN crane and rigging operations outdoors, and indoors where wind through a bay matters. Tower: 14.92 and 14.93 on top of the manufacturer. Electrical earthing and lightning-protection hardware are the owner’s Technical Safety BC electrical work — not this SWP.",
+    competency: [
+      "Operator who will believe the anemometer over the superintendent",
+      "Can say the lightning abort: thunder, land, shelter, 30 minutes after the last rumble",
     ],
-    prohibited: ["“We’ll sneak this one in” over the wind limit", "Raising a boom into a thunderstorm to finish the day"],
+    hazards: [
+      "Side load from wind",
+      "Load sail",
+      "Lightning on a crane used as a rod",
+      "People touching the crane or the load in a storm",
+      "Ice on the crane and on the load",
+      "Loss of visibility",
+      "Counting to 30 before stopping",
+      "Restarting a struck crane without an engineer",
+    ],
+    controls: [
+      "Manufacturer weather limits at the lift",
+      "Lift plan limit — the lower number wins",
+      "Anemometer or site reading",
+      "Thunder = stop. 30 minutes after last rumble = resume clock",
+      "Land, manufacturer shutdown, people off",
+      "14.16.1 after a strike",
+    ],
+    equipment: ["A way to know the wind", "Manufacturer weather limits", "Shelter named in the brief — building or hard-top vehicle"],
+    procedure: [
+      {
+        n: "01",
+        title: "LIMITS IN THE BRIEF",
+        body: "Manufacturer and plan. The lower wind number is the number. Tower: anemometer readable at the controls (14.92). Shelter named. Lightning abort said. If the crew cannot repeat it, the brief failed.",
+      },
+      {
+        n: "02",
+        title: "MEASURE",
+        body: "Use a real reading, not a vibe. Account for load sail — a panel is not a block. Tower with no OEM wind number: 50 km/h, or less if the load cannot be handled safely (14.92(3)(4)).",
+      },
+      {
+        n: "03",
+        title: "LIGHTNING",
+        body: "Thunder or lightning: stop. Land the load if it can be done without a second incident. Manufacturer out-of-service / weathervane. People off the machine and off the load. Shelter — fully enclosed building with wiring and plumbing, or a hard-top metal vehicle. Cab of a crane is not the plan. If the operator cannot get down before the storm: stay in the cab, hands off metal, nobody on the ground touches the crane, the line or the load. Resume only 30 minutes after the last rumble, then inspect. Do not count flash-to-bang to 30 before stopping. Environment Canada dropped that in 2010.",
+      },
+      {
+        n: "04",
+        title: "ICE, SNOW, COLD",
+        body: "Clear the crane as the manufacturer requires. A load with a snow cap has a different weight and a different sail. Tower: stop below −18 °C unless the manufacturer or engineer says otherwise (14.93).",
+      },
+      {
+        n: "05",
+        title: "AFTER A STRIKE",
+        body: "Treat it as a misadventure (14.16.1). Crane down. Professional engineer inspects and certifies before anyone hooks a load. Electrical installation is the owner — Technical Safety BC Electrical Safety Regulation if the supply or earthing took the hit. KERN does not restart to see if the LMI still works.",
+      },
+      {
+        n: "06",
+        title: "STOP",
+        body: "When the number is hit, land or shut down. Argument is not a control. Visibility gone: 14.48 — radios or stop.",
+      },
+    ],
+    prohibited: [
+      "“We’ll sneak this one in” over the wind limit",
+      "Raising a boom into a thunderstorm to finish the day",
+      "Waiting for a 30-second flash-to-bang before stopping",
+      "Using the crane as shelter when a building or vehicle is available",
+      "Touching the crane, the load or the line during thunder",
+      "Restarting after a strike without 14.16.1 certification",
+    ],
+    emergency:
+      "Thunder during a lift: land if it can be done without a second incident. People off. Shelter. Do not gather under the crane. First aid if anyone is hit — lightning victims carry no charge. 911. Notify the site and KERN.",
+    documentation: ["FLHA", "Wind number in the brief", "Manufacturer weather pages", "14.16.1 engineer letter if struck"],
+    references: LIGHTNING_REFS,
+    tables: LIGHTNING_TABLES,
+    links: [
+      { href: "/safety/jha/weather-and-wind", label: "JHA — WEATHER AND WIND — KERN-JHA-015 →" },
+      ...LIGHTNING_LINKS,
+    ],
   }),
-  swp("WHOOP-SWP-024", "crane-emergency-procedures", "CRANE EMERGENCY PROCEDURES", "People first. Then the machine. Then the story.", {
+  swp("KERN-SWP-024", "crane-emergency-procedures", "CRANE EMERGENCY PROCEDURES", "People first. Then the machine. Then the story.", {
     purpose: "Give the crew one sequence when the crane, the load or a person is in trouble.",
-    scope: "Incidents during WHOOP crane operations: overload alarms, function failure, contact, fire, medical, overturn developing.",
+    scope: "Incidents during KERN crane operations: overload alarms, function failure, contact, fire, medical, overturn developing.",
     competency: ["Entire crew briefed on emergency shutdown for this machine"],
     hazards: ["Second incident", "People approaching a live crane", "Uncontrolled load", "Fire in the engine or cab"],
-    controls: ["Stop", "Safe condition if possible", "Keep people back", "Call for help", "Notify WHOOP"],
+    controls: ["Stop", "Safe condition if possible", "Keep people back", "Call for help", "Notify KERN"],
     equipment: ["This crane’s emergency stops", "Extinguisher in the cab", "Site emergency number"],
     procedure: [
       { n: "01", title: "STOP", body: "Stop motions that make it worse. Emergency stop if that is the control." },
       { n: "02", title: "PEOPLE", body: "Get people out of the zone. First aid. Do not become the second event." },
       { n: "03", title: "LOAD", body: "Land or hold only if it can be done without creating another failure. If it cannot, protect people and wait for a plan." },
       { n: "04", title: "MACHINE", body: "Fire: extinguisher if you are trained and it is small; otherwise get off and keep people back. Overturn developing: do not jump toward the fall." },
-      { n: "05", title: "CALL AND HOLD", body: "Site emergency method. Utility if lines. WHOOP. Scene held for investigation." },
+      { n: "05", title: "CALL AND HOLD", body: "Site emergency method. Utility if lines. KERN. Scene held for investigation." },
     ],
     prohibited: ["Restarting to “see if it does it again”", "Crowd around a crane in contact with a line", "Moving a seriously injured person except from immediate danger"],
-    documentation: ["Incident report WHOOP-FRM-010", "Machine log"],
+    documentation: ["Incident report KERN-FRM-010", "Machine log"],
   }),
-  swp("WHOOP-SWP-025", "removal-of-damaged-rigging", "REMOVAL OF DAMAGED RIGGING FROM SERVICE", "Tag it. Isolate it. Tell someone. No one more lift.", {
+  swp("KERN-SWP-025", "removal-of-damaged-rigging", "REMOVAL OF DAMAGED RIGGING FROM SERVICE", "Tag it. Isolate it. Tell someone. No one more lift.", {
     purpose: "Make sure failed gear cannot be picked up by the next rigger.",
-    scope: "Any sling or hardware that fails inspection or is damaged in use on a WHOOP dispatch.",
+    scope: "Any sling or hardware that fails inspection or is damaged in use on a KERN dispatch.",
     competency: ["Anyone on the crew can stop gear", "Rigger completes the tag and report"],
     hazards: ["Failed gear left on the pile", "Unmarked damage", "Someone “borrowing” a cut sling"],
-    controls: ["Immediate removal", "Physical isolation", "Tag", "Report WHOOP-RPT-004"],
+    controls: ["Immediate removal", "Physical isolation", "Tag", "Report KERN-RPT-004"],
     equipment: ["Out-of-service tags", "A place that is not the working pile"],
     procedure: [
       { n: "01", title: "STOP USING IT", body: "The hitch comes off. The lift waits or is re-rigged with serviceable gear." },
       { n: "02", title: "TAG", body: "What failed, when, who. Tied to the item." },
       { n: "03", title: "ISOLATE", body: "Off the working pile. In a reject bin, a locked bag, or the truck’s quarantine — not beside the good slings." },
-      { n: "04", title: "REPORT", body: "WHOOP-RPT-004 the same shift. Site if it is their gear." },
-      { n: "05", title: "DO NOT REPAIR IN THE FIELD", body: "No wrapping tape as a WLL. No welding a hook. Destroy or return through WHOOP or the owner." },
+      { n: "04", title: "REPORT", body: "KERN-RPT-004 the same shift. Site if it is their gear." },
+      { n: "05", title: "DO NOT REPAIR IN THE FIELD", body: "No wrapping tape as a WLL. No welding a hook. Destroy or return through KERN or the owner." },
     ],
     prohibited: ["Leaving a cut sling “so nobody trips on it” on the pile", "Cutting the tag off because the sling is “still good in the middle”"],
-    documentation: ["WHOOP-FRM-003", "WHOOP-RPT-004"],
+    documentation: ["KERN-FRM-003", "KERN-RPT-004"],
   }),
-  swp("WHOOP-SWP-026", "lockout", "LOCKOUT / ISOLATION", "If you are not operating it, the energy is isolated. Part 10.", {
+  swp("KERN-SWP-026", "lockout", "LOCKOUT / ISOLATION", "If you are not operating it, the energy is isolated. Part 10.", {
     purpose: "Keep a person off stored energy — hoist, slew, luff, travel, hydraulics, electrical — when the work is service, inspection beyond pre-use, rescue, or anything that puts a body in the machine.",
-    scope: "WHOOP personnel on a crane they are not operating: maintenance they are assigned, climbing past the cab for inspection, rescue, or working on WHOOP-controlled tools and vehicles. Not a substitute for the owner’s lockout procedure on that crane. Not tower jumping — see WHOOP-SWP-027.",
+    scope: "KERN personnel on a crane they are not operating: maintenance they are assigned, climbing past the cab for inspection, rescue, or working on KERN-controlled tools and vehicles. Not a substitute for the owner’s lockout procedure on that crane. Not tower jumping — see KERN-SWP-027.",
     competency: ["Understands this machine’s isolation. Follows the owner’s lockout where it exists. Does not invent a padlock on a live hoist."],
     hazards: ["Unexpected hoist or slew", "Hydraulic dump", "Electrical contact", "Someone starting the crane", "Stored energy in a luffing ram"],
     controls: ["Identify energy", "Isolate", "Lock and tag", "Verify zero energy", "One lock per person"],
     equipment: ["Personal lock", "Tag", "The owner’s lockout devices for this crane"],
     procedure: [
       { n: "01", title: "NAME THE WORK", body: "What is being done, on which machine, which energy. If you cannot name it, you are not isolating it." },
-      { n: "02", title: "OWNER’S PROCEDURE", body: "Use the lockout written for this crane when it exists. WHOOP does not override a stricter owner procedure." },
+      { n: "02", title: "OWNER’S PROCEDURE", body: "Use the lockout written for this crane when it exists. KERN does not override a stricter owner procedure." },
       { n: "03", title: "ISOLATE AND LOCK", body: "Controls off. Energy isolated. Personal lock and tag. One person, one lock. Do not lend a key." },
       { n: "04", title: "VERIFY", body: "Try to start. Confirm the hoist, slew and luff will not move. Residual hydraulic or raised jib — released or blocked as the manufacturer says." },
       { n: "05", title: "WORK, THEN REMOVE YOUR LOCK", body: "Do the work. Remove only your lock. If the job runs past a shift, the handover of locks is a procedure — not a text message." },
     ],
     prohibited: ["Reaching into a machine that can still hoist", "Sharing a lock because ‘we’re both on it’", "Bypassing a limit to ‘just inch it’ during service"],
-    documentation: ["Owner lockout for this serial", "WHOOP-FRM-002 / 027 if the machine was down for a defect"],
+    documentation: ["Owner lockout for this serial", "KERN-FRM-002 / 027 if the machine was down for a defect"],
     emergency: "If energy appears during the work: get clear. Re-isolate. Do not finish the job on a live machine.",
   }),
-  swp("WHOOP-SWP-027", "tower-erection-climbing", "TOWER ERECTION, CLIMBING AND DISMANTLING", "Not a routine operator dispatch. Qualified supervisor. Notice of Project. 14.73.2.", {
-    purpose: "Stop WHOOP from treating jumping a tower like running a shift. If this is the work, it is planned as this work.",
+  swp("KERN-SWP-027", "tower-erection-climbing", "TOWER ERECTION, CLIMBING AND DISMANTLING", "Not a routine operator dispatch. Qualified supervisor. Notice of Project. 14.73.2.", {
+    purpose: "Stop KERN from treating jumping a tower like running a shift. If this is the work, it is planned as this work.",
     scope: "Tower-crane erection, climbing (increasing height), repositioning and dismantling. Not climbing the ladder to the cab to operate. Not a how-to for jumping a crane.",
-    competency: ["Work under a qualified supervisor as 14.73.2 and 14.73.3 require. WHOOP does not send an operator to jump a crane because they have a tower ticket."],
+    competency: ["Work under a qualified supervisor as 14.73.2 and 14.73.3 require. KERN does not send an operator to jump a crane because they have a tower ticket."],
     hazards: ["Unplanned jump", "Missing NOP", "No qualified supervisor", "People under a climbing frame", "Wind during a climb", "Lockout not done"],
-    controls: ["This is a planned operation or it is not WHOOP work", "Notice of Project at least two weeks before, as 14.73.3 requires", "Qualified supervisor", "Manufacturer sequence", "Exclusion zone", "Lockout"],
-    equipment: ["This crane’s erection / climbing manual", "The climbing frame for this serial", "WHOOP-SWP-026"],
+    controls: ["This is a planned operation or it is not KERN work", "Notice of Project at least two weeks before, as 14.73.3 requires", "Qualified supervisor", "Manufacturer sequence", "Exclusion zone", "Lockout"],
+    equipment: ["This crane’s erection / climbing manual", "The climbing frame for this serial", "KERN-SWP-026"],
     procedure: [
       { n: "01", title: "CONFIRM THE DISPATCH", body: "The work is erection, climbing or dismantling — said in writing. A tower operator call is not this call." },
       { n: "02", title: "SUPERVISOR AND NOP", body: "Qualified supervisor named. Notice of Project to WorkSafeBC on the timeline 14.73.3 names. If either is missing, the work does not start." },
       { n: "03", title: "MANUAL AND CONFIGURATION", body: "This serial, this tower system, this climbing frame, this tie-in. The manufacturer’s sequence is the sequence." },
       { n: "04", title: "ZONE AND WEATHER", body: "Exclusion under the work. Wind and weather as the manufacturer and the plan. People off the ground under the frame." },
-      { n: "05", title: "ISOLATE WHEN REQUIRED", body: "Lockout / isolation when anyone is in the machine for this work. WHOOP-SWP-026." },
+      { n: "05", title: "ISOLATE WHEN REQUIRED", body: "Lockout / isolation when anyone is in the machine for this work. KERN-SWP-026." },
       { n: "06", title: "STOP", body: "Any step that is not in the manual, any missing pin, any unplanned person in the zone — stop. Rewrite. Do not improvise a jump." },
     ],
     prohibited: ["An operator jumping a crane as a favour", "Skipping the NOP because the pour is tomorrow", "Using a different manufacturer’s climbing notes"],
     documentation: ["NOP-TC", "Site binder checklist", "Qualified supervisor named", "Manufacturer erection / climbing procedure for this serial"],
   }),
-  swp("WHOOP-SWP-028", "flytable-cycling", "FLYTABLE CYCLING", "Drop, roll, fly, land. Critical lift. The drawing and the OEM cycle win.", {
-    purpose: "Give the WHOOP crew one method for flying a table-form from floor to floor: designated pick points, no pulling the table out, confirmation-loop radios, holds. Formwork carpentry stays with the host.",
-    scope: "WHOOP operator, rigger and signalperson on a flytable / flyform cycle. Not a how-to for dropping jacks, rolling dollies or landing props. Those belong to the manufacturer cycle and the site-specific engineered drawing. Corner and nontypical tables: WHOOP-SWP-029 on top of this procedure.",
+  swp("KERN-SWP-028", "flytable-cycling", "FLYTABLE CYCLING", "Drop, roll, fly, land. Critical lift. The drawing and the OEM cycle win.", {
+    purpose: "Give the KERN crew one method for flying a table-form from floor to floor: designated pick points, no pulling the table out, confirmation-loop radios, holds. Formwork carpentry stays with the host.",
+    scope: "KERN operator, rigger and signalperson on a flytable / flyform cycle. Not a how-to for dropping jacks, rolling dollies or landing props. Those belong to the manufacturer cycle and the site-specific engineered drawing. Corner and nontypical tables: KERN-SWP-029 on top of this procedure.",
     responsibilities: FLYTABLE_ROLES,
     competency: [
       "BC Crane Safety certificate for this crane class",
@@ -571,18 +634,18 @@ export const SWPS: Swp[] = [
       "Rigging named on the drawing — slings, shackles, OEM lifting adapters / truss picks / Safety Pin-Bolts",
       "Radios on the named channel",
       "Tag lines",
-      "WHOOP-FRM-007, WHOOP-FRM-009, WHOOP-FRM-052",
+      "KERN-FRM-007, KERN-FRM-009, KERN-FRM-052",
     ],
     procedure: [
       {
         n: "01",
         title: "GATE",
-        body: "Engineered drawing for this table ID and this floor. Manufacturer cycle at the lift. Weight and COG known (14.36). Pick points and sling lengths as the drawing. Wind — the lower of crane, manufacturer, this SJP. WHOOP-SJP-001 / FRM-052 filled. Critical lift plan. Radios tested, confirmation loop, both floors. Pre-lift meeting immediately before this cycle. Corner or nontypical: WHOOP-SWP-029 and that plan. If any of that is missing, the hook does not take the table.",
+        body: "Engineered drawing for this table ID and this floor. Manufacturer cycle at the lift. Weight and COG known (14.36). Pick points and sling lengths as the drawing. Wind — the lower of crane, manufacturer, this SJP. KERN-SJP-001 / FRM-052 filled. Critical lift plan. Radios tested, confirmation loop, both floors. Pre-lift meeting immediately before this cycle. Corner or nontypical: KERN-SWP-029 and that plan. If any of that is missing, the hook does not take the table.",
       },
       {
         n: "02",
         title: "DROP",
-        body: "Formwork drops the table per the manufacturer and the drawing — jacks, lowering devices, reshores. WHOOP hook is not a substitute for lowering jacks. Confirm the table is free of the slab, pins and spindles as the OEM, nothing snagged. Crane on standby. Do not take load to strip.",
+        body: "Formwork drops the table per the manufacturer and the drawing — jacks, lowering devices, reshores. KERN hook is not a substitute for lowering jacks. Confirm the table is free of the slab, pins and spindles as the OEM, nothing snagged. Crane on standby. Do not take load to strip.",
       },
       {
         n: "03",
@@ -615,28 +678,28 @@ export const SWPS: Swp[] = [
       "Last floor’s SJP for this table",
     ],
     emergency:
-      "Table hung up, rolling toward the edge, dropped object, person in the zone, wind pickup, lost radio — stop. Land if it can be done without a second incident. Do not pull. First aid. Notify the site and WHOOP. Hold the scene.",
+      "Table hung up, rolling toward the edge, dropped object, person in the zone, wind pickup, lost radio — stop. Land if it can be done without a second incident. Do not pull. First aid. Notify the site and KERN. Hold the scene.",
     documentation: [
-      "WHOOP-SJP-001 / FRM-052 for this cycle",
-      "WHOOP-FRM-007 critical lift plan",
-      "WHOOP-FRM-009 pre-lift meeting",
+      "KERN-SJP-001 / FRM-052 for this cycle",
+      "KERN-FRM-007 critical lift plan",
+      "KERN-FRM-009 pre-lift meeting",
       "Engineered drawing revision for this table",
       "Manufacturer cycle at the lift",
       "FLHA",
     ],
     references: FLYTABLE_REFS,
     links: [
-      { href: "/safety/sjp/flytable-cycle", label: "SJP — THIS CYCLE — WHOOP-SJP-001 →" },
-      { href: "/safety/jha/flytable-cycling", label: "JHA — FLYTABLE CYCLING — WHOOP-JHA-011 →" },
+      { href: "/safety/sjp/flytable-cycle", label: "SJP — THIS CYCLE — KERN-SJP-001 →" },
+      { href: "/safety/jha/flytable-cycling", label: "JHA — FLYTABLE CYCLING — KERN-JHA-011 →" },
       ...FLYTABLE_LINKS,
     ],
   }),
-  swp("WHOOP-SWP-029", "corner-nontypical-flytables", "CORNER AND NONTIPICAL FLYTABLES", "Awkward shape. Reduced stability. Not the typical SJP.", {
+  swp("KERN-SWP-029", "corner-nontypical-flytables", "CORNER AND NONTIPICAL FLYTABLES", "Awkward shape. Reduced stability. Not the typical SJP.", {
     purpose: "Stop a corner or nontypical table from being flown on the typical cycle. WorkSafeBC and BC Crane Safety call these out as a separate plan.",
-    scope: "WHOOP crew when the table is a corner, infill, reduced-width, or any table the drawing or the engineer marks nontypical. Do WHOOP-SWP-028 as well. This SWP does not replace it.",
+    scope: "KERN crew when the table is a corner, infill, reduced-width, or any table the drawing or the engineer marks nontypical. Do KERN-SWP-028 as well. This SWP does not replace it.",
     responsibilities: FLYTABLE_ROLES,
     competency: [
-      "Same as WHOOP-SWP-028",
+      "Same as KERN-SWP-028",
       "Can say why this table is not typical, and what the special plan changes",
     ],
     hazards: [
@@ -652,7 +715,7 @@ export const SWPS: Swp[] = [
       "Extra tag line and extra spotter if the plan names them",
       "Slower. More holds. Stop and discuss.",
     ],
-    equipment: ["WHOOP-SWP-028 equipment", "The special handling plan for this table", "WHOOP-SJP-002 / FRM-052 marked nontypical"],
+    equipment: ["KERN-SWP-028 equipment", "The special handling plan for this table", "KERN-SJP-002 / FRM-052 marked nontypical"],
     procedure: [
       {
         n: "01",
@@ -667,7 +730,7 @@ export const SWPS: Swp[] = [
       {
         n: "03",
         title: "THEN THE CYCLE",
-        body: "Do WHOOP-SWP-028 on top of that plan. Gate, drop, roll, attach, fly, land. The crane still does not pull the table out.",
+        body: "Do KERN-SWP-028 on top of that plan. Gate, drop, roll, attach, fly, land. The crane still does not pull the table out.",
       },
       {
         n: "04",
@@ -681,22 +744,22 @@ export const SWPS: Swp[] = [
       "Skipping the extra tag line or spotter the special plan names",
     ],
     emergency:
-      "Same as WHOOP-SWP-028. A nontypical table that starts to spin is a stop, not a recovery with more hoist.",
+      "Same as KERN-SWP-028. A nontypical table that starts to spin is a stop, not a recovery with more hoist.",
     documentation: [
-      "WHOOP-SJP-002 / FRM-052 marked nontypical",
+      "KERN-SJP-002 / FRM-052 marked nontypical",
       "Special handling plan attached",
-      "WHOOP-SWP-028 documentation",
+      "KERN-SWP-028 documentation",
     ],
     references: FLYTABLE_REFS,
     links: [
-      { href: "/safety/sjp/corner-nontypical-flytable", label: "SJP — CORNER / NONTIPICAL — WHOOP-SJP-002 →" },
-      { href: "/safety/jha/corner-nontypical-flytables", label: "JHA — CORNER AND NONTIPICAL — WHOOP-JHA-012 →" },
+      { href: "/safety/sjp/corner-nontypical-flytable", label: "SJP — CORNER / NONTIPICAL — KERN-SJP-002 →" },
+      { href: "/safety/jha/corner-nontypical-flytables", label: "JHA — CORNER AND NONTIPICAL — KERN-JHA-012 →" },
       ...FLYTABLE_LINKS,
     ],
   }),
-  swp("WHOOP-SWP-030", "loading-platform-reposition", "LOADING PLATFORM INSTALL AND REPOSITION", "Empty. Four designated points. Props released. Then fly. Critical lift. The OEM user information wins.", {
-    purpose: "Give the WHOOP crew one method for installing, repositioning or striking a cantilever loading platform by crane. Rails, props, clamps and daily extend / retract stay with the host.",
-    scope: "WHOOP operator, rigger and signalperson on a Doka, SuperDeck, CantiDeck, PERI RCS MP, DOC or other OEM loading platform. Not a how-to for propping, clamping, through-slab anchors, or rolling a SuperDeck in. Those belong to the manufacturer and the host. Landing materials onto a deck already in service is a separate lift — this SWP still names the WLL rule.",
+  swp("KERN-SWP-030", "loading-platform-reposition", "LOADING PLATFORM INSTALL AND REPOSITION", "Empty. Four designated points. Props released. Then fly. Critical lift. The OEM user information wins.", {
+    purpose: "Give the KERN crew one method for installing, repositioning or striking a cantilever loading platform by crane. Rails, props, clamps and daily extend / retract stay with the host.",
+    scope: "KERN operator, rigger and signalperson on a Doka, SuperDeck, CantiDeck, PERI RCS MP, DOC or other OEM loading platform. Not a how-to for propping, clamping, through-slab anchors, or rolling a SuperDeck in. Those belong to the manufacturer and the host. Landing materials onto a deck already in service is a separate lift — this SWP still names the WLL rule.",
     responsibilities: PLATFORM_ROLES,
     competency: [
       "BC Crane Safety certificate for this crane class",
@@ -728,13 +791,13 @@ export const SWPS: Swp[] = [
       "4-leg chain and hardware as the OEM — Doka 4-part 3.20 m, β ≤ 30° if that is this serial",
       "Tag lines",
       "Radios on the named channel",
-      "WHOOP-FRM-007, WHOOP-FRM-009, WHOOP-FRM-053",
+      "KERN-FRM-007, KERN-FRM-009, KERN-FRM-053",
     ],
     procedure: [
       {
         n: "01",
         title: "GATE",
-        body: "OEM user information for this serial at the lift. Type plate. Engineered drawing if the site has one. Dead weight known (14.36) — empty, plus rigging. Not the service WLL. Pick points only as the OEM names. Wind — the lower of crane, manufacturer, this SJP. Doka cites 72 km/h while repositioning; a lower number still wins. WHOOP-SJP-003 / FRM-053 filled. Critical lift plan. Radios tested. Pre-lift meeting immediately before this lift. Retractable or fixed — said. If any of that is missing, the hook does not take the deck.",
+        body: "OEM user information for this serial at the lift. Type plate. Engineered drawing if the site has one. Dead weight known (14.36) — empty, plus rigging. Not the service WLL. Pick points only as the OEM names. Wind — the lower of crane, manufacturer, this SJP. Doka cites 72 km/h while repositioning; a lower number still wins. KERN-SJP-003 / FRM-053 filled. Critical lift plan. Radios tested. Pre-lift meeting immediately before this lift. Retractable or fixed — said. If any of that is missing, the hook does not take the deck.",
       },
       {
         n: "02",
@@ -749,7 +812,7 @@ export const SWPS: Swp[] = [
       {
         n: "04",
         title: "RELEASE",
-        body: "Host releases props, clamps or through-slab anchors to the OEM. WHOOP does not invent that sequence. CantiDeck: do not lift until the props are released. Take a little load, confirm free, then hoist. Do not strip with the crane.",
+        body: "Host releases props, clamps or through-slab anchors to the OEM. KERN does not invent that sequence. CantiDeck: do not lift until the props are released. Take a little load, confirm free, then hoist. Do not strip with the crane.",
       },
       {
         n: "05",
@@ -769,7 +832,7 @@ export const SWPS: Swp[] = [
       {
         n: "08",
         title: "RETRACTABLE",
-        body: "SuperDeck, CantiDeck Super Roller, DOC: daily extend and retract is host. Preston: no crane licence to roll it. WHOOP is not hooked while it moves as a drawer. Install, reposition and strike stay this SWP — empty, four points, props released.",
+        body: "SuperDeck, CantiDeck Super Roller, DOC: daily extend and retract is host. Preston: no crane licence to roll it. KERN is not hooked while it moves as a drawer. Install, reposition and strike stay this SWP — empty, four points, props released.",
       },
     ],
     prohibited: [
@@ -782,11 +845,11 @@ export const SWPS: Swp[] = [
       "Last floor’s SJP for this serial",
     ],
     emergency:
-      "Deck hung up, dumped at the edge, dropped object, person in the zone, wind pickup, lost radio — stop. Land if it can be done without a second incident. Do not pull. First aid. Notify the site and WHOOP. Hold the scene.",
+      "Deck hung up, dumped at the edge, dropped object, person in the zone, wind pickup, lost radio — stop. Land if it can be done without a second incident. Do not pull. First aid. Notify the site and KERN. Hold the scene.",
     documentation: [
-      "WHOOP-SJP-003 / FRM-053 for this deck",
-      "WHOOP-FRM-007 critical lift plan",
-      "WHOOP-FRM-009 pre-lift meeting",
+      "KERN-SJP-003 / FRM-053 for this deck",
+      "KERN-FRM-007 critical lift plan",
+      "KERN-FRM-009 pre-lift meeting",
       "OEM user information for this serial",
       "Type plate / WLL",
       "FLHA",
@@ -794,8 +857,8 @@ export const SWPS: Swp[] = [
     references: PLATFORM_REFS,
     tables: PLATFORM_TABLES,
     links: [
-      { href: "/safety/sjp/loading-platform", label: "SJP — THIS DECK — WHOOP-SJP-003 →" },
-      { href: "/safety/jha/loading-platform-reposition", label: "JHA — LOADING PLATFORM — WHOOP-JHA-014 →" },
+      { href: "/safety/sjp/loading-platform", label: "SJP — THIS DECK — KERN-SJP-003 →" },
+      { href: "/safety/jha/loading-platform-reposition", label: "JHA — LOADING PLATFORM — KERN-JHA-014 →" },
       ...PLATFORM_LINKS,
     ],
   }),

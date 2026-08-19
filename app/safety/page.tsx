@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ProvenName } from "@/components/ProvenMark";
 import { SafetyFind } from "@/components/SafetyFind";
 import { StandardsList } from "@/components/StandardsList";
 import { safetyCatalog } from "@/lib/ohs/catalog";
@@ -7,9 +8,9 @@ import { FIND_NOW, safetyByGroup } from "@/lib/safety";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Safety Program",
+  title: "Proven",
   description:
-    "WHOOP is a safety company. The crew is how you get us. Read how we expect crane and rigging work to be performed — CSA Z150 / Z248, WorkSafeBC, BC Crane Safety, Technical Safety BC, ASME B30, manufacturer requirements and site policies.",
+    "Proven is KERN's safety system. Read how we expect crane and rigging work to be performed — CSA Z150 / Z248, WorkSafeBC, BC Crane Safety, Technical Safety BC, ASME B30, manufacturer requirements and site policies.",
 };
 
 export default function SafetyIndexPage() {
@@ -21,16 +22,15 @@ export default function SafetyIndexPage() {
       <header className="doc-title">
         <p className="mono steel">PUBLIC DOCUMENT</p>
         <h1 className="display">
-          OUR SAFETY
-          <br />
-          PROGRAM
+          <ProvenName />
           <br />
           IS OPEN.
         </h1>
         <p className="lede mt-2">
-          {SITE.position} Safety isn&apos;t proprietary. Clients, workers and
-          contractors should be able to see how we expect work to be performed
-          before they hire us. No request form. No expiring link. No PDF as the
+          Proven is the platform behind the lift. People, process and
+          documentation — organized, verified and accountable. Clients, workers
+          and contractors can read how we expect work to be performed before
+          they hire us. No request form. No expiring link. No PDF as the
           primary experience.
         </p>
       </header>
@@ -73,18 +73,21 @@ export default function SafetyIndexPage() {
         <p className="lede mt">
           Where these conflict, the stricter applicable requirement wins. Law
           always wins. The marks name the bodies. They are not an endorsement
-          of WHOOP.
+          of KERN.
         </p>
         <StandardsList />
       </div>
       <p className="lede mt">
-        WHOOP is COR® Certified through the BC Construction Safety Alliance.
-        That certification is of our occupational health and safety management
-        system — not a claim that incidents will never occur.{" "}
+        KERN is COR® Certified through the BC Construction Safety Alliance.
+        That certification is of Proven — our occupational health and safety
+        management system — not a claim that incidents will never occur.{" "}
         <Link href="/#cor">COR CERTIFIED →</Link>
       </p>
       <p className="mono steel doc-colophon">
-        WHOOP Safety Program. {SITE.legalName}. Current version on this site.
+        <ProvenName />
+        <span>
+          {SITE.legalName}. Current version on this site.
+        </span>
       </p>
     </article>
   );

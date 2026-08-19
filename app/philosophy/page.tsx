@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BELIEFS, PRINCIPLES } from "@/lib/site";
+import { BELIEFS, PRINCIPLES, SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Philosophy",
   description:
-    "No bullshit. Just good people doing heavy work. WHOOP's operating philosophy for crane and rigging crews.",
+    "No bullshit. Just good people doing heavy work. KERN's operating philosophy for crane and rigging crews.",
 };
 
 export default function PhilosophyPage() {
@@ -23,14 +23,14 @@ export default function PhilosophyPage() {
       </header>
       <div className="split wrap top" style={{ paddingBottom: "4rem" }}>
         <p className="lede-lg">
-          WHOOP is a safety company. The crew is how you get us. Operators,
-          riggers, signalpersons — people who already work to the standard.
+          KERN is a complete crane operations and rigging company. Operators,
+          riggers, signalpersons, crane supervisors and safety support — people
+          and systems, not just labour.
         </p>
         <p className="lede">
           Competent people matter. Safety information should be accessible.
           Documentation should be useful. Management should keep its promises.
-          We are a union-friendly shop. If WHOOP says it will show up, WHOOP
-          shows up.
+          If KERN says it will show up, KERN shows up.
         </p>
       </div>
       <section className="section wrap">
@@ -67,7 +67,7 @@ export default function PhilosophyPage() {
             HIRE A CREW
           </Link>
           <Link className="btn btn-ghost" href="/safety">
-            VIEW OUR SAFETY PROGRAM
+            READ {SITE.system}
           </Link>
         </div>
       </section>

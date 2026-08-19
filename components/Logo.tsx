@@ -1,3 +1,5 @@
+import { SITE } from "@/lib/site";
+
 export function Wordmark() {
-  return <span className="brand">WHOOP</span>;
+  return <span className="brand">{SITE.name}</span>;
 }

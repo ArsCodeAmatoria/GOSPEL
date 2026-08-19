@@ -16,7 +16,7 @@ export default function BinderIndexPage() {
         <h1 className="display">WHICH MACHINE.</h1>
         <p className="lede mt">
           Tower or self-erect. The checklist is mandatory with the Notice of
-          Project — Tower Crane. Work through the items. Download the WHOOP
+          Project — Tower Crane. Work through the items. Download the KERN
           copy. Official templates stay on BC Crane Safety and WorkSafeBC.
         </p>
         <p className="doc-cta">

@@ -3,8 +3,8 @@ import type { DocControl, DocLink, DocTable, RoleLine } from "./types";
 export const OHS_META = {
   revision: "01",
   effective: "2026-09-01",
-  owner: "WHOOP Safety",
-  approvedBy: "WHOOP",
+  owner: "KERN Safety",
+  approvedBy: "KERN",
   review: "2027-09-01",
 } as const;
 
@@ -14,12 +14,12 @@ export function control(number: string, title: string): DocControl {
 
 export const CREW_ROLES: RoleLine[] = [
   {
-    title: "WHOOP",
+    title: "KERN",
     body: "Publishes this document, verifies competency before dispatch, and backs stop-work. Does not own the client’s site.",
   },
   {
     title: "Supervisor",
-    body: "Confirms the plan, the crew, the zone and the stop criteria. Owns whether the hook moves when WHOOP is supplying supervision.",
+    body: "Confirms the plan, the crew, the zone and the stop criteria. Owns whether the hook moves when KERN is supplying supervision.",
   },
   {
     title: "Crane operator",
@@ -125,10 +125,86 @@ export const MAD_REFS = [
   "BC Hydro: fallen line or contact — 10 m, call 911. Downed transmission or manhole — 33 m.",
 ];
 
+export const LIGHTNING_RULE: DocTable = {
+  caption: "LIGHTNING — KERN STOP. THUNDER IS THE TRIGGER. DO NOT COUNT TO 30.",
+  columns: ["TRIGGER", "ACTION"],
+  rows: [
+    ["Thunder heard, or lightning seen", "Stop the lift. Land. Manufacturer shutdown. Shelter. Do not wait for a 30-second count."],
+    ["30 minutes after the last rumble", "Resume clock. Then inspect. Manufacturer weather limits still apply."],
+    ["Strike, or suspected strike, on the crane", "Misadventure. Crane down until a professional engineer certifies it. 14.16.1."],
+  ],
+};
+
+export const LIGHTNING_BANG: DocTable = {
+  caption: "FLASH-TO-BANG — CITE ONLY. SOUND ~300 m/s. NOT A REASON TO KEEP LIFTING.",
+  columns: ["SECONDS AFTER FLASH", "~DISTANCE", "KERN"],
+  rows: [
+    ["Thunder — any rumble", "Striking distance", "ECCC: if you hear it, you are in range. Stop."],
+    ["10 s", "~3 km", "Already too close."],
+    ["30 s", "~10 km", "Old 30/30 first number. Environment Canada dropped it in 2010. Do not wait for this."],
+  ],
+};
+
+export const WIND_TOWER: DocTable = {
+  caption: "TOWER CRANE WIND AND COLD — PART 14. OEM STILL WINS IF LOWER.",
+  columns: ["RULE", "REG"],
+  rows: [
+    ["Anemometer on the crown, apex or cab. Readout at the controls.", "14.92(1)(2)"],
+    ["Stop when a load cannot be handled safely because of wind.", "14.92(3)"],
+    ["No manufacturer wind number: 50 km/h, or less if the load is a sail.", "14.92(4)"],
+    ["Erect, operate or dismantle only at or below the manufacturer upper limit.", "14.92(6)"],
+    ["Stop below −18 °C, or as the manufacturer or engineer specifies.", "14.93"],
+  ],
+};
+
+export const LIGHTNING_TABLES: DocTable[] = [LIGHTNING_RULE, LIGHTNING_BANG, WIND_TOWER];
+
+export const LIGHTNING_LINKS: DocLink[] = [
+  {
+    href: "https://www.canada.ca/en/environment-climate-change/services/lightning/safety/overview.html",
+    label: "ECCC — WHEN THUNDER ROARS, GO INDOORS →",
+    note: "Official Canada. Wait 30 minutes after the last rumble. The first 30 of 30/30 is not the stop.",
+    external: true,
+  },
+  {
+    href: "https://www.ccohs.ca/oshanswers/safety_haz/weather/lightning.html",
+    label: "CCOHS — WEATHER, LIGHTNING →",
+    note: "If you can hear thunder, you are within striking distance. Shelter 30 minutes after last thunder.",
+    external: true,
+  },
+  {
+    href: "https://www.worksafebc.com/en/law-policy/occupational-health-safety/searchable-ohs-regulation/ohs-regulation/part-14-cranes-and-hoists",
+    label: "WORKSAFEBC — PART 14 CRANES AND HOISTS →",
+    note: "14.2 manufacturer. 14.16.1 misadventure. 14.92 wind. 14.93 temperature.",
+    external: true,
+  },
+  {
+    href: "https://www.technicalsafetybc.ca/",
+    label: "TECHNICAL SAFETY BC →",
+    note: "Electrical Safety Regulation / BC Electrical Code — crane power, earthing, lightning-protection hardware. Owner. Not a 30/30 crane rule.",
+    external: true,
+  },
+];
+
+export const LIGHTNING_REFS = [
+  "Environment and Climate Change Canada — When thunder roars, go indoors. If you hear thunder you are within striking distance. Wait at least 30 minutes after the last rumble.",
+  "ECCC dropped the first 30 of the 30/30 rule in 2010. People waited until a 30-second flash-to-bang. That is too late. KERN does not count to 30 before stopping.",
+  "CCOHS Weather — Lightning. ~300 m per second flash-to-bang. No safe place outdoors. Fully enclosed building with wiring and plumbing, or a hard-top metal vehicle.",
+  "Workers Compensation Act s. 21 — known or reasonably foreseeable hazards. Lightning on a crane is foreseeable.",
+  "OHS Regulation 14.2 — operate as specified by the manufacturer or a professional engineer.",
+  "14.12 — manufacturer’s manual reasonably accessible. Weather shutdown as that manual.",
+  "14.16.1 — misadventure includes any circumstance that may impair safe operation. A lightning strike is that. Crane down until a professional engineer certifies it.",
+  "14.34(2) — operator familiar with operating instructions. 14.37.1 — full control while the equipment is in use.",
+  "14.48 — atmospheric conditions that make hand signals hazardous. Radios or stop.",
+  "14.92 — tower anemometer, stop for wind, 50 km/h if the manufacturer is silent. 14.93 — stop below −18 °C unless the manufacturer or engineer says otherwise.",
+  "14.2(5) CSA Z150-1998 / ASME B30.5-2004. 14.2(6) CSA Z248-2004 for tower, hammerhead and self-erect.",
+  "Technical Safety BC — Electrical Safety Regulation and BC Electrical Code. Power supply, earthing and lightning-protection hardware on the electrical installation belong to the owner. TSBC does not publish a 30/30 crane rule.",
+];
+
 export const FLYTABLE_REFS = [
   "WorkSafeBC Flytable Safety (Jul 2025) — drop, roll, fly, land. Critical lift.",
   "BC Crane Safety, 14 Aug 2025 — New WorkSafeBC Video: Flytable Lift Safety",
-  "OHS Regulation Part 20 — formwork and falsework. Host / prime duty. WHOOP does not write the cycling carpentry.",
+  "OHS Regulation Part 20 — formwork and falsework. Host / prime duty. KERN does not write the cycling carpentry.",
   "Manufacturer cycle and shop drawing for this table system — at the lift. Pick points only as the drawing names.",
 ];
 
@@ -166,7 +242,7 @@ export const FLYTABLE_ROLES: RoleLine[] = [
   ...CREW_ROLES,
   {
     title: "Formwork supervisor (host)",
-    body: "Drops, rolls and lands the table to the manufacturer cycle and the engineered drawing. WHOOP does not lower jacks or invent a cycling sequence.",
+    body: "Drops, rolls and lands the table to the manufacturer cycle and the engineered drawing. KERN does not lower jacks or invent a cycling sequence.",
   },
   {
     title: "Prime contractor",
@@ -267,7 +343,7 @@ export const PLATFORM_HITCH: DocTable = {
     ["One platform at a time.", "Doka."],
     ["Reposition wind — Doka 72 km/h, or the lower of crane / this SJP.", "Doka. Chart."],
     ["Disconnect only after the host says landed — jacks tight, rails pinned.", "CantiDeck. Doka."],
-    ["Daily SuperDeck / Super Roller / DOC extend and retract is host. WHOOP is not hooked.", "Preston FAQ. CantiDeck. DOC."],
+    ["Daily SuperDeck / Super Roller / DOC extend and retract is host. KERN is not hooked.", "Preston FAQ. CantiDeck. DOC."],
   ],
 };
 
@@ -277,7 +353,7 @@ export const PLATFORM_ROLES: RoleLine[] = [
   ...CREW_ROLES,
   {
     title: "Platform supervisor (host)",
-    body: "Rails, props, clamps or through-slab anchors to the OEM and the engineered drawing. WHOOP does not invent a propping sequence. Says when the deck is landed and in service.",
+    body: "Rails, props, clamps or through-slab anchors to the OEM and the engineered drawing. KERN does not invent a propping sequence. Says when the deck is landed and in service.",
   },
   {
     title: "Prime contractor",

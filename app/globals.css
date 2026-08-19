@@ -154,6 +154,32 @@ html[data-theme="dark"] .grain {
   transform: rotate(-8deg);
 }
 
+.proven-mark {
+  display: block;
+  width: 1em;
+  height: 1em;
+  flex: none;
+}
+
+.proven-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28em;
+}
+
+.proven-name .proven-mark {
+  width: 0.78em;
+  height: 0.78em;
+}
+
+.proven-nav-head {
+  margin-bottom: 1rem;
+}
+
+.footer-links .proven-name {
+  justify-content: flex-end;
+}
+
 .header-actions {
   display: flex;
   align-items: center;
@@ -443,24 +469,41 @@ html[data-theme="dark"] .switch-shell.is-on .switch-mark-on {
 
 .overlay-list a {
   display: grid;
-  grid-template-columns: 3.2rem 1fr;
-  gap: 1rem;
-  align-items: baseline;
-  padding: 0.35rem 0;
+  grid-template-columns: 2.4rem minmax(0, 1fr);
+  gap: 0.7rem 1rem;
+  align-items: center;
+  padding: 0.4rem 0;
   border-top: 1px solid var(--on-ink-line);
   font-family: var(--font-display), Oswald, sans-serif;
-  font-size: clamp(3rem, 10vw, 8rem);
+  font-size: clamp(1.65rem, 5.6vw, 3.6rem);
   font-weight: 800;
   line-height: 0.9;
   letter-spacing: -0.03em;
 }
 
-.overlay-list a span {
+.overlay-list a .overlay-num {
   font-family: var(--font-mono), monospace;
   font-size: 0.72rem;
+  font-weight: 500;
   letter-spacing: 0.16em;
   color: var(--on-ink-muted);
-  transform: translateY(-0.4em);
+}
+
+.overlay-list a .overlay-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.overlay-list .proven-name {
+  font: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  gap: 0.18em;
+}
+
+.overlay-list .proven-name .proven-mark {
+  width: 0.72em;
+  height: 0.72em;
 }
 
 .overlay-list a:hover {
@@ -597,6 +640,41 @@ html[data-theme="dark"] .switch-shell.is-on .switch-mark-on {
 
 .giant-sm {
   font-size: clamp(2.6rem, 9vw, 7.2rem);
+}
+
+.pitch-line {
+  font-size: clamp(2rem, 6vw, 4.4rem);
+}
+
+.company-copy {
+  display: grid;
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.company-copy p {
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--line);
+  max-width: 38rem;
+  font-size: clamp(1.08rem, 1.8vw, 1.28rem);
+  line-height: 1.4;
+}
+
+.company-copy-close {
+  max-width: 42rem;
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  line-height: 1.35;
+}
+
+@media (min-width: 900px) {
+  .company-copy {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+
+  .company-copy-close {
+    grid-column: 1 / -1;
+  }
 }
 
 .split {
@@ -1181,9 +1259,18 @@ html[data-theme="dark"] .footer .std-mark-on-ink {
 }
 
 .doc-colophon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.55rem;
   margin-top: 2.5rem;
   padding-top: 1rem;
   border-top: 1px solid var(--line);
+}
+
+.doc-colophon .proven-mark {
+  width: 1.05rem;
+  height: 1.05rem;
 }
 
 .prose h2 {
@@ -2289,7 +2376,7 @@ html[data-theme="dark"] .footer .std-mark-on-ink {
   box-shadow: inset 0 -1px 0 var(--crown);
 }
 
-/* ——— WHOOPWIRE ——— */
+/* ——— KERNWIRE ——— */
 .wire-tools {
   padding: 0 0 2rem;
 }
@@ -2491,6 +2578,73 @@ html[data-theme="dark"] .footer .std-mark-on-ink {
 
 .wire-figure-lead {
   margin: 0 0 2.4rem;
+}
+
+.wire-figure-contain img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - var(--header) - 2.5rem);
+  object-fit: contain;
+  margin-inline: auto;
+  background: #f4f1ea;
+}
+
+.wire-figure-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  text-align: inherit;
+  cursor: zoom-in;
+}
+
+.wire-figure-hint {
+  margin-top: 0.55rem;
+  letter-spacing: 0.12em;
+  color: var(--steel);
+}
+
+.wire-lightbox {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  max-width: none;
+  max-height: none;
+}
+
+.wire-lightbox[open] {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100dvh;
+}
+
+.wire-lightbox::backdrop {
+  background: rgba(10, 10, 10, 0.94);
+}
+
+.wire-lightbox[open] img {
+  width: auto;
+  height: auto;
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100dvh - 4.5rem);
+  object-fit: contain;
+  background: #f4f1ea;
+}
+
+.wire-lightbox-close {
+  position: fixed;
+  top: max(0.85rem, env(safe-area-inset-top, 0px));
+  right: var(--pad);
+  z-index: 2;
+  letter-spacing: 0.14em;
+  color: #fff;
+}
+
+.wire-lightbox-close:hover {
+  color: var(--crown);
 }
 
 .wire-formula {
@@ -2705,7 +2859,7 @@ html[data-theme="dark"] .footer .std-mark-on-ink {
   margin-top: 0.5rem;
 }
 
-/* ——— WHOOPWIRE feed ——— */
+/* ——— KERNWIRE feed ——— */
 .wire-feed {
   margin-top: 4.5rem;
   padding-top: 2.5rem;

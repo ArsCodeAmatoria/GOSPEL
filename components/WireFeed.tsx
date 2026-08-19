@@ -281,7 +281,7 @@ function Composer({
   return (
     <form className={`wire-compose${compact ? " is-compact" : ""}`} onSubmit={onSubmit}>
       <span className={`wire-ava tone-${tone}`} aria-hidden>
-        {initials(person.name || "WHOOP")}
+        {initials(person.name || "KERN")}
       </span>
       <div className="wire-compose-main">
         <div className="wire-id">

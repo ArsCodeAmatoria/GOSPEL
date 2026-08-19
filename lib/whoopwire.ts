@@ -2,7 +2,7 @@ import { ARTICLES } from "@/lib/whoopwire-stories";
 import type { Step } from "@/lib/safety";
 
 export const WIRE = {
-  name: "WHOOPWIRE",
+  name: "KERNWIRE",
   descriptor: "SAFETY. RIGGING. CRANES. PEOPLE.",
   dek: "The things worth talking about in crane work, rigging, safety and the people who do it.",
   subscribe: "New stories on safety, rigging, cranes and the people doing the work.",
@@ -24,11 +24,11 @@ export type WireBlock =
   | { type: "quote"; text: string }
   | { type: "list"; items: string[] }
   | { type: "steps"; items: Step[] }
-  | { type: "image"; src: string; alt: string; caption?: string }
+  | { type: "image"; src: string; alt: string; caption?: string; contain?: boolean }
   | { type: "formula"; expr: string; note?: string }
   | { type: "table"; caption?: string; columns: string[]; rows: string[][] }
   | { type: "diagram"; name: "sling-sin" | "boom-trig" }
-  | { type: "calc"; name: "sling-sin" | "boom-trig" }
+  | { type: "calc"; name: "sling-sin" | "boom-trig" | "sling-angle" }
   | { type: "cta"; href: string; label: string };
 
 export type WireArticle = {
@@ -43,6 +43,8 @@ export type WireArticle = {
   featured?: boolean;
   image?: string;
   imageAlt?: string;
+  /** Keep the whole picture visible. Use for diagrams and infographics. */
+  imageContain?: boolean;
   seoTitle: string;
   seoDescription: string;
   related: string[];

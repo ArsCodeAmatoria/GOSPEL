@@ -4,17 +4,17 @@ export const POLICIES: Policy[] = [
   {
     slug: "health-and-safety",
     title: "OH&S POLICY",
-    number: "WHOOP-POL-001",
+    number: "KERN-POL-001",
     summary:
-      "This is WHOOP’s occupational health and safety policy. The work is done to this program, to the law, and to the machine.",
+      "This is KERN’s occupational health and safety policy. The work is done to this program, to the law, and to the machine.",
     statements: [
       {
         title: "Aims",
-        body: "Prevent injury and occupational disease on crane and rigging work WHOOP accepts. Put competent people on the machine. Back stop-work. Keep this program public so workers and clients can read it before the dispatch. OHS Regulation 3.3(a).",
+        body: "Prevent injury and occupational disease on crane and rigging work KERN accepts. Put competent people on the machine. Back stop-work. Keep this program public so workers and clients can read it before the dispatch. OHS Regulation 3.3(a).",
       },
       {
         title: "Commitment",
-        body: "WHOOP provides the people, instruction, supervision and backing this program names. Production does not outrank the chart, the hitch, or the three rights.",
+        body: "KERN provides the people, instruction, supervision and backing this program names. Production does not outrank the chart, the hitch, or the three rights.",
       },
       {
         title: "Objectives",
@@ -22,11 +22,11 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Scope",
-        body: "Applies to every crane operator, rigger, signalperson and lifting supervisor WHOOP deploys, and to every lift we accept.",
+        body: "Applies to every crane operator, rigger, signalperson and lifting supervisor KERN deploys, and to every lift we accept.",
       },
       {
         title: "Standard",
-        body: "Work is performed to this Safety Program, applicable OHS law, CSA Z150 / Z248 as named, ASME B30 as named, the manufacturer, and the site. The stricter applicable requirement wins. Law always wins.",
+        body: "Work is performed to Proven, applicable OHS law, CSA Z150 / Z248 as named, ASME B30 as named, the manufacturer, and the site. The stricter applicable requirement wins. Law always wins.",
       },
       {
         title: "Review",
@@ -41,9 +41,9 @@ export const POLICIES: Policy[] = [
   {
     slug: "competency",
     title: "COMPETENCY",
-    number: "WHOOP-POL-002",
+    number: "KERN-POL-002",
     summary:
-      "A ticket is not competency. WHOOP matches people to the machine, the lift and the site.",
+      "A ticket is not competency. KERN matches people to the machine, the lift and the site.",
     statements: [
       {
         title: "Verify before dispatch",
@@ -62,7 +62,7 @@ export const POLICIES: Policy[] = [
   {
     slug: "training",
     title: "TRAINING",
-    number: "WHOOP-POL-003",
+    number: "KERN-POL-003",
     summary:
       "Site orientations and briefings are arranged. Workers hold the qualification for the role before they are sent.",
     statements: [
@@ -72,15 +72,15 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Young or new worker",
-        body: "A young worker is under 25. A new worker is new to that workplace, returning to changed hazards, or relocated to different hazards. 3.22. Before they begin, they get the orientation topics in 3.23 — supervisor name, rights including refusal, rules, hazards, working alone, violence, PPE, first aid, emergency, the task, this program, WHMIS as it applies, committee or worker-rep contact. Extra orientation if they cannot do the work safely or they ask. 3.24. Record it. 3.25. WHOOP-FRM-015.",
+        body: "A young worker is under 25. A new worker is new to that workplace, returning to changed hazards, or relocated to different hazards. 3.22. Before they begin, they get the orientation topics in 3.23 — supervisor name, rights including refusal, rules, hazards, working alone, violence, PPE, first aid, emergency, the task, this program, WHMIS as it applies, committee or worker-rep contact. Extra orientation if they cannot do the work safely or they ask. 3.24. Record it. 3.25. KERN-FRM-015.",
       },
       {
         title: "Site orientation",
-        body: "The host’s site orientation is the host’s. WHOOP arranges it. The worker does not start the lift without it when the site requires it.",
+        body: "The host’s site orientation is the host’s. KERN arranges it. The worker does not start the lift without it when the site requires it.",
       },
       {
         title: "Supervisor instruction",
-        body: "People WHOOP sends to supervise a lift are instructed in this program, in stop-work, and in the supervisor duties under the Workers Compensation Act s. 23. A ticket is not that instruction.",
+        body: "People KERN sends to supervise a lift are instructed in this program, in stop-work, and in the supervisor duties under the Workers Compensation Act s. 23. A ticket is not that instruction.",
       },
       {
         title: "Refresher",
@@ -99,7 +99,7 @@ export const POLICIES: Policy[] = [
   {
     slug: "hazard-identification",
     title: "HAZARD IDENTIFICATION",
-    number: "WHOOP-POL-004",
+    number: "KERN-POL-004",
     summary:
       "Name the hazards of this lift, this site, this day. A parking-lot form is not identification.",
     statements: [
@@ -120,9 +120,9 @@ export const POLICIES: Policy[] = [
   {
     slug: "risk-assessment",
     title: "RISK ASSESSMENT",
-    number: "WHOOP-POL-005",
+    number: "KERN-POL-005",
     summary:
-      "Every WHOOP dispatch requires a hazard assessment. FLHA at the shift. Reassess when the work changes.",
+      "Every KERN dispatch requires a hazard assessment. FLHA at the shift. Reassess when the work changes.",
     statements: [
       {
         title: "Controls before the hook",
@@ -141,7 +141,7 @@ export const POLICIES: Policy[] = [
   {
     slug: "incident-reporting",
     title: "INCIDENT REPORTING",
-    number: "WHOOP-POL-006",
+    number: "KERN-POL-006",
     summary:
       "Injuries, dropped loads, crane contact, failed rigging and stop-work events are reported. Quiet is not always safe.",
     statements: [
@@ -155,14 +155,14 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Learn",
-        body: "WHOOP investigates events involving our people. Controls change. This program is updated when the lesson is real. Injuries also follow Injury Management and Return to Work.",
+        body: "KERN investigates events involving our people. Controls change. This program is updated when the lesson is real. Injuries also follow Injury Management and Return to Work.",
       },
     ],
   },
   {
     slug: "near-miss-reporting",
     title: "NEAR-MISS REPORTING",
-    number: "WHOOP-POL-007",
+    number: "KERN-POL-007",
     summary:
       "Someone in the zone, a lost signal that almost mattered, a sling that started to cut — that is a report, not a story for later.",
     statements: [
@@ -183,9 +183,9 @@ export const POLICIES: Policy[] = [
   {
     slug: "right-to-refuse",
     title: "RIGHT TO REFUSE UNSAFE WORK",
-    number: "WHOOP-POL-008",
+    number: "KERN-POL-008",
     summary:
-      "The three rights are operating procedure. WHOOP will not send a replacement to do the same unsafe work.",
+      "The three rights are operating procedure. KERN will not send a replacement to do the same unsafe work.",
     statements: [
       {
         title: "Stop",
@@ -193,24 +193,24 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Say why",
-        body: "State the danger to site supervision and to WHOOP. Be specific: the line, the ground, the load, the missing plan.",
+        body: "State the danger to site supervision and to KERN. Be specific: the line, the ground, the load, the missing plan.",
       },
       {
         title: "It stays stopped",
-        body: "Work resumes when the danger is controlled. WHOOP will not punish a good-faith refusal. WHOOP will not dispatch a replacement into the same uncontrolled condition.",
+        body: "Work resumes when the danger is controlled. KERN will not punish a good-faith refusal. KERN will not dispatch a replacement into the same uncontrolled condition.",
       },
     ],
   },
   {
     slug: "violence-and-harassment",
     title: "VIOLENCE / HARASSMENT",
-    number: "WHOOP-POL-009",
+    number: "KERN-POL-009",
     summary:
-      "Threats and physical violence are not part of a lift. Harassment is WHOOP-POL-017. Report them. We act. OHS Regulation Part 4.",
+      "Threats and physical violence are not part of a lift. Harassment is KERN-POL-017. Report them. We act. OHS Regulation Part 4.",
     statements: [
       {
         title: "Zero for violence",
-        body: "Physical violence, threats and intimidation toward a WHOOP worker — or by a WHOOP worker — are reported and acted on. Immediate danger: get out and call for help.",
+        body: "Physical violence, threats and intimidation toward a KERN worker — or by a KERN worker — are reported and acted on. Immediate danger: get out and call for help.",
       },
       {
         title: "The lift is not an excuse",
@@ -218,14 +218,14 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Bullying and harassment",
-        body: "Humiliation, racism, sexual harassment and “that’s just the trade” are covered by WHOOP-POL-017 Bullying and Harassment — Workers Compensation Act s. 21, WorkSafeBC P2-21-2.",
+        body: "Humiliation, racism, sexual harassment and “that’s just the trade” are covered by KERN-POL-017 Bullying and Harassment — Workers Compensation Act s. 21, WorkSafeBC P2-21-2.",
       },
     ],
   },
   {
     slug: "ppe",
     title: "PPE",
-    number: "WHOOP-POL-010",
+    number: "KERN-POL-010",
     summary:
       "Minimum PPE for lifting work. Site rules that are stricter win. Damaged PPE is out of service.",
     statements: [
@@ -243,7 +243,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Issue and replace",
-        body: "WHOOP issues or confirms required PPE for the dispatch. Failed PPE is replaced or the worker does not start. Record issue and replacement on WHOOP-FRM-018. Workers do not start the lift waiting on a hat.",
+        body: "KERN issues or confirms required PPE for the dispatch. Failed PPE is replaced or the worker does not start. Record issue and replacement on KERN-FRM-018. Workers do not start the lift waiting on a hat.",
       },
       {
         title: "Instruction",
@@ -254,7 +254,7 @@ export const POLICIES: Policy[] = [
   {
     slug: "crane-operations",
     title: "CRANE OPERATIONS",
-    number: "WHOOP-POL-011",
+    number: "KERN-POL-011",
     summary:
       "The chart is the law of the machine. No lift without a plan. No unclear signal.",
     statements: [
@@ -275,7 +275,7 @@ export const POLICIES: Policy[] = [
   {
     slug: "rigging",
     title: "RIGGING",
-    number: "WHOOP-POL-012",
+    number: "KERN-POL-012",
     summary:
       "Know the load. Know the hitch. Protect the sling. No people under the load.",
     statements: [
@@ -285,7 +285,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "No guess",
-        body: "Weight and centre of gravity are confirmed. Sling angle is calculated when it matters. Below 30° from horizontal is not a WHOOP hitch unless an engineer owns the numbers.",
+        body: "Weight and centre of gravity are confirmed. Sling angle is calculated when it matters. Below 30° from horizontal is not a KERN hitch unless an engineer owns the numbers.",
       },
       {
         title: "Out of service",
@@ -296,13 +296,13 @@ export const POLICIES: Policy[] = [
   {
     slug: "equipment-inspection",
     title: "EQUIPMENT INSPECTION",
-    number: "WHOOP-POL-013",
+    number: "KERN-POL-013",
     summary:
       "Pre-use inspection of the crane as assigned, and of every sling and piece of hardware before it takes load.",
     statements: [
       {
         title: "Crane",
-        body: "Operator inspection each shift as the manufacturer, the named 14.2 standard, and Part 14 require. Defects that affect lifting keep the crane down. Tower, hammerhead, luffing jib and self-erecting machines: see Inspections — OEM charts and WHOOP-FRM-027 through 031.",
+        body: "Operator inspection each shift as the manufacturer, the named 14.2 standard, and Part 14 require. Defects that affect lifting keep the crane down. Tower, hammerhead, luffing jib and self-erecting machines: see Inspections — OEM charts and KERN-FRM-027 through 031.",
       },
       {
         title: "Rigging",
@@ -310,11 +310,11 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Who owns the PM",
-        body: "Preventive maintenance of a crane belongs to the owner of that crane — OEM interval, logbook, annual certification. WHOOP is a workforce. If WHOOP does not own the machine, the operator still completes pre-use and reports defects. The crane does not lift with a known defect that affects lifting.",
+        body: "Preventive maintenance of a crane belongs to the owner of that crane — OEM interval, logbook, annual certification. KERN is a workforce. If KERN does not own the machine, the operator still completes pre-use and reports defects. The crane does not lift with a known defect that affects lifting.",
       },
       {
-        title: "WHOOP-controlled gear",
-        body: "Rigging, PPE, tools and vehicles WHOOP controls are inspected, maintained and taken out of service when they fail. Weekly and monthly maintenance forms apply to machines WHOOP is assigned to maintain. Return to service only after the repair is verified.",
+        title: "KERN-controlled gear",
+        body: "Rigging, PPE, tools and vehicles KERN controls are inspected, maintained and taken out of service when they fail. Weekly and monthly maintenance forms apply to machines KERN is assigned to maintain. Return to service only after the repair is verified.",
       },
       {
         title: "Deficiency class",
@@ -329,7 +329,7 @@ export const POLICIES: Policy[] = [
   {
     slug: "environmental-conditions",
     title: "ENVIRONMENTAL CONDITIONS",
-    number: "WHOOP-POL-014",
+    number: "KERN-POL-014",
     summary:
       "Wind, lightning, ice, heat and visibility are stop criteria, not atmosphere.",
     download: {
@@ -345,7 +345,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Lightning and storms",
-        body: "Boom down. People off the machine and off the load. Resume only when the plan says so.",
+        body: "Thunder is the stop. Environment Canada: if you hear it, you are in striking distance. Land. Manufacturer shutdown. People off. Shelter 30 minutes after the last rumble. Do not count flash-to-bang to 30 before stopping — ECCC dropped that in 2010. A strike is a misadventure (14.16.1). Technical Safety BC does not write a 30/30 crane rule; earthing of the supply is the owner’s electrical work.",
       },
       {
         title: "Ground and ice",
@@ -361,14 +361,14 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Wildfire smoke",
-        body: "Smoke is an exposure, not weather small-talk. If air quality makes the work unsafe — cab or open — stop. The site and WHOOP are told. Resume only when the plan says so.",
+        body: "Smoke is an exposure, not weather small-talk. If air quality makes the work unsafe — cab or open — stop. The site and KERN are told. Resume only when the plan says so.",
       },
     ],
   },
   {
     slug: "emergency-response",
     title: "EMERGENCY RESPONSE",
-    number: "WHOOP-POL-015",
+    number: "KERN-POL-015",
     summary:
       "Every dispatch knows how the site calls for help, where to muster, and how to put the crane in a safe condition.",
     download: {
@@ -380,7 +380,7 @@ export const POLICIES: Policy[] = [
     statements: [
       {
         title: "Before work",
-        body: "Emergency number, muster, first aid, crane shutdown, fall-rescue if anyone is tied off, high-angle rope rescue for a tower operator, WHOOP after-hours contact.",
+        body: "Emergency number, muster, first aid, crane shutdown, fall-rescue if anyone is tied off, high-angle rope rescue for a tower operator, KERN after-hours contact.",
       },
       {
         title: "People first",
@@ -392,7 +392,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Construction hoist operator",
-        body: "A hoist car is working alone. If WHOOP supplies that operator, the site uses a written rescue procedure before the car runs. BCCSA already wrote the templates. Use them. Do not invent a hoist rescue on the day.",
+        body: "A hoist car is working alone. If KERN supplies that operator, the site uses a written rescue procedure before the car runs. BCCSA already wrote the templates. Use them. Do not invent a hoist rescue on the day.",
       },
       {
         title: "Fall arrest",
@@ -400,18 +400,18 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "THARRP — tower high-angle rescue",
-        body: "WorkSafeBC G4.13(3)(a): risk assessment where rescue or evacuation may arise, and written procedures for high-angle work. BCCSA’s Technical High Angle Rope Rescue Program connects construction employers with funded municipal fire departments to write a rope-rescue plan for a tower-crane operator in distress. WHOOP does not run that rescue. The fire department does. A WHOOP tower operator is not sent up until the host or prime can name the plan, the fire department, and how to summon them. If the local department is not THARR-funded, mutual aid or another acceptable means is required — the lift does not invent it. Portal requests: bccsa.ca/tharrp_program.php.",
+        body: "WorkSafeBC G4.13(3)(a): risk assessment where rescue or evacuation may arise, and written procedures for high-angle work. BCCSA’s Technical High Angle Rope Rescue Program connects construction employers with funded municipal fire departments to write a rope-rescue plan for a tower-crane operator in distress. KERN does not run that rescue. The fire department does. A KERN tower operator is not sent up until the host or prime can name the plan, the fire department, and how to summon them. If the local department is not THARR-funded, mutual aid or another acceptable means is required — the lift does not invent it. Portal requests: bccsa.ca/tharrp_program.php.",
       },
       {
         title: "Who requests the survey",
-        body: "The employer at that workplace requests the crane or site survey in the THARRP Portal — WorkSafeBC account number and legal name. On a host site that is usually the prime or the crane owner. WHOOP is construction labour supply; ADM 2 lists that classification among the funding units. WHOOP confirms the survey and the written agreement exist before the dispatch. A tower on a high-rise expected past 60 days needs the formal Site Survey & Site Rescue Procedure Review on site. ADM 2.",
+        body: "The employer at that workplace requests the crane or site survey in the THARRP Portal — WorkSafeBC account number and legal name. On a host site that is usually the prime or the crane owner. KERN is construction labour supply; ADM 2 lists that classification among the funding units. KERN confirms the survey and the written agreement exist before the dispatch. A tower on a high-rise expected past 60 days needs the formal Site Survey & Site Rescue Procedure Review on site. ADM 2.",
       },
     ],
   },
   {
     slug: "continuous-improvement",
     title: "CONTINUOUS IMPROVEMENT",
-    number: "WHOOP-POL-016",
+    number: "KERN-POL-016",
     summary:
       "Findings become actions. Actions get owners and dates. Management reviews the system. This program is revised when the lesson is real.",
     statements: [
@@ -421,7 +421,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Management review",
-        body: "WHOOP holds a periodic management OHS meeting to review safety activities and incident trends and to decide what changes. 3.3(d). At least quarterly, and after a serious incident. Agenda: incidents, inspections, outstanding corrective actions, training, worker concerns and refusals, COR / audit results, objectives. WHOOP-FRM-032.",
+        body: "KERN holds a periodic management OHS meeting to review safety activities and incident trends and to decide what changes. 3.3(d). At least quarterly, and after a serious incident. Agenda: incidents, inspections, outstanding corrective actions, training, worker concerns and refusals, COR / audit results, objectives. KERN-FRM-032.",
       },
       {
         title: "Records and statistics",
@@ -429,7 +429,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "COR",
-        body: "WHOOP is COR® certified through BCCSA. Certification is of this occupational health and safety management system. Maintenance and recertification follow BCCSA’s current process. An audit finding becomes a corrective action with an owner and a date.",
+        body: "KERN is COR® certified through BCCSA. Certification is of this occupational health and safety management system. Maintenance and recertification follow BCCSA’s current process. An audit finding becomes a corrective action with an owner and a date.",
       },
       {
         title: "This program",
@@ -440,17 +440,17 @@ export const POLICIES: Policy[] = [
   {
     slug: "bullying-and-harassment",
     title: "BULLYING AND HARASSMENT",
-    number: "WHOOP-POL-017",
+    number: "KERN-POL-017",
     summary:
-      "Not acceptable. Not “the trade.” Report it. WHOOP deals with it. WorkSafeBC P2-21-2, P2-22-1, P2-23-2.",
+      "Not acceptable. Not “the trade.” Report it. KERN deals with it. WorkSafeBC P2-21-2, P2-22-1, P2-23-2.",
     statements: [
       {
         title: "Policy statement",
-        body: "Workplace bullying and harassment is not acceptable or tolerated at WHOOP, on a WHOOP dispatch, or toward a WHOOP worker. This is the policy statement required of an employer under WorkSafeBC P2-21-2(a). WHOOP does not engage in bullying and harassment of workers or supervisors.",
+        body: "Workplace bullying and harassment is not acceptable or tolerated at KERN, on a KERN dispatch, or toward a KERN worker. This is the policy statement required of an employer under WorkSafeBC P2-21-2(a). KERN does not engage in bullying and harassment of workers or supervisors.",
       },
       {
         title: "What it is",
-        body: "Any inappropriate conduct or comment toward a worker that the person knew, or reasonably ought to have known, would humiliate or intimidate that worker. It includes sexual harassment, racism, isolation, sabotage of someone’s work, and “that’s just the trade.” The person can be anyone on the job — WHOOP, a client, another contractor’s crew.",
+        body: "Any inappropriate conduct or comment toward a worker that the person knew, or reasonably ought to have known, would humiliate or intimidate that worker. It includes sexual harassment, racism, isolation, sabotage of someone’s work, and “that’s just the trade.” The person can be anyone on the job — KERN, a client, another contractor’s crew.",
       },
       {
         title: "What it is not",
@@ -458,10 +458,10 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Scope",
-        body: "Applies to every crane operator, rigger, signalperson and lifting supervisor WHOOP deploys, and to WHOOP supervisors. It applies on client sites. A multiple-employer workplace does not cancel WHOOP’s duty to its workers.",
+        body: "Applies to every crane operator, rigger, signalperson and lifting supervisor KERN deploys, and to KERN supervisors. It applies on client sites. A multiple-employer workplace does not cancel KERN’s duty to its workers.",
       },
       {
-        title: "WHOOP",
+        title: "KERN",
         body: "Takes all reasonable steps to prevent where possible, or otherwise minimize, workplace bullying and harassment. Workers Compensation Act s. 21. Informs workers of this policy. Trains workers and supervisors to recognize it, report it, and apply these procedures. Reviews this policy and these procedures at least annually — next review 2027-09-01.",
       },
       {
@@ -474,15 +474,15 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "How to report",
-        body: "Report as soon as you can. Call WHOOP at 1 604 431 2000 and ask for Safety, email hire@whoopp.ca with the subject BULLYING AND HARASSMENT, or use Report Bullying or Harassment under Incident Reporting. Say who, when, where, what was said or done, and who saw it. You do not need a form if a call is faster.",
+        body: "Report as soon as you can. Call KERN at 1 604 431 2000 and ask for Safety, email hire@kern.onl with the subject BULLYING AND HARASSMENT, or use Report Bullying or Harassment under Incident Reporting. Say who, when, where, what was said or done, and who saw it. You do not need a form if a call is faster.",
       },
       {
-        title: "If the alleged person is WHOOP",
-        body: "If the alleged bully is your WHOOP supervisor or a person acting for WHOOP, do not report only to that person. Call WHOOP and ask for Safety, or email hire@whoopp.ca. If the alleged person is the employer itself and you cannot use the internal route, call the WorkSafeBC Prevention Information Line: 1 888 621 7233.",
+        title: "If the alleged person is KERN",
+        body: "If the alleged bully is your KERN supervisor or a person acting for KERN, do not report only to that person. Call KERN and ask for Safety, or email hire@kern.onl. If the alleged person is the employer itself and you cannot use the internal route, call the WorkSafeBC Prevention Information Line: 1 888 621 7233.",
       },
       {
-        title: "How WHOOP deals with it",
-        body: "WHOOP Safety, or a person who is not the alleged bully, investigates promptly and fairly. The investigation covers what happened, who was involved, when and where, witnesses, and any record. The people involved are heard. Confidentiality is kept as far as the investigation allows. Follow-up includes corrective action and a timeline. Records are kept by WHOOP. They are not sent to WorkSafeBC unless asked for.",
+        title: "How KERN deals with it",
+        body: "KERN Safety, or a person who is not the alleged bully, investigates promptly and fairly. The investigation covers what happened, who was involved, when and where, witnesses, and any record. The people involved are heard. Confidentiality is kept as far as the investigation allows. Follow-up includes corrective action and a timeline. Records are kept by KERN. They are not sent to WorkSafeBC unless asked for.",
       },
       {
         title: "No punishment for good faith",
@@ -497,13 +497,13 @@ export const POLICIES: Policy[] = [
   {
     slug: "workplace-conduct",
     title: "WORKPLACE CONDUCT",
-    number: "WHOOP-POL-018",
+    number: "KERN-POL-018",
     summary:
-      "You represent WHOOP on someone else’s site. Show up. Be competent. Do not make the lift about you.",
+      "You represent KERN on someone else’s site. Show up. Be competent. Do not make the lift about you.",
     statements: [
       {
         title: "On the dispatch",
-        body: "WHOOP workers arrive on time, briefed, and fit for the work. If you cannot make the call, WHOOP hears it first — not the gate.",
+        body: "KERN workers arrive on time, briefed, and fit for the work. If you cannot make the call, KERN hears it first — not the gate.",
       },
       {
         title: "On the client’s site",
@@ -527,14 +527,14 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Who you answer to",
-        body: "WHOOP remains your employer. Site direction that is unsafe is refused under the three rights. Site direction that is lawful and stricter than ours is followed.",
+        body: "KERN remains your employer. Site direction that is unsafe is refused under the three rights. Site direction that is lawful and stricter than ours is followed.",
       },
     ],
   },
   {
     slug: "fitness-for-work",
     title: "FITNESS FOR WORK",
-    number: "WHOOP-POL-019",
+    number: "KERN-POL-019",
     summary:
       "Fit for this dispatch, today. Fatigue, illness and injury are named before the gate — not after the hook.",
     statements: [
@@ -543,29 +543,29 @@ export const POLICIES: Policy[] = [
         body: "A crane operator, rigger or signalperson must be able to do this work safely today. Rest, illness, injury, vision and hearing as the role requires. If you are not fit, you say so before you travel or before you start.",
       },
       {
-        title: "Tell WHOOP",
+        title: "Tell KERN",
         body: "OHS Regulation 4.19. A worker with an impairment that may affect safe work informs the supervisor or employer and does not knowingly do work where that impairment creates an undue risk to anyone.",
       },
       {
-        title: "WHOOP does not assign it",
-        body: "WHOOP does not put a person who is not fit onto a crane, a hitch, or a set of signals. A replacement is found, or the dispatch waits. Covering with hope is not a dispatch.",
+        title: "KERN does not assign it",
+        body: "KERN does not put a person who is not fit onto a crane, a hitch, or a set of signals. A replacement is found, or the dispatch waits. Covering with hope is not a dispatch.",
       },
       {
         title: "Medical information",
-        body: "WHOOP asks only what is needed to match the person to the work and to accommodate where the law requires it. It is not a fishing trip. See Impairment and Return to Work.",
+        body: "KERN asks only what is needed to match the person to the work and to accommodate where the law requires it. It is not a fishing trip. See Impairment and Return to Work.",
       },
     ],
   },
   {
     slug: "impairment",
     title: "IMPAIRMENT",
-    number: "WHOOP-POL-020",
+    number: "KERN-POL-020",
     summary:
       "Unfit to lift is unfit to lift. Alcohol, cannabis, other drugs, medication and fatigue. OHS Regulation 4.19 and 4.20.",
     statements: [
       {
         title: "The rule",
-        body: "A person must not enter or remain at a workplace while their ability to work is affected by alcohol, a drug or another substance so as to endanger anyone. WHOOP must not knowingly permit it. 4.20. Crane operation, rigging and signalling are safety-sensitive. There is no ‘a little bit’ on a hook.",
+        body: "A person must not enter or remain at a workplace while their ability to work is affected by alcohol, a drug or another substance so as to endanger anyone. KERN must not knowingly permit it. 4.20. Crane operation, rigging and signalling are safety-sensitive. There is no ‘a little bit’ on a hook.",
       },
       {
         title: "What counts",
@@ -573,66 +573,66 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Report it",
-        body: "Workers report impairment to WHOOP before they attend, start, or continue. Observed impairment is treated the same as reported impairment. The person comes off the lift. They are not left in the cab to ‘sleep it off.’",
+        body: "Workers report impairment to KERN before they attend, start, or continue. Observed impairment is treated the same as reported impairment. The person comes off the lift. They are not left in the cab to ‘sleep it off.’",
       },
       {
         title: "Testing",
-        body: "WHOOP does not run random drug or alcohol testing as a default. Testing happens only where the law allows and the situation requires it. Client or prime-contractor programs that are lawful are followed for that site. A test is not a substitute for taking an impaired person off the work.",
+        body: "KERN does not run random drug or alcohol testing as a default. Testing happens only where the law allows and the situation requires it. Client or prime-contractor programs that are lawful are followed for that site. A test is not a substitute for taking an impaired person off the work.",
       },
       {
         title: "Disability",
-        body: "Addiction and other disabilities are protected under the Human Rights Code. WHOOP will accommodate to the point of undue hardship when it is told. Accommodation is not a licence to lift impaired. See Discrimination and Fitness for Work.",
+        body: "Addiction and other disabilities are protected under the Human Rights Code. KERN will accommodate to the point of undue hardship when it is told. Accommodation is not a licence to lift impaired. See Discrimination and Fitness for Work.",
       },
     ],
   },
   {
     slug: "working-alone",
     title: "WORKING ALONE",
-    number: "WHOOP-POL-021",
+    number: "KERN-POL-021",
     summary:
       "A lift is not a one-person job. If assistance would not be readily available, there is a written check-in. 4.21–4.23.",
     statements: [
       {
         title: "No solo lift",
-        body: "WHOOP does not dispatch a worker to make a lift alone. Operator, rigger and signals are a crew. If the site will leave one WHOOP person to lift, we do not take that dispatch.",
+        body: "KERN does not dispatch a worker to make a lift alone. Operator, rigger and signals are a crew. If the site will leave one KERN person to lift, we do not take that dispatch.",
       },
       {
         title: "When this policy applies",
-        body: "Working alone or in isolation means assistance would not be readily available in an emergency, injury or illness. Visual or verbal contact with other people is readily available. A phone or radio is not. Travel, waiting on a machine, a remote plant, night work, or a crew that left can put a WHOOP worker in isolation even when the lift itself was crewed.",
+        body: "Working alone or in isolation means assistance would not be readily available in an emergency, injury or illness. Visual or verbal contact with other people is readily available. A phone or radio is not. Travel, waiting on a machine, a remote plant, night work, or a crew that left can put a KERN worker in isolation even when the lift itself was crewed.",
       },
       {
         title: "Before that dispatch",
-        body: "Hazards are identified. A written procedure is set: who checks in, how, and how often — matching the risk. The worker is trained on it. If the site cannot support that, WHOOP does not send the person.",
+        body: "Hazards are identified. A written procedure is set: who checks in, how, and how often — matching the risk. The worker is trained on it. If the site cannot support that, KERN does not send the person.",
       },
       {
         title: "Check-in",
-        body: "A named person at WHOOP or on site receives the check-in at the set times. Missed check-in is not a voicemail. The designated person calls, then escalates, then sends help or emergency services. A spouse is not the check-in system.",
+        body: "A named person at KERN or on site receives the check-in at the set times. Missed check-in is not a voicemail. The designated person calls, then escalates, then sends help or emergency services. A spouse is not the check-in system.",
       },
       {
         title: "Say it",
-        body: "If you will be out of visual and verbal contact, you tell WHOOP before the hook. We set the check-in or we pull the dispatch.",
+        body: "If you will be out of visual and verbal contact, you tell KERN before the hook. We set the check-in or we pull the dispatch.",
       },
     ],
   },
   {
     slug: "injury-management",
     title: "INJURY MANAGEMENT",
-    number: "WHOOP-POL-022",
+    number: "KERN-POL-022",
     summary:
       "First aid first. Report it. Care, not a cover-up. The claim is not a rumour.",
     download: {
       href: "/downloads/injury-management.zip",
       label: "DOWNLOAD INJURY MANAGEMENT PACK →",
-      note: "BCCSA employer guide, employee bulletin, sample forms and supplementary materials. Use them. Do not replace WHOOP-POL-022.",
+      note: "BCCSA employer guide, employee bulletin, sample forms and supplementary materials. Use them. Do not replace KERN-POL-022.",
     },
     statements: [
       {
         title: "Care",
-        body: "Injured people get first aid and further care as required. Make the lift safe. Do not become the second event. Site first aid and WHOOP are both told.",
+        body: "Injured people get first aid and further care as required. Make the lift safe. Do not become the second event. Site first aid and KERN are both told.",
       },
       {
         title: "Report",
-        body: "Injuries are reported the same shift — including what someone calls nothing. First aid report WHOOP-FRM-012. Incident report as required. WorkSafeBC is notified as the law requires. Hiding an injury to finish a pick is how it becomes a worse injury.",
+        body: "Injuries are reported the same shift — including what someone calls nothing. First aid report KERN-FRM-012. Incident report as required. WorkSafeBC is notified as the law requires. Hiding an injury to finish a pick is how it becomes a worse injury.",
       },
       {
         title: "Stay at work",
@@ -640,20 +640,20 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Cooperate",
-        body: "WHOOP, the worker and the site cooperate on treatment, reporting and suitable duties. The file is not a defence brief. It is how the person gets care and the work gets safer. The downloadable pack on this page is BCCSA injury-management material — guides, sample forms, supplementary notes. Use it. It does not replace this policy.",
+        body: "KERN, the worker and the site cooperate on treatment, reporting and suitable duties. The file is not a defence brief. It is how the person gets care and the work gets safer. The downloadable pack on this page is BCCSA injury-management material — guides, sample forms, supplementary notes. Use it. It does not replace this policy.",
       },
     ],
   },
   {
     slug: "return-to-work",
     title: "RETURN TO WORK",
-    number: "WHOOP-POL-023",
+    number: "KERN-POL-023",
     summary:
       "Restrictions named. Work matched. Not a paper promise. Workers Compensation Act duty to maintain employment where it applies.",
     statements: [
       {
         title: "Suitable work",
-        body: "Return-to-work is work the person can do within named restrictions. WHOOP does not dispatch an operator, rigger or signalperson into a role that violates those restrictions. The form is WHOOP-FRM-RTW.",
+        body: "Return-to-work is work the person can do within named restrictions. KERN does not dispatch an operator, rigger or signalperson into a role that violates those restrictions. The form is KERN-FRM-RTW.",
       },
       {
         title: "Plan",
@@ -661,24 +661,24 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Duty",
-        body: "Where the Workers Compensation Act duty to maintain employment applies, WHOOP maintains employment and offers suitable or pre-injury work to the point of undue hardship. Inconvenience is not undue hardship.",
+        body: "Where the Workers Compensation Act duty to maintain employment applies, KERN maintains employment and offers suitable or pre-injury work to the point of undue hardship. Inconvenience is not undue hardship.",
       },
       {
         title: "Cooperate",
-        body: "The worker, WHOOP, the clinician and WorkSafeBC share what is needed to match the work. Medical detail beyond the restriction is not a gossip file. See Fitness for Work and Injury Management.",
+        body: "The worker, KERN, the clinician and WorkSafeBC share what is needed to match the work. Medical detail beyond the restriction is not a gossip file. See Fitness for Work and Injury Management.",
       },
     ],
   },
   {
     slug: "discrimination",
     title: "DISCRIMINATION",
-    number: "WHOOP-POL-024",
+    number: "KERN-POL-024",
     summary:
       "Hiring and dispatch are about the work. Human Rights Code s. 13. Not a vibe, and not a pretext.",
     statements: [
       {
         title: "The Code",
-        body: "WHOOP does not refuse to employ, refuse to continue to employ, or discriminate in any term of employment — including who gets the call — because of Indigenous identity, race, colour, ancestry, place of origin, political belief, religion, marital status, family status, physical or mental disability, sex, sexual orientation, gender identity or expression, age, or a conviction unrelated to the work. Human Rights Code s. 13. WHOOP does not refuse to refer a person for those reasons.",
+        body: "KERN does not refuse to employ, refuse to continue to employ, or discriminate in any term of employment — including who gets the call — because of Indigenous identity, race, colour, ancestry, place of origin, political belief, religion, marital status, family status, physical or mental disability, sex, sexual orientation, gender identity or expression, age, or a conviction unrelated to the work. Human Rights Code s. 13. KERN does not refuse to refer a person for those reasons.",
       },
       {
         title: "This work",
@@ -686,20 +686,20 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Accommodate",
-        body: "WHOOP accommodates protected characteristics to the point of undue hardship. Accommodation does not put an impaired or restricted person onto a hook that the restriction forbids. See Fitness for Work, Impairment and Return to Work.",
+        body: "KERN accommodates protected characteristics to the point of undue hardship. Accommodation does not put an impaired or restricted person onto a hook that the restriction forbids. See Fitness for Work, Impairment and Return to Work.",
       },
       {
         title: "Report",
-        body: "Report to WHOOP at 1 604 431 2000 and ask for Safety, or email hire@whoopp.ca. If the alleged person is WHOOP, use that route anyway and name it. A complaint may also be filed with the BC Human Rights Tribunal. Bullying and harassment under WorkSafeBC is a separate file — WHOOP-POL-017 — and both can apply.",
+        body: "Report to KERN at 1 604 431 2000 and ask for Safety, or email hire@kern.onl. If the alleged person is KERN, use that route anyway and name it. A complaint may also be filed with the BC Human Rights Tribunal. Bullying and harassment under WorkSafeBC is a separate file — KERN-POL-017 — and both can apply.",
       },
     ],
   },
   {
     slug: "first-aid",
     title: "FIRST AID",
-    number: "WHOOP-POL-025",
+    number: "KERN-POL-025",
     summary:
-      "First aid follows the workplace. On a client site that is usually the host. On a workplace WHOOP controls, WHOOP does the assessment.",
+      "First aid follows the workplace. On a client site that is usually the host. On a workplace KERN controls, KERN does the assessment.",
     statements: [
       {
         title: "Which workplace",
@@ -707,11 +707,11 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Client / host site",
-        body: "On a construction or industrial site WHOOP does not control, first aid is the host’s or the prime contractor’s. Before work, the crew knows where it is, who the attendant is, and how to summon it. That goes on the FLHA. WHOOP-FRM-012 is still completed for a WHOOP worker.",
+        body: "On a construction or industrial site KERN does not control, first aid is the host’s or the prime contractor’s. Before work, the crew knows where it is, who the attendant is, and how to summon it. That goes on the FLHA. KERN-FRM-012 is still completed for a KERN worker.",
       },
       {
-        title: "Workplace WHOOP controls",
-        body: "If WHOOP is the employer at a workplace it controls — office, yard, shop — WHOOP conducts the first-aid assessment, posts it, and provides the equipment, attendants and procedures that assessment requires. Review when the workforce or the work changes.",
+        title: "Workplace KERN controls",
+        body: "If KERN is the employer at a workplace it controls — office, yard, shop — KERN conducts the first-aid assessment, posts it, and provides the equipment, attendants and procedures that assessment requires. Review when the workforce or the work changes.",
       },
       {
         title: "Records",
@@ -722,25 +722,25 @@ export const POLICIES: Policy[] = [
   {
     slug: "joint-committee",
     title: "JOINT COMMITTEE / WORKER REPRESENTATIVE",
-    number: "WHOOP-POL-026",
+    number: "KERN-POL-026",
     summary:
-      "Committee or worker representative follows the Act for that workplace. It is not a poster WHOOP invents for every site.",
+      "Committee or worker representative follows the Act for that workplace. It is not a poster KERN invents for every site.",
     statements: [
       {
         title: "The threshold",
-        body: "Workers Compensation Act Part 2 Division 5. A joint health and safety committee is required at a workplace where 20 or more workers are regularly employed. A worker health and safety representative is required where 9 to 19 workers are regularly employed. Other orders can apply. This is per workplace — not a headcount of everyone WHOOP has ever dispatched.",
+        body: "Workers Compensation Act Part 2 Division 5. A joint health and safety committee is required at a workplace where 20 or more workers are regularly employed. A worker health and safety representative is required where 9 to 19 workers are regularly employed. Other orders can apply. This is per workplace — not a headcount of everyone KERN has ever dispatched.",
       },
       {
-        title: "Workplace WHOOP controls",
-        body: "At a workplace WHOOP regularly employs people and controls, WHOOP establishes the committee or representative the Act requires. New members get the training in OHS Regulation 3.27. A joint committee is evaluated annually where 3.26 applies.",
+        title: "Workplace KERN controls",
+        body: "At a workplace KERN regularly employs people and controls, KERN establishes the committee or representative the Act requires. New members get the training in OHS Regulation 3.27. A joint committee is evaluated annually where 3.26 applies.",
       },
       {
         title: "Client / host site",
-        body: "WHOOP workers on a host site participate in that workplace’s committee or representative system as the host and the Act require. WHOOP remains the employer of its people. A multiple-employer workplace does not erase that.",
+        body: "KERN workers on a host site participate in that workplace’s committee or representative system as the host and the Act require. KERN remains the employer of its people. A multiple-employer workplace does not erase that.",
       },
       {
         title: "Below the threshold",
-        body: "If a WHOOP-controlled workplace is below the committee and representative thresholds, 3.2 still requires regular monthly meetings with workers on health and safety, and a record of what was discussed. WHOOP-FRM-033.",
+        body: "If a KERN-controlled workplace is below the committee and representative thresholds, 3.2 still requires regular monthly meetings with workers on health and safety, and a record of what was discussed. KERN-FRM-033.",
       },
       {
         title: "Recommendations",
@@ -751,17 +751,17 @@ export const POLICIES: Policy[] = [
   {
     slug: "contractors",
     title: "CONTRACTORS AND MULTI-EMPLOYER SITES",
-    number: "WHOOP-POL-027",
+    number: "KERN-POL-027",
     summary:
-      "WHOOP is usually the contractor. The host owns the site. The prime contractor owns coordination where the Act requires one. Subcontractors WHOOP hires are selected and watched.",
+      "KERN is usually the contractor. The host owns the site. The prime contractor owns coordination where the Act requires one. Subcontractors KERN hires are selected and watched.",
     statements: [
       {
-        title: "WHOOP",
+        title: "KERN",
         body: "Sends competent people, this program, and stop-work. Does not own the client’s site. Does not become the prime contractor by showing up with a crew.",
       },
       {
-        title: "WHOOP workers",
-        body: "Work to this program and to site rules — whichever is stricter. Report to WHOOP and to site supervision. Refuse unsafe work.",
+        title: "KERN workers",
+        body: "Work to this program and to site rules — whichever is stricter. Report to KERN and to site supervision. Refuse unsafe work.",
       },
       {
         title: "Host employer / client",
@@ -769,32 +769,32 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Site supervisor",
-        body: "When WHOOP supplies lift supervision, that person owns whether the hook moves. They do not own the entire site.",
+        body: "When KERN supplies lift supervision, that person owns whether the hook moves. They do not own the entire site.",
       },
       {
         title: "Prime contractor",
-        body: "On a multiple-employer workplace the Act requires a prime contractor to coordinate. WHOOP asks who that is before people are sent. If nobody can name them, that is a hazard. It is named. The lift waits until coordination is real.",
+        body: "On a multiple-employer workplace the Act requires a prime contractor to coordinate. KERN asks who that is before people are sent. If nobody can name them, that is a hazard. It is named. The lift waits until coordination is real.",
       },
       {
-        title: "Subcontractors WHOOP hires",
-        body: "If WHOOP hires another company — a rigger shop, a signal crew, a carrier — selection includes their ability to identify, communicate and control hazards that affect their people, ours, and anyone else. They get this program and the host’s rules. WHOOP monitors the work we hired them for. A COR card is evidence, not a substitute for watching the hitch.",
+        title: "Subcontractors KERN hires",
+        body: "If KERN hires another company — a rigger shop, a signal crew, a carrier — selection includes their ability to identify, communicate and control hazards that affect their people, ours, and anyone else. They get this program and the host’s rules. KERN monitors the work we hired them for. A COR card is evidence, not a substitute for watching the hitch.",
       },
       {
         title: "Orientation and communication",
-        body: "Host orientation is completed as the site requires. WHOOP shares what the host needs: FLHA, inspections, incidents involving our people. The host shares what we need: known hazards, other cranes, lines, first aid, muster.",
+        body: "Host orientation is completed as the site requires. KERN shares what the host needs: FLHA, inspections, incidents involving our people. The host shares what we need: known hazards, other cranes, lines, first aid, muster.",
       },
     ],
   },
   {
     slug: "occupational-health",
     title: "OCCUPATIONAL HEALTH",
-    number: "WHOOP-POL-028",
+    number: "KERN-POL-028",
     summary:
       "Noise, MSI, heat, cold, WHMIS and smoke as they actually hit crane and rigging work. Not a silica program we do not run.",
     statements: [
       {
         title: "What this covers",
-        body: "Hazards that show up on WHOOP dispatches: noise at the machine and in the cab, musculoskeletal injury from sitting a crane or handling gear, heat and cold, hazardous products we actually use, wildfire smoke. Silica, asbestos and confined-space programs are not added because they are not the work. If a dispatch actually includes that exposure, it is named on the FLHA and the host’s procedure is followed — or the dispatch is refused.",
+        body: "Hazards that show up on KERN dispatches: noise at the machine and in the cab, musculoskeletal injury from sitting a crane or handling gear, heat and cold, hazardous products we actually use, wildfire smoke. Silica, asbestos and confined-space programs are not added because they are not the work. If a dispatch actually includes that exposure, it is named on the FLHA and the host’s procedure is followed — or the dispatch is refused.",
       },
       {
         title: "Noise",
@@ -806,7 +806,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Hazardous products",
-        body: "WHMIS for products WHOOP people use — diesel, hydraulic oil, grease, rope dressing. SDS library 18. The host’s products stay on the host’s SDS.",
+        body: "WHMIS for products KERN people use — diesel, hydraulic oil, grease, rope dressing. SDS library 18. The host’s products stay on the host’s SDS.",
       },
       {
         title: "Heat, cold, smoke",

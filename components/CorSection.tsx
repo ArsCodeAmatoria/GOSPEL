@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CorMark } from "@/components/CorMark";
-import { COR } from "@/lib/site";
+import { ProvenName } from "@/components/ProvenMark";
+import { COR, SITE } from "@/lib/site";
 
 export function CorPanel() {
   const extras: { label: string; value: string }[] = [];
@@ -54,9 +55,9 @@ export function CorSection() {
       </h2>
       <p className="mono mt">Certificate of Recognition — COR®</p>
       <p className="lede mt">
-        WHOOP maintains a certified occupational health and safety management
-        system and is committed to continuous improvement in how we plan,
-        perform and verify our work.
+        KERN maintains Proven — a certified occupational health and safety
+        management system — and is committed to continuous improvement in how we
+        plan, perform and verify our work.
       </p>
       <div className="cor-grid">
         <div>
@@ -67,14 +68,15 @@ export function CorSection() {
           </h3>
           <p className="lede mt">
             We don&apos;t believe safety should be hidden behind a login or an
-            expiring link. Our safety program is available for clients and
-            workers to review, and our COR certification provides an independent
-            framework for maintaining and improving our occupational health and
-            safety management system.
+            expiring link. Proven is available for clients and workers to
+            review, and our COR certification provides an independent framework
+            for maintaining and improving that system.
           </p>
           <div className="rules mt-2">
             <article className="rule">
-              <h3 className="display">Our safety program</h3>
+              <h3 className="display">
+                <ProvenName />
+              </h3>
               <p>Open to everyone.</p>
             </article>
             <article className="rule">
@@ -87,13 +89,13 @@ export function CorSection() {
           </div>
           <div className="inline-cta">
             <Link className="btn btn-solid" href="/safety">
-              VIEW OUR SAFETY PROGRAM →
+              VIEW {SITE.system} →
             </Link>
             <a className="btn btn-ghost" href={COR.packHref} download>
               DOWNLOAD COR PACK →
             </a>
             <Link className="btn btn-ghost" href="/hire">
-              CONTACT WHOOP →
+              CONTACT KERN →
             </Link>
           </div>
         </div>
@@ -105,7 +107,7 @@ export function CorSection() {
         TO HIDE.
       </p>
       <p className="mono steel mt">
-        COR CERTIFIED. SAFETY PROGRAM — OPEN. CRANE + RIGGING — READY.
+        COR CERTIFIED. {SITE.system} — OPEN. CRANE + RIGGING — READY.
       </p>
       <p className="mono steel mt">
         WE SHOW YOU OUR SYSTEM. WE SHOW YOU OUR CREDENTIALS. THEN WE SHOW UP AND

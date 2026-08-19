@@ -1,38 +1,47 @@
 export const SITE = {
-  name: "WHOOP",
-  legalName: "Whoop Crane Inc.",
+  name: "KERN",
+  legalName: "Kern Crane",
   descriptor: "CRANE + RIGGING",
   phone: "1 604 431 2000",
   phoneHref: "tel:+16044312000",
-  email: "hire@whoopp.ca",
-  emailHref: "mailto:hire@whoopp.ca",
+  email: "hire@kern.onl",
+  emailHref: "mailto:hire@kern.onl",
   location: "British Columbia, Canada",
   tagline: "WE MOVE HEAVY THINGS.",
   sub: "AND WE SHOW YOU HOW WE DO IT.",
-  union: "UNION FRIENDLY SHOP",
-  position: "We are a safety company. The crew is how you get us.",
+  dek: "A complete crane operations and rigging company.",
+  position: "The people and the systems.",
+  roles:
+    "Qualified crane operators, riggers, signalpersons, crane supervisors and safety support for construction.",
+  method:
+    "Experienced people. Structured supervision. Competency verification. Rigging and crane safety systems. Proven keeps the people, the process and the documentation behind every crane operation organized, verified and accountable.",
+  close:
+    "We go beyond supplying labour. We provide the people and systems that support the safe and professional operation of cranes.",
+  description:
+    "KERN is a complete crane operations and rigging company providing qualified crane operators, riggers, signalpersons, crane supervisors, and safety support to construction projects. KERN combines experienced people with structured supervision, competency verification, rigging and crane safety systems, and its proprietary PROVEN technology platform to ensure the people, processes, and documentation behind every crane operation are organized, verified, and accountable. KERN goes beyond supplying labour. We provide the people and systems that support the safe and professional operation of cranes.",
+  system: "PROVEN",
 } as const;
 
 export const ABOUT = [
   {
     name: "The work",
-    body: "Crane operators, riggers, signalpersons and lifting crews. Matched to the machine, the lift and the site.",
+    body: "A complete crane operations and rigging company. Operators, riggers, signalpersons, crane supervisors and safety support for construction.",
   },
   {
     name: "The people",
-    body: "Named operators, riggers and signalpersons. Tickets, experience and practical competency checked before anyone is sent.",
+    body: "Named, qualified, supervised. Tickets, experience and practical competency checked before anyone is sent.",
+  },
+  {
+    name: "The system",
+    body: "Structured supervision, competency verification, rigging and crane safety systems, and Proven — so the people, the process and the documentation stay organized, verified and accountable.",
   },
   {
     name: "British Columbia",
     body: "Based here. Deployed where the lift is.",
   },
   {
-    name: "Union-friendly",
-    body: "We work with union members and respect the agreements on the site. That is how this work gets done.",
-  },
-  {
     name: "Open book",
-    body: "The Safety Program is public. Clients and workers can read how we expect the work to be done before the gate.",
+    body: "Proven is public. Clients and workers can read how we expect the work to be done before the gate.",
   },
   {
     name: "COR® Certified",
@@ -102,8 +111,8 @@ export const COR = {
 export const NAV = [
   { href: "/", label: "WORK", num: "01" },
   { href: "/crew", label: "THE CREW", num: "02" },
-  { href: "/safety", label: "SAFETY PROGRAM", num: "03" },
-  { href: "/whoopwire", label: "WHOOPWIRE", num: "04" },
+  { href: "/safety", label: "PROVEN", num: "03" },
+  { href: "/whoopwire", label: "KERNWIRE", num: "04" },
   { href: "/philosophy", label: "PHILOSOPHY", num: "05" },
   { href: "/hire", label: "HIRE A CREW", num: "06" },
 ] as const;
@@ -112,7 +121,7 @@ export const SERVICES = [
   {
     num: "01",
     title: "CRANE OPERATORS",
-    body: "Experienced operators supplied to contractors and crane companies. Matched to the machine, the lift and the site — not just the ticket.",
+    body: "Qualified operators matched to the machine, the lift and the site — not just the ticket.",
   },
   {
     num: "02",
@@ -126,8 +135,13 @@ export const SERVICES = [
   },
   {
     num: "04",
-    title: "LIFTING CREWS",
-    body: "Operator and rigging crews supplied as a coordinated team. One brief. One standard. One crew that already knows how the other works.",
+    title: "CRANE SUPERVISORS",
+    body: "Structured supervision on the lift. The plan, the crew, the stop. Accountable before the hook moves.",
+  },
+  {
+    num: "05",
+    title: "SAFETY SUPPORT",
+    body: "Safety people and Proven on the job. Process and documentation organized, verified and accountable.",
   },
 ] as const;
 
@@ -145,7 +159,7 @@ export const BELIEFS = [
   },
   {
     title: "Safety information should be accessible.",
-    body: "Clients, workers and contractors should be able to see how we expect work to be performed before they hire us. No portal. No request form. No expiry date.",
+    body: "Proven is public. Clients, workers and contractors should be able to see how we expect work to be performed before they hire us. No portal. No request form. No expiry date.",
   },
   {
     title: "Documentation should be useful.",
@@ -158,10 +172,6 @@ export const BELIEFS = [
   {
     title: "Workers should be treated with respect.",
     body: "We supply people, not units. Competent tradespeople get briefed, paid correctly and backed when they refuse unsafe work.",
-  },
-  {
-    title: "We are a union-friendly shop.",
-    body: "We work with union members and respect the agreements on the site. That is how this work gets done. It is not a problem we manage around.",
   },
   {
     title: "Customers should know exactly what they are getting.",

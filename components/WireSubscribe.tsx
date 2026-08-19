@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { SITE } from "@/lib/site";
 
 export function WireSubscribe({ compact = false }: { compact?: boolean }) {
   const [done, setDone] = useState(false);
@@ -21,7 +22,7 @@ export function WireSubscribe({ compact = false }: { compact?: boolean }) {
       if (!res.ok) throw new Error("fail");
       setDone(true);
     } catch {
-      window.location.href = `mailto:hire@whoopp.ca?subject=${encodeURIComponent("WHOOPWIRE")}&body=${encodeURIComponent(email)}`;
+      window.location.href = `${SITE.emailHref}?subject=${encodeURIComponent("KERNWIRE")}&body=${encodeURIComponent(email)}`;
       setError("If your email client opened, send that. Otherwise call us.");
     }
   }
@@ -29,7 +30,7 @@ export function WireSubscribe({ compact = false }: { compact?: boolean }) {
   if (done) {
     return (
       <div className={compact ? undefined : "section wrap"} id="subscribe">
-        <p className="mono kicker">WHOOPWIRE</p>
+        <p className="mono kicker">KERNWIRE</p>
         <h2 className="display giant-sm">YOU&apos;RE ON THE LIST.</h2>
         <p className="lede mt">We will send stories. We will not bury you in mail.</p>
       </div>
@@ -38,11 +39,11 @@ export function WireSubscribe({ compact = false }: { compact?: boolean }) {
 
   return (
     <section className={compact ? "wire-sub" : "section wrap"} id="subscribe">
-      <p className="mono kicker">WHOOPWIRE</p>
+      <p className="mono kicker">KERNWIRE</p>
       <h2 className="display giant">
         GET
         <br />
-        WHOOPWIRE.
+        KERNWIRE.
       </h2>
       <p className="lede mt">
         New stories on safety, rigging, cranes and the people doing the work.

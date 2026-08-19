@@ -7,8 +7,8 @@ const PERSONNEL = [
   "Crane operators",
   "Riggers",
   "Signalpersons",
-  "Lifting crew",
-  "Lift supervision",
+  "Crane supervisors",
+  "Safety support",
   "Mixed crew",
 ];
 
@@ -31,7 +31,7 @@ export function HireForm() {
       if (!res.ok) throw new Error("fail");
       setDone(true);
     } catch {
-      const subject = encodeURIComponent(`Hire a crew — ${data.company || "WHOOP"}`);
+      const subject = encodeURIComponent(`Hire a crew — ${data.company || "KERN"}`);
       const body = encodeURIComponent(
         Object.entries(data)
           .map(([k, v]) => `${k}: ${v}`)
@@ -50,7 +50,7 @@ export function HireForm() {
         <p className="mono kicker">REQUEST RECEIVED</p>
         <h2 className="display">WE HAVE IT.</h2>
         <p className="lede mt">
-          Someone at WHOOP will call you. If the start date is close, call us
+          Someone at KERN will call you. If the start date is close, call us
           now.
         </p>
         <div className="inline-cta">

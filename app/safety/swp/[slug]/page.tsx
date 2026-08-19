@@ -24,7 +24,7 @@ export default async function SwpPage({ params }: Props) {
   return (
     <SafetyDocFrame
       kicker="SAFE WORK PROCEDURE"
-      num={doc.number.replace("WHOOP-", "")}
+      num={doc.number.replace("KERN-", "")}
       title={doc.title}
       intro={doc.summary}
       backHref="/safety/swp-library"

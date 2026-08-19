@@ -3,7 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { ProvenName } from "@/components/ProvenMark";
 import { SAFETY, safetyByGroup } from "@/lib/safety";
+import { SITE } from "@/lib/site";
 
 function sectionFromPath(path: string): string | undefined {
   if (path === "/safety" || path === "/safety/") return undefined;
@@ -67,7 +69,7 @@ export function SafetyNav() {
   const stripRef = useRef<HTMLDivElement>(null);
   const [tocOpen, setTocOpen] = useState(false);
   const here = SAFETY.find((s) => s.slug === current);
-  const label = here ? `${here.num}  ${here.title}` : "SAFETY PROGRAM";
+  const label = here ? `${here.num}  ${here.title}` : SITE.system;
 
   useEffect(() => {
     setTocOpen(false);
@@ -107,14 +109,14 @@ export function SafetyNav() {
             <span className="mono steel">NOW</span>
             <strong className="display">{label}</strong>
           </summary>
-          <nav aria-label="Safety program">
+          <nav aria-label={SITE.system}>
             <NavLinks current={current} onPick={() => setTocOpen(false)} />
           </nav>
         </details>
       </div>
       <div className="doc-nav-inner">
-        <p className="mono steel" style={{ marginBottom: "1rem" }}>
-          SAFETY PROGRAM
+        <p className="mono steel proven-nav-head">
+          <ProvenName />
         </p>
         <nav>
           <NavLinks current={current} />

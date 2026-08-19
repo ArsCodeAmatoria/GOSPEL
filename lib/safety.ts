@@ -1,5 +1,5 @@
 import { COR_ELEMENTS, PROGRAM_HIERARCHY, WSBC_33 } from "@/lib/ohs/system";
-import { MAD_APPROACH, MAD_DOWN, MAD_UNKNOWN } from "@/lib/ohs/meta";
+import { LIGHTNING_RULE, MAD_APPROACH, MAD_DOWN, MAD_UNKNOWN } from "@/lib/ohs/meta";
 
 export type Step = { n: string; title: string; body: string };
 
@@ -74,7 +74,7 @@ export const SAFETY: SafetySection[] = [
     title: "COMPANY SAFETY POLICY",
     kicker: "The standard is not a poster.",
     intro:
-      "WHOOP is a safety company. The crew is how you get us. Crane operators, riggers, signalpersons and lifting crews — competent people on lifting work, to a published standard.",
+      "KERN is a complete crane operations and rigging company. Qualified crane operators, riggers, signalpersons, crane supervisors and safety support — competent people on lifting work, to a published standard.",
     blocks: [
       {
         type: "quote",
@@ -82,16 +82,16 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "This Safety Program is the company’s rulebook for lifting work. It applies to every worker WHOOP deploys, every supervisor WHOOP assigns, and every job we accept. Clients can read it before they hire us. Workers can read it before they accept a dispatch. That is deliberate.",
+        text: "Proven is the company’s rulebook for lifting work. It applies to every worker KERN deploys, every supervisor KERN assigns, and every job we accept. Clients can read it before they hire us. Workers can read it before they accept a dispatch. That is deliberate.",
       },
       {
         type: "h",
-        text: "WHAT THIS PROGRAM IS",
+        text: "WHAT PROVEN IS",
       },
       {
         type: "list",
         items: [
-          "The minimum standard for how WHOOP personnel plan, rig, signal and lift.",
+          "The minimum standard for how KERN personnel plan, rig, signal and lift.",
           "A public document. It is not proprietary. It does not expire. It is not behind a form.",
           "Subordinate to law. Where applicable occupational health and safety law is stricter, the law wins. Where this program is stricter, this program wins.",
           "Written to be used. Procedures are sequenced the way the work actually happens.",
@@ -129,7 +129,7 @@ export const SAFETY: SafetySection[] = [
           },
           {
             title: "No surprise no-shows.",
-            body: "Reliability is a safety control. A missing operator mid-lift is a hazard. If WHOOP cannot fill a role, the client is told immediately.",
+            body: "Reliability is a safety control. A missing operator mid-lift is a hazard. If KERN cannot fill a role, the client is told immediately.",
           },
         ],
       },
@@ -139,7 +139,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "WHOOP is a safety company. The crew is how you get us. Lifting work is performed in accordance with the following. Where they conflict, the stricter applicable requirement wins. Law always wins. This program is written to sit on top of that stack, not beside it.",
+        text: "KERN is a complete crane operations and rigging company. The people and the systems. Lifting work is performed in accordance with the following. Where they conflict, the stricter applicable requirement wins. Law always wins. This program is written to sit on top of that stack, not beside it.",
       },
       {
         type: "list",
@@ -156,7 +156,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "WHOOP operates in Canada. Provincial occupational health and safety statutes, regulations and codes of practice apply on the site where the work is performed.",
+        text: "KERN operates in Canada. Provincial occupational health and safety statutes, regulations and codes of practice apply on the site where the work is performed.",
       },
     ],
   },
@@ -166,21 +166,21 @@ export const SAFETY: SafetySection[] = [
     title: "RESPONSIBILITIES",
     kicker: "Who owns what.",
     intro:
-      "Lifting work fails when everybody assumes somebody else has it. WHOOP supplies people into workplaces we do not always control. The split in responsibility has to be explicit.",
+      "Lifting work fails when everybody assumes somebody else has it. KERN supplies people into workplaces we do not always control. The split in responsibility has to be explicit.",
     blocks: [
       {
         type: "h",
-        text: "WHOOP",
+        text: "KERN",
       },
       {
         type: "list",
         items: [
           "Verify qualifications, experience and practical competency before dispatch.",
-          "Brief workers on this Safety Program and the known scope of the job.",
+          "Brief workers on Proven and the known scope of the job.",
           "Supply personnel who are fit for work and ticketed for the role requested.",
           "Refuse or stop a dispatch when the work as described cannot be done safely.",
           "Keep this program current and publicly available.",
-          "Investigate incidents involving WHOOP personnel and share findings with the client as required.",
+          "Investigate incidents involving KERN personnel and share findings with the client as required.",
         ],
       },
       {
@@ -209,7 +209,7 @@ export const SAFETY: SafetySection[] = [
           "Provide accurate information: load data, drawings, machine type, site constraints, known hazards.",
           "Provide or confirm engineered lift plans where the lift requires them.",
           "Ensure a prime contractor / site safety system is in place as required by law.",
-          "Do not direct WHOOP personnel to skip this program or applicable law.",
+          "Do not direct KERN personnel to skip this program or applicable law.",
         ],
       },
       {
@@ -218,7 +218,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Workers Compensation Act s. 23. A supervisor WHOOP sends — or a site supervisor directing our people — ensures the workers under their direct supervision are made aware of known or reasonably foreseeable health and safety hazards, and comply with the Act, the Regulation, and this program as it applies. They consult and cooperate with the joint committee or worker representative where there is one. They cooperate with WorkSafeBC. They do not own the entire site. They do own whether the people they supervise work to the plan.",
+        text: "Workers Compensation Act s. 23. A supervisor KERN sends — or a site supervisor directing our people — ensures the workers under their direct supervision are made aware of known or reasonably foreseeable health and safety hazards, and comply with the Act, the Regulation, and this program as it applies. They consult and cooperate with the joint committee or worker representative where there is one. They cooperate with WorkSafeBC. They do not own the entire site. They do own whether the people they supervise work to the plan.",
       },
       {
         type: "list",
@@ -231,7 +231,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "When WHOOP supplies lift supervision, that person owns the lift sequence: briefing, exclusion zone, communication, stop/start, and the decision to abort. They do not own the entire site. They do own whether the hook moves.",
+        text: "When KERN supplies lift supervision, that person owns the lift sequence: briefing, exclusion zone, communication, stop/start, and the decision to abort. They do not own the entire site. They do own whether the hook moves.",
       },
       {
         type: "quote",
@@ -243,7 +243,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "WHOOP personnel may have more than one party directing their work. That does not dilute this program. A client instruction that conflicts with this program or with law is not followed. The worker stops, states the conflict, and the lift waits until it is resolved.",
+        text: "KERN personnel may have more than one party directing their work. That does not dilute this program. A client instruction that conflicts with this program or with law is not followed. The worker stops, states the conflict, and the lift waits until it is resolved.",
       },
     ],
   },
@@ -253,7 +253,7 @@ export const SAFETY: SafetySection[] = [
     title: "HAZARD ASSESSMENT",
     kicker: "Before the hook, the paper. Before the paper, the walk.",
     intro:
-      "Every WHOOP dispatch requires a hazard assessment. A generic form filled in the parking lot is not an assessment. Look at the work. Name the hazards. Control them. Then lift.",
+      "Every KERN dispatch requires a hazard assessment. A generic form filled in the parking lot is not an assessment. Look at the work. Name the hazards. Control them. Then lift.",
     blocks: [
       {
         type: "steps",
@@ -318,11 +318,11 @@ export const SAFETY: SafetySection[] = [
     title: "SAFE WORK PROCEDURES",
     kicker: "A procedure you cannot use is not a procedure.",
     intro:
-      "Safe Work Procedures (SWPs) cover types of work WHOOP personnel perform repeatedly. They are written as sequences because lifting is a sequence. Read them in order. Do them in order. Hazards for that work are in the JHA — not buried in the procedure.",
+      "Safe Work Procedures (SWPs) cover types of work KERN personnel perform repeatedly. They are written as sequences because lifting is a sequence. Read them in order. Do them in order. Hazards for that work are in the JHA — not buried in the procedure.",
     blocks: [
       {
         type: "p",
-        text: "SWPs live in this program so they can be read on a phone at the gate. They are the default method. A site may impose a stricter method. A site may not impose a looser one on WHOOP personnel.",
+        text: "SWPs live in this program so they can be read on a phone at the gate. They are the default method. A site may impose a stricter method. A site may not impose a looser one on KERN personnel.",
       },
       {
         type: "cta",
@@ -432,12 +432,12 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/builder/flytable-cycle-sjp",
-        label: "FILL THIS CYCLE — WHOOP-FRM-052 →",
+        label: "FILL THIS CYCLE — KERN-FRM-052 →",
       },
       {
         type: "cta",
         href: "/safety/builder/loading-platform-sjp",
-        label: "FILL THIS DECK — WHOOP-FRM-053 →",
+        label: "FILL THIS DECK — KERN-FRM-053 →",
       },
       {
         type: "cta",
@@ -452,8 +452,8 @@ export const SAFETY: SafetySection[] = [
         type: "list",
         items: [
           "Critical lifts as defined by the site or by this program (see Crane Operations).",
-          "Flytable / flyform cycles — every table, every floor. WHOOP-SJP-001. Corner and nontypical tables: WHOOP-SJP-002.",
-          "Loading-platform install, reposition or strike — every deck, every floor. WHOOP-SJP-003. Daily SuperDeck extend / retract is host, not this SJP.",
+          "Flytable / flyform cycles — every table, every floor. KERN-SJP-001. Corner and nontypical tables: KERN-SJP-002.",
+          "Loading-platform install, reposition or strike — every deck, every floor. KERN-SJP-003. Daily SuperDeck extend / retract is host, not this SJP.",
           "Tandem or multiple-crane lifts.",
           "Loads of unknown or shifting centre of gravity.",
           "Lifts over occupied buildings, public space, or process equipment.",
@@ -463,7 +463,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "h",
-        text: "HOW WHOOP BUILDS AN SJP",
+        text: "HOW KERN BUILDS AN SJP",
       },
       {
         type: "steps",
@@ -507,7 +507,7 @@ export const SAFETY: SafetySection[] = [
     title: "RIGGING",
     kicker: "The gear is the truth. The guess is the hazard.",
     intro:
-      "WHOOP riggers rig to rated capacity, known weights and inspected hardware. We do not “make it work” with a choker and optimism. Rigging is done to ASME B30, manufacturer instructions for the hardware, and the site.",
+      "KERN riggers rig to rated capacity, known weights and inspected hardware. We do not “make it work” with a choker and optimism. Rigging is done to ASME B30, manufacturer instructions for the hardware, and the site.",
     blocks: [
       {
         type: "h",
@@ -576,7 +576,7 @@ export const SAFETY: SafetySection[] = [
     title: "CRANE OPERATIONS",
     kicker: "The chart is the law of the machine.",
     intro:
-      "WHOOP operators run cranes they are competent on, to the load chart, on ground that can hold them, with a crew they can hear. The operator works to CSA Z150 or Z248 as the machine requires, ASME B30, the manufacturer, WorkSafeBC, and the site. If those conditions are not present, the crane does not come on load.",
+      "KERN operators run cranes they are competent on, to the load chart, on ground that can hold them, with a crew they can hear. The operator works to CSA Z150 or Z248 as the machine requires, ASME B30, the manufacturer, WorkSafeBC, and the site. If those conditions are not present, the crane does not come on load.",
     blocks: [
       {
         type: "h",
@@ -632,17 +632,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Treat as critical unless the site defines a stricter threshold: loads approaching chart capacity, tandem lifts, lifts over operating plant or public space, non-routine paths, loads with shifting COG, a flytable / flyform cycle, or a loading-platform install, reposition or strike. Critical lifts get an SJP, named supervision, and a slower brief. Ego is not a control. Flytables: WHOOP-SWP-028, WHOOP-JHA-011, WHOOP-SJP-001. Loading platforms: WHOOP-SWP-030, WHOOP-JHA-014, WHOOP-SJP-003.",
+        text: "Treat as critical unless the site defines a stricter threshold: loads approaching chart capacity, tandem lifts, lifts over operating plant or public space, non-routine paths, loads with shifting COG, a flytable / flyform cycle, or a loading-platform install, reposition or strike. Critical lifts get an SJP, named supervision, and a slower brief. Ego is not a control. Flytables: KERN-SWP-028, KERN-JHA-011, KERN-SJP-001. Loading platforms: KERN-SWP-030, KERN-JHA-014, KERN-SJP-003.",
       },
       {
         type: "cta",
         href: "/safety/swp/flytable-cycling",
-        label: "FLYTABLE CYCLING — WHOOP-SWP-028 →",
+        label: "FLYTABLE CYCLING — KERN-SWP-028 →",
       },
       {
         type: "cta",
         href: "/safety/swp/loading-platform-reposition",
-        label: "LOADING PLATFORM — WHOOP-SWP-030 →",
+        label: "LOADING PLATFORM — KERN-SWP-030 →",
       },
       {
         type: "h",
@@ -650,7 +650,22 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Wind limits come from the manufacturer and the lift plan — the lower number wins. Lightning: boom down, people off. Power lines: assume they are live. MAD is Table 19-1A — the same numbers BC Hydro publishes. If the lift cannot hold that clearance, it is not a crane job until 30M33 is signed.",
+        text: "Wind limits come from the manufacturer and the lift plan — the lower number wins. Tower: 14.92 anemometer, stop when the load cannot be handled safely, 50 km/h if the OEM is silent. Cold: 14.93, stop below −18 °C unless the manufacturer or engineer says otherwise. Lightning: thunder is the stop. Environment Canada — if you hear it, you are in striking distance. Wait 30 minutes after the last rumble. Do not count flash-to-bang to 30 before stopping. Technical Safety BC does not write a 30/30 crane rule; earthing of the supply is the owner’s electrical work. A strike is a misadventure (14.16.1).",
+      },
+      {
+        type: "table",
+        caption: LIGHTNING_RULE.caption,
+        columns: LIGHTNING_RULE.columns,
+        rows: LIGHTNING_RULE.rows,
+      },
+      {
+        type: "cta",
+        href: "/safety/swp/weather-and-wind",
+        label: "WEATHER AND WIND — KERN-SWP-023 →",
+      },
+      {
+        type: "p",
+        text: "Power lines: assume they are live. MAD is Table 19-1A — the same numbers BC Hydro publishes. If the lift cannot hold that clearance, it is not a crane job until 30M33 is signed.",
       },
       {
         type: "table",
@@ -671,7 +686,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/swp/working-near-powerlines",
-        label: "WORKING NEAR POWERLINES — WHOOP-SWP-018 →",
+        label: "WORKING NEAR POWERLINES — KERN-SWP-018 →",
       },
       {
         type: "h",
@@ -679,17 +694,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Operating the crane is not servicing it. Isolation before a body is in the machine: WHOOP-SWP-026. Climbing the ladder to the cab to operate is not jumping the tower. Erection, climbing (increasing height) and dismantling are a separate dispatch under a qualified supervisor, with a Notice of Project as 14.73.3 requires. WHOOP-SWP-027. Emergency shutdown: people first. WHOOP-SWP-024.",
+        text: "Operating the crane is not servicing it. Isolation before a body is in the machine: KERN-SWP-026. Climbing the ladder to the cab to operate is not jumping the tower. Erection, climbing (increasing height) and dismantling are a separate dispatch under a qualified supervisor, with a Notice of Project as 14.73.3 requires. KERN-SWP-027. Emergency shutdown: people first. KERN-SWP-024.",
       },
       {
         type: "cta",
         href: "/safety/swp/lockout",
-        label: "LOCKOUT / ISOLATION — WHOOP-SWP-026 →",
+        label: "LOCKOUT / ISOLATION — KERN-SWP-026 →",
       },
       {
         type: "cta",
         href: "/safety/swp/tower-erection-climbing",
-        label: "TOWER ERECTION, CLIMBING AND DISMANTLING — WHOOP-SWP-027 →",
+        label: "TOWER ERECTION, CLIMBING AND DISMANTLING — KERN-SWP-027 →",
       },
       {
         type: "cta",
@@ -708,7 +723,7 @@ export const SAFETY: SafetySection[] = [
     blocks: [
       {
         type: "p",
-        text: "WHOOP personnel follow the fall protection law that applies on the site. Where provincial thresholds differ, we use the site law. Where this program is stricter, we use this program. Default posture: if you can fall more than the legal threshold — or onto a hazard below that threshold — you are protected before you go there.",
+        text: "KERN personnel follow the fall protection law that applies on the site. Where provincial thresholds differ, we use the site law. Where this program is stricter, we use this program. Default posture: if you can fall more than the legal threshold — or onto a hazard below that threshold — you are protected before you go there.",
       },
       {
         type: "h",
@@ -791,7 +806,7 @@ export const SAFETY: SafetySection[] = [
           "Near misses: someone in the zone, a lost signal that almost mattered, a sling that started to cut.",
           "Property and equipment damage.",
           "A stop-work event that revealed a broken plan.",
-          "Bullying or harassment toward a WHOOP worker — including on a client site.",
+          "Bullying or harassment toward a KERN worker — including on a client site.",
         ],
       },
       {
@@ -819,7 +834,7 @@ export const SAFETY: SafetySection[] = [
           {
             n: "04",
             title: "NOTIFY",
-            body: "Site supervision, WHOOP, and the regulator when the law requires it. Immediate for serious events — not after the shift beer.",
+            body: "Site supervision, KERN, and the regulator when the law requires it. Immediate for serious events — not after the shift beer.",
           },
           {
             n: "05",
@@ -829,19 +844,19 @@ export const SAFETY: SafetySection[] = [
           {
             n: "06",
             title: "LEARN AND CHANGE",
-            body: "WHOOP investigates events involving our people. Collect facts, photographs, gear, witness names. Name causes and contributing factors — not a defence brief. Corrective actions get owners and dates. Close them. The program is updated when the lesson is real. WHOOP-FRM-013.",
+            body: "KERN investigates events involving our people. Collect facts, photographs, gear, witness names. Name causes and contributing factors — not a defence brief. Corrective actions get owners and dates. Close them. The program is updated when the lesson is real. KERN-FRM-013.",
           },
         ],
       },
       {
         type: "cta",
         href: "/safety/form/investigation",
-        label: "INVESTIGATION — WHOOP-FRM-013 →",
+        label: "INVESTIGATION — KERN-FRM-013 →",
       },
       {
         type: "cta",
         href: "/safety/form/refuse-unsafe-work",
-        label: "REFUSAL OF UNSAFE WORK — WHOOP-FRM-035 →",
+        label: "REFUSAL OF UNSAFE WORK — KERN-FRM-035 →",
       },
       {
         type: "quote",
@@ -893,7 +908,7 @@ export const SAFETY: SafetySection[] = [
     title: "EMERGENCY RESPONSE",
     kicker: "The plan has a number, a meeting point and a name.",
     intro:
-      "Every dispatch needs to know how the site calls for help. WHOOP does not assume the client’s emergency plan is obvious. We ask. Then we brief it.",
+      "Every dispatch needs to know how the site calls for help. KERN does not assume the client’s emergency plan is obvious. We ask. Then we brief it.",
     blocks: [
       {
         type: "h",
@@ -908,22 +923,22 @@ export const SAFETY: SafetySection[] = [
           "How to shut down or land the crane in an emergency.",
           "Rescue for fall arrest if anyone is tied off.",
           "Tower high-angle rescue: which fire department, how to summon them, where the written plan lives.",
-          "Contact for WHOOP after hours.",
+          "Contact for KERN after hours.",
         ],
       },
       {
         type: "p",
-        text: "First aid on a host site is the host’s. First aid on a workplace WHOOP controls is WHOOP’s assessment under Part 3 Division 4. WHOOP-POL-025. Drills are recorded where WHOOP is the employer at that workplace. WHOOP-FRM-034.",
+        text: "First aid on a host site is the host’s. First aid on a workplace KERN controls is KERN’s assessment under Part 3 Division 4. KERN-POL-025. Drills are recorded where KERN is the employer at that workplace. KERN-FRM-034.",
       },
       {
         type: "cta",
         href: "/safety/form/emergency-drill",
-        label: "EMERGENCY DRILL — WHOOP-FRM-034 →",
+        label: "EMERGENCY DRILL — KERN-FRM-034 →",
       },
       {
         type: "cta",
         href: "/safety/policy/first-aid",
-        label: "WHOOP-POL-025 — FIRST AID →",
+        label: "KERN-POL-025 — FIRST AID →",
       },
       {
         type: "h",
@@ -954,7 +969,7 @@ export const SAFETY: SafetySection[] = [
           },
           {
             n: "05",
-            title: "NOTIFY WHOOP",
+            title: "NOTIFY KERN",
             body: "As soon as people are accounted for. We handle the client, the families we must, and the regulator interface that is ours.",
           },
         ],
@@ -982,7 +997,7 @@ export const SAFETY: SafetySection[] = [
         items: [
           {
             title: "Crane incident",
-            body: "Stop. People first. Land or hold only if it does not create a second event. Notify the site and WHOOP. Hold the scene. WHOOP-SWP-024.",
+            body: "Stop. People first. Land or hold only if it does not create a second event. Notify the site and KERN. Hold the scene. KERN-SWP-024.",
           },
           {
             title: "Crane overturn",
@@ -998,7 +1013,7 @@ export const SAFETY: SafetySection[] = [
           },
           {
             title: "Serious injury",
-            body: "Make it safe. First aid. Emergency services. Do not move the person unless they are in immediate danger. Notify WHOOP immediately.",
+            body: "Make it safe. First aid. Emergency services. Do not move the person unless they are in immediate danger. Notify KERN immediately.",
           },
           {
             title: "Electrical / powerline contact",
@@ -1010,7 +1025,7 @@ export const SAFETY: SafetySection[] = [
           },
           {
             title: "Severe weather",
-            body: "Land the load. Manufacturer shutdown. People off the machine. Lightning: boom down. Resume only when the plan says so.",
+            body: "Land the load. Manufacturer shutdown. People off the machine. Thunder: stop, shelter 30 minutes after the last rumble. Do not count to 30. Strike: 14.16.1. KERN-SWP-023.",
           },
           {
             title: "Equipment failure",
@@ -1022,7 +1037,7 @@ export const SAFETY: SafetySection[] = [
           },
           {
             title: "Worker rescue",
-            body: "Fall arrest rescue is part of the plan before anyone ties off. Suspension trauma is on the clock. Do not improvise a crane-as-rescue unless that operation is permitted and planned. A tower operator in the cab or on the tower is THARRP — fire-department rope rescue, not a WHOOP rappel.",
+            body: "Fall arrest rescue is part of the plan before anyone ties off. Suspension trauma is on the clock. Do not improvise a crane-as-rescue unless that operation is permitted and planned. A tower operator in the cab or on the tower is THARRP — fire-department rope rescue, not a KERN rappel.",
           },
         ],
       },
@@ -1032,13 +1047,13 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "The Technical High Angle Rope Rescue Program is BCCSA’s. It trains municipal fire departments to get a worker down from a tower crane. It is not a WHOOP rope team. It is not a fall-protection plan. G4.13(3)(a) still requires a risk assessment and written rescue procedures for high-angle work.",
+        text: "The Technical High Angle Rope Rescue Program is BCCSA’s. It trains municipal fire departments to get a worker down from a tower crane. It is not a KERN rope team. It is not a fall-protection plan. G4.13(3)(a) still requires a risk assessment and written rescue procedures for high-angle work.",
       },
       {
         type: "list",
         items: [
-          "Before a WHOOP tower operator goes up: name the fire department, the summoning method, and where the written plan sits. If nobody can name them, the operator stays on the ground.",
-          "The host or prime requests the crane or site survey in the THARRP Portal. WHOOP confirms it exists. A tower expected past 60 days on a changing high-rise needs the formal Site Survey & Site Rescue Procedure Review on site — ADM 2.",
+          "Before a KERN tower operator goes up: name the fire department, the summoning method, and where the written plan sits. If nobody can name them, the operator stays on the ground.",
+          "The host or prime requests the crane or site survey in the THARRP Portal. KERN confirms it exists. A tower expected past 60 days on a changing high-rise needs the formal Site Survey & Site Rescue Procedure Review on site — ADM 2.",
           "If the local department is not THARR-funded, they may have mutual aid with one that is. If the workplace is outside a municipal high-angle service area, or the employer is not in a funding classification unit, high-angle rescue must be provided by other acceptable means. The dispatch does not invent a rescue on the day.",
           "A fire department can refuse service they cannot provide. Funding does not obligate them to work unsafely. Then the employer finds another acceptable means — or the work at height does not start.",
           "THARRP does not approve Part 11 fall-protection plans. Harness rescue stays a different plan. Lone hoist-operator rescue stays a different pack.",
@@ -1077,7 +1092,7 @@ export const SAFETY: SafetySection[] = [
     title: "TRAINING + COMPETENCY",
     kicker: "A ticket is not competency.",
     intro:
-      "WHOOP supplies crane and rigging personnel whose qualifications, experience and practical competency have been checked against the work.",
+      "KERN supplies crane and rigging personnel whose qualifications, experience and practical competency have been checked against the work.",
     blocks: [
       {
         type: "quote",
@@ -1130,12 +1145,12 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "A young worker is under 25. A new worker is new to that workplace, returning to changed hazards, or relocated to different hazards. 3.22. Before they begin, they get the orientation in 3.23 — recorded on WHOOP-FRM-015. Extra orientation if they cannot do the work safely or they ask. 3.24. Keep the record. 3.25.",
+        text: "A young worker is under 25. A new worker is new to that workplace, returning to changed hazards, or relocated to different hazards. 3.22. Before they begin, they get the orientation in 3.23 — recorded on KERN-FRM-015. Extra orientation if they cannot do the work safely or they ask. 3.24. Keep the record. 3.25.",
       },
       {
         type: "cta",
         href: "/safety/form/orientation",
-        label: "ORIENTATION — WHOOP-FRM-015 →",
+        label: "ORIENTATION — KERN-FRM-015 →",
       },
       {
         type: "h",
@@ -1194,11 +1209,11 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "This matrix is the check before dispatch. It is how WHOOP matches people to the work.",
+        text: "This matrix is the check before dispatch. It is how KERN matches people to the work.",
       },
       {
         type: "table",
-        caption: "WHOOP crane and rigging competency — dispatch check. Not a training course.",
+        caption: "KERN crane and rigging competency — dispatch check. Not a training course.",
         columns: ["ROLE", "QUALIFICATION", "MACHINE / TASK", "VERIFY"],
         rows: [
           ["Crane operator", "BC Crane Safety class, current", "This configuration and chart", "Ticket + experience + practical"],
@@ -1216,7 +1231,7 @@ export const SAFETY: SafetySection[] = [
     title: "WORKER RIGHTS",
     kicker: "The three rights are not a slogan.",
     intro:
-      "Canadian workers have the right to know, the right to participate, and the right to refuse dangerous work. WHOOP treats those rights as operating procedure, not HR wallpaper.",
+      "Canadian workers have the right to know, the right to participate, and the right to refuse dangerous work. KERN treats those rights as operating procedure, not HR wallpaper.",
     blocks: [
       {
         type: "h",
@@ -1240,12 +1255,12 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "The Act sets this by workplace, not by a company’s total headcount. Twenty or more workers regularly employed at a workplace: joint committee. Nine to nineteen: worker health and safety representative. WHOOP-POL-026. On a host site, WHOOP people participate in that workplace’s system. Worker recommendations get a response and enter the corrective-action log.",
+        text: "The Act sets this by workplace, not by a company’s total headcount. Twenty or more workers regularly employed at a workplace: joint committee. Nine to nineteen: worker health and safety representative. KERN-POL-026. On a host site, KERN people participate in that workplace’s system. Worker recommendations get a response and enter the corrective-action log.",
       },
       {
         type: "cta",
         href: "/safety/policy/joint-committee",
-        label: "WHOOP-POL-026 — JOINT COMMITTEE / WORKER REPRESENTATIVE →",
+        label: "KERN-POL-026 — JOINT COMMITTEE / WORKER REPRESENTATIVE →",
       },
       {
         type: "h",
@@ -1262,12 +1277,12 @@ export const SAFETY: SafetySection[] = [
           {
             n: "02",
             title: "SAY WHY",
-            body: "State the danger to the supervisor / site contact and to WHOOP. Be specific: the line, the ground, the load, the missing gear, the missing plan.",
+            body: "State the danger to the supervisor / site contact and to KERN. Be specific: the line, the ground, the load, the missing gear, the missing plan.",
           },
           {
             n: "03",
             title: "IT GETS INVESTIGATED",
-            body: "The site and WHOOP deal with the condition. You are not sent home as punishment for a good-faith refusal.",
+            body: "The site and KERN deal with the condition. You are not sent home as punishment for a good-faith refusal.",
           },
           {
             n: "04",
@@ -1278,12 +1293,12 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "quote",
-        text: "WHOOP will not punish a worker for refusing unsafe work. We will not send a replacement to do the same unsafe work. That would not be a dispatch. That would be a decision to hurt someone.",
+        text: "KERN will not punish a worker for refusing unsafe work. We will not send a replacement to do the same unsafe work. That would not be a dispatch. That would be a decision to hurt someone.",
       },
       {
         type: "cta",
         href: "/safety/form/refuse-unsafe-work",
-        label: "REFUSAL OF UNSAFE WORK — WHOOP-FRM-035 →",
+        label: "REFUSAL OF UNSAFE WORK — KERN-FRM-035 →",
       },
       {
         type: "h",
@@ -1291,7 +1306,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Workers are not units. Harassment, violence, racism, and “that’s just the trade” behaviour are not tolerated on a WHOOP dispatch. Report it. We act.",
+        text: "Workers are not units. Harassment, violence, racism, and “that’s just the trade” behaviour are not tolerated on a KERN dispatch. Report it. We act.",
       },
       {
         type: "cta",
@@ -1310,12 +1325,12 @@ export const SAFETY: SafetySection[] = [
     title: "OH&S POLICIES",
     kicker: "The rules for crane and rigging work. Short enough to use.",
     intro:
-      "These policies apply to crane operators, riggers, signalpersons and lifting supervisors WHOOP deploys. They are not a general construction manual.",
+      "These policies apply to crane operators, riggers, signalpersons, crane supervisors and safety support KERN deploys. They are not a general construction manual.",
     library: "policy",
     blocks: [
       {
         type: "p",
-        text: "Each policy is a controlled document: number, revision 01, effective 2026-09-01, owner WHOOP Safety. The current version is the one on this site.",
+        text: "Each policy is a controlled document: number, revision 01, effective 2026-09-01, owner KERN Safety. The current version is the one on this site.",
       },
       {
         type: "p",
@@ -1324,7 +1339,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/policy/bullying-and-harassment",
-        label: "WHOOP-POL-017 — BULLYING AND HARASSMENT →",
+        label: "KERN-POL-017 — BULLYING AND HARASSMENT →",
       },
     ],
   },
@@ -1339,7 +1354,7 @@ export const SAFETY: SafetySection[] = [
     blocks: [
       {
         type: "p",
-        text: "WorkSafeBC requires written procedures for specified high-risk work (OHS Regulation B.C. Reg. 296/97). CCOHS describes an SWP as the step-by-step method. WHOOP SWPs are purpose, scope, procedure, competency, equipment, PPE, prohibited practices, emergency, documentation and the editions the Regulation names — CSA Z150-1998, CSA Z248-2004, ASME B30.5-2004, B30.22-2005. The matching JHA is the hazard analysis, not a second procedure.",
+        text: "WorkSafeBC requires written procedures for specified high-risk work (OHS Regulation B.C. Reg. 296/97). CCOHS describes an SWP as the step-by-step method. KERN SWPs are purpose, scope, procedure, competency, equipment, PPE, prohibited practices, emergency, documentation and the editions the Regulation names — CSA Z150-1998, CSA Z248-2004, ASME B30.5-2004, B30.22-2005. The matching JHA is the hazard analysis, not a second procedure.",
       },
       {
         type: "cta",
@@ -1394,17 +1409,17 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/builder/flytable-cycle-sjp",
-        label: "FILL THIS CYCLE — WHOOP-FRM-052 →",
+        label: "FILL THIS CYCLE — KERN-FRM-052 →",
       },
       {
         type: "cta",
         href: "/safety/builder/loading-platform-sjp",
-        label: "FILL THIS DECK — WHOOP-FRM-053 →",
+        label: "FILL THIS DECK — KERN-FRM-053 →",
       },
       {
         type: "cta",
         href: "/safety/safe-job-procedures",
-        label: "05 — HOW WHOOP BUILDS AN SJP →",
+        label: "05 — HOW KERN BUILDS AN SJP →",
       },
       {
         type: "cta",
@@ -1429,7 +1444,7 @@ export const SAFETY: SafetySection[] = [
     blocks: [
       {
         type: "p",
-        text: "WHOOP does not ask you to invent a form on the tailgate. Use these. Site forms that are stricter or required by the client are used as well — not instead of the facts these forms capture.",
+        text: "KERN does not ask you to invent a form on the tailgate. Use these. Site forms that are stricter or required by the client are used as well — not instead of the facts these forms capture.",
       },
       {
         type: "cta",
@@ -1452,9 +1467,9 @@ export const SAFETY: SafetySection[] = [
     num: "18",
     slug: "whmis-sds",
     title: "WHMIS + SDS",
-    kicker: "Only what WHOOP crews actually meet.",
+    kicker: "Only what KERN crews actually meet.",
     intro:
-      "WHOOP supplies people, not a warehouse. The SDS library is diesel, hydraulic oil, grease, penetrating oil, wire rope dressing, battery electrolyte and hand cleaner — products operators and riggers actually touch on a dispatch.",
+      "KERN supplies people, not a warehouse. The SDS library is diesel, hydraulic oil, grease, penetrating oil, wire rope dressing, battery electrolyte and hand cleaner — products operators and riggers actually touch on a dispatch.",
     library: "sds",
     blocks: [
       {
@@ -1473,7 +1488,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "This is not a catalogue of construction chemicals. If WHOOP does not send you to use it, it is not in this library.",
+        text: "This is not a catalogue of construction chemicals. If KERN does not send you to use it, it is not in this library.",
       },
     ],
   },
@@ -1513,8 +1528,8 @@ export const SAFETY: SafetySection[] = [
           "Crane pre-use — each shift before the hook is loaded. 14.35.",
           "Rigging — before it takes load.",
           "Lift area — at setup. At least weekly on a standing tower. After a change to the pad, the zone or the access.",
-          "WHOOP-controlled gear, tools and vehicles — recorded interval. Out of service when they fail.",
-          "Workplace WHOOP controls — monthly, with worker participation where a committee or representative exists. 3.5.",
+          "KERN-controlled gear, tools and vehicles — recorded interval. Out of service when they fail.",
+          "Workplace KERN controls — monthly, with worker participation where a committee or representative exists. 3.5.",
         ],
       },
       {
@@ -1535,17 +1550,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "MDT 219 topless. MRH 125 hydraulic luffer. MR rope luffers. Hup, Igo and Igo T self-erects. Published load charts download from Manitowoc. Serial manuals stay in the cab and on Crane Care. Complete the WHOOP form for this class.",
+        text: "MDT 219 topless. MRH 125 hydraulic luffer. MR rope luffers. Hup, Igo and Igo T self-erects. Published load charts download from Manitowoc. Serial manuals stay in the cab and on Crane Care. Complete the KERN form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/mdt-219",
-        label: "POTAIN MDT 219 — WHOOP-CRN-001 →",
+        label: "POTAIN MDT 219 — KERN-CRN-001 →",
       },
       {
         type: "cta",
         href: "/safety/crane/mrh-125",
-        label: "POTAIN MRH 125 — WHOOP-CRN-002 →",
+        label: "POTAIN MRH 125 — KERN-CRN-002 →",
       },
       {
         type: "h",
@@ -1553,17 +1568,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Clear flat-top. Compact and Cross saddle jib. 166 B hydraulic luffer. B-series rope luffers. Published data sheets download from wolffkran.com Canada. Serial manuals stay in the cab. Calgary service and WOLFF Assist support the interval. Complete the WHOOP form for this class.",
+        text: "Clear flat-top. Compact and Cross saddle jib. 166 B hydraulic luffer. B-series rope luffers. Published data sheets download from wolffkran.com Canada. Serial manuals stay in the cab. Calgary service and WOLFF Assist support the interval. Complete the KERN form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/wolff-clear",
-        label: "WOLFF CLEAR — WHOOP-CRN-005 →",
+        label: "WOLFF CLEAR — KERN-CRN-005 →",
       },
       {
         type: "cta",
         href: "/safety/crane/wolff-166-b",
-        label: "WOLFF 166 B — WHOOP-CRN-007 →",
+        label: "WOLFF 166 B — KERN-CRN-007 →",
       },
       {
         type: "h",
@@ -1571,22 +1586,22 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "EC-B flat-top. HC-L rope luffers and 195 HC-LH hydraulic. K-series fast-erect. Published data sheets download from liebherr.com Canada. Serial manuals stay in the cab, on the Tower Crane Portal and on MyLiebherr. Complete the WHOOP form for this class.",
+        text: "EC-B flat-top. HC-L rope luffers and 195 HC-LH hydraulic. K-series fast-erect. Published data sheets download from liebherr.com Canada. Serial manuals stay in the cab, on the Tower Crane Portal and on MyLiebherr. Complete the KERN form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/liebherr-ec-b",
-        label: "LIEBHERR EC-B — WHOOP-CRN-009 →",
+        label: "LIEBHERR EC-B — KERN-CRN-009 →",
       },
       {
         type: "cta",
         href: "/safety/crane/liebherr-hc-l",
-        label: "LIEBHERR HC-L — WHOOP-CRN-010 →",
+        label: "LIEBHERR HC-L — KERN-CRN-010 →",
       },
       {
         type: "cta",
         href: "/safety/crane/liebherr-k-series",
-        label: "LIEBHERR K-SERIES — WHOOP-CRN-011 →",
+        label: "LIEBHERR K-SERIES — KERN-CRN-011 →",
       },
       {
         type: "h",
@@ -1594,17 +1609,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "R-generation and WA flat-top. RL hydraulic luffers. L / LW / LH rope luffers. Published product pages and Manual Download PDFs from en-product.zoomlion.com. Serial manuals stay in the cab. Complete the WHOOP form for this class.",
+        text: "R-generation and WA flat-top. RL hydraulic luffers. L / LW / LH rope luffers. Published product pages and Manual Download PDFs from en-product.zoomlion.com. Serial manuals stay in the cab. Complete the KERN form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/zoomlion-flat-top",
-        label: "ZOOMLION FLAT-TOP — WHOOP-CRN-012 →",
+        label: "ZOOMLION FLAT-TOP — KERN-CRN-012 →",
       },
       {
         type: "cta",
         href: "/safety/crane/zoomlion-rl",
-        label: "ZOOMLION RL — WHOOP-CRN-013 →",
+        label: "ZOOMLION RL — KERN-CRN-013 →",
       },
       {
         type: "h",
@@ -1612,22 +1627,22 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Raimondi MRT and T-series flat-top. LR rope luffers and LRH174 hydraulic. Terex CTT flat-top, CTL / CTLH luffers, CBR and CSE self-erects. Terex tower and self-erect now sit under Raimondi. Data sheets download from each product page on raimondi.com. Serial manuals stay in the cab. Complete the WHOOP form for this class.",
+        text: "Raimondi MRT and T-series flat-top. LR rope luffers and LRH174 hydraulic. Terex CTT flat-top, CTL / CTLH luffers, CBR and CSE self-erects. Terex tower and self-erect now sit under Raimondi. Data sheets download from each product page on raimondi.com. Serial manuals stay in the cab. Complete the KERN form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/raimondi-flat-top",
-        label: "RAIMONDI FLAT-TOP — WHOOP-CRN-015 →",
+        label: "RAIMONDI FLAT-TOP — KERN-CRN-015 →",
       },
       {
         type: "cta",
         href: "/safety/crane/terex-ctt",
-        label: "TEREX CTT — WHOOP-CRN-017 →",
+        label: "TEREX CTT — KERN-CRN-017 →",
       },
       {
         type: "cta",
         href: "/safety/crane/terex-self-erect",
-        label: "TEREX SELF-ERECTING — WHOOP-CRN-019 →",
+        label: "TEREX SELF-ERECTING — KERN-CRN-019 →",
       },
       {
         type: "h",
@@ -1635,17 +1650,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Flat-top J165 / J235. HPA hydraulic luffers. PA rope luffers. Published EN 14439 C25 and FEM 1001 sheets download from jaso.com/tower. Serial manuals stay in the cab. Smartlink and Eco Mode where fitted. Complete the WHOOP form for this class.",
+        text: "Flat-top J165 / J235. HPA hydraulic luffers. PA rope luffers. Published EN 14439 C25 and FEM 1001 sheets download from jaso.com/tower. Serial manuals stay in the cab. Smartlink and Eco Mode where fitted. Complete the KERN form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/jaso-flat-top",
-        label: "JASO FLAT TOP — WHOOP-CRN-020 →",
+        label: "JASO FLAT TOP — KERN-CRN-020 →",
       },
       {
         type: "cta",
         href: "/safety/crane/jaso-hpa",
-        label: "JASO HPA — WHOOP-CRN-021 →",
+        label: "JASO HPA — KERN-CRN-021 →",
       },
       {
         type: "h",
@@ -1653,42 +1668,42 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "SK hammerhead. SN rope luffers. SKK 140 articulated jib. Morrow published the North American range sheets. Peiner built them. Terex took Peiner in 1998. Current Terex SK sits under Raimondi. Serial manuals stay in the cab. Complete the WHOOP form for this class.",
+        text: "SK hammerhead. SN rope luffers. SKK 140 articulated jib. Morrow published the North American range sheets. Peiner built them. Terex took Peiner in 1998. Current Terex SK sits under Raimondi. Serial manuals stay in the cab. Complete the KERN form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/pecco-sk",
-        label: "PECCO SK — WHOOP-CRN-023 →",
+        label: "PECCO SK — KERN-CRN-023 →",
       },
       {
         type: "cta",
         href: "/safety/crane/pecco-sn",
-        label: "PECCO SN — WHOOP-CRN-024 →",
+        label: "PECCO SN — KERN-CRN-024 →",
       },
       {
         type: "cta",
         href: "/safety/form/tower-pre-use",
-        label: "TOWER PRE-USE — WHOOP-FRM-027 →",
+        label: "TOWER PRE-USE — KERN-FRM-027 →",
       },
       {
         type: "cta",
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — WHOOP-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — KERN-FRM-028 →",
       },
       {
         type: "cta",
         href: "/safety/form/self-erect-inspection",
-        label: "SELF-ERECT INSPECTION — WHOOP-FRM-029 →",
+        label: "SELF-ERECT INSPECTION — KERN-FRM-029 →",
       },
       {
         type: "cta",
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — WHOOP-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — KERN-FRM-030 →",
       },
       {
         type: "cta",
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — WHOOP-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — KERN-FRM-031 →",
       },
       {
         type: "h",
@@ -1731,15 +1746,15 @@ export const SAFETY: SafetySection[] = [
       {
         type: "list",
         items: [
-          "WHOOP-POL — policies",
-          "WHOOP-SWP — safe work procedures",
-          "WHOOP-JHA — job hazard analyses",
-          "WHOOP-SJP — this lift, this site, this day",
-          "WHOOP-FRM — forms",
-          "WHOOP-BND — crane site binders",
-          "WHOOP-SDS — safety data sheets in this library",
-          "WHOOP-CRN — crane charts and inspection packs",
-          "WHOOP-RPT — field reports",
+          "KERN-POL — policies",
+          "KERN-SWP — safe work procedures",
+          "KERN-JHA — job hazard analyses",
+          "KERN-SJP — this lift, this site, this day",
+          "KERN-FRM — forms",
+          "KERN-BND — crane site binders",
+          "KERN-SDS — safety data sheets in this library",
+          "KERN-CRN — crane charts and inspection packs",
+          "KERN-RPT — field reports",
         ],
       },
       {
@@ -1748,7 +1763,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Revision 01. Effective 2026-09-01. Owner: WHOOP Safety. Approved by: WHOOP. Review by: 2027-09-01. Documents on this website are the current version. Printed copies are uncontrolled the moment they leave the screen — check the number and revision before you use a photocopy.",
+        text: "Revision 01. Effective 2026-09-01. Owner: KERN Safety. Approved by: KERN. Review by: 2027-09-01. Documents on this website are the current version. Printed copies are uncontrolled the moment they leave the screen — check the number and revision before you use a photocopy.",
       },
       {
         type: "h",
@@ -1770,7 +1785,7 @@ export const SAFETY: SafetySection[] = [
     title: "OHS MANAGEMENT SYSTEM",
     kicker: "Documentation is not implementation.",
     intro:
-      "This Safety Program is WHOOP’s occupational health and safety management system for crane and rigging work. WorkSafeBC s. 3.3 names what a formal program must contain. BCCSA COR® measures the CFCSA 14 elements. The tables below map those requirements to the documents, forms, records, owners and frequencies that already live in this program.",
+      "Proven is KERN’s occupational health and safety management system for crane and rigging work. WorkSafeBC s. 3.3 names what a formal program must contain. BCCSA COR® measures the CFCSA 14 elements. The tables below map those requirements to the documents, forms, records, owners and frequencies that already live in this system.",
     blocks: [
       {
         type: "quote",
@@ -1778,7 +1793,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "h",
-        text: "HOW THE PROGRAM IS BUILT",
+        text: "HOW PROVEN IS BUILT",
       },
       {
         type: "rules",
@@ -1793,7 +1808,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "OHS Regulation 3.1: a 3.3 program is required if the employer has 20 or more workers and at least one workplace with a moderate or high hazard rating under Schedule 3-A, or 50 or more workers. An officer can also require one. Crane and rigging work is high-hazard work. WHOOP maintains this written program because the work requires it and because COR® certification is of this system. If a WHOOP-controlled workplace is below the 3.1 threshold, 3.2 still requires monthly meetings with workers and a record of what was discussed — WHOOP-FRM-033. This program is not an excuse to skip that.",
+        text: "OHS Regulation 3.1: a 3.3 program is required if the employer has 20 or more workers and at least one workplace with a moderate or high hazard rating under Schedule 3-A, or 50 or more workers. An officer can also require one. Crane and rigging work is high-hazard work. KERN maintains this written program because the work requires it and because COR® certification is of this system. If a KERN-controlled workplace is below the 3.1 threshold, 3.2 still requires monthly meetings with workers and a record of what was discussed — KERN-FRM-033. This program is not an excuse to skip that.",
       },
       {
         type: "h",
@@ -1844,26 +1859,26 @@ export const SAFETY: SafetySection[] = [
       {
         type: "list",
         items: [
-          "Joint committee or worker representative — Act Part 2 Division 5, per workplace. WHOOP-POL-026.",
-          "First aid — Part 3 Division 4 and Schedule 3-A, per workplace. Host site: host’s first aid. WHOOP-controlled workplace: WHOOP’s assessment. WHOOP-POL-025.",
-          "Prime contractor — multiple-employer workplaces as the Act requires. WHOOP is usually the contractor. WHOOP-POL-027.",
-          "Young or new worker orientation — 3.23 before they begin, every workplace. WHOOP-FRM-015.",
+          "Joint committee or worker representative — Act Part 2 Division 5, per workplace. KERN-POL-026.",
+          "First aid — Part 3 Division 4 and Schedule 3-A, per workplace. Host site: host’s first aid. KERN-controlled workplace: KERN’s assessment. KERN-POL-025.",
+          "Prime contractor — multiple-employer workplaces as the Act requires. KERN is usually the contractor. KERN-POL-027.",
+          "Young or new worker orientation — 3.23 before they begin, every workplace. KERN-FRM-015.",
         ],
       },
       {
         type: "cta",
         href: "/safety/form/management-review",
-        label: "MANAGEMENT OHS REVIEW — WHOOP-FRM-032 →",
+        label: "MANAGEMENT OHS REVIEW — KERN-FRM-032 →",
       },
       {
         type: "cta",
         href: "/safety/policy/continuous-improvement",
-        label: "WHOOP-POL-016 — CONTINUOUS IMPROVEMENT →",
+        label: "KERN-POL-016 — CONTINUOUS IMPROVEMENT →",
       },
       {
         type: "cta",
         href: "/safety/policy/contractors",
-        label: "WHOOP-POL-027 — CONTRACTORS AND MULTI-EMPLOYER SITES →",
+        label: "KERN-POL-027 — CONTRACTORS AND MULTI-EMPLOYER SITES →",
       },
     ],
   },
@@ -1873,7 +1888,7 @@ export const SAFETY: SafetySection[] = [
     title: "CRANE BINDERS",
     kicker: "The file that goes with the NOP-TC.",
     intro:
-      "A tower or self-erect on a B.C. construction site needs a site binder. BC Crane Safety wrote the checklists. WorkSafeBC requires the Notice of Project — Tower Crane. The wizard builds the WHOOP copy: numbered items, who holds them, and the downloadable forms.",
+      "A tower or self-erect on a B.C. construction site needs a site binder. BC Crane Safety wrote the checklists. WorkSafeBC requires the Notice of Project — Tower Crane. The wizard builds the KERN copy: numbered items, who holds them, and the downloadable forms.",
     library: "binder",
     blocks: [
       {
@@ -1902,8 +1917,8 @@ export const SAFETY: SafetySection[] = [
         items: [
           "Walks the numbered BC Crane Safety items for that class.",
           "Marks each item in binder, missing, or N/A — and who holds it.",
-          "Opens the WHOOP form and the official download (30M33, 52E73C, NOP-TC, tower crane report, NAV CANADA).",
-          "Downloads a WHOOP checklist PDF for this site. Saved on this device.",
+          "Opens the KERN form and the official download (30M33, 52E73C, NOP-TC, tower crane report, NAV CANADA).",
+          "Downloads a KERN checklist PDF for this site. Saved on this device.",
         ],
       },
       {
@@ -1922,7 +1937,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/form/nop-tc-notice",
-        label: "NOP-TC POSTING NOTICE — WHOOP-FRM-039 →",
+        label: "NOP-TC POSTING NOTICE — KERN-FRM-039 →",
       },
       {
         type: "h",
@@ -1930,22 +1945,22 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Official paper stays official. WHOOP sheets are the working copy and the cover. Form 30M33 is coded by WorkSafeBC — order it; the WHOOP record is the schematic and the discussion. Radio coordination is 52E73C. The tower crane report is WorkSafeBC’s checklist after erect, climb or reposition.",
+        text: "Official paper stays official. KERN sheets are the working copy and the cover. Form 30M33 is coded by WorkSafeBC — order it; the KERN record is the schematic and the discussion. Radio coordination is 52E73C. The tower crane report is WorkSafeBC’s checklist after erect, climb or reposition.",
       },
       {
         type: "cta",
         href: "/safety/form/powerline-30m33",
-        label: "30M33 / POWERLINE RECORD — WHOOP-FRM-037 →",
+        label: "30M33 / POWERLINE RECORD — KERN-FRM-037 →",
       },
       {
         type: "cta",
         href: "/safety/form/radio-frequency",
-        label: "RADIO FREQUENCY — WHOOP-FRM-038 →",
+        label: "RADIO FREQUENCY — KERN-FRM-038 →",
       },
       {
         type: "cta",
         href: "/safety/form/tower-crane-report",
-        label: "TOWER CRANE REPORT — WHOOP-FRM-041 →",
+        label: "TOWER CRANE REPORT — KERN-FRM-041 →",
       },
       {
         type: "h",
@@ -1953,7 +1968,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Table of contents, notes, and OHSR / CSA info files live on BC Crane Safety. Use them. This program does not host their PDFs as if they were WHOOP documents.",
+        text: "Table of contents, notes, and OHSR / CSA info files live on BC Crane Safety. Use them. This program does not host their PDFs as if they were KERN documents.",
       },
       {
         type: "cta",
@@ -2027,6 +2042,7 @@ export const FIND_NOW = [
   { href: "/safety/policy/right-to-refuse", label: "STOP WORK", hint: "Refuse unsafe" },
   { href: "/safety/report/incident", label: "INCIDENT", hint: "Report it" },
   { href: "/safety/swp/working-near-powerlines", label: "MAD / POWERLINES", hint: "Table 19-1A" },
+  { href: "/safety/swp/weather-and-wind", label: "LIGHTNING / WIND", hint: "Thunder is the stop" },
   { href: "/safety/emergency-response", label: "EMERGENCY", hint: "The plan" },
   { href: "/safety/binder", label: "CRANE BINDER", hint: "Tower / self-erect" },
   { href: "/safety/builder", label: "FORM BUILDER", hint: "Fill + PDF" },

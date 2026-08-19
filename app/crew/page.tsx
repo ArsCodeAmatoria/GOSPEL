@@ -5,7 +5,7 @@ import { CREW } from "@/lib/crew";
 export const metadata: Metadata = {
   title: "The Crew",
   description:
-    "Crane operators, riggers, signalpersons and supervisors. Competent people, verified before they arrive.",
+    "Crane operators, riggers, signalpersons, crane supervisors and safety support. Competent people, verified before they arrive.",
 };
 
 export default function CrewPage() {
@@ -16,8 +16,8 @@ export default function CrewPage() {
         <h1 className="display giant">THE CREW</h1>
         <p className="lede mt">
           These are the kinds of people we put on a lift — ticketed, experienced,
-          and checked for the work you actually have. WHOOP is a union-friendly
-          shop.
+          and checked for the work you actually have. Operators, riggers,
+          signalpersons, crane supervisors and safety support.
         </p>
       </header>
       <div>

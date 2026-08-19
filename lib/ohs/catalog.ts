@@ -112,6 +112,7 @@ const JHA_GROUP: Record<string, (typeof JHA_GROUP_ORDER)[number]> = {
   "flytable-cycling": "THE PLAN",
   "corner-nontypical-flytables": "THE PLAN",
   "loading-platform-reposition": "THE PLAN",
+  "weather-and-wind": "CRANE",
 };
 
 export function policyGroup(slug: string) {
@@ -177,14 +178,14 @@ export function safetyCatalog(): CatalogHit[] {
     })),
     {
       href: "/safety/builder",
-      number: "WHOOP-FRM",
+      number: "KERN-FRM",
       title: "FORM BUILDER",
       summary: "Assemble, fill, PDF.",
       kind: "FORM",
     },
     {
       href: "/safety/binder",
-      number: "WHOOP-BND",
+      number: "KERN-BND",
       title: "CRANE BINDER WIZARD",
       summary: "Tower or self-erect site binder.",
       kind: "BINDER",

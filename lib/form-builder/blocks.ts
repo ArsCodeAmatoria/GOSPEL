@@ -261,7 +261,7 @@ export const YOUNG_NEW_WORKER_ITEMS = [
   "First aid location and how to summon it",
   "Emergency procedures",
   "Task shown, not just told",
-  "This Safety Program shown",
+  "Proven shown",
   "WHMIS as it applies here",
   "Committee or worker-rep contact (if applicable)",
 ];
@@ -345,7 +345,7 @@ export const THARRP_COVER_ITEMS = [
   "Fire department named",
   "Operator knows how to summon them",
   "Formal survey on site if high-rise past 60 days",
-  "WHOOP confirmed before dispatch",
+  "KERN confirmed before dispatch",
 ];
 
 export const NAVCAN_ITEMS = [
@@ -434,7 +434,7 @@ export const REFUSAL_ITEMS = [
   "Work stopped",
   "Reason stated — specific",
   "Site told",
-  "WHOOP told",
+  "KERN told",
   "Danger investigated",
   "Work still stopped until controlled",
   "No replacement sent to do the same unsafe work",

@@ -5,7 +5,7 @@
  *   USER REQUEST → (later) AI → APPROVED SAFETY BLOCKS → FORM SCHEMA → builder
  *
  * The AI must only return BlockType values from BLOCK_CATALOG.
- * It must not invent WHOOP policy, SWP steps, or regulatory text.
+ * It must not invent KERN policy, SWP steps, or regulatory text.
  */
 import { BLOCK_CATALOG } from "./blocks";
 import { assembleForm } from "./assemble";
@@ -30,8 +30,8 @@ export function draftFormFromApprovedBlocks(
   return assembleForm({
     id: nid("form"),
     title,
-    number: "WHOOP-FRM-DRAFT",
-    description: "Draft assembled from approved WHOOP Safety Blocks only.",
+    number: "KERN-FRM-DRAFT",
+    description: "Draft assembled from approved KERN Safety Blocks only.",
     blocks,
   });
 }

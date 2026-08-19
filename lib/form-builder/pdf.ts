@@ -61,7 +61,7 @@ function wrap(font: PDFFont, text: string, size: number, width: number) {
 
 function drawHeader(ctx: Ctx, form: WhoopFormDef, completedBy: string) {
   const { page, bold, font } = ctx;
-  page.drawText("WHOOP", {
+  page.drawText("KERN", {
     x: M,
     y: H - 36,
     size: 18,
@@ -114,7 +114,7 @@ function drawFooter(page: PDFPage, font: PDFFont, i: number, n: number) {
     thickness: 0.6,
     color: LINE,
   });
-  page.drawText("WHOOP Safety Program  ·  Printed copy uncontrolled  ·  Check revision on whoop.ca", {
+  page.drawText("PROVEN  ·  Printed copy uncontrolled  ·  Check revision on whoop.ca", {
     x: M,
     y: 24,
     size: 7,
@@ -334,5 +334,5 @@ export function downloadPdf(bytes: Uint8Array, filename: string) {
 export function pdfFilename(form: WhoopFormDef) {
   const day = new Date().toISOString().slice(0, 10);
   const slug = form.title.replace(/[^A-Z0-9]+/gi, "-").replace(/^-|-$/g, "");
-  return `WHOOP-${slug}-${day}.pdf`;
+  return `KERN-${slug}-${day}.pdf`;
 }

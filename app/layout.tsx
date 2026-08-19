@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Oswald } from "next/font/google";
 import { Header } from "@/components/Header";
 import { SiteFooter } from "@/components/SiteFooter";
+import { SITE } from "@/lib/site";
 import "./globals.css";
 
 const display = Oswald({
@@ -30,16 +31,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "WHOOP — Crane + Rigging",
-    template: "%s — WHOOP",
+    default: "KERN — Crane + Rigging",
+    template: "%s — KERN",
   },
-  description:
-    "We are a safety company. The crew is how you get us. Crane operators, riggers and lifting crews for construction and industrial work.",
+  description: SITE.description,
   metadataBase: new URL("https://whoop.ca"),
   openGraph: {
-    title: "WHOOP — Crane + Rigging",
-    description:
-      "We are a safety company. The crew is how you get us. Crane operators, riggers and lifting crews for construction and industrial work.",
+    title: "KERN — Crane + Rigging",
+    description: SITE.description,
     type: "website",
   },
 };

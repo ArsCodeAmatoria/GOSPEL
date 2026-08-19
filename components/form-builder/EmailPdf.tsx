@@ -16,7 +16,7 @@ export function EmailPdf({
   const [cc, setCc] = useState("");
   const [subject, setSubject] = useState(`${form.number} ${form.title}`);
   const [message, setMessage] = useState(
-    "WHOOP completed safety form attached."
+    "KERN completed safety form attached."
   );
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
