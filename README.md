@@ -1,10 +1,10 @@
 ```
-██╗  ██╗ ███████╗ ██████╗  ███╗   ██╗
-██║ ██╔╝ ██╔════╝ ██╔══██╗ ████╗  ██║
-█████╔╝  █████╗   ██████╔╝ ██╔██╗ ██║
-██╔═██╗  ██╔══╝   ██╔══██╗ ██║╚██╗██║
-██║  ██╗ ███████╗ ██║  ██║ ██║ ╚████║
-╚═╝  ╚═╝ ╚══════╝ ╚═╝  ╚═╝ ╚═╝  ╚═══╝
+██╗  ██╗ ██╗   ██╗ ██╗   ██╗ ██╗  ██╗
+██║ ██╔╝ ╚██╗ ██╔╝ ██║   ██║ ██║ ██╔╝
+█████╔╝   ╚████╔╝  ██║   ██║ █████╔╝
+██╔═██╗    ╚██╔╝   ██║   ██║ ██╔═██╗
+██║  ██╗    ██║    ╚██████╔╝ ██║  ██╗
+╚═╝  ╚═╝    ╚═╝     ╚═════╝  ╚═╝  ╚═╝
              CRANE + RIGGING
 ```
 
@@ -16,12 +16,12 @@
 [![British Columbia](https://img.shields.io/badge/British_Columbia-Canada-111111)](https://whoop.ca)
 
 <p align="center">
-  <img src="./docs/whoop-cover.jpg" alt="KERN — crane and rigging" width="720">
+  <img src="./docs/whoop-cover.jpg" alt="KYUK — crane and rigging" width="720">
 </p>
 
-# KERN
+# KYUK
 
-KERN is a complete crane operations and rigging company. Qualified crane operators, riggers, signalpersons, crane supervisors and safety support for construction. Experienced people. Structured supervision. Competency verification. Rigging and crane safety systems. Proven — the platform that keeps the people, the process and the documentation organized, verified and accountable.
+KYUK is a complete crane operations and rigging company. Qualified crane operators, riggers, signalpersons, crane supervisors and safety support for construction. Experienced people. Structured supervision. Competency verification. Rigging and crane safety systems. Proven — the platform that keeps the people, the process and the documentation organized, verified and accountable.
 
 We go beyond supplying labour. We provide the people and the systems that support the safe and professional operation of cranes.
 
@@ -45,13 +45,13 @@ A ticket is not competency. We verify qualifications, experience and practical c
 
 Show up. Be competent. Work safe. Do what you said you’d do.
 
-Reliability is not a claim. It is a sequence. If KERN says a crew will be there, they will be there. If something changes, you hear it from us first.
+Reliability is not a claim. It is a sequence. If KYUK says a crew will be there, they will be there. If something changes, you hear it from us first.
 
 Customers know exactly what they are getting: role, competency, tickets, experience and our expectations — in writing. Workers are treated as tradespeople, not units. They get briefed, paid correctly, and backed when they refuse unsafe work.
 
 ## Proven
 
-[Proven](https://whoop.ca/safety) is KERN’s safety system. It is open. Clients, workers and contractors can read how we expect the work to be performed before they hire us. No portal. No request form. No expiry date.
+[Proven](https://whoop.ca/safety) is KYUK’s safety system. It is open. Clients, workers and contractors can read how we expect the work to be performed before they hire us. No portal. No request form. No expiry date.
 
 If a procedure cannot be followed on a jobsite, it is not a procedure. It is theatre.
 
@@ -69,16 +69,16 @@ Working documents, not a poster:
   ![EXTREME](https://img.shields.io/badge/EXTREME-c1121f)
 
   Extreme is the no-recovery killer (people under the load, MAD, overturn, a table over the edge). High is serious injury. Moderate is lost time or a failed plan. Low is first aid.
-- **SJP library** — this lift, this site, this day. The SWP is the method. The SJP is the instance. Flytable cycles first — fill [KERN-FRM-052](https://whoop.ca/safety/builder/flytable-cycle-sjp) before drop.
+- **SJP library** — this lift, this site, this day. The SWP is the method. The SJP is the instance. Flytable cycles first — fill [KYUK-FRM-052](https://whoop.ca/safety/builder/flytable-cycle-sjp) before drop.
 - **Safety forms** — FLHA, inspections, lift plans, incident reports, operator and rigger logs, weekly and monthly maintenance. Binder forms (30M33 record, radio 52E73C, NOP-TC posting, tower crane report) fill and download as PDF.
 - **[Crane binders](https://whoop.ca/safety/crane-binders)** — Tower and Self-Erect site binders numbered to the BC Crane Safety checklists. Wizard at `/safety/binder`. Official templates stay on bccranesafety.ca and WorkSafeBC.
-- **[Form Builder](https://whoop.ca/safety/builder)** — assemble KERN forms from reusable Safety Blocks. Fill them on the device. Download a PDF. Email it. Nothing is stored on a server unless you send it.
+- **[Form Builder](https://whoop.ca/safety/builder)** — assemble KYUK forms from reusable Safety Blocks. Fill them on the device. Download a PDF. Email it. Nothing is stored on a server unless you send it.
 
-Minimum approach distances are WorkSafeBC Table 19-1A — the same numbers [BC Hydro](https://www.bchydro.com/safety-outages/electrical-safety/worker-training.html) publishes. 1 m / 3 m / 4.5 m / 6 m by voltage. Unknown: 3 m off distribution, 6 m off transmission, until they verify. If the lift cannot hold MAD, coded 30M33. [KERN-SWP-018](https://whoop.ca/safety/swp/working-near-powerlines).
+Minimum approach distances are WorkSafeBC Table 19-1A — the same numbers [BC Hydro](https://www.bchydro.com/safety-outages/electrical-safety/worker-training.html) publishes. 1 m / 3 m / 4.5 m / 6 m by voltage. Unknown: 3 m off distribution, 6 m off transmission, until they verify. If the lift cannot hold MAD, coded 30M33. [KYUK-SWP-018](https://whoop.ca/safety/swp/working-near-powerlines).
 
 Where BCCSA already wrote the construction template, we use it. Injury-management and COR packs download from this site. Heat and sun, lone hoist-operator rescue, fall-protection rescue and crane-relevant toolbox talks are linked to the BCCSA catalogues — sign in on bccsa.ca to get the PDFs. We do not rewrite those guides.
 
-KERN is COR® Certified through the BC Construction Safety Alliance. That certification is of Proven — not a claim that incidents will never occur.
+KYUK is COR® Certified through the BC Construction Safety Alliance. That certification is of Proven — not a claim that incidents will never occur.
 
 The work is done to:
 
@@ -92,16 +92,16 @@ The work is done to:
 
 Where those conflict, the stricter applicable requirement wins. Law always wins.
 
-## KERNWIRE
+## KYUKWIRE
 
-[KERNWIRE](https://whoop.ca/whoopwire) is the company paper. Standards, the lift, and how the work is actually done. Not marketing copy.
+[KYUKWIRE](https://whoop.ca/whoopwire) is the company paper. Standards, the lift, and how the work is actually done. Not marketing copy.
 
 ## Hire a crew
 
 Tell us the work, the site, the machines and the dates. We will tell you who is coming — and whether we can do it. If we cannot, you will hear that first.
 
 **Phone** [1 604 431 2000](tel:+16044312000)  
-**Email** [hire@kern.onl](mailto:hire@kern.onl)  
+**Email** [hire@kyuk.onl](mailto:hire@kyuk.onl)  
 **British Columbia, Canada**
 
 No bullshit. Just good people doing heavy work.

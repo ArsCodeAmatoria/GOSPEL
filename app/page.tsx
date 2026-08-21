@@ -12,7 +12,7 @@ import { WIRE, getLatest, summarize } from "@/lib/whoopwire";
 export default function HomePage() {
   return (
     <>
-      <section className="section section-lead" id="kern">
+      <section className="section section-lead" id="kyuk">
         <div className="wrap">
           <p className="mono kicker">01 — THE COMPANY</p>
           <h1 className="display giant">
@@ -72,7 +72,7 @@ export default function HomePage() {
             <p className="lede mt">
               Where these conflict, the stricter applicable requirement wins.
               Law always wins. The marks name the bodies. They are not an
-              endorsement of KERN.
+              endorsement of KYUK.
             </p>
             <StandardsList />
           </div>
@@ -229,8 +229,8 @@ export default function HomePage() {
       </section>
 
       <section className="section wrap" id="whoopwire">
-        <p className="mono kicker">09 — KERNWIRE</p>
-        <h2 className="display giant">KERNWIRE</h2>
+        <p className="mono kicker">09 — KYUKWIRE</p>
+        <h2 className="display giant">KYUKWIRE</h2>
         <p className="mono mt">{WIRE.descriptor}</p>
         <div className="wire-stack mt-2">
           {getLatest(3).map((story) => (
@@ -239,7 +239,7 @@ export default function HomePage() {
         </div>
         <div className="inline-cta">
           <Link className="btn btn-solid" href="/whoopwire">
-            READ KERNWIRE →
+            READ KYUKWIRE →
           </Link>
         </div>
       </section>

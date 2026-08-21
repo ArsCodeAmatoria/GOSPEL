@@ -3,7 +3,7 @@ import { BuilderIndex } from "@/components/form-builder/BuilderIndex";
 export const metadata = {
   title: "Form Builder",
   description:
-    "Assemble KERN crane and rigging forms from reusable Safety Blocks. Fill, PDF, download.",
+    "Assemble KYUK crane and rigging forms from reusable Safety Blocks. Fill, PDF, download.",
 };
 
 export default function BuilderPage() {

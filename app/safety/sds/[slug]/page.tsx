@@ -24,7 +24,7 @@ export default async function SdsPage({ params }: Props) {
   return (
     <SafetyDocFrame
       kicker="SDS"
-      num={doc.number.replace("KERN-", "")}
+      num={doc.number.replace("KYUK-", "")}
       title={doc.title}
       intro={doc.use}
       backHref="/safety/whmis-sds"
@@ -51,7 +51,7 @@ export default async function SdsPage({ params }: Props) {
         <h2>STORAGE</h2>
         <p>{doc.storage}</p>
         <p>
-          This is a field card for KERN crews. The manufacturer SDS for the
+          This is a field card for KYUK crews. The manufacturer SDS for the
           exact product on site wins if it is stricter or more specific.
         </p>
       </div>

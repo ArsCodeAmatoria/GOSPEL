@@ -61,7 +61,7 @@ function wrap(font: PDFFont, text: string, size: number, width: number) {
 
 function drawHeader(ctx: Ctx, form: WhoopFormDef, completedBy: string) {
   const { page, bold, font } = ctx;
-  page.drawText("KERN", {
+  page.drawText("KYUK", {
     x: M,
     y: H - 36,
     size: 18,
@@ -334,5 +334,5 @@ export function downloadPdf(bytes: Uint8Array, filename: string) {
 export function pdfFilename(form: WhoopFormDef) {
   const day = new Date().toISOString().slice(0, 10);
   const slug = form.title.replace(/[^A-Z0-9]+/gi, "-").replace(/^-|-$/g, "");
-  return `KERN-${slug}-${day}.pdf`;
+  return `KYUK-${slug}-${day}.pdf`;
 }

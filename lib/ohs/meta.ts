@@ -3,8 +3,8 @@ import type { DocControl, DocLink, DocTable, RoleLine } from "./types";
 export const OHS_META = {
   revision: "01",
   effective: "2026-09-01",
-  owner: "KERN Safety",
-  approvedBy: "KERN",
+  owner: "KYUK Safety",
+  approvedBy: "KYUK",
   review: "2027-09-01",
 } as const;
 
@@ -14,12 +14,12 @@ export function control(number: string, title: string): DocControl {
 
 export const CREW_ROLES: RoleLine[] = [
   {
-    title: "KERN",
+    title: "KYUK",
     body: "Publishes this document, verifies competency before dispatch, and backs stop-work. Does not own the client’s site.",
   },
   {
     title: "Supervisor",
-    body: "Confirms the plan, the crew, the zone and the stop criteria. Owns whether the hook moves when KERN is supplying supervision.",
+    body: "Confirms the plan, the crew, the zone and the stop criteria. Owns whether the hook moves when KYUK is supplying supervision.",
   },
   {
     title: "Crane operator",
@@ -126,7 +126,7 @@ export const MAD_REFS = [
 ];
 
 export const LIGHTNING_RULE: DocTable = {
-  caption: "LIGHTNING — KERN STOP. THUNDER IS THE TRIGGER. DO NOT COUNT TO 30.",
+  caption: "LIGHTNING — KYUK STOP. THUNDER IS THE TRIGGER. DO NOT COUNT TO 30.",
   columns: ["TRIGGER", "ACTION"],
   rows: [
     ["Thunder heard, or lightning seen", "Stop the lift. Land. Manufacturer shutdown. Shelter. Do not wait for a 30-second count."],
@@ -137,7 +137,7 @@ export const LIGHTNING_RULE: DocTable = {
 
 export const LIGHTNING_BANG: DocTable = {
   caption: "FLASH-TO-BANG — CITE ONLY. SOUND ~300 m/s. NOT A REASON TO KEEP LIFTING.",
-  columns: ["SECONDS AFTER FLASH", "~DISTANCE", "KERN"],
+  columns: ["SECONDS AFTER FLASH", "~DISTANCE", "KYUK"],
   rows: [
     ["Thunder — any rumble", "Striking distance", "ECCC: if you hear it, you are in range. Stop."],
     ["10 s", "~3 km", "Already too close."],
@@ -188,7 +188,7 @@ export const LIGHTNING_LINKS: DocLink[] = [
 
 export const LIGHTNING_REFS = [
   "Environment and Climate Change Canada — When thunder roars, go indoors. If you hear thunder you are within striking distance. Wait at least 30 minutes after the last rumble.",
-  "ECCC dropped the first 30 of the 30/30 rule in 2010. People waited until a 30-second flash-to-bang. That is too late. KERN does not count to 30 before stopping.",
+  "ECCC dropped the first 30 of the 30/30 rule in 2010. People waited until a 30-second flash-to-bang. That is too late. KYUK does not count to 30 before stopping.",
   "CCOHS Weather — Lightning. ~300 m per second flash-to-bang. No safe place outdoors. Fully enclosed building with wiring and plumbing, or a hard-top metal vehicle.",
   "Workers Compensation Act s. 21 — known or reasonably foreseeable hazards. Lightning on a crane is foreseeable.",
   "OHS Regulation 14.2 — operate as specified by the manufacturer or a professional engineer.",
@@ -204,7 +204,7 @@ export const LIGHTNING_REFS = [
 export const FLYTABLE_REFS = [
   "WorkSafeBC Flytable Safety (Jul 2025) — drop, roll, fly, land. Critical lift.",
   "BC Crane Safety, 14 Aug 2025 — New WorkSafeBC Video: Flytable Lift Safety",
-  "OHS Regulation Part 20 — formwork and falsework. Host / prime duty. KERN does not write the cycling carpentry.",
+  "OHS Regulation Part 20 — formwork and falsework. Host / prime duty. KYUK does not write the cycling carpentry.",
   "Manufacturer cycle and shop drawing for this table system — at the lift. Pick points only as the drawing names.",
 ];
 
@@ -242,7 +242,7 @@ export const FLYTABLE_ROLES: RoleLine[] = [
   ...CREW_ROLES,
   {
     title: "Formwork supervisor (host)",
-    body: "Drops, rolls and lands the table to the manufacturer cycle and the engineered drawing. KERN does not lower jacks or invent a cycling sequence.",
+    body: "Drops, rolls and lands the table to the manufacturer cycle and the engineered drawing. KYUK does not lower jacks or invent a cycling sequence.",
   },
   {
     title: "Prime contractor",
@@ -343,7 +343,7 @@ export const PLATFORM_HITCH: DocTable = {
     ["One platform at a time.", "Doka."],
     ["Reposition wind — Doka 72 km/h, or the lower of crane / this SJP.", "Doka. Chart."],
     ["Disconnect only after the host says landed — jacks tight, rails pinned.", "CantiDeck. Doka."],
-    ["Daily SuperDeck / Super Roller / DOC extend and retract is host. KERN is not hooked.", "Preston FAQ. CantiDeck. DOC."],
+    ["Daily SuperDeck / Super Roller / DOC extend and retract is host. KYUK is not hooked.", "Preston FAQ. CantiDeck. DOC."],
   ],
 };
 
@@ -353,7 +353,7 @@ export const PLATFORM_ROLES: RoleLine[] = [
   ...CREW_ROLES,
   {
     title: "Platform supervisor (host)",
-    body: "Rails, props, clamps or through-slab anchors to the OEM and the engineered drawing. KERN does not invent a propping sequence. Says when the deck is landed and in service.",
+    body: "Rails, props, clamps or through-slab anchors to the OEM and the engineered drawing. KYUK does not invent a propping sequence. Says when the deck is landed and in service.",
   },
   {
     title: "Prime contractor",

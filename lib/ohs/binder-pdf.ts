@@ -58,7 +58,7 @@ export async function binderToPdf(binder: BinderDef, draft: BinderDraft) {
     page.drawText(s, { x, y, size, font: f, color });
   }
 
-  text("KERN", M, 18, bold);
+  text("KYUK", M, 18, bold);
   text("CRANE + RIGGING", M + 78, 7, font, STEEL);
   const numW = bold.widthOfTextAtSize(binder.number, 9);
   text(binder.number, W - M - numW, 9, bold, CROWN);
@@ -74,7 +74,7 @@ export async function binderToPdf(binder: BinderDef, draft: BinderDraft) {
   y -= 16;
   const intro = wrap(
     font,
-    "KERN copy of the site-binder checklist. Numbered to the BC Crane Safety template. Official templates and WorkSafeBC forms stay official — this is the working file.",
+    "KYUK copy of the site-binder checklist. Numbered to the BC Crane Safety template. Official templates and WorkSafeBC forms stay official — this is the working file.",
     8,
     W - M * 2,
   );
@@ -149,7 +149,7 @@ export async function binderToPdf(binder: BinderDef, draft: BinderDraft) {
 
   ensure(36);
   text(
-    "Sign-off is on the official BC Crane Safety checklist. This PDF is the KERN working copy.",
+    "Sign-off is on the official BC Crane Safety checklist. This PDF is the KYUK working copy.",
     M,
     7,
     font,

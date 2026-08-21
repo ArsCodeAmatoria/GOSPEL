@@ -5,7 +5,7 @@ import { BELIEFS, PRINCIPLES, SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Philosophy",
   description:
-    "No bullshit. Just good people doing heavy work. KERN's operating philosophy for crane and rigging crews.",
+    "No bullshit. Just good people doing heavy work. KYUK's operating philosophy for crane and rigging crews.",
 };
 
 export default function PhilosophyPage() {
@@ -23,14 +23,14 @@ export default function PhilosophyPage() {
       </header>
       <div className="split wrap top" style={{ paddingBottom: "4rem" }}>
         <p className="lede-lg">
-          KERN is a complete crane operations and rigging company. Operators,
+          KYUK is a complete crane operations and rigging company. Operators,
           riggers, signalpersons, crane supervisors and safety support — people
           and systems, not just labour.
         </p>
         <p className="lede">
           Competent people matter. Safety information should be accessible.
           Documentation should be useful. Management should keep its promises.
-          If KERN says it will show up, KERN shows up.
+          If KYUK says it will show up, KYUK shows up.
         </p>
       </div>
       <section className="section wrap">

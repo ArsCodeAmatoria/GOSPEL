@@ -2,8 +2,8 @@ import type { DocLink } from "./types";
 
 /**
  * Site binders follow BC Crane Safety’s Tower / Self-Erect checklists
- * (FM-TC-01, Sept 2024) used with the WorkSafeBC NOP-TC. KERN does not
- * replace those templates. The wizard builds the KERN copy: numbered
+ * (FM-TC-01, Sept 2024) used with the WorkSafeBC NOP-TC. KYUK does not
+ * replace those templates. The wizard builds the KYUK copy: numbered
  * items, who holds them, and the downloadable forms that go in the file.
  * https://bccranesafety.ca/resources/tower-crane-site-binder/
  */
@@ -124,7 +124,7 @@ const SHARED = {
     title: "30M33 / RECORD OF DISCUSSION / ASSURANCE IN WRITING",
     group: PRE,
     need: "required",
-    note: "Part 19 Table 19-1A. MAD is 1 m under 750 V, 3 m to 75 kV, 4.5 m to 250 kV, 6 m to 550 kV. Unknown: 3 m distribution, 6 m transmission, until BC Hydro verifies. If the crane can enter those limits, Form 30M33 is completed with the power-system owner. Coded form — order it from WorkSafeBC. The KERN sheet is the schematic and the discussion. Post it on the site board.",
+    note: "Part 19 Table 19-1A. MAD is 1 m under 750 V, 3 m to 75 kV, 4.5 m to 250 kV, 6 m to 550 kV. Unknown: 3 m distribution, 6 m transmission, until BC Hydro verifies. If the crane can enter those limits, Form 30M33 is completed with the power-system owner. Coded form — order it from WorkSafeBC. The KYUK sheet is the schematic and the discussion. Post it on the site board.",
     formSlug: "powerline-30m33",
     official: [off(BINDER_OFFICIAL.form30m33, "WORKSAFEBC FORM 30M33 →")],
     whoop: [whoop("/safety/swp/working-near-powerlines", "SWP — POWERLINES →")],
@@ -173,7 +173,7 @@ const SHARED = {
     title: "HIGH-ANGLE RESCUE / THARRP AGREEMENT",
     group: PRE,
     need: "required",
-    note: "A tower operator in the cab is fire-department rope rescue, not a KERN rappel. Host or prime requests the survey in the THARRP portal. Confirm it exists before the operator goes up.",
+    note: "A tower operator in the cab is fire-department rope rescue, not a KYUK rappel. Host or prime requests the survey in the THARRP portal. Confirm it exists before the operator goes up.",
     formSlug: "tharrp-cover",
     official: [off(BINDER_OFFICIAL.tharrp, "BCCSA THARRP →")],
     whoop: [whoop("/safety/emergency-response", "10 — EMERGENCY / THARRP →")],
@@ -372,7 +372,7 @@ const SHARED = {
     title: "SAFE WORK PROCEDURES — ASSEMBLY / DISASSEMBLY",
     group: PROC,
     need: "required",
-    note: "Written procedures for the high-risk work. KERN-SWP-027 is the company method. The site procedure names this pad, this assist crane, this crew.",
+    note: "Written procedures for the high-risk work. KYUK-SWP-027 is the company method. The site procedure names this pad, this assist crane, this crew.",
     whoop: [whoop("/safety/swp/tower-erection-climbing", "SWP-027 →")],
   }),
   swpOps: (n: string): BinderItem => ({
@@ -413,7 +413,7 @@ const SHARED = {
     title: "PREVENTIVE MAINTENANCE SCHEDULE AND INSTRUCTION",
     group: POST,
     need: "required",
-    note: "OEM interval for this serial. KERN weekly and monthly forms record the work. The schedule in the binder is the manufacturer’s, not a guess.",
+    note: "OEM interval for this serial. KYUK weekly and monthly forms record the work. The schedule in the binder is the manufacturer’s, not a guess.",
     whoop: [
       whoop("/safety/form/tower-weekly-maintenance", "TOWER WEEKLY — FRM-030 →"),
       whoop("/safety/form/tower-monthly-maintenance", "TOWER MONTHLY — FRM-031 →"),
@@ -468,7 +468,7 @@ export const TOWER_BINDER: BinderDef = {
   kind: "tower",
   slug: "tower",
   title: "TOWER CRANE SITE BINDER",
-  number: "KERN-BND-001",
+  number: "KYUK-BND-001",
   summary:
     "Top-slewing tower: hammerhead, topless, luffing jib. Numbered to the BC Crane Safety Tower Crane Site Binder Document Checklist. Mandatory with the NOP-TC.",
   officialName: "Tower Crane Site Binder Document Checklist (FM-TC-01)",
@@ -572,7 +572,7 @@ export const SELF_ERECT_BINDER: BinderDef = {
   kind: "self-erect",
   slug: "self-erect",
   title: "SELF-ERECT TOWER CRANE SITE BINDER",
-  number: "KERN-BND-002",
+  number: "KYUK-BND-002",
   summary:
     "Hup, Igo, Igo T, K-series, CBR, CSE and the rest of the self-erecting class. Numbered to the BC Crane Safety Self-Erect Tower Crane Site Binder. NOP-TC still applies.",
   officialName: "Self-Erect Tower Crane Site Binder Document Checklist",
@@ -672,7 +672,7 @@ export function binderGroups(binder: BinderDef) {
 export function binderItemLinks(item: BinderItem): DocLink[] {
   const fill = item.formSlug
     ? [
-        whoop(`/safety/form/${item.formSlug}`, "KERN FORM →"),
+        whoop(`/safety/form/${item.formSlug}`, "KYUK FORM →"),
         whoop(`/safety/builder/${item.formSlug}`, "FILL + PDF →"),
       ]
     : [];
