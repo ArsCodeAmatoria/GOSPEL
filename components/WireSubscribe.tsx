@@ -22,7 +22,7 @@ export function WireSubscribe({ compact = false }: { compact?: boolean }) {
       if (!res.ok) throw new Error("fail");
       setDone(true);
     } catch {
-      window.location.href = `${SITE.emailHref}?subject=${encodeURIComponent("KYUKWIRE")}&body=${encodeURIComponent(email)}`;
+      window.location.href = `${SITE.emailHref}?subject=${encodeURIComponent("1415WIRE")}&body=${encodeURIComponent(email)}`;
       setError("If your email client opened, send that. Otherwise call us.");
     }
   }
@@ -30,7 +30,7 @@ export function WireSubscribe({ compact = false }: { compact?: boolean }) {
   if (done) {
     return (
       <div className={compact ? undefined : "section wrap"} id="subscribe">
-        <p className="mono kicker">KYUKWIRE</p>
+        <p className="mono kicker">1415WIRE</p>
         <h2 className="display giant-sm">YOU&apos;RE ON THE LIST.</h2>
         <p className="lede mt">We will send stories. We will not bury you in mail.</p>
       </div>
@@ -39,11 +39,11 @@ export function WireSubscribe({ compact = false }: { compact?: boolean }) {
 
   return (
     <section className={compact ? "wire-sub" : "section wrap"} id="subscribe">
-      <p className="mono kicker">KYUKWIRE</p>
+      <p className="mono kicker">1415WIRE</p>
       <h2 className="display giant">
         GET
         <br />
-        KYUKWIRE.
+        1415WIRE.
       </h2>
       <p className="lede mt">
         New stories on safety, rigging, cranes and the people doing the work.

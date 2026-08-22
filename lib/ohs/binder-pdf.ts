@@ -1,4 +1,5 @@
 import { PDFDocument, StandardFonts, rgb, type PDFFont, type PDFPage } from "pdf-lib";
+import { SITE } from "@/lib/site";
 import {
   binderGroups,
   type BinderDef,
@@ -58,8 +59,14 @@ export async function binderToPdf(binder: BinderDef, draft: BinderDraft) {
     page.drawText(s, { x, y, size, font: f, color });
   }
 
-  text("KYUK", M, 18, bold);
-  text("CRANE + RIGGING", M + 78, 7, font, STEEL);
+  text(SITE.name, M, 18, bold);
+  text(
+    SITE.descriptor,
+    M + bold.widthOfTextAtSize(SITE.name, 18) + 10,
+    7,
+    font,
+    STEEL,
+  );
   const numW = bold.widthOfTextAtSize(binder.number, 9);
   text(binder.number, W - M - numW, 9, bold, CROWN);
   y -= 28;
@@ -74,7 +81,7 @@ export async function binderToPdf(binder: BinderDef, draft: BinderDraft) {
   y -= 16;
   const intro = wrap(
     font,
-    "KYUK copy of the site-binder checklist. Numbered to the BC Crane Safety template. Official templates and WorkSafeBC forms stay official — this is the working file.",
+    "1415 copy of the site-binder checklist. Numbered to the BC Crane Safety template. Official templates and WorkSafeBC forms stay official — this is the working file.",
     8,
     W - M * 2,
   );
@@ -149,7 +156,7 @@ export async function binderToPdf(binder: BinderDef, draft: BinderDraft) {
 
   ensure(36);
   text(
-    "Sign-off is on the official BC Crane Safety checklist. This PDF is the KYUK working copy.",
+    "Sign-off is on the official BC Crane Safety checklist. This PDF is the 1415 working copy.",
     M,
     7,
     font,

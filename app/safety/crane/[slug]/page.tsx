@@ -25,7 +25,7 @@ export default async function CranePage({ params }: Props) {
   return (
     <SafetyDocFrame
       kicker={`${doc.maker.toUpperCase()} · ${doc.family}`}
-      num={doc.number.replace("KYUK-", "")}
+      num={doc.number.replace("1415-", "")}
       title={doc.title}
       intro={doc.summary}
       backHref="/safety/inspections"
@@ -138,7 +138,7 @@ export default async function CranePage({ params }: Props) {
             <li key={item}>{item}</li>
           ))}
         </ul>
-        <h2>KYUK FORMS</h2>
+        <h2>1415 FORMS</h2>
         {doc.forms.map((item) => (
           <p className="doc-cta" key={item.href}>
             <Link href={item.href}>{item.label}</Link>

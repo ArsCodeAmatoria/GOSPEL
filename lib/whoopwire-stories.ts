@@ -1,7 +1,7 @@
 import type { WireArticle } from "@/lib/whoopwire";
 
 /**
- * KYUKWIRE stories.
+ * 1415WIRE stories.
  *
  * To publish a story: copy an object in this array, give it a unique slug,
  * and set featured: true on at most one story. Optional fields: updated,
@@ -15,7 +15,7 @@ export const ARTICLES: WireArticle[] = [
     category: "RIGGING",
     excerpt:
       "You do not need a protractor on the hook. Measure sling length and vertical height. sin θ = H / L. Then you can use the tension formula.",
-    author: "KYUK",
+    author: "1415",
     published: "2026-08-18",
     image: "/whoopwire/rigging-triangle.jpg",
     imageAlt:
@@ -37,7 +37,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "This is a two-leg bridle. Equal legs. Load hanging plumb. θ is the angle between the sling and the horizontal — the same θ KYUK uses in the tension formula. It is not the angle between the two legs at the hook.",
+        text: "This is a two-leg bridle. Equal legs. Load hanging plumb. θ is the angle between the sling and the horizontal — the same θ 1415 uses in the tension formula. It is not the angle between the two legs at the hook.",
       },
       {
         type: "h",
@@ -87,7 +87,7 @@ export const ARTICLES: WireArticle[] = [
           {
             n: "01",
             title: "H / L = 0.500    θ = 30°",
-            body: "H is half of L. This is the floor KYUK will still rig without an engineer. Tension in each leg equals the whole load. KYUK-SWP-010.",
+            body: "H is half of L. This is the floor 1415 will still rig without an engineer. Tension in each leg equals the whole load. 1415-SWP-010.",
           },
           {
             n: "02",
@@ -115,7 +115,7 @@ export const ARTICLES: WireArticle[] = [
         caption: "Find θ from H / L. Then take that θ into T = W / (2 × sin θ).",
         columns: ["H / L", "θ FROM HORIZONTAL", "WHAT IT MEANS"],
         rows: [
-          ["0.500", "30°", "KYUK floor. Each leg sees W."],
+          ["0.500", "30°", "1415 floor. Each leg sees W."],
           ["0.707", "45°", "Working bridle."],
           ["0.866", "60°", "Steep. Lower tension."],
           ["0.966", "75°", "Almost vertical."],
@@ -140,7 +140,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "You now have θ. The next number is tension. Two equal legs: T = W / (2 × sin θ). That is the other KYUKWIRE. Do not stop at a pretty angle.",
+        text: "You now have θ. The next number is tension. Two equal legs: T = W / (2 × sin θ). That is the other 1415WIRE. Do not stop at a pretty angle.",
       },
       {
         type: "h",
@@ -172,7 +172,7 @@ export const ARTICLES: WireArticle[] = [
       {
         type: "cta",
         href: "/safety/swp/sling-selection",
-        label: "SLING SELECTION — KYUK-SWP-010 →",
+        label: "SLING SELECTION — 1415-SWP-010 →",
       },
       {
         type: "cta",
@@ -188,7 +188,7 @@ export const ARTICLES: WireArticle[] = [
     category: "SAFETY",
     excerpt:
       "In B.C., WorkSafeBC enforces the Regulation — not a vibe called CSA, and not ASME B30 as one book. Mobile is Z150. Tower is Z248. B30 is a series, and only the volumes written into the Regulation are law.",
-    author: "KYUK",
+    author: "1415",
     published: "2026-08-15",
     seoTitle: "What WorkSafeBC Part 14 Actually Names — Z150, Z248, ASME B30",
     seoDescription:
@@ -291,7 +291,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "For the machines KYUK actually supplies people onto, this is the map in section 14.2 as it stood in August 2026.",
+        text: "For the machines 1415 actually supplies people onto, this is the map in section 14.2 as it stood in August 2026.",
       },
       {
         type: "table",
@@ -347,7 +347,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "KYUK is a complete crane operations and rigging company. The people and the systems. The work is done to the Regulation, to the standards the Regulation names, to the manufacturer, and to the site. Where they conflict, the stricter applicable requirement wins. Law always wins. That is already on the homepage. This is what those letters actually point at.",
+        text: "1415 is a complete crane operations and rigging company. The people and the systems. The work is done to the Regulation, to the standards the Regulation names, to the manufacturer, and to the site. Where they conflict, the stricter applicable requirement wins. Law always wins. That is already on the homepage. This is what those letters actually point at.",
       },
       {
         type: "cta",
@@ -378,7 +378,7 @@ export const ARTICLES: WireArticle[] = [
     category: "CRANES",
     excerpt:
       "A mobile crane boom is a right triangle. Height is L × sin θ. Radius from the pin is L × cos θ. That is boom geometry — not a load chart.",
-    author: "KYUK",
+    author: "1415",
     published: "2026-08-15",
     seoTitle: "Sin the Height. Cos the Radius. — Boom Geometry",
     seoDescription:
@@ -564,7 +564,7 @@ export const ARTICLES: WireArticle[] = [
     category: "RIGGING",
     excerpt:
       "Sling tension is not a feeling. For a two-leg bridle, T = W / (2 × sin θ). If you cannot do that, you cannot claim the angle is safe.",
-    author: "KYUK",
+    author: "1415",
     published: "2026-08-15",
     seoTitle: "Sling Tension Is Sin() — Rigging Math",
     seoDescription:
@@ -596,7 +596,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "θ is the sling angle: the angle between the sling and the horizontal. ASME talks about it that way. KYUK talks about it that way. It is not the angle between the two legs at the hook. Mix those up and your number is for a different lift than the one in front of you.",
+        text: "θ is the sling angle: the angle between the sling and the horizontal. ASME talks about it that way. 1415 talks about it that way. It is not the angle between the two legs at the hook. Mix those up and your number is for a different lift than the one in front of you.",
       },
       {
         type: "p",
@@ -735,7 +735,7 @@ export const ARTICLES: WireArticle[] = [
     category: "RIGGING",
     excerpt:
       "A qualification tells you what someone has been trained to do. Competency tells you whether they can actually do it.",
-    author: "KYUK",
+    author: "1415",
     published: "2026-08-06",
     featured: true,
     seoTitle: "A Ticket Isn't Competency",
@@ -766,7 +766,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "Tickets keep people who have never been trained off the hook. They give a client, a prime contractor and a supervisor a first filter. KYUK will not dispatch a rigger without the paper that the work requires. That is the floor.",
+        text: "Tickets keep people who have never been trained off the hook. They give a client, a prime contractor and a supervisor a first filter. 1415 will not dispatch a rigger without the paper that the work requires. That is the floor.",
       },
       {
         type: "p",
@@ -796,7 +796,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "h",
-        text: "HOW KYUK TREATS THIS",
+        text: "HOW 1415 TREATS THIS",
       },
       {
         type: "p",
@@ -825,7 +825,7 @@ export const ARTICLES: WireArticle[] = [
     category: "SAFETY",
     excerpt:
       "If people have to ask permission to see how you expect the work to be done, you do not have a safety program. You have a filing cabinet.",
-    author: "KYUK",
+    author: "1415",
     published: "2026-08-13",
     seoTitle: "Why We Made Proven Public",
     seoDescription:
@@ -842,7 +842,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "KYUK put Proven on the website. Not a summary. The system. If you cannot work that way, do not hire us.",
+        text: "1415 put Proven on the website. Not a summary. The system. If you cannot work that way, do not hire us.",
       },
       {
         type: "quote",
@@ -870,7 +870,7 @@ export const ARTICLES: WireArticle[] = [
           "Workers, before they accept a dispatch.",
           "Clients, before they hire us.",
           "Supervisors, on the day, on a phone, at the gate.",
-          "Contractors who want to know what KYUK will and will not do.",
+          "Contractors who want to know what 1415 will and will not do.",
         ],
       },
       {
@@ -900,7 +900,7 @@ export const ARTICLES: WireArticle[] = [
     category: "RIGGING",
     excerpt:
       "It is not the loudest person on the steel. It is the one who finds the centre of gravity before anyone finds the radio.",
-    author: "KYUK",
+    author: "1415",
     published: "2026-05-20",
     seoTitle: "What a Good Rigger Actually Looks Like",
     seoDescription:
@@ -964,7 +964,7 @@ export const ARTICLES: WireArticle[] = [
     category: "CRANES",
     excerpt:
       "The lifts that go badly are often the ones nobody bothered to treat as a lift. Small, familiar, 'we've done this.'",
-    author: "KYUK",
+    author: "1415",
     published: "2026-06-25",
     seoTitle: "The Lift Looked Simple. It Wasn't.",
     seoDescription:
@@ -1025,7 +1025,7 @@ export const ARTICLES: WireArticle[] = [
     category: "SAFETY",
     excerpt:
       "Not a poster. Six things that, if they are wrong, the hook should not leave the ground.",
-    author: "KYUK",
+    author: "1415",
     published: "2026-07-08",
     seoTitle: "Six Things to Check Before You Take the Load",
     seoDescription:
@@ -1103,7 +1103,7 @@ export const ARTICLES: WireArticle[] = [
     category: "SAFETY",
     excerpt:
       "A safe work procedure that cannot be used on the day is theatre. It exists to be shown, not followed.",
-    author: "KYUK",
+    author: "1415",
     published: "2026-06-10",
     seoTitle: "When a SWP Isn't Really a SWP",
     seoDescription:
@@ -1146,7 +1146,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "KYUK procedures are public and short enough to use. A site-specific job procedure still has to be written for this lift, this day. The SWP is the method. The SJP is the instance. If the instance contradicts the method, stop and fix one of them before the hook moves.",
+        text: "1415 procedures are public and short enough to use. A site-specific job procedure still has to be written for this lift, this day. The SWP is the method. The SJP is the instance. If the instance contradicts the method, stop and fix one of them before the hook moves.",
       },
       {
         type: "p",
@@ -1166,7 +1166,7 @@ export const ARTICLES: WireArticle[] = [
     category: "INDUSTRY",
     excerpt:
       "A procedure nobody can find at 6:40 a.m. does not exist. Access is part of the control.",
-    author: "KYUK",
+    author: "1415",
     published: "2026-04-08",
     seoTitle: "Why Documentation Should Be Easy to Find",
     seoDescription:
@@ -1203,7 +1203,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "KYUK's answer is blunt. Proven is public. COR is stated in public. If a document matters to the work, it should survive daylight.",
+        text: "1415's answer is blunt. Proven is public. COR is stated in public. If a document matters to the work, it should survive daylight.",
       },
       {
         type: "cta",
@@ -1219,7 +1219,7 @@ export const ARTICLES: WireArticle[] = [
     category: "PEOPLE",
     excerpt:
       "A crew shares a brief, a standard and a way of stopping the work. A bunch of people share a start time.",
-    author: "KYUK",
+    author: "1415",
     published: "2026-04-29",
     seoTitle: "The Difference Between a Crew and a Bunch of People",
     seoDescription:
@@ -1257,7 +1257,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "KYUK supplies people as a coordinated team when the work needs it. That costs more than sending whoever is free. It also means the operator is not meeting the rigger for the first time under a load that 'should only take a minute.'",
+        text: "1415 supplies people as a coordinated team when the work needs it. That costs more than sending whoever is free. It also means the operator is not meeting the rigger for the first time under a load that 'should only take a minute.'",
       },
       {
         type: "p",
@@ -1277,7 +1277,7 @@ export const ARTICLES: WireArticle[] = [
     category: "CRANES",
     excerpt:
       "If the first time they see the machine, the load and the site is when they park, you have already spent the briefing.",
-    author: "KYUK",
+    author: "1415",
     published: "2026-08-04",
     seoTitle: "What Your Crane Crew Should Know Before They Arrive",
     seoDescription:
@@ -1294,7 +1294,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "KYUK will not guess what you need. Before anyone is named, we want the work, the site, the machines and the dates. Before they arrive, the worker gets the hazards and the procedure. You get the name, the tickets and the plan.",
+        text: "1415 will not guess what you need. Before anyone is named, we want the work, the site, the machines and the dates. Before they arrive, the worker gets the hazards and the procedure. You get the name, the tickets and the plan.",
       },
       {
         type: "h",

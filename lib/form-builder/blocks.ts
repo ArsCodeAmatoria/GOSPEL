@@ -345,7 +345,7 @@ export const THARRP_COVER_ITEMS = [
   "Fire department named",
   "Operator knows how to summon them",
   "Formal survey on site if high-rise past 60 days",
-  "KYUK confirmed before dispatch",
+  "1415 confirmed before dispatch",
 ];
 
 export const NAVCAN_ITEMS = [
@@ -434,7 +434,7 @@ export const REFUSAL_ITEMS = [
   "Work stopped",
   "Reason stated — specific",
   "Site told",
-  "KYUK told",
+  "1415 told",
   "Danger investigated",
   "Work still stopped until controlled",
   "No replacement sent to do the same unsafe work",

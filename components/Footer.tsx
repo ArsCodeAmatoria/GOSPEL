@@ -3,6 +3,7 @@ import { CorMark } from "@/components/CorMark";
 import { ProvenName } from "@/components/ProvenMark";
 import { StandardMarks } from "@/components/StandardsList";
 import { COR, SITE } from "@/lib/site";
+import { WIRE } from "@/lib/whoopwire";
 
 export function Footer() {
   return (
@@ -16,7 +17,7 @@ export function Footer() {
           <Link href="/safety">
             <ProvenName />
           </Link>
-          <Link href="/whoopwire">KYUKWIRE</Link>
+          <Link href="/whoopwire">{WIRE.name}</Link>
           <Link href="/#cor">COR CERTIFIED</Link>
           <Link href="/crew">THE CREW</Link>
           <Link href="/philosophy">PHILOSOPHY</Link>
@@ -47,7 +48,7 @@ export function Footer() {
         <Link href="/#standards">Work done to</Link> CSA Z150 / Z248, WorkSafeBC,
         BC Crane Safety, Technical Safety BC, ASME B30, manufacturer
         requirements and site policies. Those marks identify the bodies — they
-        are not a claim those organizations endorse KYUK.
+        are not a claim those organizations endorse 1415.
       </p>
       <div className="footer-bot mono">
         <span>© {new Date().getFullYear()} {SITE.legalName}</span>

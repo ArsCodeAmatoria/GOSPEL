@@ -1,4 +1,5 @@
 import { PDFDocument, StandardFonts, rgb, type PDFFont, type PDFPage } from "pdf-lib";
+import { SITE } from "@/lib/site";
 import type {
   FormValues,
   InspectionRow,
@@ -61,15 +62,15 @@ function wrap(font: PDFFont, text: string, size: number, width: number) {
 
 function drawHeader(ctx: Ctx, form: WhoopFormDef, completedBy: string) {
   const { page, bold, font } = ctx;
-  page.drawText("KYUK", {
+  page.drawText(SITE.name, {
     x: M,
     y: H - 36,
     size: 18,
     font: bold,
     color: INK,
   });
-  page.drawText("CRANE + RIGGING", {
-    x: M + 78,
+  page.drawText(SITE.descriptor, {
+    x: M + bold.widthOfTextAtSize(SITE.name, 18) + 10,
     y: H - 34,
     size: 7,
     font,
@@ -334,5 +335,5 @@ export function downloadPdf(bytes: Uint8Array, filename: string) {
 export function pdfFilename(form: WhoopFormDef) {
   const day = new Date().toISOString().slice(0, 10);
   const slug = form.title.replace(/[^A-Z0-9]+/gi, "-").replace(/^-|-$/g, "");
-  return `KYUK-${slug}-${day}.pdf`;
+  return `${SITE.name}-${slug}-${day}.pdf`;
 }

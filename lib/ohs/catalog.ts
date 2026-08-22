@@ -178,14 +178,14 @@ export function safetyCatalog(): CatalogHit[] {
     })),
     {
       href: "/safety/builder",
-      number: "KYUK-FRM",
+      number: "1415-FRM",
       title: "FORM BUILDER",
       summary: "Assemble, fill, PDF.",
       kind: "FORM",
     },
     {
       href: "/safety/binder",
-      number: "KYUK-BND",
+      number: "1415-BND",
       title: "CRANE BINDER WIZARD",
       summary: "Tower or self-erect site binder.",
       kind: "BINDER",

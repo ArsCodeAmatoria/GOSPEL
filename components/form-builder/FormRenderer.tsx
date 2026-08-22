@@ -8,6 +8,7 @@ import type {
   WhoopFormDef,
 } from "@/lib/form-builder/types";
 import { isAddressField, nid } from "@/lib/form-builder/types";
+import { SITE } from "@/lib/site";
 import { AddressFinder } from "./AddressFinder";
 import { SignatureField } from "./SignatureField";
 
@@ -300,7 +301,7 @@ export function FormRenderer({
   return (
     <div className={`fb-doc${mode === "preview" ? " is-preview" : ""}`}>
       <header className="fb-doc-head">
-        <p className="mono steel">KYUK</p>
+        <p className="mono steel">{SITE.name}</p>
         <div className="fb-doc-meta">
           <span className="mono">{form.number}</span>
           <span className="mono">REV {form.revision}</span>

@@ -79,7 +79,7 @@ export default async function WireArticlePage({ params }: Props) {
     author: { "@type": "Organization", name: article.author },
     publisher: {
       "@type": "Organization",
-      name: "KYUK",
+      name: "1415",
       url: "https://whoop.ca",
     },
     mainEntityOfPage: url,
@@ -96,7 +96,7 @@ export default async function WireArticlePage({ params }: Props) {
       />
       <header className="wire-article-head">
         <p className="mono kicker">
-          <Link href="/whoopwire">KYUKWIRE</Link>
+          <Link href="/whoopwire">1415WIRE</Link>
           <span> / {article.category}</span>
         </p>
         <h1 className="display giant">
@@ -160,7 +160,7 @@ export default async function WireArticlePage({ params }: Props) {
 
       {related.length ? (
         <section className="wire-related">
-          <p className="mono kicker">MORE FROM KYUKWIRE</p>
+          <p className="mono kicker">MORE FROM 1415WIRE</p>
           <div className="wire-stack">
             {related.map((story) => (
               <WireStoryLink key={story.slug} story={story} />
@@ -171,7 +171,7 @@ export default async function WireArticlePage({ params }: Props) {
 
       <nav className="pager">
         <Link href="/whoopwire">
-          <span className="mono steel">KYUKWIRE</span>
+          <span className="mono steel">1415WIRE</span>
           <strong className="display">ALL STORIES</strong>
         </Link>
         <Link href="/hire">
