@@ -38,7 +38,7 @@ export function BuilderIndex() {
         <p className="mono steel">SAFETY FORMS</p>
         <h1 className="display">FORM BUILDER</h1>
         <p className="lede mt">
-          1415 forms are assembled from reusable Safety Blocks. Pick a
+          GOSPEL forms are assembled from reusable Safety Blocks. Pick a
           controlled template, or start from scratch. Fill it out on this
           device. Download a PDF. Nothing is kept on a server.
         </p>

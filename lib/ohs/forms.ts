@@ -4,7 +4,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "flha",
     title: "FLHA",
-    number: "1415-FRM-001",
+    number: "GOSPEL-FRM-001",
     group: "Daily",
     summary: "Field level hazard assessment for this shift, this lift, this ground.",
     when: "Start of shift and whenever the work, weather, crew or zone changes.",
@@ -16,12 +16,12 @@ export const FORMS: SafetyForm[] = [
       "Stop criteria",
       "Signatures of everyone on the lift",
     ],
-    routing: "Crew completes in the field. Copy to 1415.",
+    routing: "Crew completes in the field. Copy to GOSPEL.",
   },
   {
     slug: "crane-pre-use",
     title: "CRANE PRE-USE INSPECTION",
-    number: "1415-FRM-002",
+    number: "GOSPEL-FRM-002",
     group: "Daily",
     summary: "Operator inspection for this shift, this machine, this configuration.",
     when: "Before the crane comes on load, every shift.",
@@ -32,12 +32,12 @@ export const FORMS: SafetyForm[] = [
       "Defects and out-of-service decision",
       "Operator name and time",
     ],
-    routing: "Operator completes. Defects that affect lifting stop the crane and notify 1415 and the site.",
+    routing: "Operator completes. Defects that affect lifting stop the crane and notify GOSPEL and the site.",
   },
   {
     slug: "rigging-inspection-form",
     title: "RIGGING INSPECTION",
-    number: "1415-FRM-003",
+    number: "GOSPEL-FRM-003",
     group: "Daily",
     summary: "Sling and hardware check before the hitch takes load.",
     when: "Before use, and when gear is returned to the pile.",
@@ -52,7 +52,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "toolbox-meeting",
     title: "TOOLBOX MEETING",
-    number: "1415-FRM-004",
+    number: "GOSPEL-FRM-004",
     group: "Daily",
     summary: "The brief for this crew, this lift, this day — not a safety poster reading.",
     download: {
@@ -69,12 +69,12 @@ export const FORMS: SafetyForm[] = [
       "Questions and answers",
       "Attendance",
     ],
-    routing: "Supervisor or designated lead. Copy to 1415 with the FLHA.",
+    routing: "Supervisor or designated lead. Copy to GOSPEL with the FLHA.",
   },
   {
     slug: "daily-lift-checklist",
     title: "DAILY LIFT CHECKLIST",
-    number: "1415-FRM-005",
+    number: "GOSPEL-FRM-005",
     group: "Daily",
     summary: "The last pass before the hook: plan, gear, zone, people.",
     when: "Before the first load of the shift and before each non-routine lift.",
@@ -91,7 +91,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "lift-plan",
     title: "LIFT PLAN",
-    number: "1415-FRM-006",
+    number: "GOSPEL-FRM-006",
     group: "Lifting",
     summary: "The written plan for a lift that is more than a routine pick.",
     when: "Non-routine lifts, tight sites, and any lift the supervisor or operator calls for a plan.",
@@ -108,7 +108,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "critical-lift-plan",
     title: "CRITICAL LIFT PLAN",
-    number: "1415-FRM-007",
+    number: "GOSPEL-FRM-007",
     group: "Lifting",
     summary: "Named supervision, slower brief, hard limits. Ego is not a control.",
     when: "Loads approaching chart, tandem lifts, lifts over plant or public, shifting COG, or as the site defines.",
@@ -120,12 +120,12 @@ export const FORMS: SafetyForm[] = [
       "Rescue / abort",
       "Approvals",
     ],
-    routing: "Approved before the hook is loaded. Copy to 1415 and the prime contractor as required.",
+    routing: "Approved before the hook is loaded. Copy to GOSPEL and the prime contractor as required.",
   },
   {
     slug: "rigging-plan",
     title: "RIGGING PLAN",
-    number: "1415-FRM-008",
+    number: "GOSPEL-FRM-008",
     group: "Lifting",
     summary: "Hitch, hardware, angles, softeners, tag lines — written, not remembered.",
     when: "Complex hitches, multi-leg bridles, below-the-hook gear, or unknown COG.",
@@ -141,7 +141,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "pre-lift-meeting",
     title: "PRE-LIFT MEETING",
-    number: "1415-FRM-009",
+    number: "GOSPEL-FRM-009",
     group: "Lifting",
     summary: "Everyone on the lift can repeat the plan, the signals, who stops it, and where they stand.",
     when: "Before a critical or non-routine lift, and whenever the crew changes.",
@@ -158,7 +158,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "incident-report",
     title: "INCIDENT REPORT",
-    number: "1415-FRM-010",
+    number: "GOSPEL-FRM-010",
     group: "Incident",
     summary: "Facts: what, where, when, who, what gear, what was supposed to happen.",
     when: "Any injury, dropped load, crane contact, property damage, or serious stop-work.",
@@ -170,12 +170,12 @@ export const FORMS: SafetyForm[] = [
       "Immediate actions",
       "Notifications",
     ],
-    routing: "1415 immediately for serious events. See Report an Incident.",
+    routing: "GOSPEL immediately for serious events. See Report an Incident.",
   },
   {
     slug: "near-miss-report",
     title: "NEAR-MISS REPORT",
-    number: "1415-FRM-011",
+    number: "GOSPEL-FRM-011",
     group: "Incident",
     summary: "What almost happened, and what will change so it does not.",
     when: "Same shift as the near miss.",
@@ -185,15 +185,15 @@ export const FORMS: SafetyForm[] = [
       "Gear and conditions",
       "Suggested control",
     ],
-    routing: "1415 same day. See Report a Near Miss.",
+    routing: "GOSPEL same day. See Report a Near Miss.",
   },
   {
     slug: "first-aid-report",
     title: "FIRST AID REPORT",
-    number: "1415-FRM-012",
+    number: "GOSPEL-FRM-012",
     group: "Incident",
     summary: "Care given, by whom, and whether the person stayed on shift.",
-    when: "Any first aid involving a 1415 worker.",
+    when: "Any first aid involving a GOSPEL worker.",
     fields: [
       "Injured person",
       "Nature of injury",
@@ -201,15 +201,15 @@ export const FORMS: SafetyForm[] = [
       "Attendant",
       "WorkSafeBC / site first aid log as required",
     ],
-    routing: "Site first aid and 1415. Regulator as the law requires.",
+    routing: "Site first aid and GOSPEL. Regulator as the law requires.",
   },
   {
     slug: "investigation",
     title: "INVESTIGATION",
-    number: "1415-FRM-013",
+    number: "GOSPEL-FRM-013",
     group: "Incident",
     summary: "Causes, not a defence brief. What the program will change.",
-    when: "After an incident involving 1415 personnel, on a timeline that matches severity.",
+    when: "After an incident involving GOSPEL personnel, on a timeline that matches severity.",
     fields: [
       "Sequence of events",
       "Scene, photographs, gear held",
@@ -219,12 +219,12 @@ export const FORMS: SafetyForm[] = [
       "Actions with owners and dates",
       "Closure and verification",
     ],
-    routing: "1415 Safety. Shared with the client as required.",
+    routing: "GOSPEL Safety. Shared with the client as required.",
   },
   {
     slug: "corrective-action",
     title: "CORRECTIVE ACTION",
-    number: "1415-FRM-014",
+    number: "GOSPEL-FRM-014",
     group: "Incident",
     summary: "Finding → action → person → due date → done → verified.",
     when: "Every finding from an inspection, incident or near miss that requires a change.",
@@ -241,10 +241,10 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "orientation",
     title: "ORIENTATION",
-    number: "1415-FRM-015",
+    number: "GOSPEL-FRM-015",
     group: "Worker",
     summary: "This program, this dispatch, this site — including young or new worker topics in 3.23.",
-    when: "First 1415 dispatch, when the role or workplace hazards change, and before a young or new worker begins (3.22–3.25).",
+    when: "First GOSPEL dispatch, when the role or workplace hazards change, and before a young or new worker begins (3.22–3.25).",
     fields: [
       "Worker name, role, date of birth if under 25",
       "Supervisor name and contact",
@@ -256,7 +256,7 @@ export const FORMS: SafetyForm[] = [
       "Host site orientation completed",
       "Tickets on file",
     ],
-    routing: "1415 before or at first dispatch.",
+    routing: "GOSPEL before or at first dispatch.",
     download: {
       href: "/safety/builder/orientation",
       label: "FILL THIS FORM →",
@@ -265,7 +265,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "training-record",
     title: "TRAINING RECORD",
-    number: "1415-FRM-016",
+    number: "GOSPEL-FRM-016",
     group: "Worker",
     summary: "What was completed, when, and when it expires.",
     when: "Whenever a qualification, orientation or briefing is completed.",
@@ -276,12 +276,12 @@ export const FORMS: SafetyForm[] = [
       "Expiry",
       "Evidence",
     ],
-    routing: "1415 worker file.",
+    routing: "GOSPEL worker file.",
   },
   {
     slug: "competency-assessment",
     title: "COMPETENCY ASSESSMENT",
-    number: "1415-FRM-017",
+    number: "GOSPEL-FRM-017",
     group: "Worker",
     summary: "Can this person do this work on this class of machine, today.",
     when: "Before first placement in a role, and when the work class changes.",
@@ -292,12 +292,12 @@ export const FORMS: SafetyForm[] = [
       "Result and restrictions",
       "Assessor",
     ],
-    routing: "1415. Matched to the work before dispatch.",
+    routing: "GOSPEL. Matched to the work before dispatch.",
   },
   {
     slug: "ppe-issue",
     title: "PPE ISSUE",
-    number: "1415-FRM-018",
+    number: "GOSPEL-FRM-018",
     group: "Worker",
     summary: "What was issued, inspected, replaced, and who has it.",
     when: "On issue, on inspection, and on return or replacement.",
@@ -308,12 +308,12 @@ export const FORMS: SafetyForm[] = [
       "Date",
       "Replaced or destroyed if failed",
     ],
-    routing: "1415. Failed PPE is destroyed or marked, not left in a truck.",
+    routing: "GOSPEL. Failed PPE is destroyed or marked, not left in a truck.",
   },
   {
     slug: "worker-acknowledgement",
     title: "WORKER ACKNOWLEDGEMENT",
-    number: "1415-FRM-019",
+    number: "GOSPEL-FRM-019",
     group: "Worker",
     summary: "The worker has read this program and knows where it lives.",
     when: "Onboarding and on each controlled revision that changes how the work is done.",
@@ -323,12 +323,12 @@ export const FORMS: SafetyForm[] = [
       "Revision acknowledged",
       "Questions asked",
     ],
-    routing: "1415 worker file.",
+    routing: "GOSPEL worker file.",
   },
   {
     slug: "workplace-inspection",
     title: "SITE INSPECTION",
-    number: "1415-FRM-020",
+    number: "GOSPEL-FRM-020",
     group: "Inspection",
     summary: "The lift area, the access, the zone — not the whole civil site.",
     when: "At setup. Again at a frequency matching the dispatch — at least weekly on a standing tower. After a change that could have affected the pad, the zone or the access.",
@@ -344,7 +344,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "crane-inspection-form",
     title: "CRANE INSPECTION",
-    number: "1415-FRM-021",
+    number: "GOSPEL-FRM-021",
     group: "Inspection",
     summary: "Beyond pre-use: defects, certificates, and whether the machine stays up.",
     when: "As assigned, and after any event that could have damaged the crane.",
@@ -360,22 +360,22 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "rigging-equipment-inspection",
     title: "RIGGING EQUIPMENT INSPECTION",
-    number: "1415-FRM-022",
+    number: "GOSPEL-FRM-022",
     group: "Inspection",
-    summary: "Periodic check of the 1415 or site gear our people will pick up.",
-    when: "Before a long dispatch and on a recorded interval for gear 1415 controls.",
+    summary: "Periodic check of the GOSPEL or site gear our people will pick up.",
+    when: "Before a long dispatch and on a recorded interval for gear GOSPEL controls.",
     fields: [
       "Inventory",
       "Condition",
       "Removed from service",
       "Inspector",
     ],
-    routing: "1415. Failed gear does not travel to the next site.",
+    routing: "GOSPEL. Failed gear does not travel to the next site.",
   },
   {
     slug: "crane-operator-log",
     title: "CRANE OPERATOR LOG",
-    number: "1415-FRM-023",
+    number: "GOSPEL-FRM-023",
     group: "Daily",
     summary:
       "Operator’s record for this machine this shift: hours, lifts, defects. Stays with the crane.",
@@ -389,12 +389,12 @@ export const FORMS: SafetyForm[] = [
       "Operator signature",
     ],
     routing:
-      "Operator completes. Copy in the machine logbook. Copy to 1415 with the dispatch.",
+      "Operator completes. Copy in the machine logbook. Copy to GOSPEL with the dispatch.",
   },
   {
     slug: "rigger-log",
     title: "RIGGER LOG",
-    number: "1415-FRM-024",
+    number: "GOSPEL-FRM-024",
     group: "Daily",
     summary: "Gear used, lifts made, what was isolated. Before the hitch takes load.",
     when: "Each shift the rigger is on the lift.",
@@ -406,12 +406,12 @@ export const FORMS: SafetyForm[] = [
       "Lifts this shift",
       "Rejected gear tagged",
     ],
-    routing: "Rigger completes. Failed gear is isolated the same hour. Copy to 1415.",
+    routing: "Rigger completes. Failed gear is isolated the same hour. Copy to GOSPEL.",
   },
   {
     slug: "weekly-maintenance",
     title: "WEEKLY MAINTENANCE",
-    number: "1415-FRM-025",
+    number: "GOSPEL-FRM-025",
     group: "Inspection",
     summary:
       "Frequent inspection: wire rope, leaks, pins, safety devices — items that change with use.",
@@ -431,7 +431,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "monthly-maintenance",
     title: "MONTHLY MAINTENANCE",
-    number: "1415-FRM-026",
+    number: "GOSPEL-FRM-026",
     group: "Inspection",
     summary:
       "Periodic inspection: structure, full rope, brakes, LMI, certificates. Not a walkaround.",
@@ -452,7 +452,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "tower-pre-use",
     title: "TOWER PRE-USE INSPECTION",
-    number: "1415-FRM-027",
+    number: "GOSPEL-FRM-027",
     group: "Inspection",
     summary:
       "Topless and hammerhead tower — this shift, this configuration. CSA Z248, 14.35.",
@@ -466,7 +466,7 @@ export const FORMS: SafetyForm[] = [
       "Defects and out-of-service decision",
     ],
     routing:
-      "Operator completes. Defects that affect lifting stop the crane. Copy in the logbook. Copy to 1415.",
+      "Operator completes. Defects that affect lifting stop the crane. Copy in the logbook. Copy to GOSPEL.",
     download: {
       href: "/safety/builder/tower-pre-use",
       label: "FILL THIS FORM →",
@@ -475,7 +475,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "luffing-jib-inspection",
     title: "LUFFING JIB INSPECTION",
-    number: "1415-FRM-028",
+    number: "GOSPEL-FRM-028",
     group: "Inspection",
     summary:
       "MRH hydraulic luffer and MR rope luffer. Jib angle, luffing system, weathervane.",
@@ -489,7 +489,7 @@ export const FORMS: SafetyForm[] = [
       "Defects and out-of-service decision",
     ],
     routing:
-      "Operator completes. Luffing-system defects stop the crane. Copy in the logbook. Copy to 1415.",
+      "Operator completes. Luffing-system defects stop the crane. Copy in the logbook. Copy to GOSPEL.",
     download: {
       href: "/safety/builder/luffing-jib-inspection",
       label: "FILL THIS FORM →",
@@ -498,7 +498,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "self-erect-inspection",
     title: "SELF-ERECT INSPECTION",
-    number: "1415-FRM-029",
+    number: "GOSPEL-FRM-029",
     group: "Inspection",
     summary:
       "Hup, Igo and Igo T. Unfold complete, ballast locked, chart for this jib position.",
@@ -512,7 +512,7 @@ export const FORMS: SafetyForm[] = [
       "Defects and out-of-service decision",
     ],
     routing:
-      "Operator completes. Incomplete unfold or missing ballast stops the crane. Copy in the logbook. Copy to 1415.",
+      "Operator completes. Incomplete unfold or missing ballast stops the crane. Copy in the logbook. Copy to GOSPEL.",
     download: {
       href: "/safety/builder/self-erect-inspection",
       label: "FILL THIS FORM →",
@@ -521,7 +521,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "tower-weekly-maintenance",
     title: "TOWER WEEKLY MAINTENANCE",
-    number: "1415-FRM-030",
+    number: "GOSPEL-FRM-030",
     group: "Inspection",
     summary:
       "Frequent inspection of a tower, luffer or self-erect. Rope, leaks, limits, lubrication.",
@@ -544,7 +544,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "tower-monthly-maintenance",
     title: "TOWER MONTHLY MAINTENANCE",
-    number: "1415-FRM-031",
+    number: "GOSPEL-FRM-031",
     group: "Inspection",
     summary:
       "Periodic inspection. Structure, full rope, slew bolts, hydraulics, certificates.",
@@ -569,7 +569,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "management-review",
     title: "MANAGEMENT OHS REVIEW",
-    number: "1415-FRM-032",
+    number: "GOSPEL-FRM-032",
     group: "Inspection",
     summary: "Periodic management meeting: trends, actions, objectives. 3.3(d).",
     when: "At least quarterly, and after a serious incident.",
@@ -583,7 +583,7 @@ export const FORMS: SafetyForm[] = [
       "Objectives this period",
       "Decisions, owners, dates",
     ],
-    routing: "1415 Safety. Minutes kept with the records. Actions enter FRM-014.",
+    routing: "GOSPEL Safety. Minutes kept with the records. Actions enter FRM-014.",
     download: {
       href: "/safety/builder/management-review",
       label: "FILL THIS FORM →",
@@ -592,7 +592,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "ohs-meeting",
     title: "OHS MEETING",
-    number: "1415-FRM-033",
+    number: "GOSPEL-FRM-033",
     group: "Daily",
     summary: "Worker safety meeting. Toolbox is the lift brief. This is the OHS meeting.",
     when: "At least monthly where 3.2 applies. Otherwise with management review, and when a committee or representative meets.",
@@ -604,7 +604,7 @@ export const FORMS: SafetyForm[] = [
       "Worker concerns",
       "Actions, owners, dates",
     ],
-    routing: "1415 or the supervisor who ran it. Record kept. 3.2(c).",
+    routing: "GOSPEL or the supervisor who ran it. Record kept. 3.2(c).",
     download: {
       href: "/safety/builder/ohs-meeting",
       label: "FILL THIS FORM →",
@@ -613,10 +613,10 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "emergency-drill",
     title: "EMERGENCY DRILL",
-    number: "1415-FRM-034",
+    number: "GOSPEL-FRM-034",
     group: "Incident",
-    summary: "A drill on a workplace 1415 controls — or a recorded site drill 1415 people joined.",
-    when: "Where 1415 is the employer at that workplace, on an interval the emergency plan names. After a change to the plan.",
+    summary: "A drill on a workplace GOSPEL controls — or a recorded site drill GOSPEL people joined.",
+    when: "Where GOSPEL is the employer at that workplace, on an interval the emergency plan names. After a change to the plan.",
     fields: [
       "Date, workplace, scenario",
       "Who participated",
@@ -624,7 +624,7 @@ export const FORMS: SafetyForm[] = [
       "What failed",
       "Actions, owners, dates",
     ],
-    routing: "1415 Safety. Lessons enter FRM-014.",
+    routing: "GOSPEL Safety. Lessons enter FRM-014.",
     download: {
       href: "/safety/builder/emergency-drill",
       label: "FILL THIS FORM →",
@@ -633,18 +633,18 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "refuse-unsafe-work",
     title: "REFUSAL OF UNSAFE WORK",
-    number: "1415-FRM-035",
+    number: "GOSPEL-FRM-035",
     group: "Incident",
     summary: "The right to refuse is a record, not a rumour. Work stays stopped until the danger is controlled.",
-    when: "Whenever a 1415 worker refuses work they have reasonable cause to believe is dangerous.",
+    when: "Whenever a GOSPEL worker refuses work they have reasonable cause to believe is dangerous.",
     fields: [
       "Worker, date, workplace, supervisor",
       "Work refused and why — specific",
-      "Who was told (site and 1415)",
+      "Who was told (site and GOSPEL)",
       "Investigation and outcome",
       "When work resumed, and what changed",
     ],
-    routing: "1415 Safety the same day. Worker is not sent home as punishment for a good-faith refusal.",
+    routing: "GOSPEL Safety the same day. Worker is not sent home as punishment for a good-faith refusal.",
     download: {
       href: "/safety/builder/refuse-unsafe-work",
       label: "FILL THIS FORM →",
@@ -653,7 +653,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "pre-assembly-meeting",
     title: "PRE-ASSEMBLY MEETING",
-    number: "1415-FRM-036",
+    number: "GOSPEL-FRM-036",
     group: "Binder",
     summary:
       "The meeting before the tower or self-erect goes up. Named people, sequence, zone, abort.",
@@ -680,7 +680,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "powerline-30m33",
     title: "POWERLINE RECORD — 30M33",
-    number: "1415-FRM-037",
+    number: "GOSPEL-FRM-037",
     group: "Binder",
     summary:
       "Site schematic and the record of the discussion with the power-system owner. Not a substitute for Form 30M33.",
@@ -725,7 +725,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "radio-frequency",
     title: "RADIO FREQUENCY COORDINATION",
-    number: "1415-FRM-038",
+    number: "GOSPEL-FRM-038",
     group: "Binder",
     summary:
       "Site radio log and the WorkSafeBC 52E73C request. Tower, self-erect and industrial cranes.",
@@ -757,7 +757,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "nop-tc-notice",
     title: "NOP-TC POSTING NOTICE",
-    number: "1415-FRM-039",
+    number: "GOSPEL-FRM-039",
     group: "Binder",
     summary:
       "The notice posted at the workplace for the duration of the crane activity. 14.73.3.",
@@ -790,7 +790,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "operator-orientation",
     title: "OPERATOR CRANE ORIENTATION",
-    number: "1415-FRM-040",
+    number: "GOSPEL-FRM-040",
     group: "Binder",
     summary:
       "This machine, this site, this chart. A tower ticket is not an orientation.",
@@ -815,7 +815,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "tower-crane-report",
     title: "TOWER CRANE REPORT",
-    number: "1415-FRM-041",
+    number: "GOSPEL-FRM-041",
     group: "Binder",
     summary:
       "Qualified supervisor’s report after erect, climb or reposition. Companion to the WorkSafeBC checklist.",
@@ -847,7 +847,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "supervisor-qualification",
     title: "ACTIVITY SUPERVISOR QUALIFICATION",
-    number: "1415-FRM-042",
+    number: "GOSPEL-FRM-042",
     group: "Binder",
     summary:
       "The person directing erect, climb, reposition or dismantle on this particular crane. 14.73.2.",
@@ -870,7 +870,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "csa-compliance",
     title: "CSA Z248 COMPLIANCE RECORD",
-    number: "1415-FRM-043",
+    number: "GOSPEL-FRM-043",
     group: "Binder",
     summary:
       "How this serial meets CSA Z248-2004 as 14.2(6) requires. A brochure is not a declaration.",
@@ -891,7 +891,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "tharrp-cover",
     title: "THARRP / HIGH-ANGLE RESCUE COVER",
-    number: "1415-FRM-044",
+    number: "GOSPEL-FRM-044",
     group: "Binder",
     summary:
       "Who requested the survey, which fire department, how to summon them. Not a fall-protection plan.",
@@ -903,9 +903,9 @@ export const FORMS: SafetyForm[] = [
       "Portal confirmation / survey date",
       "Formal Site Survey on site if past 60 days",
       "How the operator summons rescue",
-      "1415 confirmation date",
+      "GOSPEL confirmation date",
     ],
-    routing: "Host or prime owns the portal request. 1415 confirms before dispatch. Copy in the binder.",
+    routing: "Host or prime owns the portal request. GOSPEL confirms before dispatch. Copy in the binder.",
     download: {
       href: "/safety/builder/tharrp-cover",
       label: "FILL THIS FORM →",
@@ -921,10 +921,10 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "navcan-land-use",
     title: "NAV CANADA / AERONAUTICAL FILE",
-    number: "1415-FRM-045",
+    number: "GOSPEL-FRM-045",
     group: "Binder",
     summary:
-      "Land-use and obstacle file for a crane that can affect aviation. Portal submissions, not a 1415 permit.",
+      "Land-use and obstacle file for a crane that can affect aviation. Portal submissions, not a GOSPEL permit.",
     when: "When the crane may be an obstacle or sits in airport zoning. Start weeks before the erect.",
     fields: [
       "Site coordinates and tip height",
@@ -956,7 +956,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "power-source",
     title: "POWER SOURCE RECORD",
-    number: "1415-FRM-046",
+    number: "GOSPEL-FRM-046",
     group: "Binder",
     summary: "How the crane is fed, who can isolate it, where the earth is.",
     when: "Before first power-up on this site. After any change to the feed.",
@@ -977,7 +977,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "site-layout",
     title: "SITE LAYOUT COVER",
-    number: "1415-FRM-047",
+    number: "GOSPEL-FRM-047",
     group: "Binder",
     summary:
       "Cover sheet for the drawing package: radius, slew, public, adjacent cranes. Attach the drawings.",
@@ -999,7 +999,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "traffic-permits",
     title: "TRAFFIC AND STREET-USE PERMITS",
-    number: "1415-FRM-048",
+    number: "GOSPEL-FRM-048",
     group: "Binder",
     summary: "Cover sheet for municipal permits. The city paper sits behind it.",
     when: "Whenever the crane or the erect occupies a street, lane or sidewalk.",
@@ -1019,7 +1019,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "ndt-record",
     title: "NDT RECORD",
-    number: "1415-FRM-049",
+    number: "GOSPEL-FRM-049",
     group: "Binder",
     summary: "Cover sheet for the current non-destructive testing report on this serial.",
     when: "Before the components go in the air. When the report expires or the components change.",
@@ -1040,7 +1040,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "hoist-rope-record",
     title: "HOIST ROPE RECORD",
-    number: "1415-FRM-050",
+    number: "GOSPEL-FRM-050",
     group: "Binder",
     summary: "The rope on the drum: mill cert, date on, hours, condition.",
     when: "When rope is installed. Updated on the inspection interval. When it comes off.",
@@ -1061,7 +1061,7 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "operator-certification",
     title: "OPERATOR CERTIFICATION FILE",
-    number: "1415-FRM-051",
+    number: "GOSPEL-FRM-051",
     group: "Binder",
     summary:
       "Cover sheet for the operator’s BC Crane Safety certificate and, if provisional, the supervision plan.",
@@ -1090,11 +1090,11 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "flytable-cycle-sjp",
     title: "FLYTABLE CYCLE SJP",
-    number: "1415-FRM-052",
+    number: "GOSPEL-FRM-052",
     group: "Lifting",
     summary:
       "This table, this floor, this drawing revision. Critical lift. Typical or nontypical marked on the sheet.",
-    when: "Every flytable / flyform cycle 1415 hooks. Before drop. Rewrite if the table, the floor, or the drawing changes.",
+    when: "Every flytable / flyform cycle GOSPEL hooks. Before drop. Rewrite if the table, the floor, or the drawing changes.",
     fields: [
       "Table ID and typical / nontypical",
       "Drawing number and revision",
@@ -1113,7 +1113,7 @@ export const FORMS: SafetyForm[] = [
     links: [
       {
         href: "/safety/sjp/flytable-cycle",
-        label: "SJP TEMPLATE — 1415-SJP-001 →",
+        label: "SJP TEMPLATE — GOSPEL-SJP-001 →",
       },
       {
         href: "https://www.worksafebc.com/en/resources/health-safety/videos/flytable-safety",
@@ -1125,11 +1125,11 @@ export const FORMS: SafetyForm[] = [
   {
     slug: "loading-platform-sjp",
     title: "LOADING PLATFORM SJP",
-    number: "1415-FRM-053",
+    number: "GOSPEL-FRM-053",
     group: "Lifting",
     summary:
       "This deck, this floor, this serial. Critical lift. Empty dead weight — not the service WLL.",
-    when: "Every loading-platform install, reposition or strike 1415 hooks. Before the hitch takes the deck. Rewrite if the serial, the floor, or the OEM sheet changes.",
+    when: "Every loading-platform install, reposition or strike GOSPEL hooks. Before the hitch takes the deck. Rewrite if the serial, the floor, or the OEM sheet changes.",
     fields: [
       "Manufacturer / system and serial",
       "Fixed or retractable",
@@ -1149,7 +1149,7 @@ export const FORMS: SafetyForm[] = [
     links: [
       {
         href: "/safety/sjp/loading-platform",
-        label: "SJP TEMPLATE — 1415-SJP-003 →",
+        label: "SJP TEMPLATE — GOSPEL-SJP-003 →",
       },
       {
         href: "https://www.doka.com/en/solutions/products/loading-platform/index",

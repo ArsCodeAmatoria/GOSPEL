@@ -1,11 +1,11 @@
 export const SITE = {
-  name: "1415",
-  legalName: "1415",
+  name: "GOSPEL",
+  legalName: "GOSPEL",
   descriptor: "CRANE + RIGGING",
   phone: "1 604 431 2000",
   phoneHref: "tel:+16044312000",
-  email: "hire@kyuk.onl",
-  emailHref: "mailto:hire@kyuk.onl",
+  email: "hire@gospel.im",
+  emailHref: "mailto:hire@gospel.im",
   location: "British Columbia, Canada",
   tagline: "WE MOVE HEAVY THINGS.",
   sub: "AND WE SHOW YOU HOW WE DO IT.",
@@ -18,7 +18,7 @@ export const SITE = {
   close:
     "We go beyond supplying labour. We provide the people and systems that support the safe and professional operation of cranes.",
   description:
-    "1415 is a complete crane operations and rigging company providing qualified crane operators, riggers, signalpersons, crane supervisors, and safety support to construction projects. 1415 combines experienced people with structured supervision, competency verification, rigging and crane safety systems, and its proprietary PROVEN technology platform to ensure the people, processes, and documentation behind every crane operation are organized, verified, and accountable. 1415 goes beyond supplying labour. We provide the people and systems that support the safe and professional operation of cranes.",
+    "GOSPEL is a complete crane operations and rigging company providing qualified crane operators, riggers, signalpersons, crane supervisors, and safety support to construction projects. GOSPEL combines experienced people with structured supervision, competency verification, rigging and crane safety systems, and its proprietary PROVEN technology platform to ensure the people, processes, and documentation behind every crane operation are organized, verified, and accountable. GOSPEL goes beyond supplying labour. We provide the people and systems that support the safe and professional operation of cranes.",
   system: "PROVEN",
 } as const;
 
@@ -112,7 +112,7 @@ export const NAV = [
   { href: "/", label: "WORK", num: "01" },
   { href: "/crew", label: "THE CREW", num: "02" },
   { href: "/safety", label: "PROVEN", num: "03" },
-  { href: "/whoopwire", label: "1415WIRE", num: "04" },
+  { href: "/whoopwire", label: "GOSPELWIRE", num: "04" },
   { href: "/philosophy", label: "PHILOSOPHY", num: "05" },
   { href: "/hire", label: "HIRE A CREW", num: "06" },
 ] as const;

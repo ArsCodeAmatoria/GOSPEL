@@ -24,7 +24,7 @@ export default async function JhaPage({ params }: Props) {
   return (
     <SafetyDocFrame
       kicker="JOB HAZARD ANALYSIS"
-      num={doc.number.replace("1415-", "")}
+      num={doc.number.replace("GOSPEL-", "")}
       title={doc.title}
       intro={doc.summary}
       backHref="/safety/jha-library"

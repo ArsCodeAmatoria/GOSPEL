@@ -55,7 +55,7 @@ export function CorSection() {
       </h2>
       <p className="mono mt">Certificate of Recognition — COR®</p>
       <p className="lede mt">
-        1415 maintains Proven — a certified occupational health and safety
+        GOSPEL maintains Proven — a certified occupational health and safety
         management system — and is committed to continuous improvement in how we
         plan, perform and verify our work.
       </p>
@@ -95,7 +95,7 @@ export function CorSection() {
               DOWNLOAD COR PACK →
             </a>
             <Link className="btn btn-ghost" href="/hire">
-              CONTACT 1415 →
+              CONTACT GOSPEL →
             </Link>
           </div>
         </div>

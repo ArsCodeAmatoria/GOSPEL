@@ -1,12 +1,12 @@
 import type { Sds } from "./types";
 
-/** Products 1415 crews actually meet on crane and rigging dispatches — not a warehouse catalogue. */
+/** Products GOSPEL crews actually meet on crane and rigging dispatches — not a warehouse catalogue. */
 export const SDS: Sds[] = [
   {
     slug: "diesel-fuel",
     title: "DIESEL FUEL",
-    number: "1415-SDS-001",
-    use: "Fuel for mobile cranes, boom trucks and support vehicles on site. 1415 does not store bulk fuel. Workers may refuel client or carrier equipment as assigned.",
+    number: "GOSPEL-SDS-001",
+    use: "Fuel for mobile cranes, boom trucks and support vehicles on site. GOSPEL does not store bulk fuel. Workers may refuel client or carrier equipment as assigned.",
     hazards: [
       "Flammable liquid and vapour",
       "Skin irritation and dermatitis with repeated contact",
@@ -14,14 +14,14 @@ export const SDS: Sds[] = [
       "Exhaust in poorly ventilated areas",
     ],
     ppe: ["Gloves rated for petroleum", "Eye protection", "No ignition sources while fuelling"],
-    spill: "Stop the source if safe. Keep people and ignition away. Absorb with site spill kit. Do not wash into drains. Report to the site and to 1415.",
+    spill: "Stop the source if safe. Keep people and ignition away. Absorb with site spill kit. Do not wash into drains. Report to the site and to GOSPEL.",
     firstAid: "Skin: wash with soap and water. Eyes: rinse. If swallowed: do not induce vomiting — get medical care. Inhalation: fresh air.",
     storage: "On the carrier or in approved site containers. Caps on. No smoking at the tank.",
   },
   {
     slug: "hydraulic-oil",
     title: "HYDRAULIC OIL",
-    number: "1415-SDS-002",
+    number: "GOSPEL-SDS-002",
     use: "Crane hydraulic systems. Leaks are a slip hazard and a fire hazard on hot surfaces. Operators report leaks; they do not ignore a wet boom pin.",
     hazards: ["Slippery surfaces", "Skin irritation", "High-pressure injection from pinhole leaks", "Smoke if it hits exhaust or brakes"],
     ppe: ["Gloves", "Eye protection", "Do not check leaks with your hand"],
@@ -32,7 +32,7 @@ export const SDS: Sds[] = [
   {
     slug: "grease-and-lubricants",
     title: "GREASE AND LUBRICANTS",
-    number: "1415-SDS-003",
+    number: "GOSPEL-SDS-003",
     use: "Pins, slew rings, wire rope dressing as the manufacturer specifies. Not a substitute for inspection.",
     hazards: ["Skin irritation", "Slippery decks and ladders", "Contaminated rags as fire load"],
     ppe: ["Gloves", "Eye protection when spraying or brushing overhead"],
@@ -43,7 +43,7 @@ export const SDS: Sds[] = [
   {
     slug: "penetrating-oil",
     title: "PENETRATING OIL",
-    number: "1415-SDS-004",
+    number: "GOSPEL-SDS-004",
     use: "Freeing seized pins and hardware on rigging and crane attachments. Not a cleaner for synthetic slings.",
     hazards: ["Flammable aerosol if that is the product", "Inhalation in closed cabs or shops", "Skin defatting"],
     ppe: ["Gloves", "Eye protection", "Ventilation"],
@@ -54,7 +54,7 @@ export const SDS: Sds[] = [
   {
     slug: "wire-rope-dressing",
     title: "WIRE ROPE DRESSING",
-    number: "1415-SDS-005",
+    number: "GOSPEL-SDS-005",
     use: "Manufacturer-approved dressing for hoist and boom rope. Dressing does not hide broken wires.",
     hazards: ["Skin and eye irritation", "Slippery rope and decks", "Solvent vapour depending on product"],
     ppe: ["Gloves", "Eye protection"],
@@ -65,7 +65,7 @@ export const SDS: Sds[] = [
   {
     slug: "battery-electrolyte",
     title: "BATTERY ELECTROLYTE",
-    number: "1415-SDS-006",
+    number: "GOSPEL-SDS-006",
     use: "Crane and carrier batteries. Jumping, charging and acid contact are electrical and chemical hazards.",
     hazards: ["Corrosive acid", "Explosive hydrogen while charging", "Electrical short and arc"],
     ppe: ["Acid-resistant gloves", "Eye protection", "No jewellery across terminals"],
@@ -76,7 +76,7 @@ export const SDS: Sds[] = [
   {
     slug: "hand-cleaner",
     title: "INDUSTRIAL HAND CLEANER",
-    number: "1415-SDS-007",
+    number: "GOSPEL-SDS-007",
     use: "Removing grease after rigging and inspections. Not for washing eyes. Not a substitute for gloves.",
     hazards: ["Skin irritation with overuse", "Solvent vapour depending on product"],
     ppe: ["Use as directed. Moisturize. Do not use on cuts as a cleaner of first resort."],

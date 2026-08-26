@@ -24,7 +24,7 @@ export default async function PolicyPage({ params }: Props) {
   return (
     <SafetyDocFrame
       kicker="OH&S POLICY"
-      num={doc.number.replace("1415-", "")}
+      num={doc.number.replace("GOSPEL-", "")}
       title={doc.title}
       intro={doc.summary}
       backHref="/safety/ohs-policies"

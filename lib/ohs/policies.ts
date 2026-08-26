@@ -4,17 +4,17 @@ export const POLICIES: Policy[] = [
   {
     slug: "health-and-safety",
     title: "OH&S POLICY",
-    number: "1415-POL-001",
+    number: "GOSPEL-POL-001",
     summary:
-      "This is 1415’s occupational health and safety policy. The work is done to this program, to the law, and to the machine.",
+      "This is GOSPEL’s occupational health and safety policy. The work is done to this program, to the law, and to the machine.",
     statements: [
       {
         title: "Aims",
-        body: "Prevent injury and occupational disease on crane and rigging work 1415 accepts. Put competent people on the machine. Back stop-work. Keep this program public so workers and clients can read it before the dispatch. OHS Regulation 3.3(a).",
+        body: "Prevent injury and occupational disease on crane and rigging work GOSPEL accepts. Put competent people on the machine. Back stop-work. Keep this program public so workers and clients can read it before the dispatch. OHS Regulation 3.3(a).",
       },
       {
         title: "Commitment",
-        body: "1415 provides the people, instruction, supervision and backing this program names. Production does not outrank the chart, the hitch, or the three rights.",
+        body: "GOSPEL provides the people, instruction, supervision and backing this program names. Production does not outrank the chart, the hitch, or the three rights.",
       },
       {
         title: "Objectives",
@@ -22,7 +22,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Scope",
-        body: "Applies to every crane operator, rigger, signalperson and lifting supervisor 1415 deploys, and to every lift we accept.",
+        body: "Applies to every crane operator, rigger, signalperson and lifting supervisor GOSPEL deploys, and to every lift we accept.",
       },
       {
         title: "Standard",
@@ -41,9 +41,9 @@ export const POLICIES: Policy[] = [
   {
     slug: "competency",
     title: "COMPETENCY",
-    number: "1415-POL-002",
+    number: "GOSPEL-POL-002",
     summary:
-      "A ticket is not competency. 1415 matches people to the machine, the lift and the site.",
+      "A ticket is not competency. GOSPEL matches people to the machine, the lift and the site.",
     statements: [
       {
         title: "Verify before dispatch",
@@ -62,7 +62,7 @@ export const POLICIES: Policy[] = [
   {
     slug: "training",
     title: "TRAINING",
-    number: "1415-POL-003",
+    number: "GOSPEL-POL-003",
     summary:
       "Site orientations and briefings are arranged. Workers hold the qualification for the role before they are sent.",
     statements: [
@@ -72,15 +72,15 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Young or new worker",
-        body: "A young worker is under 25. A new worker is new to that workplace, returning to changed hazards, or relocated to different hazards. 3.22. Before they begin, they get the orientation topics in 3.23 — supervisor name, rights including refusal, rules, hazards, working alone, violence, PPE, first aid, emergency, the task, this program, WHMIS as it applies, committee or worker-rep contact. Extra orientation if they cannot do the work safely or they ask. 3.24. Record it. 3.25. 1415-FRM-015.",
+        body: "A young worker is under 25. A new worker is new to that workplace, returning to changed hazards, or relocated to different hazards. 3.22. Before they begin, they get the orientation topics in 3.23 — supervisor name, rights including refusal, rules, hazards, working alone, violence, PPE, first aid, emergency, the task, this program, WHMIS as it applies, committee or worker-rep contact. Extra orientation if they cannot do the work safely or they ask. 3.24. Record it. 3.25. GOSPEL-FRM-015.",
       },
       {
         title: "Site orientation",
-        body: "The host’s site orientation is the host’s. 1415 arranges it. The worker does not start the lift without it when the site requires it.",
+        body: "The host’s site orientation is the host’s. GOSPEL arranges it. The worker does not start the lift without it when the site requires it.",
       },
       {
         title: "Supervisor instruction",
-        body: "People 1415 sends to supervise a lift are instructed in this program, in stop-work, and in the supervisor duties under the Workers Compensation Act s. 23. A ticket is not that instruction.",
+        body: "People GOSPEL sends to supervise a lift are instructed in this program, in stop-work, and in the supervisor duties under the Workers Compensation Act s. 23. A ticket is not that instruction.",
       },
       {
         title: "Refresher",
@@ -99,7 +99,7 @@ export const POLICIES: Policy[] = [
   {
     slug: "hazard-identification",
     title: "HAZARD IDENTIFICATION",
-    number: "1415-POL-004",
+    number: "GOSPEL-POL-004",
     summary:
       "Name the hazards of this lift, this site, this day. A parking-lot form is not identification.",
     statements: [
@@ -120,9 +120,9 @@ export const POLICIES: Policy[] = [
   {
     slug: "risk-assessment",
     title: "RISK ASSESSMENT",
-    number: "1415-POL-005",
+    number: "GOSPEL-POL-005",
     summary:
-      "Every 1415 dispatch requires a hazard assessment. FLHA at the shift. Reassess when the work changes.",
+      "Every GOSPEL dispatch requires a hazard assessment. FLHA at the shift. Reassess when the work changes.",
     statements: [
       {
         title: "Controls before the hook",
@@ -141,7 +141,7 @@ export const POLICIES: Policy[] = [
   {
     slug: "incident-reporting",
     title: "INCIDENT REPORTING",
-    number: "1415-POL-006",
+    number: "GOSPEL-POL-006",
     summary:
       "Injuries, dropped loads, crane contact, failed rigging and stop-work events are reported. Quiet is not always safe.",
     statements: [
@@ -155,14 +155,14 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Learn",
-        body: "1415 investigates events involving our people. Controls change. This program is updated when the lesson is real. Injuries also follow Injury Management and Return to Work.",
+        body: "GOSPEL investigates events involving our people. Controls change. This program is updated when the lesson is real. Injuries also follow Injury Management and Return to Work.",
       },
     ],
   },
   {
     slug: "near-miss-reporting",
     title: "NEAR-MISS REPORTING",
-    number: "1415-POL-007",
+    number: "GOSPEL-POL-007",
     summary:
       "Someone in the zone, a lost signal that almost mattered, a sling that started to cut — that is a report, not a story for later.",
     statements: [
@@ -183,9 +183,9 @@ export const POLICIES: Policy[] = [
   {
     slug: "right-to-refuse",
     title: "RIGHT TO REFUSE UNSAFE WORK",
-    number: "1415-POL-008",
+    number: "GOSPEL-POL-008",
     summary:
-      "The three rights are operating procedure. 1415 will not send a replacement to do the same unsafe work.",
+      "The three rights are operating procedure. GOSPEL will not send a replacement to do the same unsafe work.",
     statements: [
       {
         title: "Stop",
@@ -193,24 +193,24 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Say why",
-        body: "State the danger to site supervision and to 1415. Be specific: the line, the ground, the load, the missing plan.",
+        body: "State the danger to site supervision and to GOSPEL. Be specific: the line, the ground, the load, the missing plan.",
       },
       {
         title: "It stays stopped",
-        body: "Work resumes when the danger is controlled. 1415 will not punish a good-faith refusal. 1415 will not dispatch a replacement into the same uncontrolled condition.",
+        body: "Work resumes when the danger is controlled. GOSPEL will not punish a good-faith refusal. GOSPEL will not dispatch a replacement into the same uncontrolled condition.",
       },
     ],
   },
   {
     slug: "violence-and-harassment",
     title: "VIOLENCE / HARASSMENT",
-    number: "1415-POL-009",
+    number: "GOSPEL-POL-009",
     summary:
-      "Threats and physical violence are not part of a lift. Harassment is 1415-POL-017. Report them. We act. OHS Regulation Part 4.",
+      "Threats and physical violence are not part of a lift. Harassment is GOSPEL-POL-017. Report them. We act. OHS Regulation Part 4.",
     statements: [
       {
         title: "Zero for violence",
-        body: "Physical violence, threats and intimidation toward a 1415 worker — or by a 1415 worker — are reported and acted on. Immediate danger: get out and call for help.",
+        body: "Physical violence, threats and intimidation toward a GOSPEL worker — or by a GOSPEL worker — are reported and acted on. Immediate danger: get out and call for help.",
       },
       {
         title: "The lift is not an excuse",
@@ -218,14 +218,14 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Bullying and harassment",
-        body: "Humiliation, racism, sexual harassment and “that’s just the trade” are covered by 1415-POL-017 Bullying and Harassment — Workers Compensation Act s. 21, WorkSafeBC P2-21-2.",
+        body: "Humiliation, racism, sexual harassment and “that’s just the trade” are covered by GOSPEL-POL-017 Bullying and Harassment — Workers Compensation Act s. 21, WorkSafeBC P2-21-2.",
       },
     ],
   },
   {
     slug: "ppe",
     title: "PPE",
-    number: "1415-POL-010",
+    number: "GOSPEL-POL-010",
     summary:
       "Minimum PPE for lifting work. Site rules that are stricter win. Damaged PPE is out of service.",
     statements: [
@@ -243,7 +243,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Issue and replace",
-        body: "1415 issues or confirms required PPE for the dispatch. Failed PPE is replaced or the worker does not start. Record issue and replacement on 1415-FRM-018. Workers do not start the lift waiting on a hat.",
+        body: "GOSPEL issues or confirms required PPE for the dispatch. Failed PPE is replaced or the worker does not start. Record issue and replacement on GOSPEL-FRM-018. Workers do not start the lift waiting on a hat.",
       },
       {
         title: "Instruction",
@@ -254,7 +254,7 @@ export const POLICIES: Policy[] = [
   {
     slug: "crane-operations",
     title: "CRANE OPERATIONS",
-    number: "1415-POL-011",
+    number: "GOSPEL-POL-011",
     summary:
       "The chart is the law of the machine. No lift without a plan. No unclear signal.",
     statements: [
@@ -275,7 +275,7 @@ export const POLICIES: Policy[] = [
   {
     slug: "rigging",
     title: "RIGGING",
-    number: "1415-POL-012",
+    number: "GOSPEL-POL-012",
     summary:
       "Know the load. Know the hitch. Protect the sling. No people under the load.",
     statements: [
@@ -285,7 +285,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "No guess",
-        body: "Weight and centre of gravity are confirmed. Sling angle is calculated when it matters. Below 30° from horizontal is not a 1415 hitch unless an engineer owns the numbers.",
+        body: "Weight and centre of gravity are confirmed. Sling angle is calculated when it matters. Below 30° from horizontal is not a GOSPEL hitch unless an engineer owns the numbers.",
       },
       {
         title: "Out of service",
@@ -296,13 +296,13 @@ export const POLICIES: Policy[] = [
   {
     slug: "equipment-inspection",
     title: "EQUIPMENT INSPECTION",
-    number: "1415-POL-013",
+    number: "GOSPEL-POL-013",
     summary:
       "Pre-use inspection of the crane as assigned, and of every sling and piece of hardware before it takes load.",
     statements: [
       {
         title: "Crane",
-        body: "Operator inspection each shift as the manufacturer, the named 14.2 standard, and Part 14 require. Defects that affect lifting keep the crane down. Tower, hammerhead, luffing jib and self-erecting machines: see Inspections — OEM charts and 1415-FRM-027 through 031.",
+        body: "Operator inspection each shift as the manufacturer, the named 14.2 standard, and Part 14 require. Defects that affect lifting keep the crane down. Tower, hammerhead, luffing jib and self-erecting machines: see Inspections — OEM charts and GOSPEL-FRM-027 through 031.",
       },
       {
         title: "Rigging",
@@ -310,11 +310,11 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Who owns the PM",
-        body: "Preventive maintenance of a crane belongs to the owner of that crane — OEM interval, logbook, annual certification. 1415 is a workforce. If 1415 does not own the machine, the operator still completes pre-use and reports defects. The crane does not lift with a known defect that affects lifting.",
+        body: "Preventive maintenance of a crane belongs to the owner of that crane — OEM interval, logbook, annual certification. GOSPEL is a workforce. If GOSPEL does not own the machine, the operator still completes pre-use and reports defects. The crane does not lift with a known defect that affects lifting.",
       },
       {
-        title: "1415-controlled gear",
-        body: "Rigging, PPE, tools and vehicles 1415 controls are inspected, maintained and taken out of service when they fail. Weekly and monthly maintenance forms apply to machines 1415 is assigned to maintain. Return to service only after the repair is verified.",
+        title: "GOSPEL-controlled gear",
+        body: "Rigging, PPE, tools and vehicles GOSPEL controls are inspected, maintained and taken out of service when they fail. Weekly and monthly maintenance forms apply to machines GOSPEL is assigned to maintain. Return to service only after the repair is verified.",
       },
       {
         title: "Deficiency class",
@@ -329,7 +329,7 @@ export const POLICIES: Policy[] = [
   {
     slug: "environmental-conditions",
     title: "ENVIRONMENTAL CONDITIONS",
-    number: "1415-POL-014",
+    number: "GOSPEL-POL-014",
     summary:
       "Wind, lightning, ice, heat and visibility are stop criteria, not atmosphere.",
     download: {
@@ -361,14 +361,14 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Wildfire smoke",
-        body: "Smoke is an exposure, not weather small-talk. If air quality makes the work unsafe — cab or open — stop. The site and 1415 are told. Resume only when the plan says so.",
+        body: "Smoke is an exposure, not weather small-talk. If air quality makes the work unsafe — cab or open — stop. The site and GOSPEL are told. Resume only when the plan says so.",
       },
     ],
   },
   {
     slug: "emergency-response",
     title: "EMERGENCY RESPONSE",
-    number: "1415-POL-015",
+    number: "GOSPEL-POL-015",
     summary:
       "Every dispatch knows how the site calls for help, where to muster, and how to put the crane in a safe condition.",
     download: {
@@ -380,7 +380,7 @@ export const POLICIES: Policy[] = [
     statements: [
       {
         title: "Before work",
-        body: "Emergency number, muster, first aid, crane shutdown, fall-rescue if anyone is tied off, high-angle rope rescue for a tower operator, 1415 after-hours contact.",
+        body: "Emergency number, muster, first aid, crane shutdown, fall-rescue if anyone is tied off, high-angle rope rescue for a tower operator, GOSPEL after-hours contact.",
       },
       {
         title: "People first",
@@ -392,7 +392,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Construction hoist operator",
-        body: "A hoist car is working alone. If 1415 supplies that operator, the site uses a written rescue procedure before the car runs. BCCSA already wrote the templates. Use them. Do not invent a hoist rescue on the day.",
+        body: "A hoist car is working alone. If GOSPEL supplies that operator, the site uses a written rescue procedure before the car runs. BCCSA already wrote the templates. Use them. Do not invent a hoist rescue on the day.",
       },
       {
         title: "Fall arrest",
@@ -400,18 +400,18 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "THARRP — tower high-angle rescue",
-        body: "WorkSafeBC G4.13(3)(a): risk assessment where rescue or evacuation may arise, and written procedures for high-angle work. BCCSA’s Technical High Angle Rope Rescue Program connects construction employers with funded municipal fire departments to write a rope-rescue plan for a tower-crane operator in distress. 1415 does not run that rescue. The fire department does. A 1415 tower operator is not sent up until the host or prime can name the plan, the fire department, and how to summon them. If the local department is not THARR-funded, mutual aid or another acceptable means is required — the lift does not invent it. Portal requests: bccsa.ca/tharrp_program.php.",
+        body: "WorkSafeBC G4.13(3)(a): risk assessment where rescue or evacuation may arise, and written procedures for high-angle work. BCCSA’s Technical High Angle Rope Rescue Program connects construction employers with funded municipal fire departments to write a rope-rescue plan for a tower-crane operator in distress. GOSPEL does not run that rescue. The fire department does. A GOSPEL tower operator is not sent up until the host or prime can name the plan, the fire department, and how to summon them. If the local department is not THARR-funded, mutual aid or another acceptable means is required — the lift does not invent it. Portal requests: bccsa.ca/tharrp_program.php.",
       },
       {
         title: "Who requests the survey",
-        body: "The employer at that workplace requests the crane or site survey in the THARRP Portal — WorkSafeBC account number and legal name. On a host site that is usually the prime or the crane owner. 1415 is construction labour supply; ADM 2 lists that classification among the funding units. 1415 confirms the survey and the written agreement exist before the dispatch. A tower on a high-rise expected past 60 days needs the formal Site Survey & Site Rescue Procedure Review on site. ADM 2.",
+        body: "The employer at that workplace requests the crane or site survey in the THARRP Portal — WorkSafeBC account number and legal name. On a host site that is usually the prime or the crane owner. GOSPEL is construction labour supply; ADM 2 lists that classification among the funding units. GOSPEL confirms the survey and the written agreement exist before the dispatch. A tower on a high-rise expected past 60 days needs the formal Site Survey & Site Rescue Procedure Review on site. ADM 2.",
       },
     ],
   },
   {
     slug: "continuous-improvement",
     title: "CONTINUOUS IMPROVEMENT",
-    number: "1415-POL-016",
+    number: "GOSPEL-POL-016",
     summary:
       "Findings become actions. Actions get owners and dates. Management reviews the system. This program is revised when the lesson is real.",
     statements: [
@@ -421,7 +421,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Management review",
-        body: "1415 holds a periodic management OHS meeting to review safety activities and incident trends and to decide what changes. 3.3(d). At least quarterly, and after a serious incident. Agenda: incidents, inspections, outstanding corrective actions, training, worker concerns and refusals, COR / audit results, objectives. 1415-FRM-032.",
+        body: "GOSPEL holds a periodic management OHS meeting to review safety activities and incident trends and to decide what changes. 3.3(d). At least quarterly, and after a serious incident. Agenda: incidents, inspections, outstanding corrective actions, training, worker concerns and refusals, COR / audit results, objectives. GOSPEL-FRM-032.",
       },
       {
         title: "Records and statistics",
@@ -429,7 +429,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "COR",
-        body: "1415 is COR® certified through BCCSA. Certification is of this occupational health and safety management system. Maintenance and recertification follow BCCSA’s current process. An audit finding becomes a corrective action with an owner and a date.",
+        body: "GOSPEL is COR® certified through BCCSA. Certification is of this occupational health and safety management system. Maintenance and recertification follow BCCSA’s current process. An audit finding becomes a corrective action with an owner and a date.",
       },
       {
         title: "This program",
@@ -440,17 +440,17 @@ export const POLICIES: Policy[] = [
   {
     slug: "bullying-and-harassment",
     title: "BULLYING AND HARASSMENT",
-    number: "1415-POL-017",
+    number: "GOSPEL-POL-017",
     summary:
-      "Not acceptable. Not “the trade.” Report it. 1415 deals with it. WorkSafeBC P2-21-2, P2-22-1, P2-23-2.",
+      "Not acceptable. Not “the trade.” Report it. GOSPEL deals with it. WorkSafeBC P2-21-2, P2-22-1, P2-23-2.",
     statements: [
       {
         title: "Policy statement",
-        body: "Workplace bullying and harassment is not acceptable or tolerated at 1415, on a 1415 dispatch, or toward a 1415 worker. This is the policy statement required of an employer under WorkSafeBC P2-21-2(a). 1415 does not engage in bullying and harassment of workers or supervisors.",
+        body: "Workplace bullying and harassment is not acceptable or tolerated at GOSPEL, on a GOSPEL dispatch, or toward a GOSPEL worker. This is the policy statement required of an employer under WorkSafeBC P2-21-2(a). GOSPEL does not engage in bullying and harassment of workers or supervisors.",
       },
       {
         title: "What it is",
-        body: "Any inappropriate conduct or comment toward a worker that the person knew, or reasonably ought to have known, would humiliate or intimidate that worker. It includes sexual harassment, racism, isolation, sabotage of someone’s work, and “that’s just the trade.” The person can be anyone on the job — 1415, a client, another contractor’s crew.",
+        body: "Any inappropriate conduct or comment toward a worker that the person knew, or reasonably ought to have known, would humiliate or intimidate that worker. It includes sexual harassment, racism, isolation, sabotage of someone’s work, and “that’s just the trade.” The person can be anyone on the job — GOSPEL, a client, another contractor’s crew.",
       },
       {
         title: "What it is not",
@@ -458,10 +458,10 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Scope",
-        body: "Applies to every crane operator, rigger, signalperson and lifting supervisor 1415 deploys, and to 1415 supervisors. It applies on client sites. A multiple-employer workplace does not cancel 1415’s duty to its workers.",
+        body: "Applies to every crane operator, rigger, signalperson and lifting supervisor GOSPEL deploys, and to GOSPEL supervisors. It applies on client sites. A multiple-employer workplace does not cancel GOSPEL’s duty to its workers.",
       },
       {
-        title: "1415",
+        title: "GOSPEL",
         body: "Takes all reasonable steps to prevent where possible, or otherwise minimize, workplace bullying and harassment. Workers Compensation Act s. 21. Informs workers of this policy. Trains workers and supervisors to recognize it, report it, and apply these procedures. Reviews this policy and these procedures at least annually — next review 2027-09-01.",
       },
       {
@@ -474,15 +474,15 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "How to report",
-        body: "Report as soon as you can. Call 1415 at 1 604 431 2000 and ask for Safety, email hire@kyuk.onl with the subject BULLYING AND HARASSMENT, or use Report Bullying or Harassment under Incident Reporting. Say who, when, where, what was said or done, and who saw it. You do not need a form if a call is faster.",
+        body: "Report as soon as you can. Call GOSPEL at 1 604 431 2000 and ask for Safety, email hire@gospel.im with the subject BULLYING AND HARASSMENT, or use Report Bullying or Harassment under Incident Reporting. Say who, when, where, what was said or done, and who saw it. You do not need a form if a call is faster.",
       },
       {
-        title: "If the alleged person is 1415",
-        body: "If the alleged bully is your 1415 supervisor or a person acting for 1415, do not report only to that person. Call 1415 and ask for Safety, or email hire@kyuk.onl. If the alleged person is the employer itself and you cannot use the internal route, call the WorkSafeBC Prevention Information Line: 1 888 621 7233.",
+        title: "If the alleged person is GOSPEL",
+        body: "If the alleged bully is your GOSPEL supervisor or a person acting for GOSPEL, do not report only to that person. Call GOSPEL and ask for Safety, or email hire@gospel.im. If the alleged person is the employer itself and you cannot use the internal route, call the WorkSafeBC Prevention Information Line: 1 888 621 7233.",
       },
       {
-        title: "How 1415 deals with it",
-        body: "1415 Safety, or a person who is not the alleged bully, investigates promptly and fairly. The investigation covers what happened, who was involved, when and where, witnesses, and any record. The people involved are heard. Confidentiality is kept as far as the investigation allows. Follow-up includes corrective action and a timeline. Records are kept by 1415. They are not sent to WorkSafeBC unless asked for.",
+        title: "How GOSPEL deals with it",
+        body: "GOSPEL Safety, or a person who is not the alleged bully, investigates promptly and fairly. The investigation covers what happened, who was involved, when and where, witnesses, and any record. The people involved are heard. Confidentiality is kept as far as the investigation allows. Follow-up includes corrective action and a timeline. Records are kept by GOSPEL. They are not sent to WorkSafeBC unless asked for.",
       },
       {
         title: "No punishment for good faith",
@@ -497,13 +497,13 @@ export const POLICIES: Policy[] = [
   {
     slug: "workplace-conduct",
     title: "WORKPLACE CONDUCT",
-    number: "1415-POL-018",
+    number: "GOSPEL-POL-018",
     summary:
-      "You represent 1415 on someone else’s site. Show up. Be competent. Do not make the lift about you.",
+      "You represent GOSPEL on someone else’s site. Show up. Be competent. Do not make the lift about you.",
     statements: [
       {
         title: "On the dispatch",
-        body: "1415 workers arrive on time, briefed, and fit for the work. If you cannot make the call, 1415 hears it first — not the gate.",
+        body: "GOSPEL workers arrive on time, briefed, and fit for the work. If you cannot make the call, GOSPEL hears it first — not the gate.",
       },
       {
         title: "On the client’s site",
@@ -527,14 +527,14 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Who you answer to",
-        body: "1415 remains your employer. Site direction that is unsafe is refused under the three rights. Site direction that is lawful and stricter than ours is followed.",
+        body: "GOSPEL remains your employer. Site direction that is unsafe is refused under the three rights. Site direction that is lawful and stricter than ours is followed.",
       },
     ],
   },
   {
     slug: "fitness-for-work",
     title: "FITNESS FOR WORK",
-    number: "1415-POL-019",
+    number: "GOSPEL-POL-019",
     summary:
       "Fit for this dispatch, today. Fatigue, illness and injury are named before the gate — not after the hook.",
     statements: [
@@ -543,29 +543,29 @@ export const POLICIES: Policy[] = [
         body: "A crane operator, rigger or signalperson must be able to do this work safely today. Rest, illness, injury, vision and hearing as the role requires. If you are not fit, you say so before you travel or before you start.",
       },
       {
-        title: "Tell 1415",
+        title: "Tell GOSPEL",
         body: "OHS Regulation 4.19. A worker with an impairment that may affect safe work informs the supervisor or employer and does not knowingly do work where that impairment creates an undue risk to anyone.",
       },
       {
-        title: "1415 does not assign it",
-        body: "1415 does not put a person who is not fit onto a crane, a hitch, or a set of signals. A replacement is found, or the dispatch waits. Covering with hope is not a dispatch.",
+        title: "GOSPEL does not assign it",
+        body: "GOSPEL does not put a person who is not fit onto a crane, a hitch, or a set of signals. A replacement is found, or the dispatch waits. Covering with hope is not a dispatch.",
       },
       {
         title: "Medical information",
-        body: "1415 asks only what is needed to match the person to the work and to accommodate where the law requires it. It is not a fishing trip. See Impairment and Return to Work.",
+        body: "GOSPEL asks only what is needed to match the person to the work and to accommodate where the law requires it. It is not a fishing trip. See Impairment and Return to Work.",
       },
     ],
   },
   {
     slug: "impairment",
     title: "IMPAIRMENT",
-    number: "1415-POL-020",
+    number: "GOSPEL-POL-020",
     summary:
       "Unfit to lift is unfit to lift. Alcohol, cannabis, other drugs, medication and fatigue. OHS Regulation 4.19 and 4.20.",
     statements: [
       {
         title: "The rule",
-        body: "A person must not enter or remain at a workplace while their ability to work is affected by alcohol, a drug or another substance so as to endanger anyone. 1415 must not knowingly permit it. 4.20. Crane operation, rigging and signalling are safety-sensitive. There is no ‘a little bit’ on a hook.",
+        body: "A person must not enter or remain at a workplace while their ability to work is affected by alcohol, a drug or another substance so as to endanger anyone. GOSPEL must not knowingly permit it. 4.20. Crane operation, rigging and signalling are safety-sensitive. There is no ‘a little bit’ on a hook.",
       },
       {
         title: "What counts",
@@ -573,66 +573,66 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Report it",
-        body: "Workers report impairment to 1415 before they attend, start, or continue. Observed impairment is treated the same as reported impairment. The person comes off the lift. They are not left in the cab to ‘sleep it off.’",
+        body: "Workers report impairment to GOSPEL before they attend, start, or continue. Observed impairment is treated the same as reported impairment. The person comes off the lift. They are not left in the cab to ‘sleep it off.’",
       },
       {
         title: "Testing",
-        body: "1415 does not run random drug or alcohol testing as a default. Testing happens only where the law allows and the situation requires it. Client or prime-contractor programs that are lawful are followed for that site. A test is not a substitute for taking an impaired person off the work.",
+        body: "GOSPEL does not run random drug or alcohol testing as a default. Testing happens only where the law allows and the situation requires it. Client or prime-contractor programs that are lawful are followed for that site. A test is not a substitute for taking an impaired person off the work.",
       },
       {
         title: "Disability",
-        body: "Addiction and other disabilities are protected under the Human Rights Code. 1415 will accommodate to the point of undue hardship when it is told. Accommodation is not a licence to lift impaired. See Discrimination and Fitness for Work.",
+        body: "Addiction and other disabilities are protected under the Human Rights Code. GOSPEL will accommodate to the point of undue hardship when it is told. Accommodation is not a licence to lift impaired. See Discrimination and Fitness for Work.",
       },
     ],
   },
   {
     slug: "working-alone",
     title: "WORKING ALONE",
-    number: "1415-POL-021",
+    number: "GOSPEL-POL-021",
     summary:
       "A lift is not a one-person job. If assistance would not be readily available, there is a written check-in. 4.21–4.23.",
     statements: [
       {
         title: "No solo lift",
-        body: "1415 does not dispatch a worker to make a lift alone. Operator, rigger and signals are a crew. If the site will leave one 1415 person to lift, we do not take that dispatch.",
+        body: "GOSPEL does not dispatch a worker to make a lift alone. Operator, rigger and signals are a crew. If the site will leave one GOSPEL person to lift, we do not take that dispatch.",
       },
       {
         title: "When this policy applies",
-        body: "Working alone or in isolation means assistance would not be readily available in an emergency, injury or illness. Visual or verbal contact with other people is readily available. A phone or radio is not. Travel, waiting on a machine, a remote plant, night work, or a crew that left can put a 1415 worker in isolation even when the lift itself was crewed.",
+        body: "Working alone or in isolation means assistance would not be readily available in an emergency, injury or illness. Visual or verbal contact with other people is readily available. A phone or radio is not. Travel, waiting on a machine, a remote plant, night work, or a crew that left can put a GOSPEL worker in isolation even when the lift itself was crewed.",
       },
       {
         title: "Before that dispatch",
-        body: "Hazards are identified. A written procedure is set: who checks in, how, and how often — matching the risk. The worker is trained on it. If the site cannot support that, 1415 does not send the person.",
+        body: "Hazards are identified. A written procedure is set: who checks in, how, and how often — matching the risk. The worker is trained on it. If the site cannot support that, GOSPEL does not send the person.",
       },
       {
         title: "Check-in",
-        body: "A named person at 1415 or on site receives the check-in at the set times. Missed check-in is not a voicemail. The designated person calls, then escalates, then sends help or emergency services. A spouse is not the check-in system.",
+        body: "A named person at GOSPEL or on site receives the check-in at the set times. Missed check-in is not a voicemail. The designated person calls, then escalates, then sends help or emergency services. A spouse is not the check-in system.",
       },
       {
         title: "Say it",
-        body: "If you will be out of visual and verbal contact, you tell 1415 before the hook. We set the check-in or we pull the dispatch.",
+        body: "If you will be out of visual and verbal contact, you tell GOSPEL before the hook. We set the check-in or we pull the dispatch.",
       },
     ],
   },
   {
     slug: "injury-management",
     title: "INJURY MANAGEMENT",
-    number: "1415-POL-022",
+    number: "GOSPEL-POL-022",
     summary:
       "First aid first. Report it. Care, not a cover-up. The claim is not a rumour.",
     download: {
       href: "/downloads/injury-management.zip",
       label: "DOWNLOAD INJURY MANAGEMENT PACK →",
-      note: "BCCSA employer guide, employee bulletin, sample forms and supplementary materials. Use them. Do not replace 1415-POL-022.",
+      note: "BCCSA employer guide, employee bulletin, sample forms and supplementary materials. Use them. Do not replace GOSPEL-POL-022.",
     },
     statements: [
       {
         title: "Care",
-        body: "Injured people get first aid and further care as required. Make the lift safe. Do not become the second event. Site first aid and 1415 are both told.",
+        body: "Injured people get first aid and further care as required. Make the lift safe. Do not become the second event. Site first aid and GOSPEL are both told.",
       },
       {
         title: "Report",
-        body: "Injuries are reported the same shift — including what someone calls nothing. First aid report 1415-FRM-012. Incident report as required. WorkSafeBC is notified as the law requires. Hiding an injury to finish a pick is how it becomes a worse injury.",
+        body: "Injuries are reported the same shift — including what someone calls nothing. First aid report GOSPEL-FRM-012. Incident report as required. WorkSafeBC is notified as the law requires. Hiding an injury to finish a pick is how it becomes a worse injury.",
       },
       {
         title: "Stay at work",
@@ -640,20 +640,20 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Cooperate",
-        body: "1415, the worker and the site cooperate on treatment, reporting and suitable duties. The file is not a defence brief. It is how the person gets care and the work gets safer. The downloadable pack on this page is BCCSA injury-management material — guides, sample forms, supplementary notes. Use it. It does not replace this policy.",
+        body: "GOSPEL, the worker and the site cooperate on treatment, reporting and suitable duties. The file is not a defence brief. It is how the person gets care and the work gets safer. The downloadable pack on this page is BCCSA injury-management material — guides, sample forms, supplementary notes. Use it. It does not replace this policy.",
       },
     ],
   },
   {
     slug: "return-to-work",
     title: "RETURN TO WORK",
-    number: "1415-POL-023",
+    number: "GOSPEL-POL-023",
     summary:
       "Restrictions named. Work matched. Not a paper promise. Workers Compensation Act duty to maintain employment where it applies.",
     statements: [
       {
         title: "Suitable work",
-        body: "Return-to-work is work the person can do within named restrictions. 1415 does not dispatch an operator, rigger or signalperson into a role that violates those restrictions. The form is 1415-FRM-RTW.",
+        body: "Return-to-work is work the person can do within named restrictions. GOSPEL does not dispatch an operator, rigger or signalperson into a role that violates those restrictions. The form is GOSPEL-FRM-RTW.",
       },
       {
         title: "Plan",
@@ -661,24 +661,24 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Duty",
-        body: "Where the Workers Compensation Act duty to maintain employment applies, 1415 maintains employment and offers suitable or pre-injury work to the point of undue hardship. Inconvenience is not undue hardship.",
+        body: "Where the Workers Compensation Act duty to maintain employment applies, GOSPEL maintains employment and offers suitable or pre-injury work to the point of undue hardship. Inconvenience is not undue hardship.",
       },
       {
         title: "Cooperate",
-        body: "The worker, 1415, the clinician and WorkSafeBC share what is needed to match the work. Medical detail beyond the restriction is not a gossip file. See Fitness for Work and Injury Management.",
+        body: "The worker, GOSPEL, the clinician and WorkSafeBC share what is needed to match the work. Medical detail beyond the restriction is not a gossip file. See Fitness for Work and Injury Management.",
       },
     ],
   },
   {
     slug: "discrimination",
     title: "DISCRIMINATION",
-    number: "1415-POL-024",
+    number: "GOSPEL-POL-024",
     summary:
       "Hiring and dispatch are about the work. Human Rights Code s. 13. Not a vibe, and not a pretext.",
     statements: [
       {
         title: "The Code",
-        body: "1415 does not refuse to employ, refuse to continue to employ, or discriminate in any term of employment — including who gets the call — because of Indigenous identity, race, colour, ancestry, place of origin, political belief, religion, marital status, family status, physical or mental disability, sex, sexual orientation, gender identity or expression, age, or a conviction unrelated to the work. Human Rights Code s. 13. 1415 does not refuse to refer a person for those reasons.",
+        body: "GOSPEL does not refuse to employ, refuse to continue to employ, or discriminate in any term of employment — including who gets the call — because of Indigenous identity, race, colour, ancestry, place of origin, political belief, religion, marital status, family status, physical or mental disability, sex, sexual orientation, gender identity or expression, age, or a conviction unrelated to the work. Human Rights Code s. 13. GOSPEL does not refuse to refer a person for those reasons.",
       },
       {
         title: "This work",
@@ -686,20 +686,20 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Accommodate",
-        body: "1415 accommodates protected characteristics to the point of undue hardship. Accommodation does not put an impaired or restricted person onto a hook that the restriction forbids. See Fitness for Work, Impairment and Return to Work.",
+        body: "GOSPEL accommodates protected characteristics to the point of undue hardship. Accommodation does not put an impaired or restricted person onto a hook that the restriction forbids. See Fitness for Work, Impairment and Return to Work.",
       },
       {
         title: "Report",
-        body: "Report to 1415 at 1 604 431 2000 and ask for Safety, or email hire@kyuk.onl. If the alleged person is 1415, use that route anyway and name it. A complaint may also be filed with the BC Human Rights Tribunal. Bullying and harassment under WorkSafeBC is a separate file — 1415-POL-017 — and both can apply.",
+        body: "Report to GOSPEL at 1 604 431 2000 and ask for Safety, or email hire@gospel.im. If the alleged person is GOSPEL, use that route anyway and name it. A complaint may also be filed with the BC Human Rights Tribunal. Bullying and harassment under WorkSafeBC is a separate file — GOSPEL-POL-017 — and both can apply.",
       },
     ],
   },
   {
     slug: "first-aid",
     title: "FIRST AID",
-    number: "1415-POL-025",
+    number: "GOSPEL-POL-025",
     summary:
-      "First aid follows the workplace. On a client site that is usually the host. On a workplace 1415 controls, 1415 does the assessment.",
+      "First aid follows the workplace. On a client site that is usually the host. On a workplace GOSPEL controls, GOSPEL does the assessment.",
     statements: [
       {
         title: "Which workplace",
@@ -707,11 +707,11 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Client / host site",
-        body: "On a construction or industrial site 1415 does not control, first aid is the host’s or the prime contractor’s. Before work, the crew knows where it is, who the attendant is, and how to summon it. That goes on the FLHA. 1415-FRM-012 is still completed for a 1415 worker.",
+        body: "On a construction or industrial site GOSPEL does not control, first aid is the host’s or the prime contractor’s. Before work, the crew knows where it is, who the attendant is, and how to summon it. That goes on the FLHA. GOSPEL-FRM-012 is still completed for a GOSPEL worker.",
       },
       {
-        title: "Workplace 1415 controls",
-        body: "If 1415 is the employer at a workplace it controls — office, yard, shop — 1415 conducts the first-aid assessment, posts it, and provides the equipment, attendants and procedures that assessment requires. Review when the workforce or the work changes.",
+        title: "Workplace GOSPEL controls",
+        body: "If GOSPEL is the employer at a workplace it controls — office, yard, shop — GOSPEL conducts the first-aid assessment, posts it, and provides the equipment, attendants and procedures that assessment requires. Review when the workforce or the work changes.",
       },
       {
         title: "Records",
@@ -722,25 +722,25 @@ export const POLICIES: Policy[] = [
   {
     slug: "joint-committee",
     title: "JOINT COMMITTEE / WORKER REPRESENTATIVE",
-    number: "1415-POL-026",
+    number: "GOSPEL-POL-026",
     summary:
-      "Committee or worker representative follows the Act for that workplace. It is not a poster 1415 invents for every site.",
+      "Committee or worker representative follows the Act for that workplace. It is not a poster GOSPEL invents for every site.",
     statements: [
       {
         title: "The threshold",
-        body: "Workers Compensation Act Part 2 Division 5. A joint health and safety committee is required at a workplace where 20 or more workers are regularly employed. A worker health and safety representative is required where 9 to 19 workers are regularly employed. Other orders can apply. This is per workplace — not a headcount of everyone 1415 has ever dispatched.",
+        body: "Workers Compensation Act Part 2 Division 5. A joint health and safety committee is required at a workplace where 20 or more workers are regularly employed. A worker health and safety representative is required where 9 to 19 workers are regularly employed. Other orders can apply. This is per workplace — not a headcount of everyone GOSPEL has ever dispatched.",
       },
       {
-        title: "Workplace 1415 controls",
-        body: "At a workplace 1415 regularly employs people and controls, 1415 establishes the committee or representative the Act requires. New members get the training in OHS Regulation 3.27. A joint committee is evaluated annually where 3.26 applies.",
+        title: "Workplace GOSPEL controls",
+        body: "At a workplace GOSPEL regularly employs people and controls, GOSPEL establishes the committee or representative the Act requires. New members get the training in OHS Regulation 3.27. A joint committee is evaluated annually where 3.26 applies.",
       },
       {
         title: "Client / host site",
-        body: "1415 workers on a host site participate in that workplace’s committee or representative system as the host and the Act require. 1415 remains the employer of its people. A multiple-employer workplace does not erase that.",
+        body: "GOSPEL workers on a host site participate in that workplace’s committee or representative system as the host and the Act require. GOSPEL remains the employer of its people. A multiple-employer workplace does not erase that.",
       },
       {
         title: "Below the threshold",
-        body: "If a 1415-controlled workplace is below the committee and representative thresholds, 3.2 still requires regular monthly meetings with workers on health and safety, and a record of what was discussed. 1415-FRM-033.",
+        body: "If a GOSPEL-controlled workplace is below the committee and representative thresholds, 3.2 still requires regular monthly meetings with workers on health and safety, and a record of what was discussed. GOSPEL-FRM-033.",
       },
       {
         title: "Recommendations",
@@ -751,17 +751,17 @@ export const POLICIES: Policy[] = [
   {
     slug: "contractors",
     title: "CONTRACTORS AND MULTI-EMPLOYER SITES",
-    number: "1415-POL-027",
+    number: "GOSPEL-POL-027",
     summary:
-      "1415 is usually the contractor. The host owns the site. The prime contractor owns coordination where the Act requires one. Subcontractors 1415 hires are selected and watched.",
+      "GOSPEL is usually the contractor. The host owns the site. The prime contractor owns coordination where the Act requires one. Subcontractors GOSPEL hires are selected and watched.",
     statements: [
       {
-        title: "1415",
+        title: "GOSPEL",
         body: "Sends competent people, this program, and stop-work. Does not own the client’s site. Does not become the prime contractor by showing up with a crew.",
       },
       {
-        title: "1415 workers",
-        body: "Work to this program and to site rules — whichever is stricter. Report to 1415 and to site supervision. Refuse unsafe work.",
+        title: "GOSPEL workers",
+        body: "Work to this program and to site rules — whichever is stricter. Report to GOSPEL and to site supervision. Refuse unsafe work.",
       },
       {
         title: "Host employer / client",
@@ -769,32 +769,32 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Site supervisor",
-        body: "When 1415 supplies lift supervision, that person owns whether the hook moves. They do not own the entire site.",
+        body: "When GOSPEL supplies lift supervision, that person owns whether the hook moves. They do not own the entire site.",
       },
       {
         title: "Prime contractor",
-        body: "On a multiple-employer workplace the Act requires a prime contractor to coordinate. 1415 asks who that is before people are sent. If nobody can name them, that is a hazard. It is named. The lift waits until coordination is real.",
+        body: "On a multiple-employer workplace the Act requires a prime contractor to coordinate. GOSPEL asks who that is before people are sent. If nobody can name them, that is a hazard. It is named. The lift waits until coordination is real.",
       },
       {
-        title: "Subcontractors 1415 hires",
-        body: "If 1415 hires another company — a rigger shop, a signal crew, a carrier — selection includes their ability to identify, communicate and control hazards that affect their people, ours, and anyone else. They get this program and the host’s rules. 1415 monitors the work we hired them for. A COR card is evidence, not a substitute for watching the hitch.",
+        title: "Subcontractors GOSPEL hires",
+        body: "If GOSPEL hires another company — a rigger shop, a signal crew, a carrier — selection includes their ability to identify, communicate and control hazards that affect their people, ours, and anyone else. They get this program and the host’s rules. GOSPEL monitors the work we hired them for. A COR card is evidence, not a substitute for watching the hitch.",
       },
       {
         title: "Orientation and communication",
-        body: "Host orientation is completed as the site requires. 1415 shares what the host needs: FLHA, inspections, incidents involving our people. The host shares what we need: known hazards, other cranes, lines, first aid, muster.",
+        body: "Host orientation is completed as the site requires. GOSPEL shares what the host needs: FLHA, inspections, incidents involving our people. The host shares what we need: known hazards, other cranes, lines, first aid, muster.",
       },
     ],
   },
   {
     slug: "occupational-health",
     title: "OCCUPATIONAL HEALTH",
-    number: "1415-POL-028",
+    number: "GOSPEL-POL-028",
     summary:
       "Noise, MSI, heat, cold, WHMIS and smoke as they actually hit crane and rigging work. Not a silica program we do not run.",
     statements: [
       {
         title: "What this covers",
-        body: "Hazards that show up on 1415 dispatches: noise at the machine and in the cab, musculoskeletal injury from sitting a crane or handling gear, heat and cold, hazardous products we actually use, wildfire smoke. Silica, asbestos and confined-space programs are not added because they are not the work. If a dispatch actually includes that exposure, it is named on the FLHA and the host’s procedure is followed — or the dispatch is refused.",
+        body: "Hazards that show up on GOSPEL dispatches: noise at the machine and in the cab, musculoskeletal injury from sitting a crane or handling gear, heat and cold, hazardous products we actually use, wildfire smoke. Silica, asbestos and confined-space programs are not added because they are not the work. If a dispatch actually includes that exposure, it is named on the FLHA and the host’s procedure is followed — or the dispatch is refused.",
       },
       {
         title: "Noise",
@@ -806,7 +806,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Hazardous products",
-        body: "WHMIS for products 1415 people use — diesel, hydraulic oil, grease, rope dressing. SDS library 18. The host’s products stay on the host’s SDS.",
+        body: "WHMIS for products GOSPEL people use — diesel, hydraulic oil, grease, rope dressing. SDS library 18. The host’s products stay on the host’s SDS.",
       },
       {
         title: "Heat, cold, smoke",

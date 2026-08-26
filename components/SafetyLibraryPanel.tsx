@@ -95,7 +95,7 @@ export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
         items={[
           {
             href: "/safety/builder",
-            number: "1415-FRM",
+            number: "GOSPEL-FRM",
             title: "FORM BUILDER",
             summary:
               "Assemble approved Safety Blocks. Fill on this device. Download or email a PDF.",
@@ -148,10 +148,10 @@ export function SafetyLibraryPanel({ kind }: { kind: SafetyLibraryKind }) {
         items={[
           {
             href: "/safety/binder",
-            number: "1415-BND",
+            number: "GOSPEL-BND",
             title: "BINDER WIZARD",
             summary:
-              "Tower or self-erect. Walk the checklist. Download the 1415 PDF.",
+              "Tower or self-erect. Walk the checklist. Download the GOSPEL PDF.",
             meta: "Wizard",
           },
           ...BINDERS.map((item) => ({

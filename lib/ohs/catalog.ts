@@ -178,14 +178,14 @@ export function safetyCatalog(): CatalogHit[] {
     })),
     {
       href: "/safety/builder",
-      number: "1415-FRM",
+      number: "GOSPEL-FRM",
       title: "FORM BUILDER",
       summary: "Assemble, fill, PDF.",
       kind: "FORM",
     },
     {
       href: "/safety/binder",
-      number: "1415-BND",
+      number: "GOSPEL-BND",
       title: "CRANE BINDER WIZARD",
       summary: "Tower or self-erect site binder.",
       kind: "BINDER",

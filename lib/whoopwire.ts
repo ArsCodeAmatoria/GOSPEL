@@ -2,7 +2,7 @@ import { ARTICLES } from "@/lib/whoopwire-stories";
 import type { Step } from "@/lib/safety";
 
 export const WIRE = {
-  name: "1415WIRE",
+  name: "GOSPELWIRE",
   descriptor: "SAFETY. RIGGING. CRANES. PEOPLE.",
   dek: "The things worth talking about in crane work, rigging, safety and the people who do it.",
   subscribe: "New stories on safety, rigging, cranes and the people doing the work.",

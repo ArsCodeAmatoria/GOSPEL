@@ -51,7 +51,7 @@ export const CRANES: Crane[] = [
   {
     slug: "mdt-219",
     title: "POTAIN MDT 219",
-    number: "1415-CRN-001",
+    number: "GOSPEL-CRN-001",
     family: "TOPLESS",
     maker: "Potain",
     summary:
@@ -129,22 +129,22 @@ export const CRANES: Crane[] = [
       "OEM lubrication chart for this serial",
     ],
     forms: [
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       { href: "/safety/builder/tower-pre-use", label: "FILL TOWER PRE-USE →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "mrh-125",
     title: "POTAIN MRH 125",
-    number: "1415-CRN-002",
+    number: "GOSPEL-CRN-002",
     family: "LUFFING JIB",
     maker: "Potain",
     summary:
@@ -220,24 +220,24 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       { href: "/safety/builder/luffing-jib-inspection", label: "FILL LUFFING JIB INSPECTION →" },
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "luffing-jib",
     title: "POTAIN LUFFING JIB",
-    number: "1415-CRN-003",
+    number: "GOSPEL-CRN-003",
     family: "LUFFING JIB",
     maker: "Potain",
     summary:
@@ -246,7 +246,7 @@ export const CRANES: Crane[] = [
     specs: [
       {
         title: "MRH 125",
-        body: "Hydraulic topless luffer. 8 t, 50 m jib. See 1415-CRN-002.",
+        body: "Hydraulic topless luffer. 8 t, 50 m jib. See GOSPEL-CRN-002.",
       },
       {
         title: "MRH 175",
@@ -316,23 +316,23 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       { href: "/safety/builder/luffing-jib-inspection", label: "FILL LUFFING JIB INSPECTION →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "self-erecting",
     title: "POTAIN SELF-ERECTING",
-    number: "1415-CRN-004",
+    number: "GOSPEL-CRN-004",
     family: "SELF-ERECTING",
     maker: "Potain",
     summary:
@@ -442,24 +442,24 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/self-erect-inspection",
-        label: "SELF-ERECT INSPECTION — 1415-FRM-029 →",
+        label: "SELF-ERECT INSPECTION — GOSPEL-FRM-029 →",
       },
       { href: "/safety/builder/self-erect-inspection", label: "FILL SELF-ERECT INSPECTION →" },
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "wolff-clear",
     title: "WOLFF CLEAR",
-    number: "1415-CRN-005",
+    number: "GOSPEL-CRN-005",
     family: "TOPLESS",
     maker: "WOLFFKRAN",
     summary:
@@ -554,22 +554,22 @@ export const CRANES: Crane[] = [
       "OEM lubrication chart for this serial",
     ],
     forms: [
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       { href: "/safety/builder/tower-pre-use", label: "FILL TOWER PRE-USE →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "wolff-compact-cross",
     title: "WOLFF COMPACT + CROSS",
-    number: "1415-CRN-006",
+    number: "GOSPEL-CRN-006",
     family: "TOPLESS",
     maker: "WOLFFKRAN",
     summary:
@@ -649,22 +649,22 @@ export const CRANES: Crane[] = [
       "OEM lubrication chart for this serial",
     ],
     forms: [
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       { href: "/safety/builder/tower-pre-use", label: "FILL TOWER PRE-USE →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "wolff-166-b",
     title: "WOLFF 166 B",
-    number: "1415-CRN-007",
+    number: "GOSPEL-CRN-007",
     family: "LUFFING JIB",
     maker: "WOLFFKRAN",
     summary:
@@ -740,24 +740,24 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       { href: "/safety/builder/luffing-jib-inspection", label: "FILL LUFFING JIB INSPECTION →" },
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "wolff-luffing-jib",
     title: "WOLFF LUFFING JIB",
-    number: "1415-CRN-008",
+    number: "GOSPEL-CRN-008",
     family: "LUFFING JIB",
     maker: "WOLFFKRAN",
     summary:
@@ -767,7 +767,7 @@ export const CRANES: Crane[] = [
     specs: [
       {
         title: "166 B",
-        body: "Hydraulic. 12 t, 55 m. See 1415-CRN-007.",
+        body: "Hydraulic. 12 t, 55 m. See GOSPEL-CRN-007.",
       },
       {
         title: "235 B / 275 B / 355 B",
@@ -850,7 +850,7 @@ export const CRANES: Crane[] = [
       "Jib angle against the chart for this radius and this reeving",
       "Level luffing — hook height holds as the jib moves",
       "Rope luffer: luffing rope, winch, tower top, connecting frame",
-      "Hydraulic 166 B: cylinder, hoses, power pack — see 1415-CRN-007",
+      "Hydraulic 166 B: cylinder, hoses, power pack — see GOSPEL-CRN-007",
       "Hoist, slew, weathervane, overload, anemometer",
       "WOLFF slug-bolt tower, ties, climber",
       "Out-of-service jib position for this wind",
@@ -864,23 +864,23 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       { href: "/safety/builder/luffing-jib-inspection", label: "FILL LUFFING JIB INSPECTION →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "liebherr-ec-b",
     title: "LIEBHERR EC-B",
-    number: "1415-CRN-009",
+    number: "GOSPEL-CRN-009",
     family: "TOPLESS",
     maker: "Liebherr",
     summary:
@@ -963,22 +963,22 @@ export const CRANES: Crane[] = [
       "OEM lubrication chart for this serial",
     ],
     forms: [
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       { href: "/safety/builder/tower-pre-use", label: "FILL TOWER PRE-USE →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "liebherr-hc-l",
     title: "LIEBHERR HC-L",
-    number: "1415-CRN-010",
+    number: "GOSPEL-CRN-010",
     family: "LUFFING JIB",
     maker: "Liebherr",
     summary:
@@ -1078,24 +1078,24 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       { href: "/safety/builder/luffing-jib-inspection", label: "FILL LUFFING JIB INSPECTION →" },
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "liebherr-k-series",
     title: "LIEBHERR K-SERIES",
-    number: "1415-CRN-011",
+    number: "GOSPEL-CRN-011",
     family: "SELF-ERECTING",
     maker: "Liebherr",
     summary:
@@ -1191,24 +1191,24 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/self-erect-inspection",
-        label: "SELF-ERECT INSPECTION — 1415-FRM-029 →",
+        label: "SELF-ERECT INSPECTION — GOSPEL-FRM-029 →",
       },
       { href: "/safety/builder/self-erect-inspection", label: "FILL SELF-ERECT INSPECTION →" },
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "zoomlion-flat-top",
     title: "ZOOMLION FLAT-TOP",
-    number: "1415-CRN-012",
+    number: "GOSPEL-CRN-012",
     family: "TOPLESS",
     maker: "Zoomlion",
     summary:
@@ -1303,22 +1303,22 @@ export const CRANES: Crane[] = [
       "OEM lubrication chart for this serial",
     ],
     forms: [
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       { href: "/safety/builder/tower-pre-use", label: "FILL TOWER PRE-USE →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "zoomlion-rl",
     title: "ZOOMLION RL",
-    number: "1415-CRN-013",
+    number: "GOSPEL-CRN-013",
     family: "LUFFING JIB",
     maker: "Zoomlion",
     summary:
@@ -1394,24 +1394,24 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       { href: "/safety/builder/luffing-jib-inspection", label: "FILL LUFFING JIB INSPECTION →" },
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "zoomlion-luffing",
     title: "ZOOMLION LUFFING JIB",
-    number: "1415-CRN-014",
+    number: "GOSPEL-CRN-014",
     family: "LUFFING JIB",
     maker: "Zoomlion",
     summary:
@@ -1421,7 +1421,7 @@ export const CRANES: Crane[] = [
     specs: [
       {
         title: "RL hydraulic",
-        body: "Topless hydraulic. RL165, RL205, RL250. See 1415-CRN-013.",
+        body: "Topless hydraulic. RL165, RL205, RL250. See GOSPEL-CRN-013.",
       },
       {
         title: "L125-8RA",
@@ -1478,7 +1478,7 @@ export const CRANES: Crane[] = [
       "Jib angle against the chart for this radius and this reeving",
       "Out-of-service / weathervane radius for this jib length",
       "Rope luffer: luffing rope, cathead sheaves, luffing winch, dead ends",
-      "Hydraulic RL: rams, hoses, tank, pins — see 1415-CRN-013",
+      "Hydraulic RL: rams, hoses, tank, pins — see GOSPEL-CRN-013",
       "Hoist rope, hook, limits, overload, anemometer",
       "Slew, mast, ties, access",
     ],
@@ -1491,23 +1491,23 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       { href: "/safety/builder/luffing-jib-inspection", label: "FILL LUFFING JIB INSPECTION →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "raimondi-flat-top",
     title: "RAIMONDI FLAT-TOP",
-    number: "1415-CRN-015",
+    number: "GOSPEL-CRN-015",
     family: "TOPLESS",
     maker: "Raimondi",
     summary:
@@ -1583,22 +1583,22 @@ export const CRANES: Crane[] = [
       "OEM lubrication chart for this serial",
     ],
     forms: [
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       { href: "/safety/builder/tower-pre-use", label: "FILL TOWER PRE-USE →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "raimondi-luffing",
     title: "RAIMONDI LUFFING JIB",
-    number: "1415-CRN-016",
+    number: "GOSPEL-CRN-016",
     family: "LUFFING JIB",
     maker: "Raimondi",
     summary:
@@ -1671,24 +1671,24 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       { href: "/safety/builder/luffing-jib-inspection", label: "FILL LUFFING JIB INSPECTION →" },
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "terex-ctt",
     title: "TEREX CTT",
-    number: "1415-CRN-017",
+    number: "GOSPEL-CRN-017",
     family: "TOPLESS",
     maker: "Terex",
     summary:
@@ -1770,22 +1770,22 @@ export const CRANES: Crane[] = [
       "OEM lubrication chart for this serial",
     ],
     forms: [
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       { href: "/safety/builder/tower-pre-use", label: "FILL TOWER PRE-USE →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "terex-ctl",
     title: "TEREX CTL",
-    number: "1415-CRN-018",
+    number: "GOSPEL-CRN-018",
     family: "LUFFING JIB",
     maker: "Terex",
     summary:
@@ -1863,24 +1863,24 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       { href: "/safety/builder/luffing-jib-inspection", label: "FILL LUFFING JIB INSPECTION →" },
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "terex-self-erect",
     title: "TEREX SELF-ERECTING",
-    number: "1415-CRN-019",
+    number: "GOSPEL-CRN-019",
     family: "SELF-ERECTING",
     maker: "Terex",
     summary:
@@ -1956,24 +1956,24 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/self-erect-inspection",
-        label: "SELF-ERECT INSPECTION — 1415-FRM-029 →",
+        label: "SELF-ERECT INSPECTION — GOSPEL-FRM-029 →",
       },
       { href: "/safety/builder/self-erect-inspection", label: "FILL SELF-ERECT INSPECTION →" },
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "jaso-flat-top",
     title: "JASO FLAT TOP",
-    number: "1415-CRN-020",
+    number: "GOSPEL-CRN-020",
     family: "TOPLESS",
     maker: "Jaso",
     summary:
@@ -2053,22 +2053,22 @@ export const CRANES: Crane[] = [
       "OEM lubrication chart for this serial",
     ],
     forms: [
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       { href: "/safety/builder/tower-pre-use", label: "FILL TOWER PRE-USE →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "jaso-hpa",
     title: "JASO HPA",
-    number: "1415-CRN-021",
+    number: "GOSPEL-CRN-021",
     family: "LUFFING JIB",
     maker: "Jaso",
     summary:
@@ -2145,24 +2145,24 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       { href: "/safety/builder/luffing-jib-inspection", label: "FILL LUFFING JIB INSPECTION →" },
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "jaso-luffing",
     title: "JASO LUFFING",
-    number: "1415-CRN-022",
+    number: "GOSPEL-CRN-022",
     family: "LUFFING JIB",
     maker: "Jaso",
     summary:
@@ -2171,7 +2171,7 @@ export const CRANES: Crane[] = [
     specs: [
       {
         title: "HPA hydraulic",
-        body: "J118HPA, J168HPA, J198HPA. See 1415-CRN-021.",
+        body: "J118HPA, J168HPA, J198HPA. See GOSPEL-CRN-021.",
       },
       {
         title: "J138PA.A",
@@ -2228,7 +2228,7 @@ export const CRANES: Crane[] = [
       "Jib angle against the chart for this radius and this reeving",
       "Out-of-service / weathervane radius for this jib length",
       "Rope PA: luffing rope, cathead sheaves, luffing winch, dead ends",
-      "Hydraulic HPA: ram, hoses, tank, pins — see 1415-CRN-021",
+      "Hydraulic HPA: ram, hoses, tank, pins — see GOSPEL-CRN-021",
       "Hoist rope, hook, limits, overload, anemometer",
       "Slew, mast, ties, access. Same sections as the flat-top pack",
     ],
@@ -2241,23 +2241,23 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       { href: "/safety/builder/luffing-jib-inspection", label: "FILL LUFFING JIB INSPECTION →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "pecco-sk",
     title: "PECCO SK",
-    number: "1415-CRN-023",
+    number: "GOSPEL-CRN-023",
     family: "HAMMERHEAD",
     maker: "Pecco",
     summary:
@@ -2278,7 +2278,7 @@ export const CRANES: Crane[] = [
       },
       {
         title: "Line",
-        body: "Peiner, Germany. Pecco in North America. Terex took Peiner in 1998. Morrow published these NA range sheets. Current Terex SK hammerheads sit under Raimondi. Peiner SMK self-erects ran in the same fleet — no Morrow public sheet. Serial chart in the cab. Current Terex self-erects: 1415-CRN-019.",
+        body: "Peiner, Germany. Pecco in North America. Terex took Peiner in 1998. Morrow published these NA range sheets. Current Terex SK hammerheads sit under Raimondi. Peiner SMK self-erects ran in the same fleet — no Morrow public sheet. Serial chart in the cab. Current Terex self-erects: GOSPEL-CRN-019.",
       },
     ],
     charts: [
@@ -2340,22 +2340,22 @@ export const CRANES: Crane[] = [
       "OEM lubrication chart for this serial",
     ],
     forms: [
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       { href: "/safety/builder/tower-pre-use", label: "FILL TOWER PRE-USE →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },
   {
     slug: "pecco-sn",
     title: "PECCO SN",
-    number: "1415-CRN-024",
+    number: "GOSPEL-CRN-024",
     family: "LUFFING JIB",
     maker: "Pecco",
     summary:
@@ -2423,17 +2423,17 @@ export const CRANES: Crane[] = [
     forms: [
       {
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       { href: "/safety/builder/luffing-jib-inspection", label: "FILL LUFFING JIB INSPECTION →" },
-      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — 1415-FRM-027 →" },
+      { href: "/safety/form/tower-pre-use", label: "TOWER PRE-USE — GOSPEL-FRM-027 →" },
       {
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
     ],
   },

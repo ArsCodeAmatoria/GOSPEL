@@ -31,8 +31,8 @@ export function blankForm(): WhoopFormDef {
   return assembleForm({
     id: nid("form"),
     title: "UNTITLED FORM",
-    number: "1415-FRM-DRAFT",
-    description: "Assembled from 1415 Safety Blocks.",
+    number: "GOSPEL-FRM-DRAFT",
+    description: "Assembled from GOSPEL Safety Blocks.",
     blocks: [{ type: "worker" }, { type: "project" }, { type: "signature" }],
   });
 }

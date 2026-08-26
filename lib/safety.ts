@@ -74,7 +74,7 @@ export const SAFETY: SafetySection[] = [
     title: "COMPANY SAFETY POLICY",
     kicker: "The standard is not a poster.",
     intro:
-      "1415 is a complete crane operations and rigging company. Qualified crane operators, riggers, signalpersons, crane supervisors and safety support — competent people on lifting work, to a published standard.",
+      "GOSPEL is a complete crane operations and rigging company. Qualified crane operators, riggers, signalpersons, crane supervisors and safety support — competent people on lifting work, to a published standard.",
     blocks: [
       {
         type: "quote",
@@ -82,7 +82,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Proven is the company’s rulebook for lifting work. It applies to every worker 1415 deploys, every supervisor 1415 assigns, and every job we accept. Clients can read it before they hire us. Workers can read it before they accept a dispatch. That is deliberate.",
+        text: "Proven is the company’s rulebook for lifting work. It applies to every worker GOSPEL deploys, every supervisor GOSPEL assigns, and every job we accept. Clients can read it before they hire us. Workers can read it before they accept a dispatch. That is deliberate.",
       },
       {
         type: "h",
@@ -91,7 +91,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "list",
         items: [
-          "The minimum standard for how 1415 personnel plan, rig, signal and lift.",
+          "The minimum standard for how GOSPEL personnel plan, rig, signal and lift.",
           "A public document. It is not proprietary. It does not expire. It is not behind a form.",
           "Subordinate to law. Where applicable occupational health and safety law is stricter, the law wins. Where this program is stricter, this program wins.",
           "Written to be used. Procedures are sequenced the way the work actually happens.",
@@ -129,7 +129,7 @@ export const SAFETY: SafetySection[] = [
           },
           {
             title: "No surprise no-shows.",
-            body: "Reliability is a safety control. A missing operator mid-lift is a hazard. If 1415 cannot fill a role, the client is told immediately.",
+            body: "Reliability is a safety control. A missing operator mid-lift is a hazard. If GOSPEL cannot fill a role, the client is told immediately.",
           },
         ],
       },
@@ -139,7 +139,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "1415 is a complete crane operations and rigging company. The people and the systems. Lifting work is performed in accordance with the following. Where they conflict, the stricter applicable requirement wins. Law always wins. This program is written to sit on top of that stack, not beside it.",
+        text: "GOSPEL is a complete crane operations and rigging company. The people and the systems. Lifting work is performed in accordance with the following. Where they conflict, the stricter applicable requirement wins. Law always wins. This program is written to sit on top of that stack, not beside it.",
       },
       {
         type: "list",
@@ -156,7 +156,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "1415 operates in Canada. Provincial occupational health and safety statutes, regulations and codes of practice apply on the site where the work is performed.",
+        text: "GOSPEL operates in Canada. Provincial occupational health and safety statutes, regulations and codes of practice apply on the site where the work is performed.",
       },
     ],
   },
@@ -166,11 +166,11 @@ export const SAFETY: SafetySection[] = [
     title: "RESPONSIBILITIES",
     kicker: "Who owns what.",
     intro:
-      "Lifting work fails when everybody assumes somebody else has it. 1415 supplies people into workplaces we do not always control. The split in responsibility has to be explicit.",
+      "Lifting work fails when everybody assumes somebody else has it. GOSPEL supplies people into workplaces we do not always control. The split in responsibility has to be explicit.",
     blocks: [
       {
         type: "h",
-        text: "1415",
+        text: "GOSPEL",
       },
       {
         type: "list",
@@ -180,7 +180,7 @@ export const SAFETY: SafetySection[] = [
           "Supply personnel who are fit for work and ticketed for the role requested.",
           "Refuse or stop a dispatch when the work as described cannot be done safely.",
           "Keep this program current and publicly available.",
-          "Investigate incidents involving 1415 personnel and share findings with the client as required.",
+          "Investigate incidents involving GOSPEL personnel and share findings with the client as required.",
         ],
       },
       {
@@ -209,7 +209,7 @@ export const SAFETY: SafetySection[] = [
           "Provide accurate information: load data, drawings, machine type, site constraints, known hazards.",
           "Provide or confirm engineered lift plans where the lift requires them.",
           "Ensure a prime contractor / site safety system is in place as required by law.",
-          "Do not direct 1415 personnel to skip this program or applicable law.",
+          "Do not direct GOSPEL personnel to skip this program or applicable law.",
         ],
       },
       {
@@ -218,7 +218,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Workers Compensation Act s. 23. A supervisor 1415 sends — or a site supervisor directing our people — ensures the workers under their direct supervision are made aware of known or reasonably foreseeable health and safety hazards, and comply with the Act, the Regulation, and this program as it applies. They consult and cooperate with the joint committee or worker representative where there is one. They cooperate with WorkSafeBC. They do not own the entire site. They do own whether the people they supervise work to the plan.",
+        text: "Workers Compensation Act s. 23. A supervisor GOSPEL sends — or a site supervisor directing our people — ensures the workers under their direct supervision are made aware of known or reasonably foreseeable health and safety hazards, and comply with the Act, the Regulation, and this program as it applies. They consult and cooperate with the joint committee or worker representative where there is one. They cooperate with WorkSafeBC. They do not own the entire site. They do own whether the people they supervise work to the plan.",
       },
       {
         type: "list",
@@ -231,7 +231,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "When 1415 supplies lift supervision, that person owns the lift sequence: briefing, exclusion zone, communication, stop/start, and the decision to abort. They do not own the entire site. They do own whether the hook moves.",
+        text: "When GOSPEL supplies lift supervision, that person owns the lift sequence: briefing, exclusion zone, communication, stop/start, and the decision to abort. They do not own the entire site. They do own whether the hook moves.",
       },
       {
         type: "quote",
@@ -243,7 +243,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "1415 personnel may have more than one party directing their work. That does not dilute this program. A client instruction that conflicts with this program or with law is not followed. The worker stops, states the conflict, and the lift waits until it is resolved.",
+        text: "GOSPEL personnel may have more than one party directing their work. That does not dilute this program. A client instruction that conflicts with this program or with law is not followed. The worker stops, states the conflict, and the lift waits until it is resolved.",
       },
     ],
   },
@@ -253,7 +253,7 @@ export const SAFETY: SafetySection[] = [
     title: "HAZARD ASSESSMENT",
     kicker: "Before the hook, the paper. Before the paper, the walk.",
     intro:
-      "Every 1415 dispatch requires a hazard assessment. A generic form filled in the parking lot is not an assessment. Look at the work. Name the hazards. Control them. Then lift.",
+      "Every GOSPEL dispatch requires a hazard assessment. A generic form filled in the parking lot is not an assessment. Look at the work. Name the hazards. Control them. Then lift.",
     blocks: [
       {
         type: "steps",
@@ -318,11 +318,11 @@ export const SAFETY: SafetySection[] = [
     title: "SAFE WORK PROCEDURES",
     kicker: "A procedure you cannot use is not a procedure.",
     intro:
-      "Safe Work Procedures (SWPs) cover types of work 1415 personnel perform repeatedly. They are written as sequences because lifting is a sequence. Read them in order. Do them in order. Hazards for that work are in the JHA — not buried in the procedure.",
+      "Safe Work Procedures (SWPs) cover types of work GOSPEL personnel perform repeatedly. They are written as sequences because lifting is a sequence. Read them in order. Do them in order. Hazards for that work are in the JHA — not buried in the procedure.",
     blocks: [
       {
         type: "p",
-        text: "SWPs live in this program so they can be read on a phone at the gate. They are the default method. A site may impose a stricter method. A site may not impose a looser one on 1415 personnel.",
+        text: "SWPs live in this program so they can be read on a phone at the gate. They are the default method. A site may impose a stricter method. A site may not impose a looser one on GOSPEL personnel.",
       },
       {
         type: "cta",
@@ -432,12 +432,12 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/builder/flytable-cycle-sjp",
-        label: "FILL THIS CYCLE — 1415-FRM-052 →",
+        label: "FILL THIS CYCLE — GOSPEL-FRM-052 →",
       },
       {
         type: "cta",
         href: "/safety/builder/loading-platform-sjp",
-        label: "FILL THIS DECK — 1415-FRM-053 →",
+        label: "FILL THIS DECK — GOSPEL-FRM-053 →",
       },
       {
         type: "cta",
@@ -452,8 +452,8 @@ export const SAFETY: SafetySection[] = [
         type: "list",
         items: [
           "Critical lifts as defined by the site or by this program (see Crane Operations).",
-          "Flytable / flyform cycles — every table, every floor. 1415-SJP-001. Corner and nontypical tables: 1415-SJP-002.",
-          "Loading-platform install, reposition or strike — every deck, every floor. 1415-SJP-003. Daily SuperDeck extend / retract is host, not this SJP.",
+          "Flytable / flyform cycles — every table, every floor. GOSPEL-SJP-001. Corner and nontypical tables: GOSPEL-SJP-002.",
+          "Loading-platform install, reposition or strike — every deck, every floor. GOSPEL-SJP-003. Daily SuperDeck extend / retract is host, not this SJP.",
           "Tandem or multiple-crane lifts.",
           "Loads of unknown or shifting centre of gravity.",
           "Lifts over occupied buildings, public space, or process equipment.",
@@ -463,7 +463,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "h",
-        text: "HOW 1415 BUILDS AN SJP",
+        text: "HOW GOSPEL BUILDS AN SJP",
       },
       {
         type: "steps",
@@ -507,7 +507,7 @@ export const SAFETY: SafetySection[] = [
     title: "RIGGING",
     kicker: "The gear is the truth. The guess is the hazard.",
     intro:
-      "1415 riggers rig to rated capacity, known weights and inspected hardware. We do not “make it work” with a choker and optimism. Rigging is done to ASME B30, manufacturer instructions for the hardware, and the site.",
+      "GOSPEL riggers rig to rated capacity, known weights and inspected hardware. We do not “make it work” with a choker and optimism. Rigging is done to ASME B30, manufacturer instructions for the hardware, and the site.",
     blocks: [
       {
         type: "h",
@@ -576,7 +576,7 @@ export const SAFETY: SafetySection[] = [
     title: "CRANE OPERATIONS",
     kicker: "The chart is the law of the machine.",
     intro:
-      "1415 operators run cranes they are competent on, to the load chart, on ground that can hold them, with a crew they can hear. The operator works to CSA Z150 or Z248 as the machine requires, ASME B30, the manufacturer, WorkSafeBC, and the site. If those conditions are not present, the crane does not come on load.",
+      "GOSPEL operators run cranes they are competent on, to the load chart, on ground that can hold them, with a crew they can hear. The operator works to CSA Z150 or Z248 as the machine requires, ASME B30, the manufacturer, WorkSafeBC, and the site. If those conditions are not present, the crane does not come on load.",
     blocks: [
       {
         type: "h",
@@ -632,17 +632,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Treat as critical unless the site defines a stricter threshold: loads approaching chart capacity, tandem lifts, lifts over operating plant or public space, non-routine paths, loads with shifting COG, a flytable / flyform cycle, or a loading-platform install, reposition or strike. Critical lifts get an SJP, named supervision, and a slower brief. Ego is not a control. Flytables: 1415-SWP-028, 1415-JHA-011, 1415-SJP-001. Loading platforms: 1415-SWP-030, 1415-JHA-014, 1415-SJP-003.",
+        text: "Treat as critical unless the site defines a stricter threshold: loads approaching chart capacity, tandem lifts, lifts over operating plant or public space, non-routine paths, loads with shifting COG, a flytable / flyform cycle, or a loading-platform install, reposition or strike. Critical lifts get an SJP, named supervision, and a slower brief. Ego is not a control. Flytables: GOSPEL-SWP-028, GOSPEL-JHA-011, GOSPEL-SJP-001. Loading platforms: GOSPEL-SWP-030, GOSPEL-JHA-014, GOSPEL-SJP-003.",
       },
       {
         type: "cta",
         href: "/safety/swp/flytable-cycling",
-        label: "FLYTABLE CYCLING — 1415-SWP-028 →",
+        label: "FLYTABLE CYCLING — GOSPEL-SWP-028 →",
       },
       {
         type: "cta",
         href: "/safety/swp/loading-platform-reposition",
-        label: "LOADING PLATFORM — 1415-SWP-030 →",
+        label: "LOADING PLATFORM — GOSPEL-SWP-030 →",
       },
       {
         type: "h",
@@ -661,7 +661,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/swp/weather-and-wind",
-        label: "WEATHER AND WIND — 1415-SWP-023 →",
+        label: "WEATHER AND WIND — GOSPEL-SWP-023 →",
       },
       {
         type: "p",
@@ -686,7 +686,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/swp/working-near-powerlines",
-        label: "WORKING NEAR POWERLINES — 1415-SWP-018 →",
+        label: "WORKING NEAR POWERLINES — GOSPEL-SWP-018 →",
       },
       {
         type: "h",
@@ -694,17 +694,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Operating the crane is not servicing it. Isolation before a body is in the machine: 1415-SWP-026. Climbing the ladder to the cab to operate is not jumping the tower. Erection, climbing (increasing height) and dismantling are a separate dispatch under a qualified supervisor, with a Notice of Project as 14.73.3 requires. 1415-SWP-027. Emergency shutdown: people first. 1415-SWP-024.",
+        text: "Operating the crane is not servicing it. Isolation before a body is in the machine: GOSPEL-SWP-026. Climbing the ladder to the cab to operate is not jumping the tower. Erection, climbing (increasing height) and dismantling are a separate dispatch under a qualified supervisor, with a Notice of Project as 14.73.3 requires. GOSPEL-SWP-027. Emergency shutdown: people first. GOSPEL-SWP-024.",
       },
       {
         type: "cta",
         href: "/safety/swp/lockout",
-        label: "LOCKOUT / ISOLATION — 1415-SWP-026 →",
+        label: "LOCKOUT / ISOLATION — GOSPEL-SWP-026 →",
       },
       {
         type: "cta",
         href: "/safety/swp/tower-erection-climbing",
-        label: "TOWER ERECTION, CLIMBING AND DISMANTLING — 1415-SWP-027 →",
+        label: "TOWER ERECTION, CLIMBING AND DISMANTLING — GOSPEL-SWP-027 →",
       },
       {
         type: "cta",
@@ -723,7 +723,7 @@ export const SAFETY: SafetySection[] = [
     blocks: [
       {
         type: "p",
-        text: "1415 personnel follow the fall protection law that applies on the site. Where provincial thresholds differ, we use the site law. Where this program is stricter, we use this program. Default posture: if you can fall more than the legal threshold — or onto a hazard below that threshold — you are protected before you go there.",
+        text: "GOSPEL personnel follow the fall protection law that applies on the site. Where provincial thresholds differ, we use the site law. Where this program is stricter, we use this program. Default posture: if you can fall more than the legal threshold — or onto a hazard below that threshold — you are protected before you go there.",
       },
       {
         type: "h",
@@ -806,7 +806,7 @@ export const SAFETY: SafetySection[] = [
           "Near misses: someone in the zone, a lost signal that almost mattered, a sling that started to cut.",
           "Property and equipment damage.",
           "A stop-work event that revealed a broken plan.",
-          "Bullying or harassment toward a 1415 worker — including on a client site.",
+          "Bullying or harassment toward a GOSPEL worker — including on a client site.",
         ],
       },
       {
@@ -834,7 +834,7 @@ export const SAFETY: SafetySection[] = [
           {
             n: "04",
             title: "NOTIFY",
-            body: "Site supervision, 1415, and the regulator when the law requires it. Immediate for serious events — not after the shift beer.",
+            body: "Site supervision, GOSPEL, and the regulator when the law requires it. Immediate for serious events — not after the shift beer.",
           },
           {
             n: "05",
@@ -844,19 +844,19 @@ export const SAFETY: SafetySection[] = [
           {
             n: "06",
             title: "LEARN AND CHANGE",
-            body: "1415 investigates events involving our people. Collect facts, photographs, gear, witness names. Name causes and contributing factors — not a defence brief. Corrective actions get owners and dates. Close them. The program is updated when the lesson is real. 1415-FRM-013.",
+            body: "GOSPEL investigates events involving our people. Collect facts, photographs, gear, witness names. Name causes and contributing factors — not a defence brief. Corrective actions get owners and dates. Close them. The program is updated when the lesson is real. GOSPEL-FRM-013.",
           },
         ],
       },
       {
         type: "cta",
         href: "/safety/form/investigation",
-        label: "INVESTIGATION — 1415-FRM-013 →",
+        label: "INVESTIGATION — GOSPEL-FRM-013 →",
       },
       {
         type: "cta",
         href: "/safety/form/refuse-unsafe-work",
-        label: "REFUSAL OF UNSAFE WORK — 1415-FRM-035 →",
+        label: "REFUSAL OF UNSAFE WORK — GOSPEL-FRM-035 →",
       },
       {
         type: "quote",
@@ -908,7 +908,7 @@ export const SAFETY: SafetySection[] = [
     title: "EMERGENCY RESPONSE",
     kicker: "The plan has a number, a meeting point and a name.",
     intro:
-      "Every dispatch needs to know how the site calls for help. 1415 does not assume the client’s emergency plan is obvious. We ask. Then we brief it.",
+      "Every dispatch needs to know how the site calls for help. GOSPEL does not assume the client’s emergency plan is obvious. We ask. Then we brief it.",
     blocks: [
       {
         type: "h",
@@ -923,22 +923,22 @@ export const SAFETY: SafetySection[] = [
           "How to shut down or land the crane in an emergency.",
           "Rescue for fall arrest if anyone is tied off.",
           "Tower high-angle rescue: which fire department, how to summon them, where the written plan lives.",
-          "Contact for 1415 after hours.",
+          "Contact for GOSPEL after hours.",
         ],
       },
       {
         type: "p",
-        text: "First aid on a host site is the host’s. First aid on a workplace 1415 controls is 1415’s assessment under Part 3 Division 4. 1415-POL-025. Drills are recorded where 1415 is the employer at that workplace. 1415-FRM-034.",
+        text: "First aid on a host site is the host’s. First aid on a workplace GOSPEL controls is GOSPEL’s assessment under Part 3 Division 4. GOSPEL-POL-025. Drills are recorded where GOSPEL is the employer at that workplace. GOSPEL-FRM-034.",
       },
       {
         type: "cta",
         href: "/safety/form/emergency-drill",
-        label: "EMERGENCY DRILL — 1415-FRM-034 →",
+        label: "EMERGENCY DRILL — GOSPEL-FRM-034 →",
       },
       {
         type: "cta",
         href: "/safety/policy/first-aid",
-        label: "1415-POL-025 — FIRST AID →",
+        label: "GOSPEL-POL-025 — FIRST AID →",
       },
       {
         type: "h",
@@ -969,7 +969,7 @@ export const SAFETY: SafetySection[] = [
           },
           {
             n: "05",
-            title: "NOTIFY 1415",
+            title: "NOTIFY GOSPEL",
             body: "As soon as people are accounted for. We handle the client, the families we must, and the regulator interface that is ours.",
           },
         ],
@@ -997,7 +997,7 @@ export const SAFETY: SafetySection[] = [
         items: [
           {
             title: "Crane incident",
-            body: "Stop. People first. Land or hold only if it does not create a second event. Notify the site and 1415. Hold the scene. 1415-SWP-024.",
+            body: "Stop. People first. Land or hold only if it does not create a second event. Notify the site and GOSPEL. Hold the scene. GOSPEL-SWP-024.",
           },
           {
             title: "Crane overturn",
@@ -1013,7 +1013,7 @@ export const SAFETY: SafetySection[] = [
           },
           {
             title: "Serious injury",
-            body: "Make it safe. First aid. Emergency services. Do not move the person unless they are in immediate danger. Notify 1415 immediately.",
+            body: "Make it safe. First aid. Emergency services. Do not move the person unless they are in immediate danger. Notify GOSPEL immediately.",
           },
           {
             title: "Electrical / powerline contact",
@@ -1025,7 +1025,7 @@ export const SAFETY: SafetySection[] = [
           },
           {
             title: "Severe weather",
-            body: "Land the load. Manufacturer shutdown. People off the machine. Thunder: stop, shelter 30 minutes after the last rumble. Do not count to 30. Strike: 14.16.1. 1415-SWP-023.",
+            body: "Land the load. Manufacturer shutdown. People off the machine. Thunder: stop, shelter 30 minutes after the last rumble. Do not count to 30. Strike: 14.16.1. GOSPEL-SWP-023.",
           },
           {
             title: "Equipment failure",
@@ -1037,7 +1037,7 @@ export const SAFETY: SafetySection[] = [
           },
           {
             title: "Worker rescue",
-            body: "Fall arrest rescue is part of the plan before anyone ties off. Suspension trauma is on the clock. Do not improvise a crane-as-rescue unless that operation is permitted and planned. A tower operator in the cab or on the tower is THARRP — fire-department rope rescue, not a 1415 rappel.",
+            body: "Fall arrest rescue is part of the plan before anyone ties off. Suspension trauma is on the clock. Do not improvise a crane-as-rescue unless that operation is permitted and planned. A tower operator in the cab or on the tower is THARRP — fire-department rope rescue, not a GOSPEL rappel.",
           },
         ],
       },
@@ -1047,13 +1047,13 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "The Technical High Angle Rope Rescue Program is BCCSA’s. It trains municipal fire departments to get a worker down from a tower crane. It is not a 1415 rope team. It is not a fall-protection plan. G4.13(3)(a) still requires a risk assessment and written rescue procedures for high-angle work.",
+        text: "The Technical High Angle Rope Rescue Program is BCCSA’s. It trains municipal fire departments to get a worker down from a tower crane. It is not a GOSPEL rope team. It is not a fall-protection plan. G4.13(3)(a) still requires a risk assessment and written rescue procedures for high-angle work.",
       },
       {
         type: "list",
         items: [
-          "Before a 1415 tower operator goes up: name the fire department, the summoning method, and where the written plan sits. If nobody can name them, the operator stays on the ground.",
-          "The host or prime requests the crane or site survey in the THARRP Portal. 1415 confirms it exists. A tower expected past 60 days on a changing high-rise needs the formal Site Survey & Site Rescue Procedure Review on site — ADM 2.",
+          "Before a GOSPEL tower operator goes up: name the fire department, the summoning method, and where the written plan sits. If nobody can name them, the operator stays on the ground.",
+          "The host or prime requests the crane or site survey in the THARRP Portal. GOSPEL confirms it exists. A tower expected past 60 days on a changing high-rise needs the formal Site Survey & Site Rescue Procedure Review on site — ADM 2.",
           "If the local department is not THARR-funded, they may have mutual aid with one that is. If the workplace is outside a municipal high-angle service area, or the employer is not in a funding classification unit, high-angle rescue must be provided by other acceptable means. The dispatch does not invent a rescue on the day.",
           "A fire department can refuse service they cannot provide. Funding does not obligate them to work unsafely. Then the employer finds another acceptable means — or the work at height does not start.",
           "THARRP does not approve Part 11 fall-protection plans. Harness rescue stays a different plan. Lone hoist-operator rescue stays a different pack.",
@@ -1092,7 +1092,7 @@ export const SAFETY: SafetySection[] = [
     title: "TRAINING + COMPETENCY",
     kicker: "A ticket is not competency.",
     intro:
-      "1415 supplies crane and rigging personnel whose qualifications, experience and practical competency have been checked against the work.",
+      "GOSPEL supplies crane and rigging personnel whose qualifications, experience and practical competency have been checked against the work.",
     blocks: [
       {
         type: "quote",
@@ -1145,12 +1145,12 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "A young worker is under 25. A new worker is new to that workplace, returning to changed hazards, or relocated to different hazards. 3.22. Before they begin, they get the orientation in 3.23 — recorded on 1415-FRM-015. Extra orientation if they cannot do the work safely or they ask. 3.24. Keep the record. 3.25.",
+        text: "A young worker is under 25. A new worker is new to that workplace, returning to changed hazards, or relocated to different hazards. 3.22. Before they begin, they get the orientation in 3.23 — recorded on GOSPEL-FRM-015. Extra orientation if they cannot do the work safely or they ask. 3.24. Keep the record. 3.25.",
       },
       {
         type: "cta",
         href: "/safety/form/orientation",
-        label: "ORIENTATION — 1415-FRM-015 →",
+        label: "ORIENTATION — GOSPEL-FRM-015 →",
       },
       {
         type: "h",
@@ -1209,11 +1209,11 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "This matrix is the check before dispatch. It is how 1415 matches people to the work.",
+        text: "This matrix is the check before dispatch. It is how GOSPEL matches people to the work.",
       },
       {
         type: "table",
-        caption: "1415 crane and rigging competency — dispatch check. Not a training course.",
+        caption: "GOSPEL crane and rigging competency — dispatch check. Not a training course.",
         columns: ["ROLE", "QUALIFICATION", "MACHINE / TASK", "VERIFY"],
         rows: [
           ["Crane operator", "BC Crane Safety class, current", "This configuration and chart", "Ticket + experience + practical"],
@@ -1231,7 +1231,7 @@ export const SAFETY: SafetySection[] = [
     title: "WORKER RIGHTS",
     kicker: "The three rights are not a slogan.",
     intro:
-      "Canadian workers have the right to know, the right to participate, and the right to refuse dangerous work. 1415 treats those rights as operating procedure, not HR wallpaper.",
+      "Canadian workers have the right to know, the right to participate, and the right to refuse dangerous work. GOSPEL treats those rights as operating procedure, not HR wallpaper.",
     blocks: [
       {
         type: "h",
@@ -1255,12 +1255,12 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "The Act sets this by workplace, not by a company’s total headcount. Twenty or more workers regularly employed at a workplace: joint committee. Nine to nineteen: worker health and safety representative. 1415-POL-026. On a host site, 1415 people participate in that workplace’s system. Worker recommendations get a response and enter the corrective-action log.",
+        text: "The Act sets this by workplace, not by a company’s total headcount. Twenty or more workers regularly employed at a workplace: joint committee. Nine to nineteen: worker health and safety representative. GOSPEL-POL-026. On a host site, GOSPEL people participate in that workplace’s system. Worker recommendations get a response and enter the corrective-action log.",
       },
       {
         type: "cta",
         href: "/safety/policy/joint-committee",
-        label: "1415-POL-026 — JOINT COMMITTEE / WORKER REPRESENTATIVE →",
+        label: "GOSPEL-POL-026 — JOINT COMMITTEE / WORKER REPRESENTATIVE →",
       },
       {
         type: "h",
@@ -1277,12 +1277,12 @@ export const SAFETY: SafetySection[] = [
           {
             n: "02",
             title: "SAY WHY",
-            body: "State the danger to the supervisor / site contact and to 1415. Be specific: the line, the ground, the load, the missing gear, the missing plan.",
+            body: "State the danger to the supervisor / site contact and to GOSPEL. Be specific: the line, the ground, the load, the missing gear, the missing plan.",
           },
           {
             n: "03",
             title: "IT GETS INVESTIGATED",
-            body: "The site and 1415 deal with the condition. You are not sent home as punishment for a good-faith refusal.",
+            body: "The site and GOSPEL deal with the condition. You are not sent home as punishment for a good-faith refusal.",
           },
           {
             n: "04",
@@ -1293,12 +1293,12 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "quote",
-        text: "1415 will not punish a worker for refusing unsafe work. We will not send a replacement to do the same unsafe work. That would not be a dispatch. That would be a decision to hurt someone.",
+        text: "GOSPEL will not punish a worker for refusing unsafe work. We will not send a replacement to do the same unsafe work. That would not be a dispatch. That would be a decision to hurt someone.",
       },
       {
         type: "cta",
         href: "/safety/form/refuse-unsafe-work",
-        label: "REFUSAL OF UNSAFE WORK — 1415-FRM-035 →",
+        label: "REFUSAL OF UNSAFE WORK — GOSPEL-FRM-035 →",
       },
       {
         type: "h",
@@ -1306,7 +1306,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Workers are not units. Harassment, violence, racism, and “that’s just the trade” behaviour are not tolerated on a 1415 dispatch. Report it. We act.",
+        text: "Workers are not units. Harassment, violence, racism, and “that’s just the trade” behaviour are not tolerated on a GOSPEL dispatch. Report it. We act.",
       },
       {
         type: "cta",
@@ -1325,12 +1325,12 @@ export const SAFETY: SafetySection[] = [
     title: "OH&S POLICIES",
     kicker: "The rules for crane and rigging work. Short enough to use.",
     intro:
-      "These policies apply to crane operators, riggers, signalpersons, crane supervisors and safety support 1415 deploys. They are not a general construction manual.",
+      "These policies apply to crane operators, riggers, signalpersons, crane supervisors and safety support GOSPEL deploys. They are not a general construction manual.",
     library: "policy",
     blocks: [
       {
         type: "p",
-        text: "Each policy is a controlled document: number, revision 01, effective 2026-09-01, owner 1415 Safety. The current version is the one on this site.",
+        text: "Each policy is a controlled document: number, revision 01, effective 2026-09-01, owner GOSPEL Safety. The current version is the one on this site.",
       },
       {
         type: "p",
@@ -1339,7 +1339,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/policy/bullying-and-harassment",
-        label: "1415-POL-017 — BULLYING AND HARASSMENT →",
+        label: "GOSPEL-POL-017 — BULLYING AND HARASSMENT →",
       },
     ],
   },
@@ -1354,7 +1354,7 @@ export const SAFETY: SafetySection[] = [
     blocks: [
       {
         type: "p",
-        text: "WorkSafeBC requires written procedures for specified high-risk work (OHS Regulation B.C. Reg. 296/97). CCOHS describes an SWP as the step-by-step method. 1415 SWPs are purpose, scope, procedure, competency, equipment, PPE, prohibited practices, emergency, documentation and the editions the Regulation names — CSA Z150-1998, CSA Z248-2004, ASME B30.5-2004, B30.22-2005. The matching JHA is the hazard analysis, not a second procedure.",
+        text: "WorkSafeBC requires written procedures for specified high-risk work (OHS Regulation B.C. Reg. 296/97). CCOHS describes an SWP as the step-by-step method. GOSPEL SWPs are purpose, scope, procedure, competency, equipment, PPE, prohibited practices, emergency, documentation and the editions the Regulation names — CSA Z150-1998, CSA Z248-2004, ASME B30.5-2004, B30.22-2005. The matching JHA is the hazard analysis, not a second procedure.",
       },
       {
         type: "cta",
@@ -1409,17 +1409,17 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/builder/flytable-cycle-sjp",
-        label: "FILL THIS CYCLE — 1415-FRM-052 →",
+        label: "FILL THIS CYCLE — GOSPEL-FRM-052 →",
       },
       {
         type: "cta",
         href: "/safety/builder/loading-platform-sjp",
-        label: "FILL THIS DECK — 1415-FRM-053 →",
+        label: "FILL THIS DECK — GOSPEL-FRM-053 →",
       },
       {
         type: "cta",
         href: "/safety/safe-job-procedures",
-        label: "05 — HOW 1415 BUILDS AN SJP →",
+        label: "05 — HOW GOSPEL BUILDS AN SJP →",
       },
       {
         type: "cta",
@@ -1444,7 +1444,7 @@ export const SAFETY: SafetySection[] = [
     blocks: [
       {
         type: "p",
-        text: "1415 does not ask you to invent a form on the tailgate. Use these. Site forms that are stricter or required by the client are used as well — not instead of the facts these forms capture.",
+        text: "GOSPEL does not ask you to invent a form on the tailgate. Use these. Site forms that are stricter or required by the client are used as well — not instead of the facts these forms capture.",
       },
       {
         type: "cta",
@@ -1467,9 +1467,9 @@ export const SAFETY: SafetySection[] = [
     num: "18",
     slug: "whmis-sds",
     title: "WHMIS + SDS",
-    kicker: "Only what 1415 crews actually meet.",
+    kicker: "Only what GOSPEL crews actually meet.",
     intro:
-      "1415 supplies people, not a warehouse. The SDS library is diesel, hydraulic oil, grease, penetrating oil, wire rope dressing, battery electrolyte and hand cleaner — products operators and riggers actually touch on a dispatch.",
+      "GOSPEL supplies people, not a warehouse. The SDS library is diesel, hydraulic oil, grease, penetrating oil, wire rope dressing, battery electrolyte and hand cleaner — products operators and riggers actually touch on a dispatch.",
     library: "sds",
     blocks: [
       {
@@ -1488,7 +1488,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "This is not a catalogue of construction chemicals. If 1415 does not send you to use it, it is not in this library.",
+        text: "This is not a catalogue of construction chemicals. If GOSPEL does not send you to use it, it is not in this library.",
       },
     ],
   },
@@ -1528,8 +1528,8 @@ export const SAFETY: SafetySection[] = [
           "Crane pre-use — each shift before the hook is loaded. 14.35.",
           "Rigging — before it takes load.",
           "Lift area — at setup. At least weekly on a standing tower. After a change to the pad, the zone or the access.",
-          "1415-controlled gear, tools and vehicles — recorded interval. Out of service when they fail.",
-          "Workplace 1415 controls — monthly, with worker participation where a committee or representative exists. 3.5.",
+          "GOSPEL-controlled gear, tools and vehicles — recorded interval. Out of service when they fail.",
+          "Workplace GOSPEL controls — monthly, with worker participation where a committee or representative exists. 3.5.",
         ],
       },
       {
@@ -1550,17 +1550,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "MDT 219 topless. MRH 125 hydraulic luffer. MR rope luffers. Hup, Igo and Igo T self-erects. Published load charts download from Manitowoc. Serial manuals stay in the cab and on Crane Care. Complete the 1415 form for this class.",
+        text: "MDT 219 topless. MRH 125 hydraulic luffer. MR rope luffers. Hup, Igo and Igo T self-erects. Published load charts download from Manitowoc. Serial manuals stay in the cab and on Crane Care. Complete the GOSPEL form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/mdt-219",
-        label: "POTAIN MDT 219 — 1415-CRN-001 →",
+        label: "POTAIN MDT 219 — GOSPEL-CRN-001 →",
       },
       {
         type: "cta",
         href: "/safety/crane/mrh-125",
-        label: "POTAIN MRH 125 — 1415-CRN-002 →",
+        label: "POTAIN MRH 125 — GOSPEL-CRN-002 →",
       },
       {
         type: "h",
@@ -1568,17 +1568,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Clear flat-top. Compact and Cross saddle jib. 166 B hydraulic luffer. B-series rope luffers. Published data sheets download from wolffkran.com Canada. Serial manuals stay in the cab. Calgary service and WOLFF Assist support the interval. Complete the 1415 form for this class.",
+        text: "Clear flat-top. Compact and Cross saddle jib. 166 B hydraulic luffer. B-series rope luffers. Published data sheets download from wolffkran.com Canada. Serial manuals stay in the cab. Calgary service and WOLFF Assist support the interval. Complete the GOSPEL form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/wolff-clear",
-        label: "WOLFF CLEAR — 1415-CRN-005 →",
+        label: "WOLFF CLEAR — GOSPEL-CRN-005 →",
       },
       {
         type: "cta",
         href: "/safety/crane/wolff-166-b",
-        label: "WOLFF 166 B — 1415-CRN-007 →",
+        label: "WOLFF 166 B — GOSPEL-CRN-007 →",
       },
       {
         type: "h",
@@ -1586,22 +1586,22 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "EC-B flat-top. HC-L rope luffers and 195 HC-LH hydraulic. K-series fast-erect. Published data sheets download from liebherr.com Canada. Serial manuals stay in the cab, on the Tower Crane Portal and on MyLiebherr. Complete the 1415 form for this class.",
+        text: "EC-B flat-top. HC-L rope luffers and 195 HC-LH hydraulic. K-series fast-erect. Published data sheets download from liebherr.com Canada. Serial manuals stay in the cab, on the Tower Crane Portal and on MyLiebherr. Complete the GOSPEL form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/liebherr-ec-b",
-        label: "LIEBHERR EC-B — 1415-CRN-009 →",
+        label: "LIEBHERR EC-B — GOSPEL-CRN-009 →",
       },
       {
         type: "cta",
         href: "/safety/crane/liebherr-hc-l",
-        label: "LIEBHERR HC-L — 1415-CRN-010 →",
+        label: "LIEBHERR HC-L — GOSPEL-CRN-010 →",
       },
       {
         type: "cta",
         href: "/safety/crane/liebherr-k-series",
-        label: "LIEBHERR K-SERIES — 1415-CRN-011 →",
+        label: "LIEBHERR K-SERIES — GOSPEL-CRN-011 →",
       },
       {
         type: "h",
@@ -1609,17 +1609,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "R-generation and WA flat-top. RL hydraulic luffers. L / LW / LH rope luffers. Published product pages and Manual Download PDFs from en-product.zoomlion.com. Serial manuals stay in the cab. Complete the 1415 form for this class.",
+        text: "R-generation and WA flat-top. RL hydraulic luffers. L / LW / LH rope luffers. Published product pages and Manual Download PDFs from en-product.zoomlion.com. Serial manuals stay in the cab. Complete the GOSPEL form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/zoomlion-flat-top",
-        label: "ZOOMLION FLAT-TOP — 1415-CRN-012 →",
+        label: "ZOOMLION FLAT-TOP — GOSPEL-CRN-012 →",
       },
       {
         type: "cta",
         href: "/safety/crane/zoomlion-rl",
-        label: "ZOOMLION RL — 1415-CRN-013 →",
+        label: "ZOOMLION RL — GOSPEL-CRN-013 →",
       },
       {
         type: "h",
@@ -1627,22 +1627,22 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Raimondi MRT and T-series flat-top. LR rope luffers and LRH174 hydraulic. Terex CTT flat-top, CTL / CTLH luffers, CBR and CSE self-erects. Terex tower and self-erect now sit under Raimondi. Data sheets download from each product page on raimondi.com. Serial manuals stay in the cab. Complete the 1415 form for this class.",
+        text: "Raimondi MRT and T-series flat-top. LR rope luffers and LRH174 hydraulic. Terex CTT flat-top, CTL / CTLH luffers, CBR and CSE self-erects. Terex tower and self-erect now sit under Raimondi. Data sheets download from each product page on raimondi.com. Serial manuals stay in the cab. Complete the GOSPEL form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/raimondi-flat-top",
-        label: "RAIMONDI FLAT-TOP — 1415-CRN-015 →",
+        label: "RAIMONDI FLAT-TOP — GOSPEL-CRN-015 →",
       },
       {
         type: "cta",
         href: "/safety/crane/terex-ctt",
-        label: "TEREX CTT — 1415-CRN-017 →",
+        label: "TEREX CTT — GOSPEL-CRN-017 →",
       },
       {
         type: "cta",
         href: "/safety/crane/terex-self-erect",
-        label: "TEREX SELF-ERECTING — 1415-CRN-019 →",
+        label: "TEREX SELF-ERECTING — GOSPEL-CRN-019 →",
       },
       {
         type: "h",
@@ -1650,17 +1650,17 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Flat-top J165 / J235. HPA hydraulic luffers. PA rope luffers. Published EN 14439 C25 and FEM 1001 sheets download from jaso.com/tower. Serial manuals stay in the cab. Smartlink and Eco Mode where fitted. Complete the 1415 form for this class.",
+        text: "Flat-top J165 / J235. HPA hydraulic luffers. PA rope luffers. Published EN 14439 C25 and FEM 1001 sheets download from jaso.com/tower. Serial manuals stay in the cab. Smartlink and Eco Mode where fitted. Complete the GOSPEL form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/jaso-flat-top",
-        label: "JASO FLAT TOP — 1415-CRN-020 →",
+        label: "JASO FLAT TOP — GOSPEL-CRN-020 →",
       },
       {
         type: "cta",
         href: "/safety/crane/jaso-hpa",
-        label: "JASO HPA — 1415-CRN-021 →",
+        label: "JASO HPA — GOSPEL-CRN-021 →",
       },
       {
         type: "h",
@@ -1668,42 +1668,42 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "SK hammerhead. SN rope luffers. SKK 140 articulated jib. Morrow published the North American range sheets. Peiner built them. Terex took Peiner in 1998. Current Terex SK sits under Raimondi. Serial manuals stay in the cab. Complete the 1415 form for this class.",
+        text: "SK hammerhead. SN rope luffers. SKK 140 articulated jib. Morrow published the North American range sheets. Peiner built them. Terex took Peiner in 1998. Current Terex SK sits under Raimondi. Serial manuals stay in the cab. Complete the GOSPEL form for this class.",
       },
       {
         type: "cta",
         href: "/safety/crane/pecco-sk",
-        label: "PECCO SK — 1415-CRN-023 →",
+        label: "PECCO SK — GOSPEL-CRN-023 →",
       },
       {
         type: "cta",
         href: "/safety/crane/pecco-sn",
-        label: "PECCO SN — 1415-CRN-024 →",
+        label: "PECCO SN — GOSPEL-CRN-024 →",
       },
       {
         type: "cta",
         href: "/safety/form/tower-pre-use",
-        label: "TOWER PRE-USE — 1415-FRM-027 →",
+        label: "TOWER PRE-USE — GOSPEL-FRM-027 →",
       },
       {
         type: "cta",
         href: "/safety/form/luffing-jib-inspection",
-        label: "LUFFING JIB INSPECTION — 1415-FRM-028 →",
+        label: "LUFFING JIB INSPECTION — GOSPEL-FRM-028 →",
       },
       {
         type: "cta",
         href: "/safety/form/self-erect-inspection",
-        label: "SELF-ERECT INSPECTION — 1415-FRM-029 →",
+        label: "SELF-ERECT INSPECTION — GOSPEL-FRM-029 →",
       },
       {
         type: "cta",
         href: "/safety/form/tower-weekly-maintenance",
-        label: "TOWER WEEKLY MAINTENANCE — 1415-FRM-030 →",
+        label: "TOWER WEEKLY MAINTENANCE — GOSPEL-FRM-030 →",
       },
       {
         type: "cta",
         href: "/safety/form/tower-monthly-maintenance",
-        label: "TOWER MONTHLY MAINTENANCE — 1415-FRM-031 →",
+        label: "TOWER MONTHLY MAINTENANCE — GOSPEL-FRM-031 →",
       },
       {
         type: "h",
@@ -1746,15 +1746,15 @@ export const SAFETY: SafetySection[] = [
       {
         type: "list",
         items: [
-          "1415-POL — policies",
-          "1415-SWP — safe work procedures",
-          "1415-JHA — job hazard analyses",
-          "1415-SJP — this lift, this site, this day",
-          "1415-FRM — forms",
-          "1415-BND — crane site binders",
-          "1415-SDS — safety data sheets in this library",
-          "1415-CRN — crane charts and inspection packs",
-          "1415-RPT — field reports",
+          "GOSPEL-POL — policies",
+          "GOSPEL-SWP — safe work procedures",
+          "GOSPEL-JHA — job hazard analyses",
+          "GOSPEL-SJP — this lift, this site, this day",
+          "GOSPEL-FRM — forms",
+          "GOSPEL-BND — crane site binders",
+          "GOSPEL-SDS — safety data sheets in this library",
+          "GOSPEL-CRN — crane charts and inspection packs",
+          "GOSPEL-RPT — field reports",
         ],
       },
       {
@@ -1763,7 +1763,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Revision 01. Effective 2026-09-01. Owner: 1415 Safety. Approved by: 1415. Review by: 2027-09-01. Documents on this website are the current version. Printed copies are uncontrolled the moment they leave the screen — check the number and revision before you use a photocopy.",
+        text: "Revision 01. Effective 2026-09-01. Owner: GOSPEL Safety. Approved by: GOSPEL. Review by: 2027-09-01. Documents on this website are the current version. Printed copies are uncontrolled the moment they leave the screen — check the number and revision before you use a photocopy.",
       },
       {
         type: "h",
@@ -1785,7 +1785,7 @@ export const SAFETY: SafetySection[] = [
     title: "OHS MANAGEMENT SYSTEM",
     kicker: "Documentation is not implementation.",
     intro:
-      "Proven is 1415’s occupational health and safety management system for crane and rigging work. WorkSafeBC s. 3.3 names what a formal program must contain. BCCSA COR® measures the CFCSA 14 elements. The tables below map those requirements to the documents, forms, records, owners and frequencies that already live in this system.",
+      "Proven is GOSPEL’s occupational health and safety management system for crane and rigging work. WorkSafeBC s. 3.3 names what a formal program must contain. BCCSA COR® measures the CFCSA 14 elements. The tables below map those requirements to the documents, forms, records, owners and frequencies that already live in this system.",
     blocks: [
       {
         type: "quote",
@@ -1808,7 +1808,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "OHS Regulation 3.1: a 3.3 program is required if the employer has 20 or more workers and at least one workplace with a moderate or high hazard rating under Schedule 3-A, or 50 or more workers. An officer can also require one. Crane and rigging work is high-hazard work. 1415 maintains this written program because the work requires it and because COR® certification is of this system. If a 1415-controlled workplace is below the 3.1 threshold, 3.2 still requires monthly meetings with workers and a record of what was discussed — 1415-FRM-033. This program is not an excuse to skip that.",
+        text: "OHS Regulation 3.1: a 3.3 program is required if the employer has 20 or more workers and at least one workplace with a moderate or high hazard rating under Schedule 3-A, or 50 or more workers. An officer can also require one. Crane and rigging work is high-hazard work. GOSPEL maintains this written program because the work requires it and because COR® certification is of this system. If a GOSPEL-controlled workplace is below the 3.1 threshold, 3.2 still requires monthly meetings with workers and a record of what was discussed — GOSPEL-FRM-033. This program is not an excuse to skip that.",
       },
       {
         type: "h",
@@ -1859,26 +1859,26 @@ export const SAFETY: SafetySection[] = [
       {
         type: "list",
         items: [
-          "Joint committee or worker representative — Act Part 2 Division 5, per workplace. 1415-POL-026.",
-          "First aid — Part 3 Division 4 and Schedule 3-A, per workplace. Host site: host’s first aid. 1415-controlled workplace: 1415’s assessment. 1415-POL-025.",
-          "Prime contractor — multiple-employer workplaces as the Act requires. 1415 is usually the contractor. 1415-POL-027.",
-          "Young or new worker orientation — 3.23 before they begin, every workplace. 1415-FRM-015.",
+          "Joint committee or worker representative — Act Part 2 Division 5, per workplace. GOSPEL-POL-026.",
+          "First aid — Part 3 Division 4 and Schedule 3-A, per workplace. Host site: host’s first aid. GOSPEL-controlled workplace: GOSPEL’s assessment. GOSPEL-POL-025.",
+          "Prime contractor — multiple-employer workplaces as the Act requires. GOSPEL is usually the contractor. GOSPEL-POL-027.",
+          "Young or new worker orientation — 3.23 before they begin, every workplace. GOSPEL-FRM-015.",
         ],
       },
       {
         type: "cta",
         href: "/safety/form/management-review",
-        label: "MANAGEMENT OHS REVIEW — 1415-FRM-032 →",
+        label: "MANAGEMENT OHS REVIEW — GOSPEL-FRM-032 →",
       },
       {
         type: "cta",
         href: "/safety/policy/continuous-improvement",
-        label: "1415-POL-016 — CONTINUOUS IMPROVEMENT →",
+        label: "GOSPEL-POL-016 — CONTINUOUS IMPROVEMENT →",
       },
       {
         type: "cta",
         href: "/safety/policy/contractors",
-        label: "1415-POL-027 — CONTRACTORS AND MULTI-EMPLOYER SITES →",
+        label: "GOSPEL-POL-027 — CONTRACTORS AND MULTI-EMPLOYER SITES →",
       },
     ],
   },
@@ -1888,7 +1888,7 @@ export const SAFETY: SafetySection[] = [
     title: "CRANE BINDERS",
     kicker: "The file that goes with the NOP-TC.",
     intro:
-      "A tower or self-erect on a B.C. construction site needs a site binder. BC Crane Safety wrote the checklists. WorkSafeBC requires the Notice of Project — Tower Crane. The wizard builds the 1415 copy: numbered items, who holds them, and the downloadable forms.",
+      "A tower or self-erect on a B.C. construction site needs a site binder. BC Crane Safety wrote the checklists. WorkSafeBC requires the Notice of Project — Tower Crane. The wizard builds the GOSPEL copy: numbered items, who holds them, and the downloadable forms.",
     library: "binder",
     blocks: [
       {
@@ -1917,8 +1917,8 @@ export const SAFETY: SafetySection[] = [
         items: [
           "Walks the numbered BC Crane Safety items for that class.",
           "Marks each item in binder, missing, or N/A — and who holds it.",
-          "Opens the 1415 form and the official download (30M33, 52E73C, NOP-TC, tower crane report, NAV CANADA).",
-          "Downloads a 1415 checklist PDF for this site. Saved on this device.",
+          "Opens the GOSPEL form and the official download (30M33, 52E73C, NOP-TC, tower crane report, NAV CANADA).",
+          "Downloads a GOSPEL checklist PDF for this site. Saved on this device.",
         ],
       },
       {
@@ -1937,7 +1937,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/form/nop-tc-notice",
-        label: "NOP-TC POSTING NOTICE — 1415-FRM-039 →",
+        label: "NOP-TC POSTING NOTICE — GOSPEL-FRM-039 →",
       },
       {
         type: "h",
@@ -1945,22 +1945,22 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Official paper stays official. 1415 sheets are the working copy and the cover. Form 30M33 is coded by WorkSafeBC — order it; the 1415 record is the schematic and the discussion. Radio coordination is 52E73C. The tower crane report is WorkSafeBC’s checklist after erect, climb or reposition.",
+        text: "Official paper stays official. GOSPEL sheets are the working copy and the cover. Form 30M33 is coded by WorkSafeBC — order it; the GOSPEL record is the schematic and the discussion. Radio coordination is 52E73C. The tower crane report is WorkSafeBC’s checklist after erect, climb or reposition.",
       },
       {
         type: "cta",
         href: "/safety/form/powerline-30m33",
-        label: "30M33 / POWERLINE RECORD — 1415-FRM-037 →",
+        label: "30M33 / POWERLINE RECORD — GOSPEL-FRM-037 →",
       },
       {
         type: "cta",
         href: "/safety/form/radio-frequency",
-        label: "RADIO FREQUENCY — 1415-FRM-038 →",
+        label: "RADIO FREQUENCY — GOSPEL-FRM-038 →",
       },
       {
         type: "cta",
         href: "/safety/form/tower-crane-report",
-        label: "TOWER CRANE REPORT — 1415-FRM-041 →",
+        label: "TOWER CRANE REPORT — GOSPEL-FRM-041 →",
       },
       {
         type: "h",
@@ -1968,7 +1968,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Table of contents, notes, and OHSR / CSA info files live on BC Crane Safety. Use them. This program does not host their PDFs as if they were 1415 documents.",
+        text: "Table of contents, notes, and OHSR / CSA info files live on BC Crane Safety. Use them. This program does not host their PDFs as if they were GOSPEL documents.",
       },
       {
         type: "cta",

@@ -25,7 +25,7 @@ export default async function ReportPage({ params }: Props) {
   return (
     <SafetyDocFrame
       kicker="FIELD REPORT"
-      num={doc.number.replace("1415-", "")}
+      num={doc.number.replace("GOSPEL-", "")}
       title={doc.title}
       intro={doc.summary}
       backHref="/safety/incident-reporting"

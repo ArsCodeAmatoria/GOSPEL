@@ -5,7 +5,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Hire a crew",
   description:
-    "Request crane operators, riggers, signalpersons, crane supervisors or safety support from 1415.",
+    "Request crane operators, riggers, signalpersons, crane supervisors or safety support from GOSPEL.",
 };
 
 export default function HirePage() {

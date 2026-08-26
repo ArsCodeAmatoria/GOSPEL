@@ -5,7 +5,7 @@
  *   USER REQUEST → (later) AI → APPROVED SAFETY BLOCKS → FORM SCHEMA → builder
  *
  * The AI must only return BlockType values from BLOCK_CATALOG.
- * It must not invent 1415 policy, SWP steps, or regulatory text.
+ * It must not invent GOSPEL policy, SWP steps, or regulatory text.
  */
 import { BLOCK_CATALOG } from "./blocks";
 import { assembleForm } from "./assemble";
@@ -30,8 +30,8 @@ export function draftFormFromApprovedBlocks(
   return assembleForm({
     id: nid("form"),
     title,
-    number: "1415-FRM-DRAFT",
-    description: "Draft assembled from approved 1415 Safety Blocks only.",
+    number: "GOSPEL-FRM-DRAFT",
+    description: "Draft assembled from approved GOSPEL Safety Blocks only.",
     blocks,
   });
 }
