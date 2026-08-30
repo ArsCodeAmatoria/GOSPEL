@@ -1,5 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Mono, IBM_Plex_Sans, Oswald } from "next/font/google";
+import {
+  Alumni_Sans,
+  IBM_Plex_Mono,
+  IBM_Plex_Sans,
+  Oswald,
+} from "next/font/google";
 import { Header } from "@/components/Header";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SITE } from "@/lib/site";
@@ -9,6 +14,12 @@ const display = Oswald({
   subsets: ["latin"],
   variable: "--font-display",
   weight: ["500", "600", "700"],
+});
+
+const brand = Alumni_Sans({
+  subsets: ["latin"],
+  variable: "--font-brand",
+  weight: ["700", "800"],
 });
 
 const sans = IBM_Plex_Sans({
@@ -55,7 +66,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${display.variable} ${sans.variable} ${mono.variable}`}>
+      <body
+        className={`${display.variable} ${brand.variable} ${sans.variable} ${mono.variable}`}
+      >
         <div className="grain" aria-hidden />
         <Header />
         <main id="content" className="main">
