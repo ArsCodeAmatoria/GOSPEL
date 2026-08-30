@@ -87,7 +87,7 @@ export const ARTICLES: WireArticle[] = [
           {
             n: "01",
             title: "H / L = 0.500    θ = 30°",
-            body: "H is half of L. This is the floor GOSPEL will still rig without an engineer. Tension in each leg equals the whole load. GOSPEL-SWP-010.",
+            body: "H is half of L. This is the floor the procedure still allows without an engineer. Tension in each leg equals the whole load. GOSPEL-SWP-010.",
           },
           {
             n: "02",
@@ -218,7 +218,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "WorkSafeBC is the Board. It does not sell cranes and it does not write CSA or ASME. It writes and enforces the Regulation. Officers inspect, issue orders, and can stop work. The duties sit on the employer, the supervisor, the owner, the prime contractor where there is one, and the worker. A workforce company does not get a free pass because the crane belongs to someone else.",
+        text: "WorkSafeBC is the Board. It does not sell cranes and it does not write CSA or ASME. It writes and enforces the Regulation. Officers inspect, issue orders, and can stop work. The duties sit on the employer, the supervisor, the owner, the prime contractor where there is one, and the worker. The crane belonging to someone else does not get anyone a free pass.",
       },
       {
         type: "p",
@@ -347,7 +347,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "GOSPEL is a complete crane operations and rigging company. The people and the systems. The work is done to the Regulation, to the standards the Regulation names, to the manufacturer, and to the site. Where they conflict, the stricter applicable requirement wins. Law always wins. That is already on the homepage. This is what those letters actually point at.",
+        text: "The work is done to the Regulation, to the standards the Regulation names, to the manufacturer, and to the site. Where they conflict, the stricter applicable requirement wins. Law always wins. That is already on the homepage. This is what those letters actually point at.",
       },
       {
         type: "cta",
@@ -596,7 +596,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "θ is the sling angle: the angle between the sling and the horizontal. ASME talks about it that way. GOSPEL talks about it that way. It is not the angle between the two legs at the hook. Mix those up and your number is for a different lift than the one in front of you.",
+        text: "θ is the sling angle: the angle between the sling and the horizontal. ASME talks about it that way. This program talks about it that way. It is not the angle between the two legs at the hook. Mix those up and your number is for a different lift than the one in front of you.",
       },
       {
         type: "p",
@@ -633,7 +633,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "On site we compare kilograms of tension to a WLL in kilograms. The sine does not care. Keep W and T in the same unit.",
+        text: "On site, kilograms of tension are compared to a WLL in kilograms. The sine does not care. Keep W and T in the same unit.",
       },
       {
         type: "steps",
@@ -676,7 +676,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "Below 30° we do not rig that way unless an engineer owns the numbers. sin(20°) is 0.342. The factor is 2.92. You are no longer 'spreading the slings a bit.' You are multiplying the load.",
+        text: "Below 30° that hitch is not used unless an engineer owns the numbers. sin(20°) is 0.342. The factor is 2.92. You are no longer 'spreading the slings a bit.' You are multiplying the load.",
       },
       {
         type: "h",
@@ -766,7 +766,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "Tickets keep people who have never been trained off the hook. They give a client, a prime contractor and a supervisor a first filter. GOSPEL will not dispatch a rigger without the paper that the work requires. That is the floor.",
+        text: "Tickets keep people who have never been trained off the hook. They give a client, a prime contractor and a supervisor a first filter. A rigger without the paper the work requires does not take the hook. That is the floor.",
       },
       {
         type: "p",
@@ -796,15 +796,15 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "h",
-        text: "HOW GOSPEL TREATS THIS",
+        text: "THE STANDARD",
       },
       {
         type: "p",
-        text: "We verify qualifications first. Then we verify experience against the work. Then we brief. If we cannot stand behind the person for this dispatch, we do not send them. A client who wants a name and a photocopy of a ticket is asking for the cheapest version of the job. We will not pretend that is the same product.",
+        text: "Qualifications are verified first. Then experience against the work. Then the brief. If the person cannot be stood behind for this lift, they do not take the hook. A name and a photocopy of a ticket is not the same as competency.",
       },
       {
         type: "p",
-        text: "If you are hiring a crew, ask what was checked besides the ticket. If the answer is nothing, you are not hiring competency. You are hiring paper.",
+        text: "If you are supervising a crew, ask what was checked besides the ticket. If the answer is nothing, competency was not checked. Paper was.",
       },
       {
         type: "cta",
@@ -820,14 +820,14 @@ export const ARTICLES: WireArticle[] = [
   },
   {
     slug: "why-we-made-our-safety-program-public",
-    title: "WHY WE MADE PROVEN PUBLIC.",
-    titleLines: ["WHY WE MADE", "PROVEN", "PUBLIC."],
+    title: "WHY PROVEN IS PUBLIC.",
+    titleLines: ["WHY PROVEN", "IS", "PUBLIC."],
     category: "SAFETY",
     excerpt:
       "If people have to ask permission to see how you expect the work to be done, you do not have a safety program. You have a filing cabinet.",
     author: "GOSPEL",
     published: "2026-08-13",
-    seoTitle: "Why We Made Proven Public",
+    seoTitle: "Why Proven Is Public",
     seoDescription:
       "Proven is public. No portal, no request form, no expiring link. Here is why.",
     related: [
@@ -838,15 +838,15 @@ export const ARTICLES: WireArticle[] = [
     blocks: [
       {
         type: "p",
-        text: "Most company safety programs live in a PDF on a shared drive, a binder in a trailer, or a portal that expires in seven days. The people who need them most — the operator on nights, the rigger who just got dispatched, the client deciding whether to hire you — cannot read them when it counts.",
+        text: "Most company safety programs live in a PDF on a shared drive, a binder in a trailer, or a portal that expires in seven days. The people who need them most — the operator on nights, the rigger at the hook, the supervisor at the gate — cannot read them when it counts.",
       },
       {
         type: "p",
-        text: "GOSPEL put Proven on the website. Not a summary. The system. If you cannot work that way, do not hire us.",
+        text: "Proven is on this website. Not a summary. The system. If a procedure cannot be followed on site, it is not a procedure.",
       },
       {
         type: "quote",
-        text: "We don't believe safety should be hidden behind a login or an expiring link.",
+        text: "Safety should not be hidden behind a login or an expiring link.",
       },
       {
         type: "h",
@@ -854,11 +854,11 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "People say the program is proprietary. It is not. The physics of a lift is not a trade secret. People say workers will steal procedures. Good. If another crew uses a better method because they read ours, the site is safer. People say lawyers want it locked down. Lawyers do not rig the load.",
+        text: "People say the program is proprietary. It is not. The physics of a lift is not a trade secret. People say workers will steal procedures. Good. If another crew uses a better method because they read these procedures, the site is safer. People say lawyers want it locked down. Lawyers do not rig the load.",
       },
       {
         type: "p",
-        text: "A public program also has a cost: you have to mean it. You cannot publish a procedure and then dispatch people who have never seen it. You cannot write a right to refuse and then punish the person who uses it. Publication is a commitment, not a marketing page.",
+        text: "A public program also has a cost: you have to mean it. You cannot publish a procedure and then put people on a lift who have never seen it. You cannot write a right to refuse and then punish the person who uses it. Publication is a commitment, not a marketing page.",
       },
       {
         type: "h",
@@ -867,15 +867,15 @@ export const ARTICLES: WireArticle[] = [
       {
         type: "list",
         items: [
-          "Workers, before they accept a dispatch.",
-          "Clients, before they hire us.",
+          "Workers, before they start the lift.",
           "Supervisors, on the day, on a phone, at the gate.",
-          "Contractors who want to know what GOSPEL will and will not do.",
+          "Contractors and clients who want to know the standard.",
+          "Anyone who has to live with the consequence if the lift goes wrong.",
         ],
       },
       {
         type: "p",
-        text: "COR certification is a separate layer. It is an independent look at whether we maintain an occupational health and safety management system. It is not a substitute for letting people read the actual rules of the work.",
+        text: "COR certification is a separate layer. It is an independent look at whether an occupational health and safety management system is maintained. It is not a substitute for letting people read the actual rules of the work.",
       },
       {
         type: "p",
@@ -948,7 +948,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "If you are hiring, watch the setup. If you are dispatching, ask what they would refuse. A rigger who cannot name a refusal has not been in enough real work — or has been in the wrong rooms.",
+        text: "Watch the setup. Ask what they would refuse. A rigger who cannot name a refusal has not been in enough real work — or has been in the wrong rooms.",
       },
       {
         type: "cta",
@@ -1001,7 +1001,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "h",
-        text: "THE RULE WE USE",
+        text: "THE RULE",
       },
       {
         type: "p",
@@ -1009,7 +1009,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "When a client tells us a lift is simple, we treat that as a request for speed, not a fact about the load. We will still ask the questions. If that bothers you, you want a different kind of crew.",
+        text: "When someone calls a lift simple, that is a request for speed, not a fact about the load. The questions still get asked. A lift that skips the questions is not a planned lift.",
       },
       {
         type: "cta",
@@ -1183,7 +1183,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "Then we act surprised when people improvise. They did not ignore the system. They could not reach it.",
+        text: "Then people act surprised when others improvise. They did not ignore the system. They could not reach it.",
       },
       {
         type: "quote",
@@ -1203,7 +1203,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "GOSPEL's answer is blunt. Proven is public. COR is stated in public. If a document matters to the work, it should survive daylight.",
+        text: "The answer is blunt. Proven is public. COR is stated in public. If a document matters to the work, it should survive daylight.",
       },
       {
         type: "cta",
@@ -1257,16 +1257,16 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "GOSPEL supplies people as a coordinated team when the work needs it. That costs more than sending whoever is free. It also means the operator is not meeting the rigger for the first time under a load that 'should only take a minute.'",
+        text: "A lift needs a crew that already shares a standard. That is more than a list of names. It means the operator is not meeting the rigger for the first time under a load that 'should only take a minute.'",
       },
       {
         type: "p",
-        text: "If you are buying labour by the headcount, say that. If you are buying a lift that has to go right, buy a crew.",
+        text: "If you are counting heads, say that. If the lift has to go right, you need a crew that already knows how the other works.",
       },
       {
         type: "cta",
-        href: "/crew",
-        label: "THE CREW →",
+        href: "/safety",
+        label: "READ PROVEN →",
       },
     ],
   },
@@ -1290,11 +1290,11 @@ export const ARTICLES: WireArticle[] = [
     blocks: [
       {
         type: "p",
-        text: "A dispatch that says 'crane and rigger, Tuesday, downtown' is not a brief. It is a calendar entry. The crew will invent the rest on site, and you will not like some of the inventions.",
+        text: "A note that says 'crane and rigger, Tuesday, downtown' is not a brief. It is a calendar entry. The crew will invent the rest on site, and you will not like some of the inventions.",
       },
       {
         type: "p",
-        text: "GOSPEL will not guess what you need. Before anyone is named, we want the work, the site, the machines and the dates. Before they arrive, the worker gets the hazards and the procedure. You get the name, the tickets and the plan.",
+        text: "Before anyone starts, they need the work, the site, the machines and the dates. Before they arrive, they get the hazards and the procedure. Guessing is not a brief.",
       },
       {
         type: "h",
@@ -1312,7 +1312,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "quote",
-        text: "If we cannot tell you who is coming and what they are walking into, we are not ready to send them.",
+        text: "If you cannot tell who is coming and what they are walking into, you are not ready to start.",
       },
       {
         type: "p",
@@ -1324,8 +1324,8 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "cta",
-        href: "/hire",
-        label: "HIRE A CREW →",
+        href: "/safety",
+        label: "READ PROVEN →",
       },
       {
         type: "cta",

@@ -42,8 +42,8 @@ export function Header() {
           >
             {open ? "CLOSE" : "MENU"}
           </button>
-          <Link className="btn btn-solid" href="/hire">
-            HIRE A CREW
+          <Link className="btn btn-solid" href="/safety">
+            PROVEN
           </Link>
         </div>
       </header>
@@ -67,7 +67,6 @@ export function Header() {
         </nav>
         <div className="overlay-foot mono">
           <span>{SITE.location}</span>
-          <a href={SITE.phoneHref}>{SITE.phone}</a>
           <a href={SITE.emailHref}>{SITE.email}</a>
         </div>
       </div>

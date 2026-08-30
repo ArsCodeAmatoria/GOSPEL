@@ -23,7 +23,7 @@ export const REPORTS: ReportKind[] = [
     slug: "damaged-rigging",
     title: "REPORT DAMAGED RIGGING",
     number: "GOSPEL-RPT-004",
-    summary: "Cuts, birdcaging, missing tags, opened hooks, mystery pins. Tag it. Isolate it. Tell GOSPEL.",
+    summary: "Cuts, birdcaging, missing tags, opened hooks, mystery pins. Tag it. Isolate it. Tell the supervisor.",
   },
   {
     slug: "equipment-defect",
@@ -36,7 +36,7 @@ export const REPORTS: ReportKind[] = [
     title: "REPORT BULLYING OR HARASSMENT",
     number: "GOSPEL-RPT-006",
     summary:
-      "Conduct or comment that humiliates or intimidates a GOSPEL worker. Including when the person is a supervisor or on a client site.",
+      "Conduct or comment that humiliates or intimidates a worker. Including when the person is a supervisor or on a host site.",
   },
 ];
 

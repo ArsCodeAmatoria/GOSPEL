@@ -324,7 +324,7 @@ export const JHAS: Jha[] = [
         {
           task: "Confirm the machine",
           level: "high",
-          hazard: "Counterweight, boom, software or tyres not as dispatched",
+          hazard: "Counterweight, boom, software or tyres not as assigned",
           risk: "Chart does not apply. Overload without an alarm that matches reality. 14.2, 14.12.",
           control: "Serial, configuration and chart are the same machine. Manufacturer instructions in the cab.",
         },
@@ -365,7 +365,7 @@ export const JHAS: Jha[] = [
     "SUSPENDED LOAD",
     "Someone under it. Nobody on the crane. Wind on a hanging piece.",
     {
-      job: "Any time a load is off the ground on a GOSPEL lift. Method: GOSPEL-SWP-017. 14.44, 14.45.",
+      job: "Any time a load is off the ground on a lift under this program. Method: GOSPEL-SWP-017. 14.44, 14.45.",
       people: ["Everyone who can walk under the hook", "Operator", "Tag-line hands", "Trades using the shadow as a shortcut"],
       swpHref: "/safety/swp/suspended-loads",
       swpLabel: "SWP — SUSPENDED LOADS →",
@@ -593,7 +593,7 @@ export const JHAS: Jha[] = [
           task: "Drop",
           level: "high",
           hazard: "Table still snagged. Crane used to strip. People under the table.",
-          risk: "Sudden load, structural damage, crush. Host duty under Part 20 — GOSPEL does not take load to drop jacks.",
+          risk: "Sudden load, structural damage, crush. Host duty under Part 20 — the crane does not take load to drop jacks.",
           control: "Formwork drops per OEM. Crane on standby. Zone clear. Confirm free of the slab before any hoist.",
         },
         {
@@ -827,9 +827,9 @@ export const JHAS: Jha[] = [
         {
           task: "Retractable daily",
           level: "high",
-          hazard: "Crane still hooked while SuperDeck / Super Roller / DOC rolls. GOSPEL asked to retract it.",
+          hazard: "Crane still hooked while SuperDeck / Super Roller / DOC rolls. The crew asked to retract it.",
           risk: "Side-load. Snag. Dump.",
-          control: "Daily extend and retract is host. Preston: no licence to roll it. GOSPEL hooks only for install, reposition, strike — empty.",
+          control: "Daily extend and retract is host. Preston: no licence to roll it. The crane hooks only for install, reposition, strike — empty.",
         },
       ],
     }
@@ -895,7 +895,7 @@ export const JHAS: Jha[] = [
           level: "high",
           hazard: "Back on the hook when the rain stops. Struck crane restarted to check the LMI.",
           risk: "Second cell. Hidden damage. Collapse or control failure.",
-          control: "30 minutes after last rumble. Then inspect. Strike: 14.16.1 engineer. Electrical hit: owner / Technical Safety BC electrical — not a GOSPEL restart.",
+          control: "30 minutes after last rumble. Then inspect. Strike: 14.16.1 engineer. Electrical hit: owner / Technical Safety BC electrical — not a restart under this procedure.",
         },
       ],
     }

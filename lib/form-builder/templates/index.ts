@@ -392,7 +392,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
     title: "INCIDENT REPORT",
     number: "GOSPEL-FRM-010",
     group: "Incident",
-    description: "Facts. We do not hide the dent.",
+    description: "Facts. Do not hide the dent.",
     blocks: [
       { type: "worker" },
       { type: "project" },
@@ -429,7 +429,7 @@ export const FORM_TEMPLATES: WhoopFormDef[] = [
     title: "FIRST AID REPORT",
     number: "GOSPEL-FRM-012",
     group: "Incident",
-    description: "Site first aid and GOSPEL. Regulator as the law requires.",
+    description: "Site first aid and the employer. Regulator as the law requires.",
     blocks: [
       { type: "worker" },
       { type: "project" },

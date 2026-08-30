@@ -257,7 +257,7 @@ export const YOUNG_NEW_WORKER_ITEMS = [
   "Hazards of this workplace",
   "Working alone",
   "Violence / bullying",
-  "PPE for this dispatch",
+  "PPE for this lift",
   "First aid location and how to summon it",
   "Emergency procedures",
   "Task shown, not just told",
@@ -345,7 +345,7 @@ export const THARRP_COVER_ITEMS = [
   "Fire department named",
   "Operator knows how to summon them",
   "Formal survey on site if high-rise past 60 days",
-  "GOSPEL confirmed before dispatch",
+  "Confirmed before the lift",
 ];
 
 export const NAVCAN_ITEMS = [

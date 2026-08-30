@@ -7,7 +7,7 @@ export const SJPS: Sjp[] = [
     title: "FLYTABLE CYCLE",
     number: "GOSPEL-SJP-001",
     summary: "This table. This floor. This drawing revision. Not last cycle’s sheet.",
-    when: "Every flytable / flyform cycle GOSPEL hooks. Critical lift. Fill GOSPEL-FRM-052. Typical tables only — corner and nontypical use GOSPEL-SJP-002 on the same form.",
+    when: "Every flytable / flyform cycle the crane hooks. Critical lift. Fill GOSPEL-FRM-052. Typical tables only — corner and nontypical use GOSPEL-SJP-002 on the same form.",
     purpose:
       "Name the facts the SWP cannot know until this morning: table ID, drawing revision, weight, pick points, sling lengths, wind number, named crew, holds. The method stays GOSPEL-SWP-028. If this sheet contradicts the SWP, stop and fix one of them before the hook moves.",
     basedOn: [
@@ -72,7 +72,7 @@ export const SJPS: Sjp[] = [
       "Spotter — drop floor",
       "Spotter — landing floor",
       "Prime contact",
-      "GOSPEL supervisor if dispatched",
+      "Lift supervisor",
     ],
     documentation: [
       "This SJP / GOSPEL-FRM-052",
@@ -151,7 +151,7 @@ export const SJPS: Sjp[] = [
     title: "LOADING PLATFORM",
     number: "GOSPEL-SJP-003",
     summary: "This deck. This floor. This serial. Empty. Not last floor’s sheet.",
-    when: "Every loading-platform install, reposition or strike GOSPEL hooks. Critical lift. Fill GOSPEL-FRM-053. Daily SuperDeck extend / retract is not this sheet.",
+    when: "Every loading-platform install, reposition or strike the crane hooks. Critical lift. Fill GOSPEL-FRM-053. Daily SuperDeck extend / retract is not this sheet.",
     purpose:
       "Name the facts the SWP cannot know until this morning: manufacturer, serial, dead weight, WLL, pick points, chain, wind number, named crew, holds. The method stays GOSPEL-SWP-030. If this sheet contradicts the SWP, stop and fix one of them before the hook moves.",
     basedOn: [
@@ -214,7 +214,7 @@ export const SJPS: Sjp[] = [
       "Tag-line hands",
       "Platform supervisor (host)",
       "Prime contact",
-      "GOSPEL supervisor if dispatched",
+      "Lift supervisor",
     ],
     documentation: [
       "This SJP / GOSPEL-FRM-053",

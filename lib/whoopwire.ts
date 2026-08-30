@@ -4,8 +4,8 @@ import type { Step } from "@/lib/safety";
 export const WIRE = {
   name: "GOSPELWIRE",
   descriptor: "SAFETY. RIGGING. CRANES. PEOPLE.",
-  dek: "The things worth talking about in crane work, rigging, safety and the people who do it.",
-  subscribe: "New stories on safety, rigging, cranes and the people doing the work.",
+  dek: "The things worth talking about in crane safety, rigging and the people who do the work.",
+  subscribe: "New stories on crane safety, rigging and the people doing the work.",
 } as const;
 
 export const WIRE_CATEGORIES = [

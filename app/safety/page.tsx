@@ -10,7 +10,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Proven",
   description:
-    "Proven is GOSPEL's safety system. Read how we expect crane and rigging work to be performed — CSA Z150 / Z248, WorkSafeBC, BC Crane Safety, Technical Safety BC, ASME B30, manufacturer requirements and site policies.",
+        "Proven is GOSPEL's crane safety program. Read how lifting work is expected to be performed — CSA Z150 / Z248, WorkSafeBC, BC Crane Safety, Technical Safety BC, ASME B30, manufacturer requirements and site policies.",
 };
 
 export default function SafetyIndexPage() {
@@ -28,10 +28,10 @@ export default function SafetyIndexPage() {
         </h1>
         <p className="lede mt-2">
           Proven is the platform behind the lift. People, process and
-          documentation — organized, verified and accountable. Clients, workers
-          and contractors can read how we expect work to be performed before
-          they hire us. No request form. No expiring link. No PDF as the
-          primary experience.
+          documentation — organized, verified and accountable. Operators,
+          riggers, supervisors, contractors and clients can read how the work
+          is expected to be performed before the gate. No request form. No
+          expiring link. No PDF as the primary experience.
         </p>
       </header>
 
@@ -66,7 +66,7 @@ export default function SafetyIndexPage() {
 
       <p className="lede mt-2">
         Read it on a phone at the gate. Print a section if you need it on paper.
-        If you cannot work this way, do not hire us.
+        If the procedure cannot be followed, it is not the procedure.
       </p>
       <div id="standards" className="mt-2">
         <p className="mono steel">WHAT THE WORK IS DONE TO</p>
@@ -78,7 +78,7 @@ export default function SafetyIndexPage() {
         <StandardsList />
       </div>
       <p className="lede mt">
-        GOSPEL is COR® Certified through the BC Construction Safety Alliance.
+        Proven is COR® Certified through the BC Construction Safety Alliance.
         That certification is of Proven — our occupational health and safety
         management system — not a claim that incidents will never occur.{" "}
         <Link href="/#cor">COR CERTIFIED →</Link>

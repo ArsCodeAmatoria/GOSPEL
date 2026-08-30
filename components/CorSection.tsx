@@ -55,9 +55,8 @@ export function CorSection() {
       </h2>
       <p className="mono mt">Certificate of Recognition — COR®</p>
       <p className="lede mt">
-        GOSPEL maintains Proven — a certified occupational health and safety
-        management system — and is committed to continuous improvement in how we
-        plan, perform and verify our work.
+        Proven is a certified occupational health and safety management system
+        for lifting work — how the work is planned, performed and verified.
       </p>
       <div className="cor-grid">
         <div>
@@ -67,10 +66,9 @@ export function CorSection() {
             IS PUBLIC.
           </h3>
           <p className="lede mt">
-            We don&apos;t believe safety should be hidden behind a login or an
-            expiring link. Proven is available for clients and workers to
-            review, and our COR certification provides an independent framework
-            for maintaining and improving that system.
+            Safety information should not sit behind a login or an expiring
+            link. Proven is public. COR certification is an independent
+            framework for maintaining and improving that system.
           </p>
           <div className="rules mt-2">
             <article className="rule">
@@ -80,10 +78,10 @@ export function CorSection() {
               <p>Open to everyone.</p>
             </article>
             <article className="rule">
-              <h3 className="display">Our COR</h3>
+              <h3 className="display">COR</h3>
               <p>
-                Proves we take the system seriously. It certifies the management
-                system — not that incidents will never occur.
+                Certifies the management system — not that incidents will never
+                occur.
               </p>
             </article>
           </div>
@@ -94,24 +92,20 @@ export function CorSection() {
             <a className="btn btn-ghost" href={COR.packHref} download>
               DOWNLOAD COR PACK →
             </a>
-            <Link className="btn btn-ghost" href="/hire">
-              CONTACT GOSPEL →
+            <Link className="btn btn-ghost" href="/philosophy">
+              READ THE PHILOSOPHY →
             </Link>
           </div>
         </div>
         <CorPanel />
       </div>
       <p className="display giant-sm cor-close">
-        WE HAVE NOTHING
+        THE SYSTEM
         <br />
-        TO HIDE.
+        IS PUBLIC.
       </p>
       <p className="mono steel mt">
-        COR CERTIFIED. {SITE.system} — OPEN. CRANE + RIGGING — READY.
-      </p>
-      <p className="mono steel mt">
-        WE SHOW YOU OUR SYSTEM. WE SHOW YOU OUR CREDENTIALS. THEN WE SHOW UP AND
-        DO THE WORK.
+        COR CERTIFIED. {SITE.system} — OPEN. CRANE SAFETY — PUBLIC.
       </p>
     </section>
   );

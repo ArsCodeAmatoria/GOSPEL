@@ -74,15 +74,15 @@ export const SAFETY: SafetySection[] = [
     title: "COMPANY SAFETY POLICY",
     kicker: "The standard is not a poster.",
     intro:
-      "GOSPEL is a complete crane operations and rigging company. Qualified crane operators, riggers, signalpersons, crane supervisors and safety support — competent people on lifting work, to a published standard.",
+      "This site publishes crane safety information. Proven is the occupational health and safety management system — the published standard for how operators, riggers, signalpersons and supervisors plan, rig, signal and lift.",
     blocks: [
       {
         type: "quote",
-        text: "If we cannot say how the work should be done, we have no business sending people to do it.",
+        text: "If the work cannot be named, it is not a procedure.",
       },
       {
         type: "p",
-        text: "Proven is the company’s rulebook for lifting work. It applies to every worker GOSPEL deploys, every supervisor GOSPEL assigns, and every job we accept. Clients can read it before they hire us. Workers can read it before they accept a dispatch. That is deliberate.",
+        text: "Proven is the rulebook for lifting work. It applies to every operator, rigger, signalperson and supervisor working to this program. Anyone on the lift can read it before the gate. That is deliberate.",
       },
       {
         type: "h",
@@ -91,12 +91,12 @@ export const SAFETY: SafetySection[] = [
       {
         type: "list",
         items: [
-          "The minimum standard for how GOSPEL personnel plan, rig, signal and lift.",
+          "The minimum standard for how operators, riggers, signalpersons and supervisors plan, rig, signal and lift.",
           "A public document. It is not proprietary. It does not expire. It is not behind a form.",
           "Subordinate to law. Where applicable occupational health and safety law is stricter, the law wins. Where this program is stricter, this program wins.",
           "Written to be used. Procedures are sequenced the way the work actually happens.",
-          "Used with the site-specific hazard assessment and the client’s site rules. Where those rules are stricter or required, they apply.",
-          "The standard competent people work to. Competency is verified before placement.",
+          "Used with the site-specific hazard assessment and the site rules. Where those rules are stricter or required, they apply.",
+          "The standard competent people work to. A ticket is not competency.",
         ],
       },
       {
@@ -128,8 +128,8 @@ export const SAFETY: SafetySection[] = [
             body: "Stop-work authority is real. Workers who refuse unsafe work are backed. Incidents are reported.",
           },
           {
-            title: "No surprise no-shows.",
-            body: "Reliability is a safety control. A missing operator mid-lift is a hazard. If GOSPEL cannot fill a role, the client is told immediately.",
+            title: "No silent gaps.",
+            body: "A missing plan, a missing ticket or a missing stop is a hazard. If the work as described cannot be done to this program, it does not proceed.",
           },
         ],
       },
@@ -139,7 +139,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "GOSPEL is a complete crane operations and rigging company. The people and the systems. Lifting work is performed in accordance with the following. Where they conflict, the stricter applicable requirement wins. Law always wins. This program is written to sit on top of that stack, not beside it.",
+        text: "Lifting work under Proven is performed in accordance with the following. Where they conflict, the stricter applicable requirement wins. Law always wins. This program is written to sit on top of that stack, not beside it.",
       },
       {
         type: "list",
@@ -151,12 +151,12 @@ export const SAFETY: SafetySection[] = [
           "Technical Safety BC — applicable technical safety requirements for regulated equipment.",
           "ASME B30 — cranes, derricks, hoists, slings and related lifting equipment.",
           "Manufacturer requirements — load charts, manuals and configuration limits for the machine on site.",
-          "Site policies — the client’s site rules, orientations and lift plans. Where they are stricter, they win.",
+          "Site policies — the site rules, orientations and lift plans. Where they are stricter, they win.",
         ],
       },
       {
         type: "p",
-        text: "GOSPEL operates in Canada. Provincial occupational health and safety statutes, regulations and codes of practice apply on the site where the work is performed.",
+        text: "This program is written for work in Canada. Provincial occupational health and safety statutes, regulations and codes of practice apply on the site where the work is performed.",
       },
     ],
   },
@@ -166,21 +166,20 @@ export const SAFETY: SafetySection[] = [
     title: "RESPONSIBILITIES",
     kicker: "Who owns what.",
     intro:
-      "Lifting work fails when everybody assumes somebody else has it. GOSPEL supplies people into workplaces we do not always control. The split in responsibility has to be explicit.",
+      "Lifting work fails when everybody assumes somebody else has it. This program names who owns the plan, the stop and the standard. The split in responsibility has to be explicit.",
     blocks: [
       {
         type: "h",
-        text: "GOSPEL",
+        text: "THIS PROGRAM",
       },
       {
         type: "list",
         items: [
-          "Verify qualifications, experience and practical competency before dispatch.",
-          "Brief workers on Proven and the known scope of the job.",
-          "Supply personnel who are fit for work and ticketed for the role requested.",
-          "Refuse or stop a dispatch when the work as described cannot be done safely.",
           "Keep this program current and publicly available.",
-          "Investigate incidents involving GOSPEL personnel and share findings with the client as required.",
+          "Name the qualifications, experience and practical competency each role requires.",
+          "Name when the work as described cannot be done safely.",
+          "Investigate incidents reported under this program and share findings as required.",
+          "Write procedures that can be followed on a phone at the lift.",
         ],
       },
       {
@@ -209,7 +208,7 @@ export const SAFETY: SafetySection[] = [
           "Provide accurate information: load data, drawings, machine type, site constraints, known hazards.",
           "Provide or confirm engineered lift plans where the lift requires them.",
           "Ensure a prime contractor / site safety system is in place as required by law.",
-          "Do not direct GOSPEL personnel to skip this program or applicable law.",
+          "Do not direct anyone working to this program to skip it or applicable law.",
         ],
       },
       {
@@ -218,7 +217,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Workers Compensation Act s. 23. A supervisor GOSPEL sends — or a site supervisor directing our people — ensures the workers under their direct supervision are made aware of known or reasonably foreseeable health and safety hazards, and comply with the Act, the Regulation, and this program as it applies. They consult and cooperate with the joint committee or worker representative where there is one. They cooperate with WorkSafeBC. They do not own the entire site. They do own whether the people they supervise work to the plan.",
+        text: "Workers Compensation Act s. 23. A supervisor — the person directing the people on the lift — ensures the workers under their direct supervision are made aware of known or reasonably foreseeable health and safety hazards, and comply with the Act, the Regulation, and this program as it applies. They consult and cooperate with the joint committee or worker representative where there is one. They cooperate with WorkSafeBC. They do not own the entire site. They do own whether the people they supervise work to the plan.",
       },
       {
         type: "list",
@@ -231,7 +230,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "When GOSPEL supplies lift supervision, that person owns the lift sequence: briefing, exclusion zone, communication, stop/start, and the decision to abort. They do not own the entire site. They do own whether the hook moves.",
+        text: "When this program is used with a named lift supervisor, that person owns the lift sequence: briefing, exclusion zone, communication, stop/start, and the decision to abort. They do not own the entire site. They do own whether the hook moves.",
       },
       {
         type: "quote",
@@ -243,7 +242,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "GOSPEL personnel may have more than one party directing their work. That does not dilute this program. A client instruction that conflicts with this program or with law is not followed. The worker stops, states the conflict, and the lift waits until it is resolved.",
+        text: "Workers may have more than one party directing their work. That does not dilute this program. A client instruction that conflicts with this program or with law is not followed. The worker stops, states the conflict, and the lift waits until it is resolved.",
       },
     ],
   },
@@ -253,7 +252,7 @@ export const SAFETY: SafetySection[] = [
     title: "HAZARD ASSESSMENT",
     kicker: "Before the hook, the paper. Before the paper, the walk.",
     intro:
-      "Every GOSPEL dispatch requires a hazard assessment. A generic form filled in the parking lot is not an assessment. Look at the work. Name the hazards. Control them. Then lift.",
+      "Every lift requires a hazard assessment. A generic form filled in the parking lot is not an assessment. Look at the work. Name the hazards. Control them. Then lift.",
     blocks: [
       {
         type: "steps",
@@ -318,11 +317,11 @@ export const SAFETY: SafetySection[] = [
     title: "SAFE WORK PROCEDURES",
     kicker: "A procedure you cannot use is not a procedure.",
     intro:
-      "Safe Work Procedures (SWPs) cover types of work GOSPEL personnel perform repeatedly. They are written as sequences because lifting is a sequence. Read them in order. Do them in order. Hazards for that work are in the JHA — not buried in the procedure.",
+      "Safe Work Procedures (SWPs) cover types of work the crew perform repeatedly. They are written as sequences because lifting is a sequence. Read them in order. Do them in order. Hazards for that work are in the JHA — not buried in the procedure.",
     blocks: [
       {
         type: "p",
-        text: "SWPs live in this program so they can be read on a phone at the gate. They are the default method. A site may impose a stricter method. A site may not impose a looser one on GOSPEL personnel.",
+        text: "SWPs live in this program so they can be read on a phone at the gate. They are the default method. A site may impose a stricter method. A site may not impose a looser one on the crew.",
       },
       {
         type: "cta",
@@ -463,7 +462,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "h",
-        text: "HOW GOSPEL BUILDS AN SJP",
+        text: "HOW AN SJP IS BUILT",
       },
       {
         type: "steps",
@@ -507,7 +506,7 @@ export const SAFETY: SafetySection[] = [
     title: "RIGGING",
     kicker: "The gear is the truth. The guess is the hazard.",
     intro:
-      "GOSPEL riggers rig to rated capacity, known weights and inspected hardware. We do not “make it work” with a choker and optimism. Rigging is done to ASME B30, manufacturer instructions for the hardware, and the site.",
+      "Riggers rig to rated capacity, known weights and inspected hardware. The hitch is not “made to work” with a choker and optimism. Rigging is done to ASME B30, manufacturer instructions for the hardware, and the site.",
     blocks: [
       {
         type: "h",
@@ -544,7 +543,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "As the included angle flattens, tension climbs. At 60° the tension is the load share. At 30° it has doubled. Below 30° we do not rig that way unless an engineer owns the numbers. If you cannot explain the angle, you cannot use the angle.",
+        text: "As the included angle flattens, tension climbs. At 60° the tension is the load share. At 30° it has doubled. Below 30° that hitch is not used unless an engineer owns the numbers. If you cannot explain the angle, you cannot use the angle.",
       },
       {
         type: "h",
@@ -576,7 +575,7 @@ export const SAFETY: SafetySection[] = [
     title: "CRANE OPERATIONS",
     kicker: "The chart is the law of the machine.",
     intro:
-      "GOSPEL operators run cranes they are competent on, to the load chart, on ground that can hold them, with a crew they can hear. The operator works to CSA Z150 or Z248 as the machine requires, ASME B30, the manufacturer, WorkSafeBC, and the site. If those conditions are not present, the crane does not come on load.",
+      "Operators run cranes they are competent on, to the load chart, on ground that can hold them, with a crew they can hear. The operator works to CSA Z150 or Z248 as the machine requires, ASME B30, the manufacturer, WorkSafeBC, and the site. If those conditions are not present, the crane does not come on load.",
     blocks: [
       {
         type: "h",
@@ -588,7 +587,7 @@ export const SAFETY: SafetySection[] = [
           {
             n: "01",
             title: "MACHINE AND CONFIGURATION",
-            body: "Confirm the crane on site is the crane you were dispatched for. Counterweight, boom, jib, tyres, tracks, software — as the chart requires.",
+            body: "Confirm the crane on site is the crane this lift requires. Counterweight, boom, jib, tyres, tracks, software — as the chart requires.",
           },
           {
             n: "02",
@@ -694,7 +693,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Operating the crane is not servicing it. Isolation before a body is in the machine: GOSPEL-SWP-026. Climbing the ladder to the cab to operate is not jumping the tower. Erection, climbing (increasing height) and dismantling are a separate dispatch under a qualified supervisor, with a Notice of Project as 14.73.3 requires. GOSPEL-SWP-027. Emergency shutdown: people first. GOSPEL-SWP-024.",
+        text: "Operating the crane is not servicing it. Isolation before a body is in the machine: GOSPEL-SWP-026. Climbing the ladder to the cab to operate is not jumping the tower. Erection, climbing (increasing height) and dismantling are a separate lift under a qualified supervisor, with a Notice of Project as 14.73.3 requires. GOSPEL-SWP-027. Emergency shutdown: people first. GOSPEL-SWP-024.",
       },
       {
         type: "cta",
@@ -723,7 +722,7 @@ export const SAFETY: SafetySection[] = [
     blocks: [
       {
         type: "p",
-        text: "GOSPEL personnel follow the fall protection law that applies on the site. Where provincial thresholds differ, we use the site law. Where this program is stricter, we use this program. Default posture: if you can fall more than the legal threshold — or onto a hazard below that threshold — you are protected before you go there.",
+        text: "The crew follows the fall protection law that applies on the site. Where provincial thresholds differ, the site law applies. Where this program is stricter, this program applies. Default posture: if you can fall more than the legal threshold — or onto a hazard below that threshold — you are protected before you go there.",
       },
       {
         type: "h",
@@ -790,7 +789,7 @@ export const SAFETY: SafetySection[] = [
     num: "09",
     slug: "incident-reporting",
     title: "INCIDENT REPORTING",
-    kicker: "We do not hide the dent.",
+    kicker: "Do not hide the dent.",
     intro:
       "Incidents, injuries, near misses and damaged gear are reported. Quiet jobsites are not always safe jobsites. Sometimes they are just unreported.",
     blocks: [
@@ -806,7 +805,7 @@ export const SAFETY: SafetySection[] = [
           "Near misses: someone in the zone, a lost signal that almost mattered, a sling that started to cut.",
           "Property and equipment damage.",
           "A stop-work event that revealed a broken plan.",
-          "Bullying or harassment toward a GOSPEL worker — including on a client site.",
+          "Bullying or harassment toward a worker — including on a client site.",
         ],
       },
       {
@@ -834,7 +833,7 @@ export const SAFETY: SafetySection[] = [
           {
             n: "04",
             title: "NOTIFY",
-            body: "Site supervision, GOSPEL, and the regulator when the law requires it. Immediate for serious events — not after the shift beer.",
+            body: "Site supervision, the employer, and the regulator when the law requires it. Immediate for serious events — not after the shift beer.",
           },
           {
             n: "05",
@@ -844,7 +843,7 @@ export const SAFETY: SafetySection[] = [
           {
             n: "06",
             title: "LEARN AND CHANGE",
-            body: "GOSPEL investigates events involving our people. Collect facts, photographs, gear, witness names. Name causes and contributing factors — not a defence brief. Corrective actions get owners and dates. Close them. The program is updated when the lesson is real. GOSPEL-FRM-013.",
+            body: "Events involving the crew are investigated. Collect facts, photographs, gear, witness names. Name causes and contributing factors — not a defence brief. Corrective actions get owners and dates. Close them. The program is updated when the lesson is real. GOSPEL-FRM-013.",
           },
         ],
       },
@@ -908,7 +907,7 @@ export const SAFETY: SafetySection[] = [
     title: "EMERGENCY RESPONSE",
     kicker: "The plan has a number, a meeting point and a name.",
     intro:
-      "Every dispatch needs to know how the site calls for help. GOSPEL does not assume the client’s emergency plan is obvious. We ask. Then we brief it.",
+      "Every lift needs to know how the site calls for help. The client’s emergency plan is not assumed to be obvious. Ask. Then brief it.",
     blocks: [
       {
         type: "h",
@@ -923,12 +922,12 @@ export const SAFETY: SafetySection[] = [
           "How to shut down or land the crane in an emergency.",
           "Rescue for fall arrest if anyone is tied off.",
           "Tower high-angle rescue: which fire department, how to summon them, where the written plan lives.",
-          "Contact for GOSPEL after hours.",
+          "After-hours contact for the supervisor / employer.",
         ],
       },
       {
         type: "p",
-        text: "First aid on a host site is the host’s. First aid on a workplace GOSPEL controls is GOSPEL’s assessment under Part 3 Division 4. GOSPEL-POL-025. Drills are recorded where GOSPEL is the employer at that workplace. GOSPEL-FRM-034.",
+        text: "First aid on a host site is the host’s. First aid on a workplace the employer controls is the employer’s assessment under Part 3 Division 4. GOSPEL-POL-025. Drills are recorded where the employer controls that workplace. GOSPEL-FRM-034.",
       },
       {
         type: "cta",
@@ -969,8 +968,8 @@ export const SAFETY: SafetySection[] = [
           },
           {
             n: "05",
-            title: "NOTIFY GOSPEL",
-            body: "As soon as people are accounted for. We handle the client, the families we must, and the regulator interface that is ours.",
+            title: "NOTIFY THE SUPERVISOR",
+            body: "As soon as people are accounted for. The supervisor notifies the client, the families the law requires, and the regulator.",
           },
         ],
       },
@@ -997,7 +996,7 @@ export const SAFETY: SafetySection[] = [
         items: [
           {
             title: "Crane incident",
-            body: "Stop. People first. Land or hold only if it does not create a second event. Notify the site and GOSPEL. Hold the scene. GOSPEL-SWP-024.",
+            body: "Stop. People first. Land or hold only if it does not create a second event. Notify the site and the employer. Hold the scene. GOSPEL-SWP-024.",
           },
           {
             title: "Crane overturn",
@@ -1013,7 +1012,7 @@ export const SAFETY: SafetySection[] = [
           },
           {
             title: "Serious injury",
-            body: "Make it safe. First aid. Emergency services. Do not move the person unless they are in immediate danger. Notify GOSPEL immediately.",
+            body: "Make it safe. First aid. Emergency services. Do not move the person unless they are in immediate danger. Notify the supervisor immediately.",
           },
           {
             title: "Electrical / powerline contact",
@@ -1037,7 +1036,7 @@ export const SAFETY: SafetySection[] = [
           },
           {
             title: "Worker rescue",
-            body: "Fall arrest rescue is part of the plan before anyone ties off. Suspension trauma is on the clock. Do not improvise a crane-as-rescue unless that operation is permitted and planned. A tower operator in the cab or on the tower is THARRP — fire-department rope rescue, not a GOSPEL rappel.",
+            body: "Fall arrest rescue is part of the plan before anyone ties off. Suspension trauma is on the clock. Do not improvise a crane-as-rescue unless that operation is permitted and planned. A tower operator in the cab or on the tower is THARRP — fire-department rope rescue, not a site rappel.",
           },
         ],
       },
@@ -1047,14 +1046,14 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "The Technical High Angle Rope Rescue Program is BCCSA’s. It trains municipal fire departments to get a worker down from a tower crane. It is not a GOSPEL rope team. It is not a fall-protection plan. G4.13(3)(a) still requires a risk assessment and written rescue procedures for high-angle work.",
+        text: "The Technical High Angle Rope Rescue Program is BCCSA’s. It trains municipal fire departments to get a worker down from a tower crane. It is not a site rope team. It is not a fall-protection plan. G4.13(3)(a) still requires a risk assessment and written rescue procedures for high-angle work.",
       },
       {
         type: "list",
         items: [
-          "Before a GOSPEL tower operator goes up: name the fire department, the summoning method, and where the written plan sits. If nobody can name them, the operator stays on the ground.",
-          "The host or prime requests the crane or site survey in the THARRP Portal. GOSPEL confirms it exists. A tower expected past 60 days on a changing high-rise needs the formal Site Survey & Site Rescue Procedure Review on site — ADM 2.",
-          "If the local department is not THARR-funded, they may have mutual aid with one that is. If the workplace is outside a municipal high-angle service area, or the employer is not in a funding classification unit, high-angle rescue must be provided by other acceptable means. The dispatch does not invent a rescue on the day.",
+          "Before a tower operator goes up: name the fire department, the summoning method, and where the written plan sits. If nobody can name them, the operator stays on the ground.",
+          "The host or prime requests the crane or site survey in the THARRP Portal. Confirm it exists. A tower expected past 60 days on a changing high-rise needs the formal Site Survey & Site Rescue Procedure Review on site — ADM 2.",
+          "If the local department is not THARR-funded, they may have mutual aid with one that is. If the workplace is outside a municipal high-angle service area, or the employer is not in a funding classification unit, high-angle rescue must be provided by other acceptable means. The lift does not invent a rescue on the day.",
           "A fire department can refuse service they cannot provide. Funding does not obligate them to work unsafely. Then the employer finds another acceptable means — or the work at height does not start.",
           "THARRP does not approve Part 11 fall-protection plans. Harness rescue stays a different plan. Lone hoist-operator rescue stays a different pack.",
         ],
@@ -1092,22 +1091,22 @@ export const SAFETY: SafetySection[] = [
     title: "TRAINING + COMPETENCY",
     kicker: "A ticket is not competency.",
     intro:
-      "GOSPEL supplies crane and rigging personnel whose qualifications, experience and practical competency have been checked against the work.",
+      "A ticket is not competency. This program names what each role must hold, verify and refuse before the hook is loaded.",
     blocks: [
       {
         type: "quote",
-        text: "We hire the person who can do the work the card implies.",
+        text: "The person has to be able to do the work the card implies.",
       },
       {
         type: "h",
-        text: "WHAT WE VERIFY BEFORE PLACEMENT",
+        text: "WHAT TO VERIFY BEFORE THE LIFT",
       },
       {
         type: "rules",
         items: [
           {
             title: "Qualifications",
-            body: "Trade tickets, operator certifications through the BC Crane Safety system where the work requires it, signalperson and rigger credentials, and any site-required training. Originals or verifiable records. Expired means not dispatched.",
+            body: "Trade tickets, operator certifications through the BC Crane Safety system where the work requires it, signalperson and rigger credentials, and any site-required training. Originals or verifiable records. Expired means the work does not start.",
           },
           {
             title: "Experience",
@@ -1115,11 +1114,11 @@ export const SAFETY: SafetySection[] = [
           },
           {
             title: "Practical competency",
-            body: "How they inspect, how they brief, how they rig, how they refuse a bad lift. We check this. A certificate cannot speak.",
+            body: "How they inspect, how they brief, how they rig, how they refuse a bad lift. The supervisor checks this. A certificate cannot speak.",
           },
           {
             title: "Site requirements",
-            body: "Orientations, owner standards, union rules, security, drug and alcohol programs where lawfully required. The worker is not sent to fail the gate.",
+            body: "Orientations, owner standards, union rules, security, drug and alcohol programs where lawfully required. The worker does not start until those requirements are met.",
           },
         ],
       },
@@ -1129,7 +1128,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "A competent mobile operator is not automatically a competent tower operator. A structural rigger is not automatically a plant rigger. We match people to the work. If we do not have the right person, we say so instead of sending the closest body.",
+        text: "A competent mobile operator is not automatically a competent tower operator. A structural rigger is not automatically a plant rigger. Match the person to the work. The closest body is not a match.",
       },
       {
         type: "h",
@@ -1137,7 +1136,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Workers arrive already qualified for the role. Where a site requires a specific orientation, we arrange it. Where a worker needs a new qualification, that gap is named before dispatch.",
+        text: "Workers must be qualified for the role. Where a site requires a specific orientation, that orientation is completed first. Where a worker needs a new qualification, that gap is named before the lift.",
       },
       {
         type: "h",
@@ -1209,11 +1208,11 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "This matrix is the check before dispatch. It is how GOSPEL matches people to the work.",
+        text: "This matrix is the check before the lift. It is how this program matches the person to the work.",
       },
       {
         type: "table",
-        caption: "GOSPEL crane and rigging competency — dispatch check. Not a training course.",
+        caption: "GOSPEL crane and rigging competency — pre-lift check. Not a training course.",
         columns: ["ROLE", "QUALIFICATION", "MACHINE / TASK", "VERIFY"],
         rows: [
           ["Crane operator", "BC Crane Safety class, current", "This configuration and chart", "Ticket + experience + practical"],
@@ -1231,7 +1230,7 @@ export const SAFETY: SafetySection[] = [
     title: "WORKER RIGHTS",
     kicker: "The three rights are not a slogan.",
     intro:
-      "Canadian workers have the right to know, the right to participate, and the right to refuse dangerous work. GOSPEL treats those rights as operating procedure, not HR wallpaper.",
+      "Canadian workers have the right to know, the right to participate, and the right to refuse dangerous work. This program treats those rights as operating procedure, not HR wallpaper.",
     blocks: [
       {
         type: "h",
@@ -1239,7 +1238,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Workers are told the hazards of the job as we know them, how we expect the work to be done, and where this program lives. This website is part of that. So is the dispatch brief. A worker who has not been told the load, the site rules or the stop criteria has not been briefed.",
+        text: "Workers are told the hazards of the job as they are known, how the work is expected to be done, and where this program lives. This website is part of that. So is the lift brief. A worker who has not been told the load, the site rules or the stop criteria has not been briefed.",
       },
       {
         type: "h",
@@ -1255,7 +1254,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "The Act sets this by workplace, not by a company’s total headcount. Twenty or more workers regularly employed at a workplace: joint committee. Nine to nineteen: worker health and safety representative. GOSPEL-POL-026. On a host site, GOSPEL people participate in that workplace’s system. Worker recommendations get a response and enter the corrective-action log.",
+        text: "The Act sets this by workplace, not by a company’s total headcount. Twenty or more workers regularly employed at a workplace: joint committee. Nine to nineteen: worker health and safety representative. GOSPEL-POL-026. On a host site, workers participate in that workplace’s system. Worker recommendations get a response and enter the corrective-action log.",
       },
       {
         type: "cta",
@@ -1277,12 +1276,12 @@ export const SAFETY: SafetySection[] = [
           {
             n: "02",
             title: "SAY WHY",
-            body: "State the danger to the supervisor / site contact and to GOSPEL. Be specific: the line, the ground, the load, the missing gear, the missing plan.",
+            body: "State the danger to the supervisor / site contact. Be specific: the line, the ground, the load, the missing gear, the missing plan.",
           },
           {
             n: "03",
             title: "IT GETS INVESTIGATED",
-            body: "The site and GOSPEL deal with the condition. You are not sent home as punishment for a good-faith refusal.",
+            body: "The site deals with the condition. The employer must not send a worker home as punishment for a good-faith refusal.",
           },
           {
             n: "04",
@@ -1293,7 +1292,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "quote",
-        text: "GOSPEL will not punish a worker for refusing unsafe work. We will not send a replacement to do the same unsafe work. That would not be a dispatch. That would be a decision to hurt someone.",
+        text: "The employer must not punish a worker for a good-faith refusal. A replacement must not be sent into the same uncontrolled condition.",
       },
       {
         type: "cta",
@@ -1306,7 +1305,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "Workers are not units. Harassment, violence, racism, and “that’s just the trade” behaviour are not tolerated on a GOSPEL dispatch. Report it. We act.",
+        text: "Workers are not units. Harassment, violence, racism, and “that’s just the trade” behaviour are not tolerated on the lift. Report it. It is acted on.",
       },
       {
         type: "cta",
@@ -1315,7 +1314,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "This section is a company commitment. It does not replace the occupational health and safety law of the province you are standing in. If you need the regulator, you can call them. We would rather you called us first — but you do not owe us that if you are in danger.",
+        text: "This section states the rights. It does not replace the occupational health and safety law of the province you are standing in. If you need the regulator, you can call them. You do not owe anyone a courtesy call if you are in danger.",
       },
     ],
   },
@@ -1325,7 +1324,7 @@ export const SAFETY: SafetySection[] = [
     title: "OH&S POLICIES",
     kicker: "The rules for crane and rigging work. Short enough to use.",
     intro:
-      "These policies apply to crane operators, riggers, signalpersons, crane supervisors and safety support GOSPEL deploys. They are not a general construction manual.",
+      "These policies apply to crane operators, riggers, signalpersons, crane supervisors and safety support on the lift. They are not a general construction manual.",
     library: "policy",
     blocks: [
       {
@@ -1419,7 +1418,7 @@ export const SAFETY: SafetySection[] = [
       {
         type: "cta",
         href: "/safety/safe-job-procedures",
-        label: "05 — HOW GOSPEL BUILDS AN SJP →",
+        label: "05 — HOW AN SJP IS BUILT →",
       },
       {
         type: "cta",
@@ -1444,7 +1443,7 @@ export const SAFETY: SafetySection[] = [
     blocks: [
       {
         type: "p",
-        text: "GOSPEL does not ask you to invent a form on the tailgate. Use these. Site forms that are stricter or required by the client are used as well — not instead of the facts these forms capture.",
+        text: "Do not invent a form on the tailgate. Use these. Site forms that are stricter or required by the client are used as well — not instead of the facts these forms capture.",
       },
       {
         type: "cta",
@@ -1467,9 +1466,9 @@ export const SAFETY: SafetySection[] = [
     num: "18",
     slug: "whmis-sds",
     title: "WHMIS + SDS",
-    kicker: "Only what GOSPEL crews actually meet.",
+    kicker: "Only what crews actually meet.",
     intro:
-      "GOSPEL supplies people, not a warehouse. The SDS library is diesel, hydraulic oil, grease, penetrating oil, wire rope dressing, battery electrolyte and hand cleaner — products operators and riggers actually touch on a dispatch.",
+      "The SDS library is diesel, hydraulic oil, grease, penetrating oil, wire rope dressing, battery electrolyte and hand cleaner — products operators and riggers actually touch on a lift.",
     library: "sds",
     blocks: [
       {
@@ -1488,7 +1487,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "This is not a catalogue of construction chemicals. If GOSPEL does not send you to use it, it is not in this library.",
+        text: "This is not a catalogue of construction chemicals. If the work does not use it, it is not in this library.",
       },
     ],
   },
@@ -1503,7 +1502,7 @@ export const SAFETY: SafetySection[] = [
     blocks: [
       {
         type: "h",
-        text: "WHAT WE INSPECT",
+        text: "WHAT GETS INSPECTED",
       },
       {
         type: "list",
@@ -1528,8 +1527,8 @@ export const SAFETY: SafetySection[] = [
           "Crane pre-use — each shift before the hook is loaded. 14.35.",
           "Rigging — before it takes load.",
           "Lift area — at setup. At least weekly on a standing tower. After a change to the pad, the zone or the access.",
-          "GOSPEL-controlled gear, tools and vehicles — recorded interval. Out of service when they fail.",
-          "Workplace GOSPEL controls — monthly, with worker participation where a committee or representative exists. 3.5.",
+          "Employer-controlled gear, tools and vehicles — recorded interval. Out of service when they fail.",
+          "Workplace the employer controls — monthly, with worker participation where a committee or representative exists. 3.5.",
         ],
       },
       {
@@ -1808,7 +1807,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "OHS Regulation 3.1: a 3.3 program is required if the employer has 20 or more workers and at least one workplace with a moderate or high hazard rating under Schedule 3-A, or 50 or more workers. An officer can also require one. Crane and rigging work is high-hazard work. GOSPEL maintains this written program because the work requires it and because COR® certification is of this system. If a GOSPEL-controlled workplace is below the 3.1 threshold, 3.2 still requires monthly meetings with workers and a record of what was discussed — GOSPEL-FRM-033. This program is not an excuse to skip that.",
+        text: "OHS Regulation 3.1: a 3.3 program is required if the employer has 20 or more workers and at least one workplace with a moderate or high hazard rating under Schedule 3-A, or 50 or more workers. An officer can also require one. Crane and rigging work is high-hazard work. This written program exists because the work requires it and because COR® certification is of this system. If a workplace the employer controls is below the 3.1 threshold, 3.2 still requires monthly meetings with workers and a record of what was discussed — GOSPEL-FRM-033. This program is not an excuse to skip that.",
       },
       {
         type: "h",
@@ -1860,8 +1859,8 @@ export const SAFETY: SafetySection[] = [
         type: "list",
         items: [
           "Joint committee or worker representative — Act Part 2 Division 5, per workplace. GOSPEL-POL-026.",
-          "First aid — Part 3 Division 4 and Schedule 3-A, per workplace. Host site: host’s first aid. GOSPEL-controlled workplace: GOSPEL’s assessment. GOSPEL-POL-025.",
-          "Prime contractor — multiple-employer workplaces as the Act requires. GOSPEL is usually the contractor. GOSPEL-POL-027.",
+          "First aid — Part 3 Division 4 and Schedule 3-A, per workplace. Host site: host’s first aid. Employer-controlled workplace: the employer’s assessment. GOSPEL-POL-025.",
+          "Prime contractor — multiple-employer workplaces as the Act requires. GOSPEL-POL-027.",
           "Young or new worker orientation — 3.23 before they begin, every workplace. GOSPEL-FRM-015.",
         ],
       },
@@ -1987,7 +1986,7 @@ export const SAFETY_GROUPS = [
   },
   {
     id: "work",
-    label: "HOW WE WORK",
+    label: "THE METHOD",
     slugs: [
       "company-safety-policy",
       "responsibilities",

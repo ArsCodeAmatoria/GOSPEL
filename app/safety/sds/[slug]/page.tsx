@@ -51,7 +51,7 @@ export default async function SdsPage({ params }: Props) {
         <h2>STORAGE</h2>
         <p>{doc.storage}</p>
         <p>
-          This is a field card for GOSPEL crews. The manufacturer SDS for the
+          This is a field card for the lift. The manufacturer SDS for the
           exact product on site wins if it is stricter or more specific.
         </p>
       </div>

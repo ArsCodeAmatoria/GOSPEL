@@ -31,13 +31,13 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "GOSPEL — Crane + Rigging",
+    default: "GOSPEL — Crane Safety",
     template: "%s — GOSPEL",
   },
   description: SITE.description,
   metadataBase: new URL("https://whoop.ca"),
   openGraph: {
-    title: "GOSPEL — Crane + Rigging",
+    title: "GOSPEL — Crane Safety",
     description: SITE.description,
     type: "website",
   },

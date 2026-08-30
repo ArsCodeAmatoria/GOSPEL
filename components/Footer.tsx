@@ -13,15 +13,13 @@ export function Footer() {
           <h2 className="display">{SITE.name}</h2>
         </div>
         <nav className="footer-links mono">
-          <Link href="/hire">HIRE A CREW</Link>
           <Link href="/safety">
             <ProvenName />
           </Link>
           <Link href="/whoopwire">{WIRE.name}</Link>
           <Link href="/#cor">COR CERTIFIED</Link>
-          <Link href="/crew">THE CREW</Link>
           <Link href="/philosophy">PHILOSOPHY</Link>
-          <a href={SITE.phoneHref}>{SITE.phone}</a>
+          <Link href="/safety/builder">FORM BUILDER</Link>
           <a href={SITE.emailHref}>{SITE.email}</a>
         </nav>
       </div>
@@ -52,7 +50,7 @@ export function Footer() {
       </p>
       <div className="footer-bot mono">
         <span>© {new Date().getFullYear()} {SITE.legalName}</span>
-        <span>PEOPLE. COMPETENCY. RELIABILITY.</span>
+        <span>OPEN. USABLE. ACCOUNTABLE.</span>
       </div>
     </footer>
   );

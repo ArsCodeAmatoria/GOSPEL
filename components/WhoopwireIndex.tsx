@@ -152,13 +152,12 @@ export function WhoopwireIndex({ stories }: { stories: WireSummary[] }) {
 
       <section className="section wrap">
         <h2 className="display giant-sm">
-          WE KNOW THIS WORK.
+          THE WORK.
           <br />
-          WE KNOW THE PEOPLE DOING IT.
+          HOW IT IS DONE.
         </h2>
         <p className="lede mt-2">
-          We have opinions about how it should be done. And we&apos;re willing
-          to talk about it.
+          Standards, the lift, and the procedures people work to.
         </p>
       </section>
 

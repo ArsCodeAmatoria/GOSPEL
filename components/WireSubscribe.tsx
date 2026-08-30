@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { SITE } from "@/lib/site";
+import { WIRE } from "@/lib/whoopwire";
 
 export function WireSubscribe({ compact = false }: { compact?: boolean }) {
   const [done, setDone] = useState(false);
@@ -23,7 +24,7 @@ export function WireSubscribe({ compact = false }: { compact?: boolean }) {
       setDone(true);
     } catch {
       window.location.href = `${SITE.emailHref}?subject=${encodeURIComponent("GOSPELWIRE")}&body=${encodeURIComponent(email)}`;
-      setError("If your email client opened, send that. Otherwise call us.");
+      setError("If your email client opened, send that. Otherwise try again.");
     }
   }
 
@@ -46,7 +47,7 @@ export function WireSubscribe({ compact = false }: { compact?: boolean }) {
         GOSPELWIRE.
       </h2>
       <p className="lede mt">
-        New stories on safety, rigging, cranes and the people doing the work.
+        {WIRE.subscribe}
       </p>
       <form className="wire-sub-form" onSubmit={onSubmit}>
         <div className="field">

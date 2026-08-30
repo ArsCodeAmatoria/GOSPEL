@@ -24,7 +24,7 @@ export const WSBC_33: SystemRow[] = [
     form: "FRM-019 acknowledgement",
     record: "Signed acknowledgement in the worker file",
     owner: "GOSPEL",
-    frequency: "On hire. Review the policy at least annually.",
+    frequency: "When a worker starts. Review the policy at least annually.",
   },
   {
     id: "3.3(b)",
@@ -41,7 +41,7 @@ export const WSBC_33: SystemRow[] = [
     documentation: "04 SWP · 05 SJP · 14 SWP · 15 JHA · 16 SJP libraries",
     form: "FRM-001 FLHA · FRM-006 lift plan",
     record: "Completed FLHA / plan at the lift",
-    owner: "Crew on this dispatch",
+    owner: "Crew on this lift",
     frequency: "Each shift. Rewrite when the work changes.",
   },
   {
@@ -78,8 +78,8 @@ export const WSBC_33: SystemRow[] = [
     documentation: "11 Training + Competency · POL-002 · POL-003",
     form: "FRM-015 / 016 / 017",
     record: "Orientation, training and competency in the worker file",
-    owner: "GOSPEL before dispatch. Supervisor on the lift.",
-    frequency: "Before first dispatch. Young or new worker before they begin (3.23). When the work class changes.",
+    owner: "This program before the lift. Supervisor on the lift.",
+    frequency: "Before first work. Young or new worker before they begin (3.23). When the work class changes.",
   },
 ];
 
@@ -133,7 +133,7 @@ export const COR_ELEMENTS: SystemRow[] = [
     form: "FRM-019 · FRM-035 refusal",
     record: "Acknowledgements. Refusal records.",
     owner: "GOSPEL",
-    frequency: "On hire. Enforced every dispatch.",
+    frequency: "When a worker starts. Enforced every lift.",
   },
   {
     id: "COR 6",
@@ -141,7 +141,7 @@ export const COR_ELEMENTS: SystemRow[] = [
     documentation: "POL-010",
     form: "FRM-018",
     record: "Issue, inspection, replacement",
-    owner: "GOSPEL and the worker",
+    owner: "The employer and the worker",
     frequency: "Inspect before use. Replace when it fails.",
   },
   {
@@ -150,9 +150,9 @@ export const COR_ELEMENTS: SystemRow[] = [
     documentation: "POL-013 · 18 Inspections",
     form: "FRM-025 / 026 / 030 / 031",
     record: "Maintenance log. Out-of-service tags.",
-    owner: "Owner of the machine for PM. GOSPEL operator for pre-use and defect reports.",
-    frequency: "OEM interval for GOSPEL-controlled gear. Client/owner PM for their crane.",
-    note: "GOSPEL is a workforce. Most cranes are not ours. Pre-use and defect reporting still are.",
+    owner: "Owner of the machine for PM. The operator for pre-use and defect reports.",
+    frequency: "OEM interval for gear used on the lift. Host/owner PM for their crane.",
+    note: "Most cranes are not owned by the crew. Pre-use and defect reporting still are.",
   },
   {
     id: "COR 8",
@@ -161,7 +161,7 @@ export const COR_ELEMENTS: SystemRow[] = [
     form: "FRM-015 / 016 / 017 / 004 / 033",
     record: "Worker file. Toolbox and OHS meeting minutes.",
     owner: "GOSPEL",
-    frequency: "Before dispatch. Toolbox each shift. OHS meeting at least monthly if 3.2 applies; otherwise with management review.",
+    frequency: "Before the lift. Toolbox each shift. OHS meeting at least monthly if 3.2 applies; otherwise with management review.",
   },
   {
     id: "COR 9",
@@ -186,9 +186,9 @@ export const COR_ELEMENTS: SystemRow[] = [
     title: "Emergency preparedness",
     documentation: "10 · POL-015",
     form: "FRM-034 drill",
-    record: "Site brief on the FLHA. Drill record where GOSPEL controls the workplace.",
-    owner: "Supervisor on the dispatch. Host employer for the site ERP.",
-    frequency: "Briefed before work. Drills where GOSPEL is the employer at that workplace. Tower: THARRP plan confirmed before the operator goes up.",
+    record: "Site brief on the FLHA. Drill record where the employer controls the workplace.",
+    owner: "Supervisor on the lift. Host employer for the site ERP.",
+    frequency: "Briefed before work. Drills where the employer controls that workplace. Tower: THARRP plan confirmed before the operator goes up.",
   },
   {
     id: "COR 12",
@@ -206,18 +206,18 @@ export const COR_ELEMENTS: SystemRow[] = [
     form: "FRM-015 (program and rights)",
     record: "Orientation that the Regulation and this program were shown",
     owner: "GOSPEL",
-    frequency: "On hire. When the named edition in the Regulation changes.",
+    frequency: "When a worker starts. When the named edition in the Regulation changes.",
     note: "Workers can read the Regulation on worksafebc.com. This program cites the editions Part 14 actually names.",
   },
   {
     id: "COR 14",
     title: "Procurement and contractor management",
     documentation: "POL-027 · 02 Responsibilities",
-    form: "Dispatch file: host orientation, prime contractor named",
-    record: "Who is prime. What the host required. What GOSPEL verified before sending people.",
-    owner: "GOSPEL",
-    frequency: "Each dispatch.",
-    note: "GOSPEL is usually the contractor on a host site — not the prime. Subcontractors GOSPEL hires are selected and monitored to this policy.",
+    form: "Lift file: host orientation, prime contractor named",
+    record: "Who is prime. What the host required. What was verified before the lift.",
+    owner: "The supervisor or the contractor",
+    frequency: "Each lift.",
+    note: "The contractor on a host site is usually not the prime. Subcontractors are selected and monitored to this policy.",
   },
 ];
 

@@ -64,9 +64,11 @@ export default async function SafetySectionPage({ params }: Props) {
             <strong className="display">{next.title}</strong>
           </Link>
         ) : (
-          <Link href="/hire">
+          <Link href="/safety">
             <span className="mono steel">NEXT</span>
-            <strong className="display">HIRE A CREW</strong>
+            <strong className="display">
+              <ProvenName />
+            </strong>
           </Link>
         )}
       </nav>

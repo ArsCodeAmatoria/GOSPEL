@@ -2,8 +2,8 @@ import type { DocLink } from "./types";
 
 /**
  * Site binders follow BC Crane Safety’s Tower / Self-Erect checklists
- * (FM-TC-01, Sept 2024) used with the WorkSafeBC NOP-TC. GOSPEL does not
- * replace those templates. The wizard builds the GOSPEL copy: numbered
+ * (FM-TC-01, Sept 2024) used with the WorkSafeBC NOP-TC. This wizard does not
+ * replace those templates. It builds a working copy: numbered
  * items, who holds them, and the downloadable forms that go in the file.
  * https://bccranesafety.ca/resources/tower-crane-site-binder/
  */

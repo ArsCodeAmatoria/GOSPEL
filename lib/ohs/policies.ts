@@ -6,23 +6,23 @@ export const POLICIES: Policy[] = [
     title: "OH&S POLICY",
     number: "GOSPEL-POL-001",
     summary:
-      "This is GOSPEL’s occupational health and safety policy. The work is done to this program, to the law, and to the machine.",
+      "This is the occupational health and safety policy for this program. The work is done to this program, to the law, and to the machine.",
     statements: [
       {
         title: "Aims",
-        body: "Prevent injury and occupational disease on crane and rigging work GOSPEL accepts. Put competent people on the machine. Back stop-work. Keep this program public so workers and clients can read it before the dispatch. OHS Regulation 3.3(a).",
+        body: "Prevent injury and occupational disease on crane and rigging work done to this program. Competent people on the machine. Back stop-work. Keep this program public so anyone on the lift can read it before the gate. OHS Regulation 3.3(a).",
       },
       {
         title: "Commitment",
-        body: "GOSPEL provides the people, instruction, supervision and backing this program names. Production does not outrank the chart, the hitch, or the three rights.",
+        body: "This program names the instruction, supervision and backing. Production does not outrank the chart, the hitch, or the three rights.",
       },
       {
         title: "Objectives",
-        body: "Every dispatch has a named competent person and a plan. Defects that affect lifting take the crane down the same hour. Incidents and near misses are reported the same shift. This program is reviewed at least annually. COR maintenance is submitted as BCCSA requires.",
+        body: "Every lift has a named competent person and a plan. Defects that affect lifting take the crane down the same hour. Incidents and near misses are reported the same shift. This program is reviewed at least annually. COR maintenance is submitted as BCCSA requires.",
       },
       {
         title: "Scope",
-        body: "Applies to every crane operator, rigger, signalperson and lifting supervisor GOSPEL deploys, and to every lift we accept.",
+        body: "Applies to every crane operator, rigger, signalperson and lifting supervisor working to this program, and to every lift done under it.",
       },
       {
         title: "Standard",
@@ -34,7 +34,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Open book",
-        body: "This program is public. It does not expire behind a form. Workers and clients can read it before the dispatch.",
+        body: "This program is public. It does not expire behind a form. Workers and clients can read it before the lift.",
       },
     ],
   },
@@ -43,11 +43,11 @@ export const POLICIES: Policy[] = [
     title: "COMPETENCY",
     number: "GOSPEL-POL-002",
     summary:
-      "A ticket is not competency. GOSPEL matches people to the machine, the lift and the site.",
+      "A ticket is not competency. This program names what the person must hold for the machine, the lift and the site.",
     statements: [
       {
-        title: "Verify before dispatch",
-        body: "Qualifications, experience and practical competency are checked against the work. Expired means not sent.",
+        title: "Verify before the lift",
+        body: "Qualifications, experience and practical competency are checked against the work. Expired means that person does not take the role.",
       },
       {
         title: "Fit to the job",
@@ -55,7 +55,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Already qualified",
-        body: "Workers arrive already qualified for the role. Site orientations are arranged. A missing qualification is named before dispatch.",
+        body: "Workers arrive already qualified for the role. Site orientations are arranged. A missing qualification is named before the lift.",
       },
     ],
   },
@@ -64,7 +64,7 @@ export const POLICIES: Policy[] = [
     title: "TRAINING",
     number: "GOSPEL-POL-003",
     summary:
-      "Site orientations and briefings are arranged. Workers hold the qualification for the role before they are sent.",
+      "Site orientations and briefings are arranged. Workers hold the qualification for the role before they start.",
     statements: [
       {
         title: "Before the gate",
@@ -76,15 +76,15 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Site orientation",
-        body: "The host’s site orientation is the host’s. GOSPEL arranges it. The worker does not start the lift without it when the site requires it.",
+        body: "The host’s site orientation is the host’s. The supervisor or the employer at the workplace arranges it. The worker does not start the lift without it when the site requires it.",
       },
       {
         title: "Supervisor instruction",
-        body: "People GOSPEL sends to supervise a lift are instructed in this program, in stop-work, and in the supervisor duties under the Workers Compensation Act s. 23. A ticket is not that instruction.",
+        body: "People who supervise a lift are instructed in this program, in stop-work, and in the supervisor duties under the Workers Compensation Act s. 23. A ticket is not that instruction.",
       },
       {
         title: "Refresher",
-        body: "Competency is re-checked when the machine class changes, after a serious incident involving that person, or when observation says the work is not being done to this program. Expired tickets are not dispatched.",
+        body: "Competency is re-checked when the machine class changes, after a serious incident involving that person, or when observation says the work is not being done to this program. Expired tickets mean that person does not take the role.",
       },
       {
         title: "Records",
@@ -92,7 +92,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Gap",
-        body: "A worker who needs a new qualification is not dispatched into that role until they hold it.",
+        body: "A worker who needs a new qualification does not take that role until they hold it.",
       },
     ],
   },
@@ -122,7 +122,7 @@ export const POLICIES: Policy[] = [
     title: "RISK ASSESSMENT",
     number: "GOSPEL-POL-005",
     summary:
-      "Every GOSPEL dispatch requires a hazard assessment. FLHA at the shift. Reassess when the work changes.",
+      "Every lift requires a hazard assessment. FLHA at the shift. Reassess when the work changes.",
     statements: [
       {
         title: "Controls before the hook",
@@ -155,7 +155,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Learn",
-        body: "GOSPEL investigates events involving our people. Controls change. This program is updated when the lesson is real. Injuries also follow Injury Management and Return to Work.",
+        body: "The employer at the workplace investigates events involving the crew. Controls change. This program is updated when the lesson is real. Injuries also follow Injury Management and Return to Work.",
       },
     ],
   },
@@ -185,7 +185,7 @@ export const POLICIES: Policy[] = [
     title: "RIGHT TO REFUSE UNSAFE WORK",
     number: "GOSPEL-POL-008",
     summary:
-      "The three rights are operating procedure. GOSPEL will not send a replacement to do the same unsafe work.",
+      "The three rights are operating procedure. A replacement is not sent to do the same unsafe work.",
     statements: [
       {
         title: "Stop",
@@ -193,11 +193,11 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Say why",
-        body: "State the danger to site supervision and to GOSPEL. Be specific: the line, the ground, the load, the missing plan.",
+        body: "State the danger to the supervisor and to the employer at the workplace. Be specific: the line, the ground, the load, the missing plan.",
       },
       {
         title: "It stays stopped",
-        body: "Work resumes when the danger is controlled. GOSPEL will not punish a good-faith refusal. GOSPEL will not dispatch a replacement into the same uncontrolled condition.",
+        body: "Work resumes when the danger is controlled. A good-faith refusal is not punished. A replacement is not sent into the same uncontrolled condition.",
       },
     ],
   },
@@ -206,11 +206,11 @@ export const POLICIES: Policy[] = [
     title: "VIOLENCE / HARASSMENT",
     number: "GOSPEL-POL-009",
     summary:
-      "Threats and physical violence are not part of a lift. Harassment is GOSPEL-POL-017. Report them. We act. OHS Regulation Part 4.",
+      "Threats and physical violence are not part of a lift. Harassment is GOSPEL-POL-017. Report them. They are acted on. OHS Regulation Part 4.",
     statements: [
       {
         title: "Zero for violence",
-        body: "Physical violence, threats and intimidation toward a GOSPEL worker — or by a GOSPEL worker — are reported and acted on. Immediate danger: get out and call for help.",
+        body: "Physical violence, threats and intimidation toward a worker — or by a worker — are reported and acted on. Immediate danger: get out and call for help.",
       },
       {
         title: "The lift is not an excuse",
@@ -235,7 +235,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Selection",
-        body: "PPE follows the hazard on this dispatch — not a one-box kit for every site. Fall protection where the work exposes a fall. Hearing protection where noise requires it. Site rules that are stricter win.",
+        body: "PPE follows the hazard on this lift — not a one-box kit for every site. Fall protection where the work exposes a fall. Hearing protection where noise requires it. Site rules that are stricter win.",
       },
       {
         title: "Inspect",
@@ -243,11 +243,11 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Issue and replace",
-        body: "GOSPEL issues or confirms required PPE for the dispatch. Failed PPE is replaced or the worker does not start. Record issue and replacement on GOSPEL-FRM-018. Workers do not start the lift waiting on a hat.",
+        body: "The employer or the supervisor issues or confirms required PPE for the lift. Failed PPE is replaced or the worker does not start. Record issue and replacement on GOSPEL-FRM-018. Workers do not start the lift waiting on a hat.",
       },
       {
         title: "Instruction",
-        body: "Workers are shown how to use, inspect and store the PPE this dispatch requires — including fall-arrest connection if they will tie off. A issued harness is not instruction.",
+        body: "Workers are shown how to use, inspect and store the PPE this lift requires — including fall-arrest connection if they will tie off. A issued harness is not instruction.",
       },
     ],
   },
@@ -260,7 +260,7 @@ export const POLICIES: Policy[] = [
     statements: [
       {
         title: "Chart and configuration",
-        body: "Operators run the crane they were dispatched for, in the configuration the chart requires. Counterweight, boom, jib, software — as written.",
+        body: "Operators run the crane they will operate, in the configuration the chart requires. Counterweight, boom, jib, software — as written.",
       },
       {
         title: "Ground and setup",
@@ -285,7 +285,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "No guess",
-        body: "Weight and centre of gravity are confirmed. Sling angle is calculated when it matters. Below 30° from horizontal is not a GOSPEL hitch unless an engineer owns the numbers.",
+        body: "Weight and centre of gravity are confirmed. Sling angle is calculated when it matters. Below 30° from horizontal is not a hitch this program allows unless an engineer owns the numbers.",
       },
       {
         title: "Out of service",
@@ -310,11 +310,11 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Who owns the PM",
-        body: "Preventive maintenance of a crane belongs to the owner of that crane — OEM interval, logbook, annual certification. GOSPEL is a workforce. If GOSPEL does not own the machine, the operator still completes pre-use and reports defects. The crane does not lift with a known defect that affects lifting.",
+        body: "Preventive maintenance of a crane belongs to the owner of that crane — OEM interval, logbook, annual certification. If the crew does not own the machine, the operator still completes pre-use and reports defects. The crane does not lift with a known defect that affects lifting.",
       },
       {
-        title: "GOSPEL-controlled gear",
-        body: "Rigging, PPE, tools and vehicles GOSPEL controls are inspected, maintained and taken out of service when they fail. Weekly and monthly maintenance forms apply to machines GOSPEL is assigned to maintain. Return to service only after the repair is verified.",
+        title: "Gear on the lift",
+        body: "Rigging, PPE, tools and vehicles used on the lift are inspected, maintained and taken out of service when they fail. Weekly and monthly maintenance forms apply to machines the crew is assigned to maintain. Return to service only after the repair is verified.",
       },
       {
         title: "Deficiency class",
@@ -361,7 +361,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Wildfire smoke",
-        body: "Smoke is an exposure, not weather small-talk. If air quality makes the work unsafe — cab or open — stop. The site and GOSPEL are told. Resume only when the plan says so.",
+        body: "Smoke is an exposure, not weather small-talk. If air quality makes the work unsafe — cab or open — stop. The supervisor and the employer at the workplace are told. Resume only when the plan says so.",
       },
     ],
   },
@@ -370,7 +370,7 @@ export const POLICIES: Policy[] = [
     title: "EMERGENCY RESPONSE",
     number: "GOSPEL-POL-015",
     summary:
-      "Every dispatch knows how the site calls for help, where to muster, and how to put the crane in a safe condition.",
+      "Every lift names how the site calls for help, where to muster, and how to put the crane in a safe condition.",
     download: {
       href: "https://www.bccsa.ca/resources.php?id_catalogue=98",
       label: "BCCSA LONE HOIST OPERATOR RESCUE →",
@@ -380,7 +380,7 @@ export const POLICIES: Policy[] = [
     statements: [
       {
         title: "Before work",
-        body: "Emergency number, muster, first aid, crane shutdown, fall-rescue if anyone is tied off, high-angle rope rescue for a tower operator, GOSPEL after-hours contact.",
+        body: "Emergency number, muster, first aid, crane shutdown, fall-rescue if anyone is tied off, high-angle rope rescue for a tower operator, after-hours contact this program names.",
       },
       {
         title: "People first",
@@ -392,7 +392,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Construction hoist operator",
-        body: "A hoist car is working alone. If GOSPEL supplies that operator, the site uses a written rescue procedure before the car runs. BCCSA already wrote the templates. Use them. Do not invent a hoist rescue on the day.",
+        body: "A hoist car is working alone. The site uses a written rescue procedure before the car runs. BCCSA already wrote the templates. Use them. Do not invent a hoist rescue on the day.",
       },
       {
         title: "Fall arrest",
@@ -400,11 +400,11 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "THARRP — tower high-angle rescue",
-        body: "WorkSafeBC G4.13(3)(a): risk assessment where rescue or evacuation may arise, and written procedures for high-angle work. BCCSA’s Technical High Angle Rope Rescue Program connects construction employers with funded municipal fire departments to write a rope-rescue plan for a tower-crane operator in distress. GOSPEL does not run that rescue. The fire department does. A GOSPEL tower operator is not sent up until the host or prime can name the plan, the fire department, and how to summon them. If the local department is not THARR-funded, mutual aid or another acceptable means is required — the lift does not invent it. Portal requests: bccsa.ca/tharrp_program.php.",
+        body: "WorkSafeBC G4.13(3)(a): risk assessment where rescue or evacuation may arise, and written procedures for high-angle work. BCCSA’s Technical High Angle Rope Rescue Program connects construction employers with funded municipal fire departments to write a rope-rescue plan for a tower-crane operator in distress. This program does not run that rescue. The fire department does. A tower operator does not go up until the host or prime can name the plan, the fire department, and how to summon them. If the local department is not THARR-funded, mutual aid or another acceptable means is required — the lift does not invent it. Portal requests: bccsa.ca/tharrp_program.php.",
       },
       {
         title: "Who requests the survey",
-        body: "The employer at that workplace requests the crane or site survey in the THARRP Portal — WorkSafeBC account number and legal name. On a host site that is usually the prime or the crane owner. GOSPEL is construction labour supply; ADM 2 lists that classification among the funding units. GOSPEL confirms the survey and the written agreement exist before the dispatch. A tower on a high-rise expected past 60 days needs the formal Site Survey & Site Rescue Procedure Review on site. ADM 2.",
+        body: "The employer at that workplace requests the crane or site survey in the THARRP Portal — WorkSafeBC account number and legal name. On a host site that is usually the prime or the crane owner. The supervisor or the employer at the workplace confirms the survey and the written agreement exist before the lift. A tower on a high-rise expected past 60 days needs the formal Site Survey & Site Rescue Procedure Review on site. ADM 2.",
       },
     ],
   },
@@ -421,7 +421,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Management review",
-        body: "GOSPEL holds a periodic management OHS meeting to review safety activities and incident trends and to decide what changes. 3.3(d). At least quarterly, and after a serious incident. Agenda: incidents, inspections, outstanding corrective actions, training, worker concerns and refusals, COR / audit results, objectives. GOSPEL-FRM-032.",
+        body: "This program requires a periodic management OHS meeting to review safety activities and incident trends and to decide what changes. 3.3(d). At least quarterly, and after a serious incident. Agenda: incidents, inspections, outstanding corrective actions, training, worker concerns and refusals, COR / audit results, objectives. GOSPEL-FRM-032.",
       },
       {
         title: "Records and statistics",
@@ -429,7 +429,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "COR",
-        body: "GOSPEL is COR® certified through BCCSA. Certification is of this occupational health and safety management system. Maintenance and recertification follow BCCSA’s current process. An audit finding becomes a corrective action with an owner and a date.",
+        body: "This program is COR® certified through BCCSA. Certification is of this occupational health and safety management system. Maintenance and recertification follow BCCSA’s current process. An audit finding becomes a corrective action with an owner and a date.",
       },
       {
         title: "This program",
@@ -442,15 +442,15 @@ export const POLICIES: Policy[] = [
     title: "BULLYING AND HARASSMENT",
     number: "GOSPEL-POL-017",
     summary:
-      "Not acceptable. Not “the trade.” Report it. GOSPEL deals with it. WorkSafeBC P2-21-2, P2-22-1, P2-23-2.",
+      "Not acceptable. Not “the trade.” Report it. The employer at the workplace deals with it. WorkSafeBC P2-21-2, P2-22-1, P2-23-2.",
     statements: [
       {
         title: "Policy statement",
-        body: "Workplace bullying and harassment is not acceptable or tolerated at GOSPEL, on a GOSPEL dispatch, or toward a GOSPEL worker. This is the policy statement required of an employer under WorkSafeBC P2-21-2(a). GOSPEL does not engage in bullying and harassment of workers or supervisors.",
+        body: "Workplace bullying and harassment is not acceptable or tolerated on a lift, on a host site, or toward a worker. This is the policy statement required of an employer under WorkSafeBC P2-21-2(a). The employer at the workplace does not engage in bullying and harassment of workers or supervisors.",
       },
       {
         title: "What it is",
-        body: "Any inappropriate conduct or comment toward a worker that the person knew, or reasonably ought to have known, would humiliate or intimidate that worker. It includes sexual harassment, racism, isolation, sabotage of someone’s work, and “that’s just the trade.” The person can be anyone on the job — GOSPEL, a client, another contractor’s crew.",
+        body: "Any inappropriate conduct or comment toward a worker that the person knew, or reasonably ought to have known, would humiliate or intimidate that worker. It includes sexual harassment, racism, isolation, sabotage of someone’s work, and “that’s just the trade.” The person can be anyone on the job — a supervisor, a host, another contractor’s crew.",
       },
       {
         title: "What it is not",
@@ -458,10 +458,10 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Scope",
-        body: "Applies to every crane operator, rigger, signalperson and lifting supervisor GOSPEL deploys, and to GOSPEL supervisors. It applies on client sites. A multiple-employer workplace does not cancel GOSPEL’s duty to its workers.",
+        body: "Applies to every crane operator, rigger, signalperson and lifting supervisor working to this program, and to supervisors. It applies on host sites. A multiple-employer workplace does not cancel the employer’s duty to its workers.",
       },
       {
-        title: "GOSPEL",
+        title: "The employer",
         body: "Takes all reasonable steps to prevent where possible, or otherwise minimize, workplace bullying and harassment. Workers Compensation Act s. 21. Informs workers of this policy. Trains workers and supervisors to recognize it, report it, and apply these procedures. Reviews this policy and these procedures at least annually — next review 2027-09-01.",
       },
       {
@@ -474,15 +474,15 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "How to report",
-        body: "Report as soon as you can. Call GOSPEL at 1 604 431 2000 and ask for Safety, email hire@gospel.im with the subject BULLYING AND HARASSMENT, or use Report Bullying or Harassment under Incident Reporting. Say who, when, where, what was said or done, and who saw it. You do not need a form if a call is faster.",
+        body: "Report as soon as you can. Tell the supervisor or the employer at the workplace. Email safety@gospel.im with the subject BULLYING AND HARASSMENT, or use Report Bullying or Harassment under Incident Reporting. Say who, when, where, what was said or done, and who saw it. You do not need a form if a call is faster.",
       },
       {
-        title: "If the alleged person is GOSPEL",
-        body: "If the alleged bully is your GOSPEL supervisor or a person acting for GOSPEL, do not report only to that person. Call GOSPEL and ask for Safety, or email hire@gospel.im. If the alleged person is the employer itself and you cannot use the internal route, call the WorkSafeBC Prevention Information Line: 1 888 621 7233.",
+        title: "If the alleged person is the supervisor or the employer",
+        body: "If the alleged bully is your supervisor or a person acting for the employer, do not report only to that person. Report to the employer at the workplace, or email safety@gospel.im. If the alleged person is the employer itself and you cannot use the internal route, call the WorkSafeBC Prevention Information Line: 1 888 621 7233.",
       },
       {
-        title: "How GOSPEL deals with it",
-        body: "GOSPEL Safety, or a person who is not the alleged bully, investigates promptly and fairly. The investigation covers what happened, who was involved, when and where, witnesses, and any record. The people involved are heard. Confidentiality is kept as far as the investigation allows. Follow-up includes corrective action and a timeline. Records are kept by GOSPEL. They are not sent to WorkSafeBC unless asked for.",
+        title: "How it is dealt with",
+        body: "The employer at the workplace, or a person who is not the alleged bully, investigates promptly and fairly. The investigation covers what happened, who was involved, when and where, witnesses, and any record. The people involved are heard. Confidentiality is kept as far as the investigation allows. Follow-up includes corrective action and a timeline. Records are kept by the employer at the workplace. They are not sent to WorkSafeBC unless asked for.",
       },
       {
         title: "No punishment for good faith",
@@ -499,14 +499,14 @@ export const POLICIES: Policy[] = [
     title: "WORKPLACE CONDUCT",
     number: "GOSPEL-POL-018",
     summary:
-      "You represent GOSPEL on someone else’s site. Show up. Be competent. Do not make the lift about you.",
+      "You are a guest on a host site. Show up. Be competent. Do not make the lift about you.",
     statements: [
       {
-        title: "On the dispatch",
-        body: "GOSPEL workers arrive on time, briefed, and fit for the work. If you cannot make the call, GOSPEL hears it first — not the gate.",
+        title: "On the lift",
+        body: "Workers arrive on time, briefed, and fit for the work. If you cannot make the lift, the supervisor hears it first — not the gate.",
       },
       {
-        title: "On the client’s site",
+        title: "On the host site",
         body: "Follow this program and the site’s rules — whichever is stricter. You are a guest with a job. You are not the prime contractor.",
       },
       {
@@ -523,11 +523,11 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "PPE",
-        body: "Minimum PPE in POL-010 is a company rule on every dispatch. Site PPE that is stricter wins.",
+        body: "Minimum PPE in POL-010 is a rule on every lift. Site PPE that is stricter wins.",
       },
       {
         title: "Who you answer to",
-        body: "GOSPEL remains your employer. Site direction that is unsafe is refused under the three rights. Site direction that is lawful and stricter than ours is followed.",
+        body: "The host owns the site. The employer of each worker remains that worker’s employer. Site direction that is unsafe is refused under the three rights. Site direction that is lawful and stricter than this program is followed.",
       },
     ],
   },
@@ -536,23 +536,23 @@ export const POLICIES: Policy[] = [
     title: "FITNESS FOR WORK",
     number: "GOSPEL-POL-019",
     summary:
-      "Fit for this dispatch, today. Fatigue, illness and injury are named before the gate — not after the hook.",
+      "Fit for this lift, today. Fatigue, illness and injury are named before the gate — not after the hook.",
     statements: [
       {
         title: "This shift",
         body: "A crane operator, rigger or signalperson must be able to do this work safely today. Rest, illness, injury, vision and hearing as the role requires. If you are not fit, you say so before you travel or before you start.",
       },
       {
-        title: "Tell GOSPEL",
+        title: "Tell the supervisor",
         body: "OHS Regulation 4.19. A worker with an impairment that may affect safe work informs the supervisor or employer and does not knowingly do work where that impairment creates an undue risk to anyone.",
       },
       {
-        title: "GOSPEL does not assign it",
-        body: "GOSPEL does not put a person who is not fit onto a crane, a hitch, or a set of signals. A replacement is found, or the dispatch waits. Covering with hope is not a dispatch.",
+        title: "Unfit is not assigned",
+        body: "A person who is not fit is not put onto a crane, a hitch, or a set of signals. A replacement is found, or the lift waits. Covering with hope is not a lift.",
       },
       {
         title: "Medical information",
-        body: "GOSPEL asks only what is needed to match the person to the work and to accommodate where the law requires it. It is not a fishing trip. See Impairment and Return to Work.",
+        body: "The employer asks only what is needed to match the person to the work and to accommodate where the law requires it. It is not a fishing trip. See Impairment and Return to Work.",
       },
     ],
   },
@@ -565,7 +565,7 @@ export const POLICIES: Policy[] = [
     statements: [
       {
         title: "The rule",
-        body: "A person must not enter or remain at a workplace while their ability to work is affected by alcohol, a drug or another substance so as to endanger anyone. GOSPEL must not knowingly permit it. 4.20. Crane operation, rigging and signalling are safety-sensitive. There is no ‘a little bit’ on a hook.",
+        body: "A person must not enter or remain at a workplace while their ability to work is affected by alcohol, a drug or another substance so as to endanger anyone. The employer must not knowingly permit it. 4.20. Crane operation, rigging and signalling are safety-sensitive. There is no ‘a little bit’ on a hook.",
       },
       {
         title: "What counts",
@@ -573,15 +573,15 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Report it",
-        body: "Workers report impairment to GOSPEL before they attend, start, or continue. Observed impairment is treated the same as reported impairment. The person comes off the lift. They are not left in the cab to ‘sleep it off.’",
+        body: "Workers report impairment to the supervisor or the employer at the workplace before they attend, start, or continue. Observed impairment is treated the same as reported impairment. The person comes off the lift. They are not left in the cab to ‘sleep it off.’",
       },
       {
         title: "Testing",
-        body: "GOSPEL does not run random drug or alcohol testing as a default. Testing happens only where the law allows and the situation requires it. Client or prime-contractor programs that are lawful are followed for that site. A test is not a substitute for taking an impaired person off the work.",
+        body: "This program does not run random drug or alcohol testing as a default. Testing happens only where the law allows and the situation requires it. Host or prime-contractor programs that are lawful are followed for that site. A test is not a substitute for taking an impaired person off the work.",
       },
       {
         title: "Disability",
-        body: "Addiction and other disabilities are protected under the Human Rights Code. GOSPEL will accommodate to the point of undue hardship when it is told. Accommodation is not a licence to lift impaired. See Discrimination and Fitness for Work.",
+        body: "Addiction and other disabilities are protected under the Human Rights Code. The employer accommodates to the point of undue hardship when it is told. Accommodation is not a licence to lift impaired. See Discrimination and Fitness for Work.",
       },
     ],
   },
@@ -594,23 +594,23 @@ export const POLICIES: Policy[] = [
     statements: [
       {
         title: "No solo lift",
-        body: "GOSPEL does not dispatch a worker to make a lift alone. Operator, rigger and signals are a crew. If the site will leave one GOSPEL person to lift, we do not take that dispatch.",
+        body: "A worker is not assigned to make a lift alone. Operator, rigger and signals are a crew. If the site will leave one person to lift, the work does not start.",
       },
       {
         title: "When this policy applies",
-        body: "Working alone or in isolation means assistance would not be readily available in an emergency, injury or illness. Visual or verbal contact with other people is readily available. A phone or radio is not. Travel, waiting on a machine, a remote plant, night work, or a crew that left can put a GOSPEL worker in isolation even when the lift itself was crewed.",
+        body: "Working alone or in isolation means assistance would not be readily available in an emergency, injury or illness. Visual or verbal contact with other people is readily available. A phone or radio is not. Travel, waiting on a machine, a remote plant, night work, or a crew that left can put a worker in isolation even when the lift itself was crewed.",
       },
       {
-        title: "Before that dispatch",
-        body: "Hazards are identified. A written procedure is set: who checks in, how, and how often — matching the risk. The worker is trained on it. If the site cannot support that, GOSPEL does not send the person.",
+        title: "Before that work",
+        body: "Hazards are identified. A written procedure is set: who checks in, how, and how often — matching the risk. The worker is trained on it. If the site cannot support that, the work does not start.",
       },
       {
         title: "Check-in",
-        body: "A named person at GOSPEL or on site receives the check-in at the set times. Missed check-in is not a voicemail. The designated person calls, then escalates, then sends help or emergency services. A spouse is not the check-in system.",
+        body: "A named person on site or named in this procedure receives the check-in at the set times. Missed check-in is not a voicemail. The designated person calls, then escalates, then sends help or emergency services. A spouse is not the check-in system.",
       },
       {
         title: "Say it",
-        body: "If you will be out of visual and verbal contact, you tell GOSPEL before the hook. We set the check-in or we pull the dispatch.",
+        body: "If you will be out of visual and verbal contact, you tell the supervisor before the hook. The check-in is set or the work does not start.",
       },
     ],
   },
@@ -628,7 +628,7 @@ export const POLICIES: Policy[] = [
     statements: [
       {
         title: "Care",
-        body: "Injured people get first aid and further care as required. Make the lift safe. Do not become the second event. Site first aid and GOSPEL are both told.",
+        body: "Injured people get first aid and further care as required. Make the lift safe. Do not become the second event. Site first aid and the supervisor are both told.",
       },
       {
         title: "Report",
@@ -640,7 +640,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Cooperate",
-        body: "GOSPEL, the worker and the site cooperate on treatment, reporting and suitable duties. The file is not a defence brief. It is how the person gets care and the work gets safer. The downloadable pack on this page is BCCSA injury-management material — guides, sample forms, supplementary notes. Use it. It does not replace this policy.",
+        body: "The employer, the worker and the host cooperate on treatment, reporting and suitable duties. The file is not a defence brief. It is how the person gets care and the work gets safer. The downloadable pack on this page is BCCSA injury-management material — guides, sample forms, supplementary notes. Use it. It does not replace this policy.",
       },
     ],
   },
@@ -653,7 +653,7 @@ export const POLICIES: Policy[] = [
     statements: [
       {
         title: "Suitable work",
-        body: "Return-to-work is work the person can do within named restrictions. GOSPEL does not dispatch an operator, rigger or signalperson into a role that violates those restrictions. The form is GOSPEL-FRM-RTW.",
+        body: "Return-to-work is work the person can do within named restrictions. An operator, rigger or signalperson is not put into a role that violates those restrictions. The form is GOSPEL-FRM-RTW.",
       },
       {
         title: "Plan",
@@ -661,11 +661,11 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Duty",
-        body: "Where the Workers Compensation Act duty to maintain employment applies, GOSPEL maintains employment and offers suitable or pre-injury work to the point of undue hardship. Inconvenience is not undue hardship.",
+        body: "Where the Workers Compensation Act duty to maintain employment applies, the employer maintains employment and offers suitable or pre-injury work to the point of undue hardship. Inconvenience is not undue hardship.",
       },
       {
         title: "Cooperate",
-        body: "The worker, GOSPEL, the clinician and WorkSafeBC share what is needed to match the work. Medical detail beyond the restriction is not a gossip file. See Fitness for Work and Injury Management.",
+        body: "The worker, the employer, the clinician and WorkSafeBC share what is needed to match the work. Medical detail beyond the restriction is not a gossip file. See Fitness for Work and Injury Management.",
       },
     ],
   },
@@ -674,11 +674,11 @@ export const POLICIES: Policy[] = [
     title: "DISCRIMINATION",
     number: "GOSPEL-POL-024",
     summary:
-      "Hiring and dispatch are about the work. Human Rights Code s. 13. Not a vibe, and not a pretext.",
+      "Assignment to a lift is about the work. Human Rights Code s. 13. Not a vibe, and not a pretext.",
     statements: [
       {
         title: "The Code",
-        body: "GOSPEL does not refuse to employ, refuse to continue to employ, or discriminate in any term of employment — including who gets the call — because of Indigenous identity, race, colour, ancestry, place of origin, political belief, religion, marital status, family status, physical or mental disability, sex, sexual orientation, gender identity or expression, age, or a conviction unrelated to the work. Human Rights Code s. 13. GOSPEL does not refuse to refer a person for those reasons.",
+        body: "The employer does not refuse to employ, refuse to continue to employ, or discriminate in any term of employment — including who is assigned to the lift — because of Indigenous identity, race, colour, ancestry, place of origin, political belief, religion, marital status, family status, physical or mental disability, sex, sexual orientation, gender identity or expression, age, or a conviction unrelated to the work. Human Rights Code s. 13. The employer does not refuse to assign a person for those reasons.",
       },
       {
         title: "This work",
@@ -686,11 +686,11 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Accommodate",
-        body: "GOSPEL accommodates protected characteristics to the point of undue hardship. Accommodation does not put an impaired or restricted person onto a hook that the restriction forbids. See Fitness for Work, Impairment and Return to Work.",
+        body: "The employer accommodates protected characteristics to the point of undue hardship. Accommodation does not put an impaired or restricted person onto a hook that the restriction forbids. See Fitness for Work, Impairment and Return to Work.",
       },
       {
         title: "Report",
-        body: "Report to GOSPEL at 1 604 431 2000 and ask for Safety, or email hire@gospel.im. If the alleged person is GOSPEL, use that route anyway and name it. A complaint may also be filed with the BC Human Rights Tribunal. Bullying and harassment under WorkSafeBC is a separate file — GOSPEL-POL-017 — and both can apply.",
+        body: "Report to the supervisor or the employer at the workplace, or email safety@gospel.im. If the alleged person is the supervisor or the employer, use that route anyway and name it. A complaint may also be filed with the BC Human Rights Tribunal. Bullying and harassment under WorkSafeBC is a separate file — GOSPEL-POL-017 — and both can apply.",
       },
     ],
   },
@@ -699,19 +699,19 @@ export const POLICIES: Policy[] = [
     title: "FIRST AID",
     number: "GOSPEL-POL-025",
     summary:
-      "First aid follows the workplace. On a client site that is usually the host. On a workplace GOSPEL controls, GOSPEL does the assessment.",
+      "First aid follows the workplace. On a host site that is usually the host. On a workplace the employer controls, that employer does the assessment.",
     statements: [
       {
         title: "Which workplace",
-        body: "OHS Regulation Part 3 Division 4 and Schedule 3-A set first aid by workplace — hazard rating, number of workers, surface travel time. They are not the same at every dispatch.",
+        body: "OHS Regulation Part 3 Division 4 and Schedule 3-A set first aid by workplace — hazard rating, number of workers, surface travel time. They are not the same at every lift.",
       },
       {
         title: "Client / host site",
-        body: "On a construction or industrial site GOSPEL does not control, first aid is the host’s or the prime contractor’s. Before work, the crew knows where it is, who the attendant is, and how to summon it. That goes on the FLHA. GOSPEL-FRM-012 is still completed for a GOSPEL worker.",
+        body: "On a host construction or industrial site, first aid is the host’s or the prime contractor’s. Before work, the crew knows where it is, who the attendant is, and how to summon it. That goes on the FLHA. GOSPEL-FRM-012 is still completed for a worker on the lift.",
       },
       {
-        title: "Workplace GOSPEL controls",
-        body: "If GOSPEL is the employer at a workplace it controls — office, yard, shop — GOSPEL conducts the first-aid assessment, posts it, and provides the equipment, attendants and procedures that assessment requires. Review when the workforce or the work changes.",
+        title: "Workplace the employer controls",
+        body: "If the employer controls the workplace — office, yard, shop — that employer conducts the first-aid assessment, posts it, and provides the equipment, attendants and procedures that assessment requires. Review when the work or the number of workers changes.",
       },
       {
         title: "Records",
@@ -724,23 +724,23 @@ export const POLICIES: Policy[] = [
     title: "JOINT COMMITTEE / WORKER REPRESENTATIVE",
     number: "GOSPEL-POL-026",
     summary:
-      "Committee or worker representative follows the Act for that workplace. It is not a poster GOSPEL invents for every site.",
+      "Committee or worker representative follows the Act for that workplace. It is not a poster this program invents for every site.",
     statements: [
       {
         title: "The threshold",
-        body: "Workers Compensation Act Part 2 Division 5. A joint health and safety committee is required at a workplace where 20 or more workers are regularly employed. A worker health and safety representative is required where 9 to 19 workers are regularly employed. Other orders can apply. This is per workplace — not a headcount of everyone GOSPEL has ever dispatched.",
+        body: "Workers Compensation Act Part 2 Division 5. A joint health and safety committee is required at a workplace where 20 or more workers are regularly employed. A worker health and safety representative is required where 9 to 19 workers are regularly employed. Other orders can apply. This is per workplace — not a headcount of everyone who has ever worked to this program.",
       },
       {
-        title: "Workplace GOSPEL controls",
-        body: "At a workplace GOSPEL regularly employs people and controls, GOSPEL establishes the committee or representative the Act requires. New members get the training in OHS Regulation 3.27. A joint committee is evaluated annually where 3.26 applies.",
+        title: "Workplace the employer controls",
+        body: "At a workplace the employer regularly employs people and controls, that employer establishes the committee or representative the Act requires. New members get the training in OHS Regulation 3.27. A joint committee is evaluated annually where 3.26 applies.",
       },
       {
         title: "Client / host site",
-        body: "GOSPEL workers on a host site participate in that workplace’s committee or representative system as the host and the Act require. GOSPEL remains the employer of its people. A multiple-employer workplace does not erase that.",
+        body: "Workers on a host site participate in that workplace’s committee or representative system as the host and the Act require. The employer of each worker remains that worker’s employer. A multiple-employer workplace does not erase that.",
       },
       {
         title: "Below the threshold",
-        body: "If a GOSPEL-controlled workplace is below the committee and representative thresholds, 3.2 still requires regular monthly meetings with workers on health and safety, and a record of what was discussed. GOSPEL-FRM-033.",
+        body: "If an employer-controlled workplace is below the committee and representative thresholds, 3.2 still requires regular monthly meetings with workers on health and safety, and a record of what was discussed. GOSPEL-FRM-033.",
       },
       {
         title: "Recommendations",
@@ -753,15 +753,15 @@ export const POLICIES: Policy[] = [
     title: "CONTRACTORS AND MULTI-EMPLOYER SITES",
     number: "GOSPEL-POL-027",
     summary:
-      "GOSPEL is usually the contractor. The host owns the site. The prime contractor owns coordination where the Act requires one. Subcontractors GOSPEL hires are selected and watched.",
+      "The contractor brings the crew and this program. The host owns the site. The prime contractor owns coordination where the Act requires one. Subcontractors are selected and watched.",
     statements: [
       {
-        title: "GOSPEL",
-        body: "Sends competent people, this program, and stop-work. Does not own the client’s site. Does not become the prime contractor by showing up with a crew.",
+        title: "The contractor",
+        body: "Brings competent people, this program, and stop-work. Does not own the host’s site. Does not become the prime contractor by showing up with a crew.",
       },
       {
-        title: "GOSPEL workers",
-        body: "Work to this program and to site rules — whichever is stricter. Report to GOSPEL and to site supervision. Refuse unsafe work.",
+        title: "Workers",
+        body: "Work to this program and to site rules — whichever is stricter. Report to the supervisor and to site supervision. Refuse unsafe work.",
       },
       {
         title: "Host employer / client",
@@ -769,19 +769,19 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Site supervisor",
-        body: "When GOSPEL supplies lift supervision, that person owns whether the hook moves. They do not own the entire site.",
+        body: "When lift supervision is provided under this program, that person owns whether the hook moves. They do not own the entire site.",
       },
       {
         title: "Prime contractor",
-        body: "On a multiple-employer workplace the Act requires a prime contractor to coordinate. GOSPEL asks who that is before people are sent. If nobody can name them, that is a hazard. It is named. The lift waits until coordination is real.",
+        body: "On a multiple-employer workplace the Act requires a prime contractor to coordinate. The supervisor or the contractor asks who that is before the crew starts. If nobody can name them, that is a hazard. It is named. The lift waits until coordination is real.",
       },
       {
-        title: "Subcontractors GOSPEL hires",
-        body: "If GOSPEL hires another company — a rigger shop, a signal crew, a carrier — selection includes their ability to identify, communicate and control hazards that affect their people, ours, and anyone else. They get this program and the host’s rules. GOSPEL monitors the work we hired them for. A COR card is evidence, not a substitute for watching the hitch.",
+        title: "Subcontractors",
+        body: "If another company is hired — a rigger shop, a signal crew, a carrier — selection includes their ability to identify, communicate and control hazards that affect their people, the crew, and anyone else. They get this program and the host’s rules. The work they were hired for is monitored. A COR card is evidence, not a substitute for watching the hitch.",
       },
       {
         title: "Orientation and communication",
-        body: "Host orientation is completed as the site requires. GOSPEL shares what the host needs: FLHA, inspections, incidents involving our people. The host shares what we need: known hazards, other cranes, lines, first aid, muster.",
+        body: "Host orientation is completed as the site requires. The crew shares what the host needs: FLHA, inspections, incidents involving the crew. The host shares what the crew needs: known hazards, other cranes, lines, first aid, muster.",
       },
     ],
   },
@@ -790,11 +790,11 @@ export const POLICIES: Policy[] = [
     title: "OCCUPATIONAL HEALTH",
     number: "GOSPEL-POL-028",
     summary:
-      "Noise, MSI, heat, cold, WHMIS and smoke as they actually hit crane and rigging work. Not a silica program we do not run.",
+      "Noise, MSI, heat, cold, WHMIS and smoke as they actually hit crane and rigging work. Not a silica program this work does not include.",
     statements: [
       {
         title: "What this covers",
-        body: "Hazards that show up on GOSPEL dispatches: noise at the machine and in the cab, musculoskeletal injury from sitting a crane or handling gear, heat and cold, hazardous products we actually use, wildfire smoke. Silica, asbestos and confined-space programs are not added because they are not the work. If a dispatch actually includes that exposure, it is named on the FLHA and the host’s procedure is followed — or the dispatch is refused.",
+        body: "Hazards that show up on crane and rigging work: noise at the machine and in the cab, musculoskeletal injury from sitting a crane or handling gear, heat and cold, hazardous products actually used on the lift, wildfire smoke. Silica, asbestos and confined-space programs are not added because they are not the work. If a lift actually includes that exposure, it is named on the FLHA and the host’s procedure is followed — or the work does not start.",
       },
       {
         title: "Noise",
@@ -806,7 +806,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "Hazardous products",
-        body: "WHMIS for products GOSPEL people use — diesel, hydraulic oil, grease, rope dressing. SDS library 18. The host’s products stay on the host’s SDS.",
+        body: "WHMIS for products workers use — diesel, hydraulic oil, grease, rope dressing. SDS library 18. The host’s products stay on the host’s SDS.",
       },
       {
         title: "Heat, cold, smoke",

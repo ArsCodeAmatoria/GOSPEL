@@ -27,12 +27,12 @@ export function SafetyReportForm({
       });
       const json = (await res.json()) as { ok?: boolean };
       if (!res.ok || !json.ok) {
-        setError("Could not send. Call GOSPEL or use the email.");
+        setError("Could not send. Use the email on this site.");
         return;
       }
       setSent(true);
     } catch {
-      setError("Could not send. Call GOSPEL or use the email.");
+      setError("Could not send. Use the email on this site.");
     } finally {
       setSending(false);
     }

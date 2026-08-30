@@ -174,9 +174,9 @@ export default async function WireArticlePage({ params }: Props) {
           <span className="mono steel">GOSPELWIRE</span>
           <strong className="display">ALL STORIES</strong>
         </Link>
-        <Link href="/hire">
+        <Link href="/safety">
           <span className="mono steel">NEXT</span>
-          <strong className="display">HIRE A CREW</strong>
+          <strong className="display">READ PROVEN</strong>
         </Link>
       </nav>
 

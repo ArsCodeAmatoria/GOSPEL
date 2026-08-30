@@ -14,12 +14,12 @@ export function control(number: string, title: string): DocControl {
 
 export const CREW_ROLES: RoleLine[] = [
   {
-    title: "GOSPEL",
-    body: "Publishes this document, verifies competency before dispatch, and backs stop-work. Does not own the client’s site.",
+    title: "This program",
+    body: "The published method for the work. Stop-work is named in it. It does not own the site.",
   },
   {
     title: "Supervisor",
-    body: "Confirms the plan, the crew, the zone and the stop criteria. Owns whether the hook moves when GOSPEL is supplying supervision.",
+    body: "Confirms the plan, the crew, the zone and the stop criteria. Owns whether the hook moves.",
   },
   {
     title: "Crane operator",
@@ -61,7 +61,7 @@ export const LIFT_REFS = [
   "14.35 pre-use inspection · 14.36 load weight · 14.42.1 critical lift · 14.44 loads over work areas · 14.45 unattended loads · 14.47–14.49 signals",
   "OHS Regulation Part 15 — Rigging",
   "Manufacturer load chart, manual and configuration limits",
-  "Site lift plan, FLHA and client rules where stricter",
+  "Site lift plan, FLHA and site rules where stricter",
 ];
 
 /** WorkSafeBC Table 19-1A. BC Hydro publishes the same distances for work near their system. */
@@ -188,7 +188,7 @@ export const LIGHTNING_LINKS: DocLink[] = [
 
 export const LIGHTNING_REFS = [
   "Environment and Climate Change Canada — When thunder roars, go indoors. If you hear thunder you are within striking distance. Wait at least 30 minutes after the last rumble.",
-  "ECCC dropped the first 30 of the 30/30 rule in 2010. People waited until a 30-second flash-to-bang. That is too late. GOSPEL does not count to 30 before stopping.",
+  "ECCC dropped the first 30 of the 30/30 rule in 2010. People waited until a 30-second flash-to-bang. That is too late. Do not count to 30 before stopping.",
   "CCOHS Weather — Lightning. ~300 m per second flash-to-bang. No safe place outdoors. Fully enclosed building with wiring and plumbing, or a hard-top metal vehicle.",
   "Workers Compensation Act s. 21 — known or reasonably foreseeable hazards. Lightning on a crane is foreseeable.",
   "OHS Regulation 14.2 — operate as specified by the manufacturer or a professional engineer.",
@@ -204,7 +204,7 @@ export const LIGHTNING_REFS = [
 export const FLYTABLE_REFS = [
   "WorkSafeBC Flytable Safety (Jul 2025) — drop, roll, fly, land. Critical lift.",
   "BC Crane Safety, 14 Aug 2025 — New WorkSafeBC Video: Flytable Lift Safety",
-  "OHS Regulation Part 20 — formwork and falsework. Host / prime duty. GOSPEL does not write the cycling carpentry.",
+  "OHS Regulation Part 20 — formwork and falsework. Host / prime duty. This procedure does not write the cycling carpentry.",
   "Manufacturer cycle and shop drawing for this table system — at the lift. Pick points only as the drawing names.",
 ];
 
@@ -242,7 +242,7 @@ export const FLYTABLE_ROLES: RoleLine[] = [
   ...CREW_ROLES,
   {
     title: "Formwork supervisor (host)",
-    body: "Drops, rolls and lands the table to the manufacturer cycle and the engineered drawing. GOSPEL does not lower jacks or invent a cycling sequence.",
+    body: "Drops, rolls and lands the table to the manufacturer cycle and the engineered drawing. The crane crew does not lower jacks or invent a cycling sequence.",
   },
   {
     title: "Prime contractor",
@@ -343,7 +343,7 @@ export const PLATFORM_HITCH: DocTable = {
     ["One platform at a time.", "Doka."],
     ["Reposition wind — Doka 72 km/h, or the lower of crane / this SJP.", "Doka. Chart."],
     ["Disconnect only after the host says landed — jacks tight, rails pinned.", "CantiDeck. Doka."],
-    ["Daily SuperDeck / Super Roller / DOC extend and retract is host. GOSPEL is not hooked.", "Preston FAQ. CantiDeck. DOC."],
+    ["Daily SuperDeck / Super Roller / DOC extend and retract is host. The crane is not hooked.", "Preston FAQ. CantiDeck. DOC."],
   ],
 };
 
@@ -353,7 +353,7 @@ export const PLATFORM_ROLES: RoleLine[] = [
   ...CREW_ROLES,
   {
     title: "Platform supervisor (host)",
-    body: "Rails, props, clamps or through-slab anchors to the OEM and the engineered drawing. GOSPEL does not invent a propping sequence. Says when the deck is landed and in service.",
+    body: "Rails, props, clamps or through-slab anchors to the OEM and the engineered drawing. The crane crew does not invent a propping sequence. Says when the deck is landed and in service.",
   },
   {
     title: "Prime contractor",

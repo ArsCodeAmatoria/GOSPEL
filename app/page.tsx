@@ -4,9 +4,8 @@ import { ProvenName } from "@/components/ProvenMark";
 import { ProcedureSteps } from "@/components/ProcedureSteps";
 import { FactsList, StandardsList } from "@/components/StandardsList";
 import { WireStoryLink } from "@/components/WireStoryLink";
-import { CREW } from "@/lib/crew";
 import { RIGGING_A_LOAD, safetyByGroup } from "@/lib/safety";
-import { ABOUT, BELIEFS, PLACEMENT, SERVICES, SITE } from "@/lib/site";
+import { ABOUT, BELIEFS, METHOD, PROGRAM, SITE } from "@/lib/site";
 import { WIRE, getLatest, summarize } from "@/lib/whoopwire";
 
 export default function HomePage() {
@@ -14,16 +13,20 @@ export default function HomePage() {
     <>
       <section className="section section-lead" id="GOSPEL">
         <div className="wrap">
-          <p className="mono kicker">01 — THE COMPANY</p>
+          <p className="mono kicker">01 — THE PROGRAM</p>
           <h1 className="display giant">
-            WE MOVE
+            CRANE
             <br />
-            HEAVY THINGS.
+            SAFETY
+            <br />
+            SYSTEMS.
           </h1>
           <p className="display pitch-line mt-2">
-            THE PEOPLE
+            OPEN.
             <br />
-            AND THE SYSTEMS.
+            USABLE.
+            <br />
+            ACCOUNTABLE.
           </p>
           <p className="lede-lg mt">{SITE.dek}</p>
           <div className="company-copy">
@@ -32,16 +35,16 @@ export default function HomePage() {
             <p className="company-copy-close">{SITE.close}</p>
           </div>
           <div>
-            <p className="mono steel mt-2">WHO WE ARE</p>
-            <p className="lede mt">The work, the people, the system.</p>
+            <p className="mono steel mt-2">WHAT THIS IS</p>
+            <p className="lede mt">The program, the standard, the system.</p>
             <FactsList items={ABOUT} />
           </div>
           <div className="inline-cta">
-            <Link className="btn btn-solid" href="/hire">
-              HIRE A CREW
-            </Link>
-            <Link className="btn btn-ghost" href="/safety">
+            <Link className="btn btn-solid" href="/safety">
               READ {SITE.system}
+            </Link>
+            <Link className="btn btn-ghost" href="/philosophy">
+              READ THE PHILOSOPHY
             </Link>
           </div>
         </div>
@@ -51,7 +54,7 @@ export default function HomePage() {
         <div className="wrap">
           <p className="mono kicker">02 — OPEN BOOK</p>
           <h2 className="display giant">
-            OUR SAFETY
+            THE SAFETY
             <br />
             SYSTEM IS
             <br />
@@ -64,8 +67,9 @@ export default function HomePage() {
           </p>
           <p className="lede mt">
             People, process and documentation — organized, verified and
-            accountable. Clients, workers and contractors can read how we
-            expect the work to be performed before they hire us.
+            accountable. Operators, riggers, supervisors, contractors and
+            clients can read how the work is expected to be performed before
+            the gate.
           </p>
           <div id="standards">
             <p className="mono steel mt-2">WHAT THE WORK IS DONE TO</p>
@@ -80,8 +84,8 @@ export default function HomePage() {
             <Link className="btn btn-solid" href="/safety">
               READ {SITE.system}
             </Link>
-            <Link className="btn btn-ghost" href="/hire">
-              HIRE A CREW
+            <Link className="btn btn-ghost" href="/safety/builder">
+              OPEN THE FORM BUILDER
             </Link>
           </div>
         </div>
@@ -104,16 +108,21 @@ export default function HomePage() {
       </section>
 
       <section className="section wrap">
-        <p className="mono kicker">03 — WHAT WE SUPPLY</p>
-        <h2 className="display giant">THE WORK.</h2>
+        <p className="mono kicker">03 — WHAT THE PROGRAM COVERS</p>
+        <h2 className="display giant">THE SYSTEM.</h2>
         <div className="mt-2">
-          {SERVICES.map((s) => (
+          {PROGRAM.map((s) => (
             <article className="service" key={s.num}>
               <span className="mono steel">{s.num}</span>
               <h3 className="display">{s.title}</h3>
               <p>{s.body}</p>
             </article>
           ))}
+        </div>
+        <div className="inline-cta">
+          <Link className="btn btn-ghost" href="/safety">
+            OPEN THE LIBRARY
+          </Link>
         </div>
       </section>
 
@@ -133,12 +142,12 @@ export default function HomePage() {
           </div>
           <div>
             <p className="lede-lg">
-              We verify qualifications, experience and practical competency
-              before placing workers on site.
+              Qualifications, experience and practical competency have to be
+              named before the hook is loaded.
             </p>
             <p className="mt lede">
-              We go beyond supplying labour. We provide the people and the
-              systems that support the safe and professional operation of cranes.
+              The program names what each role must hold, verify and refuse —
+              and it publishes the procedures they work to.
             </p>
             <div className="inline-cta">
               <Link className="btn btn-ghost" href="/safety/training-competency">
@@ -148,7 +157,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="place mt-2">
-          {PLACEMENT.map((p) => (
+          {METHOD.map((p) => (
             <article key={p.num}>
               <span className="mono steel">{p.num}</span>
               <h3 className="display">{p.title}</h3>
@@ -179,39 +188,13 @@ export default function HomePage() {
       </section>
 
       <section className="section wrap">
-        <div className="split">
-          <div>
-            <p className="mono kicker">07 — THE PEOPLE</p>
-            <h2 className="display giant">THE CREW</h2>
-          </div>
-          <p className="lede">
-            Crane operators. Riggers. Signalpersons. Crane supervisors. Safety
-            support. Matched to the work. Verified before they arrive.
-          </p>
-        </div>
-        <div className="mt-2">
-          {CREW.map((person) => (
-            <article className="crew-line" key={person.slug}>
-              <h3 className="display">{person.name}</h3>
-              <span className="mono">{person.role}</span>
-            </article>
-          ))}
-        </div>
-        <div className="inline-cta">
-          <Link className="btn btn-ghost" href="/crew">
-            MEET THE CREW
-          </Link>
-        </div>
-      </section>
-
-      <section className="section wrap">
-        <p className="mono kicker">08 — HOW WE THINK</p>
+        <p className="mono kicker">07 — THE STANDARD</p>
         <h2 className="display giant">
           NO BULLSHIT.
           <br />
-          JUST GOOD PEOPLE
+          JUST THE
           <br />
-          DOING HEAVY WORK.
+          STANDARD.
         </h2>
         <div className="rules mt-2">
           {BELIEFS.map((b) => (
@@ -229,7 +212,7 @@ export default function HomePage() {
       </section>
 
       <section className="section wrap" id="whoopwire">
-        <p className="mono kicker">09 — GOSPELWIRE</p>
+        <p className="mono kicker">08 — GOSPELWIRE</p>
         <h2 className="display giant">GOSPELWIRE</h2>
         <p className="mono mt">{WIRE.descriptor}</p>
         <div className="wire-stack mt-2">
@@ -245,28 +228,22 @@ export default function HomePage() {
       </section>
 
       <section className="section wrap">
-        <p className="mono kicker">10 — START</p>
-        <h2 className="display giant">HIRE A CREW</h2>
-        <div className="contact-rail mt">
-          <a className="contact-hit" href={SITE.phoneHref}>
-            <span className="mono">PHONE</span>
-            <strong className="display">{SITE.phone}</strong>
-          </a>
-          <a className="contact-hit" href={SITE.emailHref}>
-            <span className="mono">EMAIL</span>
-            <strong className="display">{SITE.email}</strong>
-          </a>
-        </div>
+        <p className="mono kicker">09 — START</p>
+        <h2 className="display giant">
+          OPEN
+          <br />
+          <ProvenName />
+        </h2>
         <p className="lede mt-2">
-          {SITE.location}. People and systems. Tell us the work. We will tell
-          you who is coming.
+          {SITE.location}. The program is public. Read it on a phone at the
+          gate. Print a section if you need it on paper.
         </p>
         <div className="inline-cta">
-          <Link className="btn btn-solid" href="/hire">
-            HIRE A CREW
-          </Link>
-          <Link className="btn btn-ghost" href="/safety">
+          <Link className="btn btn-solid" href="/safety">
             READ {SITE.system}
+          </Link>
+          <Link className="btn btn-ghost" href="/safety/builder">
+            OPEN THE FORM BUILDER
           </Link>
         </div>
       </section>

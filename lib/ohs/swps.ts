@@ -58,7 +58,7 @@ function swp(
     prohibited: fields.prohibited,
     emergency:
       fields.emergency ??
-      "Stop the lift. Make people safe. Land or hold the load if it can be done without a second incident. First aid. Notify the site and GOSPEL. Hold the scene.",
+      "Stop the lift. Make people safe. Land or hold the load if it can be done without a second incident. First aid. Notify the site and the employer. Hold the scene.",
     documentation: fields.documentation ?? [
       "FLHA",
       "Pre-use / inspection record",
@@ -73,13 +73,13 @@ function swp(
 export const SWPS: Swp[] = [
   swp("GOSPEL-SWP-001", "mobile-crane-setup", "MOBILE CRANE SETUP", "Put the crane on the ground the chart requires.", {
     purpose: "Set up a mobile crane so it can lift to the chart, on ground that can hold it, with a swing that will not hit people or plant.",
-    scope: "Mobile cranes and boom trucks GOSPEL operators are dispatched onto. Not tower erection. Not a substitute for the manufacturer’s setup.",
+    scope: "Mobile cranes and boom trucks run under this program. Not tower erection. Not a substitute for the manufacturer’s setup.",
     competency: ["BC Crane Safety certificate for the class", "Competency on this configuration", "Able to read this chart"],
     hazards: ["Soft or unknown ground", "Buried services", "Slope", "Overhead lines", "Tail swing", "Outrigger failure", "Wrong counterweight"],
     controls: ["Walk the pad", "Locate services", "Mats", "Full extension unless the chart allows otherwise", "Level within manufacturer limit", "Swing check"],
-    equipment: ["The dispatched crane", "Mats / cribbing as the plan", "Level", "Chart for this configuration"],
+    equipment: ["The crane for this lift", "Mats / cribbing as the plan", "Level", "Chart for this configuration"],
     procedure: [
-      { n: "01", title: "CONFIRM THE MACHINE", body: "Serial, configuration, counterweight, boom, jib, tyres or tracks, software — as dispatched and as the chart." },
+      { n: "01", title: "CONFIRM THE MACHINE", body: "Serial, configuration, counterweight, boom, jib, tyres or tracks, software — as assigned and as the chart." },
       { n: "02", title: "WALK THE PAD", body: "Supporting surface, excavations, cellars, backfill, underground services, slope, other cranes." },
       { n: "03", title: "POSITION", body: "Place the crane so the work is inside the chart and the swing does not take the counterweight through people or plant." },
       { n: "04", title: "OUTRIGGERS AND MATS", body: "Deploy as the chart. Mats sized for the load on the pad. Cribbing is a plan, not scrap." },
@@ -91,17 +91,17 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-002", "crane-pre-use-inspection", "CRANE PRE-USE INSPECTION", "Each shift, this machine, this configuration.", {
     purpose: "Find defects that affect lifting before the crane comes on load.",
-    scope: "Every GOSPEL operator, every shift, on the crane they will run. Done as the manufacturer, the named 14.2 standard, and Part 14 require.",
+    scope: "Every operator, every shift, on the crane they will run. Done as the manufacturer, the named 14.2 standard, and Part 14 require.",
     competency: ["Operator for this class", "Knows this machine’s inspection points"],
     hazards: ["Hidden damage", "Inoperative LMI / RCI", "Failed brakes", "Wire rope defects", "Leaks", "Missing pins"],
     controls: ["Walkaround", "Function tests", "Record defects", "Crane stays down until lifting defects are remedied"],
     equipment: ["Manufacturer inspection list", "This SWP", "Inspection form GOSPEL-FRM-002"],
     procedure: [
-      { n: "01", title: "IDENTITY", body: "This is the crane on the dispatch. Configuration matches the chart you will use." },
+      { n: "01", title: "IDENTITY", body: "This is the crane on this lift. Configuration matches the chart you will use." },
       { n: "02", title: "WALKAROUND", body: "Structure, welds, pins, tires or tracks, outriggers, leaks, rope, hook and latch, sheaves." },
       { n: "03", title: "CAB AND SAFETY DEVICES", body: "LMI / RCI, anti-two-block, horns, windows, fire extinguisher, load chart in the cab." },
       { n: "04", title: "FUNCTION", body: "Hoist, boom, swing, travel, brakes, outrigger controls — through the range you will use, without a load." },
-      { n: "05", title: "RECORD", body: "Complete the inspection record. Defects that affect lifting: crane down, supervisor and GOSPEL told." },
+      { n: "05", title: "RECORD", body: "Complete the inspection record. Defects that affect lifting: crane down, supervisor and the employer at the workplace told." },
       { n: "06", title: "DO NOT START", body: "If a safety device is bypassed or inoperative, the crane does not lift." },
     ],
     prohibited: ["Signing an inspection you did not do", "Bypassing LMI / RCI or anti-two-block to “get the day going”", "Lifting with a known lifting defect"],
@@ -109,11 +109,11 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-003", "crane-operation", "CRANE OPERATION", "The chart is the law of the machine.", {
     purpose: "Operate the crane to the chart, with a crew you can hear, on a lift you can account for.",
-    scope: "Mobile and tower operations GOSPEL operators are dispatched to perform. Personnel lifts only where legally permitted and engineered.",
+    scope: "Mobile and tower operations performed under this program. Personnel lifts only where legally permitted and engineered.",
     competency: ["Certificate for the class", "Competency on this crane", "Can calculate deductions and radius"],
     hazards: ["Overload", "Side load", "Shock load", "Contact", "Lost signal", "People under the load", "Wind"],
     controls: ["Chart", "Known load", "Exclusion zone", "One signalperson", "Stop on ambiguity"],
-    equipment: ["Dispatched crane", "Chart", "Working LMI / RCI", "Communication"],
+    equipment: ["The crane for this lift", "Chart", "Working LMI / RCI", "Communication"],
     procedure: [
       { n: "01", title: "KNOW THE LIFT", body: "Weight, deductions, radius, path, set. If you cannot put it on the chart, you do not take it." },
       { n: "02", title: "CREW", body: "One signalperson. Radios or hands agreed. Stop word. Zone held." },
@@ -136,13 +136,13 @@ export const SWPS: Swp[] = [
       { n: "02", title: "POSITION", body: "Boom, jib, upperworks and outriggers as the manufacturer specifies for shutdown and for the weather that is coming." },
       { n: "03", title: "ISOLATE", body: "Controls off. Keys as the site requires. House lock if fitted." },
       { n: "04", title: "ACCESS", body: "Cab closed. Ladders and gates as the site requires. Do not leave a climbing invitation." },
-      { n: "05", title: "HAND OVER", body: "Defects, remaining fuel, weather, and the next lift — written or spoken to the next operator and to GOSPEL if the dispatch ends." },
+      { n: "05", title: "HAND OVER", body: "Defects, remaining fuel, weather, and the next lift — written or spoken to the next operator and to the supervisor if the job ends." },
     ],
     prohibited: ["Leaving a load hanging for convenience", "Walking away from a running crane", "Shutdown position that fouls a line or a road"],
   }),
   swp("GOSPEL-SWP-005", "crane-communication", "CRANE COMMUNICATION", "If the operator cannot hear or see the signal, the crane does not move.", {
     purpose: "Make communication a control, not a courtesy.",
-    scope: "All GOSPEL lifts. Hands, radio, or both. Dedicated systems where Part 14 requires them.",
+    scope: "All lifts under this program. Hands, radio, or both. Dedicated systems where Part 14 requires them.",
     competency: ["Signalperson competency", "Operator who will not guess"],
     hazards: ["Two signalpersons", "Language mix-up", "Radio interference", "Blind corners", "Noise"],
     controls: ["One voice", "Agreed system in the brief", "Test before the hook", "Stop on loss"],
@@ -158,7 +158,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-006", "radio-communication", "RADIO COMMUNICATION", "The lift channel is for the lift.", {
     purpose: "Use radios so the operator gets one clear instruction and a hard STOP.",
-    scope: "Any GOSPEL lift using radios, including blind lifts and tower operations.",
+    scope: "Any lift under this program using radios, including blind lifts and tower operations.",
     competency: ["Can run the radio without looking at it", "Knows the stop word"],
     hazards: ["Wrong channel", "Interference", "Stepped-on transmissions", "Dead battery", "Informal language"],
     controls: ["Assigned channel", "Check before the hook", "Short commands", "Readback when it matters", "Spare battery"],
@@ -174,7 +174,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-007", "standard-hand-signals", "STANDARD HAND SIGNALS", "Standard signals. Not a private dialect.", {
     purpose: "Use the hand signals the crew agreed, the ones the Board authorizes, so the operator is not translating.",
-    scope: "GOSPEL lifts using hand signals. Combined with radio on blind or noisy lifts as briefed.",
+    scope: "Lifts under this program using hand signals. Combined with radio on blind or noisy lifts as briefed.",
     competency: ["Signalperson who can demonstrate the signals", "Operator who will not invent meanings"],
     hazards: ["Non-standard signals", "Gloves that hide the hand", "Distance and glare", "Two people waving"],
     controls: ["Brief the set", "High-visibility gloves", "Position where the operator can see", "Emergency stop is unmistakable"],
@@ -207,7 +207,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-009", "rigging-inspection", "RIGGING INSPECTION", "The gear is the truth. The guess is the hazard.", {
     purpose: "Keep failed slings and hardware off the hook.",
-    scope: "Every sling, shackle, hook, ring, spreader and below-the-hook device GOSPEL personnel will load. Part 15 and ASME B30.9 as named.",
+    scope: "Every sling, shackle, hook, ring, spreader and below-the-hook device the crew will load. Part 15 and ASME B30.9 as named.",
     competency: ["Rigger who can apply rejection criteria", "Does not need a supervisor to recognize a cut"],
     hazards: ["Unidentified gear", "Cuts, birdcaging, stretch", "Opened hooks", "Wrong pins", "Heat and chemical damage"],
     controls: ["Inspect before use", "Tag and isolate failures", "Report", "No one-more-lift"],
@@ -224,7 +224,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-010", "sling-selection", "SLING SELECTION", "The hitch chooses the sling. The leftover in the truck does not.", {
     purpose: "Pick a sling that can take the tension at this angle, in this hitch, on this edge, in this environment.",
-    scope: "Wire rope, chain and synthetic slings used by GOSPEL riggers.",
+    scope: "Wire rope, chain and synthetic slings used by riggers.",
     competency: ["Can calculate tension for the hitch", "Knows WLL, angle and environmental limits"],
     hazards: ["Wrong type for heat or chemicals", "Angle ignored", "Choker on a capacity meant for basket", "Sharp edges"],
     controls: ["Known load", "Known hitch", "Angle calculation", "Manufacturer table", "Edge protection"],
@@ -232,7 +232,7 @@ export const SWPS: Swp[] = [
     procedure: [
       { n: "01", title: "LOAD", body: "Weight and COG. If unknown, stop." },
       { n: "02", title: "HITCH", body: "Vertical, choker or basket. Capacity changes. Do not mix them in your head." },
-      { n: "03", title: "ANGLE", body: "θ from the horizontal. Tension = share / sin θ for a two-leg bridle. Below 30° is not a GOSPEL hitch unless an engineer owns it." },
+      { n: "03", title: "ANGLE", body: "θ from the horizontal. Tension = share / sin θ for a two-leg bridle. Below 30° is not a hitch this program allows unless an engineer owns it." },
       { n: "04", title: "ENVIRONMENT", body: "Heat, chemicals, sharp edges, basket in a choke — pick the material that survives that, or change the method." },
       { n: "05", title: "CHECK WLL", body: "After hitch and angle, the sling still has capacity. If it does not, change the sling or the hitch — do not hope." },
     ],
@@ -240,14 +240,14 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-011", "slinging-loads", "SLINGING LOADS", "Connect the hitch as planned. Test it an inch off the ground.", {
     purpose: "Put the sling on the load so the tension goes where you calculated.",
-    scope: "Making hitches on construction and industrial lifts GOSPEL rigs.",
+    scope: "Making hitches on construction and industrial lifts this program covers.",
     competency: ["Rigger", "Can explain the hitch they are about to make"],
     hazards: ["Unstable piece", "Sharp edges", "Twisted slings", "Unbalanced COG", "People under"],
     controls: ["Block the load", "Protect edges", "Hardware straight", "Test lift", "Zone"],
     equipment: ["Selected slings and hardware", "Softeners", "Tag lines"],
     procedure: [
       { n: "01", title: "STABLE PIECE", body: "Block or shore so the load cannot roll onto the rigger." },
-      { n: "02", title: "POINTS", body: "Designed lifting points. If none, the method is engineered or it is not a GOSPEL hitch." },
+      { n: "02", title: "POINTS", body: "Designed lifting points. If none, the method is engineered or it is not a hitch this program allows." },
       { n: "03", title: "APPLY THE HITCH", body: "No twists, no knots, no choke off a guess. Softeners on edges." },
       { n: "04", title: "HARDWARE", body: "Pins in. Latches working. Shackles used as designed." },
       { n: "05", title: "CLEAR AND TEST", body: "Hands off. Zone held. Inch off the ground. Re-rig if it tilts, slips or shocks." },
@@ -256,7 +256,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-012", "shackles", "SHACKLES", "The right shackle, the right pin, the right way around.", {
     purpose: "Use shackles within WLL, with the pin that belongs to them, in the orientation they were made for.",
-    scope: "Anchor, chain and other shackles used in GOSPEL rigging.",
+    scope: "Anchor, chain and other shackles used in rigging under this program.",
     competency: ["Can identify type and WLL", "Knows bow versus pin loading"],
     hazards: ["Bolt in place of a pin", "Side loading the pin", "Opened body", "Unmoused screw pin where required"],
     controls: ["Match pin to body", "Inspect", "Mouse screw pins where required", "Do not point-load a bow unless designed for it"],
@@ -272,7 +272,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-013", "hooks", "HOOKS", "Latch works. Throat not opened. Tip not loaded.", {
     purpose: "Keep hooks in service only when they can hold the hitch they are asked to hold.",
-    scope: "Crane hooks and rigging hooks GOSPEL personnel use.",
+    scope: "Crane hooks and rigging hooks the crew uses.",
     competency: ["Knows rejection for opening, wear and latch"],
     hazards: ["Missing latch", "Opened throat", "Tip loading", "Two slings fighting on one hook without a fitting"],
     controls: ["Inspect latch and throat", "Seat the sling in the saddle", "Out of service when the manufacturer says so"],
@@ -287,7 +287,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-014", "rigging-hardware", "RIGGING HARDWARE", "Rated, matched, inspected. No mystery steel.", {
     purpose: "Keep rings, links, turnbuckles, eyebolts, beam clamps and below-the-hook fittings inside their ratings.",
-    scope: "Hardware other than slings, shackles and hooks used in GOSPEL hitches.",
+    scope: "Hardware other than slings, shackles and hooks used in hitches under this program.",
     competency: ["Can read the mark", "Knows when an eyebolt is for tension only"],
     hazards: ["Unmarked fittings", "Eyebolts loaded at an angle they were not made for", "Beam clamps on the wrong flange", "Welded shop specials"],
     controls: ["Identification", "Manufacturer orientation", "Inspect", "Engineer for homemade gear — which means homemade gear is out"],
@@ -302,7 +302,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-015", "load-control", "LOAD CONTROL", "The load goes where the plan said. Not where it drifted.", {
     purpose: "Control rotation, swing and travel so people and plant are not in the path.",
-    scope: "All GOSPEL lifts once the load is on the hook.",
+    scope: "All lifts under this program once the load is on the hook.",
     competency: ["Operator, rigger and signalperson who briefed the path"],
     hazards: ["Spin", "Pendulum", "Contact", "People in the path", "Wind"],
     controls: ["Tag lines", "Exclusion zone", "Smooth motions", "No side pull"],
@@ -318,7 +318,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-016", "tag-lines", "TAG LINES", "Lines control rotation. Bodies do not.", {
     purpose: "Use tag lines so the load does not spin into people, steel or the crane.",
-    scope: "GOSPEL lifts that require rotational control.",
+    scope: "Lifts under this program that require rotational control.",
     competency: ["Knows not to wrap a line on the body", "Can let go"],
     hazards: ["Wrap on wrist or waist", "Standing in the bight", "Pulled under the load", "Line snag"],
     controls: ["Correct length", "Hands that can release", "Position out of the fall zone and the bight"],
@@ -334,7 +334,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-017", "suspended-loads", "SUSPENDED LOADS", "If it is in the air, the zone is alive.", {
     purpose: "Keep people out from under a load and keep loads from hanging unattended.",
-    scope: "Any time a load is off the ground on a GOSPEL lift.",
+    scope: "Any time a load is off the ground on a lift under this program.",
     competency: ["Entire crew briefed on the zone"],
     hazards: ["People under", "Unattended hook", "Wind on a hanging piece", "Drift"],
     controls: ["Exclusion zone", "Tag lines", "Do not leave a hanging load", "Land when the plan says land"],
@@ -350,7 +350,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-018", "working-near-powerlines", "WORKING NEAR POWERLINES", "Assume they are live. MAD is a wall. Table 19-1A.", {
     purpose: "Keep boom, load, tag lines and people outside the minimum approach distance BC Hydro and WorkSafeBC Table 19-1A name for this voltage.",
-    scope: "Any GOSPEL lift where overhead or buried electrical lines exist, or might exist. BC Hydro system or any other utility — the same table. Buried: look down, locate, do not assume the pad is empty.",
+    scope: "Any lift under this program where overhead or buried electrical lines exist, or might exist. BC Hydro system or any other utility — the same table. Buried: look down, locate, do not assume the pad is empty.",
     competency: ["Operator and supervisor who can name the MAD for this voltage", "Spotter when the boom or load can encroach"],
     hazards: ["Contact", "Arc across a gap", "Step potential", "Unknown voltage", "Lines that look dead", "Tag line as a conductor"],
     controls: ["Identify", "Voltage from the utility — not a guess", "MAD as a hard wall", "Spotter", "Zone-limiting device if practicable (19.24.1(2))", "30M33 if the lift cannot keep clearance"],
@@ -370,7 +370,7 @@ export const SWPS: Swp[] = [
       "Entering MAD without a signed 30M33",
     ],
     emergency:
-      "Do not touch the crane or the load. People back 10 m — 33 m if it is transmission or a manhole. Call 911 and BC Hydro. Operator stays on unless fire or shock. GOSPEL notified immediately.",
+      "Do not touch the crane or the load. People back 10 m — 33 m if it is transmission or a manhole. Call 911 and BC Hydro. Operator stays on unless fire or shock. The supervisor and the employer at the workplace are notified immediately.",
     documentation: ["FLHA", "GOSPEL-FRM-037", "Coded 30M33 if issued", "This SWP number and revision"],
     references: MAD_REFS,
     links: [
@@ -456,7 +456,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-023", "weather-and-wind", "WEATHER AND WIND", "Thunder is the stop. The lower wind number wins. Do not count to 30.", {
     purpose: "Stop the lift when wind, lightning, ice or visibility take the plan away. Lightning: Environment Canada — if you hear thunder you are in range. The 30/30 first number is not a reason to keep lifting.",
-    scope: "All GOSPEL crane and rigging operations outdoors, and indoors where wind through a bay matters. Tower: 14.92 and 14.93 on top of the manufacturer. Electrical earthing and lightning-protection hardware are the owner’s Technical Safety BC electrical work — not this SWP.",
+    scope: "All crane and rigging operations outdoors under this program, and indoors where wind through a bay matters. Tower: 14.92 and 14.93 on top of the manufacturer. Electrical earthing and lightning-protection hardware are the owner’s Technical Safety BC electrical work — not this SWP.",
     competency: [
       "Operator who will believe the anemometer over the superintendent",
       "Can say the lightning abort: thunder, land, shelter, 30 minutes after the last rumble",
@@ -504,7 +504,7 @@ export const SWPS: Swp[] = [
       {
         n: "05",
         title: "AFTER A STRIKE",
-        body: "Treat it as a misadventure (14.16.1). Crane down. Professional engineer inspects and certifies before anyone hooks a load. Electrical installation is the owner — Technical Safety BC Electrical Safety Regulation if the supply or earthing took the hit. GOSPEL does not restart to see if the LMI still works.",
+        body: "Treat it as a misadventure (14.16.1). Crane down. Professional engineer inspects and certifies before anyone hooks a load. Electrical installation is the owner — Technical Safety BC Electrical Safety Regulation if the supply or earthing took the hit. This procedure does not restart to see if the LMI still works.",
       },
       {
         n: "06",
@@ -521,7 +521,7 @@ export const SWPS: Swp[] = [
       "Restarting after a strike without 14.16.1 certification",
     ],
     emergency:
-      "Thunder during a lift: land if it can be done without a second incident. People off. Shelter. Do not gather under the crane. First aid if anyone is hit — lightning victims carry no charge. 911. Notify the site and GOSPEL.",
+      "Thunder during a lift: land if it can be done without a second incident. People off. Shelter. Do not gather under the crane. First aid if anyone is hit — lightning victims carry no charge. 911. Notify the site and the employer.",
     documentation: ["FLHA", "Wind number in the brief", "Manufacturer weather pages", "14.16.1 engineer letter if struck"],
     references: LIGHTNING_REFS,
     tables: LIGHTNING_TABLES,
@@ -532,24 +532,24 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-024", "crane-emergency-procedures", "CRANE EMERGENCY PROCEDURES", "People first. Then the machine. Then the story.", {
     purpose: "Give the crew one sequence when the crane, the load or a person is in trouble.",
-    scope: "Incidents during GOSPEL crane operations: overload alarms, function failure, contact, fire, medical, overturn developing.",
+    scope: "Incidents during crane operations under this program: overload alarms, function failure, contact, fire, medical, overturn developing.",
     competency: ["Entire crew briefed on emergency shutdown for this machine"],
     hazards: ["Second incident", "People approaching a live crane", "Uncontrolled load", "Fire in the engine or cab"],
-    controls: ["Stop", "Safe condition if possible", "Keep people back", "Call for help", "Notify GOSPEL"],
+    controls: ["Stop", "Safe condition if possible", "Keep people back", "Call for help", "Notify the employer"],
     equipment: ["This crane’s emergency stops", "Extinguisher in the cab", "Site emergency number"],
     procedure: [
       { n: "01", title: "STOP", body: "Stop motions that make it worse. Emergency stop if that is the control." },
       { n: "02", title: "PEOPLE", body: "Get people out of the zone. First aid. Do not become the second event." },
       { n: "03", title: "LOAD", body: "Land or hold only if it can be done without creating another failure. If it cannot, protect people and wait for a plan." },
       { n: "04", title: "MACHINE", body: "Fire: extinguisher if you are trained and it is small; otherwise get off and keep people back. Overturn developing: do not jump toward the fall." },
-      { n: "05", title: "CALL AND HOLD", body: "Site emergency method. Utility if lines. GOSPEL. Scene held for investigation." },
+      { n: "05", title: "CALL AND HOLD", body: "Site emergency method. Utility if lines. Supervisor and the employer at the workplace. Scene held for investigation." },
     ],
     prohibited: ["Restarting to “see if it does it again”", "Crowd around a crane in contact with a line", "Moving a seriously injured person except from immediate danger"],
     documentation: ["Incident report GOSPEL-FRM-010", "Machine log"],
   }),
   swp("GOSPEL-SWP-025", "removal-of-damaged-rigging", "REMOVAL OF DAMAGED RIGGING FROM SERVICE", "Tag it. Isolate it. Tell someone. No one more lift.", {
     purpose: "Make sure failed gear cannot be picked up by the next rigger.",
-    scope: "Any sling or hardware that fails inspection or is damaged in use on a GOSPEL dispatch.",
+    scope: "Any sling or hardware that fails inspection or is damaged in use on a lift under this program.",
     competency: ["Anyone on the crew can stop gear", "Rigger completes the tag and report"],
     hazards: ["Failed gear left on the pile", "Unmarked damage", "Someone “borrowing” a cut sling"],
     controls: ["Immediate removal", "Physical isolation", "Tag", "Report GOSPEL-RPT-004"],
@@ -559,21 +559,21 @@ export const SWPS: Swp[] = [
       { n: "02", title: "TAG", body: "What failed, when, who. Tied to the item." },
       { n: "03", title: "ISOLATE", body: "Off the working pile. In a reject bin, a locked bag, or the truck’s quarantine — not beside the good slings." },
       { n: "04", title: "REPORT", body: "GOSPEL-RPT-004 the same shift. Site if it is their gear." },
-      { n: "05", title: "DO NOT REPAIR IN THE FIELD", body: "No wrapping tape as a WLL. No welding a hook. Destroy or return through GOSPEL or the owner." },
+      { n: "05", title: "DO NOT REPAIR IN THE FIELD", body: "No wrapping tape as a WLL. No welding a hook. Destroy or return through the owner or the supervisor." },
     ],
     prohibited: ["Leaving a cut sling “so nobody trips on it” on the pile", "Cutting the tag off because the sling is “still good in the middle”"],
     documentation: ["GOSPEL-FRM-003", "GOSPEL-RPT-004"],
   }),
   swp("GOSPEL-SWP-026", "lockout", "LOCKOUT / ISOLATION", "If you are not operating it, the energy is isolated. Part 10.", {
     purpose: "Keep a person off stored energy — hoist, slew, luff, travel, hydraulics, electrical — when the work is service, inspection beyond pre-use, rescue, or anything that puts a body in the machine.",
-    scope: "GOSPEL personnel on a crane they are not operating: maintenance they are assigned, climbing past the cab for inspection, rescue, or working on GOSPEL-controlled tools and vehicles. Not a substitute for the owner’s lockout procedure on that crane. Not tower jumping — see GOSPEL-SWP-027.",
+    scope: "Workers on a crane they are not operating: maintenance they are assigned, climbing past the cab for inspection, rescue, or working on tools and vehicles used on the lift. Not a substitute for the owner’s lockout procedure on that crane. Not tower jumping — see GOSPEL-SWP-027.",
     competency: ["Understands this machine’s isolation. Follows the owner’s lockout where it exists. Does not invent a padlock on a live hoist."],
     hazards: ["Unexpected hoist or slew", "Hydraulic dump", "Electrical contact", "Someone starting the crane", "Stored energy in a luffing ram"],
     controls: ["Identify energy", "Isolate", "Lock and tag", "Verify zero energy", "One lock per person"],
     equipment: ["Personal lock", "Tag", "The owner’s lockout devices for this crane"],
     procedure: [
       { n: "01", title: "NAME THE WORK", body: "What is being done, on which machine, which energy. If you cannot name it, you are not isolating it." },
-      { n: "02", title: "OWNER’S PROCEDURE", body: "Use the lockout written for this crane when it exists. GOSPEL does not override a stricter owner procedure." },
+      { n: "02", title: "OWNER’S PROCEDURE", body: "Use the lockout written for this crane when it exists. This procedure does not override a stricter owner procedure." },
       { n: "03", title: "ISOLATE AND LOCK", body: "Controls off. Energy isolated. Personal lock and tag. One person, one lock. Do not lend a key." },
       { n: "04", title: "VERIFY", body: "Try to start. Confirm the hoist, slew and luff will not move. Residual hydraulic or raised jib — released or blocked as the manufacturer says." },
       { n: "05", title: "WORK, THEN REMOVE YOUR LOCK", body: "Do the work. Remove only your lock. If the job runs past a shift, the handover of locks is a procedure — not a text message." },
@@ -582,15 +582,15 @@ export const SWPS: Swp[] = [
     documentation: ["Owner lockout for this serial", "GOSPEL-FRM-002 / 027 if the machine was down for a defect"],
     emergency: "If energy appears during the work: get clear. Re-isolate. Do not finish the job on a live machine.",
   }),
-  swp("GOSPEL-SWP-027", "tower-erection-climbing", "TOWER ERECTION, CLIMBING AND DISMANTLING", "Not a routine operator dispatch. Qualified supervisor. Notice of Project. 14.73.2.", {
-    purpose: "Stop GOSPEL from treating jumping a tower like running a shift. If this is the work, it is planned as this work.",
+  swp("GOSPEL-SWP-027", "tower-erection-climbing", "TOWER ERECTION, CLIMBING AND DISMANTLING", "Not a routine operator shift. Qualified supervisor. Notice of Project. 14.73.2.", {
+    purpose: "Stop treating jumping a tower like running a shift. If this is the work, it is planned as this work.",
     scope: "Tower-crane erection, climbing (increasing height), repositioning and dismantling. Not climbing the ladder to the cab to operate. Not a how-to for jumping a crane.",
-    competency: ["Work under a qualified supervisor as 14.73.2 and 14.73.3 require. GOSPEL does not send an operator to jump a crane because they have a tower ticket."],
+    competency: ["Work under a qualified supervisor as 14.73.2 and 14.73.3 require. A tower ticket alone does not assign an operator to jump a crane."],
     hazards: ["Unplanned jump", "Missing NOP", "No qualified supervisor", "People under a climbing frame", "Wind during a climb", "Lockout not done"],
-    controls: ["This is a planned operation or it is not GOSPEL work", "Notice of Project at least two weeks before, as 14.73.3 requires", "Qualified supervisor", "Manufacturer sequence", "Exclusion zone", "Lockout"],
+    controls: ["This is a planned operation or it is not work under this program", "Notice of Project at least two weeks before, as 14.73.3 requires", "Qualified supervisor", "Manufacturer sequence", "Exclusion zone", "Lockout"],
     equipment: ["This crane’s erection / climbing manual", "The climbing frame for this serial", "GOSPEL-SWP-026"],
     procedure: [
-      { n: "01", title: "CONFIRM THE DISPATCH", body: "The work is erection, climbing or dismantling — said in writing. A tower operator call is not this call." },
+      { n: "01", title: "CONFIRM THE WORK", body: "The work is erection, climbing or dismantling — said in writing. A tower operator shift is not this work." },
       { n: "02", title: "SUPERVISOR AND NOP", body: "Qualified supervisor named. Notice of Project to WorkSafeBC on the timeline 14.73.3 names. If either is missing, the work does not start." },
       { n: "03", title: "MANUAL AND CONFIGURATION", body: "This serial, this tower system, this climbing frame, this tie-in. The manufacturer’s sequence is the sequence." },
       { n: "04", title: "ZONE AND WEATHER", body: "Exclusion under the work. Wind and weather as the manufacturer and the plan. People off the ground under the frame." },
@@ -601,8 +601,8 @@ export const SWPS: Swp[] = [
     documentation: ["NOP-TC", "Site binder checklist", "Qualified supervisor named", "Manufacturer erection / climbing procedure for this serial"],
   }),
   swp("GOSPEL-SWP-028", "flytable-cycling", "FLYTABLE CYCLING", "Drop, roll, fly, land. Critical lift. The drawing and the OEM cycle win.", {
-    purpose: "Give the GOSPEL crew one method for flying a table-form from floor to floor: designated pick points, no pulling the table out, confirmation-loop radios, holds. Formwork carpentry stays with the host.",
-    scope: "GOSPEL operator, rigger and signalperson on a flytable / flyform cycle. Not a how-to for dropping jacks, rolling dollies or landing props. Those belong to the manufacturer cycle and the site-specific engineered drawing. Corner and nontypical tables: GOSPEL-SWP-029 on top of this procedure.",
+    purpose: "Give the crew one method for flying a table-form from floor to floor: designated pick points, no pulling the table out, confirmation-loop radios, holds. Formwork carpentry stays with the host.",
+    scope: "Operator, rigger and signalperson on a flytable / flyform cycle. Not a how-to for dropping jacks, rolling dollies or landing props. Those belong to the manufacturer cycle and the site-specific engineered drawing. Corner and nontypical tables: GOSPEL-SWP-029 on top of this procedure.",
     responsibilities: FLYTABLE_ROLES,
     competency: [
       "BC Crane Safety certificate for this crane class",
@@ -645,7 +645,7 @@ export const SWPS: Swp[] = [
       {
         n: "02",
         title: "DROP",
-        body: "Formwork drops the table per the manufacturer and the drawing — jacks, lowering devices, reshores. GOSPEL hook is not a substitute for lowering jacks. Confirm the table is free of the slab, pins and spindles as the OEM, nothing snagged. Crane on standby. Do not take load to strip.",
+        body: "Formwork drops the table per the manufacturer and the drawing — jacks, lowering devices, reshores. The hook is not a substitute for lowering jacks. Confirm the table is free of the slab, pins and spindles as the OEM, nothing snagged. Crane on standby. Do not take load to strip.",
       },
       {
         n: "03",
@@ -678,7 +678,7 @@ export const SWPS: Swp[] = [
       "Last floor’s SJP for this table",
     ],
     emergency:
-      "Table hung up, rolling toward the edge, dropped object, person in the zone, wind pickup, lost radio — stop. Land if it can be done without a second incident. Do not pull. First aid. Notify the site and GOSPEL. Hold the scene.",
+      "Table hung up, rolling toward the edge, dropped object, person in the zone, wind pickup, lost radio — stop. Land if it can be done without a second incident. Do not pull. First aid. Notify the site and the employer. Hold the scene.",
     documentation: [
       "GOSPEL-SJP-001 / FRM-052 for this cycle",
       "GOSPEL-FRM-007 critical lift plan",
@@ -696,7 +696,7 @@ export const SWPS: Swp[] = [
   }),
   swp("GOSPEL-SWP-029", "corner-nontypical-flytables", "CORNER AND NONTIPICAL FLYTABLES", "Awkward shape. Reduced stability. Not the typical SJP.", {
     purpose: "Stop a corner or nontypical table from being flown on the typical cycle. WorkSafeBC and BC Crane Safety call these out as a separate plan.",
-    scope: "GOSPEL crew when the table is a corner, infill, reduced-width, or any table the drawing or the engineer marks nontypical. Do GOSPEL-SWP-028 as well. This SWP does not replace it.",
+    scope: "The crew when the table is a corner, infill, reduced-width, or any table the drawing or the engineer marks nontypical. Do GOSPEL-SWP-028 as well. This SWP does not replace it.",
     responsibilities: FLYTABLE_ROLES,
     competency: [
       "Same as GOSPEL-SWP-028",
@@ -758,8 +758,8 @@ export const SWPS: Swp[] = [
     ],
   }),
   swp("GOSPEL-SWP-030", "loading-platform-reposition", "LOADING PLATFORM INSTALL AND REPOSITION", "Empty. Four designated points. Props released. Then fly. Critical lift. The OEM user information wins.", {
-    purpose: "Give the GOSPEL crew one method for installing, repositioning or striking a cantilever loading platform by crane. Rails, props, clamps and daily extend / retract stay with the host.",
-    scope: "GOSPEL operator, rigger and signalperson on a Doka, SuperDeck, CantiDeck, PERI RCS MP, DOC or other OEM loading platform. Not a how-to for propping, clamping, through-slab anchors, or rolling a SuperDeck in. Those belong to the manufacturer and the host. Landing materials onto a deck already in service is a separate lift — this SWP still names the WLL rule.",
+    purpose: "Give the crew one method for installing, repositioning or striking a cantilever loading platform by crane. Rails, props, clamps and daily extend / retract stay with the host.",
+    scope: "Operator, rigger and signalperson on a Doka, SuperDeck, CantiDeck, PERI RCS MP, DOC or other OEM loading platform. Not a how-to for propping, clamping, through-slab anchors, or rolling a SuperDeck in. Those belong to the manufacturer and the host. Landing materials onto a deck already in service is a separate lift — this SWP still names the WLL rule.",
     responsibilities: PLATFORM_ROLES,
     competency: [
       "BC Crane Safety certificate for this crane class",
@@ -812,7 +812,7 @@ export const SWPS: Swp[] = [
       {
         n: "04",
         title: "RELEASE",
-        body: "Host releases props, clamps or through-slab anchors to the OEM. GOSPEL does not invent that sequence. CantiDeck: do not lift until the props are released. Take a little load, confirm free, then hoist. Do not strip with the crane.",
+        body: "Host releases props, clamps or through-slab anchors to the OEM. This procedure does not invent that sequence. CantiDeck: do not lift until the props are released. Take a little load, confirm free, then hoist. Do not strip with the crane.",
       },
       {
         n: "05",
@@ -832,7 +832,7 @@ export const SWPS: Swp[] = [
       {
         n: "08",
         title: "RETRACTABLE",
-        body: "SuperDeck, CantiDeck Super Roller, DOC: daily extend and retract is host. Preston: no crane licence to roll it. GOSPEL is not hooked while it moves as a drawer. Install, reposition and strike stay this SWP — empty, four points, props released.",
+        body: "SuperDeck, CantiDeck Super Roller, DOC: daily extend and retract is host. Preston: no crane licence to roll it. The crane is not hooked while it moves as a drawer. Install, reposition and strike stay this SWP — empty, four points, props released.",
       },
     ],
     prohibited: [
@@ -845,7 +845,7 @@ export const SWPS: Swp[] = [
       "Last floor’s SJP for this serial",
     ],
     emergency:
-      "Deck hung up, dumped at the edge, dropped object, person in the zone, wind pickup, lost radio — stop. Land if it can be done without a second incident. Do not pull. First aid. Notify the site and GOSPEL. Hold the scene.",
+      "Deck hung up, dumped at the edge, dropped object, person in the zone, wind pickup, lost radio — stop. Land if it can be done without a second incident. Do not pull. First aid. Notify the site and the employer. Hold the scene.",
     documentation: [
       "GOSPEL-SJP-003 / FRM-053 for this deck",
       "GOSPEL-FRM-007 critical lift plan",

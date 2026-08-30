@@ -16,6 +16,16 @@ const nextConfig: NextConfig = {
         destination: "/safety/jha/:slug",
         permanent: true,
       },
+      {
+        source: "/hire",
+        destination: "/safety",
+        permanent: true,
+      },
+      {
+        source: "/crew",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 };

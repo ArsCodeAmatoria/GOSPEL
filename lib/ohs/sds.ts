@@ -1,12 +1,12 @@
 import type { Sds } from "./types";
 
-/** Products GOSPEL crews actually meet on crane and rigging dispatches — not a warehouse catalogue. */
+/** Products crews actually meet on crane and rigging work — not a warehouse catalogue. */
 export const SDS: Sds[] = [
   {
     slug: "diesel-fuel",
     title: "DIESEL FUEL",
     number: "GOSPEL-SDS-001",
-    use: "Fuel for mobile cranes, boom trucks and support vehicles on site. GOSPEL does not store bulk fuel. Workers may refuel client or carrier equipment as assigned.",
+    use: "Fuel for mobile cranes, boom trucks and support vehicles on site. This procedure does not cover bulk fuel storage. Workers may refuel host or carrier equipment as assigned.",
     hazards: [
       "Flammable liquid and vapour",
       "Skin irritation and dermatitis with repeated contact",
@@ -14,7 +14,7 @@ export const SDS: Sds[] = [
       "Exhaust in poorly ventilated areas",
     ],
     ppe: ["Gloves rated for petroleum", "Eye protection", "No ignition sources while fuelling"],
-    spill: "Stop the source if safe. Keep people and ignition away. Absorb with site spill kit. Do not wash into drains. Report to the site and to GOSPEL.",
+    spill: "Stop the source if safe. Keep people and ignition away. Absorb with site spill kit. Do not wash into drains. Report to the site and to the supervisor.",
     firstAid: "Skin: wash with soap and water. Eyes: rinse. If swallowed: do not induce vomiting — get medical care. Inhalation: fresh air.",
     storage: "On the carrier or in approved site containers. Caps on. No smoking at the tank.",
   },
