@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import {
-  Alumni_Sans,
   IBM_Plex_Mono,
   IBM_Plex_Sans,
   Oswald,
+  Poppins,
 } from "next/font/google";
 import { Header } from "@/components/Header";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -16,10 +16,10 @@ const display = Oswald({
   weight: ["500", "600", "700"],
 });
 
-const brand = Alumni_Sans({
+const brand = Poppins({
   subsets: ["latin"],
   variable: "--font-brand",
-  weight: ["700", "800"],
+  weight: ["600", "700"],
 });
 
 const sans = IBM_Plex_Sans({

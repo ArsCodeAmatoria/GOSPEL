@@ -11,7 +11,7 @@
   --on-ink-muted: color-mix(in srgb, var(--paper) 50%, transparent);
   --safe: 62ch;
   --pad: clamp(2rem, 8vw, 6rem);
-  --header: 7.5rem;
+  --header: 5.5rem;
   color-scheme: light;
 }
 
@@ -141,29 +141,24 @@ html[data-theme="dark"] .grain {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.28em;
-  font-family: var(--font-brand), "Alumni Sans", sans-serif;
-  font-size: clamp(3.8rem, 8vw, 5.8rem);
+  gap: 0.3em;
+  font-family: var(--font-brand), Poppins, sans-serif;
+  font-size: clamp(1.7rem, 3.4vw, 2.25rem);
   transform-origin: 20% 60%;
   transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .brand-name {
   display: inline-block;
-  font-family: var(--font-brand), "Alumni Sans", sans-serif;
-  font-size: 1em;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  line-height: 0.7;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  line-height: 1;
   text-transform: uppercase;
-  transform: scale(0.82, 1.48);
-  transform-origin: left center;
-  margin-right: calc((0.82 - 1) * 2em);
 }
 
 .brand-cross {
   display: block;
-  height: calc(0.7em * 1.48);
+  height: 1.618em;
   width: auto;
   flex-shrink: 0;
   overflow: visible;
@@ -3190,12 +3185,12 @@ html[data-theme="dark"] .footer .std-mark-on-ink {
 
 @media (max-width: 720px) {
   :root {
-    --header: 6.2rem;
+    --header: 4.6rem;
     --pad: 1.2rem;
   }
 
   .brand {
-    font-size: 3.1rem;
+    font-size: 1.45rem;
   }
 
   body:has(.doc) .header .btn-solid {
