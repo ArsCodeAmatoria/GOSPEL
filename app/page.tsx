@@ -14,21 +14,33 @@ export default function HomePage() {
       <section className="section section-lead" id="GOSPEL">
         <div className="wrap">
           <p className="mono kicker">01 — THE PROGRAM</p>
-          <h1 className="display giant">
-            CRANE
-            <br />
-            SAFETY
-            <br />
-            SYSTEMS.
-          </h1>
-          <p className="display pitch-line mt-2">
-            OPEN.
-            <br />
-            USABLE.
-            <br />
-            ACCOUNTABLE.
-          </p>
-          <p className="lede-lg mt">{SITE.dek}</p>
+          <div className="lead-split">
+            <div className="lead-copy">
+              <h1 className="display giant">
+                CRANE
+                <br />
+                SAFETY
+                <br />
+                SYSTEMS.
+              </h1>
+              <p className="display pitch-line mt-2">
+                OPEN.
+                <br />
+                USABLE.
+                <br />
+                ACCOUNTABLE.
+              </p>
+              <p className="lede-lg mt">{SITE.dek}</p>
+            </div>
+            <figure className="lead-crane">
+              <img
+                src="/illustrations/luffer-tower-crane.png"
+                alt="Luffing jib tower crane, technical illustration"
+                width={862}
+                height={1509}
+              />
+            </figure>
+          </div>
           <div className="company-copy">
             <p>{SITE.roles}</p>
             <p>{SITE.method}</p>
