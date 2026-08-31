@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CorSection } from "@/components/CorSection";
+import { LeadCrane } from "@/components/LeadCrane";
 import { ProvenName } from "@/components/ProvenMark";
 import { ProcedureSteps } from "@/components/ProcedureSteps";
 import { FactsList, StandardsList } from "@/components/StandardsList";
@@ -32,14 +33,7 @@ export default function HomePage() {
               </p>
               <p className="lede-lg mt">{SITE.dek}</p>
             </div>
-            <figure className="lead-crane">
-              <img
-                src="/illustrations/luffer-tower-crane.png"
-                alt="Luffing jib tower crane, technical illustration"
-                width={862}
-                height={1509}
-              />
-            </figure>
+            <LeadCrane />
           </div>
           <div className="company-copy">
             <p>{SITE.roles}</p>

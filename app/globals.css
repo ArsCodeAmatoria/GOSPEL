@@ -556,54 +556,104 @@ html[data-theme="dark"] .switch-shell.is-on .switch-mark-on {
 }
 
 .lead-split {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 0;
+  align-items: stretch;
+}
+
+.lead-copy {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  max-width: calc(100% - 7.5rem);
+}
+
+.lead-copy .pitch-line,
+.lead-copy .lede-lg {
+  width: 0;
+  min-width: 100%;
 }
 
 .lead-crane {
-  margin: 0;
-  align-self: flex-end;
-  max-width: min(100%, 22rem);
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  margin: 0 0 0 -0.85rem;
   pointer-events: none;
 }
 
-.lead-crane img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 42vh;
-  object-fit: contain;
-  object-position: right bottom;
+.lead-crane-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 1.5rem);
+  height: 100%;
+  overflow: hidden;
+  color: #fff;
 }
 
-html[data-theme="light"] .lead-crane img {
+.lead-crane-body {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  object-position: left bottom;
+}
+
+.lead-crane-line,
+.lead-crane-hook {
+  opacity: 0;
+}
+
+.lead-crane[data-ready] .lead-crane-line,
+.lead-crane[data-ready] .lead-crane-hook {
+  opacity: 1;
+}
+
+.lead-crane-line {
+  position: absolute;
+  top: var(--line-top, 0);
+  left: var(--line-x, 0);
+  width: var(--line-width, 1px);
+  height: calc(var(--line-rest, 0px) + var(--hoist, 0) * var(--hook-travel, 0px));
+  background: currentColor;
+}
+
+.lead-crane-hook {
+  position: absolute;
+  top: var(--hook-top, 0);
+  left: var(--hook-left, 0);
+  width: var(--hook-width, 12px);
+  height: auto;
+  max-width: none;
+  transform: translate3d(0, calc(var(--hoist, 0) * var(--hook-travel, 0px)), 0);
+  will-change: transform;
+}
+
+html[data-theme="light"] .lead-crane-stage {
   filter: invert(1);
 }
 
-@media (min-width: 960px) {
-  .lead-split {
-    display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(16rem, 0.82fr);
-    column-gap: clamp(1.5rem, 4vw, 4rem);
-    align-items: stretch;
+@media (max-width: 959px) {
+  .lead-copy {
+    max-width: calc(100% - 6.5rem);
   }
 
   .lead-crane {
-    position: relative;
-    align-self: stretch;
-    max-width: none;
-    min-height: 0;
+    margin-left: -0.55rem;
   }
 
-  .lead-crane img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    max-height: none;
-    object-fit: contain;
-    object-position: right bottom;
+  .lead-crane-stage {
+    width: calc(100% - 1.15rem);
+  }
+
+  .lead-crane-body {
+    object-position: left center;
   }
 }
 
