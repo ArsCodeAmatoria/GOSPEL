@@ -139,9 +139,7 @@ html[data-theme="dark"] .grain {
 }
 
 .brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3em;
+  display: inline-block;
   font-family: var(--font-brand), Poppins, sans-serif;
   font-size: clamp(1.7rem, 3.4vw, 2.25rem);
   transform-origin: 20% 60%;
@@ -154,15 +152,6 @@ html[data-theme="dark"] .grain {
   letter-spacing: 0.3em;
   line-height: 1;
   text-transform: uppercase;
-}
-
-.brand-cross {
-  display: block;
-  height: 1.618em;
-  width: auto;
-  flex-shrink: 0;
-  overflow: visible;
-  fill: currentColor;
 }
 
 .header a:hover .brand,
