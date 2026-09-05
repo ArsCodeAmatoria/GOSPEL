@@ -10,7 +10,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Proven",
   description:
-        "Proven is GOSPEL's crane safety program. Read how lifting work is expected to be performed — CSA Z150 / Z248, WorkSafeBC, BC Crane Safety, Technical Safety BC, ASME B30, manufacturer requirements and site policies.",
+        "Proven is the crane safety program. Read how lifting work is expected to be performed — CSA Z150 / Z248, WorkSafeBC, BC Crane Safety, Technical Safety BC, ASME B30, manufacturer requirements and site policies.",
 };
 
 export default function SafetyIndexPage() {
@@ -73,15 +73,14 @@ export default function SafetyIndexPage() {
         <p className="lede mt">
           Where these conflict, the stricter applicable requirement wins. Law
           always wins. The marks name the bodies. They are not an endorsement
-          of GOSPEL.
+          of {SITE.name}.
         </p>
         <StandardsList />
       </div>
       <p className="lede mt">
-        Proven is COR® Certified through the BC Construction Safety Alliance.
-        That certification is of Proven — our occupational health and safety
-        management system — not a claim that incidents will never occur.{" "}
-        <Link href="/#cor">COR CERTIFIED →</Link>
+        Proven maps to the COR® elements — the Certificate of Recognition —
+        so that framework is readable.{" "}
+        <Link href="/#cor">WHAT COR IS →</Link>
       </p>
       <p className="mono steel doc-colophon">
         <ProvenName />

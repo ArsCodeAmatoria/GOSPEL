@@ -96,7 +96,7 @@ export default async function WireArticlePage({ params }: Props) {
       />
       <header className="wire-article-head">
         <p className="mono kicker">
-          <Link href="/whoopwire">GOSPELWIRE</Link>
+          <Link href="/whoopwire">{WIRE.name}</Link>
           <span> / {article.category}</span>
         </p>
         <h1 className="display giant">
@@ -160,7 +160,7 @@ export default async function WireArticlePage({ params }: Props) {
 
       {related.length ? (
         <section className="wire-related">
-          <p className="mono kicker">MORE FROM GOSPELWIRE</p>
+          <p className="mono kicker">MORE FROM {WIRE.name}</p>
           <div className="wire-stack">
             {related.map((story) => (
               <WireStoryLink key={story.slug} story={story} />
@@ -171,7 +171,7 @@ export default async function WireArticlePage({ params }: Props) {
 
       <nav className="pager">
         <Link href="/whoopwire">
-          <span className="mono steel">GOSPELWIRE</span>
+          <span className="mono steel">{WIRE.name}</span>
           <strong className="display">ALL STORIES</strong>
         </Link>
         <Link href="/safety">

@@ -1807,7 +1807,7 @@ export const SAFETY: SafetySection[] = [
       },
       {
         type: "p",
-        text: "OHS Regulation 3.1: a 3.3 program is required if the employer has 20 or more workers and at least one workplace with a moderate or high hazard rating under Schedule 3-A, or 50 or more workers. An officer can also require one. Crane and rigging work is high-hazard work. This written program exists because the work requires it and because COR® certification is of this system. If a workplace the employer controls is below the 3.1 threshold, 3.2 still requires monthly meetings with workers and a record of what was discussed — GOSPEL-FRM-033. This program is not an excuse to skip that.",
+        text: "OHS Regulation 3.1: a 3.3 program is required if the employer has 20 or more workers and at least one workplace with a moderate or high hazard rating under Schedule 3-A, or 50 or more workers. An officer can also require one. Crane and rigging work is high-hazard work. This written program exists because the work requires it. The COR® table below is a document map for that framework. If a workplace the employer controls is below the 3.1 threshold, 3.2 still requires monthly meetings with workers and a record of what was discussed — GOSPEL-FRM-033. This program is not an excuse to skip that.",
       },
       {
         type: "h",

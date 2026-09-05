@@ -3,10 +3,10 @@ import { WhoopwireIndex } from "@/components/WhoopwireIndex";
 import { WIRE, getSummaries } from "@/lib/whoopwire";
 
 export const metadata: Metadata = {
-  title: "GOSPELWIRE",
+  title: WIRE.name,
   description: WIRE.dek,
   openGraph: {
-    title: "GOSPELWIRE",
+    title: WIRE.name,
     description: WIRE.dek,
     type: "website",
   },
@@ -16,8 +16,8 @@ export default function WhoopwirePage() {
   return (
     <>
       <header className="page-hero wrap">
-        <p className="mono kicker">GOSPELWIRE</p>
-        <h1 className="display giant">GOSPELWIRE</h1>
+        <p className="mono kicker">{WIRE.name}</p>
+        <h1 className="display giant">{WIRE.name}</h1>
         <p className="mono mt">{WIRE.descriptor}</p>
         <p className="lede mt-2">{WIRE.dek}</p>
       </header>

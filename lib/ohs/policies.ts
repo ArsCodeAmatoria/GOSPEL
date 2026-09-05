@@ -429,7 +429,7 @@ export const POLICIES: Policy[] = [
       },
       {
         title: "COR",
-        body: "This program is COR® certified through BCCSA. Certification is of this occupational health and safety management system. Maintenance and recertification follow BCCSA’s current process. An audit finding becomes a corrective action with an owner and a date.",
+        body: "COR® is a WorkSafeBC incentive program. BCCSA is the certifying partner for construction in B.C. This program is written so it can be mapped to the COR elements. An audit finding becomes a corrective action with an owner and a date.",
       },
       {
         title: "This program",

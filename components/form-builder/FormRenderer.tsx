@@ -301,7 +301,7 @@ export function FormRenderer({
   return (
     <div className={`fb-doc${mode === "preview" ? " is-preview" : ""}`}>
       <header className="fb-doc-head">
-        <p className="mono steel">{SITE.name}</p>
+        <p className="brand">{SITE.name}</p>
         <div className="fb-doc-meta">
           <span className="mono">{form.number}</span>
           <span className="mono">REV {form.revision}</span>

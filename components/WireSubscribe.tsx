@@ -23,7 +23,7 @@ export function WireSubscribe({ compact = false }: { compact?: boolean }) {
       if (!res.ok) throw new Error("fail");
       setDone(true);
     } catch {
-      window.location.href = `${SITE.emailHref}?subject=${encodeURIComponent("GOSPELWIRE")}&body=${encodeURIComponent(email)}`;
+      window.location.href = `${SITE.emailHref}?subject=${encodeURIComponent(WIRE.name)}&body=${encodeURIComponent(email)}`;
       setError("If your email client opened, send that. Otherwise try again.");
     }
   }
@@ -31,7 +31,7 @@ export function WireSubscribe({ compact = false }: { compact?: boolean }) {
   if (done) {
     return (
       <div className={compact ? undefined : "section wrap"} id="subscribe">
-        <p className="mono kicker">GOSPELWIRE</p>
+        <p className="mono kicker">{WIRE.name}</p>
         <h2 className="display giant-sm">YOU&apos;RE ON THE LIST.</h2>
         <p className="lede mt">We will send stories. We will not bury you in mail.</p>
       </div>
@@ -40,11 +40,11 @@ export function WireSubscribe({ compact = false }: { compact?: boolean }) {
 
   return (
     <section className={compact ? "wire-sub" : "section wrap"} id="subscribe">
-      <p className="mono kicker">GOSPELWIRE</p>
+      <p className="mono kicker">{WIRE.name}</p>
       <h2 className="display giant">
         GET
         <br />
-        GOSPELWIRE.
+        THE WIRE.
       </h2>
       <p className="lede mt">
         {WIRE.subscribe}

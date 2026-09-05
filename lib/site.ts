@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "GOSPEL",
+  name: "sin()",
   legalName: "GOSPEL",
   descriptor: "CRANE SAFETY",
   phone: "1 604 431 2000",
@@ -18,7 +18,7 @@ export const SITE = {
   close:
     "If a procedure cannot be followed on a jobsite, it is not a procedure. It is theatre.",
   description:
-    "This site is crane safety information for lifting work. Proven is the public occupational health and safety management system — policies, safe work procedures, JHAs, site-specific plans, forms and crane binders. Written to CSA Z150 / Z248, WorkSafeBC, BC Crane Safety, Technical Safety BC, ASME B30, manufacturer requirements and site policies. No portal. No request form. No expiry date.",
+    "Public crane safety information for lifting work in British Columbia. Red Seal practice tests, a written safety program, and The Wire.",
   system: "PROVEN",
 } as const;
 
@@ -44,8 +44,8 @@ export const ABOUT = [
     body: "Proven is public. Operators, riggers, supervisors, contractors and clients can read how the work is expected to be done before the gate.",
   },
   {
-    name: "COR® Certified",
-    body: "Occupational health and safety management system certified through the BC Construction Safety Alliance.",
+    name: "COR®",
+    body: "This site explains the Certificate of Recognition and how a crane OHS program maps to it.",
   },
 ] as const;
 
@@ -95,24 +95,21 @@ export const STANDARDS = [
 ] as const;
 
 export const COR = {
-  mark: "COR® Certified",
+  mark: "COR®",
   title: "Certificate of Recognition",
   partner: "BC Construction Safety Alliance",
   partnerUrl: "https://www.bccsa.ca/cor_program.php",
   program: "WorkSafeBC Certificate of Recognition",
-  /** Licensed BCCSA COR® mark. Drop the official file at this path. */
   asset: "/cor/bccsa-cor-certified.png",
-  packHref: "/downloads/cor.zip",
-  certificateNumber: "",
-  certifiedDate: "",
-  classification: "",
 } as const;
 
 export const NAV = [
-  { href: "/", label: "THE PROGRAM", num: "01" },
+  { href: "/", label: "HOME", num: "01" },
   { href: "/safety", label: "PROVEN", num: "02" },
-  { href: "/whoopwire", label: "GOSPELWIRE", num: "03" },
+  { href: "/whoopwire", label: "THE WIRE", num: "03" },
   { href: "/philosophy", label: "PHILOSOPHY", num: "04" },
+  { href: "/redtc", label: "REDTC", num: "05" },
+  { href: "/redmc", label: "REDMC", num: "06" },
 ] as const;
 
 export const PROGRAM = [
@@ -196,6 +193,6 @@ export const METHOD = [
   {
     num: "04",
     title: "ACCOUNT",
-    body: "Incidents are reported. Stop-work is real. COR certifies the management system — not that nothing will go wrong.",
+    body: "Incidents are reported. Stop-work is real. COR® is an independent look at an occupational health and safety management system — not that nothing will go wrong.",
   },
 ] as const;

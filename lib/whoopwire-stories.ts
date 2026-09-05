@@ -1,7 +1,7 @@
 import type { WireArticle } from "@/lib/whoopwire";
 
 /**
- * GOSPELWIRE stories.
+ * THE WIRE stories.
  *
  * To publish a story: copy an object in this array, give it a unique slug,
  * and set featured: true on at most one story. Optional fields: updated,
@@ -140,7 +140,7 @@ export const ARTICLES: WireArticle[] = [
       },
       {
         type: "p",
-        text: "You now have θ. The next number is tension. Two equal legs: T = W / (2 × sin θ). That is the other GOSPELWIRE. Do not stop at a pretty angle.",
+        text: "You now have θ. The next number is tension. Two equal legs: T = W / (2 × sin θ). That is the other Wire story. Do not stop at a pretty angle.",
       },
       {
         type: "h",
@@ -889,7 +889,7 @@ export const ARTICLES: WireArticle[] = [
       {
         type: "cta",
         href: "/#cor",
-        label: "COR CERTIFIED →",
+        label: "WHAT COR IS →",
       },
     ],
   },
